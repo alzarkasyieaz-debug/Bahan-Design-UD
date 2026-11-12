@@ -1,0 +1,120 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "sourceVideo": "IMG_2582.mov (96.94 s, iPhone, 1080x1920 selepas putaran)",
+  "segments": [
+    {
+      "id": "hook",
+      "label": "HOOK",
+      "out": [
+        0.0,
+        3.6
+      ],
+      "src": 85.98
+    },
+    {
+      "id": "body",
+      "label": "PENGENALAN → PENUTUP",
+      "out": [
+        3.6,
+        98.5
+      ],
+      "src": 1.6
+    },
+    {
+      "id": "cta",
+      "label": "CTA NAKSEEHEART",
+      "out": [
+        98.5,
+        104.5
+      ],
+      "src": 96.3
+    }
+  ],
+  "voiceCuts": {
+    "hook": 89.5,
+    "body": 96.5
+  },
+  "beats": {
+    "flashToBody": 3.6,
+    "sangkaBuruk": [
+      6.45,
+      15.9
+    ],
+    "merosakkan": 10.38,
+    "ukhuwah": 11.84,
+    "persahabatan": 13.06,
+    "persaudaraan": 14.58,
+    "sebaliknya": 15.98,
+    "sangkaBaik": [
+      18.5,
+      20.75
+    ],
+    "brollFriends": [
+      20.75,
+      28.55
+    ],
+    "harmoni": 21.16,
+    "segarkanUkhuwah": 23.64,
+    "tidakRugi": 26.26,
+    "kebaikan": [
+      28.6,
+      34.4
+    ],
+    "kebaikanWord": 30.38,
+    "sekeliling": 31.66,
+    "caraPertama": [
+      36.6,
+      48.2
+    ],
+    "pertama": 37.58,
+    "selidik": 37.9,
+    "tanya": 39.74,
+    "sebelum": 42.96,
+    "caraKedua": [
+      48.3,
+      58.2
+    ],
+    "kedua": 48.86,
+    "pastikan": 51.78,
+    "sah": 54.14,
+    "baruSebar": 54.34,
+    "janganSebar": [
+      58.26,
+      70.6
+    ],
+    "tidakBetul": 63.3,
+    "tidakPasti": 65.56,
+    "fitnah": 67.36,
+    "palingPenting": 70.64,
+    "brollHati": [
+      73.6,
+      79.6
+    ],
+    "jagaHati": 75.22,
+    "tidakDiingini": 76.3,
+    "climax": [
+      79.6,
+      91.54
+    ],
+    "hadisLabel": 80.4,
+    "hadisQuote": 82.3,
+    "apaSangka": 88.02,
+    "itulahDapat": 89.74,
+    "finale": [
+      91.54,
+      98.5
+    ],
+    "lazimkan": 92.06,
+    "bersangkaBaik": 94.26,
+    "insyaAllah": 95.26,
+    "followPulse": [
+      20.0,
+      45.0,
+      72.0
+    ],
+    "cta": 98.5,
+    "end": 104.5
+  }
+}
