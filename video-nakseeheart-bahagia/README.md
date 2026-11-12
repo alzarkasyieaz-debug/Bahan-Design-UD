@@ -87,7 +87,7 @@ Kesan "di belakang subjek" dihasilkan dengan matte penceramah (rembg `u2net_huma
 ## 7. Muzik, SFX & mixing
 - **Muzik:** piano sinematik dengan pad strings spiritual (D major / B minor). **Disintesis sepenuhnya, jadi bebas hak cipta** ([`scripts/generate_audio.py`](scripts/generate_audio.py)). Bermula jarang, crescendo berperingkat ke klimaks (31.9–42.5 s), kemudian resolve semasa CTA.
 - **Suara:** high-pass 85 Hz, denoise FFT, EQ (-2.5 dB @250 Hz, +2.5 dB @3.2 kHz) dan kompresor lembut.
-- **Ducking automatik:** pengesan sampul suara menurunkan muzik ~11 dB ketika penceramah bercakap. Muzik berada 14–17 dB di bawah suara.
+- **Ducking automatik:** pengesan sampul suara menurunkan muzik ~16 dB ketika penceramah bercakap. Muzik berada 23–30 dB di bawah suara, jadi ia hanya lapisan latar yang lembut.
 - **SFX (minimum):** soft impact (hook, flash, akhirat, cari/cipta/Allah), whoosh (4 peralihan), shimmer (light sweep), pop lembut (kata kunci).
 - **Master:** -14 LUFS bersepadu, true-peak -1.5 dBTP (standard TikTok/Reels).
 

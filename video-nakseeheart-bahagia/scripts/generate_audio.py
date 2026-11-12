@@ -238,15 +238,15 @@ def main():
     wavfile.write(os.path.join(AUD, "music.wav"), SR, (music.T * 32767).astype(np.int16))
     wavfile.write(os.path.join(AUD, "sfx.wav"), SR, (np.clip(sfx.T, -1, 1) * 32767).astype(np.int16))
 
-    # Ducking automatik: muzik turun ~-11 dB ketika penceramah bercakap
+    # Ducking automatik: muzik turun ~-16 dB ketika penceramah bercakap
     env = envelope(voice)
     thr = 0.02
-    duck_db = -11.0 * np.clip((env - thr * 0.5) / thr, 0, 1)
+    duck_db = -16.0 * np.clip((env - thr * 0.5) / thr, 0, 1)
     gain = db(duck_db)
-    music_level = db(-1.5)
+    music_level = db(-8)
     mix = np.zeros((2, N))
     mix += music * gain * music_level
-    mix += sfx * db(-4)
+    mix += sfx * db(-7)
     mix += np.vstack([voice, voice]) * db(2)
     peak = np.max(np.abs(mix))
     mix = mix / peak * 0.89
