@@ -29,7 +29,7 @@ const BehindSubject: React.FC = () => (
     {/* 06 — Penutup: CARI BAHAGIA, CIPTA BAHAGIA, DENGAN ALLAH */}
     <Text3D text="CARI BAHAGIA" at={B.cari} until={B.cta - 0.1} x={540} y={385} size={168} fill="cream" depth={14} rotX={12} />
     <Text3D text="CIPTA BAHAGIA" at={B.cipta} until={B.cta - 0.1} x={540} y={560} size={168} fill="cream" depth={14} rotX={10} />
-    <Text3D text="DENGAN ALLAH" at={B.denganAllah} until={B.cta - 0.1} x={545} y={760} size={215} depth={20} rotX={8} />
+    <Text3D text="DENGAN ALLAH" at={B.denganAllah} until={B.cta - 0.1} x={540} y={760} size={190} depth={20} rotX={8} />
   </>
 );
 
