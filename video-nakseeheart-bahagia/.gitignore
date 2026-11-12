@@ -4,3 +4,4 @@ out/*.png
 .work/
 public/audio/music.wav
 public/audio/sfx.wav
+__pycache__/
