@@ -1,0 +1,484 @@
+[
+ {
+  "start": 1.5000000000000018,
+  "end": 4.58,
+  "text": " Tidak ada siapa dalam dunia ini tidak mahukan bahagia",
+  "words": [
+   {
+    "w": " Tidak",
+    "s": 1.5000000000000018,
+    "e": 2.26
+   },
+   {
+    "w": " ada",
+    "s": 2.26,
+    "e": 2.34
+   },
+   {
+    "w": " siapa",
+    "s": 2.34,
+    "e": 2.68
+   },
+   {
+    "w": " dalam",
+    "s": 2.68,
+    "e": 2.84
+   },
+   {
+    "w": " dunia",
+    "s": 2.84,
+    "e": 3.16
+   },
+   {
+    "w": " ini",
+    "s": 3.16,
+    "e": 3.3
+   },
+   {
+    "w": " tidak",
+    "s": 3.3,
+    "e": 3.54
+   },
+   {
+    "w": " mahukan",
+    "s": 3.54,
+    "e": 3.98
+   },
+   {
+    "w": " bahagia",
+    "s": 3.98,
+    "e": 4.58
+   }
+  ]
+ },
+ {
+  "start": 4.58,
+  "end": 7.3,
+  "text": " Semua orang menginginkan kebahagiaan",
+  "words": [
+   {
+    "w": " Semua",
+    "s": 4.58,
+    "e": 5.28
+   },
+   {
+    "w": " orang",
+    "s": 5.28,
+    "e": 5.6
+   },
+   {
+    "w": " menginginkan",
+    "s": 5.6,
+    "e": 6.62
+   },
+   {
+    "w": " kebahagiaan",
+    "s": 6.62,
+    "e": 7.3
+   }
+  ]
+ },
+ {
+  "start": 7.88,
+  "end": 10.7,
+  "text": " Tetapi kebahagiaan tidak semestinya dengan duit yang banyak",
+  "words": [
+   {
+    "w": " Tetapi",
+    "s": 7.88,
+    "e": 8.3
+   },
+   {
+    "w": " kebahagiaan",
+    "s": 8.3,
+    "e": 9.04
+   },
+   {
+    "w": " tidak",
+    "s": 9.04,
+    "e": 9.22
+   },
+   {
+    "w": " semestinya",
+    "s": 9.22,
+    "e": 9.72
+   },
+   {
+    "w": " dengan",
+    "s": 9.72,
+    "e": 9.92
+   },
+   {
+    "w": " duit",
+    "s": 9.92,
+    "e": 10.22
+   },
+   {
+    "w": " yang",
+    "s": 10.22,
+    "e": 10.36
+   },
+   {
+    "w": " banyak",
+    "s": 10.36,
+    "e": 10.7
+   }
+  ]
+ },
+ {
+  "start": 10.7,
+  "end": 13.28,
+  "text": " Kebahagiaan tidak semestinya pangkat yang tinggi",
+  "words": [
+   {
+    "w": " Kebahagiaan",
+    "s": 10.7,
+    "e": 11.7
+   },
+   {
+    "w": " tidak",
+    "s": 11.7,
+    "e": 11.86
+   },
+   {
+    "w": " semestinya",
+    "s": 11.86,
+    "e": 12.24
+   },
+   {
+    "w": " pangkat",
+    "s": 12.24,
+    "e": 12.74
+   },
+   {
+    "w": " yang",
+    "s": 12.74,
+    "e": 12.9
+   },
+   {
+    "w": " tinggi",
+    "s": 12.9,
+    "e": 13.28
+   }
+  ]
+ },
+ {
+  "start": 13.28,
+  "end": 18.24,
+  "text": " Kebahagiaan tak semestinya kita dapat memiliki harta benda yang banyak kereta mewah",
+  "words": [
+   {
+    "w": " Kebahagiaan",
+    "s": 13.28,
+    "e": 14.32
+   },
+   {
+    "w": " tak",
+    "s": 14.32,
+    "e": 14.48
+   },
+   {
+    "w": " semestinya",
+    "s": 14.48,
+    "e": 14.98
+   },
+   {
+    "w": " kita",
+    "s": 14.98,
+    "e": 15.22
+   },
+   {
+    "w": " dapat",
+    "s": 15.22,
+    "e": 15.58
+   },
+   {
+    "w": " memiliki",
+    "s": 15.58,
+    "e": 16.32
+   },
+   {
+    "w": " harta",
+    "s": 16.32,
+    "e": 16.68
+   },
+   {
+    "w": " benda",
+    "s": 16.68,
+    "e": 17.02
+   },
+   {
+    "w": " yang",
+    "s": 17.02,
+    "e": 17.24
+   },
+   {
+    "w": " banyak",
+    "s": 17.24,
+    "e": 17.54
+   },
+   {
+    "w": " kereta",
+    "s": 17.54,
+    "e": 17.98
+   },
+   {
+    "w": " mewah",
+    "s": 17.98,
+    "e": 18.24
+   }
+  ]
+ },
+ {
+  "start": 18.24,
+  "end": 20.56,
+  "text": " Tapi hakikatnya kebahagiaan sebenar",
+  "words": [
+   {
+    "w": " Tapi",
+    "s": 18.24,
+    "e": 18.86
+   },
+   {
+    "w": " hakikatnya",
+    "s": 18.86,
+    "e": 19.56
+   },
+   {
+    "w": " kebahagiaan",
+    "s": 19.56,
+    "e": 20.04
+   },
+   {
+    "w": " sebenar",
+    "s": 20.04,
+    "e": 20.56
+   }
+  ]
+ },
+ {
+  "start": 20.56,
+  "end": 23.2,
+  "text": " Apabila kita dapat mentaati perintah Allah",
+  "words": [
+   {
+    "w": " Apabila",
+    "s": 20.56,
+    "e": 21.22
+   },
+   {
+    "w": " kita",
+    "s": 21.22,
+    "e": 21.46
+   },
+   {
+    "w": " dapat",
+    "s": 21.46,
+    "e": 21.84
+   },
+   {
+    "w": " mentaati",
+    "s": 21.84,
+    "e": 22.44
+   },
+   {
+    "w": " perintah",
+    "s": 22.44,
+    "e": 22.98
+   },
+   {
+    "w": " Allah",
+    "s": 22.98,
+    "e": 23.2
+   }
+  ]
+ },
+ {
+  "start": 23.2,
+  "end": 25.92,
+  "text": " Dapat melaksanakan ibadah dengan setenang-tenangnya",
+  "words": [
+   {
+    "w": " Dapat",
+    "s": 23.2,
+    "e": 23.68
+   },
+   {
+    "w": " melaksanakan",
+    "s": 23.68,
+    "e": 24.26
+   },
+   {
+    "w": " ibadah",
+    "s": 24.26,
+    "e": 24.72
+   },
+   {
+    "w": " dengan",
+    "s": 24.72,
+    "e": 24.88
+   },
+   {
+    "w": " setenang",
+    "s": 24.88,
+    "e": 25.46
+   },
+   {
+    "w": "-tenangnya",
+    "s": 25.46,
+    "e": 25.92
+   }
+  ]
+ },
+ {
+  "start": 25.92,
+  "end": 28.72,
+  "text": " Itulah satu kebahagiaan yang sangat luar biasa",
+  "words": [
+   {
+    "w": " Itulah",
+    "s": 25.92,
+    "e": 26.76
+   },
+   {
+    "w": " satu",
+    "s": 26.76,
+    "e": 27.02
+   },
+   {
+    "w": " kebahagiaan",
+    "s": 27.02,
+    "e": 27.74
+   },
+   {
+    "w": " yang",
+    "s": 27.74,
+    "e": 27.86
+   },
+   {
+    "w": " sangat",
+    "s": 27.86,
+    "e": 28.14
+   },
+   {
+    "w": " luar",
+    "s": 28.14,
+    "e": 28.4
+   },
+   {
+    "w": " biasa",
+    "s": 28.4,
+    "e": 28.72
+   }
+  ]
+ },
+ {
+  "start": 28.72,
+  "end": 34.24,
+  "text": " Bahkan kebahagiaan tersebutlah akan menjamin kehidupan kita lebih membahagiakan di akhirat",
+  "words": [
+   {
+    "w": " Bahkan",
+    "s": 28.72,
+    "e": 29.76
+   },
+   {
+    "w": " kebahagiaan",
+    "s": 29.76,
+    "e": 30.16
+   },
+   {
+    "w": " tersebutlah",
+    "s": 30.16,
+    "e": 30.82
+   },
+   {
+    "w": " akan",
+    "s": 30.82,
+    "e": 31.36
+   },
+   {
+    "w": " menjamin",
+    "s": 31.36,
+    "e": 31.9
+   },
+   {
+    "w": " kehidupan",
+    "s": 31.9,
+    "e": 32.4
+   },
+   {
+    "w": " kita",
+    "s": 32.4,
+    "e": 32.58
+   },
+   {
+    "w": " lebih",
+    "s": 32.58,
+    "e": 32.82
+   },
+   {
+    "w": " membahagiakan",
+    "s": 32.82,
+    "e": 33.74
+   },
+   {
+    "w": " di",
+    "s": 33.74,
+    "e": 33.94
+   },
+   {
+    "w": " akhirat",
+    "s": 33.94,
+    "e": 34.24
+   }
+  ]
+ },
+ {
+  "start": 34.24,
+  "end": 39.0,
+  "text": " Jadi cari bahagia, cipta bahagia dengan Allah SWT",
+  "words": [
+   {
+    "w": " Jadi",
+    "s": 34.24,
+    "e": 34.48
+   },
+   {
+    "w": " cari",
+    "s": 34.48,
+    "e": 35.84
+   },
+   {
+    "w": " bahagia,",
+    "s": 35.84,
+    "e": 36.26
+   },
+   {
+    "w": " cipta",
+    "s": 36.34,
+    "e": 36.88
+   },
+   {
+    "w": " bahagia",
+    "s": 36.88,
+    "e": 37.42
+   },
+   {
+    "w": " dengan",
+    "s": 37.42,
+    "e": 37.64
+   },
+   {
+    "w": " Allah",
+    "s": 37.64,
+    "e": 37.98
+   },
+   {
+    "w": " SWT",
+    "s": 37.98,
+    "e": 39.0
+   }
+  ]
+ }
+]

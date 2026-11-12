@@ -1,0 +1,78 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "sourceVideo": "IMG_9879.mov (40.39 s, iPhone, 1080x1920 selepas putaran)",
+  "segments": [
+    {
+      "id": "hook",
+      "label": "HOOK",
+      "out": [
+        0.0,
+        4.5
+      ],
+      "src": 18.74
+    },
+    {
+      "id": "body",
+      "label": "PENGENALAN → PENUTUP",
+      "out": [
+        4.5,
+        42.5
+      ],
+      "src": 1.3
+    },
+    {
+      "id": "cta",
+      "label": "CTA NAKSEEHEART",
+      "out": [
+        42.5,
+        48.5
+      ],
+      "src": 39.3
+    }
+  ],
+  "beats": {
+    "flashToBody": 4.5,
+    "bahagiaWord": [
+      7.1,
+      10.9
+    ],
+    "tidakSemestinya": [
+      11.1,
+      21.5
+    ],
+    "duit": 13.12,
+    "pangkat": 15.44,
+    "harta": 19.52,
+    "keretaMewah": 20.74,
+    "kebahagiaanSebenar": [
+      22.0,
+      26.4
+    ],
+    "taatAllah": 25.04,
+    "brollIbadah": [
+      26.4,
+      31.92
+    ],
+    "climax": [
+      31.92,
+      37.44
+    ],
+    "akhiratQuote": 37.0,
+    "finale": [
+      37.44,
+      42.5
+    ],
+    "cari": 37.68,
+    "cipta": 39.54,
+    "denganAllah": 40.62,
+    "followPulse": [
+      16.0,
+      36.0
+    ],
+    "cta": 42.5,
+    "end": 48.5,
+    "lebihBahagia": 35.75
+  }
+}
