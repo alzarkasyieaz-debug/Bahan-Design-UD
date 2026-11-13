@@ -1,0 +1,8 @@
+node_modules
+out/*.png
+.DS_Store
+.work/
+public/audio/music.wav
+public/audio/sfx.wav
+__pycache__/
+public/media/
