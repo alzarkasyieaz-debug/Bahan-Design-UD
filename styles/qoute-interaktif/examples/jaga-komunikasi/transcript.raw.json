@@ -1,0 +1,1714 @@
+[
+ {
+  "start": 1.3599999999999985,
+  "end": 6.14,
+  "text": " Tiga keadaan ketika mana kita nak memulakan percakapan",
+  "words": [
+   {
+    "w": " Tiga",
+    "s": 1.3599999999999985,
+    "e": 2.12
+   },
+   {
+    "w": " keadaan",
+    "s": 2.12,
+    "e": 2.68
+   },
+   {
+    "w": " ketika",
+    "s": 2.68,
+    "e": 3.7
+   },
+   {
+    "w": " mana",
+    "s": 3.7,
+    "e": 3.96
+   },
+   {
+    "w": " kita",
+    "s": 3.96,
+    "e": 4.2
+   },
+   {
+    "w": " nak",
+    "s": 4.2,
+    "e": 4.46
+   },
+   {
+    "w": " memulakan",
+    "s": 4.46,
+    "e": 4.98
+   },
+   {
+    "w": " percakapan",
+    "s": 4.98,
+    "e": 6.14
+   }
+  ]
+ },
+ {
+  "start": 6.14,
+  "end": 12.08,
+  "text": " Ataupun nak memulakan bersembang dengan kawan yang kita dah lama tak jumpa",
+  "words": [
+   {
+    "w": " Ataupun",
+    "s": 6.14,
+    "e": 6.56
+   },
+   {
+    "w": " nak",
+    "s": 6.56,
+    "e": 6.8
+   },
+   {
+    "w": " memulakan",
+    "s": 6.8,
+    "e": 7.4
+   },
+   {
+    "w": " bersembang",
+    "s": 7.4,
+    "e": 9.6
+   },
+   {
+    "w": " dengan",
+    "s": 9.6,
+    "e": 9.84
+   },
+   {
+    "w": " kawan",
+    "s": 9.84,
+    "e": 10.38
+   },
+   {
+    "w": " yang",
+    "s": 10.38,
+    "e": 10.5
+   },
+   {
+    "w": " kita",
+    "s": 10.5,
+    "e": 10.78
+   },
+   {
+    "w": " dah",
+    "s": 10.78,
+    "e": 11.16
+   },
+   {
+    "w": " lama",
+    "s": 11.16,
+    "e": 11.4
+   },
+   {
+    "w": " tak",
+    "s": 11.4,
+    "e": 11.58
+   },
+   {
+    "w": " jumpa",
+    "s": 11.58,
+    "e": 12.08
+   }
+  ]
+ },
+ {
+  "start": 12.08,
+  "end": 16.44,
+  "text": " Tapi keadaan tersebut mengganggu ataupun menyebabkan",
+  "words": [
+   {
+    "w": " Tapi",
+    "s": 12.08,
+    "e": 12.7
+   },
+   {
+    "w": " keadaan",
+    "s": 12.7,
+    "e": 13.42
+   },
+   {
+    "w": " tersebut",
+    "s": 13.42,
+    "e": 14.1
+   },
+   {
+    "w": " mengganggu",
+    "s": 14.1,
+    "e": 15.3
+   },
+   {
+    "w": " ataupun",
+    "s": 15.3,
+    "e": 15.6
+   },
+   {
+    "w": " menyebabkan",
+    "s": 15.6,
+    "e": 16.44
+   }
+  ]
+ },
+ {
+  "start": 16.44,
+  "end": 21.82,
+  "text": " Mode jadi tak cantik untuk kita bersembang dengan dalam kadar tempoh yang lama",
+  "words": [
+   {
+    "w": " Mode",
+    "s": 16.44,
+    "e": 17.64
+   },
+   {
+    "w": " jadi",
+    "s": 17.64,
+    "e": 17.9
+   },
+   {
+    "w": " tak",
+    "s": 17.9,
+    "e": 18.18
+   },
+   {
+    "w": " cantik",
+    "s": 18.18,
+    "e": 18.66
+   },
+   {
+    "w": " untuk",
+    "s": 18.66,
+    "e": 18.82
+   },
+   {
+    "w": " kita",
+    "s": 18.82,
+    "e": 19.0
+   },
+   {
+    "w": " bersembang",
+    "s": 19.0,
+    "e": 19.54
+   },
+   {
+    "w": " dengan",
+    "s": 19.54,
+    "e": 19.7
+   },
+   {
+    "w": " dalam",
+    "s": 19.7,
+    "e": 20.06
+   },
+   {
+    "w": " kadar",
+    "s": 20.06,
+    "e": 20.4
+   },
+   {
+    "w": " tempoh",
+    "s": 20.4,
+    "e": 21.38
+   },
+   {
+    "w": " yang",
+    "s": 21.38,
+    "e": 21.5
+   },
+   {
+    "w": " lama",
+    "s": 21.5,
+    "e": 21.82
+   }
+  ]
+ },
+ {
+  "start": 21.82,
+  "end": 25.34,
+  "text": " Yang pertama adalah bila mana kita nak mulakan bercakap",
+  "words": [
+   {
+    "w": " Yang",
+    "s": 21.82,
+    "e": 22.82
+   },
+   {
+    "w": " pertama",
+    "s": 22.82,
+    "e": 23.14
+   },
+   {
+    "w": " adalah",
+    "s": 23.14,
+    "e": 23.54
+   },
+   {
+    "w": " bila",
+    "s": 23.54,
+    "e": 23.9
+   },
+   {
+    "w": " mana",
+    "s": 23.9,
+    "e": 24.04
+   },
+   {
+    "w": " kita",
+    "s": 24.04,
+    "e": 24.28
+   },
+   {
+    "w": " nak",
+    "s": 24.28,
+    "e": 24.46
+   },
+   {
+    "w": " mulakan",
+    "s": 24.46,
+    "e": 24.78
+   },
+   {
+    "w": " bercakap",
+    "s": 24.78,
+    "e": 25.34
+   }
+  ]
+ },
+ {
+  "start": 25.34,
+  "end": 29.5,
+  "text": " Kita mulakan dengan panggilan ataupun sapaan yang tak cantik",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 25.34,
+    "e": 26.0
+   },
+   {
+    "w": " mulakan",
+    "s": 26.0,
+    "e": 26.48
+   },
+   {
+    "w": " dengan",
+    "s": 26.48,
+    "e": 26.78
+   },
+   {
+    "w": " panggilan",
+    "s": 26.78,
+    "e": 27.36
+   },
+   {
+    "w": " ataupun",
+    "s": 27.36,
+    "e": 27.92
+   },
+   {
+    "w": " sapaan",
+    "s": 27.92,
+    "e": 28.68
+   },
+   {
+    "w": " yang",
+    "s": 28.68,
+    "e": 28.86
+   },
+   {
+    "w": " tak",
+    "s": 28.86,
+    "e": 29.04
+   },
+   {
+    "w": " cantik",
+    "s": 29.04,
+    "e": 29.5
+   }
+  ]
+ },
+ {
+  "start": 29.5,
+  "end": 31.54,
+  "text": " Contoh, oi, hang siapkah?",
+  "words": [
+   {
+    "w": " Contoh,",
+    "s": 29.5,
+    "e": 29.84
+   },
+   {
+    "w": " oi,",
+    "s": 29.92,
+    "e": 30.1
+   },
+   {
+    "w": " hang",
+    "s": 30.22,
+    "e": 31.12
+   },
+   {
+    "w": " siapkah?",
+    "s": 31.12,
+    "e": 31.54
+   }
+  ]
+ },
+ {
+  "start": 32.52,
+  "end": 36.14,
+  "text": " Contoh, apa sahaja? Assalamualaikum, lama tak jumpa",
+  "words": [
+   {
+    "w": " Contoh,",
+    "s": 32.52,
+    "e": 33.0
+   },
+   {
+    "w": " apa",
+    "s": 33.04,
+    "e": 33.4
+   },
+   {
+    "w": " sahaja?",
+    "s": 33.4,
+    "e": 34.5
+   },
+   {
+    "w": " Assalamualaikum,",
+    "s": 34.6,
+    "e": 34.84
+   },
+   {
+    "w": " lama",
+    "s": 35.04,
+    "e": 35.46
+   },
+   {
+    "w": " tak",
+    "s": 35.46,
+    "e": 35.68
+   },
+   {
+    "w": " jumpa",
+    "s": 35.68,
+    "e": 36.14
+   }
+  ]
+ },
+ {
+  "start": 36.14,
+  "end": 39.46,
+  "text": " Itu lebih baik berbanding dengan kita pekik panggil dia pula",
+  "words": [
+   {
+    "w": " Itu",
+    "s": 36.14,
+    "e": 36.28
+   },
+   {
+    "w": " lebih",
+    "s": 36.28,
+    "e": 36.5
+   },
+   {
+    "w": " baik",
+    "s": 36.5,
+    "e": 36.76
+   },
+   {
+    "w": " berbanding",
+    "s": 36.76,
+    "e": 37.36
+   },
+   {
+    "w": " dengan",
+    "s": 37.36,
+    "e": 37.5
+   },
+   {
+    "w": " kita",
+    "s": 37.5,
+    "e": 37.7
+   },
+   {
+    "w": " pekik",
+    "s": 37.7,
+    "e": 38.64
+   },
+   {
+    "w": " panggil",
+    "s": 38.64,
+    "e": 39.06
+   },
+   {
+    "w": " dia",
+    "s": 39.06,
+    "e": 39.22
+   },
+   {
+    "w": " pula",
+    "s": 39.22,
+    "e": 39.46
+   }
+  ]
+ },
+ {
+  "start": 40.02,
+  "end": 43.58,
+  "text": " Tambahkanlah kita panggil pula dengan nama panggilan yang tak sesuai dengan dia ke contoh",
+  "words": [
+   {
+    "w": " Tambahkanlah",
+    "s": 40.02,
+    "e": 40.5
+   },
+   {
+    "w": " kita",
+    "s": 40.5,
+    "e": 40.62
+   },
+   {
+    "w": " panggil",
+    "s": 40.62,
+    "e": 40.88
+   },
+   {
+    "w": " pula",
+    "s": 40.88,
+    "e": 41.1
+   },
+   {
+    "w": " dengan",
+    "s": 41.1,
+    "e": 41.22
+   },
+   {
+    "w": " nama",
+    "s": 41.22,
+    "e": 41.46
+   },
+   {
+    "w": " panggilan",
+    "s": 41.46,
+    "e": 41.88
+   },
+   {
+    "w": " yang",
+    "s": 41.88,
+    "e": 42.06
+   },
+   {
+    "w": " tak",
+    "s": 42.06,
+    "e": 42.28
+   },
+   {
+    "w": " sesuai",
+    "s": 42.28,
+    "e": 42.62
+   },
+   {
+    "w": " dengan",
+    "s": 42.62,
+    "e": 42.76
+   },
+   {
+    "w": " dia",
+    "s": 42.76,
+    "e": 43.0
+   },
+   {
+    "w": " ke",
+    "s": 43.0,
+    "e": 43.16
+   },
+   {
+    "w": " contoh",
+    "s": 43.16,
+    "e": 43.58
+   }
+  ]
+ },
+ {
+  "start": 43.58,
+  "end": 44.22,
+  "text": " Itu yang pertama",
+  "words": [
+   {
+    "w": " Itu",
+    "s": 43.58,
+    "e": 44.0
+   },
+   {
+    "w": " yang",
+    "s": 44.0,
+    "e": 44.14
+   },
+   {
+    "w": " pertama",
+    "s": 44.14,
+    "e": 44.22
+   }
+  ]
+ },
+ {
+  "start": 44.800000000000004,
+  "end": 50.42,
+  "text": " Yang kedua pula, kita nak bergurau tapi tidak kena dengan suasana",
+  "words": [
+   {
+    "w": " Yang",
+    "s": 44.800000000000004,
+    "e": 45.28
+   },
+   {
+    "w": " kedua",
+    "s": 45.28,
+    "e": 45.68
+   },
+   {
+    "w": " pula,",
+    "s": 45.68,
+    "e": 45.92
+   },
+   {
+    "w": " kita",
+    "s": 45.98,
+    "e": 47.64
+   },
+   {
+    "w": " nak",
+    "s": 47.64,
+    "e": 47.96
+   },
+   {
+    "w": " bergurau",
+    "s": 47.96,
+    "e": 48.5
+   },
+   {
+    "w": " tapi",
+    "s": 48.5,
+    "e": 48.74
+   },
+   {
+    "w": " tidak",
+    "s": 48.74,
+    "e": 49.16
+   },
+   {
+    "w": " kena",
+    "s": 49.16,
+    "e": 49.8
+   },
+   {
+    "w": " dengan",
+    "s": 49.8,
+    "e": 49.96
+   },
+   {
+    "w": " suasana",
+    "s": 49.96,
+    "e": 50.42
+   }
+  ]
+ },
+ {
+  "start": 50.92,
+  "end": 53.98,
+  "text": " Tidak kena dengan tempat ataupun tidak kena dengan keadaan",
+  "words": [
+   {
+    "w": " Tidak",
+    "s": 50.92,
+    "e": 51.4
+   },
+   {
+    "w": " kena",
+    "s": 51.4,
+    "e": 51.66
+   },
+   {
+    "w": " dengan",
+    "s": 51.66,
+    "e": 51.78
+   },
+   {
+    "w": " tempat",
+    "s": 51.78,
+    "e": 52.36
+   },
+   {
+    "w": " ataupun",
+    "s": 52.36,
+    "e": 53.02
+   },
+   {
+    "w": " tidak",
+    "s": 53.02,
+    "e": 53.24
+   },
+   {
+    "w": " kena",
+    "s": 53.24,
+    "e": 53.44
+   },
+   {
+    "w": " dengan",
+    "s": 53.44,
+    "e": 53.58
+   },
+   {
+    "w": " keadaan",
+    "s": 53.58,
+    "e": 53.98
+   }
+  ]
+ },
+ {
+  "start": 55.18000000000001,
+  "end": 57.04,
+  "text": " Contoh, dah lama tak jumpa kan?",
+  "words": [
+   {
+    "w": " Contoh,",
+    "s": 55.18000000000001,
+    "e": 55.660000000000004
+   },
+   {
+    "w": " dah",
+    "s": 55.660000000000004,
+    "e": 56.14
+   },
+   {
+    "w": " lama",
+    "s": 56.14,
+    "e": 56.38
+   },
+   {
+    "w": " tak",
+    "s": 56.38,
+    "e": 56.52
+   },
+   {
+    "w": " jumpa",
+    "s": 56.52,
+    "e": 56.92
+   },
+   {
+    "w": " kan?",
+    "s": 56.92,
+    "e": 57.04
+   }
+  ]
+ },
+ {
+  "start": 57.08,
+  "end": 58.9,
+  "text": " Bila jumpa pula, oi, besar je badan hang",
+  "words": [
+   {
+    "w": " Bila",
+    "s": 57.08,
+    "e": 57.28
+   },
+   {
+    "w": " jumpa",
+    "s": 57.28,
+    "e": 57.62
+   },
+   {
+    "w": " pula,",
+    "s": 57.62,
+    "e": 57.72
+   },
+   {
+    "w": " oi,",
+    "s": 57.82,
+    "e": 57.94
+   },
+   {
+    "w": " besar",
+    "s": 57.98,
+    "e": 58.24
+   },
+   {
+    "w": " je",
+    "s": 58.24,
+    "e": 58.46
+   },
+   {
+    "w": " badan",
+    "s": 58.46,
+    "e": 58.7
+   },
+   {
+    "w": " hang",
+    "s": 58.7,
+    "e": 58.9
+   }
+  ]
+ },
+ {
+  "start": 58.9,
+  "end": 60.6,
+  "text": " Hang makankah? Hang melantak?",
+  "words": [
+   {
+    "w": " Hang",
+    "s": 58.9,
+    "e": 59.06
+   },
+   {
+    "w": " makankah?",
+    "s": 59.06,
+    "e": 60.08
+   },
+   {
+    "w": " Hang",
+    "s": 60.08,
+    "e": 60.2
+   },
+   {
+    "w": " melantak?",
+    "s": 60.2,
+    "e": 60.6
+   }
+  ]
+ },
+ {
+  "start": 60.76,
+  "end": 62.34,
+  "text": " Itu dia borainya",
+  "words": [
+   {
+    "w": " Itu",
+    "s": 60.76,
+    "e": 61.3
+   },
+   {
+    "w": " dia",
+    "s": 61.3,
+    "e": 61.54
+   },
+   {
+    "w": " borainya",
+    "s": 61.54,
+    "e": 62.34
+   }
+  ]
+ },
+ {
+  "start": 62.34,
+  "end": 68.54,
+  "text": " Walaupun dalam, mungkin niat-niat adalah untuk bergurau sebab lama tak jumpa",
+  "words": [
+   {
+    "w": " Walaupun",
+    "s": 62.34,
+    "e": 63.18
+   },
+   {
+    "w": " dalam,",
+    "s": 63.18,
+    "e": 63.42
+   },
+   {
+    "w": " mungkin",
+    "s": 63.58,
+    "e": 64.26
+   },
+   {
+    "w": " niat",
+    "s": 64.26,
+    "e": 66.2
+   },
+   {
+    "w": "-niat",
+    "s": 66.2,
+    "e": 66.42
+   },
+   {
+    "w": " adalah",
+    "s": 66.42,
+    "e": 66.58
+   },
+   {
+    "w": " untuk",
+    "s": 66.58,
+    "e": 66.86
+   },
+   {
+    "w": " bergurau",
+    "s": 66.86,
+    "e": 67.44
+   },
+   {
+    "w": " sebab",
+    "s": 67.44,
+    "e": 67.6
+   },
+   {
+    "w": " lama",
+    "s": 67.6,
+    "e": 67.86
+   },
+   {
+    "w": " tak",
+    "s": 67.86,
+    "e": 68.04
+   },
+   {
+    "w": " jumpa",
+    "s": 68.04,
+    "e": 68.54
+   }
+  ]
+ },
+ {
+  "start": 68.54,
+  "end": 74.54,
+  "text": " Tapi alangkah cantiknya, bergurau itu kita tengok pada keadaan situasi setempat",
+  "words": [
+   {
+    "w": " Tapi",
+    "s": 68.54,
+    "e": 69.3
+   },
+   {
+    "w": " alangkah",
+    "s": 69.3,
+    "e": 69.86
+   },
+   {
+    "w": " cantiknya,",
+    "s": 69.86,
+    "e": 70.72
+   },
+   {
+    "w": " bergurau",
+    "s": 70.84,
+    "e": 72.04
+   },
+   {
+    "w": " itu",
+    "s": 72.04,
+    "e": 72.2
+   },
+   {
+    "w": " kita",
+    "s": 72.2,
+    "e": 72.42
+   },
+   {
+    "w": " tengok",
+    "s": 72.42,
+    "e": 72.84
+   },
+   {
+    "w": " pada",
+    "s": 72.84,
+    "e": 73.04
+   },
+   {
+    "w": " keadaan",
+    "s": 73.04,
+    "e": 73.54
+   },
+   {
+    "w": " situasi",
+    "s": 73.54,
+    "e": 73.96
+   },
+   {
+    "w": " setempat",
+    "s": 73.96,
+    "e": 74.54
+   }
+  ]
+ },
+ {
+  "start": 74.54,
+  "end": 77.8,
+  "text": " Mungkin tengah-tengah ramai orang ke dalam majlis ke apakah",
+  "words": [
+   {
+    "w": " Mungkin",
+    "s": 74.54,
+    "e": 75.0
+   },
+   {
+    "w": " tengah",
+    "s": 75.0,
+    "e": 75.32
+   },
+   {
+    "w": "-tengah",
+    "s": 75.32,
+    "e": 75.48
+   },
+   {
+    "w": " ramai",
+    "s": 75.48,
+    "e": 75.84
+   },
+   {
+    "w": " orang",
+    "s": 75.84,
+    "e": 76.1
+   },
+   {
+    "w": " ke",
+    "s": 76.1,
+    "e": 76.42
+   },
+   {
+    "w": " dalam",
+    "s": 76.42,
+    "e": 76.62
+   },
+   {
+    "w": " majlis",
+    "s": 76.62,
+    "e": 77.32
+   },
+   {
+    "w": " ke",
+    "s": 77.32,
+    "e": 77.46
+   },
+   {
+    "w": " apakah",
+    "s": 77.46,
+    "e": 77.8
+   }
+  ]
+ },
+ {
+  "start": 77.8,
+  "end": 84.6,
+  "text": " Jadi dia boleh menyebabkan orang itu akan rasa seperti diahibkan, dimalukan, dihalayak ramai",
+  "words": [
+   {
+    "w": " Jadi",
+    "s": 77.8,
+    "e": 78.48
+   },
+   {
+    "w": " dia",
+    "s": 78.48,
+    "e": 78.72
+   },
+   {
+    "w": " boleh",
+    "s": 78.72,
+    "e": 78.9
+   },
+   {
+    "w": " menyebabkan",
+    "s": 78.9,
+    "e": 79.34
+   },
+   {
+    "w": " orang",
+    "s": 79.34,
+    "e": 80.52
+   },
+   {
+    "w": " itu",
+    "s": 80.52,
+    "e": 80.86
+   },
+   {
+    "w": " akan",
+    "s": 80.86,
+    "e": 81.1
+   },
+   {
+    "w": " rasa",
+    "s": 81.1,
+    "e": 81.42
+   },
+   {
+    "w": " seperti",
+    "s": 81.42,
+    "e": 81.88
+   },
+   {
+    "w": " diahibkan,",
+    "s": 81.88,
+    "e": 82.84
+   },
+   {
+    "w": " dimalukan,",
+    "s": 83.02,
+    "e": 83.84
+   },
+   {
+    "w": " dihalayak",
+    "s": 83.88,
+    "e": 84.34
+   },
+   {
+    "w": " ramai",
+    "s": 84.34,
+    "e": 84.6
+   }
+  ]
+ },
+ {
+  "start": 84.6,
+  "end": 86.64,
+  "text": " Dan yang ketiga adalah sendiran",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 84.6,
+    "e": 85.28
+   },
+   {
+    "w": " yang",
+    "s": 85.28,
+    "e": 85.48
+   },
+   {
+    "w": " ketiga",
+    "s": 85.48,
+    "e": 85.8
+   },
+   {
+    "w": " adalah",
+    "s": 85.8,
+    "e": 86.1
+   },
+   {
+    "w": " sendiran",
+    "s": 86.1,
+    "e": 86.64
+   }
+  ]
+ },
+ {
+  "start": 87.92,
+  "end": 88.74,
+  "text": " Sendiran juga?",
+  "words": [
+   {
+    "w": " Sendiran",
+    "s": 87.92,
+    "e": 88.56
+   },
+   {
+    "w": " juga?",
+    "s": 88.56,
+    "e": 88.74
+   }
+  ]
+ },
+ {
+  "start": 88.9,
+  "end": 91.2,
+  "text": " Ya, kadang-kadang kita perlu tengok keadaan",
+  "words": [
+   {
+    "w": " Ya,",
+    "s": 88.9,
+    "e": 89.66
+   },
+   {
+    "w": " kadang",
+    "s": 89.66,
+    "e": 89.84
+   },
+   {
+    "w": "-kadang",
+    "s": 89.84,
+    "e": 90.06
+   },
+   {
+    "w": " kita",
+    "s": 90.06,
+    "e": 90.22
+   },
+   {
+    "w": " perlu",
+    "s": 90.22,
+    "e": 90.5
+   },
+   {
+    "w": " tengok",
+    "s": 90.5,
+    "e": 90.78
+   },
+   {
+    "w": " keadaan",
+    "s": 90.78,
+    "e": 91.2
+   }
+  ]
+ },
+ {
+  "start": 91.2,
+  "end": 93.88,
+  "text": " Sendir kadang-kadang kata, oi ingatkan hamas tidau, penyedut lagi",
+  "words": [
+   {
+    "w": " Sendir",
+    "s": 91.2,
+    "e": 91.9
+   },
+   {
+    "w": " kadang",
+    "s": 91.9,
+    "e": 92.1
+   },
+   {
+    "w": "-kadang",
+    "s": 92.1,
+    "e": 92.14
+   },
+   {
+    "w": " kata,",
+    "s": 92.14,
+    "e": 92.24
+   },
+   {
+    "w": " oi",
+    "s": 92.32,
+    "e": 92.4
+   },
+   {
+    "w": " ingatkan",
+    "s": 92.4,
+    "e": 92.86
+   },
+   {
+    "w": " hamas",
+    "s": 92.86,
+    "e": 93.02
+   },
+   {
+    "w": " tidau,",
+    "s": 93.02,
+    "e": 93.38
+   },
+   {
+    "w": " penyedut",
+    "s": 93.38,
+    "e": 93.7
+   },
+   {
+    "w": " lagi",
+    "s": 93.7,
+    "e": 93.88
+   }
+  ]
+ },
+ {
+  "start": 93.88,
+  "end": 95.38,
+  "text": " Lama tak jumpa",
+  "words": [
+   {
+    "w": " Lama",
+    "s": 93.88,
+    "e": 94.72
+   },
+   {
+    "w": " tak",
+    "s": 94.72,
+    "e": 94.92
+   },
+   {
+    "w": " jumpa",
+    "s": 94.92,
+    "e": 95.38
+   }
+  ]
+ },
+ {
+  "start": 95.38,
+  "end": 98.82,
+  "text": " Contoh, kupi cari hang kat kubok, kau ada bertunisan",
+  "words": [
+   {
+    "w": " Contoh,",
+    "s": 95.38,
+    "e": 96.32
+   },
+   {
+    "w": " kupi",
+    "s": 96.38,
+    "e": 97.02
+   },
+   {
+    "w": " cari",
+    "s": 97.02,
+    "e": 97.28
+   },
+   {
+    "w": " hang",
+    "s": 97.28,
+    "e": 97.4
+   },
+   {
+    "w": " kat",
+    "s": 97.4,
+    "e": 97.52
+   },
+   {
+    "w": " kubok,",
+    "s": 97.52,
+    "e": 97.94
+   },
+   {
+    "w": " kau",
+    "s": 98.0,
+    "e": 98.3
+   },
+   {
+    "w": " ada",
+    "s": 98.3,
+    "e": 98.48
+   },
+   {
+    "w": " bertunisan",
+    "s": 98.48,
+    "e": 98.82
+   }
+  ]
+ },
+ {
+  "start": 98.82,
+  "end": 101.94,
+  "text": " Contoh, elakkan tiga perkara ini",
+  "words": [
+   {
+    "w": " Contoh,",
+    "s": 98.82,
+    "e": 99.84
+   },
+   {
+    "w": " elakkan",
+    "s": 99.88,
+    "e": 100.96
+   },
+   {
+    "w": " tiga",
+    "s": 100.96,
+    "e": 101.36
+   },
+   {
+    "w": " perkara",
+    "s": 101.36,
+    "e": 101.68
+   },
+   {
+    "w": " ini",
+    "s": 101.68,
+    "e": 101.94
+   }
+  ]
+ },
+ {
+  "start": 101.94,
+  "end": 105.2,
+  "text": " Bila kita jumpa kawan-kawan yang lama kita tak jumpa",
+  "words": [
+   {
+    "w": " Bila",
+    "s": 101.94,
+    "e": 102.76
+   },
+   {
+    "w": " kita",
+    "s": 102.76,
+    "e": 102.88
+   },
+   {
+    "w": " jumpa",
+    "s": 102.88,
+    "e": 103.3
+   },
+   {
+    "w": " kawan",
+    "s": 103.3,
+    "e": 103.58
+   },
+   {
+    "w": "-kawan",
+    "s": 103.58,
+    "e": 103.88
+   },
+   {
+    "w": " yang",
+    "s": 103.88,
+    "e": 104.02
+   },
+   {
+    "w": " lama",
+    "s": 104.02,
+    "e": 104.28
+   },
+   {
+    "w": " kita",
+    "s": 104.28,
+    "e": 104.54
+   },
+   {
+    "w": " tak",
+    "s": 104.54,
+    "e": 104.74
+   },
+   {
+    "w": " jumpa",
+    "s": 104.74,
+    "e": 105.2
+   }
+  ]
+ },
+ {
+  "start": 105.2,
+  "end": 107.36,
+  "text": " Lama mungkin setahun, mungkin dua tahun",
+  "words": [
+   {
+    "w": " Lama",
+    "s": 105.2,
+    "e": 105.66
+   },
+   {
+    "w": " mungkin",
+    "s": 105.66,
+    "e": 105.92
+   },
+   {
+    "w": " setahun,",
+    "s": 105.92,
+    "e": 106.52
+   },
+   {
+    "w": " mungkin",
+    "s": 106.62,
+    "e": 106.88
+   },
+   {
+    "w": " dua",
+    "s": 106.88,
+    "e": 107.04
+   },
+   {
+    "w": " tahun",
+    "s": 107.04,
+    "e": 107.36
+   }
+  ]
+ },
+ {
+  "start": 107.36,
+  "end": 108.24,
+  "text": " Lama tak jumpa",
+  "words": [
+   {
+    "w": " Lama",
+    "s": 107.36,
+    "e": 107.6
+   },
+   {
+    "w": " tak",
+    "s": 107.6,
+    "e": 107.78
+   },
+   {
+    "w": " jumpa",
+    "s": 107.78,
+    "e": 108.24
+   }
+  ]
+ },
+ {
+  "start": 108.24,
+  "end": 112.76,
+  "text": " Ataupun kita hanya banyak berbicara melalui media sosial sahaja",
+  "words": [
+   {
+    "w": " Ataupun",
+    "s": 108.24,
+    "e": 108.7
+   },
+   {
+    "w": " kita",
+    "s": 108.7,
+    "e": 109.34
+   },
+   {
+    "w": " hanya",
+    "s": 109.34,
+    "e": 109.64
+   },
+   {
+    "w": " banyak",
+    "s": 109.64,
+    "e": 109.92
+   },
+   {
+    "w": " berbicara",
+    "s": 109.92,
+    "e": 110.7
+   },
+   {
+    "w": " melalui",
+    "s": 110.7,
+    "e": 111.24
+   },
+   {
+    "w": " media",
+    "s": 111.24,
+    "e": 112.02
+   },
+   {
+    "w": " sosial",
+    "s": 112.02,
+    "e": 112.42
+   },
+   {
+    "w": " sahaja",
+    "s": 112.42,
+    "e": 112.76
+   }
+  ]
+ },
+ {
+  "start": 112.76,
+  "end": 115.88,
+  "text": " Jadi bila jumpa kawan-kawan lama ni, apa salahnya?",
+  "words": [
+   {
+    "w": " Jadi",
+    "s": 112.76,
+    "e": 113.38
+   },
+   {
+    "w": " bila",
+    "s": 113.38,
+    "e": 113.56
+   },
+   {
+    "w": " jumpa",
+    "s": 113.56,
+    "e": 113.88
+   },
+   {
+    "w": " kawan",
+    "s": 113.88,
+    "e": 114.1
+   },
+   {
+    "w": "-kawan",
+    "s": 114.1,
+    "e": 114.24
+   },
+   {
+    "w": " lama",
+    "s": 114.24,
+    "e": 114.46
+   },
+   {
+    "w": " ni,",
+    "s": 114.46,
+    "e": 114.7
+   },
+   {
+    "w": " apa",
+    "s": 114.72,
+    "e": 114.96
+   },
+   {
+    "w": " salahnya?",
+    "s": 114.96,
+    "e": 115.88
+   }
+  ]
+ },
+ {
+  "start": 116.66,
+  "end": 118.04,
+  "text": " Jaga komunikasi kita",
+  "words": [
+   {
+    "w": " Jaga",
+    "s": 116.66,
+    "e": 117.22
+   },
+   {
+    "w": " komunikasi",
+    "s": 117.22,
+    "e": 117.78
+   },
+   {
+    "w": " kita",
+    "s": 117.78,
+    "e": 118.04
+   }
+  ]
+ },
+ {
+  "start": 118.9,
+  "end": 124.44,
+  "text": " Sehingga kawan-kawan kita tadi itu tidak rasa seperti diahibkan, tidak rasa seperti dimalukan",
+  "words": [
+   {
+    "w": " Sehingga",
+    "s": 118.9,
+    "e": 119.0
+   },
+   {
+    "w": " kawan",
+    "s": 119.0,
+    "e": 119.0
+   },
+   {
+    "w": "-kawan",
+    "s": 119.0,
+    "e": 119.26
+   },
+   {
+    "w": " kita",
+    "s": 119.26,
+    "e": 119.28
+   },
+   {
+    "w": " tadi",
+    "s": 119.28,
+    "e": 119.52
+   },
+   {
+    "w": " itu",
+    "s": 119.52,
+    "e": 119.72
+   },
+   {
+    "w": " tidak",
+    "s": 119.72,
+    "e": 120.04
+   },
+   {
+    "w": " rasa",
+    "s": 120.04,
+    "e": 120.38
+   },
+   {
+    "w": " seperti",
+    "s": 120.38,
+    "e": 120.64
+   },
+   {
+    "w": " diahibkan,",
+    "s": 120.64,
+    "e": 122.84
+   },
+   {
+    "w": " tidak",
+    "s": 122.96,
+    "e": 123.18
+   },
+   {
+    "w": " rasa",
+    "s": 123.18,
+    "e": 123.38
+   },
+   {
+    "w": " seperti",
+    "s": 123.38,
+    "e": 123.7
+   },
+   {
+    "w": " dimalukan",
+    "s": 123.7,
+    "e": 124.44
+   }
+  ]
+ },
+ {
+  "start": 125.4,
+  "end": 131.3,
+  "text": " Sebaliknya, jaga komunikasi supaya uhuah tadi itu berjalan dengan lebih baik dan lebih lancar lagi",
+  "words": [
+   {
+    "w": " Sebaliknya,",
+    "s": 125.4,
+    "e": 125.92
+   },
+   {
+    "w": " jaga",
+    "s": 125.92,
+    "e": 126.44
+   },
+   {
+    "w": " komunikasi",
+    "s": 126.44,
+    "e": 126.92
+   },
+   {
+    "w": " supaya",
+    "s": 126.92,
+    "e": 127.38
+   },
+   {
+    "w": " uhuah",
+    "s": 127.38,
+    "e": 128.3
+   },
+   {
+    "w": " tadi",
+    "s": 128.3,
+    "e": 128.48
+   },
+   {
+    "w": " itu",
+    "s": 128.48,
+    "e": 128.74
+   },
+   {
+    "w": " berjalan",
+    "s": 128.74,
+    "e": 129.84
+   },
+   {
+    "w": " dengan",
+    "s": 129.84,
+    "e": 129.94
+   },
+   {
+    "w": " lebih",
+    "s": 129.94,
+    "e": 130.16
+   },
+   {
+    "w": " baik",
+    "s": 130.16,
+    "e": 130.46
+   },
+   {
+    "w": " dan",
+    "s": 130.46,
+    "e": 130.58
+   },
+   {
+    "w": " lebih",
+    "s": 130.58,
+    "e": 130.72
+   },
+   {
+    "w": " lancar",
+    "s": 130.72,
+    "e": 131.16
+   },
+   {
+    "w": " lagi",
+    "s": 131.16,
+    "e": 131.3
+   }
+  ]
+ }
+]

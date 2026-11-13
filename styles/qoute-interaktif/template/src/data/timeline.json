@@ -1,0 +1,149 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "IMG_4022.MOV (132.64 s, iPhone 4K HEVC, putaran -90 -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    4.75
+   ],
+   "src": 100.3,
+   "srcEnd": 105.05
+  },
+  {
+   "id": "s1",
+   "out": [
+    4.75,
+    32.37
+   ],
+   "src": 1.8,
+   "srcEnd": 29.42
+  },
+  {
+   "id": "s2",
+   "out": [
+    32.37,
+    40.74
+   ],
+   "src": 34.58,
+   "srcEnd": 42.95
+  },
+  {
+   "id": "s3",
+   "out": [
+    40.74,
+    56.28
+   ],
+   "src": 45.2,
+   "srcEnd": 60.74
+  },
+  {
+   "id": "s4",
+   "out": [
+    56.28,
+    80.4
+   ],
+   "src": 62.62,
+   "srcEnd": 86.74
+  },
+  {
+   "id": "s5",
+   "out": [
+    80.4,
+    81.98
+   ],
+   "src": 89.68,
+   "srcEnd": 91.26
+  },
+  {
+   "id": "s6",
+   "out": [
+    81.98,
+    86.73
+   ],
+   "src": 100.3,
+   "srcEnd": 105.05
+  },
+  {
+   "id": "s7",
+   "out": [
+    86.73,
+    109.98
+   ],
+   "src": 108.1,
+   "srcEnd": 131.35
+  },
+  {
+   "id": "cta",
+   "out": [
+    109.98,
+    115.48
+   ],
+   "src": 131.4,
+   "srcEnd": 132.4,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 4.75,
+  "hookSub": 2.3,
+  "tigaKeadaan": 5.15,
+  "kawanLama": 12.79,
+  "mood": [
+   19.45,
+   24.85
+  ],
+  "p1": 25.8,
+  "sapaan": 30.9,
+  "p1End": 40.74,
+  "salam": 32.41,
+  "pekik": 35.49,
+  "namaPanggilan": 38.99,
+  "p2": 40.92,
+  "bergurau": 43.5,
+  "suasana": 45.54,
+  "tempat": 47.34,
+  "keadaan": 49.12,
+  "contohGurau": 52.62,
+  "p2End": 62.26,
+  "niat": 58.08,
+  "situasi": 67.0,
+  "ramai": 68.26,
+  "diaibkan": 75.52,
+  "dimalukan": 76.66,
+  "p3": 79.12,
+  "sindiran": 79.76,
+  "recap": 81.98,
+  "brollSosial": [
+   86.73,
+   91.38
+  ],
+  "brollKawan": [
+   91.38,
+   95.03
+  ],
+  "jagaKomunikasi": 95.77,
+  "climax": [
+   95.23,
+   103.93
+  ],
+  "tidakDiaibkan": 99.31,
+  "finale": [
+   103.93,
+   109.98
+  ],
+  "ukhuwah": 106.01,
+  "lancar": 109.33,
+  "cta": 109.98,
+  "end": 115.48,
+  "followPulse": [
+   20.0,
+   45.0,
+   70.0,
+   95.0
+  ]
+ }
+}

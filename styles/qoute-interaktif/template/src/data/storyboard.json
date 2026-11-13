@@ -1,0 +1,515 @@
+{
+ "meta": {
+  "title": "Jaga Komunikasi Bila Jumpa Kawan Lama",
+  "compositionId": "NakSeeHeartKomunikasi",
+  "output": "nakseeheart-jaga-komunikasi",
+  "source": "IMG_4022.MOV",
+  "reference": "https://vt.tiktok.com/ZSp5kNGTE/ (tidak dapat dianalisis — disekat rangkaian)"
+ },
+ "layout": {
+  "face": {
+   "x": 520,
+   "y": 820
+  },
+  "ceilingY": 345,
+  "ceilingTilt": -22,
+  "labelY": 200,
+  "cardY": 1300,
+  "recapY": 318,
+  "subtitleY": 1478,
+  "lowerThirdY": 1565,
+  "hookFocusY": 880,
+  "climaxFocusY": 880
+ },
+ "camera": {
+  "punch": [
+   "p1",
+   "p2",
+   "p3",
+   "diaibkan",
+   "sindiran"
+  ],
+  "jumpCutZoom": 1.08,
+  "climaxZoom": [
+   1.2,
+   1.3
+  ],
+  "hookZoom": [
+   1.34,
+   1.18,
+   1.26
+  ]
+ },
+ "subtitleCalm": [
+  [
+   "salam",
+   "p1End"
+  ],
+  [
+   "suasana-0.5",
+   "p3"
+  ],
+  [
+   "recap",
+   "brollSosial.0"
+  ]
+ ],
+ "music": {
+  "buildUp": "recap"
+ },
+ "sfx": [
+  {
+   "kind": "pop",
+   "at": "tigaKeadaan"
+  },
+  {
+   "kind": "pop",
+   "at": "kawanLama"
+  },
+  {
+   "kind": "whooshDown",
+   "at": "mood.0+0.8",
+   "dur": 0.5,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "salam",
+   "dur": 1.6,
+   "gain": 0.22,
+   "pan": -0.2
+  },
+  {
+   "kind": "pop",
+   "at": "contohGurau",
+   "gain": 0.25
+  },
+  {
+   "kind": "impact",
+   "at": "diaibkan-0.02",
+   "dur": 1.4,
+   "f": 44
+  },
+  {
+   "kind": "shimmer",
+   "at": "jagaKomunikasi-0.05",
+   "gain": 0.3,
+   "pan": -0.2
+  },
+  {
+   "kind": "impact",
+   "at": "ukhuwah-0.02",
+   "dur": 1.4,
+   "f": 52,
+   "gain": 0.25
+  },
+  {
+   "kind": "shimmer",
+   "at": "ukhuwah+0.05",
+   "dur": 2.6,
+   "gain": 0.3,
+   "pan": 0.2
+  }
+ ],
+ "elements": [
+  {
+   "type": "ceiling3d",
+   "text": "3 PERKARA",
+   "at": 0.3,
+   "until": "flashToBody-0.2",
+   "size": 160,
+   "reveal": "punch",
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KAWAN LAMA",
+   "at": "kawanLama",
+   "until": "mood.0-0.1",
+   "size": 150
+  },
+  {
+   "type": "ceiling3d",
+   "text": "MOOD",
+   "at": "mood.0",
+   "until": "mood.1",
+   "size": 170,
+   "fill": "cream",
+   "depth": 14
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SAPAAN",
+   "at": "sapaan",
+   "until": "p1End-0.15",
+   "size": 170,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BERGURAU",
+   "at": "bergurau",
+   "until": "niat-0.2",
+   "size": 165,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "NIAT BERGURAU",
+   "at": "niat",
+   "until": "situasi-0.15",
+   "size": 140,
+   "fill": "cream",
+   "depth": 14
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SITUASI",
+   "at": "situasi",
+   "until": "diaibkan-0.1",
+   "size": 170
+  },
+  {
+   "type": "ceiling3d",
+   "text": "DIAIBKAN",
+   "at": "diaibkan",
+   "until": "dimalukan-0.05",
+   "size": 165,
+   "reveal": "punch",
+   "fill": "red",
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "DIMALUKAN",
+   "at": "dimalukan",
+   "until": "p3-0.15",
+   "size": 160,
+   "reveal": "punch",
+   "fill": "red",
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SINDIRAN",
+   "at": "sindiran",
+   "until": "recap-0.1",
+   "size": 170,
+   "reveal": "punch",
+   "fill": "red",
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "JAGA KOMUNIKASI",
+   "at": "jagaKomunikasi",
+   "until": "finale.0+0.2",
+   "size": 128
+  },
+  {
+   "type": "ceiling3d",
+   "text": "UKHUWAH",
+   "at": "ukhuwah",
+   "until": "cta-0.1",
+   "size": 175,
+   "depth": 20,
+   "x": 560
+  },
+  {
+   "type": "label",
+   "text": "ELAKKAN",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 48
+  },
+  {
+   "type": "burst",
+   "at": 0.32,
+   "seed": "hook",
+   "spread": 460
+  },
+  {
+   "type": "chip",
+   "text": "BILA JUMPA KAWAN LAMA",
+   "at": "hookSub",
+   "until": "flashToBody-0.1"
+  },
+  {
+   "type": "counter",
+   "count": 3,
+   "label": "KEADAAN",
+   "at": "tigaKeadaan",
+   "until": "kawanLama+2.4"
+  },
+  {
+   "type": "burst",
+   "at": "kawanLama+0.2",
+   "seed": "kawan"
+  },
+  {
+   "type": "meter",
+   "label": "MOOD",
+   "good": "CANTIK",
+   "bad": "TAK CANTIK",
+   "at": "mood.0",
+   "until": "mood.1",
+   "dropAt": "mood.0+0.9"
+  },
+  {
+   "type": "badge",
+   "n": "01",
+   "caption": "SAPAAN TAK CANTIK",
+   "at": "p1",
+   "until": "p1End-0.1"
+  },
+  {
+   "type": "compare",
+   "at": "salam-0.05",
+   "until": "p1End-0.1",
+   "left": {
+    "title": "LEBIH BAIK",
+    "good": true,
+    "items": [
+     {
+      "text": "“Assalamualaikum, lama tak jumpa”",
+      "at": "salam"
+     }
+    ]
+   },
+   "right": {
+    "title": "ELAKKAN",
+    "items": [
+     {
+      "text": "Pekik panggil dia",
+      "at": "pekik"
+     },
+     {
+      "text": "Nama panggilan tak sesuai",
+      "at": "namaPanggilan"
+     }
+    ]
+   }
+  },
+  {
+   "type": "badge",
+   "n": "02",
+   "caption": "GURAU TAK KENA TEMPAT",
+   "at": "p2",
+   "until": "p3-0.15"
+  },
+  {
+   "type": "checklist",
+   "title": "BERGURAU? TENGOK DULU",
+   "at": "suasana-0.5",
+   "until": "contohGurau-0.15",
+   "items": [
+    {
+     "text": "SUASANA",
+     "at": "suasana"
+    },
+    {
+     "text": "TEMPAT",
+     "at": "tempat"
+    },
+    {
+     "text": "KEADAAN",
+     "at": "keadaan"
+    }
+   ]
+  },
+  {
+   "type": "chat",
+   "text": "Oi, besar je badan hang!",
+   "at": "contohGurau",
+   "until": "niat-0.4",
+   "stampAt": "contohGurau+1.9",
+   "stamp": "TAK KENA TEMPAT"
+  },
+  {
+   "type": "compare",
+   "at": "niat",
+   "until": "situasi+1.2",
+   "arrow": true,
+   "left": {
+    "title": "NIAT",
+    "good": true,
+    "items": [
+     {
+      "text": "Bergurau, sebab lama tak jumpa",
+      "at": "niat"
+     }
+    ]
+   },
+   "right": {
+    "title": "TAPI TENGOK",
+    "good": true,
+    "items": [
+     {
+      "text": "Keadaan & situasi setempat",
+      "at": "situasi"
+     }
+    ]
+   }
+  },
+  {
+   "type": "crowd",
+   "label": "Tengah ramai orang\n/ dalam majlis",
+   "at": "ramai",
+   "until": "diaibkan-0.3"
+  },
+  {
+   "type": "compare",
+   "at": "diaibkan-0.05",
+   "until": "p3-0.15",
+   "arrow": true,
+   "left": {
+    "title": "NIAT",
+    "good": true,
+    "items": [
+     {
+      "text": "Bergurau",
+      "at": "diaibkan-0.05"
+     }
+    ]
+   },
+   "right": {
+    "title": "KESAN",
+    "items": [
+     {
+      "text": "Rasa diaibkan",
+      "at": "diaibkan"
+     },
+     {
+      "text": "Dimalukan di khalayak",
+      "at": "dimalukan"
+     }
+    ]
+   }
+  },
+  {
+   "type": "badge",
+   "n": "03",
+   "caption": "SINDIRAN",
+   "at": "p3",
+   "until": "recap-0.1"
+  },
+  {
+   "type": "chip",
+   "text": "TENGOK KEADAAN",
+   "icon": "none",
+   "at": "p3+1.6",
+   "until": "recap-0.1"
+  },
+  {
+   "type": "label",
+   "text": "ELAKKAN 3 PERKARA INI",
+   "at": "recap+0.05",
+   "until": "brollSosial.0-0.1",
+   "y": 175,
+   "size": 40
+  },
+  {
+   "type": "recap",
+   "at": "recap+0.1",
+   "until": "brollSosial.0-0.1",
+   "items": [
+    "SAPAAN TAK CANTIK",
+    "GURAU TAK KENA TEMPAT",
+    "SINDIRAN"
+   ]
+  },
+  {
+   "type": "chip",
+   "text": "BILA JUMPA KAWAN LAMA",
+   "at": "recap+2.3",
+   "until": "brollSosial.0-0.1"
+  },
+  {
+   "type": "broll",
+   "kind": "social",
+   "from": "brollSosial.0",
+   "to": "brollSosial.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "HANYA BERBICARA DI",
+     "at": "brollSosial.0+0.3",
+     "until": "brollSosial.1-0.1",
+     "y": 230,
+     "size": 40
+    },
+    {
+     "type": "text3d",
+     "text": "MEDIA SOSIAL",
+     "at": "brollSosial.0+0.6",
+     "until": "brollSosial.1-0.1",
+     "y": 370,
+     "size": 150,
+     "depth": 18,
+     "rotX": 8
+    }
+   ]
+  },
+  {
+   "type": "broll",
+   "kind": "friends",
+   "from": "brollKawan.0",
+   "to": "brollKawan.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "BILA JUMPA",
+     "at": "brollKawan.0+0.2",
+     "until": "brollKawan.1-0.1",
+     "y": 260,
+     "size": 44
+    },
+    {
+     "type": "text3d",
+     "text": "KAWAN LAMA",
+     "at": "brollKawan.0+0.4",
+     "until": "brollKawan.1-0.1",
+     "y": 420,
+     "size": 190,
+     "depth": 20,
+     "rotX": 8
+    }
+   ]
+  },
+  {
+   "type": "burst",
+   "at": "jagaKomunikasi",
+   "y": 330,
+   "seed": "komunikasi",
+   "spread": 480
+  },
+  {
+   "type": "heart",
+   "at": "ukhuwah+0.1",
+   "until": "cta-0.1",
+   "size": 80
+  },
+  {
+   "type": "burst",
+   "at": "ukhuwah",
+   "seed": "ukhuwah",
+   "spread": 520,
+   "count": 44
+  },
+  {
+   "type": "progress",
+   "at": "ukhuwah+1.5",
+   "until": "cta-0.1",
+   "items": [
+    {
+     "text": "LEBIH BAIK",
+     "at": "ukhuwah+2.2"
+    },
+    {
+     "text": "LEBIH LANCAR",
+     "at": "lancar-0.1"
+    }
+   ]
+  }
+ ]
+}

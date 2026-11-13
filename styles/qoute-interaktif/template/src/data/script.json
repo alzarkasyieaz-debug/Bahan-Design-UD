@@ -1,0 +1,247 @@
+{
+ "source": "IMG_4022.MOV",
+ "maxChars": 48,
+ "gold": [
+  "assalamualaikum",
+  "baik",
+  "bergurau",
+  "diaibkan",
+  "dimalukan",
+  "elakkan",
+  "kawan",
+  "kawan-kawan",
+  "keadaan",
+  "kedua",
+  "ketiga",
+  "komunikasi",
+  "lama",
+  "lancar",
+  "media",
+  "mood",
+  "niat",
+  "panggilan",
+  "pekik",
+  "pertama",
+  "sapaan",
+  "sindiran",
+  "situasi",
+  "sosial",
+  "suasana",
+  "tempat",
+  "tiga",
+  "ukhuwah"
+ ],
+ "upper": [
+  "diaibkan",
+  "dimalukan",
+  "elakkan",
+  "kedua",
+  "ketiga",
+  "komunikasi",
+  "pertama",
+  "sindiran",
+  "ukhuwah"
+ ],
+ "chunks": [
+  [
+   "hook",
+   100.3,
+   102.6,
+   "Elakkan tiga perkara ini…"
+  ],
+  [
+   "hook",
+   102.6,
+   105.05,
+   "bila kita jumpa kawan-kawan yang lama kita tak jumpa."
+  ],
+  [
+   "s1",
+   1.8,
+   6.14,
+   "Tiga keadaan ketika mana kita nak memulakan percakapan,"
+  ],
+  [
+   "s1",
+   6.14,
+   12.08,
+   "ataupun nak memulakan bersembang dengan kawan yang kita dah lama tak jumpa."
+  ],
+  [
+   "s1",
+   12.08,
+   16.44,
+   "Tapi keadaan tersebut mengganggu ataupun menyebabkan…"
+  ],
+  [
+   "s1",
+   16.44,
+   21.98,
+   "mood jadi tak cantik untuk kita bersembang dalam kadar tempoh yang lama."
+  ],
+  [
+   "s1",
+   22.7,
+   25.34,
+   "Yang pertama adalah bila mana kita nak mulakan bercakap,"
+  ],
+  [
+   "s1",
+   25.34,
+   29.42,
+   "kita mulakan dengan panggilan ataupun sapaan yang tak cantik."
+  ],
+  [
+   "s2",
+   34.58,
+   36.14,
+   "“Assalamualaikum, lama tak jumpa.”"
+  ],
+  [
+   "s2",
+   36.14,
+   39.55,
+   "Itu lebih baik berbanding dengan kita pekik panggil dia pula."
+  ],
+  [
+   "s2",
+   39.95,
+   42.95,
+   "Tambahkan lagi kita panggil pula dengan nama panggilan yang tak sesuai dengan dia."
+  ],
+  [
+   "s3",
+   45.2,
+   50.62,
+   "Yang kedua pula, kita nak bergurau tapi tidak kena dengan suasana,"
+  ],
+  [
+   "s3",
+   50.95,
+   54.0,
+   "tidak kena dengan tempat ataupun tidak kena dengan keadaan."
+  ],
+  [
+   "s3",
+   54.88,
+   57.08,
+   "Contoh, dah lama tak jumpa, kan?"
+  ],
+  [
+   "s3",
+   57.08,
+   60.74,
+   "Bila jumpa pula: “Oi, besar je badan hang! Hang makan ke, hang melantak?”"
+  ],
+  [
+   "s4",
+   62.62,
+   68.6,
+   "Walaupun mungkin niat adalah untuk bergurau sebab lama tak jumpa,"
+  ],
+  [
+   "s4",
+   68.6,
+   74.56,
+   "tapi alangkah cantiknya, bergurau itu kita tengok pada keadaan, situasi setempat."
+  ],
+  [
+   "s4",
+   74.56,
+   77.96,
+   "Mungkin tengah-tengah ramai orang ke, dalam majlis ke, apakah."
+  ],
+  [
+   "s4",
+   78.44,
+   81.6,
+   "Jadi dia boleh menyebabkan orang itu akan rasa…"
+  ],
+  [
+   "s4",
+   81.6,
+   84.61,
+   "seperti diaibkan, dimalukan di khalayak ramai."
+  ],
+  [
+   "s4",
+   85.0,
+   86.74,
+   "Dan yang ketiga adalah sindiran."
+  ],
+  [
+   "s5",
+   89.68,
+   91.26,
+   "Kadang-kadang kita perlu tengok keadaan."
+  ],
+  [
+   "s6",
+   100.3,
+   102.6,
+   "Elakkan tiga perkara ini…"
+  ],
+  [
+   "s6",
+   102.6,
+   105.05,
+   "bila kita jumpa kawan-kawan yang lama kita tak jumpa,"
+  ],
+  [
+   "s7",
+   108.1,
+   112.8,
+   "ataupun kita hanya banyak berbicara melalui media sosial sahaja."
+  ],
+  [
+   "s7",
+   112.8,
+   116.02,
+   "Jadi bila jumpa kawan-kawan lama ni, apa salahnya?"
+  ],
+  [
+   "s7",
+   116.7,
+   118.5,
+   "Jaga komunikasi kita…"
+  ],
+  [
+   "s7",
+   118.5,
+   124.7,
+   "supaya kawan-kawan kita tadi itu tidak rasa seperti diaibkan, tidak rasa seperti dimalukan."
+  ],
+  [
+   "s7",
+   125.2,
+   131.35,
+   "Sebaliknya, jaga komunikasi supaya ukhuwah tadi itu berjalan dengan lebih baik dan lebih lancar lagi."
+  ]
+ ],
+ "unsure": [
+  [
+   29.42,
+   "[TIDAK PASTI ~29.4–34.6 s — contoh sapaan dalam loghat utara]"
+  ],
+  [
+   42.95,
+   "[~43.0–45.2 s — “…contoh. Itu yang pertama.” (tidak digunakan)]"
+  ],
+  [
+   60.74,
+   "[TIDAK PASTI ~60.7–62.6 s]"
+  ],
+  [
+   86.74,
+   "[~88.0–89.6 s — “Sindiran juga.” (ulangan, tidak digunakan)]"
+  ],
+  [
+   91.26,
+   "[TIDAK PASTI ~91.3–100.3 s — contoh sindiran dalam loghat utara]"
+  ],
+  [
+   105.05,
+   "[~105.1–108.1 s — “Lama, mungkin setahun, mungkin dua tahun. Lama tak jumpa.” (tidak digunakan)]"
+  ]
+ ]
+}
