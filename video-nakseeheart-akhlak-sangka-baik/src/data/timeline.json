@@ -1,0 +1,84 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "Z7.mp4 (78.90 s, 720x1280 HEVC -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    4.47
+   ],
+   "src": 64.45,
+   "srcEnd": 68.92
+  },
+  {
+   "id": "s1",
+   "out": [
+    4.47,
+    82.52
+   ],
+   "src": 0.8,
+   "srcEnd": 78.85
+  },
+  {
+   "id": "cta",
+   "out": [
+    82.52,
+    88.02
+   ],
+   "src": 77.6,
+   "srcEnd": 78.8,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 4.47,
+  "memupuk": 8.65,
+  "bersangkaBaik": 10.93,
+  "p1": 11.89,
+  "takdir": 15.69,
+  "sesuatu": 17.55,
+  "tanpaSangka": 20.19,
+  "p2": 22.15,
+  "positif": 25.35,
+  "sekecil": 29.61,
+  "sebesar": 31.03,
+  "p3": 32.93,
+  "membandingkan": 35.01,
+  "kelebihan": 36.01,
+  "kelemahan": 39.51,
+  "sangkaan": 45.59,
+  "menjarakkan": 46.91,
+  "sebaliknya": 49.91,
+  "baikiKelemahan": 52.03,
+  "kekhilafan": 55.55,
+  "lebihBaik": 57.89,
+  "terbaik": 59.61,
+  "climax": [
+   62.27,
+   72.67
+  ],
+  "memupukDiri": 64.19,
+  "permudahkan": 71.03,
+  "finale": [
+   72.67,
+   82.52
+  ],
+  "brollAturan": [
+   75.97,
+   82.4
+  ],
+  "menerima": 76.47,
+  "aturan": 77.55,
+  "ketentuan": 78.47,
+  "cta": 82.52,
+  "end": 88.02,
+  "followPulse": [
+   20.0,
+   45.0,
+   70.0
+  ]
+ }
+}

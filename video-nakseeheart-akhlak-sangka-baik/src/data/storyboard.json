@@ -1,0 +1,335 @@
+{
+ "meta": {
+  "title": "Memupuk Akhlak Bersangka Baik",
+  "compositionId": "NakSeeHeartAkhlakSangkaBaik",
+  "output": "nakseeheart-akhlak-sangka-baik",
+  "source": "Z7.mp4"
+ },
+ "layout": {
+  "face": {
+   "x": 540,
+   "y": 1100
+  },
+  "ceilingY": 330,
+  "ceilingTilt": -20,
+  "labelY": 190,
+  "cardY": 540,
+  "recapY": 370,
+  "subtitleY": 1500,
+  "lowerThirdY": 1600,
+  "hookFocusY": 1260,
+  "climaxFocusY": 1260
+ },
+ "camera": {
+  "punch": [
+   "p1",
+   "p2",
+   "p3",
+   "menjarakkan",
+   "permudahkan"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.16,
+   1.26
+  ],
+  "hookZoom": [
+   1.3,
+   1.16,
+   1.24
+  ]
+ },
+ "subtitleCalm": [
+  [
+   "sekecil-0.4",
+   "p3"
+  ],
+  [
+   "kelebihan-0.1",
+   "climax.0"
+  ]
+ ],
+ "music": {
+  "buildUp": "sebaliknya"
+ },
+ "sfx": [
+  {
+   "kind": "shimmer",
+   "at": "takdir",
+   "dur": 1.8,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "sesuatu"
+  },
+  {
+   "kind": "whooshDown",
+   "at": "menjarakkan",
+   "dur": 0.6,
+   "gain": 0.22
+  },
+  {
+   "kind": "impact",
+   "at": "lebihBaik-0.02",
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.22
+  },
+  {
+   "kind": "impact",
+   "at": "permudahkan-0.02",
+   "dur": 1.6,
+   "f": 48,
+   "gain": 0.28
+  },
+  {
+   "kind": "shimmer",
+   "at": "permudahkan+0.05",
+   "dur": 2.6,
+   "gain": 0.3
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "BERSANGKA BAIK, MAKA",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "y": 200,
+   "size": 42
+  },
+  {
+   "type": "text3d",
+   "text": "ALLAH PERMUDAHKAN",
+   "at": 0.3,
+   "until": "flashToBody-0.2",
+   "y": 340,
+   "size": 120,
+   "reveal": "punch",
+   "depth": 18,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 0.32,
+   "y": 340,
+   "seed": "hook",
+   "spread": 460
+  },
+  {
+   "type": "label",
+   "text": "MEMUPUK AKHLAK",
+   "at": "memupuk",
+   "until": "p1-0.1",
+   "size": 44
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BERSANGKA BAIK",
+   "at": "bersangkaBaik-0.6",
+   "until": "p1-0.15",
+   "size": 140,
+   "depth": 18
+  },
+  {
+   "type": "badge",
+   "n": "01",
+   "caption": "YAKIN PADA TAKDIR ALLAH",
+   "at": "p1",
+   "until": "p2-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "TAKDIR ALLAH",
+   "at": "takdir",
+   "until": "p2-0.15",
+   "size": 150,
+   "depth": 18
+  },
+  {
+   "type": "chip",
+   "text": "ADA SESUATU YANG ALLAH NAK BERI",
+   "icon": "none",
+   "at": "sesuatu",
+   "until": "p2-0.15"
+  },
+  {
+   "type": "badge",
+   "n": "02",
+   "caption": "BERFIKIRAN POSITIF",
+   "at": "p2",
+   "until": "p3-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "POSITIF",
+   "at": "positif",
+   "until": "p3-0.15",
+   "size": 190,
+   "depth": 20
+  },
+  {
+   "type": "checklist",
+   "title": "DALAM SETIAP PERKARA",
+   "at": "sekecil-0.4",
+   "until": "p3-0.15",
+   "items": [
+    {
+     "text": "YANG KECIL",
+     "at": "sekecil"
+    },
+    {
+     "text": "YANG BESAR",
+     "at": "sebesar"
+    }
+   ]
+  },
+  {
+   "type": "badge",
+   "n": "03",
+   "caption": "JANGAN MEMBANDINGKAN",
+   "at": "p3",
+   "until": "terbaik+0.6"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "JANGAN BANDINGKAN",
+   "at": "membandingkan",
+   "until": "sebaliknya-0.15",
+   "size": 125,
+   "fill": "red",
+   "depth": 16
+  },
+  {
+   "type": "compare",
+   "at": "kelebihan-0.1",
+   "until": "sangkaan-0.3",
+   "arrow": true,
+   "left": {
+    "title": "KELEBIHAN",
+    "items": [
+     {
+      "text": "Orang lain",
+      "at": "kelebihan"
+     }
+    ]
+   },
+   "right": {
+    "title": "KELEMAHAN",
+    "items": [
+     {
+      "text": "Diri kita",
+      "at": "kelemahan"
+     }
+    ]
+   }
+  },
+  {
+   "type": "meter",
+   "label": "HUBUNGAN",
+   "good": "DEKAT",
+   "bad": "MENJAUH",
+   "at": "sangkaan-0.2",
+   "until": "sebaliknya-0.15",
+   "dropAt": "menjarakkan"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "LEBIH BAIK",
+   "at": "lebihBaik",
+   "until": "terbaik+0.5",
+   "size": 180,
+   "depth": 20
+  },
+  {
+   "type": "progress",
+   "at": "baikiKelemahan-0.3",
+   "until": "terbaik+0.6",
+   "items": [
+    {
+     "text": "BAIKI KELEMAHAN",
+     "at": "baikiKelemahan"
+    },
+    {
+     "text": "BAIKI KEKHILAFAN",
+     "at": "kekhilafan"
+    }
+   ]
+  },
+  {
+   "type": "label",
+   "text": "MEMUPUK BERSANGKA BAIK",
+   "at": "terbaik+0.6",
+   "until": "climax.0+1.6",
+   "y": 175,
+   "size": 40
+  },
+  {
+   "type": "recap",
+   "at": "terbaik+0.65",
+   "until": "climax.0+1.6",
+   "good": true,
+   "items": [
+    "YAKIN PADA TAKDIR ALLAH",
+    "BERFIKIRAN POSITIF",
+    "JANGAN MEMBANDINGKAN"
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERMUDAHKAN",
+   "at": "permudahkan",
+   "until": "finale.0+0.2",
+   "size": 170,
+   "depth": 20
+  },
+  {
+   "type": "burst",
+   "at": "permudahkan",
+   "seed": "mudah",
+   "spread": 480
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "brollAturan.0",
+   "to": "brollAturan.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "MENERIMA SETIAP",
+     "at": "menerima",
+     "until": "brollAturan.1-0.1",
+     "y": 290,
+     "size": 44
+    },
+    {
+     "type": "text3d",
+     "text": "ATURAN & KETENTUAN",
+     "at": "aturan",
+     "until": "brollAturan.1-0.1",
+     "y": 440,
+     "size": 118,
+     "depth": 18,
+     "rotX": 8
+    },
+    {
+     "type": "label",
+     "text": "DARIPADA ALLAH",
+     "at": "ketentuan+0.4",
+     "until": "brollAturan.1-0.1",
+     "y": 580,
+     "size": 44
+    },
+    {
+     "type": "burst",
+     "at": "aturan+0.2",
+     "y": 440,
+     "seed": "aturan",
+     "spread": 480
+    }
+   ]
+  }
+ ]
+}
