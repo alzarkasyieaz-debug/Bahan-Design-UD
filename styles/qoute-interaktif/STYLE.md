@@ -111,6 +111,13 @@ Sepanjang video, **kelihatan sejak bingkai pertama**: kaca gelap, ikon TikTok, *
 - `tag` bertanda petik **hanya** untuk ucapan tepat; parafrasa ditulis tanpa tanda petik.
 - `faceY` melaraskan kedudukan wajah jika wajah dalam bingkai cover lebih tinggi/rendah daripada `layout.face`.
 
+### Gred warna cover (selaras untuk semua video)
+`scripts/cover.sh` menjalankan `scripts/grade_frame.py` secara automatik pada bingkai cover:
+1. imbangan putih daripada piksel neutral terang (kopiah/dinding/siling), kemudian sedikit hangat;
+2. pendedahan wajah dinormalkan (luminans median wajah = 0.50);
+3. look NakSeeHeart: S-curve lembut, highlight emas hangat (#D8B46A), bayang teal (#406E73), ketepuan wajah dinormalkan.
+Komponen cover tidak lagi menggunakan penapis CSS sendiri, jadi semua cover mendapat rupa warna yang sama.
+
 ### Cover gaya **Poster** (thumbnail berani)
 `npm run cover -- poster` (atau `bash scripts/cover.sh poster`) → `out/<output>-poster.{png,jpg}` daripada `storyboard.json → poster`:
 `{ "icon": "chat|heart|check|star", "top": "ORANG KOMEN", "mid": "HASIL KERJA", "last": "KITA?", "banner": "Jangan cepat down!", "num": "3", "numLabel": "Cara Hadapi", "frame"?, "headTop", "chinY", "faceX", "maxScale"? }`

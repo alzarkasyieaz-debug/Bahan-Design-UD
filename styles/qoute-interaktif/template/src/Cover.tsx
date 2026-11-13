@@ -24,7 +24,7 @@ export const Cover: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: C.charcoal, overflow: 'hidden' }}>
       <AbsoluteFill style={{ transform: `translate(${tx}px, ${ty}px) scale(${s})`, transformOrigin: '0 0' }}>
-        <Img src={staticFile('media/cover-frame.jpg')} style={{ width: 1080, height: 1920, objectFit: 'cover', filter: 'contrast(1.1) saturate(1.05) brightness(0.98) sepia(0.1)' }} />
+        <Img src={staticFile('media/cover-frame.jpg')} style={{ width: 1080, height: 1920, objectFit: 'cover', filter: 'none' }} />
       </AbsoluteFill>
       {/* gred: atas gelap (ruang tajuk), cahaya emas belakang tajuk, bawah gelap (jenama) */}
       <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(14,15,18,0.92) 0%, rgba(14,15,18,0.82) 22%, rgba(14,15,18,0.35) 38%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 70%, rgba(14,15,18,0.85) 92%)' }} />

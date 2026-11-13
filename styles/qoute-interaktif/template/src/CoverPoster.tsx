@@ -157,7 +157,7 @@ export const CoverPoster: React.FC = () => {
             width: 1080,
             height: 1920,
             objectFit: 'cover',
-            filter: 'contrast(1.1) saturate(1.15) brightness(1.14)',
+            filter: 'none', // gred warna standard dibakar oleh tools/grade_frame.py
             WebkitMaskImage: 'linear-gradient(90deg, transparent 0%, black 13%, black 87%, transparent 100%)',
             maskImage: 'linear-gradient(90deg, transparent 0%, black 13%, black 87%, transparent 100%)',
           }}
