@@ -1,0 +1,449 @@
+{
+ "meta": {
+  "title": "3 Tips Bila Hasil Kerja Dikomen",
+  "compositionId": "NakSeeHeartKomenKreatif",
+  "output": "nakseeheart-komen-kerja-kreatif",
+  "source": "Z11.mp4"
+ },
+ "layout": {
+  "face": {
+   "x": 650,
+   "y": 900
+  },
+  "ceilingY": 300,
+  "ceilingTilt": -20,
+  "labelY": 185,
+  "cardY": 505,
+  "recapY": 330,
+  "subtitleY": 1478,
+  "lowerThirdY": 1580,
+  "hookFocusY": 1080,
+  "climaxFocusY": 1080
+ },
+ "camera": {
+  "punch": [
+   "p1",
+   "p2",
+   "p3",
+   "hebat",
+   "resetSemangat"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.16,
+   1.26
+  ],
+  "hookZoom": [
+   1.3,
+   1.16,
+   1.24
+  ]
+ },
+ "subtitleCalm": [
+  [
+   "video-0.3",
+   "p1"
+  ],
+  [
+   "mata",
+   "p2"
+  ],
+  [
+   "permulaan-0.3",
+   "p3"
+  ],
+  [
+   "nafas-0.3",
+   "climax.0"
+  ],
+  [
+   "mampu",
+   "cta"
+  ]
+ ],
+ "music": {
+  "buildUp": "tidur"
+ },
+ "sfx": [
+  {
+   "kind": "pop",
+   "at": "tigaTips-0.2"
+  },
+  {
+   "kind": "whooshDown",
+   "at": "down",
+   "dur": 0.6,
+   "gain": 0.22
+  },
+  {
+   "kind": "pop",
+   "at": "tigaPerkara"
+  },
+  {
+   "kind": "shimmer",
+   "at": "terimaKasih",
+   "dur": 1.8,
+   "gain": 0.2
+  },
+  {
+   "kind": "impact",
+   "at": "hebat-0.02",
+   "dur": 1.4,
+   "f": 52,
+   "gain": 0.25
+  },
+  {
+   "kind": "shimmer",
+   "at": "best",
+   "dur": 1.6,
+   "gain": 0.2
+  },
+  {
+   "kind": "impact",
+   "at": "resetSemangat-0.02",
+   "dur": 1.6,
+   "f": 48,
+   "gain": 0.28
+  },
+  {
+   "kind": "shimmer",
+   "at": "bersemangatAkhir",
+   "dur": 2.6,
+   "gain": 0.3
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "BILA HASIL KERJA DIKOMEN",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "y": 200,
+   "size": 42
+  },
+  {
+   "type": "text3d",
+   "text": "AKU LEBIH HEBAT",
+   "at": 0.3,
+   "until": "flashToBody-0.2",
+   "y": 340,
+   "size": 135,
+   "reveal": "punch",
+   "depth": 18,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 0.32,
+   "y": 340,
+   "seed": "hook",
+   "spread": 460
+  },
+  {
+   "type": "counter",
+   "count": 3,
+   "label": "TIPS",
+   "at": "tigaTips-0.2",
+   "until": "brollKomen.0"
+  },
+  {
+   "type": "broll",
+   "kind": "social",
+   "from": "brollKomen.0",
+   "to": "brollKomen.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "BILA ORANG BERI",
+     "at": "komen-0.2",
+     "until": "brollKomen.1-0.1",
+     "y": 230,
+     "size": 42
+    },
+    {
+     "type": "text3d",
+     "text": "KOMEN & PANDANGAN",
+     "at": "komen",
+     "until": "brollKomen.1-0.1",
+     "y": 370,
+     "size": 118,
+     "depth": 18,
+     "rotX": 8
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KERJA KREATIF",
+   "at": "kreatif",
+   "until": "down-0.15",
+   "size": 150,
+   "depth": 18
+  },
+  {
+   "type": "checklist",
+   "title": "SAMA ADA",
+   "at": "video-0.3",
+   "until": "down-0.2",
+   "items": [
+    {
+     "text": "VIDEO",
+     "at": "video"
+    },
+    {
+     "text": "FOTO",
+     "at": "foto"
+    },
+    {
+     "text": "GAMBAR",
+     "at": "gambar"
+    },
+    {
+     "text": "GRAFIK",
+     "at": "grafik"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "RASA DOWN",
+   "at": "down",
+   "until": "tigaPerkara-0.15",
+   "size": 170,
+   "fill": "red",
+   "depth": 18
+  },
+  {
+   "type": "meter",
+   "label": "SEMANGAT",
+   "good": "TINGGI",
+   "bad": "DOWN",
+   "at": "down-0.6",
+   "until": "tigaPerkara-0.15",
+   "dropAt": "down"
+  },
+  {
+   "type": "counter",
+   "count": 3,
+   "label": "TIPS",
+   "at": "tigaPerkara",
+   "until": "p1-0.1"
+  },
+  {
+   "type": "badge",
+   "n": "01",
+   "caption": "TERIMA DENGAN BAIK",
+   "at": "p1",
+   "until": "p2-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "EYE CONTACT",
+   "at": "mata",
+   "until": "terimaKasih-0.15",
+   "size": 150,
+   "depth": 18
+  },
+  {
+   "type": "checklist",
+   "title": "LIHAT MATA DIA",
+   "at": "mata",
+   "until": "terimaKasih-0.2",
+   "items": [
+    {
+     "text": "PENUH KASIH SAYANG",
+     "at": "kasihSayang"
+    },
+    {
+     "text": "EYE CONTACT",
+     "at": "eyeContact"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "TERIMA KASIH",
+   "at": "terimaKasih",
+   "until": "p2-0.15",
+   "size": 165,
+   "depth": 18
+  },
+  {
+   "type": "quote",
+   "text": "“Terima kasih atas pandangan. InsyaAllah saya akan cuba baiki.”",
+   "at": "terimaKasih+0.2",
+   "until": "p2-0.15",
+   "y": 480,
+   "size": 44
+  },
+  {
+   "type": "badge",
+   "n": "02",
+   "caption": "SENYUM DI CERMIN",
+   "at": "p2",
+   "until": "p3-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "CERMIN",
+   "at": "cermin",
+   "until": "hebat-0.15",
+   "size": 180,
+   "depth": 18
+  },
+  {
+   "type": "checklist",
+   "title": "TENGOK CERMIN",
+   "at": "cermin",
+   "until": "hebat-0.2",
+   "items": [
+    {
+     "text": "SENYUM",
+     "at": "senyum"
+    },
+    {
+     "text": "SEBUT",
+     "at": "senyum+1.4"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "AKU LEBIH HEBAT",
+   "at": "hebat",
+   "until": "p3-0.15",
+   "size": 135,
+   "depth": 18
+  },
+  {
+   "type": "progress",
+   "at": "permulaan-0.3",
+   "until": "p3-0.15",
+   "items": [
+    {
+     "text": "BARU PERMULAAN",
+     "at": "permulaan"
+    },
+    {
+     "text": "BANYAK LAGI SKILL",
+     "at": "skill"
+    }
+   ]
+  },
+  {
+   "type": "badge",
+   "n": "03",
+   "caption": "TENANGKAN DIRI",
+   "at": "p3",
+   "until": "climax.0-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PALING BEST",
+   "at": "best",
+   "until": "bersemangat-0.15",
+   "size": 160,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BERSEMANGAT",
+   "at": "bersemangat",
+   "until": "nafas-0.15",
+   "size": 160,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "TARIK NAFAS",
+   "at": "nafas",
+   "until": "pejam-0.15",
+   "size": 160,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PEJAM MATA",
+   "at": "pejam",
+   "until": "tidur-0.15",
+   "size": 160,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "TIDUR TENANG",
+   "at": "tidur",
+   "until": "climax.0-0.1",
+   "size": 160,
+   "depth": 18
+  },
+  {
+   "type": "checklist",
+   "title": "CARANYA",
+   "at": "nafas-0.3",
+   "until": "takPerlu-0.2",
+   "items": [
+    {
+     "text": "TARIK NAFAS ×3",
+     "at": "nafas"
+    },
+    {
+     "text": "PEJAM MATA",
+     "at": "pejam"
+    },
+    {
+     "text": "TIDUR",
+     "at": "tidur"
+    }
+   ]
+  },
+  {
+   "type": "chip",
+   "text": "LUPAKAN KOMEN YANG BUAT DOWN",
+   "icon": "none",
+   "at": "takPerlu",
+   "until": "climax.0-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "RESET",
+   "at": "resetSemangat",
+   "until": "finale.0+0.2",
+   "size": 210,
+   "depth": 22
+  },
+  {
+   "type": "burst",
+   "at": "resetSemangat",
+   "seed": "reset",
+   "spread": 480
+  },
+  {
+   "type": "label",
+   "text": "3 TIPS BILA DIKOMEN",
+   "at": "mampu",
+   "until": "cta-0.1",
+   "y": 175,
+   "size": 40
+  },
+  {
+   "type": "recap",
+   "at": "mampu+0.05",
+   "until": "cta-0.1",
+   "good": true,
+   "items": [
+    "TERIMA DENGAN BAIK",
+    "SENYUM DI CERMIN",
+    "TENANGKAN DIRI"
+   ]
+  },
+  {
+   "type": "burst",
+   "at": "bersemangatAkhir",
+   "seed": "semangat",
+   "spread": 520,
+   "count": 44
+  }
+ ]
+}

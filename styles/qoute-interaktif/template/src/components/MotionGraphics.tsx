@@ -163,7 +163,7 @@ export const Checklist: React.FC<{ title: string; at: number; until: number; ite
           return (
             <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 16px', borderRadius: 16, border: `2px solid ${on ? C.gold : 'rgba(255,255,255,0.18)'}`, background: on ? 'rgba(216,180,106,0.16)' : 'rgba(255,255,255,0.04)', transform: `scale(${on ? 0.9 + 0.1 * p : 0.92})`, boxShadow: on ? `0 0 ${18 * p}px rgba(216,180,106,0.5)` : 'none' }}>
               <IconCheck size={32} p={on ? p : 0} />
-              <span style={{ fontFamily: FONT.sans, fontWeight: 800, fontSize: 30, color: on ? C.white : 'rgba(255,255,255,0.45)' }}>{it.text}</span>
+              <span style={{ fontFamily: FONT.sans, fontWeight: 800, fontSize: 30, color: on ? C.white : 'rgba(255,255,255,0.45)', whiteSpace: 'nowrap' }}>{it.text}</span>
             </div>
           );
         })}

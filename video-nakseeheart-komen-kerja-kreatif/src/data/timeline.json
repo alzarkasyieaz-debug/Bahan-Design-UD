@@ -1,0 +1,139 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "Z11.mp4 (126.67 s, 720x1280 HEVC -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    4.95
+   ],
+   "src": 73.4,
+   "srcEnd": 78.35
+  },
+  {
+   "id": "s1",
+   "out": [
+    4.95,
+    6.15
+   ],
+   "src": 2.2,
+   "srcEnd": 3.4
+  },
+  {
+   "id": "s2",
+   "out": [
+    6.15,
+    58.22
+   ],
+   "src": 4.4,
+   "srcEnd": 56.47
+  },
+  {
+   "id": "s3",
+   "out": [
+    58.22,
+    58.87
+   ],
+   "src": 58.1,
+   "srcEnd": 58.75
+  },
+  {
+   "id": "s4",
+   "out": [
+    58.87,
+    74.15
+   ],
+   "src": 66.95,
+   "srcEnd": 82.23
+  },
+  {
+   "id": "s5",
+   "out": [
+    74.15,
+    100.57
+   ],
+   "src": 84.67,
+   "srcEnd": 111.09
+  },
+  {
+   "id": "s6",
+   "out": [
+    100.57,
+    112.56
+   ],
+   "src": 112.95,
+   "srcEnd": 124.94
+  },
+  {
+   "id": "cta",
+   "out": [
+    112.56,
+    118.06
+   ],
+   "src": 123.8,
+   "srcEnd": 124.9,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 4.95,
+  "tigaTips": 5.17,
+  "brollKomen": [
+   8.75,
+   16.05
+  ],
+  "komen": 9.25,
+  "hasilKerja": 12.89,
+  "kreatif": 16.27,
+  "video": 17.29,
+  "foto": 18.35,
+  "gambar": 21.49,
+  "grafik": 24.65,
+  "down": 30.21,
+  "penat": 31.65,
+  "tigaPerkara": 35.49,
+  "p1": 37.37,
+  "mata": 44.55,
+  "kasihSayang": 46.13,
+  "eyeContact": 48.07,
+  "terimaKasih": 51.01,
+  "doakan": 56.67,
+  "p2": 58.32,
+  "cermin": 59.3,
+  "senyum": 61.26,
+  "hebat": 65.7,
+  "permulaan": 68.68,
+  "skill": 70.36,
+  "lebihBaik": 73.16,
+  "p3": 74.66,
+  "best": 76.08,
+  "bersemangat": 80.58,
+  "nafas": 84.98,
+  "pejam": 89.62,
+  "tidur": 94.06,
+  "takPerlu": 95.87,
+  "climax": [
+   100.57,
+   106.22
+  ],
+  "resetSemangat": 102.84,
+  "resetSkill": 104.4,
+  "finale": [
+   106.22,
+   112.56
+  ],
+  "mampu": 106.9,
+  "bersemangatAkhir": 110.32,
+  "cta": 112.56,
+  "end": 118.06,
+  "followPulse": [
+   20.0,
+   45.0,
+   70.0,
+   95.0
+  ]
+ }
+}

@@ -1,0 +1,1843 @@
+[
+ {
+  "start": 1.5799999999999965,
+  "end": 2.8,
+  "text": " Tiga tips",
+  "words": [
+   {
+    "w": " Tiga",
+    "s": 1.5799999999999965,
+    "e": 2.42
+   },
+   {
+    "w": " tips",
+    "s": 2.42,
+    "e": 2.8
+   }
+  ]
+ },
+ {
+  "start": 3.9999999999999964,
+  "end": 7.8,
+  "text": " Apabila kita berhadapan dengan orang yang memberi komen",
+  "words": [
+   {
+    "w": " Apabila",
+    "s": 3.9999999999999964,
+    "e": 4.84
+   },
+   {
+    "w": " kita",
+    "s": 4.84,
+    "e": 5.02
+   },
+   {
+    "w": " berhadapan",
+    "s": 5.02,
+    "e": 6.0
+   },
+   {
+    "w": " dengan",
+    "s": 6.0,
+    "e": 6.38
+   },
+   {
+    "w": " orang",
+    "s": 6.38,
+    "e": 6.76
+   },
+   {
+    "w": " yang",
+    "s": 6.76,
+    "e": 7.02
+   },
+   {
+    "w": " memberi",
+    "s": 7.02,
+    "e": 7.5
+   },
+   {
+    "w": " komen",
+    "s": 7.5,
+    "e": 7.8
+   }
+  ]
+ },
+ {
+  "start": 7.8,
+  "end": 9.42,
+  "text": " Yang memberi pandangan",
+  "words": [
+   {
+    "w": " Yang",
+    "s": 7.8,
+    "e": 8.32
+   },
+   {
+    "w": " memberi",
+    "s": 8.32,
+    "e": 8.82
+   },
+   {
+    "w": " pandangan",
+    "s": 8.82,
+    "e": 9.42
+   }
+  ]
+ },
+ {
+  "start": 9.42,
+  "end": 12.4,
+  "text": " Apabila melihat hasil kerja kita",
+  "words": [
+   {
+    "w": " Apabila",
+    "s": 9.42,
+    "e": 10.56
+   },
+   {
+    "w": " melihat",
+    "s": 10.56,
+    "e": 11.14
+   },
+   {
+    "w": " hasil",
+    "s": 11.14,
+    "e": 11.74
+   },
+   {
+    "w": " kerja",
+    "s": 11.74,
+    "e": 12.18
+   },
+   {
+    "w": " kita",
+    "s": 12.18,
+    "e": 12.4
+   }
+  ]
+ },
+ {
+  "start": 12.4,
+  "end": 14.94,
+  "text": " Terutama kerja-kerja berkaitan dengan kreatif",
+  "words": [
+   {
+    "w": " Terutama",
+    "s": 12.4,
+    "e": 12.94
+   },
+   {
+    "w": " kerja",
+    "s": 12.94,
+    "e": 13.48
+   },
+   {
+    "w": "-kerja",
+    "s": 13.48,
+    "e": 13.76
+   },
+   {
+    "w": " berkaitan",
+    "s": 13.76,
+    "e": 14.36
+   },
+   {
+    "w": " dengan",
+    "s": 14.36,
+    "e": 14.52
+   },
+   {
+    "w": " kreatif",
+    "s": 14.52,
+    "e": 14.94
+   }
+  ]
+ },
+ {
+  "start": 14.94,
+  "end": 16.6,
+  "text": " Sama ada video editing",
+  "words": [
+   {
+    "w": " Sama",
+    "s": 14.94,
+    "e": 15.26
+   },
+   {
+    "w": " ada",
+    "s": 15.26,
+    "e": 15.54
+   },
+   {
+    "w": " video",
+    "s": 15.54,
+    "e": 16.18
+   },
+   {
+    "w": " editing",
+    "s": 16.18,
+    "e": 16.6
+   }
+  ]
+ },
+ {
+  "start": 16.6,
+  "end": 18.44,
+  "text": " Foto editing",
+  "words": [
+   {
+    "w": " Foto",
+    "s": 16.6,
+    "e": 18.0
+   },
+   {
+    "w": " editing",
+    "s": 18.0,
+    "e": 18.44
+   }
+  ]
+ },
+ {
+  "start": 18.98,
+  "end": 21.36,
+  "text": " Ataupun gambar yang kita ambil",
+  "words": [
+   {
+    "w": " Ataupun",
+    "s": 18.98,
+    "e": 19.74
+   },
+   {
+    "w": " gambar",
+    "s": 19.74,
+    "e": 20.58
+   },
+   {
+    "w": " yang",
+    "s": 20.58,
+    "e": 20.66
+   },
+   {
+    "w": " kita",
+    "s": 20.66,
+    "e": 20.82
+   },
+   {
+    "w": " ambil",
+    "s": 20.82,
+    "e": 21.36
+   }
+  ]
+ },
+ {
+  "start": 21.36,
+  "end": 24.24,
+  "text": " Ataupun desain grafik yang kita hasilkan",
+  "words": [
+   {
+    "w": " Ataupun",
+    "s": 21.36,
+    "e": 22.26
+   },
+   {
+    "w": " desain",
+    "s": 22.26,
+    "e": 22.9
+   },
+   {
+    "w": " grafik",
+    "s": 22.9,
+    "e": 23.28
+   },
+   {
+    "w": " yang",
+    "s": 23.28,
+    "e": 23.42
+   },
+   {
+    "w": " kita",
+    "s": 23.42,
+    "e": 23.62
+   },
+   {
+    "w": " hasilkan",
+    "s": 23.62,
+    "e": 24.24
+   }
+  ]
+ },
+ {
+  "start": 24.24,
+  "end": 27.36,
+  "text": " Kadang-kadang komen ataupun pandangan mereka tersebut",
+  "words": [
+   {
+    "w": " Kadang",
+    "s": 24.24,
+    "e": 24.94
+   },
+   {
+    "w": "-kadang",
+    "s": 24.94,
+    "e": 25.22
+   },
+   {
+    "w": " komen",
+    "s": 25.22,
+    "e": 25.58
+   },
+   {
+    "w": " ataupun",
+    "s": 25.58,
+    "e": 26.28
+   },
+   {
+    "w": " pandangan",
+    "s": 26.28,
+    "e": 26.66
+   },
+   {
+    "w": " mereka",
+    "s": 26.66,
+    "e": 26.9
+   },
+   {
+    "w": " tersebut",
+    "s": 26.9,
+    "e": 27.36
+   }
+  ]
+ },
+ {
+  "start": 27.36,
+  "end": 28.88,
+  "text": " Boleh menyebabkan kita rasa down",
+  "words": [
+   {
+    "w": " Boleh",
+    "s": 27.36,
+    "e": 27.66
+   },
+   {
+    "w": " menyebabkan",
+    "s": 27.66,
+    "e": 28.02
+   },
+   {
+    "w": " kita",
+    "s": 28.02,
+    "e": 28.24
+   },
+   {
+    "w": " rasa",
+    "s": 28.24,
+    "e": 28.46
+   },
+   {
+    "w": " down",
+    "s": 28.46,
+    "e": 28.88
+   }
+  ]
+ },
+ {
+  "start": 28.88,
+  "end": 30.5,
+  "text": " Kita rasa penat",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 28.88,
+    "e": 29.52
+   },
+   {
+    "w": " rasa",
+    "s": 29.52,
+    "e": 29.9
+   },
+   {
+    "w": " penat",
+    "s": 29.9,
+    "e": 30.5
+   }
+  ]
+ },
+ {
+  "start": 30.5,
+  "end": 32.5,
+  "text": " Tapi tidak berbaloi dan seumpamanya",
+  "words": [
+   {
+    "w": " Tapi",
+    "s": 30.5,
+    "e": 30.92
+   },
+   {
+    "w": " tidak",
+    "s": 30.92,
+    "e": 31.28
+   },
+   {
+    "w": " berbaloi",
+    "s": 31.28,
+    "e": 31.76
+   },
+   {
+    "w": " dan",
+    "s": 31.76,
+    "e": 31.88
+   },
+   {
+    "w": " seumpamanya",
+    "s": 31.88,
+    "e": 32.5
+   }
+  ]
+ },
+ {
+  "start": 32.5,
+  "end": 34.76,
+  "text": " Jadi kita lihat tiga perkara ini",
+  "words": [
+   {
+    "w": " Jadi",
+    "s": 32.5,
+    "e": 33.22
+   },
+   {
+    "w": " kita",
+    "s": 33.22,
+    "e": 33.5
+   },
+   {
+    "w": " lihat",
+    "s": 33.5,
+    "e": 33.74
+   },
+   {
+    "w": " tiga",
+    "s": 33.74,
+    "e": 34.18
+   },
+   {
+    "w": " perkara",
+    "s": 34.18,
+    "e": 34.56
+   },
+   {
+    "w": " ini",
+    "s": 34.56,
+    "e": 34.76
+   }
+  ]
+ },
+ {
+  "start": 34.76,
+  "end": 35.48,
+  "text": " Tiga tips ini",
+  "words": [
+   {
+    "w": " Tiga",
+    "s": 34.76,
+    "e": 35.0
+   },
+   {
+    "w": " tips",
+    "s": 35.0,
+    "e": 35.3
+   },
+   {
+    "w": " ini",
+    "s": 35.3,
+    "e": 35.48
+   }
+  ]
+ },
+ {
+  "start": 35.48,
+  "end": 36.36,
+  "text": " Yang pertama adalah",
+  "words": [
+   {
+    "w": " Yang",
+    "s": 35.48,
+    "e": 35.62
+   },
+   {
+    "w": " pertama",
+    "s": 35.62,
+    "e": 35.96
+   },
+   {
+    "w": " adalah",
+    "s": 35.96,
+    "e": 36.36
+   }
+  ]
+ },
+ {
+  "start": 36.36,
+  "end": 38.12,
+  "text": " Bila mana dia komen kita",
+  "words": [
+   {
+    "w": " Bila",
+    "s": 36.36,
+    "e": 37.08
+   },
+   {
+    "w": " mana",
+    "s": 37.08,
+    "e": 37.26
+   },
+   {
+    "w": " dia",
+    "s": 37.26,
+    "e": 37.44
+   },
+   {
+    "w": " komen",
+    "s": 37.44,
+    "e": 37.78
+   },
+   {
+    "w": " kita",
+    "s": 37.78,
+    "e": 38.12
+   }
+  ]
+ },
+ {
+  "start": 38.12,
+  "end": 41.68,
+  "text": " Dia bagi pandangan tentang hasil kerja kita",
+  "words": [
+   {
+    "w": " Dia",
+    "s": 38.12,
+    "e": 39.04
+   },
+   {
+    "w": " bagi",
+    "s": 39.04,
+    "e": 39.38
+   },
+   {
+    "w": " pandangan",
+    "s": 39.38,
+    "e": 39.86
+   },
+   {
+    "w": " tentang",
+    "s": 39.86,
+    "e": 40.52
+   },
+   {
+    "w": " hasil",
+    "s": 40.52,
+    "e": 41.16
+   },
+   {
+    "w": " kerja",
+    "s": 41.16,
+    "e": 41.46
+   },
+   {
+    "w": " kita",
+    "s": 41.46,
+    "e": 41.68
+   }
+  ]
+ },
+ {
+  "start": 41.68,
+  "end": 45.38,
+  "text": " Kita lihat mata dia dengan penuh rasa kasih sayang",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 41.68,
+    "e": 42.36
+   },
+   {
+    "w": " lihat",
+    "s": 42.36,
+    "e": 42.8
+   },
+   {
+    "w": " mata",
+    "s": 42.8,
+    "e": 43.1
+   },
+   {
+    "w": " dia",
+    "s": 43.1,
+    "e": 43.48
+   },
+   {
+    "w": " dengan",
+    "s": 43.48,
+    "e": 43.78
+   },
+   {
+    "w": " penuh",
+    "s": 43.78,
+    "e": 44.16
+   },
+   {
+    "w": " rasa",
+    "s": 44.16,
+    "e": 44.38
+   },
+   {
+    "w": " kasih",
+    "s": 44.38,
+    "e": 44.74
+   },
+   {
+    "w": " sayang",
+    "s": 44.74,
+    "e": 45.38
+   }
+  ]
+ },
+ {
+  "start": 45.38,
+  "end": 47.74,
+  "text": " Biar ada eye contact kita dengan dia",
+  "words": [
+   {
+    "w": " Biar",
+    "s": 45.38,
+    "e": 46.12
+   },
+   {
+    "w": " ada",
+    "s": 46.12,
+    "e": 46.32
+   },
+   {
+    "w": " eye",
+    "s": 46.32,
+    "e": 46.54
+   },
+   {
+    "w": " contact",
+    "s": 46.54,
+    "e": 46.9
+   },
+   {
+    "w": " kita",
+    "s": 46.9,
+    "e": 47.18
+   },
+   {
+    "w": " dengan",
+    "s": 47.18,
+    "e": 47.46
+   },
+   {
+    "w": " dia",
+    "s": 47.46,
+    "e": 47.74
+   }
+  ]
+ },
+ {
+  "start": 47.74,
+  "end": 49.26,
+  "text": " Sambil itu kita sebut",
+  "words": [
+   {
+    "w": " Sambil",
+    "s": 47.74,
+    "e": 48.64
+   },
+   {
+    "w": " itu",
+    "s": 48.64,
+    "e": 48.76
+   },
+   {
+    "w": " kita",
+    "s": 48.76,
+    "e": 48.94
+   },
+   {
+    "w": " sebut",
+    "s": 48.94,
+    "e": 49.26
+   }
+  ]
+ },
+ {
+  "start": 49.26,
+  "end": 51.82,
+  "text": " Terima kasih atas pandangan yang diberikan",
+  "words": [
+   {
+    "w": " Terima",
+    "s": 49.26,
+    "e": 49.86
+   },
+   {
+    "w": " kasih",
+    "s": 49.86,
+    "e": 50.34
+   },
+   {
+    "w": " atas",
+    "s": 50.34,
+    "e": 50.88
+   },
+   {
+    "w": " pandangan",
+    "s": 50.88,
+    "e": 51.28
+   },
+   {
+    "w": " yang",
+    "s": 51.28,
+    "e": 51.42
+   },
+   {
+    "w": " diberikan",
+    "s": 51.42,
+    "e": 51.82
+   }
+  ]
+ },
+ {
+  "start": 51.82,
+  "end": 53.56,
+  "text": " InsyaAllah saya akan cuba baiki",
+  "words": [
+   {
+    "w": " InsyaAllah",
+    "s": 51.82,
+    "e": 52.5
+   },
+   {
+    "w": " saya",
+    "s": 52.5,
+    "e": 52.88
+   },
+   {
+    "w": " akan",
+    "s": 52.88,
+    "e": 53.06
+   },
+   {
+    "w": " cuba",
+    "s": 53.06,
+    "e": 53.26
+   },
+   {
+    "w": " baiki",
+    "s": 53.26,
+    "e": 53.56
+   }
+  ]
+ },
+ {
+  "start": 53.56,
+  "end": 54.92,
+  "text": " Terima kasih ya",
+  "words": [
+   {
+    "w": " Terima",
+    "s": 53.56,
+    "e": 54.26
+   },
+   {
+    "w": " kasih",
+    "s": 54.26,
+    "e": 54.62
+   },
+   {
+    "w": " ya",
+    "s": 54.62,
+    "e": 54.92
+   }
+  ]
+ },
+ {
+  "start": 54.92,
+  "end": 56.18,
+  "text": " Doakan saya",
+  "words": [
+   {
+    "w": " Doakan",
+    "s": 54.92,
+    "e": 55.78
+   },
+   {
+    "w": " saya",
+    "s": 55.78,
+    "e": 56.18
+   }
+  ]
+ },
+ {
+  "start": 56.18,
+  "end": 57.14,
+  "text": " Itu yang pertama",
+  "words": [
+   {
+    "w": " Itu",
+    "s": 56.18,
+    "e": 56.68
+   },
+   {
+    "w": " yang",
+    "s": 56.68,
+    "e": 56.84
+   },
+   {
+    "w": " pertama",
+    "s": 56.84,
+    "e": 57.14
+   }
+  ]
+ },
+ {
+  "start": 57.14,
+  "end": 58.6,
+  "text": " Yang kedua",
+  "words": [
+   {
+    "w": " Yang",
+    "s": 57.14,
+    "e": 58.12
+   },
+   {
+    "w": " kedua",
+    "s": 58.12,
+    "e": 58.6
+   }
+  ]
+ },
+ {
+  "start": 58.6,
+  "end": 60.06,
+  "text": " Apabila dia komen",
+  "words": [
+   {
+    "w": " Apabila",
+    "s": 58.6,
+    "e": 59.62
+   },
+   {
+    "w": " dia",
+    "s": 59.62,
+    "e": 59.7
+   },
+   {
+    "w": " komen",
+    "s": 59.7,
+    "e": 60.06
+   }
+  ]
+ },
+ {
+  "start": 60.06,
+  "end": 62.22,
+  "text": " Ataupun dia bagi pandangan kepada kita",
+  "words": [
+   {
+    "w": " Ataupun",
+    "s": 60.06,
+    "e": 60.98
+   },
+   {
+    "w": " dia",
+    "s": 60.98,
+    "e": 61.1
+   },
+   {
+    "w": " bagi",
+    "s": 61.1,
+    "e": 61.24
+   },
+   {
+    "w": " pandangan",
+    "s": 61.24,
+    "e": 61.7
+   },
+   {
+    "w": " kepada",
+    "s": 61.7,
+    "e": 61.86
+   },
+   {
+    "w": " kita",
+    "s": 61.86,
+    "e": 62.22
+   }
+  ]
+ },
+ {
+  "start": 62.22,
+  "end": 63.92,
+  "text": " Hasil kerja kita",
+  "words": [
+   {
+    "w": " Hasil",
+    "s": 62.22,
+    "e": 63.38
+   },
+   {
+    "w": " kerja",
+    "s": 63.38,
+    "e": 63.72
+   },
+   {
+    "w": " kita",
+    "s": 63.72,
+    "e": 63.92
+   }
+  ]
+ },
+ {
+  "start": 63.92,
+  "end": 65.72,
+  "text": " Yang kedua caranya",
+  "words": [
+   {
+    "w": " Yang",
+    "s": 63.92,
+    "e": 65.0
+   },
+   {
+    "w": " kedua",
+    "s": 65.0,
+    "e": 65.34
+   },
+   {
+    "w": " caranya",
+    "s": 65.34,
+    "e": 65.72
+   }
+  ]
+ },
+ {
+  "start": 65.72,
+  "end": 67.76,
+  "text": " Kita tengok cermin",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 65.72,
+    "e": 66.88
+   },
+   {
+    "w": " tengok",
+    "s": 66.88,
+    "e": 67.38
+   },
+   {
+    "w": " cermin",
+    "s": 67.38,
+    "e": 67.76
+   }
+  ]
+ },
+ {
+  "start": 68.64,
+  "end": 69.82,
+  "text": " Sambil senyum",
+  "words": [
+   {
+    "w": " Sambil",
+    "s": 68.64,
+    "e": 69.34
+   },
+   {
+    "w": " senyum",
+    "s": 69.34,
+    "e": 69.82
+   }
+  ]
+ },
+ {
+  "start": 69.82,
+  "end": 71.06,
+  "text": " Kita sebut",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 69.82,
+    "e": 70.64
+   },
+   {
+    "w": " sebut",
+    "s": 70.64,
+    "e": 71.06
+   }
+  ]
+ },
+ {
+  "start": 71.98,
+  "end": 72.68,
+  "text": " InsyaAllah",
+  "words": [
+   {
+    "w": " InsyaAllah",
+    "s": 71.98,
+    "e": 72.68
+   }
+  ]
+ },
+ {
+  "start": 72.68,
+  "end": 75.0,
+  "text": " Aku lebih hebat daripada ini lagi",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 72.68,
+    "e": 72.98
+   },
+   {
+    "w": " lebih",
+    "s": 72.98,
+    "e": 73.78
+   },
+   {
+    "w": " hebat",
+    "s": 73.78,
+    "e": 74.38
+   },
+   {
+    "w": " daripada",
+    "s": 74.38,
+    "e": 74.66
+   },
+   {
+    "w": " ini",
+    "s": 74.66,
+    "e": 74.8
+   },
+   {
+    "w": " lagi",
+    "s": 74.8,
+    "e": 75.0
+   }
+  ]
+ },
+ {
+  "start": 75.0,
+  "end": 75.54,
+  "text": " InsyaAllah",
+  "words": [
+   {
+    "w": " InsyaAllah",
+    "s": 75.0,
+    "e": 75.54
+   }
+  ]
+ },
+ {
+  "start": 75.54,
+  "end": 77.66,
+  "text": " Ini baru sikit permulaan aku",
+  "words": [
+   {
+    "w": " Ini",
+    "s": 75.54,
+    "e": 76.08
+   },
+   {
+    "w": " baru",
+    "s": 76.08,
+    "e": 76.3
+   },
+   {
+    "w": " sikit",
+    "s": 76.3,
+    "e": 76.76
+   },
+   {
+    "w": " permulaan",
+    "s": 76.76,
+    "e": 77.44
+   },
+   {
+    "w": " aku",
+    "s": 77.44,
+    "e": 77.66
+   }
+  ]
+ },
+ {
+  "start": 77.66,
+  "end": 79.04,
+  "text": " Ini baru sikit skill aku",
+  "words": [
+   {
+    "w": " Ini",
+    "s": 77.66,
+    "e": 77.88
+   },
+   {
+    "w": " baru",
+    "s": 77.88,
+    "e": 78.08
+   },
+   {
+    "w": " sikit",
+    "s": 78.08,
+    "e": 78.44
+   },
+   {
+    "w": " skill",
+    "s": 78.44,
+    "e": 78.76
+   },
+   {
+    "w": " aku",
+    "s": 78.76,
+    "e": 79.04
+   }
+  ]
+ },
+ {
+  "start": 79.04,
+  "end": 79.68,
+  "text": " Banyak lagi",
+  "words": [
+   {
+    "w": " Banyak",
+    "s": 79.04,
+    "e": 79.4
+   },
+   {
+    "w": " lagi",
+    "s": 79.4,
+    "e": 79.68
+   }
+  ]
+ },
+ {
+  "start": 79.68,
+  "end": 80.54,
+  "text": " InsyaAllah",
+  "words": [
+   {
+    "w": " InsyaAllah",
+    "s": 79.68,
+    "e": 80.54
+   }
+  ]
+ },
+ {
+  "start": 80.54,
+  "end": 81.54,
+  "text": " Aku membuat lebih baik",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 80.54,
+    "e": 80.82
+   },
+   {
+    "w": " membuat",
+    "s": 80.82,
+    "e": 81.24
+   },
+   {
+    "w": " lebih",
+    "s": 81.24,
+    "e": 81.34
+   },
+   {
+    "w": " baik",
+    "s": 81.34,
+    "e": 81.54
+   }
+  ]
+ },
+ {
+  "start": 81.54,
+  "end": 82.18,
+  "text": " InsyaAllah",
+  "words": [
+   {
+    "w": " InsyaAllah",
+    "s": 81.54,
+    "e": 82.18
+   }
+  ]
+ },
+ {
+  "start": 82.18,
+  "end": 83.72,
+  "text": " Itu cara yang kedua",
+  "words": [
+   {
+    "w": " Itu",
+    "s": 82.18,
+    "e": 83.0
+   },
+   {
+    "w": " cara",
+    "s": 83.0,
+    "e": 83.22
+   },
+   {
+    "w": " yang",
+    "s": 83.22,
+    "e": 83.44
+   },
+   {
+    "w": " kedua",
+    "s": 83.44,
+    "e": 83.72
+   }
+  ]
+ },
+ {
+  "start": 83.72,
+  "end": 85.62,
+  "text": " Dan cara yang ketiga",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 83.72,
+    "e": 84.62
+   },
+   {
+    "w": " cara",
+    "s": 84.62,
+    "e": 84.92
+   },
+   {
+    "w": " yang",
+    "s": 84.92,
+    "e": 85.18
+   },
+   {
+    "w": " ketiga",
+    "s": 85.18,
+    "e": 85.62
+   }
+  ]
+ },
+ {
+  "start": 85.62,
+  "end": 86.92,
+  "text": " Cara ini paling best",
+  "words": [
+   {
+    "w": " Cara",
+    "s": 85.62,
+    "e": 86.06
+   },
+   {
+    "w": " ini",
+    "s": 86.06,
+    "e": 86.32
+   },
+   {
+    "w": " paling",
+    "s": 86.32,
+    "e": 86.6
+   },
+   {
+    "w": " best",
+    "s": 86.6,
+    "e": 86.92
+   }
+  ]
+ },
+ {
+  "start": 86.92,
+  "end": 88.04,
+  "text": " InsyaAllah",
+  "words": [
+   {
+    "w": " InsyaAllah",
+    "s": 86.92,
+    "e": 88.04
+   }
+  ]
+ },
+ {
+  "start": 88.04,
+  "end": 88.58,
+  "text": " Cara ini paling best",
+  "words": [
+   {
+    "w": " Cara",
+    "s": 88.04,
+    "e": 88.2
+   },
+   {
+    "w": " ini",
+    "s": 88.2,
+    "e": 88.5
+   },
+   {
+    "w": " paling",
+    "s": 88.5,
+    "e": 88.58
+   },
+   {
+    "w": " best",
+    "s": 88.58,
+    "e": 88.58
+   }
+  ]
+ },
+ {
+  "start": 88.58,
+  "end": 89.16,
+  "text": " Kalau siapa buat",
+  "words": [
+   {
+    "w": " Kalau",
+    "s": 88.58,
+    "e": 88.68
+   },
+   {
+    "w": " siapa",
+    "s": 88.68,
+    "e": 88.88
+   },
+   {
+    "w": " buat",
+    "s": 88.88,
+    "e": 89.16
+   }
+  ]
+ },
+ {
+  "start": 89.16,
+  "end": 92.0,
+  "text": " Boleh menyebabkan kita rasa bersemangat lagi",
+  "words": [
+   {
+    "w": " Boleh",
+    "s": 89.16,
+    "e": 89.96
+   },
+   {
+    "w": " menyebabkan",
+    "s": 89.96,
+    "e": 90.66
+   },
+   {
+    "w": " kita",
+    "s": 90.66,
+    "e": 90.84
+   },
+   {
+    "w": " rasa",
+    "s": 90.84,
+    "e": 91.1
+   },
+   {
+    "w": " bersemangat",
+    "s": 91.1,
+    "e": 91.86
+   },
+   {
+    "w": " lagi",
+    "s": 91.86,
+    "e": 92.0
+   }
+  ]
+ },
+ {
+  "start": 92.0,
+  "end": 93.12,
+  "text": " Simpel",
+  "words": [
+   {
+    "w": " Simpel",
+    "s": 92.0,
+    "e": 93.12
+   }
+  ]
+ },
+ {
+  "start": 93.12,
+  "end": 93.92,
+  "text": " Caranya",
+  "words": [
+   {
+    "w": " Caranya",
+    "s": 93.12,
+    "e": 93.92
+   }
+  ]
+ },
+ {
+  "start": 93.92,
+  "end": 94.84,
+  "text": " Yang pertama",
+  "words": [
+   {
+    "w": " Yang",
+    "s": 93.92,
+    "e": 94.52
+   },
+   {
+    "w": " pertama",
+    "s": 94.52,
+    "e": 94.84
+   }
+  ]
+ },
+ {
+  "start": 94.84,
+  "end": 96.24,
+  "text": " Tarik nafas",
+  "words": [
+   {
+    "w": " Tarik",
+    "s": 94.84,
+    "e": 95.5
+   },
+   {
+    "w": " nafas",
+    "s": 95.5,
+    "e": 96.24
+   }
+  ]
+ },
+ {
+  "start": 96.24,
+  "end": 96.92,
+  "text": " Dalam-dalam",
+  "words": [
+   {
+    "w": " Dalam",
+    "s": 96.24,
+    "e": 96.6
+   },
+   {
+    "w": "-dalam",
+    "s": 96.6,
+    "e": 96.92
+   }
+  ]
+ },
+ {
+  "start": 97.96,
+  "end": 99.36,
+  "text": " Lepas tiga kali",
+  "words": [
+   {
+    "w": " Lepas",
+    "s": 97.96,
+    "e": 98.66
+   },
+   {
+    "w": " tiga",
+    "s": 98.66,
+    "e": 99.06
+   },
+   {
+    "w": " kali",
+    "s": 99.06,
+    "e": 99.36
+   }
+  ]
+ },
+ {
+  "start": 99.36,
+  "end": 100.68,
+  "text": " Kemudian pejam mata",
+  "words": [
+   {
+    "w": " Kemudian",
+    "s": 99.36,
+    "e": 100.14
+   },
+   {
+    "w": " pejam",
+    "s": 100.14,
+    "e": 100.48
+   },
+   {
+    "w": " mata",
+    "s": 100.48,
+    "e": 100.68
+   }
+  ]
+ },
+ {
+  "start": 100.68,
+  "end": 101.78,
+  "text": " Perlahan-perlahan",
+  "words": [
+   {
+    "w": " Perlahan",
+    "s": 100.68,
+    "e": 101.42
+   },
+   {
+    "w": "-perlahan",
+    "s": 101.42,
+    "e": 101.78
+   }
+  ]
+ },
+ {
+  "start": 102.3,
+  "end": 103.52,
+  "text": " Pejam dan pejam dan pejam",
+  "words": [
+   {
+    "w": " Pejam",
+    "s": 102.27000000000001,
+    "e": 102.62
+   },
+   {
+    "w": " dan",
+    "s": 102.62,
+    "e": 102.88
+   },
+   {
+    "w": " pejam",
+    "s": 102.88,
+    "e": 103.22
+   },
+   {
+    "w": " dan",
+    "s": 103.22,
+    "e": 103.32
+   },
+   {
+    "w": " pejam",
+    "s": 103.32,
+    "e": 103.52
+   }
+  ]
+ },
+ {
+  "start": 103.52,
+  "end": 105.92,
+  "text": " Kemudian tidurlah dengan tenang",
+  "words": [
+   {
+    "w": " Kemudian",
+    "s": 103.52,
+    "e": 104.58
+   },
+   {
+    "w": " tidurlah",
+    "s": 104.58,
+    "e": 105.2
+   },
+   {
+    "w": " dengan",
+    "s": 105.2,
+    "e": 105.42
+   },
+   {
+    "w": " tenang",
+    "s": 105.42,
+    "e": 105.92
+   }
+  ]
+ },
+ {
+  "start": 106.66,
+  "end": 108.86,
+  "text": " Tak perlu fikirkan dah apa pandangan dia",
+  "words": [
+   {
+    "w": " Tak",
+    "s": 106.38999999999999,
+    "e": 106.74
+   },
+   {
+    "w": " perlu",
+    "s": 106.74,
+    "e": 107.0
+   },
+   {
+    "w": " fikirkan",
+    "s": 107.0,
+    "e": 107.6
+   },
+   {
+    "w": " dah",
+    "s": 107.6,
+    "e": 107.76
+   },
+   {
+    "w": " apa",
+    "s": 107.76,
+    "e": 107.92
+   },
+   {
+    "w": " pandangan",
+    "s": 107.92,
+    "e": 108.6
+   },
+   {
+    "w": " dia",
+    "s": 108.6,
+    "e": 108.86
+   }
+  ]
+ },
+ {
+  "start": 108.86,
+  "end": 109.94,
+  "text": " Ataupun apa komen",
+  "words": [
+   {
+    "w": " Ataupun",
+    "s": 108.86,
+    "e": 109.16
+   },
+   {
+    "w": " apa",
+    "s": 109.16,
+    "e": 109.42
+   },
+   {
+    "w": " komen",
+    "s": 109.42,
+    "e": 109.94
+   }
+  ]
+ },
+ {
+  "start": 109.94,
+  "end": 111.0,
+  "text": " Membuatkan kita rasa down",
+  "words": [
+   {
+    "w": " Membuatkan",
+    "s": 109.94,
+    "e": 110.34
+   },
+   {
+    "w": " kita",
+    "s": 110.34,
+    "e": 110.54
+   },
+   {
+    "w": " rasa",
+    "s": 110.54,
+    "e": 110.72
+   },
+   {
+    "w": " down",
+    "s": 110.72,
+    "e": 111.0
+   }
+  ]
+ },
+ {
+  "start": 111.0,
+  "end": 112.84,
+  "text": " Tidurlah dengan tenang",
+  "words": [
+   {
+    "w": " Tidurlah",
+    "s": 111.0,
+    "e": 112.08
+   },
+   {
+    "w": " dengan",
+    "s": 112.08,
+    "e": 112.34
+   },
+   {
+    "w": " tenang",
+    "s": 112.34,
+    "e": 112.84
+   }
+  ]
+ },
+ {
+  "start": 112.84,
+  "end": 114.18,
+  "text": " Esok pagi bangun",
+  "words": [
+   {
+    "w": " Esok",
+    "s": 112.84,
+    "e": 113.52
+   },
+   {
+    "w": " pagi",
+    "s": 113.52,
+    "e": 113.8
+   },
+   {
+    "w": " bangun",
+    "s": 113.8,
+    "e": 114.18
+   }
+  ]
+ },
+ {
+  "start": 114.18,
+  "end": 116.22,
+  "text": " Kita reset balik semangat kita",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 114.18,
+    "e": 114.72
+   },
+   {
+    "w": " reset",
+    "s": 114.72,
+    "e": 115.22
+   },
+   {
+    "w": " balik",
+    "s": 115.22,
+    "e": 115.6
+   },
+   {
+    "w": " semangat",
+    "s": 115.6,
+    "e": 115.94
+   },
+   {
+    "w": " kita",
+    "s": 115.94,
+    "e": 116.22
+   }
+  ]
+ },
+ {
+  "start": 116.22,
+  "end": 118.04,
+  "text": " Kita reset balik skill kita",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 116.22,
+    "e": 116.78
+   },
+   {
+    "w": " reset",
+    "s": 116.78,
+    "e": 117.16
+   },
+   {
+    "w": " balik",
+    "s": 117.16,
+    "e": 117.5
+   },
+   {
+    "w": " skill",
+    "s": 117.5,
+    "e": 117.7
+   },
+   {
+    "w": " kita",
+    "s": 117.7,
+    "e": 118.04
+   }
+  ]
+ },
+ {
+  "start": 118.04,
+  "end": 118.8,
+  "text": " Dan insyaAllah",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 118.04,
+    "e": 118.2
+   },
+   {
+    "w": " insyaAllah",
+    "s": 118.2,
+    "e": 118.8
+   }
+  ]
+ },
+ {
+  "start": 118.8,
+  "end": 120.02,
+  "text": " Kita mampu",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 118.8,
+    "e": 119.28
+   },
+   {
+    "w": " mampu",
+    "s": 119.28,
+    "e": 120.02
+   }
+  ]
+ },
+ {
+  "start": 120.02,
+  "end": 122.4,
+  "text": " Tangani segalanya dengan baik",
+  "words": [
+   {
+    "w": " Tangani",
+    "s": 120.02,
+    "e": 120.9
+   },
+   {
+    "w": " segalanya",
+    "s": 120.9,
+    "e": 121.68
+   },
+   {
+    "w": " dengan",
+    "s": 121.68,
+    "e": 121.98
+   },
+   {
+    "w": " baik",
+    "s": 121.98,
+    "e": 122.4
+   }
+  ]
+ },
+ {
+  "start": 122.4,
+  "end": 122.7,
+  "text": " Dan",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 122.4,
+    "e": 122.7
+   }
+  ]
+ },
+ {
+  "start": 122.7,
+  "end": 124.32,
+  "text": " Bersemangat",
+  "words": [
+   {
+    "w": " Bersemangat",
+    "s": 122.7,
+    "e": 124.32
+   }
+  ]
+ },
+ {
+  "start": 124.32,
+  "end": 124.9,
+  "text": " InsyaAllah",
+  "words": [
+   {
+    "w": " InsyaAllah",
+    "s": 124.32,
+    "e": 124.9
+   }
+  ]
+ }
+]
