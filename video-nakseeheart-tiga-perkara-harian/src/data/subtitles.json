@@ -1,0 +1,1767 @@
+[
+ {
+  "segment": "hook",
+  "start": 0.0,
+  "end": 2.931,
+  "words": [
+   {
+    "text": "Ada",
+    "start": 0.0,
+    "end": 0.329,
+    "gold": false
+   },
+   {
+    "text": "tiga",
+    "start": 0.329,
+    "end": 0.725,
+    "gold": true
+   },
+   {
+    "text": "perkara",
+    "start": 0.725,
+    "end": 1.318,
+    "gold": true
+   },
+   {
+    "text": "dalam",
+    "start": 1.318,
+    "end": 1.779,
+    "gold": false
+   },
+   {
+    "text": "hidup",
+    "start": 1.779,
+    "end": 2.24,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 2.24,
+    "end": 2.635,
+    "gold": false
+   },
+   {
+    "text": "yang…",
+    "start": 2.635,
+    "end": 3.031,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "hook",
+  "start": 2.931,
+  "end": 4.644,
+  "words": [
+   {
+    "text": "kadang-kadang",
+    "start": 3.031,
+    "end": 3.953,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 3.953,
+    "end": 4.348,
+    "gold": false
+   },
+   {
+    "text": "lupa…",
+    "start": 4.348,
+    "end": 4.744,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "hook",
+  "start": 4.644,
+  "end": 6.72,
+  "words": [
+   {
+    "text": "untuk",
+    "start": 4.744,
+    "end": 5.205,
+    "gold": false
+   },
+   {
+    "text": "lakukan",
+    "start": 5.205,
+    "end": 5.798,
+    "gold": false
+   },
+   {
+    "text": "setiap",
+    "start": 5.798,
+    "end": 6.325,
+    "gold": false
+   },
+   {
+    "text": "hari,",
+    "start": 6.325,
+    "end": 6.72,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 6.72,
+  "end": 8.149,
+  "words": [
+   {
+    "text": "walaupun",
+    "start": 6.78,
+    "end": 7.2,
+    "gold": false
+   },
+   {
+    "text": "benda",
+    "start": 7.2,
+    "end": 7.493,
+    "gold": false
+   },
+   {
+    "text": "tersebut",
+    "start": 7.493,
+    "end": 7.913,
+    "gold": false
+   },
+   {
+    "text": "simple,",
+    "start": 7.913,
+    "end": 8.249,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 8.149,
+  "end": 9.64,
+  "words": [
+   {
+    "text": "benda",
+    "start": 8.249,
+    "end": 8.543,
+    "gold": false
+   },
+   {
+    "text": "tersebut",
+    "start": 8.543,
+    "end": 8.962,
+    "gold": false
+   },
+   {
+    "text": "ringkas.",
+    "start": 8.962,
+    "end": 9.34,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 9.82,
+  "end": 13.26,
+  "words": [
+   {
+    "text": "Yang",
+    "start": 9.94,
+    "end": 10.3,
+    "gold": false
+   },
+   {
+    "text": "PERTAMA",
+    "start": 10.3,
+    "end": 10.64,
+    "gold": true
+   },
+   {
+    "text": "adalah,",
+    "start": 10.64,
+    "end": 11.06,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 11.06,
+    "end": 12.76,
+    "gold": false
+   },
+   {
+    "text": "lupa…",
+    "start": 12.76,
+    "end": 13.36,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 13.26,
+  "end": 15.5,
+  "words": [
+   {
+    "text": "untuk",
+    "start": 13.36,
+    "end": 13.74,
+    "gold": false
+   },
+   {
+    "text": "senyum",
+    "start": 13.74,
+    "end": 14.38,
+    "gold": true
+   },
+   {
+    "text": "setiap",
+    "start": 14.38,
+    "end": 15.06,
+    "gold": false
+   },
+   {
+    "text": "hari.",
+    "start": 15.06,
+    "end": 15.32,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 15.5,
+  "end": 18.46,
+  "words": [
+   {
+    "text": "Sebab",
+    "start": 15.62,
+    "end": 16.34,
+    "gold": false
+   },
+   {
+    "text": "bila",
+    "start": 16.34,
+    "end": 16.52,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 16.52,
+    "end": 16.68,
+    "gold": false
+   },
+   {
+    "text": "senyum,",
+    "start": 16.68,
+    "end": 17.34,
+    "gold": true
+   },
+   {
+    "text": "bila",
+    "start": 17.36,
+    "end": 18.12,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 18.12,
+    "end": 18.34,
+    "gold": false
+   },
+   {
+    "text": "buat…",
+    "start": 18.34,
+    "end": 18.56,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 18.46,
+  "end": 21.37,
+  "words": [
+   {
+    "text": "senyuman,",
+    "start": 18.56,
+    "end": 19.1,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 19.14,
+    "end": 19.88,
+    "gold": false
+   },
+   {
+    "text": "akan",
+    "start": 19.88,
+    "end": 20.24,
+    "gold": false
+   },
+   {
+    "text": "rasa",
+    "start": 20.24,
+    "end": 20.5,
+    "gold": false
+   },
+   {
+    "text": "lebih",
+    "start": 20.5,
+    "end": 20.74,
+    "gold": false
+   },
+   {
+    "text": "tenang,",
+    "start": 20.74,
+    "end": 21.44,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 21.37,
+  "end": 23.722,
+  "words": [
+   {
+    "text": "kehidupan",
+    "start": 21.49,
+    "end": 22.073,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 22.073,
+    "end": 22.391,
+    "gold": false
+   },
+   {
+    "text": "rasa",
+    "start": 22.391,
+    "end": 22.709,
+    "gold": false
+   },
+   {
+    "text": "seronok,",
+    "start": 22.709,
+    "end": 23.186,
+    "gold": true
+   },
+   {
+    "text": "kita",
+    "start": 23.186,
+    "end": 23.504,
+    "gold": false
+   },
+   {
+    "text": "akan…",
+    "start": 23.504,
+    "end": 23.822,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 23.722,
+  "end": 26.42,
+  "words": [
+   {
+    "text": "rasa",
+    "start": 23.822,
+    "end": 24.141,
+    "gold": false
+   },
+   {
+    "text": "bahagia",
+    "start": 24.141,
+    "end": 24.618,
+    "gold": true
+   },
+   {
+    "text": "bila",
+    "start": 24.618,
+    "end": 24.936,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 24.936,
+    "end": 25.254,
+    "gold": false
+   },
+   {
+    "text": "mampu",
+    "start": 25.254,
+    "end": 25.625,
+    "gold": false
+   },
+   {
+    "text": "untuk",
+    "start": 25.625,
+    "end": 25.996,
+    "gold": false
+   },
+   {
+    "text": "senyum.",
+    "start": 25.996,
+    "end": 26.42,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s2",
+  "start": 26.72,
+  "end": 29.8,
+  "words": [
+   {
+    "text": "Jadi,",
+    "start": 26.84,
+    "end": 27.18,
+    "gold": false
+   },
+   {
+    "text": "jangan",
+    "start": 27.18,
+    "end": 27.633,
+    "gold": false
+   },
+   {
+    "text": "lupa",
+    "start": 27.633,
+    "end": 27.973,
+    "gold": true
+   },
+   {
+    "text": "untuk",
+    "start": 27.973,
+    "end": 28.37,
+    "gold": false
+   },
+   {
+    "text": "senyum",
+    "start": 28.37,
+    "end": 28.823,
+    "gold": true
+   },
+   {
+    "text": "walaupun",
+    "start": 28.823,
+    "end": 29.39,
+    "gold": false
+   },
+   {
+    "text": "sekejap…",
+    "start": 29.39,
+    "end": 29.9,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s2",
+  "start": 29.8,
+  "end": 32.92,
+  "words": [
+   {
+    "text": "dalam",
+    "start": 29.9,
+    "end": 30.297,
+    "gold": false
+   },
+   {
+    "text": "setiap",
+    "start": 30.297,
+    "end": 30.75,
+    "gold": false
+   },
+   {
+    "text": "hari-hari",
+    "start": 30.75,
+    "end": 31.317,
+    "gold": false
+   },
+   {
+    "text": "yang",
+    "start": 31.317,
+    "end": 31.657,
+    "gold": false
+   },
+   {
+    "text": "akan",
+    "start": 31.657,
+    "end": 31.997,
+    "gold": false
+   },
+   {
+    "text": "mendatang.",
+    "start": 31.997,
+    "end": 32.62,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s2",
+  "start": 32.99,
+  "end": 38.32,
+  "words": [
+   {
+    "text": "Yang",
+    "start": 33.11,
+    "end": 33.42,
+    "gold": false
+   },
+   {
+    "text": "KEDUA,",
+    "start": 33.42,
+    "end": 33.82,
+    "gold": true
+   },
+   {
+    "text": "kita",
+    "start": 34.02,
+    "end": 35.24,
+    "gold": false
+   },
+   {
+    "text": "lupa",
+    "start": 35.24,
+    "end": 35.9,
+    "gold": true
+   },
+   {
+    "text": "untuk",
+    "start": 35.9,
+    "end": 36.34,
+    "gold": false
+   },
+   {
+    "text": "bersedekah,",
+    "start": 36.34,
+    "end": 38.02,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s2",
+  "start": 38.34,
+  "end": 39.7,
+  "words": [
+   {
+    "text": "walaupun",
+    "start": 38.46,
+    "end": 39.08,
+    "gold": false
+   },
+   {
+    "text": "perkara",
+    "start": 39.08,
+    "end": 39.42,
+    "gold": true
+   },
+   {
+    "text": "tersebut…",
+    "start": 39.42,
+    "end": 39.8,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s2",
+  "start": 39.7,
+  "end": 41.12,
+  "words": [
+   {
+    "text": "simple",
+    "start": 39.8,
+    "end": 40.12,
+    "gold": true
+   },
+   {
+    "text": "je,",
+    "start": 40.12,
+    "end": 40.4,
+    "gold": false
+   },
+   {
+    "text": "tak",
+    "start": 40.44,
+    "end": 40.56,
+    "gold": false
+   },
+   {
+    "text": "susah",
+    "start": 40.56,
+    "end": 40.9,
+    "gold": false
+   },
+   {
+    "text": "pun.",
+    "start": 40.9,
+    "end": 41.06,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s3",
+  "start": 41.26,
+  "end": 42.616,
+  "words": [
+   {
+    "text": "Dan",
+    "start": 41.38,
+    "end": 41.619,
+    "gold": false
+   },
+   {
+    "text": "sekarang",
+    "start": 41.619,
+    "end": 42.096,
+    "gold": false
+   },
+   {
+    "text": "lagi",
+    "start": 42.096,
+    "end": 42.382,
+    "gold": false
+   },
+   {
+    "text": "mudah…",
+    "start": 42.382,
+    "end": 42.716,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s3",
+  "start": 42.616,
+  "end": 44.2,
+  "words": [
+   {
+    "text": "bersedekah",
+    "start": 42.716,
+    "end": 43.289,
+    "gold": true
+   },
+   {
+    "text": "melalui",
+    "start": 43.289,
+    "end": 43.718,
+    "gold": false
+   },
+   {
+    "text": "online.",
+    "start": 43.718,
+    "end": 44.1,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s3",
+  "start": 44.2,
+  "end": 46.06,
+  "words": [
+   {
+    "text": "Maka,",
+    "start": 44.32,
+    "end": 44.68,
+    "gold": false
+   },
+   {
+    "text": "setiap",
+    "start": 44.68,
+    "end": 45.14,
+    "gold": false
+   },
+   {
+    "text": "hari",
+    "start": 45.14,
+    "end": 45.32,
+    "gold": false
+   },
+   {
+    "text": "pastikan",
+    "start": 45.32,
+    "end": 45.86,
+    "gold": false
+   },
+   {
+    "text": "kita…",
+    "start": 45.86,
+    "end": 46.16,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s3",
+  "start": 46.06,
+  "end": 48.94,
+  "words": [
+   {
+    "text": "laksanakan",
+    "start": 46.16,
+    "end": 46.86,
+    "gold": false
+   },
+   {
+    "text": "sedekah",
+    "start": 46.86,
+    "end": 47.82,
+    "gold": true
+   },
+   {
+    "text": "walaupun",
+    "start": 47.82,
+    "end": 48.16,
+    "gold": false
+   },
+   {
+    "text": "sedikit.",
+    "start": 48.16,
+    "end": 48.66,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s3",
+  "start": 48.94,
+  "end": 51.38,
+  "words": [
+   {
+    "text": "Kerana",
+    "start": 49.06,
+    "end": 49.42,
+    "gold": false
+   },
+   {
+    "text": "dengan",
+    "start": 49.42,
+    "end": 49.64,
+    "gold": false
+   },
+   {
+    "text": "sedekah",
+    "start": 49.64,
+    "end": 50.12,
+    "gold": true
+   },
+   {
+    "text": "tersebut,",
+    "start": 50.12,
+    "end": 50.64,
+    "gold": false
+   },
+   {
+    "text": "ALLAH…",
+    "start": 50.72,
+    "end": 51.48,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s3",
+  "start": 51.38,
+  "end": 53.9,
+  "words": [
+   {
+    "text": "akan",
+    "start": 51.48,
+    "end": 51.92,
+    "gold": false
+   },
+   {
+    "text": "limpahkan",
+    "start": 51.92,
+    "end": 52.8,
+    "gold": false
+   },
+   {
+    "text": "rezeki",
+    "start": 52.8,
+    "end": 53.32,
+    "gold": true
+   },
+   {
+    "text": "kepada",
+    "start": 53.32,
+    "end": 53.58,
+    "gold": false
+   },
+   {
+    "text": "kita.",
+    "start": 53.58,
+    "end": 53.86,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s3",
+  "start": 53.9,
+  "end": 55.36,
+  "words": [
+   {
+    "text": "ALLAH",
+    "start": 54.02,
+    "end": 54.22,
+    "gold": true
+   },
+   {
+    "text": "akan",
+    "start": 54.22,
+    "end": 54.46,
+    "gold": false
+   },
+   {
+    "text": "berikan",
+    "start": 54.46,
+    "end": 54.78,
+    "gold": false
+   },
+   {
+    "text": "keberkatan…",
+    "start": 54.78,
+    "end": 55.46,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s3",
+  "start": 55.36,
+  "end": 56.26,
+  "words": [
+   {
+    "text": "rezeki",
+    "start": 55.46,
+    "end": 55.72,
+    "gold": true
+   },
+   {
+    "text": "kepada",
+    "start": 55.72,
+    "end": 56.02,
+    "gold": false
+   },
+   {
+    "text": "kita.",
+    "start": 56.02,
+    "end": 56.26,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s4",
+  "start": 56.26,
+  "end": 57.97,
+  "words": [
+   {
+    "text": "Dan",
+    "start": 56.35,
+    "end": 56.81,
+    "gold": false
+   },
+   {
+    "text": "sedekah",
+    "start": 56.81,
+    "end": 57.27,
+    "gold": true
+   },
+   {
+    "text": "bukan",
+    "start": 57.27,
+    "end": 57.95,
+    "gold": false
+   },
+   {
+    "text": "tertentu…",
+    "start": 57.95,
+    "end": 58.07,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s4",
+  "start": 57.97,
+  "end": 59.28,
+  "words": [
+   {
+    "text": "pada",
+    "start": 58.07,
+    "end": 58.41,
+    "gold": false
+   },
+   {
+    "text": "nilai",
+    "start": 58.41,
+    "end": 58.55,
+    "gold": true
+   },
+   {
+    "text": "yang",
+    "start": 58.55,
+    "end": 58.77,
+    "gold": false
+   },
+   {
+    "text": "besar,",
+    "start": 58.93,
+    "end": 58.98,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s4",
+  "start": 59.35,
+  "end": 61.91,
+  "words": [
+   {
+    "text": "tetapi",
+    "start": 59.47,
+    "end": 59.857,
+    "gold": false
+   },
+   {
+    "text": "pada",
+    "start": 59.857,
+    "end": 60.148,
+    "gold": false
+   },
+   {
+    "text": "keikhlasan",
+    "start": 60.148,
+    "end": 60.728,
+    "gold": true
+   },
+   {
+    "text": "kita",
+    "start": 60.728,
+    "end": 61.019,
+    "gold": false
+   },
+   {
+    "text": "memberi",
+    "start": 61.019,
+    "end": 61.454,
+    "gold": false
+   },
+   {
+    "text": "sedekah.",
+    "start": 61.454,
+    "end": 61.89,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s4",
+  "start": 61.91,
+  "end": 65.59,
+  "words": [
+   {
+    "text": "Dan",
+    "start": 62.03,
+    "end": 62.434,
+    "gold": false
+   },
+   {
+    "text": "yang",
+    "start": 62.434,
+    "end": 62.92,
+    "gold": false
+   },
+   {
+    "text": "KETIGA,",
+    "start": 62.92,
+    "end": 63.567,
+    "gold": true
+   },
+   {
+    "text": "kadang-kadang",
+    "start": 63.567,
+    "end": 64.699,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 64.699,
+    "end": 65.185,
+    "gold": false
+   },
+   {
+    "text": "lupa.",
+    "start": 65.185,
+    "end": 65.67,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s4",
+  "start": 65.59,
+  "end": 68.49,
+  "words": [
+   {
+    "text": "Kita",
+    "start": 65.71,
+    "end": 65.996,
+    "gold": false
+   },
+   {
+    "text": "cuba",
+    "start": 65.996,
+    "end": 66.282,
+    "gold": false
+   },
+   {
+    "text": "untuk",
+    "start": 66.282,
+    "end": 66.616,
+    "gold": false
+   },
+   {
+    "text": "bahagiakan",
+    "start": 66.616,
+    "end": 67.188,
+    "gold": true
+   },
+   {
+    "text": "diri",
+    "start": 67.188,
+    "end": 67.475,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 67.475,
+    "end": 67.761,
+    "gold": false
+   },
+   {
+    "text": "sendiri,",
+    "start": 67.761,
+    "end": 68.19,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s4",
+  "start": 68.71,
+  "end": 71.11,
+  "words": [
+   {
+    "text": "kita",
+    "start": 68.83,
+    "end": 69.141,
+    "gold": false
+   },
+   {
+    "text": "cuba",
+    "start": 69.141,
+    "end": 69.452,
+    "gold": false
+   },
+   {
+    "text": "untuk",
+    "start": 69.452,
+    "end": 69.815,
+    "gold": false
+   },
+   {
+    "text": "bahagiakan",
+    "start": 69.815,
+    "end": 70.436,
+    "gold": true
+   },
+   {
+    "text": "orang",
+    "start": 70.436,
+    "end": 70.799,
+    "gold": false
+   },
+   {
+    "text": "lain.",
+    "start": 70.799,
+    "end": 71.11,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s5",
+  "start": 71.33,
+  "end": 73.71,
+  "words": [
+   {
+    "text": "Rupanya",
+    "start": 71.45,
+    "end": 71.828,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 71.828,
+    "end": 72.08,
+    "gold": false
+   },
+   {
+    "text": "lupa",
+    "start": 72.08,
+    "end": 72.332,
+    "gold": true
+   },
+   {
+    "text": "nak",
+    "start": 72.332,
+    "end": 72.542,
+    "gold": false
+   },
+   {
+    "text": "bahagiakan",
+    "start": 72.542,
+    "end": 73.046,
+    "gold": true
+   },
+   {
+    "text": "diri",
+    "start": 73.046,
+    "end": 73.298,
+    "gold": false
+   },
+   {
+    "text": "kita.",
+    "start": 73.298,
+    "end": 73.55,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s5",
+  "start": 73.71,
+  "end": 75.53,
+  "words": [
+   {
+    "text": "Macam",
+    "start": 73.83,
+    "end": 74.21,
+    "gold": false
+   },
+   {
+    "text": "mana",
+    "start": 74.21,
+    "end": 74.33,
+    "gold": false
+   },
+   {
+    "text": "nak",
+    "start": 74.33,
+    "end": 74.49,
+    "gold": false
+   },
+   {
+    "text": "bahagiakan",
+    "start": 74.49,
+    "end": 74.85,
+    "gold": true
+   },
+   {
+    "text": "diri",
+    "start": 74.85,
+    "end": 75.03,
+    "gold": false
+   },
+   {
+    "text": "kita?",
+    "start": 75.03,
+    "end": 75.23,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s5",
+  "start": 76.19,
+  "end": 78.95,
+  "words": [
+   {
+    "text": "Dengan",
+    "start": 76.31,
+    "end": 76.91,
+    "gold": false
+   },
+   {
+    "text": "cara",
+    "start": 76.91,
+    "end": 77.17,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 77.17,
+    "end": 77.63,
+    "gold": false
+   },
+   {
+    "text": "mentaati",
+    "start": 77.63,
+    "end": 78.39,
+    "gold": true
+   },
+   {
+    "text": "ALLAH,",
+    "start": 78.39,
+    "end": 78.65,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s5",
+  "start": 79.07,
+  "end": 81.51,
+  "words": [
+   {
+    "text": "melaksanakan",
+    "start": 79.19,
+    "end": 79.79,
+    "gold": false
+   },
+   {
+    "text": "segala",
+    "start": 79.79,
+    "end": 80.61,
+    "gold": false
+   },
+   {
+    "text": "perintah",
+    "start": 80.61,
+    "end": 81.11,
+    "gold": true
+   },
+   {
+    "text": "ALLAH.",
+    "start": 81.11,
+    "end": 81.29,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 81.89,
+  "end": 83.356,
+  "words": [
+   {
+    "text": "Pasti",
+    "start": 82.01,
+    "end": 82.326,
+    "gold": false
+   },
+   {
+    "text": "ALLAH",
+    "start": 82.326,
+    "end": 82.642,
+    "gold": true
+   },
+   {
+    "text": "akan",
+    "start": 82.642,
+    "end": 82.913,
+    "gold": false
+   },
+   {
+    "text": "beri",
+    "start": 82.913,
+    "end": 83.184,
+    "gold": false
+   },
+   {
+    "text": "rasa…",
+    "start": 83.184,
+    "end": 83.456,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 83.356,
+  "end": 84.79,
+  "words": [
+   {
+    "text": "bahagia",
+    "start": 83.456,
+    "end": 83.862,
+    "gold": true
+   },
+   {
+    "text": "kehidupan",
+    "start": 83.862,
+    "end": 84.359,
+    "gold": false
+   },
+   {
+    "text": "kita.",
+    "start": 84.359,
+    "end": 84.63,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 84.79,
+  "end": 87.33,
+  "words": [
+   {
+    "text": "Sebab",
+    "start": 84.91,
+    "end": 85.301,
+    "gold": false
+   },
+   {
+    "text": "itu",
+    "start": 85.301,
+    "end": 85.579,
+    "gold": false
+   },
+   {
+    "text": "bila",
+    "start": 85.579,
+    "end": 85.914,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 85.914,
+    "end": 86.249,
+    "gold": false
+   },
+   {
+    "text": "nak",
+    "start": 86.249,
+    "end": 86.528,
+    "gold": false
+   },
+   {
+    "text": "bahagia,",
+    "start": 86.528,
+    "end": 87.03,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 87.73,
+  "end": 89.69,
+  "words": [
+   {
+    "text": "kita",
+    "start": 87.85,
+    "end": 88.55,
+    "gold": false
+   },
+   {
+    "text": "pastikan",
+    "start": 88.55,
+    "end": 88.93,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 88.93,
+    "end": 89.17,
+    "gold": false
+   },
+   {
+    "text": "buat",
+    "start": 89.17,
+    "end": 89.59,
+    "gold": false
+   },
+   {
+    "text": "perkara…",
+    "start": 89.59,
+    "end": 89.79,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 89.69,
+  "end": 92.86,
+  "words": [
+   {
+    "text": "yang",
+    "start": 89.79,
+    "end": 90.01,
+    "gold": false
+   },
+   {
+    "text": "boleh",
+    "start": 90.01,
+    "end": 90.83,
+    "gold": false
+   },
+   {
+    "text": "menyukakan",
+    "start": 90.83,
+    "end": 91.19,
+    "gold": true
+   },
+   {
+    "text": "ALLAH",
+    "start": 91.19,
+    "end": 92.11,
+    "gold": true
+   },
+   {
+    "text": "SWT,",
+    "start": 92.43,
+    "end": 92.56,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 92.97,
+  "end": 94.26,
+  "words": [
+   {
+    "text": "yang",
+    "start": 93.09,
+    "end": 93.328,
+    "gold": false
+   },
+   {
+    "text": "boleh",
+    "start": 93.328,
+    "end": 93.606,
+    "gold": false
+   },
+   {
+    "text": "menyebabkan",
+    "start": 93.606,
+    "end": 94.122,
+    "gold": false
+   },
+   {
+    "text": "kita…",
+    "start": 94.122,
+    "end": 94.36,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 94.26,
+  "end": 95.71,
+  "words": [
+   {
+    "text": "rasa",
+    "start": 94.36,
+    "end": 94.598,
+    "gold": false
+   },
+   {
+    "text": "kehidupan",
+    "start": 94.598,
+    "end": 95.034,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 95.034,
+    "end": 95.273,
+    "gold": false
+   },
+   {
+    "text": "tenang.",
+    "start": 95.273,
+    "end": 95.59,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 95.71,
+  "end": 96.84,
+  "words": [
+   {
+    "text": "Macam",
+    "start": 95.78,
+    "end": 95.98,
+    "gold": false
+   },
+   {
+    "text": "mana",
+    "start": 95.98,
+    "end": 96.12,
+    "gold": false
+   },
+   {
+    "text": "nak",
+    "start": 96.12,
+    "end": 96.26,
+    "gold": false
+   },
+   {
+    "text": "bahagia?",
+    "start": 96.26,
+    "end": 96.64,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 96.84,
+  "end": 98.8,
+  "words": [
+   {
+    "text": "Jangan",
+    "start": 96.96,
+    "end": 97.62,
+    "gold": false
+   },
+   {
+    "text": "lupa",
+    "start": 97.62,
+    "end": 98.06,
+    "gold": true
+   },
+   {
+    "text": "menjaga",
+    "start": 98.06,
+    "end": 98.5,
+    "gold": false
+   },
+   {
+    "text": "hubungan…",
+    "start": 98.5,
+    "end": 98.9,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 98.8,
+  "end": 100.56,
+  "words": [
+   {
+    "text": "kita",
+    "start": 98.9,
+    "end": 99.12,
+    "gold": false
+   },
+   {
+    "text": "dengan",
+    "start": 99.12,
+    "end": 99.4,
+    "gold": false
+   },
+   {
+    "text": "ALLAH",
+    "start": 99.4,
+    "end": 99.72,
+    "gold": true
+   },
+   {
+    "text": "SWT,",
+    "start": 99.72,
+    "end": 100.26,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 101.46,
+  "end": 103.02,
+  "words": [
+   {
+    "text": "barulah",
+    "start": 101.58,
+    "end": 102.24,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 102.24,
+    "end": 102.42,
+    "gold": false
+   },
+   {
+    "text": "menjaga",
+    "start": 102.42,
+    "end": 102.78,
+    "gold": false
+   },
+   {
+    "text": "hubungan…",
+    "start": 102.78,
+    "end": 103.12,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 103.02,
+  "end": 104.16,
+  "words": [
+   {
+    "text": "kita",
+    "start": 103.12,
+    "end": 103.32,
+    "gold": false
+   },
+   {
+    "text": "sesama",
+    "start": 103.32,
+    "end": 103.52,
+    "gold": false
+   },
+   {
+    "text": "manusia.",
+    "start": 103.52,
+    "end": 104.06,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 104.16,
+  "end": 106.08,
+  "words": [
+   {
+    "text": "InsyaAllah,",
+    "start": 104.28,
+    "end": 104.94,
+    "gold": false
+   },
+   {
+    "text": "bila",
+    "start": 104.94,
+    "end": 105.7,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 105.7,
+    "end": 105.86,
+    "gold": false
+   },
+   {
+    "text": "buat…",
+    "start": 105.86,
+    "end": 106.18,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 106.08,
+  "end": 107.43,
+  "words": [
+   {
+    "text": "tiga",
+    "start": 106.18,
+    "end": 106.48,
+    "gold": true
+   },
+   {
+    "text": "perkara",
+    "start": 106.48,
+    "end": 106.82,
+    "gold": true
+   },
+   {
+    "text": "setiap",
+    "start": 106.82,
+    "end": 107.18,
+    "gold": false
+   },
+   {
+    "text": "hari,",
+    "start": 107.18,
+    "end": 107.36,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 107.43,
+  "end": 110.61,
+  "words": [
+   {
+    "text": "kita",
+    "start": 107.55,
+    "end": 108.2,
+    "gold": false
+   },
+   {
+    "text": "akan",
+    "start": 108.2,
+    "end": 108.48,
+    "gold": false
+   },
+   {
+    "text": "rasa",
+    "start": 108.48,
+    "end": 108.9,
+    "gold": false
+   },
+   {
+    "text": "luar",
+    "start": 108.9,
+    "end": 109.46,
+    "gold": true
+   },
+   {
+    "text": "biasa",
+    "start": 109.46,
+    "end": 109.86,
+    "gold": true
+   },
+   {
+    "text": "kehidupan",
+    "start": 109.86,
+    "end": 110.34,
+    "gold": false
+   },
+   {
+    "text": "kita.",
+    "start": 110.34,
+    "end": 110.56,
+    "gold": false
+   }
+  ]
+ }
+]

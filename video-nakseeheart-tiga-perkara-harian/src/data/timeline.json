@@ -1,0 +1,145 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "Z4.mp4 (145.80 s, 720x1280 HEVC -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    6.72
+   ],
+   "src": 0.0,
+   "srcEnd": 6.72
+  },
+  {
+   "id": "s1",
+   "out": [
+    6.72,
+    26.42
+   ],
+   "src": 6.72,
+   "srcEnd": 26.42
+  },
+  {
+   "id": "s2",
+   "out": [
+    26.42,
+    41.12
+   ],
+   "src": 34.5,
+   "srcEnd": 49.2
+  },
+  {
+   "id": "s3",
+   "out": [
+    41.12,
+    56.26
+   ],
+   "src": 56.48,
+   "srcEnd": 71.62
+  },
+  {
+   "id": "s4",
+   "out": [
+    56.26,
+    71.11
+   ],
+   "src": 76.15,
+   "srcEnd": 91.0
+  },
+  {
+   "id": "s5",
+   "out": [
+    71.11,
+    81.51
+   ],
+   "src": 96.3,
+   "srcEnd": 106.7
+  },
+  {
+   "id": "s6",
+   "out": [
+    81.51,
+    95.71
+   ],
+   "src": 110.9,
+   "srcEnd": 125.1
+  },
+  {
+   "id": "s7",
+   "out": [
+    95.71,
+    110.61
+   ],
+   "src": 129.45,
+   "srcEnd": 144.35
+  },
+  {
+   "id": "cta",
+   "out": [
+    110.61,
+    116.11
+   ],
+   "src": 144.0,
+   "srcEnd": 145.6,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 6.72,
+  "simple": 7.48,
+  "p1": 10.3,
+  "senyum": 13.74,
+  "tenang": 20.74,
+  "seronok": 22.68,
+  "bahagia": 24.56,
+  "janganLupa": 26.84,
+  "senyumLagi": 28.3,
+  "p2": 33.42,
+  "sedekah": 36.34,
+  "takSusah": 40.44,
+  "online": 43.42,
+  "setiapHari": 45.32,
+  "sedikit": 48.16,
+  "rezeki": 52.8,
+  "keberkatan": 54.78,
+  "nilai": 58.07,
+  "keikhlasan": 59.69,
+  "p3": 62.87,
+  "diriSendiri": 66.53,
+  "orangLain": 69.71,
+  "lupaDiri": 72.37,
+  "macamMana": 73.83,
+  "mentaati": 77.63,
+  "perintah": 80.61,
+  "climax": [
+   81.51,
+   95.71
+  ],
+  "brollBahagia": [
+   81.51,
+   86.81
+  ],
+  "pastiAllah": 81.56,
+  "menyukakan": 90.01,
+  "tenangHidup": 95.19,
+  "finale": [
+   95.71,
+   110.61
+  ],
+  "hubunganAllah": 98.5,
+  "manusia": 102.78,
+  "tigaPerkara": 106.18,
+  "luarBiasa": 108.9,
+  "cta": 110.61,
+  "end": 116.11,
+  "followPulse": [
+   20.0,
+   45.0,
+   70.0,
+   95.0
+  ]
+ }
+}

@@ -1,0 +1,475 @@
+{
+ "meta": {
+  "title": "3 Perkara Yang Kita Lupa Setiap Hari",
+  "compositionId": "NakSeeHeartTigaPerkara",
+  "output": "nakseeheart-tiga-perkara-harian",
+  "source": "Z4.mp4"
+ },
+ "layout": {
+  "face": {
+   "x": 560,
+   "y": 1000
+  },
+  "ceilingY": 320,
+  "ceilingTilt": -20,
+  "labelY": 190,
+  "cardY": 480,
+  "recapY": 330,
+  "subtitleY": 1500,
+  "lowerThirdY": 1600,
+  "hookFocusY": 1100,
+  "climaxFocusY": 1100
+ },
+ "camera": {
+  "punch": [
+   "p1",
+   "p2",
+   "p3",
+   "rezeki",
+   "keikhlasan"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.16,
+   1.26
+  ],
+  "hookZoom": [
+   1.3,
+   1.16,
+   1.24
+  ]
+ },
+ "subtitleCalm": [
+  [
+   "tenang-0.4",
+   "janganLupa"
+  ],
+  [
+   "nilai-0.1",
+   "p3"
+  ],
+  [
+   "orangLain-0.1",
+   "climax.0"
+  ],
+  [
+   "hubunganAllah-0.2",
+   "cta"
+  ]
+ ],
+ "music": {
+  "buildUp": "p3"
+ },
+ "sfx": [
+  {
+   "kind": "pop",
+   "at": "simple+0.6"
+  },
+  {
+   "kind": "pop",
+   "at": "online-0.2"
+  },
+  {
+   "kind": "impact",
+   "at": "rezeki-0.02",
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "keikhlasan",
+   "dur": 1.8,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "menyukakan",
+   "dur": 2.2,
+   "gain": 0.25
+  },
+  {
+   "kind": "impact",
+   "at": "tenangHidup-0.02",
+   "dur": 1.4,
+   "f": 48,
+   "gain": 0.22
+  },
+  {
+   "kind": "impact",
+   "at": "luarBiasa-0.02",
+   "dur": 1.6,
+   "f": 50,
+   "gain": 0.28
+  },
+  {
+   "kind": "shimmer",
+   "at": "luarBiasa+0.05",
+   "dur": 2.6,
+   "gain": 0.3
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "SETIAP HARI KITA LUPA",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "y": 200,
+   "size": 42
+  },
+  {
+   "type": "text3d",
+   "text": "3 PERKARA",
+   "at": 0.3,
+   "until": "flashToBody-0.2",
+   "y": 340,
+   "size": 170,
+   "reveal": "punch",
+   "depth": 18,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 0.32,
+   "y": 340,
+   "seed": "hook",
+   "spread": 460
+  },
+  {
+   "type": "counter",
+   "count": 3,
+   "label": "PERKARA HARIAN",
+   "at": "flashToBody+0.2",
+   "until": "p1-0.15"
+  },
+  {
+   "type": "label",
+   "text": "SIMPLE & RINGKAS",
+   "at": "simple+0.6",
+   "until": "p1-0.15",
+   "size": 44
+  },
+  {
+   "type": "badge",
+   "n": "01",
+   "caption": "SENYUM",
+   "at": "p1",
+   "until": "p2-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SENYUM",
+   "at": "senyum",
+   "until": "janganLupa-0.15",
+   "size": 190,
+   "depth": 20
+  },
+  {
+   "type": "checklist",
+   "title": "BILA KITA SENYUM, KITA RASA",
+   "at": "tenang-0.4",
+   "until": "janganLupa-0.15",
+   "items": [
+    {
+     "text": "TENANG",
+     "at": "tenang"
+    },
+    {
+     "text": "SERONOK",
+     "at": "seronok"
+    },
+    {
+     "text": "BAHAGIA",
+     "at": "bahagia"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "JANGAN LUPA SENYUM",
+   "at": "janganLupa",
+   "until": "p2-0.15",
+   "size": 120,
+   "fill": "cream",
+   "depth": 14
+  },
+  {
+   "type": "chip",
+   "text": "WALAUPUN SEKEJAP",
+   "icon": "none",
+   "at": "senyumLagi+0.6",
+   "until": "p2-0.15"
+  },
+  {
+   "type": "badge",
+   "n": "02",
+   "caption": "SEDEKAH",
+   "at": "p2",
+   "until": "p3-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SEDEKAH",
+   "at": "sedekah",
+   "until": "rezeki-0.15",
+   "size": 190,
+   "depth": 20
+  },
+  {
+   "type": "chip",
+   "text": "SIMPLE • TAK SUSAH",
+   "icon": "none",
+   "at": "takSusah-0.3",
+   "until": "online-0.3"
+  },
+  {
+   "type": "chip",
+   "text": "KINI LEBIH MUDAH: ONLINE",
+   "icon": "none",
+   "at": "online-0.2",
+   "until": "setiapHari-0.1"
+  },
+  {
+   "type": "checklist",
+   "title": "SETIAP HARI",
+   "at": "setiapHari",
+   "until": "rezeki-0.2",
+   "items": [
+    {
+     "text": "WALAUPUN SEDIKIT",
+     "at": "sedikit"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "REZEKI",
+   "at": "rezeki",
+   "until": "nilai-0.15",
+   "size": 190,
+   "depth": 20
+  },
+  {
+   "type": "progress",
+   "at": "rezeki",
+   "until": "nilai-0.15",
+   "items": [
+    {
+     "text": "REZEKI",
+     "at": "rezeki"
+    },
+    {
+     "text": "KEBERKATAN",
+     "at": "keberkatan"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "IKHLAS",
+   "at": "keikhlasan",
+   "until": "p3-0.15",
+   "size": 190,
+   "depth": 20
+  },
+  {
+   "type": "compare",
+   "at": "nilai-0.1",
+   "until": "p3-0.15",
+   "left": {
+    "title": "BUKAN PADA",
+    "items": [
+     {
+      "text": "Nilai yang besar",
+      "at": "nilai"
+     }
+    ]
+   },
+   "right": {
+    "title": "TETAPI PADA",
+    "good": true,
+    "items": [
+     {
+      "text": "Keikhlasan memberi",
+      "at": "keikhlasan"
+     }
+    ]
+   }
+  },
+  {
+   "type": "badge",
+   "n": "03",
+   "caption": "BAHAGIAKAN DIRI",
+   "at": "p3",
+   "until": "climax.0-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BAHAGIAKAN DIRI",
+   "at": "diriSendiri",
+   "until": "climax.0-0.15",
+   "size": 125,
+   "depth": 16
+  },
+  {
+   "type": "compare",
+   "at": "orangLain-0.1",
+   "until": "macamMana-0.2",
+   "arrow": true,
+   "left": {
+    "title": "KITA BAHAGIAKAN",
+    "good": true,
+    "items": [
+     {
+      "text": "Orang lain",
+      "at": "orangLain"
+     }
+    ]
+   },
+   "right": {
+    "title": "TAPI LUPA",
+    "items": [
+     {
+      "text": "Diri sendiri",
+      "at": "lupaDiri"
+     }
+    ]
+   }
+  },
+  {
+   "type": "checklist",
+   "title": "CARANYA",
+   "at": "macamMana",
+   "until": "climax.0-0.15",
+   "items": [
+    {
+     "text": "MENTAATI ALLAH",
+     "at": "mentaati"
+    },
+    {
+     "text": "LAKSANA PERINTAH-NYA",
+     "at": "perintah"
+    }
+   ]
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "brollBahagia.0",
+   "to": "brollBahagia.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "PASTI ALLAH BERI",
+     "at": "brollBahagia.0+0.3",
+     "until": "brollBahagia.1-0.1",
+     "y": 290,
+     "size": 44
+    },
+    {
+     "type": "text3d",
+     "text": "RASA BAHAGIA",
+     "at": "brollBahagia.0+0.7",
+     "until": "brollBahagia.1-0.1",
+     "y": 450,
+     "size": 175,
+     "depth": 20,
+     "rotX": 8
+    },
+    {
+     "type": "burst",
+     "at": "brollBahagia.0+0.8",
+     "y": 450,
+     "seed": "bahagia",
+     "spread": 480
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "MENYUKAKAN ALLAH",
+   "at": "menyukakan",
+   "until": "tenangHidup",
+   "size": 120,
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "TENANG",
+   "at": "tenangHidup",
+   "until": "finale.0+0.2",
+   "size": 190,
+   "depth": 20
+  },
+  {
+   "type": "ceiling3d",
+   "text": "HUBUNGAN",
+   "at": "hubunganAllah-0.3",
+   "until": "tigaPerkara-0.2",
+   "size": 170,
+   "depth": 18
+  },
+  {
+   "type": "compare",
+   "at": "hubunganAllah-0.2",
+   "until": "tigaPerkara-0.2",
+   "arrow": true,
+   "left": {
+    "title": "DAHULU",
+    "good": true,
+    "items": [
+     {
+      "text": "Hubungan dengan Allah",
+      "at": "hubunganAllah"
+     }
+    ]
+   },
+   "right": {
+    "title": "BARULAH",
+    "good": true,
+    "items": [
+     {
+      "text": "Hubungan sesama manusia",
+      "at": "manusia"
+     }
+    ]
+   }
+  },
+  {
+   "type": "label",
+   "text": "3 PERKARA SETIAP HARI",
+   "at": "tigaPerkara",
+   "until": "cta-0.1",
+   "y": 175,
+   "size": 40
+  },
+  {
+   "type": "recap",
+   "at": "tigaPerkara+0.05",
+   "until": "cta-0.1",
+   "items": [
+    "SENYUM",
+    "SEDEKAH",
+    "BAHAGIAKAN DIRI"
+   ],
+   "good": true
+  },
+  {
+   "type": "heart",
+   "at": "luarBiasa",
+   "until": "cta-0.1",
+   "x": 540,
+   "y": 560,
+   "size": 78
+  },
+  {
+   "type": "burst",
+   "at": "luarBiasa",
+   "y": 420,
+   "seed": "luar",
+   "spread": 520,
+   "count": 44
+  }
+ ]
+}

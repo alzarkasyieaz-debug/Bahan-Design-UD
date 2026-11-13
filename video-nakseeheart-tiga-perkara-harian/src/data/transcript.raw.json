@@ -1,0 +1,1869 @@
+[
+ {
+  "start": 0.0,
+  "end": 9.34,
+  "text": " Ada tiga perkara dalam hidup kita yang kadang-kadang kita lupa untuk lakukan setiap hari walaupun benda tersebut simple, benda tersebut ringkas.",
+  "words": [
+   {
+    "w": " Ada",
+    "s": 0.0,
+    "e": 0.24
+   },
+   {
+    "w": " tiga",
+    "s": 0.24,
+    "e": 0.62
+   },
+   {
+    "w": " perkara",
+    "s": 0.62,
+    "e": 1.16
+   },
+   {
+    "w": " dalam",
+    "s": 1.16,
+    "e": 1.42
+   },
+   {
+    "w": " hidup",
+    "s": 1.42,
+    "e": 1.84
+   },
+   {
+    "w": " kita",
+    "s": 1.84,
+    "e": 1.96
+   },
+   {
+    "w": " yang",
+    "s": 1.96,
+    "e": 2.36
+   },
+   {
+    "w": " kadang",
+    "s": 2.36,
+    "e": 2.86
+   },
+   {
+    "w": "-kadang",
+    "s": 2.86,
+    "e": 3.26
+   },
+   {
+    "w": " kita",
+    "s": 3.26,
+    "e": 3.48
+   },
+   {
+    "w": " lupa",
+    "s": 3.48,
+    "e": 4.0
+   },
+   {
+    "w": " untuk",
+    "s": 4.0,
+    "e": 4.22
+   },
+   {
+    "w": " lakukan",
+    "s": 4.22,
+    "e": 4.82
+   },
+   {
+    "w": " setiap",
+    "s": 4.82,
+    "e": 6.06
+   },
+   {
+    "w": " hari",
+    "s": 6.06,
+    "e": 6.26
+   },
+   {
+    "w": " walaupun",
+    "s": 6.26,
+    "e": 6.78
+   },
+   {
+    "w": " benda",
+    "s": 6.78,
+    "e": 7.06
+   },
+   {
+    "w": " tersebut",
+    "s": 7.06,
+    "e": 7.48
+   },
+   {
+    "w": " simple,",
+    "s": 7.48,
+    "e": 7.96
+   },
+   {
+    "w": " benda",
+    "s": 8.18,
+    "e": 8.54
+   },
+   {
+    "w": " tersebut",
+    "s": 8.54,
+    "e": 8.82
+   },
+   {
+    "w": " ringkas.",
+    "s": 8.82,
+    "e": 9.34
+   }
+  ]
+ },
+ {
+  "start": 10.28,
+  "end": 15.32,
+  "text": " Yang pertama adalah kita lupa untuk senyum setiap hari.",
+  "words": [
+   {
+    "w": " Yang",
+    "s": 9.940000000000001,
+    "e": 10.3
+   },
+   {
+    "w": " pertama",
+    "s": 10.3,
+    "e": 10.64
+   },
+   {
+    "w": " adalah",
+    "s": 10.64,
+    "e": 11.06
+   },
+   {
+    "w": " kita",
+    "s": 11.06,
+    "e": 12.76
+   },
+   {
+    "w": " lupa",
+    "s": 12.76,
+    "e": 13.36
+   },
+   {
+    "w": " untuk",
+    "s": 13.36,
+    "e": 13.74
+   },
+   {
+    "w": " senyum",
+    "s": 13.74,
+    "e": 14.38
+   },
+   {
+    "w": " setiap",
+    "s": 14.38,
+    "e": 15.06
+   },
+   {
+    "w": " hari.",
+    "s": 15.06,
+    "e": 15.32
+   }
+  ]
+ },
+ {
+  "start": 15.62,
+  "end": 26.3,
+  "text": " Sebab bila kita senyum, bila kita buat senyuman, kita akan rasa lebih tenang, kehidupan kita rasa seronok, kita akan rasa bahagia bila kita mampu untuk senyum.",
+  "words": [
+   {
+    "w": " Sebab",
+    "s": 15.62,
+    "e": 16.34
+   },
+   {
+    "w": " bila",
+    "s": 16.34,
+    "e": 16.52
+   },
+   {
+    "w": " kita",
+    "s": 16.52,
+    "e": 16.68
+   },
+   {
+    "w": " senyum,",
+    "s": 16.68,
+    "e": 17.34
+   },
+   {
+    "w": " bila",
+    "s": 17.36,
+    "e": 18.12
+   },
+   {
+    "w": " kita",
+    "s": 18.12,
+    "e": 18.34
+   },
+   {
+    "w": " buat",
+    "s": 18.34,
+    "e": 18.56
+   },
+   {
+    "w": " senyuman,",
+    "s": 18.56,
+    "e": 19.1
+   },
+   {
+    "w": " kita",
+    "s": 19.14,
+    "e": 19.88
+   },
+   {
+    "w": " akan",
+    "s": 19.88,
+    "e": 20.24
+   },
+   {
+    "w": " rasa",
+    "s": 20.24,
+    "e": 20.5
+   },
+   {
+    "w": " lebih",
+    "s": 20.5,
+    "e": 20.74
+   },
+   {
+    "w": " tenang,",
+    "s": 20.74,
+    "e": 21.44
+   },
+   {
+    "w": " kehidupan",
+    "s": 21.48,
+    "e": 22.22
+   },
+   {
+    "w": " kita",
+    "s": 22.22,
+    "e": 22.44
+   },
+   {
+    "w": " rasa",
+    "s": 22.44,
+    "e": 22.68
+   },
+   {
+    "w": " seronok,",
+    "s": 22.68,
+    "e": 23.42
+   },
+   {
+    "w": " kita",
+    "s": 23.42,
+    "e": 24.0
+   },
+   {
+    "w": " akan",
+    "s": 24.0,
+    "e": 24.36
+   },
+   {
+    "w": " rasa",
+    "s": 24.36,
+    "e": 24.56
+   },
+   {
+    "w": " bahagia",
+    "s": 24.56,
+    "e": 25.14
+   },
+   {
+    "w": " bila",
+    "s": 25.14,
+    "e": 25.32
+   },
+   {
+    "w": " kita",
+    "s": 25.32,
+    "e": 25.48
+   },
+   {
+    "w": " mampu",
+    "s": 25.48,
+    "e": 25.86
+   },
+   {
+    "w": " untuk",
+    "s": 25.86,
+    "e": 26.02
+   },
+   {
+    "w": " senyum.",
+    "s": 26.02,
+    "e": 26.3
+   }
+  ]
+ },
+ {
+  "start": 26.3,
+  "end": 33.86,
+  "text": " Kadang-kadang disebabkan kesibukan kita setiap hari, bekerja ke dan ketutupan keperluan seharian, kita lupa untuk senyum.",
+  "words": [
+   {
+    "w": " Kadang",
+    "s": 26.3,
+    "e": 26.54
+   },
+   {
+    "w": "-kadang",
+    "s": 26.54,
+    "e": 26.76
+   },
+   {
+    "w": " disebabkan",
+    "s": 26.76,
+    "e": 27.16
+   },
+   {
+    "w": " kesibukan",
+    "s": 27.16,
+    "e": 27.74
+   },
+   {
+    "w": " kita",
+    "s": 27.74,
+    "e": 28.04
+   },
+   {
+    "w": " setiap",
+    "s": 28.04,
+    "e": 28.46
+   },
+   {
+    "w": " hari,",
+    "s": 28.46,
+    "e": 28.62
+   },
+   {
+    "w": " bekerja",
+    "s": 28.74,
+    "e": 29.9
+   },
+   {
+    "w": " ke",
+    "s": 29.9,
+    "e": 30.0
+   },
+   {
+    "w": " dan",
+    "s": 30.0,
+    "e": 30.2
+   },
+   {
+    "w": " ketutupan",
+    "s": 30.2,
+    "e": 31.0
+   },
+   {
+    "w": " keperluan",
+    "s": 31.0,
+    "e": 31.5
+   },
+   {
+    "w": " seharian,",
+    "s": 31.5,
+    "e": 32.08
+   },
+   {
+    "w": " kita",
+    "s": 32.1,
+    "e": 32.74
+   },
+   {
+    "w": " lupa",
+    "s": 32.74,
+    "e": 33.3
+   },
+   {
+    "w": " untuk",
+    "s": 33.3,
+    "e": 33.44
+   },
+   {
+    "w": " senyum.",
+    "s": 33.44,
+    "e": 33.86
+   }
+  ]
+ },
+ {
+  "start": 34.14,
+  "end": 40.7,
+  "text": " Jadi, jangan lupa untuk senyum walaupun sekejap dalam setiap hari-hari yang akan mendatang.",
+  "words": [
+   {
+    "w": " Jadi,",
+    "s": 34.14,
+    "e": 34.76
+   },
+   {
+    "w": " jangan",
+    "s": 34.92,
+    "e": 35.8
+   },
+   {
+    "w": " lupa",
+    "s": 35.8,
+    "e": 36.16
+   },
+   {
+    "w": " untuk",
+    "s": 36.16,
+    "e": 36.38
+   },
+   {
+    "w": " senyum",
+    "s": 36.38,
+    "e": 36.9
+   },
+   {
+    "w": " walaupun",
+    "s": 36.9,
+    "e": 37.5
+   },
+   {
+    "w": " sekejap",
+    "s": 37.5,
+    "e": 38.08
+   },
+   {
+    "w": " dalam",
+    "s": 38.08,
+    "e": 38.46
+   },
+   {
+    "w": " setiap",
+    "s": 38.46,
+    "e": 39.06
+   },
+   {
+    "w": " hari",
+    "s": 39.06,
+    "e": 39.36
+   },
+   {
+    "w": "-hari",
+    "s": 39.36,
+    "e": 39.66
+   },
+   {
+    "w": " yang",
+    "s": 39.66,
+    "e": 39.8
+   },
+   {
+    "w": " akan",
+    "s": 39.8,
+    "e": 40.14
+   },
+   {
+    "w": " mendatang.",
+    "s": 40.14,
+    "e": 40.7
+   }
+  ]
+ },
+ {
+  "start": 41.46,
+  "end": 46.1,
+  "text": " Yang kedua, kita lupa untuk bersedekah.",
+  "words": [
+   {
+    "w": " Yang",
+    "s": 41.19,
+    "e": 41.5
+   },
+   {
+    "w": " kedua,",
+    "s": 41.5,
+    "e": 41.9
+   },
+   {
+    "w": " kita",
+    "s": 42.1,
+    "e": 43.32
+   },
+   {
+    "w": " lupa",
+    "s": 43.32,
+    "e": 43.98
+   },
+   {
+    "w": " untuk",
+    "s": 43.98,
+    "e": 44.42
+   },
+   {
+    "w": " bersedekah.",
+    "s": 44.42,
+    "e": 46.1
+   }
+  ]
+ },
+ {
+  "start": 46.54,
+  "end": 49.14,
+  "text": " Walaupun perkara tersebut simple je, tak susah pun.",
+  "words": [
+   {
+    "w": " Walaupun",
+    "s": 46.54,
+    "e": 47.16
+   },
+   {
+    "w": " perkara",
+    "s": 47.16,
+    "e": 47.5
+   },
+   {
+    "w": " tersebut",
+    "s": 47.5,
+    "e": 47.88
+   },
+   {
+    "w": " simple",
+    "s": 47.88,
+    "e": 48.2
+   },
+   {
+    "w": " je,",
+    "s": 48.2,
+    "e": 48.48
+   },
+   {
+    "w": " tak",
+    "s": 48.52,
+    "e": 48.64
+   },
+   {
+    "w": " susah",
+    "s": 48.64,
+    "e": 48.98
+   },
+   {
+    "w": " pun.",
+    "s": 48.98,
+    "e": 49.14
+   }
+  ]
+ },
+ {
+  "start": 49.4,
+  "end": 54.08,
+  "text": " Setiap hari kita solat lima waktu, bagi lelaki mungkin ada yang solat di sorau, di masjid.",
+  "words": [
+   {
+    "w": " Setiap",
+    "s": 49.4,
+    "e": 50.02
+   },
+   {
+    "w": " hari",
+    "s": 50.02,
+    "e": 50.2
+   },
+   {
+    "w": " kita",
+    "s": 50.2,
+    "e": 50.36
+   },
+   {
+    "w": " solat",
+    "s": 50.36,
+    "e": 50.7
+   },
+   {
+    "w": " lima",
+    "s": 50.7,
+    "e": 50.84
+   },
+   {
+    "w": " waktu,",
+    "s": 50.84,
+    "e": 51.08
+   },
+   {
+    "w": " bagi",
+    "s": 51.34,
+    "e": 51.7
+   },
+   {
+    "w": " lelaki",
+    "s": 51.7,
+    "e": 52.02
+   },
+   {
+    "w": " mungkin",
+    "s": 52.02,
+    "e": 52.18
+   },
+   {
+    "w": " ada",
+    "s": 52.18,
+    "e": 52.48
+   },
+   {
+    "w": " yang",
+    "s": 52.48,
+    "e": 52.68
+   },
+   {
+    "w": " solat",
+    "s": 52.68,
+    "e": 53.02
+   },
+   {
+    "w": " di",
+    "s": 53.02,
+    "e": 53.12
+   },
+   {
+    "w": " sorau,",
+    "s": 53.12,
+    "e": 53.48
+   },
+   {
+    "w": " di",
+    "s": 53.48,
+    "e": 53.58
+   },
+   {
+    "w": " masjid.",
+    "s": 53.58,
+    "e": 54.08
+   }
+  ]
+ },
+ {
+  "start": 54.32,
+  "end": 56.28,
+  "text": " Ataupun di mana-mana tempat yang belum bersedekah.",
+  "words": [
+   {
+    "w": " Ataupun",
+    "s": 54.32,
+    "e": 54.94
+   },
+   {
+    "w": " di",
+    "s": 54.94,
+    "e": 55.1
+   },
+   {
+    "w": " mana",
+    "s": 55.1,
+    "e": 55.32
+   },
+   {
+    "w": "-mana",
+    "s": 55.32,
+    "e": 55.48
+   },
+   {
+    "w": " tempat",
+    "s": 55.48,
+    "e": 55.88
+   },
+   {
+    "w": " yang",
+    "s": 55.88,
+    "e": 55.98
+   },
+   {
+    "w": " belum",
+    "s": 55.98,
+    "e": 56.08
+   },
+   {
+    "w": " bersedekah.",
+    "s": 56.08,
+    "e": 56.28
+   }
+  ]
+ },
+ {
+  "start": 56.3,
+  "end": 59.46,
+  "text": " Dan sekarang lagi mudah bersedekah melalui online.",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 56.3,
+    "e": 56.74
+   },
+   {
+    "w": " sekarang",
+    "s": 56.74,
+    "e": 57.32
+   },
+   {
+    "w": " lagi",
+    "s": 57.32,
+    "e": 57.64
+   },
+   {
+    "w": " mudah",
+    "s": 57.64,
+    "e": 58.08
+   },
+   {
+    "w": " bersedekah",
+    "s": 58.08,
+    "e": 58.78
+   },
+   {
+    "w": " melalui",
+    "s": 58.78,
+    "e": 59.22
+   },
+   {
+    "w": " online.",
+    "s": 59.22,
+    "e": 59.46
+   }
+  ]
+ },
+ {
+  "start": 59.68,
+  "end": 64.02,
+  "text": " Maka, setiap hari pastikan kita laksanakan sedekah walaupun sedikit.",
+  "words": [
+   {
+    "w": " Maka,",
+    "s": 59.68,
+    "e": 60.04
+   },
+   {
+    "w": " setiap",
+    "s": 60.04,
+    "e": 60.5
+   },
+   {
+    "w": " hari",
+    "s": 60.5,
+    "e": 60.68
+   },
+   {
+    "w": " pastikan",
+    "s": 60.68,
+    "e": 61.22
+   },
+   {
+    "w": " kita",
+    "s": 61.22,
+    "e": 61.52
+   },
+   {
+    "w": " laksanakan",
+    "s": 61.52,
+    "e": 62.22
+   },
+   {
+    "w": " sedekah",
+    "s": 62.22,
+    "e": 63.18
+   },
+   {
+    "w": " walaupun",
+    "s": 63.18,
+    "e": 63.52
+   },
+   {
+    "w": " sedikit.",
+    "s": 63.52,
+    "e": 64.02
+   }
+  ]
+ },
+ {
+  "start": 64.68,
+  "end": 69.22,
+  "text": " Kerana dengan sedekah tersebut, Allah akan limpahkan rezeki kepada kita.",
+  "words": [
+   {
+    "w": " Kerana",
+    "s": 64.42,
+    "e": 64.78
+   },
+   {
+    "w": " dengan",
+    "s": 64.78,
+    "e": 65.0
+   },
+   {
+    "w": " sedekah",
+    "s": 65.0,
+    "e": 65.48
+   },
+   {
+    "w": " tersebut,",
+    "s": 65.48,
+    "e": 66.0
+   },
+   {
+    "w": " Allah",
+    "s": 66.08,
+    "e": 66.84
+   },
+   {
+    "w": " akan",
+    "s": 66.84,
+    "e": 67.28
+   },
+   {
+    "w": " limpahkan",
+    "s": 67.28,
+    "e": 68.16
+   },
+   {
+    "w": " rezeki",
+    "s": 68.16,
+    "e": 68.68
+   },
+   {
+    "w": " kepada",
+    "s": 68.68,
+    "e": 68.94
+   },
+   {
+    "w": " kita.",
+    "s": 68.94,
+    "e": 69.22
+   }
+  ]
+ },
+ {
+  "start": 69.38,
+  "end": 75.64,
+  "text": " Allah akan berikan keberkatan rezeki kepada kita yang kita tidak tahu betapa banyak dan berharganya sedekah tersebut.",
+  "words": [
+   {
+    "w": " Allah",
+    "s": 69.38,
+    "e": 69.58
+   },
+   {
+    "w": " akan",
+    "s": 69.58,
+    "e": 69.82
+   },
+   {
+    "w": " berikan",
+    "s": 69.82,
+    "e": 70.14
+   },
+   {
+    "w": " keberkatan",
+    "s": 70.14,
+    "e": 70.82
+   },
+   {
+    "w": " rezeki",
+    "s": 70.82,
+    "e": 71.08
+   },
+   {
+    "w": " kepada",
+    "s": 71.08,
+    "e": 71.38
+   },
+   {
+    "w": " kita",
+    "s": 71.38,
+    "e": 71.68
+   },
+   {
+    "w": " yang",
+    "s": 71.68,
+    "e": 71.82
+   },
+   {
+    "w": " kita",
+    "s": 71.82,
+    "e": 72.0
+   },
+   {
+    "w": " tidak",
+    "s": 72.0,
+    "e": 72.26
+   },
+   {
+    "w": " tahu",
+    "s": 72.26,
+    "e": 72.62
+   },
+   {
+    "w": " betapa",
+    "s": 72.62,
+    "e": 73.0
+   },
+   {
+    "w": " banyak",
+    "s": 73.0,
+    "e": 73.48
+   },
+   {
+    "w": " dan",
+    "s": 73.48,
+    "e": 73.72
+   },
+   {
+    "w": " berharganya",
+    "s": 73.72,
+    "e": 74.94
+   },
+   {
+    "w": " sedekah",
+    "s": 74.94,
+    "e": 75.26
+   },
+   {
+    "w": " tersebut.",
+    "s": 75.26,
+    "e": 75.64
+   }
+  ]
+ },
+ {
+  "start": 75.84,
+  "end": 78.66,
+  "text": " Dan sedekah bukan tertentu pada nilai yang besar.",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 75.84,
+    "e": 76.24
+   },
+   {
+    "w": " sedekah",
+    "s": 76.24,
+    "e": 76.7
+   },
+   {
+    "w": " bukan",
+    "s": 76.7,
+    "e": 77.16
+   },
+   {
+    "w": " tertentu",
+    "s": 77.16,
+    "e": 77.84
+   },
+   {
+    "w": " pada",
+    "s": 77.84,
+    "e": 77.96
+   },
+   {
+    "w": " nilai",
+    "s": 77.96,
+    "e": 78.3
+   },
+   {
+    "w": " yang",
+    "s": 78.3,
+    "e": 78.44
+   },
+   {
+    "w": " besar.",
+    "s": 78.44,
+    "e": 78.66
+   }
+  ]
+ },
+ {
+  "start": 78.82,
+  "end": 81.78,
+  "text": " Tetapi pada keikhlasan kita memberi sedekah.",
+  "words": [
+   {
+    "w": " Tetapi",
+    "s": 78.82,
+    "e": 79.36
+   },
+   {
+    "w": " pada",
+    "s": 79.36,
+    "e": 79.58
+   },
+   {
+    "w": " keikhlasan",
+    "s": 79.58,
+    "e": 80.48
+   },
+   {
+    "w": " kita",
+    "s": 80.48,
+    "e": 80.7
+   },
+   {
+    "w": " memberi",
+    "s": 80.7,
+    "e": 81.38
+   },
+   {
+    "w": " sedekah.",
+    "s": 81.38,
+    "e": 81.78
+   }
+  ]
+ },
+ {
+  "start": 81.92,
+  "end": 86.18,
+  "text": " Dan yang ketiga, kadang-kadang kita lupa.",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 81.92,
+    "e": 82.58
+   },
+   {
+    "w": " yang",
+    "s": 82.58,
+    "e": 82.76
+   },
+   {
+    "w": " ketiga,",
+    "s": 82.76,
+    "e": 83.18
+   },
+   {
+    "w": " kadang",
+    "s": 83.42,
+    "e": 84.58
+   },
+   {
+    "w": "-kadang",
+    "s": 84.58,
+    "e": 85.04
+   },
+   {
+    "w": " kita",
+    "s": 85.04,
+    "e": 85.6
+   },
+   {
+    "w": " lupa.",
+    "s": 85.6,
+    "e": 86.18
+   }
+  ]
+ },
+ {
+  "start": 86.3,
+  "end": 88.08,
+  "text": " Kita cuba untuk bahagikan diri kita sendiri.",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 86.3,
+    "e": 86.42
+   },
+   {
+    "w": " cuba",
+    "s": 86.42,
+    "e": 86.42
+   },
+   {
+    "w": " untuk",
+    "s": 86.42,
+    "e": 86.42
+   },
+   {
+    "w": " bahagikan",
+    "s": 86.42,
+    "e": 87.24
+   },
+   {
+    "w": " diri",
+    "s": 87.24,
+    "e": 87.62
+   },
+   {
+    "w": " kita",
+    "s": 87.62,
+    "e": 87.74
+   },
+   {
+    "w": " sendiri.",
+    "s": 87.74,
+    "e": 88.08
+   }
+  ]
+ },
+ {
+  "start": 88.96,
+  "end": 90.76,
+  "text": " Kita cuba untuk bahagikan orang lain.",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 88.72,
+    "e": 89.02
+   },
+   {
+    "w": " cuba",
+    "s": 89.02,
+    "e": 89.48
+   },
+   {
+    "w": " untuk",
+    "s": 89.48,
+    "e": 89.6
+   },
+   {
+    "w": " bahagikan",
+    "s": 89.6,
+    "e": 90.22
+   },
+   {
+    "w": " orang",
+    "s": 90.22,
+    "e": 90.46
+   },
+   {
+    "w": " lain.",
+    "s": 90.46,
+    "e": 90.76
+   }
+  ]
+ },
+ {
+  "start": 90.96,
+  "end": 93.04,
+  "text": " Kita cuba untuk bahagikan sahabat kita.",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 90.96,
+    "e": 91.3
+   },
+   {
+    "w": " cuba",
+    "s": 91.3,
+    "e": 91.64
+   },
+   {
+    "w": " untuk",
+    "s": 91.64,
+    "e": 91.76
+   },
+   {
+    "w": " bahagikan",
+    "s": 91.76,
+    "e": 92.32
+   },
+   {
+    "w": " sahabat",
+    "s": 92.32,
+    "e": 92.9
+   },
+   {
+    "w": " kita.",
+    "s": 92.9,
+    "e": 93.04
+   }
+  ]
+ },
+ {
+  "start": 93.32,
+  "end": 95.48,
+  "text": " Kita cuba nak bahagikan orang sekeliling kita.",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 93.32,
+    "e": 93.64
+   },
+   {
+    "w": " cuba",
+    "s": 93.64,
+    "e": 94.02
+   },
+   {
+    "w": " nak",
+    "s": 94.02,
+    "e": 94.14
+   },
+   {
+    "w": " bahagikan",
+    "s": 94.14,
+    "e": 94.62
+   },
+   {
+    "w": " orang",
+    "s": 94.62,
+    "e": 94.92
+   },
+   {
+    "w": " sekeliling",
+    "s": 94.92,
+    "e": 95.3
+   },
+   {
+    "w": " kita.",
+    "s": 95.3,
+    "e": 95.48
+   }
+  ]
+ },
+ {
+  "start": 96.04,
+  "end": 98.74,
+  "text": " Rupanya kita lupa nak bahagikan diri kita.",
+  "words": [
+   {
+    "w": " Rupanya",
+    "s": 96.04,
+    "e": 96.64
+   },
+   {
+    "w": " kita",
+    "s": 96.64,
+    "e": 96.88
+   },
+   {
+    "w": " lupa",
+    "s": 96.88,
+    "e": 97.38
+   },
+   {
+    "w": " nak",
+    "s": 97.38,
+    "e": 97.56
+   },
+   {
+    "w": " bahagikan",
+    "s": 97.56,
+    "e": 98.2
+   },
+   {
+    "w": " diri",
+    "s": 98.2,
+    "e": 98.52
+   },
+   {
+    "w": " kita.",
+    "s": 98.52,
+    "e": 98.74
+   }
+  ]
+ },
+ {
+  "start": 99.02,
+  "end": 100.42,
+  "text": " Macam mana nak bahagikan diri kita?",
+  "words": [
+   {
+    "w": " Macam",
+    "s": 99.02,
+    "e": 99.4
+   },
+   {
+    "w": " mana",
+    "s": 99.4,
+    "e": 99.52
+   },
+   {
+    "w": " nak",
+    "s": 99.52,
+    "e": 99.68
+   },
+   {
+    "w": " bahagikan",
+    "s": 99.68,
+    "e": 100.04
+   },
+   {
+    "w": " diri",
+    "s": 100.04,
+    "e": 100.22
+   },
+   {
+    "w": " kita?",
+    "s": 100.22,
+    "e": 100.42
+   }
+  ]
+ },
+ {
+  "start": 101.5,
+  "end": 103.84,
+  "text": " Dengan cara kita mentaati Allah.",
+  "words": [
+   {
+    "w": " Dengan",
+    "s": 101.5,
+    "e": 102.1
+   },
+   {
+    "w": " cara",
+    "s": 102.1,
+    "e": 102.36
+   },
+   {
+    "w": " kita",
+    "s": 102.36,
+    "e": 102.82
+   },
+   {
+    "w": " mentaati",
+    "s": 102.82,
+    "e": 103.58
+   },
+   {
+    "w": " Allah.",
+    "s": 103.58,
+    "e": 103.84
+   }
+  ]
+ },
+ {
+  "start": 104.38,
+  "end": 106.48,
+  "text": " Melaksanakan segala perintah Allah.",
+  "words": [
+   {
+    "w": " Melaksanakan",
+    "s": 104.38,
+    "e": 104.98
+   },
+   {
+    "w": " segala",
+    "s": 104.98,
+    "e": 105.8
+   },
+   {
+    "w": " perintah",
+    "s": 105.8,
+    "e": 106.3
+   },
+   {
+    "w": " Allah.",
+    "s": 106.3,
+    "e": 106.48
+   }
+  ]
+ },
+ {
+  "start": 107.10000000000001,
+  "end": 110.1,
+  "text": " Melaksanakan segala tanggungjawab kita sebagai seorang hamba Allah.",
+  "words": [
+   {
+    "w": " Melaksanakan",
+    "s": 107.10000000000001,
+    "e": 107.7
+   },
+   {
+    "w": " segala",
+    "s": 107.7,
+    "e": 108.3
+   },
+   {
+    "w": " tanggungjawab",
+    "s": 108.3,
+    "e": 108.74
+   },
+   {
+    "w": " kita",
+    "s": 108.74,
+    "e": 108.94
+   },
+   {
+    "w": " sebagai",
+    "s": 108.94,
+    "e": 109.22
+   },
+   {
+    "w": " seorang",
+    "s": 109.22,
+    "e": 109.6
+   },
+   {
+    "w": " hamba",
+    "s": 109.6,
+    "e": 109.96
+   },
+   {
+    "w": " Allah.",
+    "s": 109.96,
+    "e": 110.1
+   }
+  ]
+ },
+ {
+  "start": 110.80000000000001,
+  "end": 114.02,
+  "text": " Pasti Allah akan beri rasa bahagilah kehidupan kita.",
+  "words": [
+   {
+    "w": " Pasti",
+    "s": 110.80000000000001,
+    "e": 111.4
+   },
+   {
+    "w": " Allah",
+    "s": 111.4,
+    "e": 111.66
+   },
+   {
+    "w": " akan",
+    "s": 111.66,
+    "e": 111.94
+   },
+   {
+    "w": " beri",
+    "s": 111.94,
+    "e": 112.36
+   },
+   {
+    "w": " rasa",
+    "s": 112.36,
+    "e": 112.54
+   },
+   {
+    "w": " bahagilah",
+    "s": 112.54,
+    "e": 113.4
+   },
+   {
+    "w": " kehidupan",
+    "s": 113.4,
+    "e": 113.8
+   },
+   {
+    "w": " kita.",
+    "s": 113.8,
+    "e": 114.02
+   }
+  ]
+ },
+ {
+  "start": 114.3,
+  "end": 116.22,
+  "text": " Sebab itu bila kita nak bahagia.",
+  "words": [
+   {
+    "w": " Sebab",
+    "s": 114.3,
+    "e": 114.9
+   },
+   {
+    "w": " itu",
+    "s": 114.9,
+    "e": 115.02
+   },
+   {
+    "w": " bila",
+    "s": 115.02,
+    "e": 115.24
+   },
+   {
+    "w": " kita",
+    "s": 115.24,
+    "e": 115.44
+   },
+   {
+    "w": " nak",
+    "s": 115.44,
+    "e": 115.68
+   },
+   {
+    "w": " bahagia.",
+    "s": 115.68,
+    "e": 116.22
+   }
+  ]
+ },
+ {
+  "start": 116.3,
+  "end": 121.5,
+  "text": " Kita pastikan kita buat perkara yang boleh menyukakan Allah SWT.",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 116.3,
+    "e": 117.24
+   },
+   {
+    "w": " pastikan",
+    "s": 117.24,
+    "e": 117.94
+   },
+   {
+    "w": " kita",
+    "s": 117.94,
+    "e": 118.32
+   },
+   {
+    "w": " buat",
+    "s": 118.32,
+    "e": 118.56
+   },
+   {
+    "w": " perkara",
+    "s": 118.56,
+    "e": 118.98
+   },
+   {
+    "w": " yang",
+    "s": 118.98,
+    "e": 119.18
+   },
+   {
+    "w": " boleh",
+    "s": 119.18,
+    "e": 119.4
+   },
+   {
+    "w": " menyukakan",
+    "s": 119.4,
+    "e": 120.22
+   },
+   {
+    "w": " Allah",
+    "s": 120.22,
+    "e": 120.58
+   },
+   {
+    "w": " SWT.",
+    "s": 120.58,
+    "e": 121.5
+   }
+  ]
+ },
+ {
+  "start": 121.82,
+  "end": 124.98,
+  "text": " Yang boleh menyebabkan kita rasa kehidupan kita tenang.",
+  "words": [
+   {
+    "w": " Yang",
+    "s": 121.82,
+    "e": 122.48
+   },
+   {
+    "w": " boleh",
+    "s": 122.48,
+    "e": 122.78
+   },
+   {
+    "w": " menyebabkan",
+    "s": 122.78,
+    "e": 123.4
+   },
+   {
+    "w": " kita",
+    "s": 123.4,
+    "e": 123.62
+   },
+   {
+    "w": " rasa",
+    "s": 123.62,
+    "e": 123.92
+   },
+   {
+    "w": " kehidupan",
+    "s": 123.92,
+    "e": 124.38
+   },
+   {
+    "w": " kita",
+    "s": 124.38,
+    "e": 124.58
+   },
+   {
+    "w": " tenang.",
+    "s": 124.58,
+    "e": 124.98
+   }
+  ]
+ },
+ {
+  "start": 125.28,
+  "end": 127.0,
+  "text": " Jadi antara cara nak tenang.",
+  "words": [
+   {
+    "w": " Jadi",
+    "s": 125.28,
+    "e": 125.74
+   },
+   {
+    "w": " antara",
+    "s": 125.74,
+    "e": 126.18
+   },
+   {
+    "w": " cara",
+    "s": 126.18,
+    "e": 126.34
+   },
+   {
+    "w": " nak",
+    "s": 126.34,
+    "e": 126.56
+   },
+   {
+    "w": " tenang.",
+    "s": 126.56,
+    "e": 127.0
+   }
+  ]
+ },
+ {
+  "start": 127.02,
+  "end": 129.36,
+  "text": " Dengan kita cuba bahagikan diri kita.",
+  "words": [
+   {
+    "w": " Dengan",
+    "s": 127.02,
+    "e": 127.6
+   },
+   {
+    "w": " kita",
+    "s": 127.6,
+    "e": 127.8
+   },
+   {
+    "w": " cuba",
+    "s": 127.8,
+    "e": 128.36
+   },
+   {
+    "w": " bahagikan",
+    "s": 128.36,
+    "e": 128.9
+   },
+   {
+    "w": " diri",
+    "s": 128.9,
+    "e": 129.16
+   },
+   {
+    "w": " kita.",
+    "s": 129.16,
+    "e": 129.36
+   }
+  ]
+ },
+ {
+  "start": 129.52,
+  "end": 130.38,
+  "text": " Macam mana nak bahagia?",
+  "words": [
+   {
+    "w": " Macam",
+    "s": 129.52,
+    "e": 129.72
+   },
+   {
+    "w": " mana",
+    "s": 129.72,
+    "e": 129.86
+   },
+   {
+    "w": " nak",
+    "s": 129.86,
+    "e": 130.0
+   },
+   {
+    "w": " bahagia?",
+    "s": 130.0,
+    "e": 130.38
+   }
+  ]
+ },
+ {
+  "start": 130.7,
+  "end": 134.8,
+  "text": " Jangan lupa menjaga hubungan kita dengan Allah SWT.",
+  "words": [
+   {
+    "w": " Jangan",
+    "s": 130.7,
+    "e": 131.36
+   },
+   {
+    "w": " lupa",
+    "s": 131.36,
+    "e": 131.8
+   },
+   {
+    "w": " menjaga",
+    "s": 131.8,
+    "e": 132.24
+   },
+   {
+    "w": " hubungan",
+    "s": 132.24,
+    "e": 132.64
+   },
+   {
+    "w": " kita",
+    "s": 132.64,
+    "e": 132.86
+   },
+   {
+    "w": " dengan",
+    "s": 132.86,
+    "e": 133.14
+   },
+   {
+    "w": " Allah",
+    "s": 133.14,
+    "e": 133.46
+   },
+   {
+    "w": " SWT.",
+    "s": 133.46,
+    "e": 134.8
+   }
+  ]
+ },
+ {
+  "start": 135.32,
+  "end": 137.8,
+  "text": " Barulah kita menjaga hubungan kita sebagai manusia.",
+  "words": [
+   {
+    "w": " Barulah",
+    "s": 135.32,
+    "e": 135.98
+   },
+   {
+    "w": " kita",
+    "s": 135.98,
+    "e": 136.16
+   },
+   {
+    "w": " menjaga",
+    "s": 136.16,
+    "e": 136.52
+   },
+   {
+    "w": " hubungan",
+    "s": 136.52,
+    "e": 136.86
+   },
+   {
+    "w": " kita",
+    "s": 136.86,
+    "e": 137.06
+   },
+   {
+    "w": " sebagai",
+    "s": 137.06,
+    "e": 137.26
+   },
+   {
+    "w": " manusia.",
+    "s": 137.26,
+    "e": 137.8
+   }
+  ]
+ },
+ {
+  "start": 138.02,
+  "end": 141.1,
+  "text": " InsyaAllah bila kita buat tiga perkara setiap hari.",
+  "words": [
+   {
+    "w": " InsyaAllah",
+    "s": 138.02,
+    "e": 138.68
+   },
+   {
+    "w": " bila",
+    "s": 138.68,
+    "e": 139.44
+   },
+   {
+    "w": " kita",
+    "s": 139.44,
+    "e": 139.6
+   },
+   {
+    "w": " buat",
+    "s": 139.6,
+    "e": 139.92
+   },
+   {
+    "w": " tiga",
+    "s": 139.92,
+    "e": 140.22
+   },
+   {
+    "w": " perkara",
+    "s": 140.22,
+    "e": 140.56
+   },
+   {
+    "w": " setiap",
+    "s": 140.56,
+    "e": 140.92
+   },
+   {
+    "w": " hari.",
+    "s": 140.92,
+    "e": 141.1
+   }
+  ]
+ },
+ {
+  "start": 141.28,
+  "end": 144.3,
+  "text": " Kita akan rasa luar biasa kehidupan kita.",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 141.28,
+    "e": 141.94
+   },
+   {
+    "w": " akan",
+    "s": 141.94,
+    "e": 142.22
+   },
+   {
+    "w": " rasa",
+    "s": 142.22,
+    "e": 142.64
+   },
+   {
+    "w": " luar",
+    "s": 142.64,
+    "e": 143.2
+   },
+   {
+    "w": " biasa",
+    "s": 143.2,
+    "e": 143.6
+   },
+   {
+    "w": " kehidupan",
+    "s": 143.6,
+    "e": 144.08
+   },
+   {
+    "w": " kita.",
+    "s": 144.08,
+    "e": 144.3
+   }
+  ]
+ }
+]
