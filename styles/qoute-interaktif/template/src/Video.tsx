@@ -51,7 +51,7 @@ const Front: React.FC<{ e: El }> = ({ e }) => {
     case 'crowd':
       return <Crowd label={e.label} at={tv(e.at)} until={tv(e.until)} />;
     case 'recap':
-      return <RecapList at={tv(e.at)} until={tv(e.until)} items={e.items} />;
+      return <RecapList at={tv(e.at)} until={tv(e.until)} items={e.items} good={e.good} />;
     case 'progress':
       return <ProgressChips at={tv(e.at)} until={tv(e.until)} items={e.items.map((i) => ({ text: i.text, at: tv(i.at) }))} />;
     case 'heart':

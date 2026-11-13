@@ -70,7 +70,7 @@ export type El =
   | { type: 'checklist'; title: string; at: TimeRef; until: TimeRef; items: Item[] }
   | { type: 'chat'; text: string; at: TimeRef; until: TimeRef; stampAt: TimeRef; stamp: string }
   | { type: 'crowd'; label: string; at: TimeRef; until: TimeRef }
-  | { type: 'recap'; at: TimeRef; until: TimeRef; items: string[] }
+  | { type: 'recap'; at: TimeRef; until: TimeRef; items: string[]; good?: boolean }
   | { type: 'progress'; at: TimeRef; until: TimeRef; items: Item[] }
   | { type: 'heart'; at: TimeRef; until: TimeRef; x?: number; y?: number; size?: number }
   | { type: 'quote'; text: string; at: TimeRef; until: TimeRef; y: number; size?: number }

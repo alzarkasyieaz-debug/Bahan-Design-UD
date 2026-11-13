@@ -1,0 +1,88 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "Z3.mp4 (76.30 s, 720x1280 HEVC -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    5.6
+   ],
+   "src": 63.1,
+   "srcEnd": 68.7
+  },
+  {
+   "id": "s1",
+   "out": [
+    5.6,
+    81.6
+   ],
+   "src": 0.0,
+   "srcEnd": 76.0
+  },
+  {
+   "id": "cta",
+   "out": [
+    81.6,
+    87.1
+   ],
+   "src": 75.0,
+   "srcEnd": 76.2,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 5.6,
+  "brollAwal": [
+   5.75,
+   14.0
+  ],
+  "situasi": 10.6,
+  "menguji": 12.84,
+  "ciri": 16.92,
+  "p1": 19.62,
+  "menghakimi": 22.52,
+  "memeriksa": 23.76,
+  "bertanya": 26.1,
+  "p2": 28.4,
+  "menegur": 30.86,
+  "mengikut": 35.9,
+  "menyokong": 36.8,
+  "p3": 39.4,
+  "sentiasaAda": 41.34,
+  "sokongan": 45.64,
+  "mintaPandangan": 48.2,
+  "p4": 49.94,
+  "pandangan": 54.82,
+  "kebaikan": 57.02,
+  "merosakkan": 59.36,
+  "menjauhkan": 61.84,
+  "recap": 65.32,
+  "hargailah": 68.32,
+  "kiriman": 71.92,
+  "climax": [
+   68.2,
+   73.9
+  ],
+  "finale": [
+   73.9,
+   81.6
+  ],
+  "membetulkan": 74.78,
+  "bersama": 76.54,
+  "brollAkhir": [
+   77.45,
+   81.5
+  ],
+  "jauhAllah": 78.6,
+  "cta": 81.6,
+  "end": 87.1,
+  "followPulse": [
+   20.0,
+   45.0,
+   70.0
+  ]
+ }
+}

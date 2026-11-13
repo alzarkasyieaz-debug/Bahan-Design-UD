@@ -1,0 +1,417 @@
+{
+ "meta": {
+  "title": "4 Ciri Sahabat Yang Baik",
+  "compositionId": "NakSeeHeartSahabatBaik",
+  "output": "nakseeheart-sahabat-baik",
+  "source": "Z3.mp4"
+ },
+ "layout": {
+  "face": {
+   "x": 520,
+   "y": 1100
+  },
+  "ceilingY": 330,
+  "ceilingTilt": -20,
+  "labelY": 190,
+  "cardY": 535,
+  "recapY": 380,
+  "subtitleY": 1478,
+  "lowerThirdY": 1580,
+  "hookFocusY": 1150,
+  "climaxFocusY": 1150
+ },
+ "camera": {
+  "punch": [
+   "p1",
+   "p2",
+   "p3",
+   "p4",
+   "hargailah"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.18,
+   1.28
+  ],
+  "hookZoom": [
+   1.3,
+   1.16,
+   1.24
+  ]
+ },
+ "subtitleCalm": [
+  [
+   "memeriksa-0.4",
+   "recap"
+  ]
+ ],
+ "music": {
+  "buildUp": "recap-6"
+ },
+ "sfx": [
+  {
+   "kind": "pop",
+   "at": "ciri"
+  },
+  {
+   "kind": "shimmer",
+   "at": "menguji",
+   "dur": 1.6,
+   "gain": 0.2
+  },
+  {
+   "kind": "impact",
+   "at": "hargailah+0.28",
+   "dur": 1.4,
+   "f": 50,
+   "gain": 0.25
+  },
+  {
+   "kind": "shimmer",
+   "at": "kiriman",
+   "dur": 2.4,
+   "gain": 0.3
+  },
+  {
+   "kind": "impact",
+   "at": "jauhAllah",
+   "dur": 1.4,
+   "f": 46,
+   "gain": 0.22
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "SAHABAT SEPERTI INI",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 44,
+   "y": 200
+  },
+  {
+   "type": "burst",
+   "at": 0.32,
+   "seed": "hook",
+   "spread": 460,
+   "y": 340
+  },
+  {
+   "type": "text3d",
+   "text": "HARGAILAH DIA",
+   "at": 0.3,
+   "until": "flashToBody-0.2",
+   "y": 340,
+   "size": 140,
+   "reveal": "punch",
+   "depth": 18,
+   "float": false
+  },
+  {
+   "type": "broll",
+   "kind": "friends",
+   "from": "brollAwal.0",
+   "to": "brollAwal.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "DALAM BERSAHABAT",
+     "at": "brollAwal.0+0.3",
+     "until": "brollAwal.1-0.1",
+     "y": 250,
+     "size": 44
+    },
+    {
+     "type": "text3d",
+     "text": "PELBAGAI SITUASI",
+     "at": "situasi",
+     "until": "menguji-0.1",
+     "y": 410,
+     "size": 130,
+     "depth": 16,
+     "rotX": 8
+    },
+    {
+     "type": "text3d",
+     "text": "MENGUJI KESABARAN",
+     "at": "menguji",
+     "until": "brollAwal.1-0.1",
+     "y": 410,
+     "size": 118,
+     "depth": 16,
+     "rotX": 8,
+     "reveal": "punch"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SAHABAT YANG BAIK",
+   "at": "ciri",
+   "until": "p1-0.15",
+   "size": 120
+  },
+  {
+   "type": "counter",
+   "count": 4,
+   "label": "CIRI",
+   "at": "ciri",
+   "until": "p1-0.15"
+  },
+  {
+   "type": "badge",
+   "n": "01",
+   "caption": "TIDAK MENGHAKIMI",
+   "at": "p1",
+   "until": "p2-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "TIDAK MENGHAKIMI",
+   "at": "menghakimi",
+   "until": "p2-0.15",
+   "size": 120,
+   "depth": 16
+  },
+  {
+   "type": "checklist",
+   "title": "SEBELUM MENILAI, DIA…",
+   "at": "memeriksa-0.4",
+   "until": "p2-0.15",
+   "items": [
+    {
+     "text": "PERIKSA DULU",
+     "at": "memeriksa"
+    },
+    {
+     "text": "TANYA DULU",
+     "at": "bertanya"
+    }
+   ]
+  },
+  {
+   "type": "badge",
+   "n": "02",
+   "caption": "BERANI MENEGUR",
+   "at": "p2",
+   "until": "p3-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BERANI MENEGUR",
+   "at": "menegur",
+   "until": "p3-0.15",
+   "size": 125,
+   "depth": 16
+  },
+  {
+   "type": "compare",
+   "at": "menegur",
+   "until": "p3-0.15",
+   "left": {
+    "title": "DIA AKAN",
+    "good": true,
+    "items": [
+     {
+      "text": "Tegur kesalahan & kelemahan",
+      "at": "menegur"
+     }
+    ]
+   },
+   "right": {
+    "title": "DIA TIDAK",
+    "items": [
+     {
+      "text": "Ikut yang salah",
+      "at": "mengikut"
+     },
+     {
+      "text": "Sokong yang salah",
+      "at": "menyokong"
+     }
+    ]
+   }
+  },
+  {
+   "type": "badge",
+   "n": "03",
+   "caption": "SENTIASA ADA",
+   "at": "p3",
+   "until": "p4-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SENTIASA ADA",
+   "at": "sentiasaAda",
+   "until": "p4-0.15",
+   "size": 150,
+   "depth": 18
+  },
+  {
+   "type": "checklist",
+   "title": "BILA KITA PERLUKAN",
+   "at": "sokongan-0.3",
+   "until": "p4-0.15",
+   "items": [
+    {
+     "text": "SOKONGAN",
+     "at": "sokongan"
+    },
+    {
+     "text": "PANDANGAN",
+     "at": "mintaPandangan"
+    }
+   ]
+  },
+  {
+   "type": "badge",
+   "n": "04",
+   "caption": "PANDANGAN YANG BAIK",
+   "at": "p4",
+   "until": "recap-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PALING PENTING",
+   "at": "p4+0.5",
+   "until": "pandangan-0.1",
+   "size": 130,
+   "fill": "cream",
+   "depth": 14
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PANDANGAN",
+   "at": "pandangan",
+   "until": "recap-0.15",
+   "size": 165,
+   "depth": 18
+  },
+  {
+   "type": "compare",
+   "at": "kebaikan-0.05",
+   "until": "recap-0.15",
+   "left": {
+    "title": "PANDANGAN YANG",
+    "good": true,
+    "items": [
+     {
+      "text": "Memberi kebaikan",
+      "at": "kebaikan"
+     }
+    ]
+   },
+   "right": {
+    "title": "BUKAN YANG",
+    "items": [
+     {
+      "text": "Merosakkan kita",
+      "at": "merosakkan"
+     },
+     {
+      "text": "Menjauhkan dari yang sepatutnya",
+      "at": "menjauhkan"
+     }
+    ]
+   }
+  },
+  {
+   "type": "label",
+   "text": "SAHABAT YANG BAIK",
+   "at": "recap+0.05",
+   "until": "climax.0+0.3",
+   "y": 175,
+   "size": 40
+  },
+  {
+   "type": "recap",
+   "at": "recap+0.1",
+   "until": "climax.0+0.3",
+   "items": [
+    "TIDAK MENGHAKIMI",
+    "BERANI MENEGUR",
+    "SENTIASA ADA",
+    "PANDANGAN YANG BAIK"
+   ],
+   "good": true
+  },
+  {
+   "type": "ceiling3d",
+   "text": "HARGAILAH DIA",
+   "at": "hargailah+0.3",
+   "until": "kiriman-0.1",
+   "size": 145,
+   "reveal": "punch",
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KIRIMAN ALLAH",
+   "at": "kiriman",
+   "until": "finale.0+0.2",
+   "size": 150,
+   "depth": 18
+  },
+  {
+   "type": "burst",
+   "at": "kiriman",
+   "seed": "kiriman",
+   "spread": 480
+  },
+  {
+   "type": "heart",
+   "at": "membetulkan-0.4",
+   "until": "brollAkhir.0",
+   "size": 80
+  },
+  {
+   "type": "checklist",
+   "title": "SAHABAT KIRIMAN ALLAH",
+   "at": "membetulkan-0.3",
+   "until": "brollAkhir.0+0.1",
+   "items": [
+    {
+     "text": "MEMBETULKAN KITA",
+     "at": "membetulkan"
+    },
+    {
+     "text": "BERSAMA KITA",
+     "at": "bersama"
+    }
+   ]
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "brollAkhir.0",
+   "to": "brollAkhir.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "SUPAYA KITA TIDAK JAUH",
+     "at": "brollAkhir.0+0.3",
+     "until": "brollAkhir.1-0.1",
+     "y": 290,
+     "size": 42
+    },
+    {
+     "type": "text3d",
+     "text": "DARIPADA ALLAH",
+     "at": "jauhAllah",
+     "until": "brollAkhir.1-0.1",
+     "y": 450,
+     "size": 160,
+     "depth": 20,
+     "rotX": 8
+    },
+    {
+     "type": "burst",
+     "at": "jauhAllah+0.3",
+     "y": 450,
+     "seed": "allah",
+     "spread": 480
+    }
+   ]
+  }
+ ]
+}

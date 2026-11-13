@@ -220,8 +220,8 @@ export const Crowd: React.FC<{ at: number; until: number; label: string }> = ({ 
   );
 };
 
-/** Rekap bernombor (timeline reveal) dalam zon atas */
-export const RecapList: React.FC<{ at: number; until: number; items: string[] }> = ({ at, until, items }) => {
+/** Rekap bernombor (timeline reveal) dalam zon atas — good: ikon ✓ (sifat/amalan baik), lalai ✗ (perkara dielakkan) */
+export const RecapList: React.FC<{ at: number; until: number; items: string[]; good?: boolean }> = ({ at, until, items, good }) => {
   const t = useTime();
   if (t < at - 0.05 || t > until + 0.05) return null;
   const o = appear(t, at, until);
@@ -235,7 +235,7 @@ export const RecapList: React.FC<{ at: number; until: number; items: string[] }>
           <div key={i} style={{ ...glass, padding: '10px 20px', display: 'flex', alignItems: 'center', gap: 18, opacity: p, transform: `translateX(${(1 - p) * -80}px)`, boxShadow: `0 10px 30px rgba(0,0,0,0.45), 0 0 ${10 + hi * 30}px rgba(216,180,106,${0.2 + hi * 0.5})` }}>
             <div style={{ fontFamily: FONT.display, fontSize: 52, lineHeight: 1, color: C.goldLight, width: 60 }}>0{i + 1}</div>
             <div style={{ flex: 1, fontFamily: FONT.sans, fontWeight: 800, fontSize: 34, color: C.white, letterSpacing: '0.03em' }}>{it}</div>
-            <IconCross size={38} p={p} />
+            {good ? <IconCheck size={38} p={p} /> : <IconCross size={38} p={p} />}
           </div>
         );
       })}

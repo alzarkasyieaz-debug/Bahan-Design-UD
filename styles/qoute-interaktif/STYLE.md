@@ -62,7 +62,7 @@ Laraskan `layout` dalam `storyboard.json` mengikut kedudukan wajah (ukur dengan 
 | `checklist` | Senarai syarat/amalan yang disebut satu demi satu | Kad |
 | `chat` | Contoh dialog yang penceramah sebut + cap ✗ | Kad |
 | `crowd` | Orang ramai / majlis / masyarakat | Kad |
-| `recap` | Ringkasan senarai bernombor | Atas |
+| `recap` | Ringkasan senarai bernombor (`good: true` = ✓ untuk sifat/amalan baik; lalai ✗ untuk perkara dielakkan) | Atas |
 | `progress` | Hasil/kemajuan ("lebih baik", "lebih lancar") | Kad |
 | `heart` | Hati, kasih sayang, ukhuwah | Atas |
 | `chip` | Konteks pendek dengan ikon | Kad |
