@@ -9,7 +9,7 @@ import { C, FONT, SB } from './lib';
  * lengkung emas & logo ▶ NakSeeHeart.
  * Data: storyboard.json -> "poster" {
  *   frame, icon: 'chat'|'heart'|'check'|'star', top, mid, last, banner, num, numLabel,
- *   headTop, chinY, faceX }   <- kedudukan atas kepala / bawah janggut / tengah wajah dalam bingkai cover (px 1080x1920)
+ *   headTop, chinY, faceX, maxScale? }   <- kedudukan atas kepala / bawah janggut / tengah wajah dalam bingkai cover (px 1080x1920)
  * Wajah TIDAK ditindih: gambar diskala automatik supaya kepala→janggut muat di antara banner (y≈650)
  * dan pil nombor (y≈1470); tepi yang kosong diisi versi kabur gambar yang sama.
  * ===================================================================== */
@@ -19,6 +19,7 @@ type PosterData = {
   headTop?: number;
   chinY?: number;
   faceX?: number;
+  maxScale?: number;
   icon?: 'chat' | 'heart' | 'check' | 'star';
   top: string;
   mid: string;
@@ -136,7 +137,7 @@ export const CoverPoster: React.FC = () => {
   const headTop = p.headTop ?? SB.layout.face.y - 420;
   const chinY = p.chinY ?? SB.layout.face.y + 430;
   const faceX = p.faceX ?? SB.layout.face.x;
-  const s = Math.min(1.1, (CHIN - HEAD) / (chinY - headTop));
+  const s = Math.min(p.maxScale ?? 1.1, (CHIN - HEAD) / (chinY - headTop)); // maxScale: naikkan untuk rakaman jarak jauh
   const tx = 540 - faceX * s;
   const ty = HEAD - headTop * s;
   const topSize = fit(p.top, 680, 96);
