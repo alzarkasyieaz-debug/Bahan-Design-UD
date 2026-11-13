@@ -113,11 +113,12 @@ Sepanjang video, **kelihatan sejak bingkai pertama**: kaca gelap, ikon TikTok, *
 
 ### Cover gaya **Poster** (thumbnail berani)
 `npm run cover -- poster` (atau `bash scripts/cover.sh poster`) → `out/<output>-poster.{png,jpg}` daripada `storyboard.json → poster`:
-`{ "icon": "chat|heart|check|star", "top": "ORANG KOMEN", "mid": "HASIL KERJA", "last": "KITA?", "banner": "Jangan cepat down!", "num": "3", "numLabel": "Cara Hadapi", "frame"?, "faceY"? }`
+`{ "icon": "chat|heart|check|star", "top": "ORANG KOMEN", "mid": "HASIL KERJA", "last": "KITA?", "banner": "Jangan cepat down!", "num": "3", "numLabel": "Cara Hadapi", "frame"?, "headTop", "chinY", "faceX" }`
 - Tajuk 3 tingkat italik tebal: `top` putih, **`mid` emas dalam kotak gelap**, `last` putih (soalan/cangkuk).
 - Banner sapuan berus emas, ayat cangkuk pendek yang mendorong klik.
 - Pil nombor bulat emas + label = isi video (jumlah tips/ciri/cara). Gunakan nombor **yang benar-benar disebut** dalam video.
-- Wajah terang di tengah; logo ▶ NakSeeHeart + lengkung emas di bawah.
+- **Wajah tidak ditindih:** ukur `headTop` (atas kepala), `chinY` (bawah janggut) & `faceX` pada bingkai cover. Gambar diskala automatik supaya kepala→janggut muat di antara banner (y≈655) dan pil (y≈1468); tepi diisi versi kabur gambar yang sama.
+- Wajah terang; logo ▶ NakSeeHeart + lengkung emas di bawah.
 
 ## 11. Kawalan kualiti (wajib sebelum render penuh)
 1. `npm run still -- <bingkai>` di setiap babak; semak tiada pertindihan teks/wajah.

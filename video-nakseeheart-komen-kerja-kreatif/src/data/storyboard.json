@@ -465,6 +465,8 @@
   "num": "3",
   "numLabel": "Cara Hadapi",
   "frame": 92.0,
-  "faceY": 780
+  "headTop": 520,
+  "chinY": 1220,
+  "faceX": 580
  }
 }

@@ -488,6 +488,9 @@
   "last": "BUAT INI?",
   "banner": "Simple tapi bermakna!",
   "num": "3",
-  "numLabel": "Perkara Harian"
+  "numLabel": "Perkara Harian",
+  "headTop": 608,
+  "chinY": 1420,
+  "faceX": 600
  }
 }

@@ -8,12 +8,17 @@ import { C, FONT, SB } from './lib';
  * ikon emas + garis kilauan, banner sapuan berus emas, wajah terang, pil nombor bulat emas,
  * lengkung emas & logo ▶ NakSeeHeart.
  * Data: storyboard.json -> "poster" {
- *   frame, faceY?, icon: 'chat'|'heart'|'check'|'star',
- *   top, mid, last, banner, num, numLabel }
+ *   frame, icon: 'chat'|'heart'|'check'|'star', top, mid, last, banner, num, numLabel,
+ *   headTop, chinY, faceX }   <- kedudukan atas kepala / bawah janggut / tengah wajah dalam bingkai cover (px 1080x1920)
+ * Wajah TIDAK ditindih: gambar diskala automatik supaya kepala→janggut muat di antara banner (y≈650)
+ * dan pil nombor (y≈1470); tepi yang kosong diisi versi kabur gambar yang sama.
  * ===================================================================== */
 type PosterData = {
   frame?: number;
   faceY?: number;
+  headTop?: number;
+  chinY?: number;
+  faceX?: number;
   icon?: 'chat' | 'heart' | 'check' | 'star';
   top: string;
   mid: string;
@@ -125,55 +130,74 @@ const Brush: React.FC<{ text: string; y: number }> = ({ text, y }) => {
 
 export const CoverPoster: React.FC = () => {
   const p = (SB as unknown as { poster: PosterData; cover?: { frame: number; faceY?: number } }).poster;
-  const faceY = p.faceY ?? SB.layout.face.y;
-  // wajah terang, pusat wajah sekitar y≈1000 (kopiah di bawah banner)
-  const s = 1.12;
-  const tx = Math.min(0, Math.max(1080 - 1080 * s, 540 - SB.layout.face.x * s));
-  const ty = Math.min(0, Math.max(1920 - 1920 * s, 1010 - faceY * s));
-  const topSize = fit(p.top, 700, 104);
-  const midSize = fit(p.mid, 880, 150);
-  const lastSize = fit(p.last, 760, 140);
+  // zon wajah bebas grafik: atas kepala di y=HEAD, bawah janggut di y=CHIN
+  const HEAD = 655;
+  const CHIN = 1468;
+  const headTop = p.headTop ?? SB.layout.face.y - 420;
+  const chinY = p.chinY ?? SB.layout.face.y + 430;
+  const faceX = p.faceX ?? SB.layout.face.x;
+  const s = Math.min(1.1, (CHIN - HEAD) / (chinY - headTop));
+  const tx = 540 - faceX * s;
+  const ty = HEAD - headTop * s;
+  const topSize = fit(p.top, 680, 96);
+  const midSize = fit(p.mid, 860, 138);
+  const lastSize = fit(p.last, 740, 124);
   return (
     <AbsoluteFill style={{ backgroundColor: C.charcoal, overflow: 'hidden' }}>
+      {/* latar kabur (isi tepi) */}
+      <AbsoluteFill style={{ transform: 'scale(1.35)', transformOrigin: '50% 45%' }}>
+        <Img src={staticFile('media/cover-frame.jpg')} style={{ width: 1080, height: 1920, objectFit: 'cover', filter: 'blur(26px) brightness(0.85) saturate(1.1)' }} />
+      </AbsoluteFill>
+      {/* gambar utama: kepala→janggut dalam zon bebas grafik */}
       <AbsoluteFill style={{ transform: `translate(${tx}px, ${ty}px) scale(${s})`, transformOrigin: '0 0' }}>
-        <Img src={staticFile('media/cover-frame.jpg')} style={{ width: 1080, height: 1920, objectFit: 'cover', filter: 'contrast(1.1) saturate(1.15) brightness(1.14)' }} />
+        <Img
+          src={staticFile('media/cover-frame.jpg')}
+          style={{
+            width: 1080,
+            height: 1920,
+            objectFit: 'cover',
+            filter: 'contrast(1.1) saturate(1.15) brightness(1.14)',
+            WebkitMaskImage: 'linear-gradient(90deg, transparent 0%, black 13%, black 87%, transparent 100%)',
+            maskImage: 'linear-gradient(90deg, transparent 0%, black 13%, black 87%, transparent 100%)',
+          }}
+        />
       </AbsoluteFill>
       {/* cahaya hangat pada wajah, gelap di atas (tajuk) & bawah (pil) */}
       <AbsoluteFill style={{ background: 'radial-gradient(ellipse 55% 30% at 50% 50%, rgba(255,214,150,0.18), rgba(0,0,0,0) 70%)', mixBlendMode: 'screen' }} />
-      <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(10,9,8,0.88) 0%, rgba(10,9,8,0.7) 22%, rgba(10,9,8,0.2) 33%, rgba(0,0,0,0) 39%, rgba(0,0,0,0) 66%, rgba(10,9,8,0.55) 78%, rgba(10,9,8,0.92) 100%)' }} />
+      <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(10,9,8,0.9) 0%, rgba(10,9,8,0.78) 26%, rgba(10,9,8,0.25) 34%, rgba(0,0,0,0) 37%, rgba(0,0,0,0) 74%, rgba(10,9,8,0.6) 80%, rgba(10,9,8,0.94) 100%)' }} />
       <AbsoluteFill style={{ background: 'radial-gradient(ellipse 85% 70% at 50% 50%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.45) 100%)' }} />
 
       {/* ikon + kilauan */}
-      <div style={{ position: 'absolute', left: 70, top: 92, transform: 'rotate(-8deg)', filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.6)) drop-shadow(0 0 18px rgba(245,196,81,0.45))' }}>
+      <div style={{ position: 'absolute', left: 62, top: 66, transform: 'rotate(-8deg) scale(0.9)', filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.6)) drop-shadow(0 0 18px rgba(245,196,81,0.45))' }}>
         <Icon kind={p.icon ?? 'chat'} />
       </div>
-      <Spark x={900} y={70} />
+      <Spark x={905} y={50} />
 
       {/* tajuk 3 tingkat */}
-      <div style={{ position: 'absolute', left: 560, top: 200, transform: 'translate(-50%,-50%)' }}>
+      <div style={{ position: 'absolute', left: 560, top: 170, transform: 'translate(-50%,-50%)' }}>
         <GoldText text={p.top} size={topSize} white />
       </div>
-      <div style={{ position: 'absolute', left: 540, top: 345, transform: 'translate(-50%,-50%)' }}>
+      <div style={{ position: 'absolute', left: 540, top: 300, transform: 'translate(-50%,-50%)' }}>
         <div style={{ position: 'absolute', left: -40, right: -40, top: -14, bottom: -18, borderRadius: 26, background: 'linear-gradient(180deg, rgba(30,24,16,0.92), rgba(16,13,9,0.86))', border: '2px solid rgba(245,196,81,0.55)', boxShadow: '0 16px 40px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.08)', transform: SKEW }} />
         <div style={{ position: 'relative' }}><GoldText text={p.mid} size={midSize} /></div>
       </div>
-      <div style={{ position: 'absolute', left: 540, top: 500, transform: 'translate(-50%,-50%)' }}>
+      <div style={{ position: 'absolute', left: 540, top: 440, transform: 'translate(-50%,-50%)' }}>
         <GoldText text={p.last} size={lastSize} white />
       </div>
       {/* garis emas bawah tajuk */}
-      <div style={{ position: 'absolute', left: 190, width: 700, top: 590, height: 3, background: 'linear-gradient(90deg, rgba(245,196,81,0), #F5C451, rgba(245,196,81,0))', boxShadow: '0 0 14px #F5C451' }} />
-      <Brush text={p.banner} y={660} />
+      <div style={{ position: 'absolute', left: 190, width: 700, top: 515, height: 3, background: 'linear-gradient(90deg, rgba(245,196,81,0), #F5C451, rgba(245,196,81,0))', boxShadow: '0 0 14px #F5C451' }} />
+      <Brush text={p.banner} y={575} />
 
       {/* pil nombor */}
-      <div style={{ position: 'absolute', left: 540, top: 1500, transform: 'translate(-50%,-50%)', display: 'flex', alignItems: 'center', gap: 26, padding: '14px 56px 14px 14px', borderRadius: 120, background: 'linear-gradient(180deg, rgba(28,22,14,0.92), rgba(12,10,7,0.9))', border: '3px solid #E9B54A', boxShadow: '0 18px 46px rgba(0,0,0,0.65), 0 0 30px rgba(233,181,74,0.45), inset 0 1px 0 rgba(255,255,255,0.12)' }}>
-        <div style={{ width: 170, height: 170, borderRadius: '50%', background: 'radial-gradient(circle at 40% 35%, #3A2C16, #120D06)', border: '5px solid #F2C35A', boxShadow: '0 0 24px rgba(242,195,90,0.6), inset 0 0 18px rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <GoldText text={p.num} size={130} />
+      <div style={{ position: 'absolute', left: 540, top: 1565, transform: 'translate(-50%,-50%)', display: 'flex', alignItems: 'center', gap: 22, padding: '10px 46px 10px 10px', borderRadius: 120, background: 'linear-gradient(180deg, rgba(28,22,14,0.92), rgba(12,10,7,0.9))', border: '3px solid #E9B54A', boxShadow: '0 18px 46px rgba(0,0,0,0.65), 0 0 30px rgba(233,181,74,0.45), inset 0 1px 0 rgba(255,255,255,0.12)' }}>
+        <div style={{ width: 132, height: 132, borderRadius: '50%', background: 'radial-gradient(circle at 40% 35%, #3A2C16, #120D06)', border: '5px solid #F2C35A', boxShadow: '0 0 24px rgba(242,195,90,0.6), inset 0 0 18px rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <GoldText text={p.num} size={100} />
         </div>
-        <GoldText text={p.numLabel} size={fit(p.numLabel, 560, 96)} white />
+        <GoldText text={p.numLabel} size={fit(p.numLabel, 520, 80)} white />
       </div>
 
       {/* lengkung emas */}
-      <svg width="1080" height="260" viewBox="0 0 1080 260" style={{ position: 'absolute', left: 0, top: 1660 }}>
+      <svg width="1080" height="260" viewBox="0 0 1080 260" style={{ position: 'absolute', left: 0, top: 1680 }}>
         <defs>
           <linearGradient id="sw" x1="0" x2="1">
             <stop offset="0" stopColor="rgba(245,196,81,0)" />
@@ -185,7 +209,7 @@ export const CoverPoster: React.FC = () => {
         <path d="M-40 255 C300 160 780 160 1120 255" stroke="url(#sw)" strokeWidth="3" fill="none" opacity="0.7" />
       </svg>
       {/* logo */}
-      <div style={{ position: 'absolute', left: 540, top: 1690, transform: 'translate(-50%,-50%)', display: 'flex', alignItems: 'center', gap: 18 }}>
+      <div style={{ position: 'absolute', left: 540, top: 1712, transform: 'translate(-50%,-50%)', display: 'flex', alignItems: 'center', gap: 18 }}>
         <div style={{ width: 150, height: 2, background: 'linear-gradient(90deg, rgba(245,196,81,0), #F5C451)' }} />
         <svg width="46" height="46" viewBox="0 0 46 46">
           <rect x="2" y="2" width="42" height="42" rx="12" fill="none" stroke="#F5C451" strokeWidth="4" />
