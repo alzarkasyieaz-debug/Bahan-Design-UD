@@ -422,5 +422,14 @@
   "tag": "Jika memilikinya, hargailah dia",
   "bigSize": 270,
   "line2Size": 104
+ },
+ "poster": {
+  "icon": "heart",
+  "top": "ADA TAK",
+  "mid": "SAHABAT",
+  "last": "MACAM NI?",
+  "banner": "Kalau ada, hargailah dia!",
+  "num": "4",
+  "numLabel": "Ciri Sahabat Baik"
  }
 }

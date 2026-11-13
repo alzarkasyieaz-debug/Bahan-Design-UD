@@ -111,6 +111,14 @@ Sepanjang video, **kelihatan sejak bingkai pertama**: kaca gelap, ikon TikTok, *
 - `tag` bertanda petik **hanya** untuk ucapan tepat; parafrasa ditulis tanpa tanda petik.
 - `faceY` melaraskan kedudukan wajah jika wajah dalam bingkai cover lebih tinggi/rendah daripada `layout.face`.
 
+### Cover gaya **Poster** (thumbnail berani)
+`npm run cover -- poster` (atau `bash scripts/cover.sh poster`) → `out/<output>-poster.{png,jpg}` daripada `storyboard.json → poster`:
+`{ "icon": "chat|heart|check|star", "top": "ORANG KOMEN", "mid": "HASIL KERJA", "last": "KITA?", "banner": "Jangan cepat down!", "num": "3", "numLabel": "Cara Hadapi", "frame"?, "faceY"? }`
+- Tajuk 3 tingkat italik tebal: `top` putih, **`mid` emas dalam kotak gelap**, `last` putih (soalan/cangkuk).
+- Banner sapuan berus emas, ayat cangkuk pendek yang mendorong klik.
+- Pil nombor bulat emas + label = isi video (jumlah tips/ciri/cara). Gunakan nombor **yang benar-benar disebut** dalam video.
+- Wajah terang di tengah; logo ▶ NakSeeHeart + lengkung emas di bawah.
+
 ## 11. Kawalan kualiti (wajib sebelum render penuh)
 1. `npm run still -- <bingkai>` di setiap babak; semak tiada pertindihan teks/wajah.
 2. Subtitle ≤ 2 baris; tiada chunk < 1 s yang tidak perlu.

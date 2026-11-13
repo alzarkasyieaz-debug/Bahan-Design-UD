@@ -455,5 +455,16 @@
   "bigSize": 270,
   "line2Size": 112,
   "faceY": 780
+ },
+ "poster": {
+  "icon": "chat",
+  "top": "ORANG KOMEN",
+  "mid": "HASIL KERJA",
+  "last": "KITA?",
+  "banner": "Jangan cepat down!",
+  "num": "3",
+  "numLabel": "Cara Hadapi",
+  "frame": 92.0,
+  "faceY": 780
  }
 }

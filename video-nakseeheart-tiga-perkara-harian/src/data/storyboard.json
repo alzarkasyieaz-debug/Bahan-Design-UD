@@ -480,5 +480,14 @@
   "tag": "Jangan lupa lakukan setiap hari",
   "bigSize": 230,
   "line2Size": 110
+ },
+ "poster": {
+  "icon": "check",
+  "top": "SETIAP HARI",
+  "mid": "KITA LUPA",
+  "last": "BUAT INI?",
+  "banner": "Simple tapi bermakna!",
+  "num": "3",
+  "numLabel": "Perkara Harian"
  }
 }
