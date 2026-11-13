@@ -331,5 +331,14 @@
     }
    ]
   }
- ]
+ ],
+ "cover": {
+  "frame": 22.0,
+  "kicker": "CARA MEMUPUK AKHLAK",
+  "big": "SANGKA BAIK",
+  "line2": "ALLAH PERMUDAHKAN",
+  "tag": "Bila kita sentiasa bersangka baik",
+  "bigSize": 200,
+  "line2Size": 98
+ }
 }

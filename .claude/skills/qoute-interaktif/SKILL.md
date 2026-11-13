@@ -45,7 +45,10 @@ npm run render                 # render + mampat < 100 MB -> out/<output>.mp4
 ```
 Semak: tiada pertindihan, subtitle ≤2 baris, kenyaringan, saiz fail.
 
-## 7. Serahan
+## 7. Cover
+Tambah `cover` dalam storyboard.json (lihat STYLE.md §10), kemudian `npm run cover`. Semak gambar; laras `faceY` jika tajuk bertindih wajah.
+
+## 8. Serahan
 - Commit projek (tanpa `public/media`, kerana proxy besar) + MP4 akhir ke branch kerja; push.
-- Hantar MP4 kepada pengguna (`SendUserFile`). Laporkan secara jujur: durasi, bahagian yang dibuang & sebabnya, perkara yang tidak dapat dibuat (cth. video rujukan), dan bahawa audio disemak melalui ukuran sahaja.
+- Hantar MP4 + cover JPG kepada pengguna (`SendUserFile`). Laporkan secara jujur: durasi, bahagian yang dibuang & sebabnya, perkara yang tidak dapat dibuat (cth. video rujukan), dan bahawa audio disemak melalui ukuran sahaja.
 - Tulis `README.md` projek: analisis, EDL dengan timestamp asal, storyboard, keputusan komposit, audio, QC, kapsyen hantaran + hashtag.

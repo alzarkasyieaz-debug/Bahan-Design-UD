@@ -471,5 +471,14 @@
    "spread": 520,
    "count": 44
   }
- ]
+ ],
+ "cover": {
+  "frame": 124.9,
+  "kicker": "SETIAP HARI KITA LUPA",
+  "big": "3 PERKARA",
+  "line2": "SIMPLE & RINGKAS",
+  "tag": "Jangan lupa lakukan setiap hari",
+  "bigSize": 230,
+  "line2Size": 110
+ }
 }

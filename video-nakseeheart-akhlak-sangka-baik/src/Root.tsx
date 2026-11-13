@@ -2,6 +2,7 @@ import React from 'react';
 import { Composition, continueRender, delayRender, staticFile } from 'remotion';
 import { loadFont } from '@remotion/fonts';
 import { NakSeeHeartVideo } from './Video';
+import { Cover } from './Cover';
 import { FPS, TOTAL_FRAMES, W, H, SB } from './lib';
 
 // Fon tempatan (SIL Open Font License) — tiada muat turun semasa render
@@ -17,5 +18,9 @@ Promise.all([
 ]).then(() => continueRender(handle));
 
 export const RemotionRoot: React.FC = () => (
-  <Composition id={SB.meta.compositionId} component={NakSeeHeartVideo} durationInFrames={TOTAL_FRAMES} fps={FPS} width={W} height={H} />
+  <>
+    <Composition id={SB.meta.compositionId} component={NakSeeHeartVideo} durationInFrames={TOTAL_FRAMES} fps={FPS} width={W} height={H} />
+    {/* Cover/thumbnail: bash scripts/cover.sh */}
+    <Composition id="Cover" component={Cover} durationInFrames={1} fps={FPS} width={W} height={H} />
+  </>
 );

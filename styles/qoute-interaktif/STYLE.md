@@ -103,7 +103,15 @@ Laraskan `layout` dalam `storyboard.json` mengikut kedudukan wajah (ukur dengan 
 ## 9. Lower third
 Sepanjang video, **kelihatan sejak bingkai pertama**: kaca gelap, ikon TikTok, **FOLLOW @NakSeeHeart**, "Nasihat Ringkas, Makna Mendalam.", breathing glow, pulse FOLLOW pada `followPulse` (setiap ~25 s). Pada CTA ia bertukar menjadi kad besar di tengah.
 
-## 10. Kawalan kualiti (wajib sebelum render penuh)
+## 10. Cover / thumbnail
+`npm run cover` menghasilkan `out/<output>-cover.png` dan `.jpg` (1080×1920) daripada `storyboard.json → cover`:
+`{ "frame": <saat dalam speaker.mp4>, "kicker": "LABEL ATAS", "big": "TAJUK 3D", "line2": "BARIS KEDUA", "tag": "teks italik", "bigSize"?, "line2Size"?, "faceY"? }`
+- Pilih bingkai ekspresi terbaik (senyum/hangat, mata ke kamera).
+- Tajuk & jenama dalam zon tengah 3:4 (y 240–1680), kerana grid profil TikTok memotong cover.
+- `tag` bertanda petik **hanya** untuk ucapan tepat; parafrasa ditulis tanpa tanda petik.
+- `faceY` melaraskan kedudukan wajah jika wajah dalam bingkai cover lebih tinggi/rendah daripada `layout.face`.
+
+## 11. Kawalan kualiti (wajib sebelum render penuh)
 1. `npm run still -- <bingkai>` di setiap babak; semak tiada pertindihan teks/wajah.
 2. Subtitle ≤ 2 baris; tiada chunk < 1 s yang tidak perlu.
 3. Kenyaringan -14 LUFS; muzik tidak menenggelamkan suara.

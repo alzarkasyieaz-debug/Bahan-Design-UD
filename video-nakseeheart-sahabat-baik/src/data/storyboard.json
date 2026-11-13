@@ -413,5 +413,14 @@
     }
    ]
   }
- ]
+ ],
+ "cover": {
+  "frame": 26.1,
+  "kicker": "PERSAHABATAN",
+  "big": "4 CIRI",
+  "line2": "SAHABAT YANG BAIK",
+  "tag": "Jika memilikinya, hargailah dia",
+  "bigSize": 270,
+  "line2Size": 104
+ }
 }

@@ -9,7 +9,8 @@
     "audio": "python3 scripts/generate_audio.py",
     "studio": "remotion studio",
     "still": "bash scripts/render.sh still",
-    "render": "bash scripts/render.sh"
+    "render": "bash scripts/render.sh",
+    "cover": "bash scripts/cover.sh"
   },
   "dependencies": {
     "@remotion/cli": "4.0.542",
