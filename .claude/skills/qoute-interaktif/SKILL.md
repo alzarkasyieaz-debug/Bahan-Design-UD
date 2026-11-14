@@ -38,6 +38,7 @@ Jika `node_modules` tiada: `npm install` dalam projek (atau symlink daripada pro
 
 ## 6. Audio, semakan, render
 ```bash
+npm run color                  # normalisasi warna rakaman (selaras dengan video lain)
 npm run audio                  # mix -14 LUFS, muzik perlahan (ducking -16 dB)
 npx tsc -p .                   # typecheck
 npm run still -- <bingkai>     # semak setiap babak (gabung jadi contact sheet & lihat)

@@ -100,6 +100,11 @@ Laraskan `layout` dalam `storyboard.json` mengikut kedudukan wajah (ukur dengan 
 - SFX minimum: automatik (hook, badge, item kad, B-roll, klimaks, penutup, CTA) + `sfx[]` khusus.
 - Master -14 LUFS, true-peak -1.5 dBTP.
 
+### Normalisasi warna video (selaras untuk semua video)
+`npm run color` (selepas `layout.face` ditetapkan, sebelum render) menormalkan rakaman penceramah:
+imbangan putih daripada piksel neutral, luminans median wajah = 0.50, ketepuan wajah = 0.30 (median 12 bingkai, tiada kelipan).
+Lapisan cut-out (`speaker_fg.webm`) digred dengan rantaian yang sama. Look emas/teal datang daripada lapisan `Grade` dalam komposisi.
+
 ## 9. Lower third
 Sepanjang video, **kelihatan sejak bingkai pertama**: kaca gelap, ikon TikTok, **FOLLOW @NakSeeHeart**, "Nasihat Ringkas, Makna Mendalam.", breathing glow, pulse FOLLOW pada `followPulse` (setiap ~25 s). Pada CTA ia bertukar menjadi kad besar di tengah.
 

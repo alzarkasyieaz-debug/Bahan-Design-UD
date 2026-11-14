@@ -5,3 +5,4 @@ out/*.wav
 __pycache__/
 public/media/
 public/audio/
+.work/

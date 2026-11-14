@@ -10,7 +10,8 @@
     "studio": "remotion studio",
     "still": "bash scripts/render.sh still",
     "render": "bash scripts/render.sh",
-    "cover": "bash scripts/cover.sh"
+    "cover": "bash scripts/cover.sh",
+    "color": "bash scripts/normalize_color.sh"
   },
   "dependencies": {
     "@remotion/cli": "4.0.542",
