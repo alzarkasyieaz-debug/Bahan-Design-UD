@@ -1,0 +1,724 @@
+[
+ {
+  "segment": "hook",
+  "start": 0.26,
+  "end": 2.48,
+  "words": [
+   {
+    "text": "Sedangkan",
+    "start": 0.38,
+    "end": 0.94,
+    "gold": false
+   },
+   {
+    "text": "BAHAGIA",
+    "start": 0.94,
+    "end": 1.36,
+    "gold": true
+   },
+   {
+    "text": "ada",
+    "start": 1.36,
+    "end": 1.52,
+    "gold": false
+   },
+   {
+    "text": "depan",
+    "start": 1.52,
+    "end": 1.7,
+    "gold": false
+   },
+   {
+    "text": "mata",
+    "start": 1.7,
+    "end": 1.9,
+    "gold": false
+   },
+   {
+    "text": "kita.",
+    "start": 1.9,
+    "end": 2.18,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 3.3,
+  "end": 5.7,
+  "words": [
+   {
+    "text": "Ada",
+    "start": 3.3,
+    "end": 3.6,
+    "gold": false
+   },
+   {
+    "text": "orang",
+    "start": 3.6,
+    "end": 3.86,
+    "gold": false
+   },
+   {
+    "text": "kata",
+    "start": 3.86,
+    "end": 4.2,
+    "gold": false
+   },
+   {
+    "text": "susah",
+    "start": 4.2,
+    "end": 4.72,
+    "gold": false
+   },
+   {
+    "text": "nak",
+    "start": 4.72,
+    "end": 4.86,
+    "gold": false
+   },
+   {
+    "text": "cari",
+    "start": 4.86,
+    "end": 5.2,
+    "gold": false
+   },
+   {
+    "text": "BAHAGIA.",
+    "start": 5.2,
+    "end": 5.58,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 5.7,
+  "end": 8.82,
+  "words": [
+   {
+    "text": "Ada",
+    "start": 5.82,
+    "end": 6.38,
+    "gold": false
+   },
+   {
+    "text": "juga",
+    "start": 6.38,
+    "end": 6.64,
+    "gold": false
+   },
+   {
+    "text": "orang",
+    "start": 6.64,
+    "end": 6.9,
+    "gold": false
+   },
+   {
+    "text": "kata",
+    "start": 6.9,
+    "end": 7.18,
+    "gold": false
+   },
+   {
+    "text": "susah",
+    "start": 7.18,
+    "end": 7.62,
+    "gold": false
+   },
+   {
+    "text": "nak",
+    "start": 7.62,
+    "end": 7.74,
+    "gold": false
+   },
+   {
+    "text": "cipta",
+    "start": 7.74,
+    "end": 8.04,
+    "gold": false
+   },
+   {
+    "text": "BAHAGIA.",
+    "start": 8.04,
+    "end": 8.52,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 9.16,
+  "end": 11.38,
+  "words": [
+   {
+    "text": "Sedangkan",
+    "start": 9.28,
+    "end": 9.84,
+    "gold": false
+   },
+   {
+    "text": "BAHAGIA",
+    "start": 9.84,
+    "end": 10.26,
+    "gold": true
+   },
+   {
+    "text": "ada",
+    "start": 10.26,
+    "end": 10.42,
+    "gold": false
+   },
+   {
+    "text": "depan",
+    "start": 10.42,
+    "end": 10.6,
+    "gold": false
+   },
+   {
+    "text": "mata",
+    "start": 10.6,
+    "end": 10.8,
+    "gold": false
+   },
+   {
+    "text": "kita.",
+    "start": 10.8,
+    "end": 11.08,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 12.32,
+  "end": 13.82,
+  "words": [
+   {
+    "text": "Antaranya,",
+    "start": 12.44,
+    "end": 13.0,
+    "gold": false
+   },
+   {
+    "text": "apabila",
+    "start": 13.0,
+    "end": 13.56,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 13.56,
+    "end": 13.72,
+    "gold": false
+   },
+   {
+    "text": "dapat…",
+    "start": 13.72,
+    "end": 13.92,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 13.82,
+  "end": 15.44,
+  "words": [
+   {
+    "text": "menjaga",
+    "start": 13.92,
+    "end": 14.28,
+    "gold": false
+   },
+   {
+    "text": "SOLAT",
+    "start": 14.28,
+    "end": 14.68,
+    "gold": true
+   },
+   {
+    "text": "lima",
+    "start": 14.68,
+    "end": 14.96,
+    "gold": false
+   },
+   {
+    "text": "waktu,",
+    "start": 14.96,
+    "end": 15.14,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 15.62,
+  "end": 17.8,
+  "words": [
+   {
+    "text": "apabila",
+    "start": 15.74,
+    "end": 16.157,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 16.157,
+    "end": 16.435,
+    "gold": false
+   },
+   {
+    "text": "dapat",
+    "start": 16.435,
+    "end": 16.759,
+    "gold": false
+   },
+   {
+    "text": "menjaga",
+    "start": 16.759,
+    "end": 17.176,
+    "gold": false
+   },
+   {
+    "text": "SOLAT,",
+    "start": 17.176,
+    "end": 17.5,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 17.94,
+  "end": 18.862,
+  "words": [
+   {
+    "text": "hubungan",
+    "start": 18.06,
+    "end": 18.351,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 18.351,
+    "end": 18.525,
+    "gold": false
+   },
+   {
+    "text": "dengan",
+    "start": 18.525,
+    "end": 18.758,
+    "gold": false
+   },
+   {
+    "text": "Allah…",
+    "start": 18.758,
+    "end": 18.962,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 18.862,
+  "end": 19.96,
+  "words": [
+   {
+    "text": "Ta'ala",
+    "start": 18.962,
+    "end": 19.165,
+    "gold": false
+   },
+   {
+    "text": "sentiasa",
+    "start": 19.165,
+    "end": 19.456,
+    "gold": false
+   },
+   {
+    "text": "segar.",
+    "start": 19.456,
+    "end": 19.66,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 20.12,
+  "end": 22.0,
+  "words": [
+   {
+    "text": "Itulah",
+    "start": 20.24,
+    "end": 20.8,
+    "gold": false
+   },
+   {
+    "text": "BAHAGIA",
+    "start": 20.8,
+    "end": 21.2,
+    "gold": true
+   },
+   {
+    "text": "yang",
+    "start": 21.2,
+    "end": 21.38,
+    "gold": false
+   },
+   {
+    "text": "sebenar",
+    "start": 21.38,
+    "end": 21.82,
+    "gold": true
+   },
+   {
+    "text": "bagi…",
+    "start": 21.82,
+    "end": 22.1,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 22.0,
+  "end": 23.18,
+  "words": [
+   {
+    "text": "seorang",
+    "start": 22.1,
+    "end": 22.28,
+    "gold": false
+   },
+   {
+    "text": "hamba",
+    "start": 22.28,
+    "end": 22.54,
+    "gold": true
+   },
+   {
+    "text": "Allah",
+    "start": 22.54,
+    "end": 22.64,
+    "gold": true
+   },
+   {
+    "text": "Ta'ala.",
+    "start": 22.64,
+    "end": 22.98,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 23.18,
+  "end": 25.18,
+  "words": [
+   {
+    "text": "Apabila",
+    "start": 23.3,
+    "end": 23.86,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 23.86,
+    "end": 24.0,
+    "gold": false
+   },
+   {
+    "text": "dapat",
+    "start": 24.0,
+    "end": 24.26,
+    "gold": false
+   },
+   {
+    "text": "melaksanakan…",
+    "start": 24.26,
+    "end": 25.28,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 25.18,
+  "end": 27.74,
+  "words": [
+   {
+    "text": "tuntutan",
+    "start": 25.28,
+    "end": 26.04,
+    "gold": true
+   },
+   {
+    "text": "dan",
+    "start": 26.04,
+    "end": 26.26,
+    "gold": false
+   },
+   {
+    "text": "hak",
+    "start": 26.26,
+    "end": 26.46,
+    "gold": true
+   },
+   {
+    "text": "sebagai",
+    "start": 26.46,
+    "end": 26.64,
+    "gold": false
+   },
+   {
+    "text": "seorang",
+    "start": 26.64,
+    "end": 27.0,
+    "gold": false
+   },
+   {
+    "text": "hamba,",
+    "start": 27.0,
+    "end": 27.44,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 27.98,
+  "end": 29.3,
+  "words": [
+   {
+    "text": "pasti",
+    "start": 28.1,
+    "end": 28.4,
+    "gold": false
+   },
+   {
+    "text": "balasannya",
+    "start": 28.4,
+    "end": 28.88,
+    "gold": false
+   },
+   {
+    "text": "syurga.",
+    "start": 28.88,
+    "end": 29.22,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 29.3,
+  "end": 31.48,
+  "words": [
+   {
+    "text": "Dan",
+    "start": 29.42,
+    "end": 29.98,
+    "gold": false
+   },
+   {
+    "text": "syurga",
+    "start": 29.98,
+    "end": 30.54,
+    "gold": true
+   },
+   {
+    "text": "adalah",
+    "start": 30.54,
+    "end": 30.92,
+    "gold": false
+   },
+   {
+    "text": "kunci…",
+    "start": 30.92,
+    "end": 31.58,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 31.48,
+  "end": 33.06,
+  "words": [
+   {
+    "text": "BAHAGIA",
+    "start": 31.58,
+    "end": 32.04,
+    "gold": true
+   },
+   {
+    "text": "bagi",
+    "start": 32.04,
+    "end": 32.28,
+    "gold": false
+   },
+   {
+    "text": "seorang",
+    "start": 32.28,
+    "end": 32.48,
+    "gold": false
+   },
+   {
+    "text": "mukmin.",
+    "start": 32.48,
+    "end": 32.76,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 33.18,
+  "end": 36.54,
+  "words": [
+   {
+    "text": "InsyaAllah,",
+    "start": 33.3,
+    "end": 33.92,
+    "gold": false
+   },
+   {
+    "text": "baiki",
+    "start": 34.02,
+    "end": 34.52,
+    "gold": true
+   },
+   {
+    "text": "SOLAT",
+    "start": 34.52,
+    "end": 34.98,
+    "gold": true
+   },
+   {
+    "text": "kita,",
+    "start": 34.98,
+    "end": 35.18,
+    "gold": false
+   },
+   {
+    "text": "jaga",
+    "start": 35.36,
+    "end": 36.16,
+    "gold": true
+   },
+   {
+    "text": "SOLAT",
+    "start": 36.16,
+    "end": 36.48,
+    "gold": true
+   },
+   {
+    "text": "kita,",
+    "start": 36.48,
+    "end": 36.6,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 36.54,
+  "end": 39.5,
+  "words": [
+   {
+    "text": "dan",
+    "start": 36.66,
+    "end": 36.98,
+    "gold": false
+   },
+   {
+    "text": "insyaAllah",
+    "start": 36.98,
+    "end": 37.62,
+    "gold": false
+   },
+   {
+    "text": "Allah",
+    "start": 37.62,
+    "end": 38.0,
+    "gold": true
+   },
+   {
+    "text": "Ta'ala",
+    "start": 38.0,
+    "end": 38.42,
+    "gold": false
+   },
+   {
+    "text": "akan",
+    "start": 38.42,
+    "end": 38.68,
+    "gold": false
+   },
+   {
+    "text": "beri",
+    "start": 38.68,
+    "end": 39.02,
+    "gold": false
+   },
+   {
+    "text": "BAHAGIA",
+    "start": 39.02,
+    "end": 39.6,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 39.5,
+  "end": 42.16,
+  "words": [
+   {
+    "text": "yang",
+    "start": 39.62,
+    "end": 40.24,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 40.24,
+    "end": 40.54,
+    "gold": false
+   },
+   {
+    "text": "tidak",
+    "start": 40.54,
+    "end": 40.82,
+    "gold": false
+   },
+   {
+    "text": "pernah",
+    "start": 40.82,
+    "end": 41.04,
+    "gold": false
+   },
+   {
+    "text": "sangka-sangka.",
+    "start": 41.04,
+    "end": 41.86,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 42.18,
+  "end": 43.05,
+  "words": [
+   {
+    "text": "PERCAYALAH.",
+    "start": 42.3,
+    "end": 42.94,
+    "gold": false
+   }
+  ]
+ }
+]

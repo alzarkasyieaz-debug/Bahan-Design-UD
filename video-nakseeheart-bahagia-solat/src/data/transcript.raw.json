@@ -1,0 +1,561 @@
+[
+ {
+  "start": 0.0,
+  "end": 2.28,
+  "text": " Ada orang kata susah nak cari bahagia.",
+  "words": [
+   {
+    "w": " Ada",
+    "s": 0.0,
+    "e": 0.3
+   },
+   {
+    "w": " orang",
+    "s": 0.3,
+    "e": 0.56
+   },
+   {
+    "w": " kata",
+    "s": 0.56,
+    "e": 0.9
+   },
+   {
+    "w": " susah",
+    "s": 0.9,
+    "e": 1.42
+   },
+   {
+    "w": " nak",
+    "s": 1.42,
+    "e": 1.56
+   },
+   {
+    "w": " cari",
+    "s": 1.56,
+    "e": 1.9
+   },
+   {
+    "w": " bahagia.",
+    "s": 1.9,
+    "e": 2.28
+   }
+  ]
+ },
+ {
+  "start": 2.52,
+  "end": 5.22,
+  "text": " Ada juga orang kata susah nak cipta bahagia.",
+  "words": [
+   {
+    "w": " Ada",
+    "s": 2.52,
+    "e": 3.08
+   },
+   {
+    "w": " juga",
+    "s": 3.08,
+    "e": 3.34
+   },
+   {
+    "w": " orang",
+    "s": 3.34,
+    "e": 3.6
+   },
+   {
+    "w": " kata",
+    "s": 3.6,
+    "e": 3.88
+   },
+   {
+    "w": " susah",
+    "s": 3.88,
+    "e": 4.32
+   },
+   {
+    "w": " nak",
+    "s": 4.32,
+    "e": 4.44
+   },
+   {
+    "w": " cipta",
+    "s": 4.44,
+    "e": 4.74
+   },
+   {
+    "w": " bahagia.",
+    "s": 4.74,
+    "e": 5.22
+   }
+  ]
+ },
+ {
+  "start": 5.980000000000001,
+  "end": 7.78,
+  "text": " Sedangkan bahagia ada depan mata kita.",
+  "words": [
+   {
+    "w": " Sedangkan",
+    "s": 5.980000000000001,
+    "e": 6.54
+   },
+   {
+    "w": " bahagia",
+    "s": 6.54,
+    "e": 6.96
+   },
+   {
+    "w": " ada",
+    "s": 6.96,
+    "e": 7.12
+   },
+   {
+    "w": " depan",
+    "s": 7.12,
+    "e": 7.3
+   },
+   {
+    "w": " mata",
+    "s": 7.3,
+    "e": 7.5
+   },
+   {
+    "w": " kita.",
+    "s": 7.5,
+    "e": 7.78
+   }
+  ]
+ },
+ {
+  "start": 9.140000000000002,
+  "end": 11.84,
+  "text": " Antaranya, apabila kita dapat menjaga solat lima waktu,",
+  "words": [
+   {
+    "w": " Antaranya,",
+    "s": 9.140000000000002,
+    "e": 9.700000000000001
+   },
+   {
+    "w": " apabila",
+    "s": 9.700000000000001,
+    "e": 10.26
+   },
+   {
+    "w": " kita",
+    "s": 10.26,
+    "e": 10.42
+   },
+   {
+    "w": " dapat",
+    "s": 10.42,
+    "e": 10.62
+   },
+   {
+    "w": " menjaga",
+    "s": 10.62,
+    "e": 10.98
+   },
+   {
+    "w": " solat",
+    "s": 10.98,
+    "e": 11.38
+   },
+   {
+    "w": " lima",
+    "s": 11.38,
+    "e": 11.66
+   },
+   {
+    "w": " waktu,",
+    "s": 11.66,
+    "e": 11.84
+   }
+  ]
+ },
+ {
+  "start": 12.440000000000001,
+  "end": 16.36,
+  "text": " apabila kita dapat menjaga solat, hubungan kita dengan Allah Ta'ala sentiasa segar.",
+  "words": [
+   {
+    "w": " apabila",
+    "s": 12.440000000000001,
+    "e": 13.0
+   },
+   {
+    "w": " kita",
+    "s": 13.0,
+    "e": 13.18
+   },
+   {
+    "w": " dapat",
+    "s": 13.18,
+    "e": 13.4
+   },
+   {
+    "w": " menjaga",
+    "s": 13.4,
+    "e": 13.72
+   },
+   {
+    "w": " solat,",
+    "s": 13.72,
+    "e": 14.18
+   },
+   {
+    "w": " hubungan",
+    "s": 14.18,
+    "e": 14.76
+   },
+   {
+    "w": " kita",
+    "s": 14.76,
+    "e": 14.98
+   },
+   {
+    "w": " dengan",
+    "s": 14.98,
+    "e": 15.18
+   },
+   {
+    "w": " Allah",
+    "s": 15.18,
+    "e": 15.4
+   },
+   {
+    "w": " Ta",
+    "s": 15.4,
+    "e": 15.56
+   },
+   {
+    "w": "'ala",
+    "s": 15.56,
+    "e": 15.64
+   },
+   {
+    "w": " sentiasa",
+    "s": 15.64,
+    "e": 16.12
+   },
+   {
+    "w": " segar.",
+    "s": 16.12,
+    "e": 16.36
+   }
+  ]
+ },
+ {
+  "start": 16.94,
+  "end": 19.68,
+  "text": " Itulah bahagia yang sebenar bagi seorang hamba Allah Ta'ala.",
+  "words": [
+   {
+    "w": " Itulah",
+    "s": 16.94,
+    "e": 17.5
+   },
+   {
+    "w": " bahagia",
+    "s": 17.5,
+    "e": 17.9
+   },
+   {
+    "w": " yang",
+    "s": 17.9,
+    "e": 18.08
+   },
+   {
+    "w": " sebenar",
+    "s": 18.08,
+    "e": 18.52
+   },
+   {
+    "w": " bagi",
+    "s": 18.52,
+    "e": 18.8
+   },
+   {
+    "w": " seorang",
+    "s": 18.8,
+    "e": 18.98
+   },
+   {
+    "w": " hamba",
+    "s": 18.98,
+    "e": 19.24
+   },
+   {
+    "w": " Allah",
+    "s": 19.24,
+    "e": 19.34
+   },
+   {
+    "w": " Ta",
+    "s": 19.34,
+    "e": 19.6
+   },
+   {
+    "w": "'ala.",
+    "s": 19.6,
+    "e": 19.68
+   }
+  ]
+ },
+ {
+  "start": 20.0,
+  "end": 24.14,
+  "text": " Apabila kita dapat melaksanakan tuntutan dan hak sebagai seorang hamba,",
+  "words": [
+   {
+    "w": " Apabila",
+    "s": 20.0,
+    "e": 20.56
+   },
+   {
+    "w": " kita",
+    "s": 20.56,
+    "e": 20.7
+   },
+   {
+    "w": " dapat",
+    "s": 20.7,
+    "e": 20.96
+   },
+   {
+    "w": " melaksanakan",
+    "s": 20.96,
+    "e": 21.98
+   },
+   {
+    "w": " tuntutan",
+    "s": 21.98,
+    "e": 22.74
+   },
+   {
+    "w": " dan",
+    "s": 22.74,
+    "e": 22.96
+   },
+   {
+    "w": " hak",
+    "s": 22.96,
+    "e": 23.16
+   },
+   {
+    "w": " sebagai",
+    "s": 23.16,
+    "e": 23.34
+   },
+   {
+    "w": " seorang",
+    "s": 23.34,
+    "e": 23.7
+   },
+   {
+    "w": " hamba,",
+    "s": 23.7,
+    "e": 24.14
+   }
+  ]
+ },
+ {
+  "start": 24.8,
+  "end": 25.92,
+  "text": " pasti belasannya syurga.",
+  "words": [
+   {
+    "w": " pasti",
+    "s": 24.8,
+    "e": 25.1
+   },
+   {
+    "w": " belasannya",
+    "s": 25.1,
+    "e": 25.58
+   },
+   {
+    "w": " syurga.",
+    "s": 25.58,
+    "e": 25.92
+   }
+  ]
+ },
+ {
+  "start": 26.12,
+  "end": 29.46,
+  "text": " Dan syurga adalah kunci bahagia bagi seorang mu'min.",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 26.12,
+    "e": 26.68
+   },
+   {
+    "w": " syurga",
+    "s": 26.68,
+    "e": 27.24
+   },
+   {
+    "w": " adalah",
+    "s": 27.24,
+    "e": 27.62
+   },
+   {
+    "w": " kunci",
+    "s": 27.62,
+    "e": 28.28
+   },
+   {
+    "w": " bahagia",
+    "s": 28.28,
+    "e": 28.74
+   },
+   {
+    "w": " bagi",
+    "s": 28.74,
+    "e": 28.98
+   },
+   {
+    "w": " seorang",
+    "s": 28.98,
+    "e": 29.18
+   },
+   {
+    "w": " mu'min.",
+    "s": 29.18,
+    "e": 29.46
+   }
+  ]
+ },
+ {
+  "start": 30.0,
+  "end": 36.32,
+  "text": " InsyaAllah, baiki solat kita, jaga solat kita dan insyaAllah Allah Ta'ala akan beri bahagia",
+  "words": [
+   {
+    "w": " InsyaAllah,",
+    "s": 30.0,
+    "e": 30.62
+   },
+   {
+    "w": " baiki",
+    "s": 30.72,
+    "e": 31.22
+   },
+   {
+    "w": " solat",
+    "s": 31.22,
+    "e": 31.68
+   },
+   {
+    "w": " kita,",
+    "s": 31.68,
+    "e": 31.88
+   },
+   {
+    "w": " jaga",
+    "s": 32.06,
+    "e": 32.86
+   },
+   {
+    "w": " solat",
+    "s": 32.86,
+    "e": 33.18
+   },
+   {
+    "w": " kita",
+    "s": 33.18,
+    "e": 33.36
+   },
+   {
+    "w": " dan",
+    "s": 33.36,
+    "e": 33.68
+   },
+   {
+    "w": " insyaAllah",
+    "s": 33.68,
+    "e": 34.32
+   },
+   {
+    "w": " Allah",
+    "s": 34.32,
+    "e": 34.7
+   },
+   {
+    "w": " Ta",
+    "s": 34.7,
+    "e": 34.98
+   },
+   {
+    "w": "'ala",
+    "s": 34.98,
+    "e": 35.12
+   },
+   {
+    "w": " akan",
+    "s": 35.12,
+    "e": 35.38
+   },
+   {
+    "w": " beri",
+    "s": 35.38,
+    "e": 35.72
+   },
+   {
+    "w": " bahagia",
+    "s": 35.72,
+    "e": 36.32
+   }
+  ]
+ },
+ {
+  "start": 36.32,
+  "end": 38.56,
+  "text": " yang kita tidak pernah sangka-sangka.",
+  "words": [
+   {
+    "w": " yang",
+    "s": 36.32,
+    "e": 36.94
+   },
+   {
+    "w": " kita",
+    "s": 36.94,
+    "e": 37.24
+   },
+   {
+    "w": " tidak",
+    "s": 37.24,
+    "e": 37.52
+   },
+   {
+    "w": " pernah",
+    "s": 37.52,
+    "e": 37.74
+   },
+   {
+    "w": " sangka",
+    "s": 37.74,
+    "e": 38.22
+   },
+   {
+    "w": "-sangka.",
+    "s": 38.22,
+    "e": 38.56
+   }
+  ]
+ },
+ {
+  "start": 39.0,
+  "end": 39.64,
+  "text": " Percayalah.",
+  "words": [
+   {
+    "w": " Percayalah.",
+    "s": 39.0,
+    "e": 39.64
+   }
+  ]
+ }
+]

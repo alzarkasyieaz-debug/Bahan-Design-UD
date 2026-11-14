@@ -4,7 +4,7 @@ Normalisasi warna VIDEO penceramah — supaya semua video NakSeeHeart selaras.
 
 Menganalisis N bingkai merentas video (sama seperti grade_frame.py langkah 1, 2 & 3c):
   - imbangan putih daripada piksel neutral terang (kopiah/dinding/siling) + sedikit hangat
-  - pendedahan: luminans median wajah -> 0.50
+  - pendedahan: luminans median KULIT wajah -> 0.50 (cermin mata gelap/janggut diabaikan; gamma >= 0.75)
   - ketepuan wajah -> 0.30
 Nilai median dipakai untuk keseluruhan video (tiada kelipan antara bingkai).
 Look emas/teal TIDAK ditambah di sini — komposisi video sudah ada lapisan Grade yang sama.
@@ -47,10 +47,14 @@ for i in range(n):
     r = int(min(W, H) * 0.14)
     cx, cy = fx / 2, fy / 2
     face = im2[int(max(0, cy - r)):int(cy + r), int(max(0, cx - r)):int(cx + r)]
-    m = np.median(luma(face))
-    gm = float(np.clip(np.log(TARGET_FACE_LUMA) / np.log(max(m, 1e-3)), 0.6, 1.6))
+    # hanya piksel kulit (abaikan cermin mata gelap, janggut, kopiah, langit)
+    Lf = luma(face)
+    skin = (face[..., 0] > face[..., 1]) & (face[..., 1] > face[..., 2]) & (face[..., 0] - face[..., 2] > 0.06) & (Lf > 0.12) & (Lf < 0.95)
+    m = np.median(Lf[skin]) if skin.sum() > 300 else np.median(Lf)
+    gm = float(np.clip(np.log(TARGET_FACE_LUMA) / np.log(max(m, 1e-3)), 0.75, 1.6))
     face2 = np.clip(face, 1e-6, 1) ** gm
-    sf = float(np.clip(TARGET_SAT / max(sat(face2).mean(), 1e-3), 0.8, 1.25))
+    sk = skin if skin.sum() > 300 else np.ones(skin.shape, bool)
+    sf = float(np.clip(TARGET_SAT / max(sat(face2)[sk].mean(), 1e-3), 0.8, 1.15))
     gains.append(g * WARMTH); gammas.append(gm); sats.append(sf)
 
 G = np.median(np.array(gains), 0)

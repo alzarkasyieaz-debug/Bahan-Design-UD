@@ -1,0 +1,123 @@
+{
+ "source": "IMG_0027.mov",
+ "maxChars": 48,
+ "gold": [
+  "bahagia",
+  "solat",
+  "allah",
+  "syurga",
+  "kunci",
+  "segar",
+  "sebenar",
+  "hamba",
+  "tuntutan",
+  "hak",
+  "baiki",
+  "jaga",
+  "sangka-sangka",
+  "mukmin"
+ ],
+ "upper": [
+  "bahagia",
+  "solat",
+  "percayalah"
+ ],
+ "chunks": [
+  [
+   "hook",
+   5.6,
+   8.9,
+   "Sedangkan bahagia ada depan mata kita."
+  ],
+  [
+   "s1",
+   0.0,
+   2.3,
+   "Ada orang kata susah nak cari bahagia."
+  ],
+  [
+   "s1",
+   2.3,
+   5.6,
+   "Ada juga orang kata susah nak cipta bahagia."
+  ],
+  [
+   "s1",
+   5.6,
+   8.9,
+   "Sedangkan bahagia ada depan mata kita."
+  ],
+  [
+   "s1",
+   8.9,
+   12.3,
+   "Antaranya, apabila kita dapat menjaga solat lima waktu,"
+  ],
+  [
+   "s1",
+   12.3,
+   14.2,
+   "apabila kita dapat menjaga solat,"
+  ],
+  [
+   "s1",
+   14.2,
+   16.6,
+   "hubungan kita dengan Allah Ta'ala sentiasa segar."
+  ],
+  [
+   "s1",
+   16.6,
+   19.9,
+   "Itulah bahagia yang sebenar bagi seorang hamba Allah Ta'ala."
+  ],
+  [
+   "s1",
+   19.9,
+   24.3,
+   "Apabila kita dapat melaksanakan tuntutan dan hak sebagai seorang hamba,"
+  ],
+  [
+   "s1",
+   24.6,
+   26.0,
+   "pasti balasannya syurga."
+  ],
+  [
+   "s1",
+   26.0,
+   29.8,
+   "Dan syurga adalah kunci bahagia bagi seorang mukmin."
+  ],
+  [
+   "s1",
+   29.8,
+   33.3,
+   "InsyaAllah, baiki solat kita, jaga solat kita,"
+  ],
+  [
+   "s1",
+   33.3,
+   36.3,
+   "dan insyaAllah Allah Ta'ala akan beri bahagia"
+  ],
+  [
+   "s1",
+   36.3,
+   38.85,
+   "yang kita tidak pernah sangka-sangka."
+  ],
+  [
+   "s1",
+   38.85,
+   39.75,
+   "Percayalah."
+  ]
+ ],
+ "unsure": [
+  [
+   25.1,
+   "[NOTA — large-v3 mendengar “belasannya”; dibaca “balasannya” (disemak dengan model medium)]"
+  ]
+ ]
+}

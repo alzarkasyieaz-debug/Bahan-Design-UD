@@ -1,0 +1,352 @@
+{
+ "meta": {
+  "title": "Bahagia Ada Depan Mata",
+  "compositionId": "NakSeeHeartBahagiaSolat",
+  "output": "nakseeheart-bahagia-solat",
+  "source": "IMG_0027.mov"
+ },
+ "layout": {
+  "face": {
+   "x": 540,
+   "y": 900
+  },
+  "ceilingY": 250,
+  "ceilingTilt": -20,
+  "labelY": 150,
+  "cardY": 520,
+  "recapY": 330,
+  "subtitleY": 1500,
+  "lowerThirdY": 1590,
+  "hookFocusY": 900,
+  "climaxFocusY": 950
+ },
+ "camera": {
+  "punch": [
+   "depanMata",
+   "solat",
+   "syurga",
+   "kunci",
+   "beri"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.12,
+   1.2
+  ],
+  "hookZoom": [
+   1.22,
+   1.1,
+   1.16
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "pop",
+   "at": "depanMata+0.3"
+  },
+  {
+   "kind": "shimmer",
+   "at": "allah",
+   "dur": 1.6,
+   "gain": 0.22
+  },
+  {
+   "kind": "impact",
+   "at": "syurga+0.2",
+   "dur": 1.4,
+   "f": 50,
+   "gain": 0.24
+  },
+  {
+   "kind": "shimmer",
+   "at": "kunci",
+   "dur": 2.0,
+   "gain": 0.25
+  },
+  {
+   "kind": "impact",
+   "at": "sangka",
+   "dur": 1.4,
+   "f": 46,
+   "gain": 0.22
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "SUSAH NAK CARI BAHAGIA?",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 44,
+   "y": 170
+  },
+  {
+   "type": "burst",
+   "at": 0.35,
+   "seed": "hook",
+   "spread": 460,
+   "y": 300
+  },
+  {
+   "type": "text3d",
+   "text": "ADA DEPAN MATA",
+   "at": 0.3,
+   "until": "flashToBody-0.2",
+   "y": 300,
+   "size": 135,
+   "reveal": "punch",
+   "depth": 18,
+   "float": false
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SUSAH NAK CARI?",
+   "at": "susahCari-0.2",
+   "until": "cipta-0.15",
+   "size": 118,
+   "fill": "cream",
+   "depth": 14
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SUSAH NAK CIPTA?",
+   "at": "cipta",
+   "until": "depanMata-0.15",
+   "size": 112,
+   "fill": "cream",
+   "depth": 14
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ADA DEPAN MATA",
+   "at": "depanMata+0.3",
+   "until": "antaranya-0.1",
+   "size": 128,
+   "reveal": "punch",
+   "depth": 18
+  },
+  {
+   "type": "burst",
+   "at": "depanMata+0.5",
+   "seed": "mata",
+   "spread": 460
+  },
+  {
+   "type": "label",
+   "text": "ANTARANYA",
+   "at": "antaranya",
+   "until": "brollA.0-0.1",
+   "y": 170,
+   "size": 40
+  },
+  {
+   "type": "ceiling3d",
+   "text": "JAGA SOLAT",
+   "at": "solat-0.2",
+   "until": "brollA.0-0.1",
+   "size": 165,
+   "depth": 20
+  },
+  {
+   "type": "counter",
+   "count": 5,
+   "label": "WAKTU",
+   "at": "limaWaktu",
+   "until": "brollA.0-0.1"
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "brollA.0",
+   "to": "brollA.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "HUBUNGAN KITA DENGAN",
+     "at": "brollA.0+0.3",
+     "until": "brollA.1-0.1",
+     "y": 290,
+     "size": 42
+    },
+    {
+     "type": "text3d",
+     "text": "ALLAH",
+     "at": "allah",
+     "until": "brollA.1-0.1",
+     "y": 450,
+     "size": 200,
+     "depth": 22,
+     "rotX": 8
+    },
+    {
+     "type": "label",
+     "text": "SENTIASA SEGAR",
+     "at": "segar",
+     "until": "brollA.1-0.1",
+     "y": 620,
+     "size": 52
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BAHAGIA SEBENAR",
+   "at": "sebenar",
+   "until": "tuntutan-0.15",
+   "size": 125,
+   "depth": 18
+  },
+  {
+   "type": "chip",
+   "text": "BAGI SEORANG HAMBA ALLAH",
+   "at": "hamba-0.3",
+   "until": "tuntutan-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "TUNTUTAN & HAK",
+   "at": "tuntutan-0.2",
+   "until": "syurga-0.15",
+   "size": 125,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "checklist",
+   "title": "SEBAGAI SEORANG HAMBA",
+   "at": "tuntutan-0.3",
+   "until": "syurga-0.15",
+   "items": [
+    {
+     "text": "TUNAIKAN TUNTUTAN",
+     "at": "tuntutan"
+    },
+    {
+     "text": "TUNAIKAN HAK",
+     "at": "hak"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BALASANNYA SYURGA",
+   "at": "syurga+0.2",
+   "until": "kunci-0.15",
+   "size": 112,
+   "reveal": "punch",
+   "depth": 18
+  },
+  {
+   "type": "burst",
+   "at": "syurga+0.5",
+   "seed": "syurga",
+   "spread": 480
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KUNCI BAHAGIA",
+   "at": "kunci-0.1",
+   "until": "baiki-0.15",
+   "size": 140,
+   "depth": 18
+  },
+  {
+   "type": "heart",
+   "at": "kunci",
+   "until": "baiki-0.15",
+   "size": 80,
+   "y": 560,
+   "x": 900
+  },
+  {
+   "type": "chip",
+   "text": "BAGI SEORANG MUKMIN",
+   "at": "mukmin-0.2",
+   "until": "baiki-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BAIKI SOLAT",
+   "at": "baiki-0.1",
+   "until": "beri-0.15",
+   "size": 150,
+   "depth": 18
+  },
+  {
+   "type": "checklist",
+   "title": "MULAI HARI INI",
+   "at": "baiki-0.2",
+   "until": "beri-0.15",
+   "items": [
+    {
+     "text": "BAIKI SOLAT",
+     "at": "baiki"
+    },
+    {
+     "text": "JAGA SOLAT",
+     "at": "jaga"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ALLAH BERI BAHAGIA",
+   "at": "beri",
+   "until": "sangka-0.1",
+   "size": 108,
+   "reveal": "punch",
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "TAK DISANGKA",
+   "at": "sangka",
+   "until": "percayalah-0.1",
+   "size": 150,
+   "depth": 18
+  },
+  {
+   "type": "burst",
+   "at": "sangka+0.3",
+   "seed": "sangka",
+   "spread": 480
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERCAYALAH",
+   "at": "percayalah",
+   "until": "cta-0.05",
+   "size": 150,
+   "fill": "cream",
+   "depth": 16
+  }
+ ],
+ "cover": {
+  "frame": 10.0,
+  "kicker": "KUNCI BAHAGIA",
+  "big": "SOLAT",
+  "line2": "BAHAGIA DEPAN MATA",
+  "tag": "Jaga solat, Allah beri bahagia",
+  "bigSize": 260,
+  "line2Size": 96
+ },
+ "poster": {
+  "icon": "heart",
+  "top": "SUSAH NAK CARI",
+  "mid": "BAHAGIA?",
+  "last": "ADA DEPAN MATA",
+  "banner": "Jaga solat lima waktu!",
+  "num": "5",
+  "numLabel": "Waktu Bahagia",
+  "frame": 10.0,
+  "headTop": 420,
+  "chinY": 1400,
+  "faceX": 540
+ }
+}
