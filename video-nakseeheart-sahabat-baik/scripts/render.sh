@@ -19,3 +19,11 @@ npx remotion render "$ID" "out/$OUT.mp4" --codec=h264 --crf=18 --pixel-format=yu
 ffmpeg -v error -y -i "out/$OUT.mp4" -c:v libx264 -crf 21 -preset slow -pix_fmt yuv420p -profile:v high -c:a copy -movflags +faststart "out/_c.mp4"
 mv "out/_c.mp4" "out/$OUT.mp4"
 ls -la "out/$OUT.mp4"
+# COVER WAJIB — style Qoute Interaktif: setiap video siap disertakan cover poster
+HAS_POSTER=$(node -p "Boolean(require('./src/data/storyboard.json').poster)")
+if [ "$HAS_POSTER" != "true" ]; then
+  echo "✗ storyboard.json tiada 'poster' — cover wajib. Tambah 'poster' (STYLE.md §10) dan jalankan: bash scripts/cover.sh poster" >&2
+  exit 2
+fi
+bash "$(dirname "$0")/cover.sh" poster
+echo "✔ Video + cover siap: out/$OUT.mp4 , out/$OUT-poster.jpg"

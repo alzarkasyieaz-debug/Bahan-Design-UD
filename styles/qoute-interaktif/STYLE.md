@@ -110,7 +110,7 @@ Sepanjang video, **kelihatan sejak bingkai pertama**: kaca gelap, ikon TikTok, *
 
 ## 10. Cover / thumbnail
 
-> **Wajib:** setiap video yang siap mesti disertakan cover poster `out/<output>-poster.jpg` (gred warna standard). Video tanpa cover belum dikira siap.
+> **Wajib:** setiap video yang siap mesti disertakan cover poster `out/<output>-poster.jpg` (gred warna standard). Video tanpa cover belum dikira siap. `npm run render` menghasilkan cover ini secara automatik selepas MP4, dan gagal jika `storyboard.json → poster` tiada (rangka `poster` sudah disediakan oleh `new_video.sh`).
 `npm run cover` menghasilkan `out/<output>-cover.png` dan `.jpg` (1080×1920) daripada `storyboard.json → cover`:
 `{ "frame": <saat dalam speaker.mp4>, "kicker": "LABEL ATAS", "big": "TAJUK 3D", "line2": "BARIS KEDUA", "tag": "teks italik", "bigSize"?, "line2Size"?, "faceY"? }`
 - Pilih bingkai ekspresi terbaik (senyum/hangat, mata ke kamera).

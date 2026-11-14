@@ -44,7 +44,10 @@ sb = {"meta": {"title": title, "compositionId": cid, "output": f"nakseeheart-{sl
       "layout": {"face": {"x": 540, "y": 820}, "ceilingY": 345, "ceilingTilt": -22, "labelY": 200, "cardY": 1300, "recapY": 318,
                  "subtitleY": 1478, "lowerThirdY": 1565, "hookFocusY": 880, "climaxFocusY": 880},
       "camera": {"punch": [], "jumpCutZoom": 1.08, "climaxZoom": [1.2, 1.3], "hookZoom": [1.34, 1.18, 1.26]},
-      "subtitleCalm": [], "music": {"buildUp": "climax.0-12"}, "sfx": [], "elements": []}
+      "subtitleCalm": [], "music": {"buildUp": "climax.0-12"}, "sfx": [], "elements": [],
+      # COVER WAJIB (Qoute Interaktif): isi teks & kedudukan kepala, render automatik selepas video
+      "poster": {"icon": "heart", "top": "SOALAN", "mid": "KATA KUNCI", "last": "PENUTUP?", "banner": "Ayat ringkas!",
+                 "num": "3", "numLabel": "Perkara", "frame": 10.0, "headTop": 520, "chinY": 1220, "faceX": 540}}
 sc = {"source": src, "maxChars": 48, "gold": [], "upper": [], "chunks": [], "unsure": []}
 for name, d in (("timeline", tl), ("storyboard", sb), ("script", sc)):
     json.dump(d, open(f"{dest}/src/data/{name}.json", "w"), indent=1, ensure_ascii=False)
@@ -52,3 +55,4 @@ PY
 echo "✔ Projek sedia: $DEST"
 echo "  Seterusnya: isi timeline.json (EDL + beat), script.json (chunk disemak), storyboard.json (elemen),"
 echo "  kemudian: npm run subs && npm run audio && npm run still -- 300 && npm run render"
+echo "  (npm run render turut menghasilkan cover poster wajib: out/nakseeheart-$SLUG-poster.jpg)"
