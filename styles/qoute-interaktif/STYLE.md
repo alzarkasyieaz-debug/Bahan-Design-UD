@@ -109,6 +109,8 @@ Lapisan cut-out (`speaker_fg.webm`) digred dengan rantaian yang sama. Look emas/
 Sepanjang video, **kelihatan sejak bingkai pertama**: kaca gelap, ikon TikTok, **FOLLOW @NakSeeHeart**, "Nasihat Ringkas, Makna Mendalam.", breathing glow, pulse FOLLOW pada `followPulse` (setiap ~25 s). Pada CTA ia bertukar menjadi kad besar di tengah.
 
 ## 10. Cover / thumbnail
+
+> **Wajib:** setiap video yang siap mesti disertakan cover poster `out/<output>-poster.jpg` (gred warna standard). Video tanpa cover belum dikira siap.
 `npm run cover` menghasilkan `out/<output>-cover.png` dan `.jpg` (1080×1920) daripada `storyboard.json → cover`:
 `{ "frame": <saat dalam speaker.mp4>, "kicker": "LABEL ATAS", "big": "TAJUK 3D", "line2": "BARIS KEDUA", "tag": "teks italik", "bigSize"?, "line2Size"?, "faceY"? }`
 - Pilih bingkai ekspresi terbaik (senyum/hangat, mata ke kamera).

@@ -46,8 +46,8 @@ npm run render                 # render + mampat < 100 MB -> out/<output>.mp4
 ```
 Semak: tiada pertindihan, subtitle ≤2 baris, kenyaringan, saiz fail.
 
-## 7. Cover
-Tambah `cover` (klasik) dan/atau `poster` (thumbnail berani) dalam storyboard.json (lihat STYLE.md §10), kemudian `bash scripts/cover.sh` / `bash scripts/cover.sh poster`. Semak gambar; laras `faceY` jika tajuk bertindih wajah.
+## 7. Cover (WAJIB — video belum dikira siap tanpa cover)
+Setiap video MESTI ada `out/<output>-poster.jpg`. Tambah `poster` (thumbnail berani, gaya standard) dan pilihan `cover` (klasik) dalam storyboard.json (lihat STYLE.md §10), kemudian `bash scripts/cover.sh` / `bash scripts/cover.sh poster`. Semak gambar; laras `faceY` jika tajuk bertindih wajah.
 
 ## 8. Serahan
 - Commit projek (tanpa `public/media`, kerana proxy besar) + MP4 akhir ke branch kerja; push.
