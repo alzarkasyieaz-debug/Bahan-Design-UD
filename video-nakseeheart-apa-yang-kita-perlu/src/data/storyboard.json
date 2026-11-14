@@ -1,0 +1,408 @@
+{
+ "meta": {
+  "title": "Allah Beri Apa Yang Kita Perlu",
+  "compositionId": "NakSeeHeartApaYangKitaPerlu",
+  "output": "nakseeheart-apa-yang-kita-perlu",
+  "source": "IMG_0810.mov"
+ },
+ "layout": {
+  "face": {
+   "x": 490,
+   "y": 1000
+  },
+  "ceilingY": 290,
+  "ceilingTilt": -20,
+  "labelY": 160,
+  "cardY": 540,
+  "recapY": 360,
+  "subtitleY": 1500,
+  "lowerThirdY": 1600,
+  "hookFocusY": 1000,
+  "climaxFocusY": 1050
+ },
+ "camera": {
+  "punch": [
+   "susun",
+   "menilai",
+   "sabar",
+   "perlu",
+   "terbaik"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.15,
+   1.24
+  ],
+  "hookZoom": [
+   1.28,
+   1.14,
+   1.22
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 0.3,
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "susun"
+  },
+  {
+   "kind": "impact",
+   "at": "menilai",
+   "dur": 1.3,
+   "f": 48,
+   "gain": 0.2
+  },
+  {
+   "kind": "shimmer",
+   "at": "nikmatilah",
+   "dur": 1.6,
+   "gain": 0.22
+  },
+  {
+   "kind": "impact",
+   "at": "perlu",
+   "dur": 1.3,
+   "f": 50,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "terbaik",
+   "dur": 2.4,
+   "gain": 0.28
+  },
+  {
+   "kind": "impact",
+   "at": "percayalah",
+   "dur": 1.4,
+   "f": 46,
+   "gain": 0.2
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "ALLAH BERI APA YANG KITA",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 42,
+   "y": 170
+  },
+  {
+   "type": "text3d",
+   "text": "PERLU",
+   "at": 0.3,
+   "until": 3.9,
+   "y": 330,
+   "size": 200,
+   "reveal": "punch",
+   "depth": 22,
+   "float": false
+  },
+  {
+   "type": "text3d",
+   "text": "BUKAN MAHU",
+   "at": 4.0,
+   "until": "flashToBody-0.2",
+   "y": 330,
+   "size": 150,
+   "fill": "red",
+   "reveal": "punch",
+   "depth": 18,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 0.5,
+   "seed": "hook",
+   "spread": 460,
+   "y": 330
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SETIAP PERKARA",
+   "at": "setiap-0.1",
+   "until": "susun-0.1",
+   "size": 140,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ALLAH SUSUN",
+   "at": "susun",
+   "until": "berat-0.15",
+   "size": 155,
+   "depth": 18
+  },
+  {
+   "type": "compare",
+   "at": "berat-0.2",
+   "until": "namun-0.1",
+   "arrow": false,
+   "left": {
+    "title": "TERASA",
+    "items": [
+     {
+      "text": "Berat",
+      "at": "berat"
+     }
+    ]
+   },
+   "right": {
+    "title": "ATAU",
+    "good": true,
+    "items": [
+     {
+      "text": "Sebaliknya",
+      "at": "sebaliknya1"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ceiling3d",
+   "text": "NAMUN…",
+   "at": "namun",
+   "until": "menilai-0.15",
+   "size": 170,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ALLAH MENILAI",
+   "at": "menilai",
+   "until": "diuji-0.15",
+   "size": 135,
+   "reveal": "punch",
+   "depth": 18
+  },
+  {
+   "type": "chip",
+   "text": "SEJAUH MANA KUALITI KITA",
+   "at": "kualiti-0.1",
+   "until": "diuji-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BERSABARLAH",
+   "at": "sabar-0.1",
+   "until": "nikmat-0.4",
+   "size": 150,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "NIKMATILAH",
+   "at": "nikmatilah-0.1",
+   "until": "tahu-0.6",
+   "size": 160,
+   "depth": 18
+  },
+  {
+   "type": "compare",
+   "at": "diuji-0.2",
+   "until": "tahu-0.6",
+   "arrow": false,
+   "left": {
+    "title": "BILA DIUJI",
+    "good": true,
+    "items": [
+     {
+      "text": "Bersabarlah",
+      "at": "sabar"
+     }
+    ]
+   },
+   "right": {
+    "title": "BILA DIBERI NIKMAT",
+    "good": true,
+    "items": [
+     {
+      "text": "Nikmatilah",
+      "at": "nikmatilah"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ALLAH TAHU",
+   "at": "tahu-0.3",
+   "until": "perlu-0.1",
+   "size": 150,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "APA KITA PERLU",
+   "at": "perlu",
+   "until": "brollA.0-0.1",
+   "size": 130,
+   "depth": 18
+  },
+  {
+   "type": "compare",
+   "at": "perlu-0.1",
+   "until": "brollA.0-0.1",
+   "arrow": true,
+   "left": {
+    "title": "ALLAH BERI",
+    "good": true,
+    "items": [
+     {
+      "text": "Apa yang kita PERLU",
+      "at": "perlu"
+     }
+    ]
+   },
+   "right": {
+    "title": "BUKAN",
+    "items": [
+     {
+      "text": "Apa yang kita MAHU",
+      "at": "mahu"
+     }
+    ]
+   }
+  },
+  {
+   "type": "burst",
+   "at": "perlu2",
+   "seed": "perlu",
+   "spread": 480
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "brollA.0",
+   "to": "brollA.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "KADANG-KADANG",
+     "at": "brollA.0+0.3",
+     "until": "brollA.1-0.1",
+     "y": 260,
+     "size": 42
+    },
+    {
+     "type": "text3d",
+     "text": "KITA MINTA",
+     "at": "minta-0.2",
+     "until": "bagi-0.1",
+     "y": 420,
+     "size": 150,
+     "fill": "cream",
+     "depth": 16,
+     "rotX": 8
+    },
+    {
+     "type": "text3d",
+     "text": "ALLAH BAGI",
+     "at": "bagi-0.1",
+     "until": "brollA.1-0.1",
+     "y": 420,
+     "size": 150,
+     "depth": 18,
+     "rotX": 8
+    },
+    {
+     "type": "label",
+     "text": "SEBALIKNYA",
+     "at": "sebaliknya2",
+     "until": "brollA.1-0.1",
+     "y": 570,
+     "size": 56
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "MAHA MENGETAHUI",
+   "at": "maha-0.1",
+   "until": "terbaik-0.15",
+   "size": 120,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "YANG TERBAIK",
+   "at": "terbaik",
+   "until": "percayalah-0.15",
+   "size": 150,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "checklist",
+   "title": "UNTUK HAMBA-NYA YANG",
+   "at": "hamba-0.3",
+   "until": "percayalah-0.15",
+   "items": [
+    {
+     "text": "SENTIASA MENTAATI",
+     "at": "mentaati"
+    }
+   ]
+  },
+  {
+   "type": "heart",
+   "at": "terbaik+0.3",
+   "until": "percayalah-0.15",
+   "x": 900,
+   "y": 560,
+   "size": 80
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERCAYALAH",
+   "at": "percayalah-0.1",
+   "until": "cta-0.05",
+   "size": 160,
+   "depth": 18
+  },
+  {
+   "type": "burst",
+   "at": "percayalah",
+   "seed": "akhir",
+   "spread": 480
+  }
+ ],
+ "cover": {
+  "frame": 30.0,
+  "kicker": "PERCAYALAH",
+  "big": "PERLU",
+  "line2": "BUKAN APA YANG KITA MAHU",
+  "tag": "Allah tahu yang terbaik",
+  "bigSize": 260,
+  "line2Size": 82
+ },
+ "poster": {
+  "icon": "star",
+  "top": "ALLAH BERI",
+  "mid": "APA KITA PERLU",
+  "last": "BUKAN MAHU",
+  "banner": "Allah tahu yang terbaik!",
+  "num": "2",
+  "numLabel": "Sikap Bila Diuji",
+  "frame": 30.0,
+  "headTop": 690,
+  "chinY": 1330,
+  "faceX": 490,
+  "maxScale": 1.25
+ }
+}

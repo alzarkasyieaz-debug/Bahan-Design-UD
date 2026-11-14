@@ -1,0 +1,1003 @@
+[
+ {
+  "start": 2.92,
+  "end": 3.7,
+  "text": " pastinya",
+  "words": [
+   {
+    "w": " pastinya",
+    "s": 2.92,
+    "e": 3.7
+   }
+  ]
+ },
+ {
+  "start": 3.7,
+  "end": 6.52,
+  "text": " dalam setiap perkara yang Allah",
+  "words": [
+   {
+    "w": " dalam",
+    "s": 3.7,
+    "e": 5.0
+   },
+   {
+    "w": " setiap",
+    "s": 5.0,
+    "e": 5.52
+   },
+   {
+    "w": " perkara",
+    "s": 5.52,
+    "e": 5.94
+   },
+   {
+    "w": " yang",
+    "s": 5.94,
+    "e": 6.16
+   },
+   {
+    "w": " Allah",
+    "s": 6.16,
+    "e": 6.52
+   }
+  ]
+ },
+ {
+  "start": 6.52,
+  "end": 8.72,
+  "text": " subhanahu wa ta'ala susun kepada kita",
+  "words": [
+   {
+    "w": " subhanahu",
+    "s": 6.52,
+    "e": 7.22
+   },
+   {
+    "w": " wa",
+    "s": 7.22,
+    "e": 7.28
+   },
+   {
+    "w": " ta",
+    "s": 7.28,
+    "e": 7.4
+   },
+   {
+    "w": "'ala",
+    "s": 7.4,
+    "e": 7.52
+   },
+   {
+    "w": " susun",
+    "s": 7.52,
+    "e": 8.02
+   },
+   {
+    "w": " kepada",
+    "s": 8.02,
+    "e": 8.28
+   },
+   {
+    "w": " kita",
+    "s": 8.28,
+    "e": 8.72
+   }
+  ]
+ },
+ {
+  "start": 8.72,
+  "end": 10.02,
+  "text": " dalam kehidupan kita",
+  "words": [
+   {
+    "w": " dalam",
+    "s": 8.72,
+    "e": 9.2
+   },
+   {
+    "w": " kehidupan",
+    "s": 9.2,
+    "e": 9.72
+   },
+   {
+    "w": " kita",
+    "s": 9.72,
+    "e": 10.02
+   }
+  ]
+ },
+ {
+  "start": 10.02,
+  "end": 11.74,
+  "text": " baik perkara tersebut",
+  "words": [
+   {
+    "w": " baik",
+    "s": 10.02,
+    "e": 10.82
+   },
+   {
+    "w": " perkara",
+    "s": 10.82,
+    "e": 11.26
+   },
+   {
+    "w": " tersebut",
+    "s": 11.26,
+    "e": 11.74
+   }
+  ]
+ },
+ {
+  "start": 11.74,
+  "end": 13.98,
+  "text": " perkara yang kita rasa berat ketika",
+  "words": [
+   {
+    "w": " perkara",
+    "s": 11.74,
+    "e": 12.56
+   },
+   {
+    "w": " yang",
+    "s": 12.56,
+    "e": 12.74
+   },
+   {
+    "w": " kita",
+    "s": 12.74,
+    "e": 12.94
+   },
+   {
+    "w": " rasa",
+    "s": 12.94,
+    "e": 13.14
+   },
+   {
+    "w": " berat",
+    "s": 13.14,
+    "e": 13.64
+   },
+   {
+    "w": " ketika",
+    "s": 13.64,
+    "e": 13.98
+   }
+  ]
+ },
+ {
+  "start": 13.98,
+  "end": 16.44,
+  "text": " kita laluinya ataupun sebaliknya",
+  "words": [
+   {
+    "w": " kita",
+    "s": 13.98,
+    "e": 14.26
+   },
+   {
+    "w": " laluinya",
+    "s": 14.26,
+    "e": 14.94
+   },
+   {
+    "w": " ataupun",
+    "s": 14.94,
+    "e": 15.76
+   },
+   {
+    "w": " sebaliknya",
+    "s": 15.76,
+    "e": 16.44
+   }
+  ]
+ },
+ {
+  "start": 16.44,
+  "end": 17.64,
+  "text": " namun",
+  "words": [
+   {
+    "w": " namun",
+    "s": 16.44,
+    "e": 17.64
+   }
+  ]
+ },
+ {
+  "start": 17.64,
+  "end": 19.98,
+  "text": " perkara tersebut yang Allah ta'ala",
+  "words": [
+   {
+    "w": " perkara",
+    "s": 17.64,
+    "e": 18.5
+   },
+   {
+    "w": " tersebut",
+    "s": 18.5,
+    "e": 19.1
+   },
+   {
+    "w": " yang",
+    "s": 19.1,
+    "e": 19.42
+   },
+   {
+    "w": " Allah",
+    "s": 19.42,
+    "e": 19.74
+   },
+   {
+    "w": " ta",
+    "s": 19.74,
+    "e": 19.9
+   },
+   {
+    "w": "'ala",
+    "s": 19.9,
+    "e": 19.98
+   }
+  ]
+ },
+ {
+  "start": 19.98,
+  "end": 21.94,
+  "text": " beri kepada kita tidak lain",
+  "words": [
+   {
+    "w": " beri",
+    "s": 19.98,
+    "e": 20.32
+   },
+   {
+    "w": " kepada",
+    "s": 20.32,
+    "e": 20.48
+   },
+   {
+    "w": " kita",
+    "s": 20.48,
+    "e": 20.96
+   },
+   {
+    "w": " tidak",
+    "s": 20.96,
+    "e": 21.78
+   },
+   {
+    "w": " lain",
+    "s": 21.78,
+    "e": 21.94
+   }
+  ]
+ },
+ {
+  "start": 21.94,
+  "end": 23.8,
+  "text": " tidak bukan untuk menilai",
+  "words": [
+   {
+    "w": " tidak",
+    "s": 21.94,
+    "e": 22.12
+   },
+   {
+    "w": " bukan",
+    "s": 22.12,
+    "e": 22.36
+   },
+   {
+    "w": " untuk",
+    "s": 22.36,
+    "e": 23.12
+   },
+   {
+    "w": " menilai",
+    "s": 23.12,
+    "e": 23.8
+   }
+  ]
+ },
+ {
+  "start": 23.8,
+  "end": 25.94,
+  "text": " sejauh mana kualiti",
+  "words": [
+   {
+    "w": " sejauh",
+    "s": 23.8,
+    "e": 24.42
+   },
+   {
+    "w": " mana",
+    "s": 24.42,
+    "e": 24.76
+   },
+   {
+    "w": " kualiti",
+    "s": 24.76,
+    "e": 25.94
+   }
+  ]
+ },
+ {
+  "start": 25.94,
+  "end": 28.42,
+  "text": " ketakutan kita kepada Allah subhanahu wa ta'ala",
+  "words": [
+   {
+    "w": " ketakutan",
+    "s": 25.94,
+    "e": 26.62
+   },
+   {
+    "w": " kita",
+    "s": 26.62,
+    "e": 26.9
+   },
+   {
+    "w": " kepada",
+    "s": 26.9,
+    "e": 27.2
+   },
+   {
+    "w": " Allah",
+    "s": 27.2,
+    "e": 27.5
+   },
+   {
+    "w": " subhanahu",
+    "s": 27.5,
+    "e": 28.08
+   },
+   {
+    "w": " wa",
+    "s": 28.08,
+    "e": 28.14
+   },
+   {
+    "w": " ta",
+    "s": 28.14,
+    "e": 28.28
+   },
+   {
+    "w": "'ala",
+    "s": 28.28,
+    "e": 28.42
+   }
+  ]
+ },
+ {
+  "start": 28.42,
+  "end": 30.14,
+  "text": " apabila kita diuji",
+  "words": [
+   {
+    "w": " apabila",
+    "s": 28.42,
+    "e": 29.52
+   },
+   {
+    "w": " kita",
+    "s": 29.52,
+    "e": 29.68
+   },
+   {
+    "w": " diuji",
+    "s": 29.68,
+    "e": 30.14
+   }
+  ]
+ },
+ {
+  "start": 30.14,
+  "end": 32.02,
+  "text": " bersabarlah, apabila kita",
+  "words": [
+   {
+    "w": " bersabarlah,",
+    "s": 30.14,
+    "e": 31.04
+   },
+   {
+    "w": " apabila",
+    "s": 31.04,
+    "e": 31.76
+   },
+   {
+    "w": " kita",
+    "s": 31.76,
+    "e": 32.02
+   }
+  ]
+ },
+ {
+  "start": 32.02,
+  "end": 33.82,
+  "text": " diberikan nikmat, nikmatilah",
+  "words": [
+   {
+    "w": " diberikan",
+    "s": 32.02,
+    "e": 32.7
+   },
+   {
+    "w": " nikmat,",
+    "s": 32.7,
+    "e": 33.14
+   },
+   {
+    "w": " nikmatilah",
+    "s": 33.18,
+    "e": 33.82
+   }
+  ]
+ },
+ {
+  "start": 33.82,
+  "end": 36.44,
+  "text": " dan setiap perkara yang Allah subhanahu wa ta'ala",
+  "words": [
+   {
+    "w": " dan",
+    "s": 33.82,
+    "e": 34.4
+   },
+   {
+    "w": " setiap",
+    "s": 34.4,
+    "e": 34.86
+   },
+   {
+    "w": " perkara",
+    "s": 34.86,
+    "e": 35.34
+   },
+   {
+    "w": " yang",
+    "s": 35.34,
+    "e": 35.56
+   },
+   {
+    "w": " Allah",
+    "s": 35.56,
+    "e": 35.88
+   },
+   {
+    "w": " subhanahu",
+    "s": 35.88,
+    "e": 36.34
+   },
+   {
+    "w": " wa",
+    "s": 36.34,
+    "e": 36.42
+   },
+   {
+    "w": " ta",
+    "s": 36.42,
+    "e": 36.42
+   },
+   {
+    "w": "'ala",
+    "s": 36.42,
+    "e": 36.44
+   }
+  ]
+ },
+ {
+  "start": 36.44,
+  "end": 37.4,
+  "text": " beri kepada kita",
+  "words": [
+   {
+    "w": " beri",
+    "s": 36.44,
+    "e": 36.82
+   },
+   {
+    "w": " kepada",
+    "s": 36.82,
+    "e": 37.02
+   },
+   {
+    "w": " kita",
+    "s": 37.02,
+    "e": 37.4
+   }
+  ]
+ },
+ {
+  "start": 37.4,
+  "end": 39.9,
+  "text": " Allah ta'ala tahu kita perlu",
+  "words": [
+   {
+    "w": " Allah",
+    "s": 37.4,
+    "e": 38.1
+   },
+   {
+    "w": " ta",
+    "s": 38.1,
+    "e": 38.4
+   },
+   {
+    "w": "'ala",
+    "s": 38.4,
+    "e": 38.48
+   },
+   {
+    "w": " tahu",
+    "s": 38.48,
+    "e": 38.76
+   },
+   {
+    "w": " kita",
+    "s": 38.76,
+    "e": 39.28
+   },
+   {
+    "w": " perlu",
+    "s": 39.28,
+    "e": 39.9
+   }
+  ]
+ },
+ {
+  "start": 39.9,
+  "end": 41.24,
+  "text": " bukan yang kita mahu",
+  "words": [
+   {
+    "w": " bukan",
+    "s": 39.9,
+    "e": 40.42
+   },
+   {
+    "w": " yang",
+    "s": 40.42,
+    "e": 40.68
+   },
+   {
+    "w": " kita",
+    "s": 40.68,
+    "e": 40.92
+   },
+   {
+    "w": " mahu",
+    "s": 40.92,
+    "e": 41.24
+   }
+  ]
+ },
+ {
+  "start": 41.24,
+  "end": 43.58,
+  "text": " Allah subhanahu wa ta'ala beri kepada kita",
+  "words": [
+   {
+    "w": " Allah",
+    "s": 41.24,
+    "e": 41.92
+   },
+   {
+    "w": " subhanahu",
+    "s": 41.92,
+    "e": 42.48
+   },
+   {
+    "w": " wa",
+    "s": 42.48,
+    "e": 42.52
+   },
+   {
+    "w": " ta",
+    "s": 42.52,
+    "e": 42.54
+   },
+   {
+    "w": "'ala",
+    "s": 42.54,
+    "e": 42.6
+   },
+   {
+    "w": " beri",
+    "s": 42.6,
+    "e": 43.04
+   },
+   {
+    "w": " kepada",
+    "s": 43.04,
+    "e": 43.26
+   },
+   {
+    "w": " kita",
+    "s": 43.26,
+    "e": 43.58
+   }
+  ]
+ },
+ {
+  "start": 43.58,
+  "end": 45.0,
+  "text": " apa yang kita perlu",
+  "words": [
+   {
+    "w": " apa",
+    "s": 43.58,
+    "e": 44.34
+   },
+   {
+    "w": " yang",
+    "s": 44.34,
+    "e": 44.5
+   },
+   {
+    "w": " kita",
+    "s": 44.5,
+    "e": 44.68
+   },
+   {
+    "w": " perlu",
+    "s": 44.68,
+    "e": 45.0
+   }
+  ]
+ },
+ {
+  "start": 45.0,
+  "end": 46.86,
+  "text": " bukan apa yang kita mahu",
+  "words": [
+   {
+    "w": " bukan",
+    "s": 45.0,
+    "e": 45.9
+   },
+   {
+    "w": " apa",
+    "s": 45.9,
+    "e": 46.18
+   },
+   {
+    "w": " yang",
+    "s": 46.18,
+    "e": 46.38
+   },
+   {
+    "w": " kita",
+    "s": 46.38,
+    "e": 46.58
+   },
+   {
+    "w": " mahu",
+    "s": 46.58,
+    "e": 46.86
+   }
+  ]
+ },
+ {
+  "start": 46.86,
+  "end": 49.76,
+  "text": " sebab itu kadang-kadang ada permintaan-permintaan",
+  "words": [
+   {
+    "w": " sebab",
+    "s": 46.86,
+    "e": 47.42
+   },
+   {
+    "w": " itu",
+    "s": 47.42,
+    "e": 47.6
+   },
+   {
+    "w": " kadang",
+    "s": 47.6,
+    "e": 47.9
+   },
+   {
+    "w": "-kadang",
+    "s": 47.9,
+    "e": 48.22
+   },
+   {
+    "w": " ada",
+    "s": 48.22,
+    "e": 48.52
+   },
+   {
+    "w": " permintaan",
+    "s": 48.52,
+    "e": 49.18
+   },
+   {
+    "w": "-permintaan",
+    "s": 49.18,
+    "e": 49.76
+   }
+  ]
+ },
+ {
+  "start": 49.76,
+  "end": 52.06,
+  "text": " kita yang kita minta kepada Allah subhanahu wa ta'ala",
+  "words": [
+   {
+    "w": " kita",
+    "s": 49.76,
+    "e": 50.06
+   },
+   {
+    "w": " yang",
+    "s": 50.06,
+    "e": 50.36
+   },
+   {
+    "w": " kita",
+    "s": 50.36,
+    "e": 50.56
+   },
+   {
+    "w": " minta",
+    "s": 50.56,
+    "e": 50.86
+   },
+   {
+    "w": " kepada",
+    "s": 50.86,
+    "e": 51.04
+   },
+   {
+    "w": " Allah",
+    "s": 51.04,
+    "e": 51.3
+   },
+   {
+    "w": " subhanahu",
+    "s": 51.3,
+    "e": 51.78
+   },
+   {
+    "w": " wa",
+    "s": 51.78,
+    "e": 51.8
+   },
+   {
+    "w": " ta",
+    "s": 51.8,
+    "e": 51.92
+   },
+   {
+    "w": "'ala",
+    "s": 51.92,
+    "e": 52.06
+   }
+  ]
+ },
+ {
+  "start": 52.06,
+  "end": 53.78,
+  "text": " tetapi Allah ta'ala bagi",
+  "words": [
+   {
+    "w": " tetapi",
+    "s": 52.06,
+    "e": 52.96
+   },
+   {
+    "w": " Allah",
+    "s": 52.96,
+    "e": 53.16
+   },
+   {
+    "w": " ta",
+    "s": 53.16,
+    "e": 53.36
+   },
+   {
+    "w": "'ala",
+    "s": 53.36,
+    "e": 53.42
+   },
+   {
+    "w": " bagi",
+    "s": 53.42,
+    "e": 53.78
+   }
+  ]
+ },
+ {
+  "start": 53.78,
+  "end": 55.46,
+  "text": " sebaliknya, sebab Allah ta'ala",
+  "words": [
+   {
+    "w": " sebaliknya,",
+    "s": 53.78,
+    "e": 54.34
+   },
+   {
+    "w": " sebab",
+    "s": 54.38,
+    "e": 54.92
+   },
+   {
+    "w": " Allah",
+    "s": 54.92,
+    "e": 55.2
+   },
+   {
+    "w": " ta",
+    "s": 55.2,
+    "e": 55.4
+   },
+   {
+    "w": "'ala",
+    "s": 55.4,
+    "e": 55.46
+   }
+  ]
+ },
+ {
+  "start": 55.46,
+  "end": 57.54,
+  "text": " maha mengetahui apa yang terbaik",
+  "words": [
+   {
+    "w": " maha",
+    "s": 55.46,
+    "e": 55.88
+   },
+   {
+    "w": " mengetahui",
+    "s": 55.88,
+    "e": 56.54
+   },
+   {
+    "w": " apa",
+    "s": 56.54,
+    "e": 56.92
+   },
+   {
+    "w": " yang",
+    "s": 56.92,
+    "e": 57.12
+   },
+   {
+    "w": " terbaik",
+    "s": 57.12,
+    "e": 57.54
+   }
+  ]
+ },
+ {
+  "start": 57.54,
+  "end": 58.18,
+  "text": " untuk hambanya",
+  "words": [
+   {
+    "w": " untuk",
+    "s": 57.54,
+    "e": 57.74
+   },
+   {
+    "w": " hambanya",
+    "s": 57.74,
+    "e": 58.18
+   }
+  ]
+ },
+ {
+  "start": 58.18,
+  "end": 60.72,
+  "text": " apa yang terbaik untuk hamba-hamba",
+  "words": [
+   {
+    "w": " apa",
+    "s": 58.18,
+    "e": 58.7
+   },
+   {
+    "w": " yang",
+    "s": 58.7,
+    "e": 59.02
+   },
+   {
+    "w": " terbaik",
+    "s": 59.02,
+    "e": 59.52
+   },
+   {
+    "w": " untuk",
+    "s": 59.52,
+    "e": 59.82
+   },
+   {
+    "w": " hamba",
+    "s": 59.82,
+    "e": 60.4
+   },
+   {
+    "w": "-hamba",
+    "s": 60.4,
+    "e": 60.72
+   }
+  ]
+ },
+ {
+  "start": 60.72,
+  "end": 62.96,
+  "text": " yang sentiasa mentaati",
+  "words": [
+   {
+    "w": " yang",
+    "s": 60.72,
+    "e": 61.28
+   },
+   {
+    "w": " sentiasa",
+    "s": 61.28,
+    "e": 62.08
+   },
+   {
+    "w": " mentaati",
+    "s": 62.08,
+    "e": 62.96
+   }
+  ]
+ },
+ {
+  "start": 62.96,
+  "end": 64.7,
+  "text": " perintah Allah subhanahu wa ta'ala",
+  "words": [
+   {
+    "w": " perintah",
+    "s": 62.96,
+    "e": 63.5
+   },
+   {
+    "w": " Allah",
+    "s": 63.5,
+    "e": 63.72
+   },
+   {
+    "w": " subhanahu",
+    "s": 63.72,
+    "e": 64.38
+   },
+   {
+    "w": " wa",
+    "s": 64.38,
+    "e": 64.46
+   },
+   {
+    "w": " ta",
+    "s": 64.46,
+    "e": 64.58
+   },
+   {
+    "w": "'ala",
+    "s": 64.58,
+    "e": 64.7
+   }
+  ]
+ },
+ {
+  "start": 64.7,
+  "end": 65.74,
+  "text": " percayalah",
+  "words": [
+   {
+    "w": " percayalah",
+    "s": 64.7,
+    "e": 65.74
+   }
+  ]
+ }
+]

@@ -1,0 +1,168 @@
+{
+ "source": "IMG_0810.mov",
+ "maxChars": 48,
+ "gold": [
+  "allah",
+  "susun",
+  "berat",
+  "menilai",
+  "kualiti",
+  "diuji",
+  "bersabarlah",
+  "nikmat",
+  "nikmatilah",
+  "perlu",
+  "mahu",
+  "permintaan",
+  "sebaliknya",
+  "terbaik",
+  "mentaati"
+ ],
+ "upper": [
+  "perlu",
+  "mahu",
+  "percayalah",
+  "bersabarlah",
+  "nikmatilah"
+ ],
+ "chunks": [
+  [
+   "hook",
+   41.12,
+   43.5,
+   "Allah subhanahu wa ta'ala beri kepada kita"
+  ],
+  [
+   "hook",
+   43.5,
+   46.82,
+   "apa yang kita perlu, bukan apa yang kita mahu."
+  ],
+  [
+   "s1",
+   2.7,
+   6.5,
+   "Pastinya, dalam setiap perkara yang Allah"
+  ],
+  [
+   "s1",
+   6.5,
+   9.95,
+   "subhanahu wa ta'ala susun kepada kita dalam kehidupan kita,"
+  ],
+  [
+   "s1",
+   9.95,
+   13.9,
+   "baik perkara tersebut, perkara yang kita rasa berat"
+  ],
+  [
+   "s1",
+   13.9,
+   16.35,
+   "ketika kita laluinya, ataupun sebaliknya,"
+  ],
+  [
+   "s1",
+   16.35,
+   20.9,
+   "namun perkara tersebut yang Allah ta'ala beri kepada kita"
+  ],
+  [
+   "s1",
+   20.9,
+   24.7,
+   "tidak lain tidak bukan untuk menilai sejauh mana"
+  ],
+  [
+   "s1",
+   24.7,
+   28.35,
+   "kualiti ketakutan kita kepada Allah subhanahu wa ta'ala."
+  ],
+  [
+   "s1",
+   28.35,
+   31.0,
+   "Apabila kita diuji, bersabarlah."
+  ],
+  [
+   "s1",
+   31.0,
+   33.8,
+   "Apabila kita diberikan nikmat, nikmatilah."
+  ],
+  [
+   "s1",
+   33.8,
+   37.35,
+   "Dan setiap perkara yang Allah subhanahu wa ta'ala beri kepada kita,"
+  ],
+  [
+   "s1",
+   37.35,
+   41.12,
+   "Allah ta'ala tahu kita perlu, bukan yang kita mahu."
+  ],
+  [
+   "s1",
+   41.12,
+   43.5,
+   "Allah subhanahu wa ta'ala beri kepada kita"
+  ],
+  [
+   "s1",
+   43.5,
+   46.82,
+   "apa yang kita perlu, bukan apa yang kita mahu."
+  ],
+  [
+   "s1",
+   46.82,
+   49.7,
+   "Sebab itu kadang-kadang ada permintaan-permintaan kita"
+  ],
+  [
+   "s1",
+   49.7,
+   52.0,
+   "yang kita minta kepada Allah subhanahu wa ta'ala,"
+  ],
+  [
+   "s1",
+   52.0,
+   54.3,
+   "tetapi Allah ta'ala bagi sebaliknya,"
+  ],
+  [
+   "s1",
+   54.3,
+   57.5,
+   "sebab Allah ta'ala Maha Mengetahui apa yang terbaik untuk hamba-Nya,"
+  ],
+  [
+   "s1",
+   57.5,
+   60.7,
+   "apa yang terbaik untuk hamba-hamba"
+  ],
+  [
+   "s1",
+   60.7,
+   64.65,
+   "yang sentiasa mentaati perintah Allah subhanahu wa ta'ala."
+  ],
+  [
+   "s1",
+   64.65,
+   65.95,
+   "Percayalah."
+  ]
+ ],
+ "unsure": [
+  [
+   25.9,
+   "[NOTA — “ketakutan”: kedua-dua model (large-v3 & medium) mendengar “ketakutan”; dikekalkan seperti diucapkan, tidak dijadikan teks 3D]"
+  ]
+ ]
+}

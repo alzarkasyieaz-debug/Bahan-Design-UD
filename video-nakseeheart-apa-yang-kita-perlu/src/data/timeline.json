@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "IMG_0810.mov (67.34 s, 1920x1080 HEVC diputar -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    5.7
+   ],
+   "src": 41.12,
+   "srcEnd": 46.82
+  },
+  {
+   "id": "s1",
+   "out": [
+    5.7,
+    68.95
+   ],
+   "src": 2.7,
+   "srcEnd": 65.95
+  },
+  {
+   "id": "cta",
+   "out": [
+    68.95,
+    74.45
+   ],
+   "src": 65.6,
+   "srcEnd": 66.8,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 5.7,
+  "setiap": 8.0,
+  "susun": 10.52,
+  "berat": 16.14,
+  "sebaliknya1": 18.76,
+  "namun": 19.44,
+  "menilai": 26.12,
+  "kualiti": 27.76,
+  "diuji": 32.68,
+  "sabar": 33.14,
+  "nikmat": 35.7,
+  "nikmatilah": 36.18,
+  "tahu": 41.48,
+  "perlu": 42.28,
+  "mahu": 43.92,
+  "perlu2": 47.68,
+  "mahu2": 49.58,
+  "permintaan": 51.52,
+  "minta": 53.56,
+  "bagi": 56.42,
+  "sebaliknya2": 56.78,
+  "maha": 58.46,
+  "terbaik": 60.12,
+  "hamba": 62.82,
+  "mentaati": 65.08,
+  "percayalah": 67.7,
+  "brollA": [
+   50.4,
+   57.3
+  ],
+  "climax": [
+   57.3,
+   65.0
+  ],
+  "finale": [
+   65.0,
+   68.95
+  ],
+  "cta": 68.95,
+  "end": 74.45,
+  "followPulse": [
+   15.0,
+   35.0,
+   58.0
+  ]
+ }
+}
