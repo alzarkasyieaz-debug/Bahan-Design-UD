@@ -1,0 +1,94 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "IMG_0841.mov (95.27 s, 1920x1080 HEVC diputar -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    4.65
+   ],
+   "src": 61.2,
+   "srcEnd": 65.85
+  },
+  {
+   "id": "s1",
+   "out": [
+    4.65,
+    85.8
+   ],
+   "src": 0.9,
+   "srcEnd": 82.05
+  },
+  {
+   "id": "s2",
+   "out": [
+    85.8,
+    97.0
+   ],
+   "src": 82.8,
+   "srcEnd": 94.0
+  },
+  {
+   "id": "cta",
+   "out": [
+    97.0,
+    102.5
+   ],
+   "src": 93.9,
+   "srcEnd": 95.1,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 4.65,
+  "takut": 6.61,
+  "ujian": 9.37,
+  "cabaran": 10.77,
+  "asamGaram": 14.33,
+  "akanAda": 17.59,
+  "risau": 23.17,
+  "kesediaan": 24.85,
+  "persiapan": 27.63,
+  "mengatasi": 34.49,
+  "menghadapi": 38.49,
+  "agar": 40.85,
+  "melatah": 41.89,
+  "keputusan": 44.35,
+  "pasangan": 47.91,
+  "sendiri": 49.85,
+  "maka": 51.05,
+  "pengurusan": 55.95,
+  "emosi": 56.95,
+  "sebelum": 58.23,
+  "ketika": 61.47,
+  "pastikan": 65.05,
+  "bila": 70.73,
+  "pasti": 74.67,
+  "keputusan2": 77.63,
+  "sebaliknya": 81.51,
+  "takMampu": 82.87,
+  "implikasi": 85.9,
+  "runtuh": 89.4,
+  "institusi": 90.72,
+  "mengawal": 94.56,
+  "percayalah": 96.28,
+  "climax": [
+   69.65,
+   79.91
+  ],
+  "finale": [
+   79.91,
+   97.0
+  ],
+  "cta": 97.0,
+  "end": 102.5,
+  "followPulse": [
+   20.0,
+   45.0,
+   75.0
+  ]
+ }
+}

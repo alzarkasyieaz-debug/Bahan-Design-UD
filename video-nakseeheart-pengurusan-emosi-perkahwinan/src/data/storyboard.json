@@ -1,0 +1,374 @@
+{
+ "meta": {
+  "title": "Urus Emosi Dalam Perkahwinan",
+  "compositionId": "NakSeeHeartUrusEmosi",
+  "output": "nakseeheart-pengurusan-emosi-perkahwinan",
+  "source": "IMG_0841.mov"
+ },
+ "layout": {
+  "face": {
+   "x": 550,
+   "y": 900
+  },
+  "ceilingY": 260,
+  "ceilingTilt": -20,
+  "labelY": 150,
+  "cardY": 540,
+  "recapY": 340,
+  "subtitleY": 1500,
+  "lowerThirdY": 1600,
+  "hookFocusY": 900,
+  "climaxFocusY": 950
+ },
+ "camera": {
+  "punch": [
+   "asamGaram",
+   "kesediaan",
+   "pengurusan",
+   "bila",
+   "implikasi"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.14,
+   1.24
+  ],
+  "hookZoom": [
+   1.26,
+   1.12,
+   1.2
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 0.3,
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "asamGaram"
+  },
+  {
+   "kind": "pop",
+   "at": "kesediaan"
+  },
+  {
+   "kind": "impact",
+   "at": "pengurusan",
+   "dur": 1.4,
+   "f": 48,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "bila",
+   "dur": 2.0,
+   "gain": 0.24
+  },
+  {
+   "kind": "impact",
+   "at": "runtuh",
+   "dur": 1.6,
+   "f": 42,
+   "gain": 0.26
+  },
+  {
+   "kind": "impact",
+   "at": "percayalah",
+   "dur": 1.4,
+   "f": 46,
+   "gain": 0.2
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "SEBELUM & SELEPAS BERKAHWIN",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 42,
+   "y": 160
+  },
+  {
+   "type": "text3d",
+   "text": "URUS EMOSI",
+   "at": 0.3,
+   "until": "flashToBody-0.2",
+   "y": 300,
+   "size": 160,
+   "reveal": "punch",
+   "depth": 20,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 0.5,
+   "seed": "hook",
+   "spread": 460,
+   "y": 300
+  },
+  {
+   "type": "ceiling3d",
+   "text": "TAK PERLU TAKUT",
+   "at": "takut-0.3",
+   "until": "asamGaram-0.15",
+   "size": 125,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "checklist",
+   "title": "DALAM PERNIKAHAN",
+   "at": "ujian-0.3",
+   "until": "asamGaram-0.15",
+   "items": [
+    {
+     "text": "UJIAN",
+     "at": "ujian"
+    },
+    {
+     "text": "CABARAN",
+     "at": "cabaran"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ASAM GARAM",
+   "at": "asamGaram",
+   "until": "risau-0.15",
+   "size": 165,
+   "depth": 20
+  },
+  {
+   "type": "chip",
+   "text": "AKAN ADA CABARAN, AKAN ADA UJIAN",
+   "at": "akanAda",
+   "until": "risau-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "YANG PERLU RISAU",
+   "at": "risau-0.3",
+   "until": "kesediaan-0.1",
+   "size": 125,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KESEDIAAN KITA",
+   "at": "kesediaan",
+   "until": "agar-0.15",
+   "size": 140,
+   "reveal": "punch",
+   "depth": 18
+  },
+  {
+   "type": "checklist",
+   "title": "BAGAIMANA KITA…",
+   "at": "persiapan-0.4",
+   "until": "agar-0.15",
+   "items": [
+    {
+     "text": "BERSEDIA",
+     "at": "persiapan"
+    },
+    {
+     "text": "ATASI CABARAN",
+     "at": "mengatasi"
+    },
+    {
+     "text": "HADAPI UJIAN",
+     "at": "menghadapi"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "AGAR TIDAK…",
+   "at": "agar",
+   "until": "maka-0.15",
+   "size": 150,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "compare",
+   "at": "melatah-0.2",
+   "until": "maka-0.15",
+   "arrow": false,
+   "left": {
+    "title": "JANGAN",
+    "items": [
+     {
+      "text": "Melatah",
+      "at": "melatah"
+     },
+     {
+      "text": "Keputusan terburu-buru",
+      "at": "keputusan"
+     }
+    ]
+   },
+   "right": {
+    "title": "MERUGIKAN",
+    "items": [
+     {
+      "text": "Pasangan kita",
+      "at": "pasangan"
+     },
+     {
+      "text": "Diri sendiri",
+      "at": "sendiri"
+     }
+    ]
+   }
+  },
+  {
+   "type": "label",
+   "text": "MAKA KITA PERLUKAN",
+   "at": "maka",
+   "until": "sebelum-0.15",
+   "y": 160,
+   "size": 40
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PENGURUSAN EMOSI",
+   "at": "pengurusan-0.2",
+   "until": "pastikan-0.15",
+   "size": 120,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "burst",
+   "at": "emosi",
+   "seed": "emosi",
+   "spread": 480
+  },
+  {
+   "type": "checklist",
+   "title": "BILA PERLU?",
+   "at": "sebelum-0.3",
+   "until": "pastikan-0.15",
+   "items": [
+    {
+     "text": "SEBELUM BERKAHWIN",
+     "at": "sebelum"
+    },
+    {
+     "text": "DALAM PERKAHWINAN",
+     "at": "ketika"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "URUS EMOSI DENGAN BAIK",
+   "at": "pastikan",
+   "until": "bila-0.15",
+   "size": 100,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "EMOSI TERURUS",
+   "at": "bila",
+   "until": "sebaliknya-0.15",
+   "size": 140,
+   "depth": 18
+  },
+  {
+   "type": "checklist",
+   "title": "PASTI MAMPU BUAT",
+   "at": "keputusan2-0.4",
+   "until": "sebaliknya-0.15",
+   "items": [
+    {
+     "text": "KEPUTUSAN YANG BAIK",
+     "at": "keputusan2"
+    },
+    {
+     "text": "TINDAKAN YANG BAIK",
+     "at": "keputusan2+1.0"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SEBALIKNYA…",
+   "at": "sebaliknya",
+   "until": "takMampu-0.1",
+   "size": 150,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "EMOSI TAK TERKAWAL",
+   "at": "takMampu",
+   "until": "implikasi-0.1",
+   "size": 110,
+   "fill": "red",
+   "depth": 18
+  },
+  {
+   "type": "meter",
+   "label": "INSTITUSI KELUARGA",
+   "good": "KUKUH",
+   "bad": "RUNTUH",
+   "at": "takMampu",
+   "until": "percayalah-0.15",
+   "dropAt": "runtuh"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BOLEH RUNTUH",
+   "at": "implikasi",
+   "until": "percayalah-0.15",
+   "size": 150,
+   "fill": "red",
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERCAYALAH",
+   "at": "percayalah-0.1",
+   "until": "cta-0.05",
+   "size": 160,
+   "depth": 18
+  }
+ ],
+ "cover": {
+  "frame": 24.5,
+  "kicker": "RUMAH TANGGA",
+  "big": "EMOSI",
+  "line2": "URUS DENGAN BAIK",
+  "tag": "Sebelum & selepas berkahwin",
+  "bigSize": 260,
+  "line2Size": 96
+ },
+ "poster": {
+  "icon": "heart",
+  "top": "TAKUT UJIAN",
+  "mid": "PERKAHWINAN?",
+  "last": "URUS EMOSI DULU",
+  "banner": "Kunci rumah tangga kukuh!",
+  "num": "1",
+  "numLabel": "Persediaan Penting",
+  "frame": 24.5,
+  "headTop": 470,
+  "chinY": 1300,
+  "faceX": 550
+ }
+}

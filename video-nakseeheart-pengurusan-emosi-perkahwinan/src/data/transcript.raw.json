@@ -1,0 +1,912 @@
+[
+ {
+  "start": 1.1800000000000002,
+  "end": 8.86,
+  "text": " Kita tidak perlu takut tak kala kita menghadapi ujian dan cabaran dalam pernikahan",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 1.1800000000000002,
+    "e": 2.18
+   },
+   {
+    "w": " tidak",
+    "s": 2.18,
+    "e": 2.56
+   },
+   {
+    "w": " perlu",
+    "s": 2.56,
+    "e": 2.86
+   },
+   {
+    "w": " takut",
+    "s": 2.86,
+    "e": 3.54
+   },
+   {
+    "w": " tak",
+    "s": 3.54,
+    "e": 4.18
+   },
+   {
+    "w": " kala",
+    "s": 4.18,
+    "e": 4.5
+   },
+   {
+    "w": " kita",
+    "s": 4.5,
+    "e": 4.76
+   },
+   {
+    "w": " menghadapi",
+    "s": 4.76,
+    "e": 5.62
+   },
+   {
+    "w": " ujian",
+    "s": 5.62,
+    "e": 6.38
+   },
+   {
+    "w": " dan",
+    "s": 6.38,
+    "e": 7.02
+   },
+   {
+    "w": " cabaran",
+    "s": 7.02,
+    "e": 7.56
+   },
+   {
+    "w": " dalam",
+    "s": 7.56,
+    "e": 8.02
+   },
+   {
+    "w": " pernikahan",
+    "s": 8.02,
+    "e": 8.86
+   }
+  ]
+ },
+ {
+  "start": 8.86,
+  "end": 13.84,
+  "text": " Kerana itu memang asam garam dalam hubungan pernikahan",
+  "words": [
+   {
+    "w": " Kerana",
+    "s": 8.86,
+    "e": 9.88
+   },
+   {
+    "w": " itu",
+    "s": 9.88,
+    "e": 10.16
+   },
+   {
+    "w": " memang",
+    "s": 10.16,
+    "e": 10.58
+   },
+   {
+    "w": " asam",
+    "s": 10.58,
+    "e": 11.14
+   },
+   {
+    "w": " garam",
+    "s": 11.14,
+    "e": 11.58
+   },
+   {
+    "w": " dalam",
+    "s": 11.58,
+    "e": 11.8
+   },
+   {
+    "w": " hubungan",
+    "s": 11.8,
+    "e": 12.38
+   },
+   {
+    "w": " pernikahan",
+    "s": 12.38,
+    "e": 13.84
+   }
+  ]
+ },
+ {
+  "start": 13.84,
+  "end": 16.94,
+  "text": " Akan ada cabaran, akan ada ujian",
+  "words": [
+   {
+    "w": " Akan",
+    "s": 13.84,
+    "e": 14.92
+   },
+   {
+    "w": " ada",
+    "s": 14.92,
+    "e": 15.22
+   },
+   {
+    "w": " cabaran,",
+    "s": 15.22,
+    "e": 15.72
+   },
+   {
+    "w": " akan",
+    "s": 15.82,
+    "e": 16.14
+   },
+   {
+    "w": " ada",
+    "s": 16.14,
+    "e": 16.46
+   },
+   {
+    "w": " ujian",
+    "s": 16.46,
+    "e": 16.94
+   }
+  ]
+ },
+ {
+  "start": 16.94,
+  "end": 22.62,
+  "text": " Tetapi yang kita perlu risau bagaimana kesediaan kita",
+  "words": [
+   {
+    "w": " Tetapi",
+    "s": 16.94,
+    "e": 18.3
+   },
+   {
+    "w": " yang",
+    "s": 18.3,
+    "e": 18.7
+   },
+   {
+    "w": " kita",
+    "s": 18.7,
+    "e": 19.06
+   },
+   {
+    "w": " perlu",
+    "s": 19.06,
+    "e": 19.42
+   },
+   {
+    "w": " risau",
+    "s": 19.42,
+    "e": 19.98
+   },
+   {
+    "w": " bagaimana",
+    "s": 19.98,
+    "e": 21.1
+   },
+   {
+    "w": " kesediaan",
+    "s": 21.1,
+    "e": 22.26
+   },
+   {
+    "w": " kita",
+    "s": 22.26,
+    "e": 22.62
+   }
+  ]
+ },
+ {
+  "start": 22.62,
+  "end": 29.0,
+  "text": " Bagaimana persiapan kita tak kala datangnya ujian, datangnya cabaran",
+  "words": [
+   {
+    "w": " Bagaimana",
+    "s": 22.62,
+    "e": 23.88
+   },
+   {
+    "w": " persiapan",
+    "s": 23.88,
+    "e": 24.8
+   },
+   {
+    "w": " kita",
+    "s": 24.8,
+    "e": 25.3
+   },
+   {
+    "w": " tak",
+    "s": 25.3,
+    "e": 26.02
+   },
+   {
+    "w": " kala",
+    "s": 26.02,
+    "e": 26.26
+   },
+   {
+    "w": " datangnya",
+    "s": 26.26,
+    "e": 26.98
+   },
+   {
+    "w": " ujian,",
+    "s": 26.98,
+    "e": 27.46
+   },
+   {
+    "w": " datangnya",
+    "s": 27.68,
+    "e": 28.5
+   },
+   {
+    "w": " cabaran",
+    "s": 28.5,
+    "e": 29.0
+   }
+  ]
+ },
+ {
+  "start": 29.0,
+  "end": 33.18,
+  "text": " Bagaimana kita nak mengatasi cabaran tersebut",
+  "words": [
+   {
+    "w": " Bagaimana",
+    "s": 29.0,
+    "e": 29.96
+   },
+   {
+    "w": " kita",
+    "s": 29.96,
+    "e": 30.38
+   },
+   {
+    "w": " nak",
+    "s": 30.38,
+    "e": 30.74
+   },
+   {
+    "w": " mengatasi",
+    "s": 30.74,
+    "e": 31.76
+   },
+   {
+    "w": " cabaran",
+    "s": 31.76,
+    "e": 32.42
+   },
+   {
+    "w": " tersebut",
+    "s": 32.42,
+    "e": 33.18
+   }
+  ]
+ },
+ {
+  "start": 33.18,
+  "end": 37.1,
+  "text": " Bagaimana kita nak menghadapi ujian tersebut",
+  "words": [
+   {
+    "w": " Bagaimana",
+    "s": 33.18,
+    "e": 33.98
+   },
+   {
+    "w": " kita",
+    "s": 33.98,
+    "e": 34.42
+   },
+   {
+    "w": " nak",
+    "s": 34.42,
+    "e": 34.74
+   },
+   {
+    "w": " menghadapi",
+    "s": 34.74,
+    "e": 36.26
+   },
+   {
+    "w": " ujian",
+    "s": 36.26,
+    "e": 36.6
+   },
+   {
+    "w": " tersebut",
+    "s": 36.6,
+    "e": 37.1
+   }
+  ]
+ },
+ {
+  "start": 37.1,
+  "end": 45.26,
+  "text": " Agar tidak melatah, agar tidak membuat keputusan dan tindakan yang boleh merugikan pasangan kita",
+  "words": [
+   {
+    "w": " Agar",
+    "s": 37.1,
+    "e": 37.88
+   },
+   {
+    "w": " tidak",
+    "s": 37.88,
+    "e": 38.14
+   },
+   {
+    "w": " melatah,",
+    "s": 38.14,
+    "e": 38.98
+   },
+   {
+    "w": " agar",
+    "s": 39.0,
+    "e": 39.74
+   },
+   {
+    "w": " tidak",
+    "s": 39.74,
+    "e": 40.02
+   },
+   {
+    "w": " membuat",
+    "s": 40.02,
+    "e": 40.6
+   },
+   {
+    "w": " keputusan",
+    "s": 40.6,
+    "e": 41.4
+   },
+   {
+    "w": " dan",
+    "s": 41.4,
+    "e": 41.56
+   },
+   {
+    "w": " tindakan",
+    "s": 41.56,
+    "e": 42.14
+   },
+   {
+    "w": " yang",
+    "s": 42.14,
+    "e": 42.9
+   },
+   {
+    "w": " boleh",
+    "s": 42.9,
+    "e": 43.26
+   },
+   {
+    "w": " merugikan",
+    "s": 43.26,
+    "e": 44.16
+   },
+   {
+    "w": " pasangan",
+    "s": 44.16,
+    "e": 44.94
+   },
+   {
+    "w": " kita",
+    "s": 44.94,
+    "e": 45.26
+   }
+  ]
+ },
+ {
+  "start": 45.26,
+  "end": 47.3,
+  "text": " Ataupun merugikan kita sendiri",
+  "words": [
+   {
+    "w": " Ataupun",
+    "s": 45.26,
+    "e": 46.1
+   },
+   {
+    "w": " merugikan",
+    "s": 46.1,
+    "e": 46.72
+   },
+   {
+    "w": " kita",
+    "s": 46.72,
+    "e": 46.98
+   },
+   {
+    "w": " sendiri",
+    "s": 46.98,
+    "e": 47.3
+   }
+  ]
+ },
+ {
+  "start": 47.3,
+  "end": 54.48,
+  "text": " Maka ketika itu memerlukan kepada persediaan pengurusan emosi yang baik",
+  "words": [
+   {
+    "w": " Maka",
+    "s": 47.3,
+    "e": 48.1
+   },
+   {
+    "w": " ketika",
+    "s": 48.1,
+    "e": 48.52
+   },
+   {
+    "w": " itu",
+    "s": 48.52,
+    "e": 48.84
+   },
+   {
+    "w": " memerlukan",
+    "s": 48.84,
+    "e": 49.86
+   },
+   {
+    "w": " kepada",
+    "s": 49.86,
+    "e": 50.42
+   },
+   {
+    "w": " persediaan",
+    "s": 50.42,
+    "e": 52.2
+   },
+   {
+    "w": " pengurusan",
+    "s": 52.2,
+    "e": 53.2
+   },
+   {
+    "w": " emosi",
+    "s": 53.2,
+    "e": 53.88
+   },
+   {
+    "w": " yang",
+    "s": 53.88,
+    "e": 54.18
+   },
+   {
+    "w": " baik",
+    "s": 54.18,
+    "e": 54.48
+   }
+  ]
+ },
+ {
+  "start": 54.48,
+  "end": 57.72,
+  "text": " Sebelum kita melangkah ke alam perkahwinan",
+  "words": [
+   {
+    "w": " Sebelum",
+    "s": 54.48,
+    "e": 55.46
+   },
+   {
+    "w": " kita",
+    "s": 55.46,
+    "e": 55.74
+   },
+   {
+    "w": " melangkah",
+    "s": 55.74,
+    "e": 56.62
+   },
+   {
+    "w": " ke",
+    "s": 56.62,
+    "e": 56.76
+   },
+   {
+    "w": " alam",
+    "s": 56.76,
+    "e": 56.98
+   },
+   {
+    "w": " perkahwinan",
+    "s": 56.98,
+    "e": 57.72
+   }
+  ]
+ },
+ {
+  "start": 57.72,
+  "end": 61.3,
+  "text": " Ataupun ketika mana kita berada dalam perkahwinan",
+  "words": [
+   {
+    "w": " Ataupun",
+    "s": 57.72,
+    "e": 58.7
+   },
+   {
+    "w": " ketika",
+    "s": 58.7,
+    "e": 59.26
+   },
+   {
+    "w": " mana",
+    "s": 59.26,
+    "e": 59.54
+   },
+   {
+    "w": " kita",
+    "s": 59.54,
+    "e": 59.82
+   },
+   {
+    "w": " berada",
+    "s": 59.82,
+    "e": 60.32
+   },
+   {
+    "w": " dalam",
+    "s": 60.32,
+    "e": 60.58
+   },
+   {
+    "w": " perkahwinan",
+    "s": 60.58,
+    "e": 61.3
+   }
+  ]
+ },
+ {
+  "start": 61.3,
+  "end": 65.9,
+  "text": " Pastikan kita mampu uruskan emosi dengan baik",
+  "words": [
+   {
+    "w": " Pastikan",
+    "s": 61.3,
+    "e": 62.42
+   },
+   {
+    "w": " kita",
+    "s": 62.42,
+    "e": 63.06
+   },
+   {
+    "w": " mampu",
+    "s": 63.06,
+    "e": 63.9
+   },
+   {
+    "w": " uruskan",
+    "s": 63.9,
+    "e": 64.54
+   },
+   {
+    "w": " emosi",
+    "s": 64.54,
+    "e": 65.2
+   },
+   {
+    "w": " dengan",
+    "s": 65.2,
+    "e": 65.48
+   },
+   {
+    "w": " baik",
+    "s": 65.48,
+    "e": 65.9
+   }
+  ]
+ },
+ {
+  "start": 65.9,
+  "end": 69.94,
+  "text": " Dan insyaAllah bila kita mampu uruskan emosi dengan baik",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 65.9,
+    "e": 66.4
+   },
+   {
+    "w": " insyaAllah",
+    "s": 66.4,
+    "e": 66.98
+   },
+   {
+    "w": " bila",
+    "s": 66.98,
+    "e": 67.62
+   },
+   {
+    "w": " kita",
+    "s": 67.62,
+    "e": 67.86
+   },
+   {
+    "w": " mampu",
+    "s": 67.86,
+    "e": 68.38
+   },
+   {
+    "w": " uruskan",
+    "s": 68.38,
+    "e": 68.76
+   },
+   {
+    "w": " emosi",
+    "s": 68.76,
+    "e": 69.28
+   },
+   {
+    "w": " dengan",
+    "s": 69.28,
+    "e": 69.54
+   },
+   {
+    "w": " baik",
+    "s": 69.54,
+    "e": 69.94
+   }
+  ]
+ },
+ {
+  "start": 69.94,
+  "end": 76.16,
+  "text": " Kita pasti mampu buat keputusan dan tindakan dengan baik",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 69.94,
+    "e": 70.92
+   },
+   {
+    "w": " pasti",
+    "s": 70.92,
+    "e": 71.58
+   },
+   {
+    "w": " mampu",
+    "s": 71.58,
+    "e": 73.88
+   },
+   {
+    "w": " buat",
+    "s": 73.88,
+    "e": 74.06
+   },
+   {
+    "w": " keputusan",
+    "s": 74.06,
+    "e": 74.86
+   },
+   {
+    "w": " dan",
+    "s": 74.86,
+    "e": 75.02
+   },
+   {
+    "w": " tindakan",
+    "s": 75.02,
+    "e": 75.5
+   },
+   {
+    "w": " dengan",
+    "s": 75.5,
+    "e": 75.78
+   },
+   {
+    "w": " baik",
+    "s": 75.78,
+    "e": 76.16
+   }
+  ]
+ },
+ {
+  "start": 76.16,
+  "end": 78.42,
+  "text": " Tapi begitu juga sebaliknya",
+  "words": [
+   {
+    "w": " Tapi",
+    "s": 76.16,
+    "e": 77.16
+   },
+   {
+    "w": " begitu",
+    "s": 77.16,
+    "e": 77.52
+   },
+   {
+    "w": " juga",
+    "s": 77.52,
+    "e": 77.76
+   },
+   {
+    "w": " sebaliknya",
+    "s": 77.76,
+    "e": 78.42
+   }
+  ]
+ },
+ {
+  "start": 78.42,
+  "end": 81.84,
+  "text": " Apabila kita tak mampu mengawal dan menguruskan emosi dengan baik",
+  "words": [
+   {
+    "w": " Apabila",
+    "s": 78.42,
+    "e": 78.9
+   },
+   {
+    "w": " kita",
+    "s": 78.9,
+    "e": 79.12
+   },
+   {
+    "w": " tak",
+    "s": 79.12,
+    "e": 79.34
+   },
+   {
+    "w": " mampu",
+    "s": 79.34,
+    "e": 79.78
+   },
+   {
+    "w": " mengawal",
+    "s": 79.78,
+    "e": 80.42
+   },
+   {
+    "w": " dan",
+    "s": 80.42,
+    "e": 80.5
+   },
+   {
+    "w": " menguruskan",
+    "s": 80.5,
+    "e": 80.94
+   },
+   {
+    "w": " emosi",
+    "s": 80.94,
+    "e": 81.26
+   },
+   {
+    "w": " dengan",
+    "s": 81.26,
+    "e": 81.44
+   },
+   {
+    "w": " baik",
+    "s": 81.44,
+    "e": 81.84
+   }
+  ]
+ },
+ {
+  "start": 83.38,
+  "end": 87.16,
+  "text": " Implikasinya sampai ke tahap boleh runtuhnya",
+  "words": [
+   {
+    "w": " Implikasinya",
+    "s": 83.38,
+    "e": 84.3
+   },
+   {
+    "w": " sampai",
+    "s": 84.3,
+    "e": 85.22
+   },
+   {
+    "w": " ke",
+    "s": 85.22,
+    "e": 85.62
+   },
+   {
+    "w": " tahap",
+    "s": 85.62,
+    "e": 86.06
+   },
+   {
+    "w": " boleh",
+    "s": 86.06,
+    "e": 86.4
+   },
+   {
+    "w": " runtuhnya",
+    "s": 86.4,
+    "e": 87.16
+   }
+  ]
+ },
+ {
+  "start": 87.72,
+  "end": 93.28,
+  "text": " Institusi kekeluargaan oleh kerana kita tidak mampu mengawal emosi dengan baik",
+  "words": [
+   {
+    "w": " Institusi",
+    "s": 87.72,
+    "e": 88.12
+   },
+   {
+    "w": " kekeluargaan",
+    "s": 88.12,
+    "e": 89.14
+   },
+   {
+    "w": " oleh",
+    "s": 89.14,
+    "e": 89.76
+   },
+   {
+    "w": " kerana",
+    "s": 89.76,
+    "e": 90.3
+   },
+   {
+    "w": " kita",
+    "s": 90.3,
+    "e": 90.6
+   },
+   {
+    "w": " tidak",
+    "s": 90.6,
+    "e": 90.94
+   },
+   {
+    "w": " mampu",
+    "s": 90.94,
+    "e": 91.56
+   },
+   {
+    "w": " mengawal",
+    "s": 91.56,
+    "e": 92.12
+   },
+   {
+    "w": " emosi",
+    "s": 92.12,
+    "e": 92.66
+   },
+   {
+    "w": " dengan",
+    "s": 92.66,
+    "e": 92.92
+   },
+   {
+    "w": " baik",
+    "s": 92.92,
+    "e": 93.28
+   }
+  ]
+ },
+ {
+  "start": 93.28,
+  "end": 94.22,
+  "text": " Percayalah",
+  "words": [
+   {
+    "w": " Percayalah",
+    "s": 93.28,
+    "e": 94.22
+   }
+  ]
+ }
+]

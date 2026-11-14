@@ -1,0 +1,187 @@
+{
+ "source": "IMG_0841.mov",
+ "maxChars": 48,
+ "gold": [
+  "takut",
+  "ujian",
+  "cabaran",
+  "pernikahan",
+  "asam",
+  "garam",
+  "risau",
+  "kesediaan",
+  "persiapan",
+  "melatah",
+  "merugikan",
+  "emosi",
+  "perkahwinan",
+  "keputusan",
+  "tindakan",
+  "runtuhnya",
+  "kekeluargaan",
+  "baik"
+ ],
+ "upper": [
+  "emosi",
+  "percayalah"
+ ],
+ "chunks": [
+  [
+   "hook",
+   61.2,
+   65.85,
+   "Pastikan kita mampu uruskan emosi dengan baik."
+  ],
+  [
+   "s1",
+   0.9,
+   4.6,
+   "Kita tidak perlu takut tatkala"
+  ],
+  [
+   "s1",
+   4.6,
+   8.8,
+   "kita menghadapi ujian dan cabaran dalam pernikahan,"
+  ],
+  [
+   "s1",
+   8.8,
+   13.4,
+   "kerana itu memang asam garam dalam hubungan pernikahan."
+  ],
+  [
+   "s1",
+   13.4,
+   16.9,
+   "Akan ada cabaran, akan ada ujian."
+  ],
+  [
+   "s1",
+   16.9,
+   22.5,
+   "Tetapi yang kita perlu risau, bagaimana kesediaan kita,"
+  ],
+  [
+   "s1",
+   22.5,
+   25.9,
+   "bagaimana persiapan kita"
+  ],
+  [
+   "s1",
+   25.9,
+   28.95,
+   "tatkala datangnya ujian, datangnya cabaran,"
+  ],
+  [
+   "s1",
+   28.95,
+   33.0,
+   "bagaimana kita nak mengatasi cabaran tersebut,"
+  ],
+  [
+   "s1",
+   33.0,
+   37.0,
+   "bagaimana kita nak menghadapi ujian tersebut,"
+  ],
+  [
+   "s1",
+   37.0,
+   40.5,
+   "agar tidak melatah,"
+  ],
+  [
+   "s1",
+   40.5,
+   45.2,
+   "agar tidak membuat keputusan dan tindakan yang boleh merugikan pasangan kita,"
+  ],
+  [
+   "s1",
+   45.2,
+   47.25,
+   "ataupun merugikan kita sendiri."
+  ],
+  [
+   "s1",
+   47.25,
+   50.3,
+   "Maka ketika itu memerlukan kepada"
+  ],
+  [
+   "s1",
+   50.3,
+   54.4,
+   "persediaan pengurusan emosi yang baik,"
+  ],
+  [
+   "s1",
+   54.4,
+   57.6,
+   "sebelum kita melangkah ke alam perkahwinan,"
+  ],
+  [
+   "s1",
+   57.6,
+   61.2,
+   "ataupun ketika mana kita berada dalam perkahwinan."
+  ],
+  [
+   "s1",
+   61.2,
+   65.85,
+   "Pastikan kita mampu uruskan emosi dengan baik."
+  ],
+  [
+   "s1",
+   65.85,
+   69.9,
+   "Dan insyaAllah, bila kita mampu uruskan emosi dengan baik,"
+  ],
+  [
+   "s1",
+   69.9,
+   76.1,
+   "kita pasti mampu buat keputusan dan tindakan dengan baik."
+  ],
+  [
+   "s1",
+   76.1,
+   78.3,
+   "Tapi begitu juga sebaliknya,"
+  ],
+  [
+   "s1",
+   78.3,
+   82.05,
+   "apabila kita tak mampu mengawal dan menguruskan emosi dengan baik,"
+  ],
+  [
+   "s2",
+   82.8,
+   87.3,
+   "implikasinya sampai ke tahap boleh runtuhnya"
+  ],
+  [
+   "s2",
+   87.3,
+   90.3,
+   "institusi kekeluargaan,"
+  ],
+  [
+   "s2",
+   90.3,
+   93.25,
+   "oleh kerana kita tidak mampu mengawal emosi dengan baik."
+  ],
+  [
+   "s2",
+   93.25,
+   94.0,
+   "Percayalah."
+  ]
+ ],
+ "unsure": []
+}
