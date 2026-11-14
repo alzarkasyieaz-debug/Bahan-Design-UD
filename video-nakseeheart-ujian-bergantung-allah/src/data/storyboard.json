@@ -1,0 +1,351 @@
+{
+ "meta": {
+  "title": "Ujian Tanda Kita Mampu",
+  "compositionId": "NakSeeHeartUjianBergantung",
+  "output": "nakseeheart-ujian-bergantung-allah",
+  "source": "IMG_5235.mov"
+ },
+ "layout": {
+  "face": {
+   "x": 530,
+   "y": 800
+  },
+  "ceilingY": 270,
+  "ceilingTilt": -20,
+  "labelY": 150,
+  "cardY": 1230,
+  "recapY": 330,
+  "subtitleY": 1480,
+  "lowerThirdY": 1590,
+  "hookFocusY": 800,
+  "climaxFocusY": 820
+ },
+ "camera": {
+  "punch": [
+   "ujian",
+   "cabaran",
+   "kebergantungan",
+   "nikmati",
+   "bantu"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.2,
+   1.32
+  ],
+  "hookZoom": [
+   1.4,
+   1.22,
+   1.32
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": "ujian",
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "mampu"
+  },
+  {
+   "kind": "impact",
+   "at": "kebergantungan",
+   "dur": 1.3,
+   "f": 48,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "nikmati",
+   "dur": 1.8,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "sepenuh",
+   "dur": 2.4,
+   "gain": 0.28
+  },
+  {
+   "kind": "impact",
+   "at": "percayalah",
+   "dur": 1.4,
+   "f": 46,
+   "gain": 0.22
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "BILA ALLAH DATANGKAN UJIAN",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 42,
+   "y": 170
+  },
+  {
+   "type": "text3d",
+   "text": "KITA MAMPU",
+   "at": 0.4,
+   "until": "flashToBody-0.2",
+   "y": 320,
+   "size": 160,
+   "reveal": "punch",
+   "depth": 20,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 2.9,
+   "seed": "hook",
+   "spread": 460,
+   "y": 320
+  },
+  {
+   "type": "ceiling3d",
+   "text": "UJIAN",
+   "at": "ujian-0.1",
+   "until": "tahu-0.15",
+   "size": 200,
+   "depth": 22
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ALLAH TAHU",
+   "at": "tahu",
+   "until": "cabaran-0.15",
+   "size": 150,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "chip",
+   "text": "KITA MAMPU MELALUINYA",
+   "at": "mampu",
+   "until": "cabaran-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "CABARAN",
+   "at": "cabaran-0.1",
+   "until": "menilai-0.15",
+   "size": 190,
+   "depth": 22
+  },
+  {
+   "type": "label",
+   "text": "HAKIKAT SEBENARNYA",
+   "at": "hakikat",
+   "until": "adakah-0.15",
+   "y": 150,
+   "size": 40
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ALLAH MENILAI",
+   "at": "menilai",
+   "until": "kebergantungan-0.1",
+   "size": 135,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KEBERGANTUNGAN",
+   "at": "kebergantungan",
+   "until": "adakah-0.15",
+   "size": 120,
+   "reveal": "punch",
+   "depth": 18
+  },
+  {
+   "type": "chip",
+   "text": "SEJAUH MANA KITA BERGANTUNG?",
+   "at": "kebergantungan+0.2",
+   "until": "adakah-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ADAKAH KITA…",
+   "at": "adakah",
+   "until": "maka-0.15",
+   "size": 140,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "compare",
+   "at": "mencari-0.2",
+   "until": "maka-0.15",
+   "arrow": false,
+   "left": {
+    "title": "MENCARI",
+    "good": true,
+    "items": [
+     {
+      "text": "Allah",
+      "at": "mencari"
+     }
+    ]
+   },
+   "right": {
+    "title": "ATAU",
+    "items": [
+     {
+      "text": "Sebaliknya?",
+      "at": "sebaliknya"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SETIAP UJIAN",
+   "at": "maka",
+   "until": "nikmati-0.15",
+   "size": 150,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "NIKMATI",
+   "at": "nikmati",
+   "until": "bantu-0.15",
+   "size": 190,
+   "reveal": "punch",
+   "depth": 22
+  },
+  {
+   "type": "checklist",
+   "title": "BILA DIUJI",
+   "at": "nikmati-0.2",
+   "until": "andai-0.15",
+   "items": [
+    {
+     "text": "NIKMATI UJIAN",
+     "at": "nikmati"
+    },
+    {
+     "text": "PERCAYA ALLAH BANTU",
+     "at": "percaya1"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ALLAH BANTU",
+   "at": "bantu",
+   "until": "andai-0.15",
+   "size": 150,
+   "depth": 18
+  },
+  {
+   "type": "burst",
+   "at": "keluar",
+   "seed": "keluar",
+   "spread": 480
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "brollA.0",
+   "to": "brollA.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "ANDAI KITA LETAKKAN",
+     "at": "brollA.0+0.3",
+     "until": "brollA.1-0.1",
+     "y": 270,
+     "size": 42
+    },
+    {
+     "type": "text3d",
+     "text": "SEPENUH",
+     "at": "sepenuh-0.1",
+     "until": "brollA.1-0.1",
+     "y": 410,
+     "size": 150,
+     "depth": 18,
+     "rotX": 8
+    },
+    {
+     "type": "text3d",
+     "text": "KEPERCAYAAN",
+     "at": "kepercayaan",
+     "until": "brollA.1-0.1",
+     "y": 560,
+     "size": 120,
+     "fill": "cream",
+     "depth": 14,
+     "rotX": 8
+    },
+    {
+     "type": "label",
+     "text": "& KEBERGANTUNGAN",
+     "at": "kebergantungan2",
+     "until": "brollA.1-0.1",
+     "y": 690,
+     "size": 46
+    },
+    {
+     "type": "text3d",
+     "text": "KEPADA ALLAH",
+     "at": "allahAkhir-0.3",
+     "until": "brollA.1-0.1",
+     "y": 830,
+     "size": 120,
+     "depth": 16,
+     "rotX": 8
+    },
+    {
+     "type": "burst",
+     "at": "allahAkhir",
+     "y": 830,
+     "seed": "allah",
+     "spread": 480
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERCAYALAH",
+   "at": "percayalah-0.2",
+   "until": "cta-0.05",
+   "size": 160,
+   "depth": 18
+  }
+ ],
+ "cover": {
+  "frame": 20.0,
+  "kicker": "BILA DIUJI",
+  "big": "KITA MAMPU",
+  "line2": "BERGANTUNG PADA ALLAH",
+  "tag": "Allah tahu kita mampu",
+  "bigSize": 220,
+  "line2Size": 88
+ },
+ "poster": {
+  "icon": "heart",
+  "top": "BILA ALLAH",
+  "mid": "UJI KITA",
+  "last": "TANDA KITA MAMPU",
+  "banner": "Bergantunglah pada Allah!",
+  "num": "2",
+  "numLabel": "Cara Hadapi Ujian",
+  "frame": 20.0,
+  "headTop": 470,
+  "chinY": 1010,
+  "faceX": 530,
+  "maxScale": 1.4
+ }
+}

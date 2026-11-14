@@ -1,0 +1,110 @@
+{
+ "source": "IMG_5235.mov",
+ "maxChars": 48,
+ "gold": [
+  "ujian",
+  "mampu",
+  "cabaran",
+  "menilai",
+  "kebergantungan",
+  "allah",
+  "mencari",
+  "nikmati",
+  "bantu",
+  "keluar",
+  "kepercayaan",
+  "sepenuh"
+ ],
+ "upper": [
+  "allah",
+  "percayalah",
+  "mampu"
+ ],
+ "chunks": [
+  [
+   "hook",
+   3.3,
+   8.5,
+   "Ketika itu Allah Ta'ala tahu kita mampu lalui ujian tersebut."
+  ],
+  [
+   "s1",
+   0.0,
+   3.25,
+   "Ketika mana Allah Ta'ala datangkan ujian dalam kehidupan kita,"
+  ],
+  [
+   "s1",
+   3.25,
+   8.3,
+   "ketika itu Allah Ta'ala tahu kita mampu lalui ujian tersebut."
+  ],
+  [
+   "s1",
+   8.3,
+   12.2,
+   "Ketika mana Allah Ta'ala datangkan cabaran dalam kehidupan kita,"
+  ],
+  [
+   "s1",
+   12.2,
+   15.6,
+   "hakikat sebenarnya Allah nak menilai"
+  ],
+  [
+   "s1",
+   15.6,
+   22.0,
+   "sejauh mana kita meletakkan kebergantungan kepada Allah SWT."
+  ],
+  [
+   "s1",
+   22.0,
+   25.4,
+   "Adakah kita mencari Allah ataupun sebaliknya?"
+  ],
+  [
+   "s1",
+   25.4,
+   30.4,
+   "Maka setiap ujian yang Allah Ta'ala hadirkan dalam kehidupan kita,"
+  ],
+  [
+   "s1",
+   30.4,
+   32.8,
+   "nikmati ujian tersebut,"
+  ],
+  [
+   "s1",
+   32.8,
+   35.9,
+   "dan percayalah Allah Ta'ala akan bantu kita"
+  ],
+  [
+   "s1",
+   35.9,
+   37.9,
+   "untuk keluar daripada masalah tersebut,"
+  ],
+  [
+   "s1",
+   37.9,
+   41.5,
+   "andai kita meletakkan sepenuh kepercayaan"
+  ],
+  [
+   "s1",
+   41.5,
+   44.5,
+   "dan kebergantungan kita kepada Allah SWT."
+  ],
+  [
+   "s1",
+   45.3,
+   46.35,
+   "Percayalah."
+  ]
+ ],
+ "unsure": []
+}
