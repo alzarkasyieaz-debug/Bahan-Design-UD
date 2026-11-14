@@ -34,7 +34,7 @@
 | 82.6–88 | CTA |
 
 ## Warna & audio
-Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB).
+Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB), -14.5 LUFS.
 
 ## Kapsyen hantaran (cadangan)
 > Orang kritik kita? Jadikan ia ubat dan penawar, bukan racun yang melemahkan semangat. Baiki diri, kekal positif. 💪
