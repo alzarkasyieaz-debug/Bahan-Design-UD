@@ -1,0 +1,335 @@
+{
+ "meta": {
+  "title": "Bersangka Baik, Penguat Hidup",
+  "compositionId": "NakSeeHeartSangkaBaikPenguat",
+  "output": "nakseeheart-sangka-baik-penguat",
+  "source": "IMG_4237.mov"
+ },
+ "layout": {
+  "face": {
+   "x": 680,
+   "y": 870
+  },
+  "ceilingY": 260,
+  "ceilingTilt": -20,
+  "labelY": 150,
+  "cardY": 560,
+  "recapY": 340,
+  "subtitleY": 1500,
+  "lowerThirdY": 1600,
+  "hookFocusY": 870,
+  "climaxFocusY": 900
+ },
+ "camera": {
+  "punch": [
+   "penguat",
+   "amalan",
+   "beri",
+   "didik",
+   "natijah"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.14,
+   1.24
+  ],
+  "hookZoom": [
+   1.26,
+   1.12,
+   1.2
+  ]
+ },
+ "subtitleCalm": [
+  [
+   "brollA.0",
+   "brollA.1"
+  ]
+ ],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 1.8,
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "penguat"
+  },
+  {
+   "kind": "pop",
+   "at": "amalan"
+  },
+  {
+   "kind": "impact",
+   "at": "beri",
+   "dur": 1.3,
+   "f": 48,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "hadisMy",
+   "dur": 2.6,
+   "gain": 0.28
+  },
+  {
+   "kind": "shimmer",
+   "at": "natijah",
+   "dur": 2.0,
+   "gain": 0.24
+  },
+  {
+   "kind": "impact",
+   "at": "percayalah",
+   "dur": 1.4,
+   "f": 46,
+   "gain": 0.2
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "APA YANG KITA SANGKA",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 44,
+   "y": 160
+  },
+  {
+   "type": "text3d",
+   "text": "ITU ALLAH BERI",
+   "at": 1.8,
+   "until": "flashToBody-0.2",
+   "y": 310,
+   "size": 140,
+   "reveal": "punch",
+   "depth": 18,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 2.0,
+   "seed": "hook",
+   "spread": 460,
+   "y": 310
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PENGUAT",
+   "at": "penguat-0.1",
+   "until": "amalan-0.15",
+   "size": 190,
+   "depth": 22
+  },
+  {
+   "type": "chip",
+   "text": "DALAM MENERUSKAN CABARAN HIDUP",
+   "at": "cabaran",
+   "until": "amalan-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BERSANGKA BAIK",
+   "at": "amalan",
+   "until": "bagi-0.15",
+   "size": 135,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "checklist",
+   "title": "BERSANGKA BAIK DENGAN",
+   "at": "sangkaAllah-0.3",
+   "until": "bagi-0.15",
+   "items": [
+    {
+     "text": "ALLAH TA'ALA",
+     "at": "sangkaAllah"
+    },
+    {
+     "text": "ORANG SEKELILING",
+     "at": "sangkaOrang"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SEMUA YANG BAIK",
+   "at": "bagi",
+   "until": "sebaliknya-0.1",
+   "size": 135,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BEGITU JUGA SEBALIKNYA",
+   "at": "sebaliknya",
+   "until": "penting-0.15",
+   "size": 95,
+   "fill": "cream",
+   "depth": 14
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PUPUK AKHLAK",
+   "at": "penting",
+   "until": "sangka-0.15",
+   "size": 150,
+   "depth": 18
+  },
+  {
+   "type": "checklist",
+   "title": "PUPUK",
+   "at": "memupuk-0.3",
+   "until": "sangka-0.15",
+   "items": [
+    {
+     "text": "DIRI",
+     "at": "memupuk"
+    },
+    {
+     "text": "AKHLAK",
+     "at": "akhlak"
+    },
+    {
+     "text": "SANGKA BAIK",
+     "at": "sentiasa"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "APA KITA SANGKA",
+   "at": "sangka-0.1",
+   "until": "beri-0.1",
+   "size": 135,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ITU ALLAH BERI",
+   "at": "beri",
+   "until": "brollA.0-0.1",
+   "size": 140,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "burst",
+   "at": "beri+0.3",
+   "seed": "beri",
+   "spread": 480
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "brollA.0",
+   "to": "brollA.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "HADIS QUDSI",
+     "at": "brollA.0+0.2",
+     "until": "brollA.1-0.1",
+     "y": 250,
+     "size": 44
+    },
+    {
+     "type": "quote",
+     "text": "Aku bersama dengan sangkaan hamba-hamba-Ku.",
+     "at": "hadisMy+0.8",
+     "until": "brollA.1-0.1",
+     "y": 470,
+     "size": 64
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "DIDIK JIWA",
+   "at": "didik",
+   "until": "suasana-0.15",
+   "size": 170,
+   "depth": 20
+  },
+  {
+   "type": "checklist",
+   "title": "TERUS MENCARI",
+   "at": "suasana-0.3",
+   "until": "natijah-0.15",
+   "items": [
+    {
+     "text": "SUASANA YANG BAIK",
+     "at": "suasana"
+    },
+    {
+     "text": "SAHABAT YANG BAIK",
+     "at": "sahabat"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "CARI YANG BAIK",
+   "at": "suasana",
+   "until": "natijah-0.15",
+   "size": 140,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "NATIJAH YANG BAIK",
+   "at": "natijah",
+   "until": "percayalah-0.15",
+   "size": 120,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "heart",
+   "at": "hasil",
+   "until": "percayalah-0.15",
+   "x": 900,
+   "y": 560,
+   "size": 80
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERCAYALAH",
+   "at": "percayalah-0.1",
+   "until": "cta-0.05",
+   "size": 160,
+   "depth": 18
+  }
+ ],
+ "cover": {
+  "frame": 30.0,
+  "kicker": "PENGUAT HIDUP",
+  "big": "SANGKA BAIK",
+  "line2": "APA KITA SANGKA, ITU ALLAH BERI",
+  "tag": "Didik diri, didik jiwa",
+  "bigSize": 200,
+  "line2Size": 70
+ },
+ "poster": {
+  "icon": "star",
+  "top": "APA KITA",
+  "mid": "SANGKA",
+  "last": "ITULAH ALLAH BERI",
+  "banner": "Didik jiwa bersangka baik!",
+  "num": "2",
+  "numLabel": "Arah Sangka Baik",
+  "frame": 30.0,
+  "headTop": 510,
+  "chinY": 1230,
+  "faceX": 680
+ }
+}
