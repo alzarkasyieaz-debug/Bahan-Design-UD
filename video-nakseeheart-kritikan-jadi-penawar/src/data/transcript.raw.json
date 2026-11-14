@@ -1,0 +1,988 @@
+[
+ {
+  "start": 1.1600000000000001,
+  "end": 3.32,
+  "text": " Mana mungkin dalam kehidupan kita ini",
+  "words": [
+   {
+    "w": " Mana",
+    "s": 1.1600000000000001,
+    "e": 1.88
+   },
+   {
+    "w": " mungkin",
+    "s": 1.88,
+    "e": 2.24
+   },
+   {
+    "w": " dalam",
+    "s": 2.24,
+    "e": 2.42
+   },
+   {
+    "w": " kehidupan",
+    "s": 2.42,
+    "e": 2.78
+   },
+   {
+    "w": " kita",
+    "s": 2.78,
+    "e": 2.98
+   },
+   {
+    "w": " ini",
+    "s": 2.98,
+    "e": 3.32
+   }
+  ]
+ },
+ {
+  "start": 3.32,
+  "end": 6.9,
+  "text": " Semua orang akan selesa dan suka perkara yang kita buat",
+  "words": [
+   {
+    "w": " Semua",
+    "s": 3.32,
+    "e": 4.08
+   },
+   {
+    "w": " orang",
+    "s": 4.08,
+    "e": 4.32
+   },
+   {
+    "w": " akan",
+    "s": 4.32,
+    "e": 4.58
+   },
+   {
+    "w": " selesa",
+    "s": 4.58,
+    "e": 5.08
+   },
+   {
+    "w": " dan",
+    "s": 5.08,
+    "e": 5.4
+   },
+   {
+    "w": " suka",
+    "s": 5.4,
+    "e": 5.7
+   },
+   {
+    "w": " perkara",
+    "s": 5.7,
+    "e": 6.3
+   },
+   {
+    "w": " yang",
+    "s": 6.3,
+    "e": 6.42
+   },
+   {
+    "w": " kita",
+    "s": 6.42,
+    "e": 6.6
+   },
+   {
+    "w": " buat",
+    "s": 6.6,
+    "e": 6.9
+   }
+  ]
+ },
+ {
+  "start": 6.9,
+  "end": 11.34,
+  "text": " Ada ketikanya orang boleh menerima perkara yang kita lakukan",
+  "words": [
+   {
+    "w": " Ada",
+    "s": 6.9,
+    "e": 7.6
+   },
+   {
+    "w": " ketikanya",
+    "s": 7.6,
+    "e": 8.3
+   },
+   {
+    "w": " orang",
+    "s": 8.3,
+    "e": 9.14
+   },
+   {
+    "w": " boleh",
+    "s": 9.14,
+    "e": 9.46
+   },
+   {
+    "w": " menerima",
+    "s": 9.46,
+    "e": 10.04
+   },
+   {
+    "w": " perkara",
+    "s": 10.04,
+    "e": 10.5
+   },
+   {
+    "w": " yang",
+    "s": 10.5,
+    "e": 10.68
+   },
+   {
+    "w": " kita",
+    "s": 10.68,
+    "e": 10.9
+   },
+   {
+    "w": " lakukan",
+    "s": 10.9,
+    "e": 11.34
+   }
+  ]
+ },
+ {
+  "start": 11.34,
+  "end": 15.36,
+  "text": " Dan ada ketikanya orang tidak boleh menerima",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 11.34,
+    "e": 12.18
+   },
+   {
+    "w": " ada",
+    "s": 12.18,
+    "e": 12.46
+   },
+   {
+    "w": " ketikanya",
+    "s": 12.46,
+    "e": 13.22
+   },
+   {
+    "w": " orang",
+    "s": 13.22,
+    "e": 14.04
+   },
+   {
+    "w": " tidak",
+    "s": 14.04,
+    "e": 14.38
+   },
+   {
+    "w": " boleh",
+    "s": 14.38,
+    "e": 14.7
+   },
+   {
+    "w": " menerima",
+    "s": 14.7,
+    "e": 15.36
+   }
+  ]
+ },
+ {
+  "start": 15.36,
+  "end": 17.84,
+  "text": " Bahkan mengkritik perkara yang kita lakukan",
+  "words": [
+   {
+    "w": " Bahkan",
+    "s": 15.36,
+    "e": 15.82
+   },
+   {
+    "w": " mengkritik",
+    "s": 15.82,
+    "e": 16.52
+   },
+   {
+    "w": " perkara",
+    "s": 16.52,
+    "e": 17.02
+   },
+   {
+    "w": " yang",
+    "s": 17.02,
+    "e": 17.18
+   },
+   {
+    "w": " kita",
+    "s": 17.18,
+    "e": 17.38
+   },
+   {
+    "w": " lakukan",
+    "s": 17.38,
+    "e": 17.84
+   }
+  ]
+ },
+ {
+  "start": 17.84,
+  "end": 19.58,
+  "text": " Apa yang perlu kita buat",
+  "words": [
+   {
+    "w": " Apa",
+    "s": 17.84,
+    "e": 18.74
+   },
+   {
+    "w": " yang",
+    "s": 18.74,
+    "e": 18.86
+   },
+   {
+    "w": " perlu",
+    "s": 18.86,
+    "e": 19.04
+   },
+   {
+    "w": " kita",
+    "s": 19.04,
+    "e": 19.2
+   },
+   {
+    "w": " buat",
+    "s": 19.2,
+    "e": 19.58
+   }
+  ]
+ },
+ {
+  "start": 19.58,
+  "end": 23.48,
+  "text": " Selagi mana kita mampu memberikan manfaat kepada orang",
+  "words": [
+   {
+    "w": " Selagi",
+    "s": 19.58,
+    "e": 20.6
+   },
+   {
+    "w": " mana",
+    "s": 20.6,
+    "e": 20.8
+   },
+   {
+    "w": " kita",
+    "s": 20.8,
+    "e": 21.14
+   },
+   {
+    "w": " mampu",
+    "s": 21.14,
+    "e": 21.58
+   },
+   {
+    "w": " memberikan",
+    "s": 21.58,
+    "e": 22.04
+   },
+   {
+    "w": " manfaat",
+    "s": 22.04,
+    "e": 22.58
+   },
+   {
+    "w": " kepada",
+    "s": 22.58,
+    "e": 22.88
+   },
+   {
+    "w": " orang",
+    "s": 22.88,
+    "e": 23.48
+   }
+  ]
+ },
+ {
+  "start": 23.48,
+  "end": 26.6,
+  "text": " Teruskan perkara yang baik yang kita telah lakukan",
+  "words": [
+   {
+    "w": " Teruskan",
+    "s": 23.48,
+    "e": 24.56
+   },
+   {
+    "w": " perkara",
+    "s": 24.56,
+    "e": 25.12
+   },
+   {
+    "w": " yang",
+    "s": 25.12,
+    "e": 25.36
+   },
+   {
+    "w": " baik",
+    "s": 25.36,
+    "e": 25.62
+   },
+   {
+    "w": " yang",
+    "s": 25.62,
+    "e": 25.78
+   },
+   {
+    "w": " kita",
+    "s": 25.78,
+    "e": 25.98
+   },
+   {
+    "w": " telah",
+    "s": 25.98,
+    "e": 26.24
+   },
+   {
+    "w": " lakukan",
+    "s": 26.24,
+    "e": 26.6
+   }
+  ]
+ },
+ {
+  "start": 26.6,
+  "end": 30.54,
+  "text": " Perkara yang dijadikan sebagai kritikan",
+  "words": [
+   {
+    "w": " Perkara",
+    "s": 26.6,
+    "e": 28.12
+   },
+   {
+    "w": " yang",
+    "s": 28.12,
+    "e": 28.42
+   },
+   {
+    "w": " dijadikan",
+    "s": 28.42,
+    "e": 29.46
+   },
+   {
+    "w": " sebagai",
+    "s": 29.46,
+    "e": 29.78
+   },
+   {
+    "w": " kritikan",
+    "s": 29.78,
+    "e": 30.54
+   }
+  ]
+ },
+ {
+  "start": 30.54,
+  "end": 32.14,
+  "text": " Dijadikan sebagai teguran",
+  "words": [
+   {
+    "w": " Dijadikan",
+    "s": 30.54,
+    "e": 31.16
+   },
+   {
+    "w": " sebagai",
+    "s": 31.16,
+    "e": 31.44
+   },
+   {
+    "w": " teguran",
+    "s": 31.44,
+    "e": 32.14
+   }
+  ]
+ },
+ {
+  "start": 32.14,
+  "end": 36.82,
+  "text": " Jadikan itu sebagai salah satu ubat atau penawar",
+  "words": [
+   {
+    "w": " Jadikan",
+    "s": 32.14,
+    "e": 33.24
+   },
+   {
+    "w": " itu",
+    "s": 33.24,
+    "e": 33.58
+   },
+   {
+    "w": " sebagai",
+    "s": 33.58,
+    "e": 34.12
+   },
+   {
+    "w": " salah",
+    "s": 34.12,
+    "e": 34.66
+   },
+   {
+    "w": " satu",
+    "s": 34.66,
+    "e": 35.02
+   },
+   {
+    "w": " ubat",
+    "s": 35.02,
+    "e": 35.68
+   },
+   {
+    "w": " atau",
+    "s": 35.68,
+    "e": 36.12
+   },
+   {
+    "w": " penawar",
+    "s": 36.12,
+    "e": 36.82
+   }
+  ]
+ },
+ {
+  "start": 37.36,
+  "end": 40.5,
+  "text": " Untuk kita memperbaiki kelemahan dan kekurangan",
+  "words": [
+   {
+    "w": " Untuk",
+    "s": 37.160000000000004,
+    "e": 37.7
+   },
+   {
+    "w": " kita",
+    "s": 37.7,
+    "e": 37.9
+   },
+   {
+    "w": " memperbaiki",
+    "s": 37.9,
+    "e": 38.8
+   },
+   {
+    "w": " kelemahan",
+    "s": 38.8,
+    "e": 39.7
+   },
+   {
+    "w": " dan",
+    "s": 39.7,
+    "e": 39.92
+   },
+   {
+    "w": " kekurangan",
+    "s": 39.92,
+    "e": 40.5
+   }
+  ]
+ },
+ {
+  "start": 40.5,
+  "end": 43.14,
+  "text": " Dan jangan jadikan ia sebagai racun",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 40.5,
+    "e": 41.16
+   },
+   {
+    "w": " jangan",
+    "s": 41.16,
+    "e": 41.54
+   },
+   {
+    "w": " jadikan",
+    "s": 41.54,
+    "e": 42.02
+   },
+   {
+    "w": " ia",
+    "s": 42.02,
+    "e": 42.26
+   },
+   {
+    "w": " sebagai",
+    "s": 42.26,
+    "e": 42.5
+   },
+   {
+    "w": " racun",
+    "s": 42.5,
+    "e": 43.14
+   }
+  ]
+ },
+ {
+  "start": 43.14,
+  "end": 46.02,
+  "text": " Yang akhirnya melemahkan semangat kita",
+  "words": [
+   {
+    "w": " Yang",
+    "s": 43.14,
+    "e": 43.82
+   },
+   {
+    "w": " akhirnya",
+    "s": 43.82,
+    "e": 44.36
+   },
+   {
+    "w": " melemahkan",
+    "s": 44.36,
+    "e": 45.02
+   },
+   {
+    "w": " semangat",
+    "s": 45.02,
+    "e": 45.7
+   },
+   {
+    "w": " kita",
+    "s": 45.7,
+    "e": 46.02
+   }
+  ]
+ },
+ {
+  "start": 46.02,
+  "end": 50.1,
+  "text": " Yang akhirnya menyebabkan kita tak nak buat semua perkara",
+  "words": [
+   {
+    "w": " Yang",
+    "s": 46.02,
+    "e": 46.72
+   },
+   {
+    "w": " akhirnya",
+    "s": 46.72,
+    "e": 47.2
+   },
+   {
+    "w": " menyebabkan",
+    "s": 47.2,
+    "e": 47.76
+   },
+   {
+    "w": " kita",
+    "s": 47.76,
+    "e": 48.06
+   },
+   {
+    "w": " tak",
+    "s": 48.06,
+    "e": 48.34
+   },
+   {
+    "w": " nak",
+    "s": 48.34,
+    "e": 49.1
+   },
+   {
+    "w": " buat",
+    "s": 49.1,
+    "e": 49.3
+   },
+   {
+    "w": " semua",
+    "s": 49.3,
+    "e": 49.48
+   },
+   {
+    "w": " perkara",
+    "s": 49.48,
+    "e": 50.1
+   }
+  ]
+ },
+ {
+  "start": 50.1,
+  "end": 53.26,
+  "text": " Dan ia akan merugikan diri kita",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 50.1,
+    "e": 50.82
+   },
+   {
+    "w": " ia",
+    "s": 50.82,
+    "e": 51.28
+   },
+   {
+    "w": " akan",
+    "s": 51.28,
+    "e": 51.76
+   },
+   {
+    "w": " merugikan",
+    "s": 51.76,
+    "e": 52.48
+   },
+   {
+    "w": " diri",
+    "s": 52.48,
+    "e": 53.04
+   },
+   {
+    "w": " kita",
+    "s": 53.04,
+    "e": 53.26
+   }
+  ]
+ },
+ {
+  "start": 53.26,
+  "end": 54.7,
+  "text": " Bukan merugikan orang lain",
+  "words": [
+   {
+    "w": " Bukan",
+    "s": 53.26,
+    "e": 53.7
+   },
+   {
+    "w": " merugikan",
+    "s": 53.7,
+    "e": 54.12
+   },
+   {
+    "w": " orang",
+    "s": 54.12,
+    "e": 54.36
+   },
+   {
+    "w": " lain",
+    "s": 54.36,
+    "e": 54.7
+   }
+  ]
+ },
+ {
+  "start": 54.7,
+  "end": 56.28,
+  "text": " Baiki diri",
+  "words": [
+   {
+    "w": " Baiki",
+    "s": 54.7,
+    "e": 55.6
+   },
+   {
+    "w": " diri",
+    "s": 55.6,
+    "e": 56.28
+   }
+  ]
+ },
+ {
+  "start": 56.6,
+  "end": 59.12,
+  "text": " Atas segala teguran yang telah diberikan",
+  "words": [
+   {
+    "w": " Atas",
+    "s": 56.6,
+    "e": 57.16
+   },
+   {
+    "w": " segala",
+    "s": 57.16,
+    "e": 57.58
+   },
+   {
+    "w": " teguran",
+    "s": 57.58,
+    "e": 58.0
+   },
+   {
+    "w": " yang",
+    "s": 58.0,
+    "e": 58.3
+   },
+   {
+    "w": " telah",
+    "s": 58.3,
+    "e": 58.56
+   },
+   {
+    "w": " diberikan",
+    "s": 58.56,
+    "e": 59.12
+   }
+  ]
+ },
+ {
+  "start": 59.12,
+  "end": 61.04,
+  "text": " Dan positifkan diri",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 59.12,
+    "e": 59.62
+   },
+   {
+    "w": " positifkan",
+    "s": 59.62,
+    "e": 60.6
+   },
+   {
+    "w": " diri",
+    "s": 60.6,
+    "e": 61.04
+   }
+  ]
+ },
+ {
+  "start": 61.04,
+  "end": 63.08,
+  "text": " Untuk teruskan perkara yang baik",
+  "words": [
+   {
+    "w": " Untuk",
+    "s": 61.04,
+    "e": 61.64
+   },
+   {
+    "w": " teruskan",
+    "s": 61.64,
+    "e": 62.08
+   },
+   {
+    "w": " perkara",
+    "s": 62.08,
+    "e": 62.56
+   },
+   {
+    "w": " yang",
+    "s": 62.56,
+    "e": 62.76
+   },
+   {
+    "w": " baik",
+    "s": 62.76,
+    "e": 63.08
+   }
+  ]
+ },
+ {
+  "start": 63.08,
+  "end": 65.46,
+  "text": " Kerana perkara yang baik ini",
+  "words": [
+   {
+    "w": " Kerana",
+    "s": 63.08,
+    "e": 63.9
+   },
+   {
+    "w": " perkara",
+    "s": 63.9,
+    "e": 64.72
+   },
+   {
+    "w": " yang",
+    "s": 64.72,
+    "e": 64.92
+   },
+   {
+    "w": " baik",
+    "s": 64.92,
+    "e": 65.2
+   },
+   {
+    "w": " ini",
+    "s": 65.2,
+    "e": 65.46
+   }
+  ]
+ },
+ {
+  "start": 65.46,
+  "end": 68.3,
+  "text": " Pasti akan ada orang yang boleh menerimanya",
+  "words": [
+   {
+    "w": " Pasti",
+    "s": 65.46,
+    "e": 66.38
+   },
+   {
+    "w": " akan",
+    "s": 66.38,
+    "e": 66.5
+   },
+   {
+    "w": " ada",
+    "s": 66.5,
+    "e": 66.86
+   },
+   {
+    "w": " orang",
+    "s": 66.86,
+    "e": 67.16
+   },
+   {
+    "w": " yang",
+    "s": 67.16,
+    "e": 67.36
+   },
+   {
+    "w": " boleh",
+    "s": 67.36,
+    "e": 67.62
+   },
+   {
+    "w": " menerimanya",
+    "s": 67.62,
+    "e": 68.3
+   }
+  ]
+ },
+ {
+  "start": 68.3,
+  "end": 70.46,
+  "text": " Begitu juga sebaliknya",
+  "words": [
+   {
+    "w": " Begitu",
+    "s": 68.3,
+    "e": 69.16
+   },
+   {
+    "w": " juga",
+    "s": 69.16,
+    "e": 69.34
+   },
+   {
+    "w": " sebaliknya",
+    "s": 69.34,
+    "e": 70.46
+   }
+  ]
+ },
+ {
+  "start": 70.46,
+  "end": 73.6,
+  "text": " InsyaAllah kita akan terus kekal positif",
+  "words": [
+   {
+    "w": " InsyaAllah",
+    "s": 70.46,
+    "e": 71.1
+   },
+   {
+    "w": " kita",
+    "s": 71.1,
+    "e": 71.68
+   },
+   {
+    "w": " akan",
+    "s": 71.68,
+    "e": 72.06
+   },
+   {
+    "w": " terus",
+    "s": 72.06,
+    "e": 72.34
+   },
+   {
+    "w": " kekal",
+    "s": 72.34,
+    "e": 72.88
+   },
+   {
+    "w": " positif",
+    "s": 72.88,
+    "e": 73.6
+   }
+  ]
+ },
+ {
+  "start": 73.6,
+  "end": 76.4,
+  "text": " Dalam perkara yang kita lakukan seharian",
+  "words": [
+   {
+    "w": " Dalam",
+    "s": 73.6,
+    "e": 74.08
+   },
+   {
+    "w": " perkara",
+    "s": 74.08,
+    "e": 74.54
+   },
+   {
+    "w": " yang",
+    "s": 74.54,
+    "e": 74.7
+   },
+   {
+    "w": " kita",
+    "s": 74.7,
+    "e": 74.94
+   },
+   {
+    "w": " lakukan",
+    "s": 74.94,
+    "e": 75.42
+   },
+   {
+    "w": " seharian",
+    "s": 75.42,
+    "e": 76.4
+   }
+  ]
+ },
+ {
+  "start": 76.4,
+  "end": 78.22,
+  "text": " Dalam kehidupan kita",
+  "words": [
+   {
+    "w": " Dalam",
+    "s": 76.4,
+    "e": 77.26
+   },
+   {
+    "w": " kehidupan",
+    "s": 77.26,
+    "e": 78.02
+   },
+   {
+    "w": " kita",
+    "s": 78.02,
+    "e": 78.22
+   }
+  ]
+ },
+ {
+  "start": 78.22,
+  "end": 79.44,
+  "text": " Percayalah",
+  "words": [
+   {
+    "w": " Percayalah",
+    "s": 78.22,
+    "e": 79.44
+   }
+  ]
+ }
+]

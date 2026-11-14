@@ -1,0 +1,371 @@
+{
+ "meta": {
+  "title": "Nikmati Setiap Aturan Allah",
+  "compositionId": "NakSeeHeartAturanAllah",
+  "output": "nakseeheart-aturan-allah",
+  "source": "IMG_4255.mov"
+ },
+ "layout": {
+  "face": {
+   "x": 520,
+   "y": 1050
+  },
+  "ceilingY": 280,
+  "ceilingTilt": -20,
+  "labelY": 150,
+  "cardY": 540,
+  "recapY": 360,
+  "subtitleY": 1520,
+  "lowerThirdY": 1620,
+  "hookFocusY": 1050,
+  "climaxFocusY": 1100
+ },
+ "camera": {
+  "punch": [
+   "putusAsa",
+   "nikmati",
+   "menilai",
+   "akur",
+   "kemanisan"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.12,
+   1.2
+  ],
+  "hookZoom": [
+   1.22,
+   1.1,
+   1.16
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 2.9,
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "putusAsa"
+  },
+  {
+   "kind": "impact",
+   "at": "menilai",
+   "dur": 1.3,
+   "f": 48,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "susah1"
+  },
+  {
+   "kind": "pop",
+   "at": "susah2"
+  },
+  {
+   "kind": "shimmer",
+   "at": "hikmah",
+   "dur": 2.4,
+   "gain": 0.28
+  },
+  {
+   "kind": "shimmer",
+   "at": "kemanisan",
+   "dur": 2.0,
+   "gain": 0.24
+  },
+  {
+   "kind": "impact",
+   "at": "percayalah",
+   "dur": 1.4,
+   "f": 46,
+   "gain": 0.2
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "NIKMATI UJIAN KEHIDUPAN",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 42,
+   "y": 160
+  },
+  {
+   "type": "text3d",
+   "text": "ADA KEMANISAN",
+   "at": 2.9,
+   "until": "flashToBody-0.2",
+   "y": 310,
+   "size": 140,
+   "reveal": "punch",
+   "depth": 20,
+   "float": false
+  },
+  {
+   "type": "text3d",
+   "text": "NIKMATI UJIAN",
+   "at": 0.3,
+   "until": 2.8,
+   "y": 310,
+   "size": 140,
+   "fill": "cream",
+   "depth": 16,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 3.1,
+   "seed": "hook",
+   "spread": 460,
+   "y": 310
+  },
+  {
+   "type": "ceiling3d",
+   "text": "JANGAN PUTUS ASA",
+   "at": "putusAsa-0.2",
+   "until": "sebaliknya-0.15",
+   "size": 120,
+   "depth": 20
+  },
+  {
+   "type": "chip",
+   "text": "DALAM SETIAP ATURAN ALLAH",
+   "at": "aturan",
+   "until": "sebaliknya-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "NIKMATI KETENTUAN",
+   "at": "nikmati-0.1",
+   "until": "menilai-0.15",
+   "size": 112,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ALLAH MENILAI",
+   "at": "menilai-0.1",
+   "until": "adaOrang-0.15",
+   "size": 140,
+   "depth": 18
+  },
+  {
+   "type": "chip",
+   "text": "SEJAUH MANA KITA MENGHARGAI",
+   "at": "menghargai",
+   "until": "adaOrang-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ATURAN ALLAH",
+   "at": "adaOrang",
+   "until": "setiap-0.15",
+   "size": 150,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "compare",
+   "at": "adaOrang+0.2",
+   "until": "setiap-0.15",
+   "arrow": false,
+   "left": {
+    "title": "ADA ORANG",
+    "items": [
+     {
+      "text": "Awal: kesusahan",
+      "at": "susah1"
+     },
+     {
+      "text": "Akhir: kesenangan",
+      "at": "senang1"
+     }
+    ]
+   },
+   "right": {
+    "title": "ADA KETIKA",
+    "items": [
+     {
+      "text": "Awal: kesenangan",
+      "at": "senang2"
+     },
+     {
+      "text": "Akhir: kesusahan",
+      "at": "susah2"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SATU PELAJARAN",
+   "at": "setiap",
+   "until": "akur-0.15",
+   "size": 135,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "AKUR PADA ALLAH",
+   "at": "akur-0.1",
+   "until": "brollA.0-0.1",
+   "size": 125,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "checklist",
+   "title": "PELAJARAN HIDUP",
+   "at": "akur-0.3",
+   "until": "brollA.0-0.1",
+   "items": [
+    {
+     "text": "SENTIASA AKUR",
+     "at": "akur"
+    },
+    {
+     "text": "PERCAYA KETENTUAN-NYA",
+     "at": "percaya"
+    }
+   ]
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "brollA.0",
+   "to": "brollA.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "PASTI",
+     "at": "brollA.0+0.2",
+     "until": "brollA.1-0.1",
+     "y": 260,
+     "size": 46
+    },
+    {
+     "type": "text3d",
+     "text": "ADA HIKMAH",
+     "at": "hikmah-0.1",
+     "until": "brollA.1-0.1",
+     "y": 420,
+     "size": 165,
+     "depth": 20,
+     "rotX": 8
+    },
+    {
+     "type": "label",
+     "text": "TANPA KITA SEDAR",
+     "at": "sedar-0.3",
+     "until": "brollA.1-0.1",
+     "y": 580,
+     "size": 50
+    },
+    {
+     "type": "burst",
+     "at": "hikmah+0.2",
+     "y": 420,
+     "seed": "hikmah",
+     "spread": 480
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SYUKURI NIKMAT",
+   "at": "syukur-0.1",
+   "until": "nikmatiUjian-0.15",
+   "size": 135,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "NIKMATI UJIAN",
+   "at": "nikmatiUjian-0.1",
+   "until": "kemanisan-0.15",
+   "size": 140,
+   "depth": 18
+  },
+  {
+   "type": "checklist",
+   "title": "PERKARA PERTAMA",
+   "at": "pertama-0.1",
+   "until": "kemanisan-0.15",
+   "items": [
+    {
+     "text": "SYUKURI SETIAP NIKMAT",
+     "at": "syukur"
+    },
+    {
+     "text": "NIKMATI UJIAN",
+     "at": "nikmatiUjian"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ADA KEMANISAN",
+   "at": "kemanisan-0.1",
+   "until": "percayalah-0.15",
+   "size": 140,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "heart",
+   "at": "kemanisan+0.3",
+   "until": "percayalah-0.15",
+   "x": 900,
+   "y": 540,
+   "size": 80
+  },
+  {
+   "type": "burst",
+   "at": "kemanisan+0.2",
+   "seed": "manis",
+   "spread": 480
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERCAYALAH",
+   "at": "percayalah-0.1",
+   "until": "cta-0.05",
+   "size": 160,
+   "depth": 18
+  }
+ ],
+ "cover": {
+  "frame": 20.0,
+  "kicker": "JANGAN PUTUS ASA",
+  "big": "ATURAN ALLAH",
+  "line2": "PASTI ADA HIKMAH",
+  "tag": "Syukuri nikmat, nikmati ujian",
+  "bigSize": 200,
+  "line2Size": 96
+ },
+ "poster": {
+  "icon": "star",
+  "top": "HIDUP SUSAH?",
+  "mid": "JANGAN PUTUS ASA",
+  "last": "ADA HIKMAHNYA",
+  "banner": "Ada kemanisan di hujungnya!",
+  "num": "2",
+  "numLabel": "Perkara Perlu Buat",
+  "frame": 20.0,
+  "headTop": 615,
+  "chinY": 1420,
+  "faceX": 520
+ }
+}

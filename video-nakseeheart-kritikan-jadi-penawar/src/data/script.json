@@ -1,0 +1,190 @@
+{
+ "source": "IMG_4252.mov",
+ "maxChars": 48,
+ "gold": [
+  "selesa",
+  "suka",
+  "menerima",
+  "mengkritik",
+  "manfaat",
+  "teruskan",
+  "kritikan",
+  "teguran",
+  "ubat",
+  "penawar",
+  "memperbaiki",
+  "kelemahan",
+  "kekurangan",
+  "racun",
+  "melemahkan",
+  "semangat",
+  "merugikan",
+  "baiki",
+  "positifkan",
+  "positif"
+ ],
+ "upper": [
+  "ubat",
+  "penawar",
+  "racun",
+  "percayalah"
+ ],
+ "chunks": [
+  [
+   "hook",
+   31.97,
+   36.95,
+   "Jadikan itu sebagai salah satu ubat atau penawar."
+  ],
+  [
+   "s1",
+   1.1,
+   3.2,
+   "Mana mungkin dalam kehidupan kita ini"
+  ],
+  [
+   "s1",
+   3.2,
+   6.85,
+   "semua orang akan selesa dan suka perkara yang kita buat."
+  ],
+  [
+   "s1",
+   6.85,
+   11.25,
+   "Ada ketikanya orang boleh menerima perkara yang kita lakukan,"
+  ],
+  [
+   "s1",
+   11.25,
+   15.25,
+   "dan ada ketikanya orang tidak boleh menerima,"
+  ],
+  [
+   "s1",
+   15.25,
+   17.8,
+   "bahkan mengkritik perkara yang kita lakukan."
+  ],
+  [
+   "s1",
+   17.8,
+   19.5,
+   "Apa yang perlu kita buat?"
+  ],
+  [
+   "s1",
+   19.5,
+   23.4,
+   "Selagi mana kita mampu memberikan manfaat kepada orang,"
+  ],
+  [
+   "s1",
+   23.4,
+   26.88,
+   "teruskan perkara yang baik yang kita telah lakukan."
+  ],
+  [
+   "s2",
+   27.75,
+   30.45,
+   "Perkara yang dijadikan sebagai kritikan,"
+  ],
+  [
+   "s2",
+   30.45,
+   31.97,
+   "dijadikan sebagai teguran,"
+  ],
+  [
+   "s2",
+   31.97,
+   36.95,
+   "jadikan itu sebagai salah satu ubat atau penawar"
+  ],
+  [
+   "s2",
+   36.95,
+   40.4,
+   "untuk kita memperbaiki kelemahan dan kekurangan."
+  ],
+  [
+   "s2",
+   40.4,
+   43.05,
+   "Dan jangan jadikan ia sebagai racun"
+  ],
+  [
+   "s2",
+   43.05,
+   45.95,
+   "yang akhirnya melemahkan semangat kita,"
+  ],
+  [
+   "s2",
+   45.95,
+   50.0,
+   "yang akhirnya menyebabkan kita tak nak buat semua perkara,"
+  ],
+  [
+   "s2",
+   50.0,
+   53.2,
+   "dan ia akan merugikan diri kita,"
+  ],
+  [
+   "s2",
+   53.2,
+   54.65,
+   "bukan merugikan orang lain."
+  ],
+  [
+   "s2",
+   54.65,
+   59.05,
+   "Baiki diri atas segala teguran yang telah diberikan,"
+  ],
+  [
+   "s2",
+   59.05,
+   63.0,
+   "dan positifkan diri untuk teruskan perkara yang baik,"
+  ],
+  [
+   "s2",
+   63.0,
+   68.2,
+   "kerana perkara yang baik ini pasti akan ada orang yang boleh menerimanya,"
+  ],
+  [
+   "s2",
+   68.2,
+   70.3,
+   "begitu juga sebaliknya."
+  ],
+  [
+   "s2",
+   70.3,
+   73.5,
+   "InsyaAllah kita akan terus kekal positif"
+  ],
+  [
+   "s2",
+   73.5,
+   78.15,
+   "dalam perkara yang kita lakukan seharian, dalam kehidupan kita."
+  ],
+  [
+   "s2",
+   78.15,
+   79.6,
+   "Percayalah."
+  ]
+ ],
+ "unsure": [
+  [
+   50.8,
+   "[NOTA — large-v3 “dan ia akan”, medium “dan dia akan”; “ia” dipilih (merujuk kritikan)]"
+  ]
+ ]
+}

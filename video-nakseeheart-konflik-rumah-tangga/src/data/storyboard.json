@@ -1,0 +1,375 @@
+{
+ "meta": {
+  "title": "Kreativiti Urus Konflik Rumah Tangga",
+  "compositionId": "NakSeeHeartKonflikRumahTangga",
+  "output": "nakseeheart-konflik-rumah-tangga",
+  "source": "IMG_4253.mov"
+ },
+ "layout": {
+  "face": {
+   "x": 510,
+   "y": 920
+  },
+  "ceilingY": 270,
+  "ceilingTilt": -20,
+  "labelY": 150,
+  "cardY": 560,
+  "recapY": 360,
+  "subtitleY": 1500,
+  "lowerThirdY": 1600,
+  "hookFocusY": 920,
+  "climaxFocusY": 960
+ },
+ "camera": {
+  "punch": [
+   "kreativiti",
+   "konflik",
+   "ego",
+   "janganBiar",
+   "bahagia"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.14,
+   1.24
+  ],
+  "hookZoom": [
+   1.26,
+   1.12,
+   1.2
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 0.3,
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "kreativiti"
+  },
+  {
+   "kind": "impact",
+   "at": "konflik",
+   "dur": 1.3,
+   "f": 46,
+   "gain": 0.22
+  },
+  {
+   "kind": "pop",
+   "at": "ego"
+  },
+  {
+   "kind": "shimmer",
+   "at": "healing",
+   "dur": 1.8,
+   "gain": 0.22
+  },
+  {
+   "kind": "impact",
+   "at": "tawar",
+   "dur": 1.4,
+   "f": 44,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "bahagia",
+   "dur": 2.4,
+   "gain": 0.28
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "DALAM RUMAH TANGGA",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 44,
+   "y": 160
+  },
+  {
+   "type": "text3d",
+   "text": "CIPTA BAHAGIA",
+   "at": 0.3,
+   "until": "flashToBody-0.2",
+   "y": 310,
+   "size": 145,
+   "reveal": "punch",
+   "depth": 20,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 2.6,
+   "seed": "hook",
+   "spread": 460,
+   "y": 310
+  },
+  {
+   "type": "ceiling3d",
+   "text": "RUMAH TANGGA",
+   "at": "rumahTangga-0.2",
+   "until": "kreativiti-0.15",
+   "size": 150,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERLU KREATIVITI",
+   "at": "kreativiti-0.1",
+   "until": "contoh-0.15",
+   "size": 120,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "checklist",
+   "title": "BILA BERLAKU",
+   "at": "krisis-0.4",
+   "until": "jangan-0.15",
+   "items": [
+    {
+     "text": "KRISIS",
+     "at": "krisis"
+    },
+    {
+     "text": "KONFLIK",
+     "at": "konflik"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KONFLIK WUJUD",
+   "at": "konflik",
+   "until": "jangan-0.15",
+   "size": 140,
+   "fill": "red",
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "JANGAN BERLARUTAN",
+   "at": "jangan",
+   "until": "ego-0.6",
+   "size": 110,
+   "depth": 18
+  },
+  {
+   "type": "chip",
+   "text": "ATASI & PENDEKKAN TEMPOH KONFLIK",
+   "at": "atasi",
+   "until": "ego-0.6",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "TUNDUKKAN EGO",
+   "at": "ego-0.4",
+   "until": "zon-0.6",
+   "size": 140,
+   "depth": 20
+  },
+  {
+   "type": "checklist",
+   "title": "ADA KALANYA PERLU",
+   "at": "ego-0.3",
+   "until": "zon-0.6",
+   "items": [
+    {
+     "text": "TUNDUKKAN EGO",
+     "at": "ego"
+    },
+    {
+     "text": "MOHON MAAF",
+     "at": "maaf"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KELUAR ZON SELESA",
+   "at": "zon-0.5",
+   "until": "brollA.0-0.1",
+   "size": 112,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "broll",
+   "kind": "friends",
+   "from": "brollA.0",
+   "to": "brollA.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "SEPERTI CONTOH",
+     "at": "brollA.0+0.2",
+     "until": "brollA.1-0.1",
+     "y": 240,
+     "size": 44
+    },
+    {
+     "type": "text3d",
+     "text": "HEALING",
+     "at": "healing-0.1",
+     "until": "menarik-0.15",
+     "y": 400,
+     "size": 170,
+     "depth": 20,
+     "rotX": 8
+    },
+    {
+     "type": "text3d",
+     "text": "TEMPAT MENARIK",
+     "at": "menarik-0.1",
+     "until": "bercuti-0.15",
+     "y": 400,
+     "size": 120,
+     "depth": 18,
+     "rotX": 8
+    },
+    {
+     "type": "text3d",
+     "text": "BERCUTI",
+     "at": "bercuti-0.1",
+     "until": "terapi-0.15",
+     "y": 400,
+     "size": 170,
+     "depth": 20,
+     "rotX": 8
+    },
+    {
+     "type": "text3d",
+     "text": "TERAPI HUBUNGAN",
+     "at": "terapi-0.1",
+     "until": "brollA.1-0.1",
+     "y": 400,
+     "size": 115,
+     "fill": "cream",
+     "depth": 16,
+     "rotX": 8
+    },
+    {
+     "type": "burst",
+     "at": "terapi",
+     "y": 400,
+     "seed": "terapi",
+     "spread": 480
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "JANGAN BIARKAN",
+   "at": "janganBiar",
+   "until": "tawar-0.15",
+   "size": 130,
+   "depth": 18
+  },
+  {
+   "type": "compare",
+   "at": "tawar-0.3",
+   "until": "usaha-0.6",
+   "arrow": true,
+   "left": {
+    "title": "KONFLIK BERLARUTAN",
+    "items": [
+     {
+      "text": "Hubungan jadi tawar",
+      "at": "tawar"
+     }
+    ]
+   },
+   "right": {
+    "title": "AKHIRNYA",
+    "items": [
+     {
+      "text": "Terlerai tanpa rela",
+      "at": "terlerai"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ceiling3d",
+   "text": "HUBUNGAN TAWAR",
+   "at": "tawar",
+   "until": "usaha-0.6",
+   "size": 125,
+   "fill": "red",
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SEDIKIT USAHA",
+   "at": "usaha-0.5",
+   "until": "bahagia-0.1",
+   "size": 140,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "CIPTA BAHAGIA",
+   "at": "bahagia-0.1",
+   "until": "rasa-0.15",
+   "size": 145,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "burst",
+   "at": "bahagia+0.3",
+   "seed": "bahagia",
+   "spread": 480
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PASANGAN TERCINTA",
+   "at": "rasa",
+   "until": "cta-0.05",
+   "size": 115,
+   "depth": 18
+  },
+  {
+   "type": "heart",
+   "at": "cinta-0.6",
+   "until": "cta-0.05",
+   "x": 540,
+   "y": 560,
+   "size": 90
+  }
+ ],
+ "cover": {
+  "frame": 44.0,
+  "kicker": "RUMAH TANGGA",
+  "big": "KONFLIK?",
+  "line2": "JANGAN BIAR BERLARUTAN",
+  "tag": "Sedikit usaha cipta bahagia",
+  "bigSize": 220,
+  "line2Size": 80
+ },
+ "poster": {
+  "icon": "heart",
+  "top": "BERGADUH",
+  "mid": "DENGAN PASANGAN?",
+  "last": "JANGAN BIAR LAMA",
+  "banner": "Sedikit usaha cipta bahagia!",
+  "num": "3",
+  "numLabel": "Cara Atasi Konflik",
+  "frame": 44.0,
+  "headTop": 570,
+  "chinY": 1260,
+  "faceX": 510
+ }
+}

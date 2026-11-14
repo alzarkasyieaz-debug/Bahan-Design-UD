@@ -1,0 +1,353 @@
+{
+ "meta": {
+  "title": "Kritikan Jadikan Penawar",
+  "compositionId": "NakSeeHeartKritikanPenawar",
+  "output": "nakseeheart-kritikan-jadi-penawar",
+  "source": "IMG_4252.mov"
+ },
+ "layout": {
+  "face": {
+   "x": 510,
+   "y": 900
+  },
+  "ceilingY": 270,
+  "ceilingTilt": -20,
+  "labelY": 150,
+  "cardY": 560,
+  "recapY": 360,
+  "subtitleY": 1500,
+  "lowerThirdY": 1600,
+  "hookFocusY": 900,
+  "climaxFocusY": 950
+ },
+ "camera": {
+  "punch": [
+   "kritik",
+   "teruskan",
+   "ubat",
+   "racun",
+   "baikiDiri",
+   "kekal"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.14,
+   1.24
+  ],
+  "hookZoom": [
+   1.26,
+   1.12,
+   1.2
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 0.3,
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "teruskan"
+  },
+  {
+   "kind": "shimmer",
+   "at": "ubat",
+   "dur": 1.8,
+   "gain": 0.22
+  },
+  {
+   "kind": "impact",
+   "at": "racun",
+   "dur": 1.4,
+   "f": 44,
+   "gain": 0.24
+  },
+  {
+   "kind": "pop",
+   "at": "baikiDiri"
+  },
+  {
+   "kind": "shimmer",
+   "at": "kekal",
+   "dur": 2.2,
+   "gain": 0.26
+  },
+  {
+   "kind": "impact",
+   "at": "percayalah",
+   "dur": 1.4,
+   "f": 46,
+   "gain": 0.2
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "BILA DIKRITIK…",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 44,
+   "y": 160
+  },
+  {
+   "type": "text3d",
+   "text": "JADIKAN PENAWAR",
+   "at": 0.3,
+   "until": "flashToBody-0.2",
+   "y": 310,
+   "size": 128,
+   "reveal": "punch",
+   "depth": 18,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 3.2,
+   "seed": "hook",
+   "spread": 460,
+   "y": 310
+  },
+  {
+   "type": "broll",
+   "kind": "social",
+   "from": "brollA.0",
+   "to": "brollA.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "MANA MUNGKIN",
+     "at": "brollA.0+0.2",
+     "until": "brollA.1-0.1",
+     "y": 250,
+     "size": 44
+    },
+    {
+     "type": "text3d",
+     "text": "SEMUA ORANG SUKA",
+     "at": "semua",
+     "until": "brollA.1-0.1",
+     "y": 410,
+     "size": 120,
+     "depth": 16,
+     "rotX": 8
+    }
+   ]
+  },
+  {
+   "type": "compare",
+   "at": "terima-0.4",
+   "until": "apa-0.1",
+   "arrow": false,
+   "left": {
+    "title": "ADA YANG",
+    "good": true,
+    "items": [
+     {
+      "text": "Boleh menerima",
+      "at": "terima"
+     }
+    ]
+   },
+   "right": {
+    "title": "ADA YANG",
+    "items": [
+     {
+      "text": "Tidak boleh menerima",
+      "at": "takTerima"
+     },
+     {
+      "text": "Mengkritik",
+      "at": "kritik"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ORANG MENGKRITIK",
+   "at": "kritik-0.2",
+   "until": "apa-0.1",
+   "size": 115,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "APA PERLU BUAT?",
+   "at": "apa",
+   "until": "manfaat-0.15",
+   "size": 125,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "TERUSKAN KEBAIKAN",
+   "at": "teruskan-0.1",
+   "until": "kritikan-0.15",
+   "size": 115,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "chip",
+   "text": "SELAGI MAMPU MEMBERI MANFAAT",
+   "at": "manfaat",
+   "until": "kritikan-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KRITIKAN = TEGURAN",
+   "at": "kritikan",
+   "until": "ubat-0.15",
+   "size": 110,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "UBAT ATAU PENAWAR",
+   "at": "ubat-0.1",
+   "until": "jangan-0.15",
+   "size": 115,
+   "depth": 20
+  },
+  {
+   "type": "compare",
+   "at": "ubat",
+   "until": "lemah-0.5",
+   "arrow": true,
+   "left": {
+    "title": "JADIKAN",
+    "good": true,
+    "items": [
+     {
+      "text": "Ubat / penawar",
+      "at": "ubat"
+     }
+    ]
+   },
+   "right": {
+    "title": "JANGAN JADIKAN",
+    "items": [
+     {
+      "text": "Racun",
+      "at": "racun"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BUKAN RACUN",
+   "at": "racun-0.2",
+   "until": "baikiDiri-0.15",
+   "size": 150,
+   "fill": "red",
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "meter",
+   "label": "SEMANGAT",
+   "good": "KUAT",
+   "bad": "LEMAH",
+   "at": "lemah-0.4",
+   "until": "rugi-0.1",
+   "dropAt": "lemah"
+  },
+  {
+   "type": "chip",
+   "text": "YANG RUGI DIRI KITA, BUKAN ORANG LAIN",
+   "at": "rugi",
+   "until": "baikiDiri-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BAIKI DIRI",
+   "at": "baikiDiri-0.1",
+   "until": "positif-0.15",
+   "size": 170,
+   "depth": 20
+  },
+  {
+   "type": "ceiling3d",
+   "text": "POSITIFKAN DIRI",
+   "at": "positif-0.1",
+   "until": "teruskan2-0.3",
+   "size": 130,
+   "depth": 18
+  },
+  {
+   "type": "recap",
+   "at": "teruskan2-0.2",
+   "until": "menerima-0.6",
+   "items": [
+    "BAIKI DIRI ATAS TEGURAN",
+    "POSITIFKAN DIRI",
+    "TERUSKAN YANG BAIK"
+   ],
+   "good": true
+  },
+  {
+   "type": "chip",
+   "text": "PASTI ADA ORANG YANG MENERIMANYA",
+   "at": "menerima-0.5",
+   "until": "kekal-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KEKAL POSITIF",
+   "at": "kekal",
+   "until": "percayalah-0.15",
+   "size": 150,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "burst",
+   "at": "positif2",
+   "seed": "positif",
+   "spread": 480
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERCAYALAH",
+   "at": "percayalah-0.1",
+   "until": "cta-0.05",
+   "size": 160,
+   "depth": 18
+  }
+ ],
+ "cover": {
+  "frame": 36.0,
+  "kicker": "BILA DIKRITIK",
+  "big": "PENAWAR",
+  "line2": "BUKAN RACUN",
+  "tag": "Baiki diri, kekal positif",
+  "bigSize": 230,
+  "line2Size": 100
+ },
+ "poster": {
+  "icon": "chat",
+  "top": "ORANG KRITIK",
+  "mid": "KITA?",
+  "last": "JADIKAN PENAWAR",
+  "banner": "Bukan racun, kekal positif!",
+  "num": "3",
+  "numLabel": "Langkah Bijak",
+  "frame": 36.0,
+  "headTop": 540,
+  "chinY": 1250,
+  "faceX": 510
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "IMG_4255.mov (87.21 s, 1920x1080 HEVC diputar -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    6.2
+   ],
+   "src": 77.1,
+   "srcEnd": 83.3
+  },
+  {
+   "id": "s1",
+   "out": [
+    6.2,
+    89.42
+   ],
+   "src": 2.2,
+   "srcEnd": 85.42
+  },
+  {
+   "id": "cta",
+   "out": [
+    89.42,
+    94.92
+   ],
+   "src": 84.9,
+   "srcEnd": 86.1,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 6.2,
+  "putusAsa": 7.12,
+  "aturan": 10.26,
+  "sebaliknya": 14.92,
+  "nikmati": 16.38,
+  "ketentuan": 17.58,
+  "menilai": 23.6,
+  "menghargai": 26.5,
+  "percaturan": 28.0,
+  "adaOrang": 30.78,
+  "susah1": 33.84,
+  "senang1": 38.14,
+  "adaKetika": 41.1,
+  "senang2": 43.38,
+  "susah2": 48.54,
+  "setiap": 51.42,
+  "pelajaran": 58.68,
+  "akur": 62.66,
+  "percaya": 65.96,
+  "hikmah": 70.62,
+  "sedar": 74.74,
+  "pertama": 75.9,
+  "syukur": 77.88,
+  "nikmatiUjian": 81.46,
+  "kemanisan": 85.68,
+  "insyaAllah": 87.84,
+  "percayalah": 88.92,
+  "brollA": [
+   69.9,
+   75.4
+  ],
+  "climax": [
+   75.6,
+   87.3
+  ],
+  "finale": [
+   87.3,
+   89.42
+  ],
+  "cta": 89.42,
+  "end": 94.92,
+  "followPulse": [
+   18.0,
+   46.0,
+   74.0
+  ]
+ }
+}

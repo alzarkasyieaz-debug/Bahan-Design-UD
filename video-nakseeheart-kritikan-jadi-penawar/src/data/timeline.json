@@ -1,0 +1,97 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "IMG_4252.mov (80.74 s, 1920x1080 HEVC diputar -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    4.98
+   ],
+   "src": 31.97,
+   "srcEnd": 36.95
+  },
+  {
+   "id": "s1",
+   "out": [
+    4.98,
+    30.76
+   ],
+   "src": 1.1,
+   "srcEnd": 26.88
+  },
+  {
+   "id": "s2",
+   "out": [
+    30.76,
+    82.61
+   ],
+   "src": 27.75,
+   "srcEnd": 79.6
+  },
+  {
+   "id": "cta",
+   "out": [
+    82.61,
+    88.11
+   ],
+   "src": 79.3,
+   "srcEnd": 80.5,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 4.98,
+  "manaMungkin": 5.04,
+  "semua": 7.2,
+  "terima": 13.34,
+  "takTerima": 17.92,
+  "kritik": 19.7,
+  "apa": 21.72,
+  "manfaat": 25.92,
+  "teruskan": 27.36,
+  "kritikan": 32.79,
+  "teguran": 34.45,
+  "ubat": 38.03,
+  "penawar": 39.13,
+  "baiki": 40.91,
+  "kekurangan": 42.93,
+  "jangan": 44.17,
+  "racun": 45.51,
+  "lemah": 47.37,
+  "takNak": 51.07,
+  "rugi": 54.77,
+  "bukanOrang": 56.27,
+  "baikiDiri": 57.71,
+  "teguran2": 60.59,
+  "positif": 62.63,
+  "teruskan2": 64.65,
+  "kerana": 66.09,
+  "menerima": 70.63,
+  "sebaliknya": 71.31,
+  "kekal": 73.47,
+  "positif2": 75.89,
+  "percayalah": 81.23,
+  "brollA": [
+   5.08,
+   10.88
+  ],
+  "climax": [
+   57.71,
+   66.01
+  ],
+  "finale": [
+   66.01,
+   82.61
+  ],
+  "cta": 82.61,
+  "end": 88.11,
+  "followPulse": [
+   18.0,
+   42.0,
+   66.0
+  ]
+ }
+}

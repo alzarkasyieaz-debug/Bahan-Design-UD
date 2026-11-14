@@ -1,0 +1,168 @@
+{
+ "source": "IMG_4255.mov",
+ "maxChars": 48,
+ "gold": [
+  "putus",
+  "asa",
+  "aturan",
+  "nikmati",
+  "ketentuan",
+  "menilai",
+  "menghargai",
+  "percaturan",
+  "kesusahan",
+  "kesenangan",
+  "permulaan",
+  "pengakhiran",
+  "pelajaran",
+  "akur",
+  "hikmah",
+  "mesyukuri",
+  "nikmat",
+  "ujian",
+  "kemanisan",
+  "penghujungnya"
+ ],
+ "upper": [
+  "pertama",
+  "percayalah"
+ ],
+ "chunks": [
+  [
+   "hook",
+   77.1,
+   79.95,
+   "Dan nikmati ujian dalam kehidupan,"
+  ],
+  [
+   "hook",
+   79.95,
+   83.3,
+   "kerana akan ada kemanisan di penghujungnya."
+  ],
+  [
+   "s1",
+   2.2,
+   5.0,
+   "Jangan pernah berputus asa"
+  ],
+  [
+   "s1",
+   5.0,
+   10.05,
+   "dalam setiap aturan kehidupan yang Allah tentukan kepada kita."
+  ],
+  [
+   "s1",
+   10.05,
+   15.3,
+   "Sebaliknya, nikmati setiap ketentuan Allah SWT,"
+  ],
+  [
+   "s1",
+   15.3,
+   20.6,
+   "kerana di situ Allah SWT menilai"
+  ],
+  [
+   "s1",
+   20.6,
+   26.65,
+   "sejauh mana kita menghargai setiap percaturan Allah SWT."
+  ],
+  [
+   "s1",
+   26.65,
+   32.4,
+   "Ada orang, Allah SWT datangkan kesusahan pada permulaan kehidupan,"
+  ],
+  [
+   "s1",
+   32.4,
+   36.6,
+   "dan Allah SWT datangkan kesenangan pada pengakhiran kehidupannya."
+  ],
+  [
+   "s1",
+   36.6,
+   42.0,
+   "Ada ketika, Allah SWT datangkan kesenangan pada permulaan kehidupannya,"
+  ],
+  [
+   "s1",
+   42.0,
+   47.35,
+   "tapi Allah SWT datangkan kesusahan pada pengakhiran kehidupannya."
+  ],
+  [
+   "s1",
+   47.35,
+   51.4,
+   "Setiap satu aturan Allah SWT ini"
+  ],
+  [
+   "s1",
+   51.4,
+   56.6,
+   "memberikan kita satu pelajaran dalam hidup,"
+  ],
+  [
+   "s1",
+   56.6,
+   61.3,
+   "iaitu sentiasa akur pada aturan Allah SWT,"
+  ],
+  [
+   "s1",
+   61.3,
+   65.75,
+   "dan percaya setiap satu perkara yang Allah SWT tentukan,"
+  ],
+  [
+   "s1",
+   65.75,
+   71.4,
+   "ada hikmah yang Allah SWT nak bagi kepada kita tanpa kita sedar."
+  ],
+  [
+   "s1",
+   71.4,
+   73.6,
+   "Perkara pertama yang kita perlu buat,"
+  ],
+  [
+   "s1",
+   73.6,
+   76.4,
+   "adalah mesyukuri setiap nikmat Allah SWT,"
+  ],
+  [
+   "s1",
+   76.4,
+   79.95,
+   "dan nikmati ujian dalam kehidupan,"
+  ],
+  [
+   "s1",
+   79.95,
+   83.3,
+   "kerana akan ada kemanisan di penghujungnya."
+  ],
+  [
+   "s1",
+   83.3,
+   85.42,
+   "InsyaAllah, percayalah."
+  ]
+ ],
+ "unsure": [
+  [
+   2.0,
+   "[NOTA — cap masa perkataan daripada model medium (large-v3 terlalu awal untuk rakaman ini); teks disemak dengan kedua-dua model]"
+  ],
+  [
+   86.2,
+   "[DIPOTONG ~86.2–87.2 s: “Terima kasih” selepas penutup]"
+  ]
+ ]
+}

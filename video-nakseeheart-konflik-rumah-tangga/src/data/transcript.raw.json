@@ -1,0 +1,738 @@
+[
+ {
+  "start": 2.2400000000000015,
+  "end": 10.04,
+  "text": " Dalam kehidupan berumah tangga, ada ketikanya perlu kepada kreativiti untuk menguruskan",
+  "words": [
+   {
+    "w": " Dalam",
+    "s": 2.2400000000000015,
+    "e": 3.32
+   },
+   {
+    "w": " kehidupan",
+    "s": 3.32,
+    "e": 3.86
+   },
+   {
+    "w": " berumah",
+    "s": 3.86,
+    "e": 4.28
+   },
+   {
+    "w": " tangga,",
+    "s": 4.28,
+    "e": 5.32
+   },
+   {
+    "w": " ada",
+    "s": 5.7,
+    "e": 5.82
+   },
+   {
+    "w": " ketikanya",
+    "s": 5.82,
+    "e": 6.94
+   },
+   {
+    "w": " perlu",
+    "s": 6.94,
+    "e": 7.5
+   },
+   {
+    "w": " kepada",
+    "s": 7.5,
+    "e": 8.14
+   },
+   {
+    "w": " kreativiti",
+    "s": 8.14,
+    "e": 9.06
+   },
+   {
+    "w": " untuk",
+    "s": 9.06,
+    "e": 9.48
+   },
+   {
+    "w": " menguruskan",
+    "s": 9.48,
+    "e": 10.04
+   }
+  ]
+ },
+ {
+  "start": 10.04,
+  "end": 11.16,
+  "text": " rumah tangga.",
+  "words": [
+   {
+    "w": " rumah",
+    "s": 10.04,
+    "e": 10.36
+   },
+   {
+    "w": " tangga.",
+    "s": 10.36,
+    "e": 11.16
+   }
+  ]
+ },
+ {
+  "start": 11.62,
+  "end": 18.18,
+  "text": " Seperti contoh, apabila berlaku krisis dan konflik, dan kita mengerti dan kita mengetahui",
+  "words": [
+   {
+    "w": " Seperti",
+    "s": 11.62,
+    "e": 11.86
+   },
+   {
+    "w": " contoh,",
+    "s": 11.86,
+    "e": 12.7
+   },
+   {
+    "w": " apabila",
+    "s": 12.94,
+    "e": 13.32
+   },
+   {
+    "w": " berlaku",
+    "s": 13.32,
+    "e": 13.8
+   },
+   {
+    "w": " krisis",
+    "s": 13.8,
+    "e": 14.34
+   },
+   {
+    "w": " dan",
+    "s": 14.34,
+    "e": 14.64
+   },
+   {
+    "w": " konflik,",
+    "s": 14.64,
+    "e": 15.48
+   },
+   {
+    "w": " dan",
+    "s": 15.74,
+    "e": 15.88
+   },
+   {
+    "w": " kita",
+    "s": 15.88,
+    "e": 16.22
+   },
+   {
+    "w": " mengerti",
+    "s": 16.22,
+    "e": 16.88
+   },
+   {
+    "w": " dan",
+    "s": 16.88,
+    "e": 17.06
+   },
+   {
+    "w": " kita",
+    "s": 17.06,
+    "e": 17.32
+   },
+   {
+    "w": " mengetahui",
+    "s": 17.32,
+    "e": 18.18
+   }
+  ]
+ },
+ {
+  "start": 18.18,
+  "end": 25.18,
+  "text": " konflik itu wujud, maka jangan biarkan ia berlarutan konflik tersebut, bahkan cuba",
+  "words": [
+   {
+    "w": " konflik",
+    "s": 18.18,
+    "e": 18.78
+   },
+   {
+    "w": " itu",
+    "s": 18.78,
+    "e": 19.02
+   },
+   {
+    "w": " wujud,",
+    "s": 19.02,
+    "e": 19.66
+   },
+   {
+    "w": " maka",
+    "s": 20.02,
+    "e": 20.18
+   },
+   {
+    "w": " jangan",
+    "s": 20.18,
+    "e": 20.58
+   },
+   {
+    "w": " biarkan",
+    "s": 20.58,
+    "e": 21.14
+   },
+   {
+    "w": " ia",
+    "s": 21.14,
+    "e": 21.48
+   },
+   {
+    "w": " berlarutan",
+    "s": 21.48,
+    "e": 22.26
+   },
+   {
+    "w": " konflik",
+    "s": 22.26,
+    "e": 22.72
+   },
+   {
+    "w": " tersebut,",
+    "s": 22.72,
+    "e": 23.56
+   },
+   {
+    "w": " bahkan",
+    "s": 23.86,
+    "e": 24.4
+   },
+   {
+    "w": " cuba",
+    "s": 24.4,
+    "e": 25.18
+   }
+  ]
+ },
+ {
+  "start": 25.18,
+  "end": 28.98,
+  "text": " atasi untuk meminimakan tempoh konflik tersebut.",
+  "words": [
+   {
+    "w": " atasi",
+    "s": 25.18,
+    "e": 25.84
+   },
+   {
+    "w": " untuk",
+    "s": 25.84,
+    "e": 26.32
+   },
+   {
+    "w": " meminimakan",
+    "s": 26.32,
+    "e": 27.38
+   },
+   {
+    "w": " tempoh",
+    "s": 27.38,
+    "e": 27.96
+   },
+   {
+    "w": " konflik",
+    "s": 27.96,
+    "e": 28.34
+   },
+   {
+    "w": " tersebut.",
+    "s": 28.34,
+    "e": 28.98
+   }
+  ]
+ },
+ {
+  "start": 29.7,
+  "end": 35.62,
+  "text": " Seperti biasa, adakan lanya kita perlu menundutkan ego, memohon kemaafan.",
+  "words": [
+   {
+    "w": " Seperti",
+    "s": 29.7,
+    "e": 30.1
+   },
+   {
+    "w": " biasa,",
+    "s": 30.1,
+    "e": 30.68
+   },
+   {
+    "w": " adakan",
+    "s": 30.96,
+    "e": 31.2
+   },
+   {
+    "w": " lanya",
+    "s": 31.2,
+    "e": 31.54
+   },
+   {
+    "w": " kita",
+    "s": 31.54,
+    "e": 32.0
+   },
+   {
+    "w": " perlu",
+    "s": 32.0,
+    "e": 32.46
+   },
+   {
+    "w": " menundutkan",
+    "s": 32.46,
+    "e": 33.52
+   },
+   {
+    "w": " ego,",
+    "s": 33.52,
+    "e": 33.9
+   },
+   {
+    "w": " memohon",
+    "s": 34.24,
+    "e": 34.62
+   },
+   {
+    "w": " kemaafan.",
+    "s": 34.62,
+    "e": 35.62
+   }
+  ]
+ },
+ {
+  "start": 35.86,
+  "end": 41.5,
+  "text": " Ada ketikanya kita perlu buat satu perkara yang luar daripada zon keselesaan kita.",
+  "words": [
+   {
+    "w": " Ada",
+    "s": 35.86,
+    "e": 36.02
+   },
+   {
+    "w": " ketikanya",
+    "s": 36.02,
+    "e": 36.64
+   },
+   {
+    "w": " kita",
+    "s": 36.64,
+    "e": 37.0
+   },
+   {
+    "w": " perlu",
+    "s": 37.0,
+    "e": 37.26
+   },
+   {
+    "w": " buat",
+    "s": 37.26,
+    "e": 37.42
+   },
+   {
+    "w": " satu",
+    "s": 37.42,
+    "e": 37.76
+   },
+   {
+    "w": " perkara",
+    "s": 37.76,
+    "e": 38.54
+   },
+   {
+    "w": " yang",
+    "s": 38.54,
+    "e": 38.96
+   },
+   {
+    "w": " luar",
+    "s": 38.96,
+    "e": 39.34
+   },
+   {
+    "w": " daripada",
+    "s": 39.34,
+    "e": 39.86
+   },
+   {
+    "w": " zon",
+    "s": 39.86,
+    "e": 40.22
+   },
+   {
+    "w": " keselesaan",
+    "s": 40.22,
+    "e": 41.04
+   },
+   {
+    "w": " kita.",
+    "s": 41.04,
+    "e": 41.5
+   }
+  ]
+ },
+ {
+  "start": 41.98,
+  "end": 47.68,
+  "text": " Seperti contoh, pergi healing, seperti contoh, bawa pergi tempat-tempat yang menarik, seperti",
+  "words": [
+   {
+    "w": " Seperti",
+    "s": 41.98,
+    "e": 42.26
+   },
+   {
+    "w": " contoh,",
+    "s": 42.26,
+    "e": 43.1
+   },
+   {
+    "w": " pergi",
+    "s": 43.36,
+    "e": 43.5
+   },
+   {
+    "w": " healing,",
+    "s": 43.5,
+    "e": 44.04
+   },
+   {
+    "w": " seperti",
+    "s": 44.44,
+    "e": 44.64
+   },
+   {
+    "w": " contoh,",
+    "s": 44.64,
+    "e": 45.5
+   },
+   {
+    "w": " bawa",
+    "s": 45.68,
+    "e": 45.82
+   },
+   {
+    "w": " pergi",
+    "s": 45.82,
+    "e": 46.0
+   },
+   {
+    "w": " tempat",
+    "s": 46.0,
+    "e": 46.24
+   },
+   {
+    "w": "-tempat",
+    "s": 46.24,
+    "e": 46.56
+   },
+   {
+    "w": " yang",
+    "s": 46.56,
+    "e": 46.82
+   },
+   {
+    "w": " menarik,",
+    "s": 46.82,
+    "e": 47.34
+   },
+   {
+    "w": " seperti",
+    "s": 47.52,
+    "e": 47.68
+   }
+  ]
+ },
+ {
+  "start": 47.68,
+  "end": 54.12,
+  "text": " contoh, bawa pergi bercuti, sebagai salah satu usaha dan terapi memperbaiki hubungan.",
+  "words": [
+   {
+    "w": " contoh,",
+    "s": 47.68,
+    "e": 48.12
+   },
+   {
+    "w": " bawa",
+    "s": 48.2,
+    "e": 48.34
+   },
+   {
+    "w": " pergi",
+    "s": 48.34,
+    "e": 48.58
+   },
+   {
+    "w": " bercuti,",
+    "s": 48.58,
+    "e": 49.42
+   },
+   {
+    "w": " sebagai",
+    "s": 49.64,
+    "e": 49.9
+   },
+   {
+    "w": " salah",
+    "s": 49.9,
+    "e": 50.42
+   },
+   {
+    "w": " satu",
+    "s": 50.42,
+    "e": 50.92
+   },
+   {
+    "w": " usaha",
+    "s": 50.92,
+    "e": 51.46
+   },
+   {
+    "w": " dan",
+    "s": 51.46,
+    "e": 51.74
+   },
+   {
+    "w": " terapi",
+    "s": 51.74,
+    "e": 52.4
+   },
+   {
+    "w": " memperbaiki",
+    "s": 52.4,
+    "e": 53.34
+   },
+   {
+    "w": " hubungan.",
+    "s": 53.34,
+    "e": 54.12
+   }
+  ]
+ },
+ {
+  "start": 54.12,
+  "end": 60.28,
+  "text": " Jangan terus membiarkan hubungan berada dalam konflik yang berlarutan, kerana ini",
+  "words": [
+   {
+    "w": " Jangan",
+    "s": 54.12,
+    "e": 54.7
+   },
+   {
+    "w": " terus",
+    "s": 54.7,
+    "e": 55.38
+   },
+   {
+    "w": " membiarkan",
+    "s": 55.38,
+    "e": 56.24
+   },
+   {
+    "w": " hubungan",
+    "s": 56.24,
+    "e": 56.9
+   },
+   {
+    "w": " berada",
+    "s": 56.9,
+    "e": 57.32
+   },
+   {
+    "w": " dalam",
+    "s": 57.32,
+    "e": 57.54
+   },
+   {
+    "w": " konflik",
+    "s": 57.54,
+    "e": 57.92
+   },
+   {
+    "w": " yang",
+    "s": 57.92,
+    "e": 58.1
+   },
+   {
+    "w": " berlarutan,",
+    "s": 58.1,
+    "e": 58.94
+   },
+   {
+    "w": " kerana",
+    "s": 59.44,
+    "e": 59.74
+   },
+   {
+    "w": " ini",
+    "s": 59.74,
+    "e": 60.28
+   }
+  ]
+ },
+ {
+  "start": 60.28,
+  "end": 67.88,
+  "text": " akan menyebabkan hubungan tersebut menjadi tawar dan akhirnya terlerai tanpa rela.",
+  "words": [
+   {
+    "w": " akan",
+    "s": 60.28,
+    "e": 60.72
+   },
+   {
+    "w": " menyebabkan",
+    "s": 60.72,
+    "e": 62.56
+   },
+   {
+    "w": " hubungan",
+    "s": 62.56,
+    "e": 63.24
+   },
+   {
+    "w": " tersebut",
+    "s": 63.24,
+    "e": 63.68
+   },
+   {
+    "w": " menjadi",
+    "s": 63.68,
+    "e": 64.12
+   },
+   {
+    "w": " tawar",
+    "s": 64.12,
+    "e": 64.78
+   },
+   {
+    "w": " dan",
+    "s": 64.78,
+    "e": 65.12
+   },
+   {
+    "w": " akhirnya",
+    "s": 65.12,
+    "e": 66.22
+   },
+   {
+    "w": " terlerai",
+    "s": 66.22,
+    "e": 67.0
+   },
+   {
+    "w": " tanpa",
+    "s": 67.0,
+    "e": 67.5
+   },
+   {
+    "w": " rela.",
+    "s": 67.5,
+    "e": 67.88
+   }
+  ]
+ },
+ {
+  "start": 68.6,
+  "end": 75.48,
+  "text": " InsyaAllah, sedikit usaha untuk mencipta bahagia, Allah akan berikan rasa kepada pasangan",
+  "words": [
+   {
+    "w": " InsyaAllah,",
+    "s": 68.6,
+    "e": 69.14
+   },
+   {
+    "w": " sedikit",
+    "s": 69.44,
+    "e": 69.78
+   },
+   {
+    "w": " usaha",
+    "s": 69.78,
+    "e": 70.58
+   },
+   {
+    "w": " untuk",
+    "s": 70.58,
+    "e": 71.04
+   },
+   {
+    "w": " mencipta",
+    "s": 71.04,
+    "e": 71.58
+   },
+   {
+    "w": " bahagia,",
+    "s": 71.58,
+    "e": 72.5
+   },
+   {
+    "w": " Allah",
+    "s": 72.6,
+    "e": 72.84
+   },
+   {
+    "w": " akan",
+    "s": 72.84,
+    "e": 73.26
+   },
+   {
+    "w": " berikan",
+    "s": 73.26,
+    "e": 73.68
+   },
+   {
+    "w": " rasa",
+    "s": 73.68,
+    "e": 74.3
+   },
+   {
+    "w": " kepada",
+    "s": 74.3,
+    "e": 74.92
+   },
+   {
+    "w": " pasangan",
+    "s": 74.92,
+    "e": 75.48
+   }
+  ]
+ },
+ {
+  "start": 75.48,
+  "end": 76.46,
+  "text": " yang kita cinta.",
+  "words": [
+   {
+    "w": " yang",
+    "s": 75.48,
+    "e": 75.78
+   },
+   {
+    "w": " kita",
+    "s": 75.78,
+    "e": 76.08
+   },
+   {
+    "w": " cinta.",
+    "s": 76.08,
+    "e": 76.46
+   }
+  ]
+ }
+]

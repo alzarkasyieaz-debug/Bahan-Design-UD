@@ -1,0 +1,155 @@
+{
+ "source": "IMG_4253.mov",
+ "maxChars": 48,
+ "gold": [
+  "rumah",
+  "tangga",
+  "kreativiti",
+  "krisis",
+  "konflik",
+  "berlarutan",
+  "atasi",
+  "ego",
+  "kemaafan",
+  "keselesaan",
+  "healing",
+  "bercuti",
+  "terapi",
+  "hubungan",
+  "tawar",
+  "terlerai",
+  "bahagia",
+  "cinta",
+  "usaha"
+ ],
+ "upper": [
+  "ego",
+  "bahagia"
+ ],
+ "chunks": [
+  [
+   "hook",
+   68.3,
+   72.1,
+   "InsyaAllah, sedikit usaha untuk mencipta bahagia,"
+  ],
+  [
+   "s1",
+   2.1,
+   5.6,
+   "Dalam kehidupan berumah tangga,"
+  ],
+  [
+   "s1",
+   5.6,
+   10.9,
+   "ada ketikanya perlu kepada kreativiti untuk menguruskan rumah tangga."
+  ],
+  [
+   "s1",
+   10.9,
+   15.6,
+   "Seperti contoh, apabila berlaku krisis dan konflik,"
+  ],
+  [
+   "s1",
+   15.6,
+   19.75,
+   "dan kita mengerti dan kita mengetahui konflik itu wujud,"
+  ],
+  [
+   "s1",
+   19.75,
+   23.4,
+   "maka jangan biarkan ia berlarutan konflik tersebut,"
+  ],
+  [
+   "s1",
+   23.4,
+   29.2,
+   "bahkan cuba atasi untuk meminimalkan tempoh konflik tersebut."
+  ],
+  [
+   "s1",
+   29.2,
+   33.9,
+   "Seperti biasa, ada kalanya kita perlu menundukkan ego,"
+  ],
+  [
+   "s1",
+   33.9,
+   35.5,
+   "memohon kemaafan."
+  ],
+  [
+   "s1",
+   35.5,
+   41.6,
+   "Ada ketikanya kita perlu buat satu perkara yang luar daripada zon keselesaan kita."
+  ],
+  [
+   "s1",
+   41.6,
+   44.2,
+   "Seperti contoh, pergi healing,"
+  ],
+  [
+   "s1",
+   44.2,
+   47.3,
+   "seperti contoh, bawa pergi tempat-tempat yang menarik,"
+  ],
+  [
+   "s1",
+   47.3,
+   49.3,
+   "seperti contoh, bawa pergi bercuti,"
+  ],
+  [
+   "s1",
+   49.3,
+   53.95,
+   "sebagai salah satu usaha dan terapi memperbaiki hubungan."
+  ],
+  [
+   "s1",
+   53.95,
+   59.2,
+   "Jangan terus membiarkan hubungan berada dalam konflik yang berlarutan,"
+  ],
+  [
+   "s1",
+   59.2,
+   64.6,
+   "kerana ini akan menyebabkan hubungan tersebut menjadi tawar,"
+  ],
+  [
+   "s1",
+   64.6,
+   68.1,
+   "dan akhirnya terlerai tanpa rela."
+  ],
+  [
+   "s1",
+   68.1,
+   72.1,
+   "InsyaAllah, sedikit usaha untuk mencipta bahagia,"
+  ],
+  [
+   "s1",
+   72.1,
+   76.45,
+   "Allah akan berikan rasa kepada pasangan yang kita cinta."
+  ]
+ ],
+ "unsure": [
+  [
+   26.3,
+   "[NOTA — “meminimalkan”: large-v3 “meminimalkan”, medium “meminimakan”; ejaan large-v3 dikekalkan]"
+  ],
+  [
+   2.0,
+   "[NOTA — cap masa perkataan daripada model medium (large-v3 ~0.8 s terlalu awal untuk rakaman ini); teks disemak dengan kedua-dua model]"
+  ]
+ ]
+}
