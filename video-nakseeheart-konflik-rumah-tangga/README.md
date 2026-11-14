@@ -33,7 +33,7 @@ Tiada bahagian ucapan dibuang. Nota: cap masa perkataan diambil daripada model m
 | 78–83.7 | CTA |
 
 ## Warna & audio
-Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB).
+Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB), -14.6 LUFS.
 
 ## Kapsyen hantaran (cadangan)
 > Konflik dalam rumah tangga itu biasa, tapi jangan biar berlarutan. Tundukkan ego, mohon maaf, bawa pasangan healing. Sedikit usaha cipta bahagia. 🤍
