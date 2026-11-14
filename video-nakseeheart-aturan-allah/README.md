@@ -33,7 +33,7 @@
 | 89.4–94.9 | CTA |
 
 ## Warna & audio
-Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB).
+Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB), -14.5 LUFS.
 
 ## Kapsyen hantaran (cadangan)
 > Jangan putus asa dengan aturan Allah. Syukuri nikmat, nikmati ujian, kerana pasti ada kemanisan di penghujungnya. 🤲
