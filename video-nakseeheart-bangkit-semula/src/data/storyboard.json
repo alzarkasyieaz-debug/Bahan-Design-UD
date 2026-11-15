@@ -1,0 +1,344 @@
+{
+ "meta": {
+  "title": "Allah Sayang, Maka Allah Uji",
+  "compositionId": "NakSeeHeartBangkitSemula",
+  "output": "nakseeheart-bangkit-semula",
+  "source": "IMG_4630.mov"
+ },
+ "layout": {
+  "face": {
+   "x": 550,
+   "y": 960
+  },
+  "ceilingY": 270,
+  "ceilingTilt": -20,
+  "labelY": 150,
+  "cardY": 470,
+  "recapY": 340,
+  "subtitleY": 1500,
+  "lowerThirdY": 1600,
+  "hookFocusY": 960,
+  "climaxFocusY": 1000
+ },
+ "camera": {
+  "punch": [
+   "hilangArah",
+   "hakikat",
+   "kunci",
+   "sayang",
+   "iman"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.12,
+   1.2
+  ],
+  "hookZoom": [
+   1.22,
+   1.1,
+   1.16
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 0.3,
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "hakikat"
+  },
+  {
+   "kind": "pop",
+   "at": "kunci"
+  },
+  {
+   "kind": "shimmer",
+   "at": "sayang",
+   "dur": 1.8,
+   "gain": 0.22
+  },
+  {
+   "kind": "impact",
+   "at": "uji2",
+   "dur": 1.4,
+   "f": 46,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "keyakinan",
+   "dur": 2.4,
+   "gain": 0.26
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "KENAPA ALLAH UJI KITA?",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 40,
+   "y": 150
+  },
+  {
+   "type": "text3d",
+   "text": "ALLAH SAYANG",
+   "at": 0.3,
+   "until": "flashToBody-0.2",
+   "y": 300,
+   "size": 150,
+   "reveal": "punch",
+   "depth": 20,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 0.5,
+   "seed": "hook",
+   "spread": 460,
+   "y": 300
+  },
+  {
+   "type": "ceiling3d",
+   "text": "HILANG ARAH",
+   "at": "hilangArah-0.2",
+   "until": "tanpaSedar-0.15",
+   "size": 140,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "checklist",
+   "title": "KITA PERNAH…",
+   "at": "kawan-0.3",
+   "until": "tanpaSedar-0.15",
+   "items": [
+    {
+     "text": "HILANG KAWAN",
+     "at": "kawan"
+    },
+    {
+     "text": "SUKAR BANGKIT",
+     "at": "bangkit1"
+    },
+    {
+     "text": "JATUH",
+     "at": "jatuh"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KITA BERJAYA",
+   "at": "berjaya-0.2",
+   "until": "takMampu-0.6",
+   "size": 140,
+   "depth": 18
+  },
+  {
+   "type": "checklist",
+   "title": "MELALUINYA DENGAN",
+   "at": "sabar-0.3",
+   "until": "takMampu-0.6",
+   "items": [
+    {
+     "text": "KESABARAN",
+     "at": "sabar"
+    },
+    {
+     "text": "KETENANGAN",
+     "at": "tenang"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "MAMPU BANGKIT",
+   "at": "hakikat",
+   "until": "kunci-0.15",
+   "size": 135,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "chip",
+   "text": "ALLAH TAK UJI MELAINKAN KITA MAMPU",
+   "at": "tidakUji",
+   "until": "kunci-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KUNCINYA",
+   "at": "kunci",
+   "until": "sayang-0.15",
+   "size": 150,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "checklist",
+   "title": "BAGAIMANA KITA",
+   "at": "bangkit2-0.3",
+   "until": "sayang-0.15",
+   "items": [
+    {
+     "text": "BANGKIT",
+     "at": "bangkit2"
+    },
+    {
+     "text": "BERUBAH",
+     "at": "berubah"
+    },
+    {
+     "text": "CARI SOLUSI",
+     "at": "solusi"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ALLAH SAYANG",
+   "at": "sayang-0.2",
+   "until": "iman-0.15",
+   "size": 140,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "IMAN DINILAI",
+   "at": "iman",
+   "until": "belajar-0.15",
+   "size": 135,
+   "depth": 18
+  },
+  {
+   "type": "checklist",
+   "title": "YANG DINILAI",
+   "at": "iman-0.2",
+   "until": "istiqamah-0.3",
+   "items": [
+    {
+     "text": "IMAN",
+     "at": "iman"
+    },
+    {
+     "text": "AMAL IBADAH",
+     "at": "amal"
+    }
+   ]
+  },
+  {
+   "type": "compare",
+   "at": "istiqamah-0.3",
+   "until": "belajar-0.15",
+   "arrow": false,
+   "left": {
+    "title": "TERUS",
+    "good": true,
+    "items": [
+     {
+      "text": "Istiqamah",
+      "at": "istiqamah"
+     }
+    ]
+   },
+   "right": {
+    "title": "ATAU",
+    "items": [
+     {
+      "text": "Sebaliknya",
+      "at": "sebaliknya"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SAYANG, MAKA DIUJI",
+   "at": "sayang2-0.6",
+   "until": "brollA.0-0.1",
+   "size": 105,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "burst",
+   "at": "uji2",
+   "seed": "uji",
+   "spread": 480
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "brollA.0",
+   "to": "brollA.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "ALLAH NAK MENILAI",
+     "at": "brollA.0+0.2",
+     "until": "brollA.1-0.1",
+     "y": 260,
+     "size": 44
+    },
+    {
+     "type": "text3d",
+     "text": "KEYAKINAN",
+     "at": "keyakinan-0.2",
+     "until": "brollA.1-0.1",
+     "y": 420,
+     "size": 160,
+     "depth": 20,
+     "rotX": 8
+    },
+    {
+     "type": "label",
+     "text": "KITA KEPADA ALLAH",
+     "at": "keyakinan+0.6",
+     "until": "brollA.1-0.1",
+     "y": 580,
+     "size": 46
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERCAYALAH",
+   "at": "percayalah-0.2",
+   "until": "cta-0.05",
+   "size": 150,
+   "depth": 18
+  }
+ ],
+ "cover": {
+  "frame": 22.0,
+  "kicker": "BILA DIUJI",
+  "big": "BANGKIT",
+  "line2": "ALLAH SAYANG, MAKA DIUJI",
+  "tag": "Kita mampu",
+  "bigSize": 230,
+  "line2Size": 84
+ },
+ "poster": {
+  "icon": "heart",
+  "top": "KENAPA ALLAH",
+  "mid": "UJI KITA?",
+  "last": "KERANA DIA SAYANG",
+  "banner": "Kita mampu bangkit semula!",
+  "num": "3",
+  "numLabel": "Kunci Untuk Bangkit",
+  "frame": 22.0,
+  "headTop": 555,
+  "chinY": 1320,
+  "faceX": 575
+ }
+}

@@ -1,0 +1,226 @@
+{
+ "source": "IMG_4630.mov",
+ "maxChars": 46,
+ "gold": [
+  "hilang",
+  "arah",
+  "tujuan",
+  "bangkit",
+  "jatuh",
+  "berjaya",
+  "kesabaran",
+  "ketenangan",
+  "mampu",
+  "kuncinya",
+  "berubah",
+  "solusi",
+  "sayang",
+  "uji",
+  "iman",
+  "amal",
+  "ibadah",
+  "dinilai",
+  "istiqamah",
+  "keyakinan"
+ ],
+ "upper": [
+  "bangkit",
+  "percayalah"
+ ],
+ "chunks": [
+  [
+   "hook",
+   80.3,
+   82.5,
+   "Allah Ta'ala sayang hamba-Nya,"
+  ],
+  [
+   "hook",
+   82.5,
+   84.0,
+   "maka Allah Ta'ala uji hamba-Nya."
+  ],
+  [
+   "s1",
+   1.9,
+   4.4,
+   "Setiap daripada kita pernah melalui waktu"
+  ],
+  [
+   "s1",
+   4.4,
+   7.9,
+   "kita seakan-akan hilang arah tujuan."
+  ],
+  [
+   "s2",
+   8.6,
+   10.6,
+   "Kita hilang kawan-kawan,"
+  ],
+  [
+   "s2",
+   10.6,
+   14.6,
+   "kita hilang bagaimana untuk kita bangkit daripada kesakit…"
+  ],
+  [
+   "s2",
+   14.6,
+   17.9,
+   "kita bangkit daripada kita jatuh."
+  ],
+  [
+   "s2",
+   17.9,
+   20.6,
+   "Dan tanpa kita sedar,"
+  ],
+  [
+   "s2",
+   20.6,
+   23.7,
+   "hari ini kita berjaya melalui"
+  ],
+  [
+   "s3",
+   24.3,
+   25.4,
+   "waktu itu"
+  ],
+  [
+   "s3",
+   25.4,
+   28.6,
+   "dengan penuh kesabaran, dengan penuh ketenangan."
+  ],
+  [
+   "s3",
+   28.6,
+   33.2,
+   "Walaupun pada masa kita lalui waktu tersebut,"
+  ],
+  [
+   "s3",
+   33.2,
+   35.85,
+   "kita rasa seakan-akan kita sudah tidak mampu."
+  ],
+  [
+   "s4",
+   36.6,
+   40.5,
+   "Hakikatnya, sekarang kita mampu bangkit semula."
+  ],
+  [
+   "s5",
+   41.25,
+   44.6,
+   "Kerana Allah subhanahu wa ta'ala tidak uji hamba-Nya,"
+  ],
+  [
+   "s5",
+   44.6,
+   47.7,
+   "melainkan Allah tahu kita mampu untuk lalui."
+  ],
+  [
+   "s5",
+   47.7,
+   51.5,
+   "Kuncinya, bagaimana kita bangkit,"
+  ],
+  [
+   "s5",
+   51.5,
+   57.4,
+   "bagaimana kita berubah untuk cari solusi terbaik dalam kehidupan kita."
+  ],
+  [
+   "s5",
+   57.4,
+   62.4,
+   "Kerana Allah subhanahu wa ta'ala, apabila Dia sayang hamba-Nya,"
+  ],
+  [
+   "s5",
+   62.4,
+   64.3,
+   "maka Dia akan uji hamba-Nya."
+  ],
+  [
+   "s5",
+   64.3,
+   69.3,
+   "Dan ketika itulah iman kita, amal ibadah kita"
+  ],
+  [
+   "s5",
+   69.3,
+   72.3,
+   "akan mula dinilai oleh Allah subhanahu wa ta'ala."
+  ],
+  [
+   "s6",
+   72.9,
+   75.7,
+   "Adakah kita terus istiqamah ataupun sebaliknya?"
+  ],
+  [
+   "s7",
+   77.15,
+   79.4,
+   "Di sini kita belajar satu perkara:"
+  ],
+  [
+   "s8",
+   80.3,
+   82.5,
+   "Allah Ta'ala sayang hamba-Nya,"
+  ],
+  [
+   "s8",
+   82.5,
+   84.0,
+   "maka Allah Ta'ala uji hamba-Nya."
+  ],
+  [
+   "s9",
+   85.0,
+   87.3,
+   "Dan bila mana Allah Ta'ala uji hamba-Nya,"
+  ],
+  [
+   "s9",
+   87.3,
+   89.6,
+   "ketika itu Allah nak menilai"
+  ],
+  [
+   "s9",
+   89.6,
+   94.2,
+   "sejauh mana keyakinan kita kepada Allah SWT."
+  ],
+  [
+   "s9",
+   94.2,
+   95.3,
+   "Percayalah."
+  ]
+ ],
+ "unsure": [
+  [
+   14.3,
+   "[TIDAK PASTI ~14.0–14.6 s — kedua-dua model mendengar “kesakit”; dipaparkan “kesakit…”]"
+  ],
+  [
+   64.9,
+   "[NOTA — “Dan ketika itulah” (large-v3); medium “Kerana ketika itulah”]"
+  ],
+  [
+   1.0,
+   "[DIPENDEKKAN — jeda senyap >1 s dipendekkan kepada ~0.6 s; cap masa perkataan daripada model medium]"
+  ]
+ ]
+}

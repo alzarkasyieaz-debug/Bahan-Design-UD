@@ -1,0 +1,240 @@
+{
+ "source": "IMG_7901.MOV",
+ "maxChars": 46,
+ "gold": [
+  "rezeki",
+  "kewangan",
+  "kesihatan",
+  "pasangan",
+  "soleh-soleh",
+  "menghargainya",
+  "mentaati",
+  "ibadah",
+  "perlu",
+  "mahu",
+  "bersangka",
+  "hargai",
+  "kongsi",
+  "kelebihan",
+  "melimpahkan",
+  "memberkati",
+  "membanding-bandingkan",
+  "berbeza",
+  "matlamat",
+  "reda"
+ ],
+ "upper": [
+  "rezeki",
+  "jangan"
+ ],
+ "chunks": [
+  [
+   "hook",
+   80.15,
+   83.2,
+   "Jangan membanding-bandingkan rezeki kita dengan rezeki orang lain."
+  ],
+  [
+   "s1",
+   1.4,
+   5.7,
+   "Rezeki tidak semestinya datang dalam bentuk kewangan semata-mata."
+  ],
+  [
+   "s1",
+   5.7,
+   9.0,
+   "Ada juga Allah Ta'ala berikan kesihatan yang baik,"
+  ],
+  [
+   "s1",
+   9.0,
+   10.3,
+   "itu juga rezeki."
+  ],
+  [
+   "s1",
+   10.3,
+   13.55,
+   "Ada kalanya Allah Ta'ala kurniakan kepada kita pasangan yang baik,"
+  ],
+  [
+   "s1",
+   13.55,
+   14.8,
+   "itu juga rezeki."
+  ],
+  [
+   "s1",
+   14.8,
+   17.1,
+   "Dan ada kalanya Allah Ta'ala kurniakan kepada kita"
+  ],
+  [
+   "s1",
+   17.1,
+   20.1,
+   "anak-anak yang soleh-soleh, juga itu rezeki."
+  ],
+  [
+   "s1",
+   20.1,
+   24.4,
+   "Yang pasti, setiap rezeki yang Allah Ta'ala berikan kepada kita,"
+  ],
+  [
+   "s1",
+   24.4,
+   27.6,
+   "setiap rezeki yang Allah Ta'ala kurniakan kepada kita,"
+  ],
+  [
+   "s1",
+   27.6,
+   30.9,
+   "kita hendaklah dan wajarlah kita menghargainya"
+  ],
+  [
+   "s1",
+   30.9,
+   33.3,
+   "dengan mentaati perintah Allah,"
+  ],
+  [
+   "s1",
+   33.3,
+   38.9,
+   "dengan meningkatkan kualiti ibadah kita setiap hari, setiap masa dan setiap ketika."
+  ],
+  [
+   "s2",
+   39.4,
+   44.0,
+   "Kerana rezeki yang Allah Ta'ala berikan kepada kita ni sesuai dengan apa yang kita perlukan."
+  ],
+  [
+   "s2",
+   44.0,
+   47.3,
+   "Seperti mana orang selalu sebut:"
+  ],
+  [
+   "s2",
+   47.3,
+   50.2,
+   "Allah Ta'ala beri bukan apa yang kita mahu,"
+  ],
+  [
+   "s2",
+   50.2,
+   52.8,
+   "tapi Allah Ta'ala beri apa yang kita perlu."
+  ],
+  [
+   "s2",
+   52.8,
+   55.6,
+   "Yang paling penting, bersangka baik dengan Allah Ta'ala,"
+  ],
+  [
+   "s2",
+   55.6,
+   58.4,
+   "hargai rezeki, rezeki yang Allah Ta'ala berikan."
+  ],
+  [
+   "s2",
+   58.4,
+   61.9,
+   "Bahkan, kongsi rezeki kita dengan orang lain"
+  ],
+  [
+   "s2",
+   61.9,
+   65.4,
+   "bila mana Allah Ta'ala beri sedikit kelebihan rezeki kepada kita."
+  ],
+  [
+   "s2",
+   65.4,
+   68.2,
+   "Moga-moga dengan amalan tersebut,"
+  ],
+  [
+   "s2",
+   68.2,
+   70.9,
+   "Allah Ta'ala melimpahkan rezeki kita,"
+  ],
+  [
+   "s2",
+   70.9,
+   75.0,
+   "Allah Ta'ala memberkati rezeki yang kita dapat setiap hari, setiap masa, insyaAllah."
+  ],
+  [
+   "s2",
+   75.0,
+   80.05,
+   "Sama-sama kita menghargai rezeki … Allah Ta'ala ini."
+  ],
+  [
+   "s2",
+   80.05,
+   83.25,
+   "Dan jangan membanding-bandingkan rezeki kita dengan rezeki orang lain,"
+  ],
+  [
+   "s2",
+   83.25,
+   87.0,
+   "kerana aturan kehidupan kita kadang-kadang tidak sama dengan orang lain."
+  ],
+  [
+   "s2",
+   87.0,
+   89.6,
+   "Allah Ta'ala tentukan cerita yang berbeza,"
+  ],
+  [
+   "s2",
+   89.6,
+   92.8,
+   "Allah Ta'ala tentukan haluan yang berbeza,"
+  ],
+  [
+   "s2",
+   92.8,
+   96.2,
+   "tapi pergi kepada matlamat yang sama,"
+  ],
+  [
+   "s2",
+   96.2,
+   99.4,
+   "iaitu mendapat reda Allah subhanahu wa ta'ala."
+  ]
+ ],
+ "unsure": [
+  [
+   3.6,
+   "[NOTA — “datang dalam bentuk” (medium pada klip); large-v3 “datanglah bentuk”]"
+  ],
+  [
+   78.5,
+   "[TIDAK PASTI ~78.3–78.8 s — “rezeki kerana/kurun Allah”: perkataan tidak dapat disahkan; dipaparkan “…”]"
+  ],
+  [
+   94.4,
+   "[NOTA — “matlamat” & “reda” disahkan oleh medium pada klip (large-v3: “maklumat”, “reza”)]"
+  ],
+  [
+   91.2,
+   "[NOTA — “halauan” ditulis “haluan”]"
+  ],
+  [
+   38.6,
+   "[DIPENDEKKAN — jeda senyap ~38.6–39.65 s]"
+  ]
+ ]
+}

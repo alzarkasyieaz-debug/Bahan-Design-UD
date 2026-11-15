@@ -1,0 +1,132 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "IMG_6654.mov (91.97 s, 1920x1080 HEVC diputar -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    5.05
+   ],
+   "src": 81.9,
+   "srcEnd": 86.95
+  },
+  {
+   "id": "s1",
+   "out": [
+    5.05,
+    8.05
+   ],
+   "src": 6.9,
+   "srcEnd": 9.9
+  },
+  {
+   "id": "s2",
+   "out": [
+    8.05,
+    14.15
+   ],
+   "src": 11.05,
+   "srcEnd": 17.15
+  },
+  {
+   "id": "s3",
+   "out": [
+    14.15,
+    16.8
+   ],
+   "src": 18.05,
+   "srcEnd": 20.7
+  },
+  {
+   "id": "s4",
+   "out": [
+    16.8,
+    20.55
+   ],
+   "src": 21.8,
+   "srcEnd": 25.55
+  },
+  {
+   "id": "s5",
+   "out": [
+    20.55,
+    29.15
+   ],
+   "src": 26.35,
+   "srcEnd": 34.95
+  },
+  {
+   "id": "s6",
+   "out": [
+    29.15,
+    35.45
+   ],
+   "src": 35.4,
+   "srcEnd": 41.7
+  },
+  {
+   "id": "s7",
+   "out": [
+    35.45,
+    82.2
+   ],
+   "src": 42.1,
+   "srcEnd": 88.85
+  },
+  {
+   "id": "cta",
+   "out": [
+    82.2,
+    87.7
+   ],
+   "src": 88.9,
+   "srcEnd": 90.1,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 5.05,
+  "ujian": 8.05,
+  "berat": 11.44,
+  "menanti": 18.38,
+  "doa": 21.32,
+  "dibantu": 26.44,
+  "malangnya": 30.09,
+  "beranggapan": 34.37,
+  "solusi": 35.75,
+  "manusia": 43.43,
+  "bukanAllah": 44.21,
+  "sakit": 55.01,
+  "pedih": 56.65,
+  "bangkit": 61.19,
+  "tersungkur": 65.71,
+  "penyesalan": 68.73,
+  "memilih": 74.05,
+  "jalan": 75.31,
+  "waktu": 77.51,
+  "tempat": 79.23,
+  "percayalah": 81.25,
+  "climax": [
+   64.15,
+   80.35
+  ],
+  "finale": [
+   80.35,
+   82.2
+  ],
+  "cta": 82.2,
+  "end": 87.7,
+  "followPulse": [
+   16.0,
+   40.0,
+   62.0
+  ],
+  "brollA": [
+   16.8,
+   28.7
+  ]
+ }
+}

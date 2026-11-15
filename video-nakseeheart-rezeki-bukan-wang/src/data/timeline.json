@@ -1,0 +1,93 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "IMG_7901.MOV (100.27 s, 3840x2160 H.264 diputar -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    3.05
+   ],
+   "src": 80.15,
+   "srcEnd": 83.2
+  },
+  {
+   "id": "s1",
+   "out": [
+    3.05,
+    40.55
+   ],
+   "src": 1.4,
+   "srcEnd": 38.9
+  },
+  {
+   "id": "s2",
+   "out": [
+    40.55,
+    100.6
+   ],
+   "src": 39.35,
+   "srcEnd": 99.4
+  },
+  {
+   "id": "cta",
+   "out": [
+    100.6,
+    106.1
+   ],
+   "src": 99.1,
+   "srcEnd": 100.25,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 3.05,
+  "rezeki": 3.51,
+  "kewangan": 6.19,
+  "kesihatan": 9.69,
+  "pasangan": 14.29,
+  "anak": 18.87,
+  "yangPasti": 21.37,
+  "menghargai": 31.79,
+  "mentaati": 33.19,
+  "ibadah": 36.17,
+  "sesuai": 43.34,
+  "bukanMahu": 49.68,
+  "perlu": 53.16,
+  "penting": 54.34,
+  "sangkaBaik": 55.02,
+  "hargai": 56.84,
+  "kongsi": 60.44,
+  "kelebihan": 65.2,
+  "melimpah": 70.14,
+  "berkat": 72.7,
+  "samaSama": 76.8,
+  "jangan": 81.42,
+  "aturan": 84.8,
+  "cerita": 89.28,
+  "haluan": 92.42,
+  "matlamat": 95.4,
+  "reda": 97.6,
+  "climax": [
+   80.8,
+   93.7
+  ],
+  "finale": [
+   93.7,
+   100.6
+  ],
+  "cta": 100.6,
+  "end": 106.1,
+  "followPulse": [
+   18.0,
+   46.0,
+   76.0
+  ],
+  "brollA": [
+   93.7,
+   100.5
+  ]
+ }
+}

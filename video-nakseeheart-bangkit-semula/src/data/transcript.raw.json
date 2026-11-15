@@ -1,0 +1,984 @@
+[
+ {
+  "start": 1.54,
+  "end": 8.32,
+  "text": " Setiap daripada kita pernah melalui waktu kita seagakan hilang arah tujuan.",
+  "words": [
+   {
+    "w": " Setiap",
+    "s": 1.54,
+    "e": 2.54
+   },
+   {
+    "w": " daripada",
+    "s": 2.54,
+    "e": 2.86
+   },
+   {
+    "w": " kita",
+    "s": 2.86,
+    "e": 3.3
+   },
+   {
+    "w": " pernah",
+    "s": 3.3,
+    "e": 3.66
+   },
+   {
+    "w": " melalui",
+    "s": 3.66,
+    "e": 4.52
+   },
+   {
+    "w": " waktu",
+    "s": 4.52,
+    "e": 5.16
+   },
+   {
+    "w": " kita",
+    "s": 5.16,
+    "e": 6.2
+   },
+   {
+    "w": " seagakan",
+    "s": 6.2,
+    "e": 6.76
+   },
+   {
+    "w": " hilang",
+    "s": 6.76,
+    "e": 7.24
+   },
+   {
+    "w": " arah",
+    "s": 7.24,
+    "e": 7.58
+   },
+   {
+    "w": " tujuan.",
+    "s": 7.58,
+    "e": 8.32
+   }
+  ]
+ },
+ {
+  "start": 9.04,
+  "end": 15.08,
+  "text": " Kita hilang kawan-kawan, kita hilang bagaimana untuk kita bangkit daripada kesakit.",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 9.04,
+    "e": 9.12
+   },
+   {
+    "w": " hilang",
+    "s": 9.12,
+    "e": 9.48
+   },
+   {
+    "w": " kawan",
+    "s": 9.48,
+    "e": 9.86
+   },
+   {
+    "w": "-kawan,",
+    "s": 9.86,
+    "e": 10.68
+   },
+   {
+    "w": " kita",
+    "s": 11.18,
+    "e": 11.3
+   },
+   {
+    "w": " hilang",
+    "s": 11.3,
+    "e": 11.7
+   },
+   {
+    "w": " bagaimana",
+    "s": 11.7,
+    "e": 12.3
+   },
+   {
+    "w": " untuk",
+    "s": 12.3,
+    "e": 12.7
+   },
+   {
+    "w": " kita",
+    "s": 12.7,
+    "e": 13.2
+   },
+   {
+    "w": " bangkit",
+    "s": 13.2,
+    "e": 13.76
+   },
+   {
+    "w": " daripada",
+    "s": 13.76,
+    "e": 14.36
+   },
+   {
+    "w": " kesakit.",
+    "s": 14.36,
+    "e": 15.08
+   }
+  ]
+ },
+ {
+  "start": 15.24,
+  "end": 18.22,
+  "text": " Kita bangkit daripada kita jatuh.",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 15.24,
+    "e": 15.48
+   },
+   {
+    "w": " bangkit",
+    "s": 15.48,
+    "e": 15.94
+   },
+   {
+    "w": " daripada",
+    "s": 15.94,
+    "e": 16.96
+   },
+   {
+    "w": " kita",
+    "s": 16.96,
+    "e": 17.42
+   },
+   {
+    "w": " jatuh.",
+    "s": 17.42,
+    "e": 18.22
+   }
+  ]
+ },
+ {
+  "start": 18.56,
+  "end": 27.24,
+  "text": " Dan tanpa kita sedar, hari ini kita berjaya melalui waktu itu dengan penuh kesabaran,",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 18.56,
+    "e": 19.22
+   },
+   {
+    "w": " tanpa",
+    "s": 19.22,
+    "e": 19.7
+   },
+   {
+    "w": " kita",
+    "s": 19.7,
+    "e": 19.98
+   },
+   {
+    "w": " sedar,",
+    "s": 19.98,
+    "e": 20.7
+   },
+   {
+    "w": " hari",
+    "s": 21.02,
+    "e": 21.08
+   },
+   {
+    "w": " ini",
+    "s": 21.08,
+    "e": 21.68
+   },
+   {
+    "w": " kita",
+    "s": 21.68,
+    "e": 22.24
+   },
+   {
+    "w": " berjaya",
+    "s": 22.24,
+    "e": 22.84
+   },
+   {
+    "w": " melalui",
+    "s": 22.84,
+    "e": 24.44
+   },
+   {
+    "w": " waktu",
+    "s": 24.44,
+    "e": 24.98
+   },
+   {
+    "w": " itu",
+    "s": 24.98,
+    "e": 25.8
+   },
+   {
+    "w": " dengan",
+    "s": 25.8,
+    "e": 26.28
+   },
+   {
+    "w": " penuh",
+    "s": 26.28,
+    "e": 26.58
+   },
+   {
+    "w": " kesabaran,",
+    "s": 26.58,
+    "e": 27.24
+   }
+  ]
+ },
+ {
+  "start": 27.24,
+  "end": 28.68,
+  "text": " dengan penuh ketenangan.",
+  "words": [
+   {
+    "w": " dengan",
+    "s": 27.24,
+    "e": 27.54
+   },
+   {
+    "w": " penuh",
+    "s": 27.54,
+    "e": 27.8
+   },
+   {
+    "w": " ketenangan.",
+    "s": 27.8,
+    "e": 28.68
+   }
+  ]
+ },
+ {
+  "start": 29.2,
+  "end": 36.68,
+  "text": " Walaupun pada masa kita lalui waktu tersebut, kita rasa seagakan kita sudah tidak mampu.",
+  "words": [
+   {
+    "w": " Walaupun",
+    "s": 29.2,
+    "e": 29.92
+   },
+   {
+    "w": " pada",
+    "s": 29.92,
+    "e": 30.42
+   },
+   {
+    "w": " masa",
+    "s": 30.42,
+    "e": 30.78
+   },
+   {
+    "w": " kita",
+    "s": 30.78,
+    "e": 31.14
+   },
+   {
+    "w": " lalui",
+    "s": 31.14,
+    "e": 31.84
+   },
+   {
+    "w": " waktu",
+    "s": 31.84,
+    "e": 32.3
+   },
+   {
+    "w": " tersebut,",
+    "s": 32.3,
+    "e": 33.28
+   },
+   {
+    "w": " kita",
+    "s": 33.66,
+    "e": 33.74
+   },
+   {
+    "w": " rasa",
+    "s": 33.74,
+    "e": 34.1
+   },
+   {
+    "w": " seagakan",
+    "s": 34.1,
+    "e": 34.54
+   },
+   {
+    "w": " kita",
+    "s": 34.54,
+    "e": 34.88
+   },
+   {
+    "w": " sudah",
+    "s": 34.88,
+    "e": 35.16
+   },
+   {
+    "w": " tidak",
+    "s": 35.16,
+    "e": 35.42
+   },
+   {
+    "w": " mampu.",
+    "s": 35.42,
+    "e": 36.68
+   }
+  ]
+ },
+ {
+  "start": 37.24,
+  "end": 41.38,
+  "text": " Hakikatnya, sekarang kita mampu bangkit semula.",
+  "words": [
+   {
+    "w": " Hakikatnya,",
+    "s": 37.24,
+    "e": 37.96
+   },
+   {
+    "w": " sekarang",
+    "s": 38.16,
+    "e": 38.74
+   },
+   {
+    "w": " kita",
+    "s": 38.74,
+    "e": 39.58
+   },
+   {
+    "w": " mampu",
+    "s": 39.58,
+    "e": 39.94
+   },
+   {
+    "w": " bangkit",
+    "s": 39.94,
+    "e": 40.32
+   },
+   {
+    "w": " semula.",
+    "s": 40.32,
+    "e": 41.38
+   }
+  ]
+ },
+ {
+  "start": 41.52,
+  "end": 44.24,
+  "text": " Kerana Allah subhanahu wa ta'ala tidak uji hambanya,",
+  "words": [
+   {
+    "w": " Kerana",
+    "s": 41.52,
+    "e": 41.84
+   },
+   {
+    "w": " Allah",
+    "s": 41.84,
+    "e": 42.24
+   },
+   {
+    "w": " subhanahu",
+    "s": 42.24,
+    "e": 43.04
+   },
+   {
+    "w": " wa",
+    "s": 43.04,
+    "e": 43.16
+   },
+   {
+    "w": " ta",
+    "s": 43.16,
+    "e": 43.22
+   },
+   {
+    "w": "'ala",
+    "s": 43.22,
+    "e": 43.36
+   },
+   {
+    "w": " tidak",
+    "s": 43.36,
+    "e": 43.68
+   },
+   {
+    "w": " uji",
+    "s": 43.68,
+    "e": 43.96
+   },
+   {
+    "w": " hambanya,",
+    "s": 43.96,
+    "e": 44.32
+   }
+  ]
+ },
+ {
+  "start": 45.3,
+  "end": 47.96,
+  "text": " melainkan Allah tahu kita mampu untuk lalui.",
+  "words": [
+   {
+    "w": " melainkan",
+    "s": 45.3,
+    "e": 45.58
+   },
+   {
+    "w": " Allah",
+    "s": 45.58,
+    "e": 45.92
+   },
+   {
+    "w": " tahu",
+    "s": 45.92,
+    "e": 46.22
+   },
+   {
+    "w": " kita",
+    "s": 46.22,
+    "e": 46.62
+   },
+   {
+    "w": " mampu",
+    "s": 46.62,
+    "e": 47.12
+   },
+   {
+    "w": " untuk",
+    "s": 47.12,
+    "e": 47.36
+   },
+   {
+    "w": " lalui.",
+    "s": 47.36,
+    "e": 47.96
+   }
+  ]
+ },
+ {
+  "start": 47.96,
+  "end": 58.16,
+  "text": " Kuncinya bagaimana kita bangkit, bagaimana kita berubah untuk cari solusi terbaik dalam kehidupan kita.",
+  "words": [
+   {
+    "w": " Kuncinya",
+    "s": 47.96,
+    "e": 49.46
+   },
+   {
+    "w": " bagaimana",
+    "s": 49.46,
+    "e": 50.48
+   },
+   {
+    "w": " kita",
+    "s": 50.48,
+    "e": 50.96
+   },
+   {
+    "w": " bangkit,",
+    "s": 50.96,
+    "e": 51.98
+   },
+   {
+    "w": " bagaimana",
+    "s": 52.3,
+    "e": 52.84
+   },
+   {
+    "w": " kita",
+    "s": 52.84,
+    "e": 53.28
+   },
+   {
+    "w": " berubah",
+    "s": 53.28,
+    "e": 54.26
+   },
+   {
+    "w": " untuk",
+    "s": 54.26,
+    "e": 54.94
+   },
+   {
+    "w": " cari",
+    "s": 54.94,
+    "e": 55.66
+   },
+   {
+    "w": " solusi",
+    "s": 55.66,
+    "e": 56.1
+   },
+   {
+    "w": " terbaik",
+    "s": 56.1,
+    "e": 56.54
+   },
+   {
+    "w": " dalam",
+    "s": 56.54,
+    "e": 56.86
+   },
+   {
+    "w": " kehidupan",
+    "s": 56.86,
+    "e": 57.38
+   },
+   {
+    "w": " kita.",
+    "s": 57.38,
+    "e": 58.16
+   }
+  ]
+ },
+ {
+  "start": 58.54,
+  "end": 63.96,
+  "text": " Kerana Allah subhanahu wa ta'ala apabila dia sayang hambanya, maka dia akan uji hambanya.",
+  "words": [
+   {
+    "w": " Kerana",
+    "s": 58.54,
+    "e": 58.72
+   },
+   {
+    "w": " Allah",
+    "s": 58.72,
+    "e": 59.04
+   },
+   {
+    "w": " subhanahu",
+    "s": 59.04,
+    "e": 59.64
+   },
+   {
+    "w": " wa",
+    "s": 59.64,
+    "e": 59.84
+   },
+   {
+    "w": " ta",
+    "s": 59.84,
+    "e": 59.96
+   },
+   {
+    "w": "'ala",
+    "s": 59.96,
+    "e": 60.56
+   },
+   {
+    "w": " apabila",
+    "s": 60.56,
+    "e": 61.06
+   },
+   {
+    "w": " dia",
+    "s": 61.06,
+    "e": 61.32
+   },
+   {
+    "w": " sayang",
+    "s": 61.32,
+    "e": 61.62
+   },
+   {
+    "w": " hambanya,",
+    "s": 61.62,
+    "e": 62.48
+   },
+   {
+    "w": " maka",
+    "s": 62.7,
+    "e": 63.08
+   },
+   {
+    "w": " dia",
+    "s": 63.08,
+    "e": 63.26
+   },
+   {
+    "w": " akan",
+    "s": 63.26,
+    "e": 63.48
+   },
+   {
+    "w": " uji",
+    "s": 63.48,
+    "e": 63.78
+   },
+   {
+    "w": " hambanya.",
+    "s": 63.78,
+    "e": 64.22
+   }
+  ]
+ },
+ {
+  "start": 64.88,
+  "end": 73.2,
+  "text": " Kerana ketika itulah iman kita, amal ibadah kita akan mula dinilai oleh Allah subhanahu wa ta'ala.",
+  "words": [
+   {
+    "w": " Kerana",
+    "s": 64.88,
+    "e": 65.0
+   },
+   {
+    "w": " ketika",
+    "s": 65.0,
+    "e": 65.32
+   },
+   {
+    "w": " itulah",
+    "s": 65.32,
+    "e": 66.52
+   },
+   {
+    "w": " iman",
+    "s": 66.52,
+    "e": 67.14
+   },
+   {
+    "w": " kita,",
+    "s": 67.14,
+    "e": 67.8
+   },
+   {
+    "w": " amal",
+    "s": 68.02,
+    "e": 68.3
+   },
+   {
+    "w": " ibadah",
+    "s": 68.3,
+    "e": 68.76
+   },
+   {
+    "w": " kita",
+    "s": 68.76,
+    "e": 69.32
+   },
+   {
+    "w": " akan",
+    "s": 69.32,
+    "e": 70.02
+   },
+   {
+    "w": " mula",
+    "s": 70.02,
+    "e": 70.34
+   },
+   {
+    "w": " dinilai",
+    "s": 70.34,
+    "e": 70.78
+   },
+   {
+    "w": " oleh",
+    "s": 70.78,
+    "e": 71.04
+   },
+   {
+    "w": " Allah",
+    "s": 71.04,
+    "e": 71.54
+   },
+   {
+    "w": " subhanahu",
+    "s": 71.54,
+    "e": 72.32
+   },
+   {
+    "w": " wa",
+    "s": 72.32,
+    "e": 72.5
+   },
+   {
+    "w": " ta",
+    "s": 72.5,
+    "e": 72.62
+   },
+   {
+    "w": "'ala.",
+    "s": 72.62,
+    "e": 73.2
+   }
+  ]
+ },
+ {
+  "start": 73.3,
+  "end": 76.14,
+  "text": " Adakah kita terus istiqamah ataupun sebaliknya.",
+  "words": [
+   {
+    "w": " Adakah",
+    "s": 73.3,
+    "e": 73.54
+   },
+   {
+    "w": " kita",
+    "s": 73.54,
+    "e": 73.88
+   },
+   {
+    "w": " terus",
+    "s": 73.88,
+    "e": 74.2
+   },
+   {
+    "w": " istiqamah",
+    "s": 74.2,
+    "e": 75.04
+   },
+   {
+    "w": " ataupun",
+    "s": 75.04,
+    "e": 75.44
+   },
+   {
+    "w": " sebaliknya.",
+    "s": 75.44,
+    "e": 76.14
+   }
+  ]
+ },
+ {
+  "start": 77.0,
+  "end": 84.92,
+  "text": " Di sini kita belajar satu perkara, Allah ta'ala sayang hambanya maka Allah ta'ala uji hambanya.",
+  "words": [
+   {
+    "w": " Di",
+    "s": 77.0,
+    "e": 77.64
+   },
+   {
+    "w": " sini",
+    "s": 77.64,
+    "e": 77.86
+   },
+   {
+    "w": " kita",
+    "s": 77.86,
+    "e": 78.16
+   },
+   {
+    "w": " belajar",
+    "s": 78.16,
+    "e": 78.5
+   },
+   {
+    "w": " satu",
+    "s": 78.5,
+    "e": 78.76
+   },
+   {
+    "w": " perkara,",
+    "s": 78.76,
+    "e": 80.18
+   },
+   {
+    "w": " Allah",
+    "s": 80.48,
+    "e": 80.7
+   },
+   {
+    "w": " ta",
+    "s": 80.7,
+    "e": 80.94
+   },
+   {
+    "w": "'ala",
+    "s": 80.94,
+    "e": 81.42
+   },
+   {
+    "w": " sayang",
+    "s": 81.42,
+    "e": 82.0
+   },
+   {
+    "w": " hambanya",
+    "s": 82.0,
+    "e": 82.66
+   },
+   {
+    "w": " maka",
+    "s": 82.66,
+    "e": 83.2
+   },
+   {
+    "w": " Allah",
+    "s": 83.2,
+    "e": 83.42
+   },
+   {
+    "w": " ta",
+    "s": 83.42,
+    "e": 83.52
+   },
+   {
+    "w": "'ala",
+    "s": 83.52,
+    "e": 83.66
+   },
+   {
+    "w": " uji",
+    "s": 83.66,
+    "e": 84.0
+   },
+   {
+    "w": " hambanya.",
+    "s": 84.0,
+    "e": 84.92
+   }
+  ]
+ },
+ {
+  "start": 85.34,
+  "end": 94.28,
+  "text": " Dan bila mana Allah ta'ala uji hambanya, ketika itu Allah nak menilai sejauh mana keyakinan kita kepada Allah subhanahu wa ta'ala.",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 85.34,
+    "e": 85.36
+   },
+   {
+    "w": " bila",
+    "s": 85.36,
+    "e": 85.58
+   },
+   {
+    "w": " mana",
+    "s": 85.58,
+    "e": 85.76
+   },
+   {
+    "w": " Allah",
+    "s": 85.76,
+    "e": 86.0
+   },
+   {
+    "w": " ta",
+    "s": 86.0,
+    "e": 86.2
+   },
+   {
+    "w": "'ala",
+    "s": 86.2,
+    "e": 86.3
+   },
+   {
+    "w": " uji",
+    "s": 86.3,
+    "e": 86.62
+   },
+   {
+    "w": " hambanya,",
+    "s": 86.62,
+    "e": 87.52
+   },
+   {
+    "w": " ketika",
+    "s": 87.86,
+    "e": 88.08
+   },
+   {
+    "w": " itu",
+    "s": 88.08,
+    "e": 88.5
+   },
+   {
+    "w": " Allah",
+    "s": 88.5,
+    "e": 88.88
+   },
+   {
+    "w": " nak",
+    "s": 88.88,
+    "e": 89.08
+   },
+   {
+    "w": " menilai",
+    "s": 89.08,
+    "e": 90.08
+   },
+   {
+    "w": " sejauh",
+    "s": 90.08,
+    "e": 90.5
+   },
+   {
+    "w": " mana",
+    "s": 90.5,
+    "e": 90.8
+   },
+   {
+    "w": " keyakinan",
+    "s": 90.8,
+    "e": 91.52
+   },
+   {
+    "w": " kita",
+    "s": 91.52,
+    "e": 91.84
+   },
+   {
+    "w": " kepada",
+    "s": 91.84,
+    "e": 92.16
+   },
+   {
+    "w": " Allah",
+    "s": 92.16,
+    "e": 92.66
+   },
+   {
+    "w": " subhanahu",
+    "s": 92.66,
+    "e": 93.44
+   },
+   {
+    "w": " wa",
+    "s": 93.44,
+    "e": 93.62
+   },
+   {
+    "w": " ta",
+    "s": 93.62,
+    "e": 93.72
+   },
+   {
+    "w": "'ala.",
+    "s": 93.72,
+    "e": 94.28
+   }
+  ]
+ },
+ {
+  "start": 94.58,
+  "end": 95.16,
+  "text": " Percayalah.",
+  "words": [
+   {
+    "w": " Percayalah.",
+    "s": 94.58,
+    "e": 95.16
+   }
+  ]
+ }
+]

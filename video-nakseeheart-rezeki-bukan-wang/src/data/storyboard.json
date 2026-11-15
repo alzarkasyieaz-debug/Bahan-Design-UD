@@ -1,0 +1,344 @@
+{
+ "meta": {
+  "title": "Rezeki Bukan Semata-Mata Wang",
+  "compositionId": "NakSeeHeartRezeki",
+  "output": "nakseeheart-rezeki-bukan-wang",
+  "source": "IMG_7901.MOV"
+ },
+ "layout": {
+  "face": {
+   "x": 480,
+   "y": 1080
+  },
+  "ceilingY": 290,
+  "ceilingTilt": -20,
+  "labelY": 150,
+  "cardY": 520,
+  "recapY": 360,
+  "subtitleY": 1520,
+  "lowerThirdY": 1620,
+  "hookFocusY": 1080,
+  "climaxFocusY": 1100
+ },
+ "camera": {
+  "punch": [
+   "rezeki",
+   "yangPasti",
+   "penting",
+   "melimpah",
+   "jangan"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.12,
+   1.2
+  ],
+  "hookZoom": [
+   1.2,
+   1.1,
+   1.15
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 0.3,
+   "dur": 1.2,
+   "f": 48,
+   "gain": 0.22
+  },
+  {
+   "kind": "pop",
+   "at": "rezeki"
+  },
+  {
+   "kind": "pop",
+   "at": "kesihatan"
+  },
+  {
+   "kind": "pop",
+   "at": "pasangan"
+  },
+  {
+   "kind": "pop",
+   "at": "anak"
+  },
+  {
+   "kind": "shimmer",
+   "at": "melimpah",
+   "dur": 2.0,
+   "gain": 0.24
+  },
+  {
+   "kind": "impact",
+   "at": "jangan",
+   "dur": 1.3,
+   "f": 46,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "reda",
+   "dur": 2.4,
+   "gain": 0.28
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "SOAL REZEKI…",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 42,
+   "y": 150
+  },
+  {
+   "type": "text3d",
+   "text": "JANGAN BANDINGKAN",
+   "at": 0.3,
+   "until": "flashToBody-0.2",
+   "y": 320,
+   "size": 118,
+   "fill": "red",
+   "reveal": "punch",
+   "depth": 18,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 0.5,
+   "seed": "hook",
+   "spread": 460,
+   "y": 320
+  },
+  {
+   "type": "ceiling3d",
+   "text": "REZEKI",
+   "at": "rezeki-0.1",
+   "until": "kesihatan-0.15",
+   "size": 200,
+   "depth": 22
+  },
+  {
+   "type": "chip",
+   "text": "BUKAN SEMATA-MATA WANG",
+   "at": "kewangan-0.2",
+   "until": "kesihatan-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ITU JUGA REZEKI",
+   "at": "kesihatan",
+   "until": "yangPasti-0.15",
+   "size": 125,
+   "depth": 18
+  },
+  {
+   "type": "checklist",
+   "title": "REZEKI ITU JUGA",
+   "at": "kesihatan-0.2",
+   "until": "yangPasti-0.15",
+   "items": [
+    {
+     "text": "KESIHATAN",
+     "at": "kesihatan"
+    },
+    {
+     "text": "PASANGAN",
+     "at": "pasangan"
+    },
+    {
+     "text": "ANAK SOLEH",
+     "at": "anak"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "HARGAI REZEKI",
+   "at": "yangPasti",
+   "until": "sesuai-0.15",
+   "size": 140,
+   "depth": 18
+  },
+  {
+   "type": "checklist",
+   "title": "CARA MENGHARGAI",
+   "at": "mentaati-0.4",
+   "until": "sesuai-0.15",
+   "items": [
+    {
+     "text": "TAAT PERINTAH ALLAH",
+     "at": "mentaati"
+    },
+    {
+     "text": "TINGKATKAN IBADAH",
+     "at": "ibadah"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SESUAI KEPERLUAN",
+   "at": "sesuai-0.1",
+   "until": "penting-0.15",
+   "size": 118,
+   "fill": "cream",
+   "depth": 14
+  },
+  {
+   "type": "compare",
+   "at": "bukanMahu-0.3",
+   "until": "penting-0.15",
+   "arrow": true,
+   "left": {
+    "title": "BUKAN",
+    "items": [
+     {
+      "text": "Apa yang kita mahu",
+      "at": "bukanMahu"
+     }
+    ]
+   },
+   "right": {
+    "title": "TETAPI",
+    "good": true,
+    "items": [
+     {
+      "text": "Apa yang kita perlu",
+      "at": "perlu"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PALING PENTING",
+   "at": "penting",
+   "until": "melimpah-0.6",
+   "size": 120,
+   "depth": 16
+  },
+  {
+   "type": "checklist",
+   "title": "AMALKAN",
+   "at": "sangkaBaik-0.3",
+   "until": "melimpah-0.6",
+   "items": [
+    {
+     "text": "SANGKA BAIK",
+     "at": "sangkaBaik"
+    },
+    {
+     "text": "HARGAI",
+     "at": "hargai"
+    },
+    {
+     "text": "KONGSI",
+     "at": "kongsi"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "REZEKI MELIMPAH",
+   "at": "melimpah-0.4",
+   "until": "jangan-0.15",
+   "size": 120,
+   "reveal": "punch",
+   "depth": 18
+  },
+  {
+   "type": "chip",
+   "text": "DIBERKATI SETIAP HARI",
+   "at": "berkat",
+   "until": "jangan-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "JANGAN BANDINGKAN",
+   "at": "jangan",
+   "until": "cerita-0.15",
+   "size": 110,
+   "fill": "red",
+   "reveal": "punch",
+   "depth": 18
+  },
+  {
+   "type": "chip",
+   "text": "ATURAN HIDUP KITA TAK SAMA",
+   "at": "aturan",
+   "until": "cerita-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "CERITA BERBEZA",
+   "at": "cerita",
+   "until": "brollA.0-0.1",
+   "size": 125,
+   "depth": 16
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "brollA.0",
+   "to": "brollA.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "MATLAMAT YANG SAMA",
+     "at": "brollA.0+0.3",
+     "until": "brollA.1-0.1",
+     "y": 260,
+     "size": 46
+    },
+    {
+     "type": "text3d",
+     "text": "REDA ALLAH",
+     "at": "reda-0.2",
+     "until": "brollA.1-0.1",
+     "y": 430,
+     "size": 165,
+     "depth": 22,
+     "rotX": 8
+    },
+    {
+     "type": "burst",
+     "at": "reda",
+     "y": 430,
+     "seed": "reda",
+     "spread": 480
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "frame": 20.0,
+  "kicker": "SOAL REZEKI",
+  "big": "REZEKI",
+  "line2": "BUKAN SEMATA-MATA WANG",
+  "tag": "Jangan bandingkan",
+  "bigSize": 240,
+  "line2Size": 80
+ },
+ "poster": {
+  "icon": "star",
+  "top": "REZEKI",
+  "mid": "BUKAN WANG SAJA",
+  "last": "JANGAN BANDINGKAN",
+  "banner": "Sihat, pasangan & anak soleh!",
+  "num": "3",
+  "numLabel": "Rezeki Tak Ternilai",
+  "frame": 20.0,
+  "headTop": 645,
+  "chinY": 1420,
+  "faceX": 480
+ }
+}

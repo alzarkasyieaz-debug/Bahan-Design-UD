@@ -1,0 +1,205 @@
+{
+ "source": "IMG_6654.mov",
+ "maxChars": 46,
+ "gold": [
+  "ujian",
+  "berat",
+  "allah",
+  "doa",
+  "hajat-hajat",
+  "dibantu",
+  "manusia",
+  "sakit",
+  "pedih",
+  "bangkit",
+  "tersungkur",
+  "penyesalan",
+  "salah"
+ ],
+ "upper": [
+  "salah",
+  "percayalah"
+ ],
+ "chunks": [
+  [
+   "hook",
+   81.9,
+   84.0,
+   "jalan yang salah,"
+  ],
+  [
+   "hook",
+   84.0,
+   85.5,
+   "waktu yang salah,"
+  ],
+  [
+   "hook",
+   85.5,
+   86.95,
+   "dan tempat yang salah."
+  ],
+  [
+   "s1",
+   7.0,
+   9.6,
+   "Ketika mana kita merasakan"
+  ],
+  [
+   "s2",
+   11.05,
+   13.4,
+   "ujian dalam kehidupan ini"
+  ],
+  [
+   "s2",
+   13.4,
+   17.0,
+   "sangat berat untuk kita telan dan kita hadapi,"
+  ],
+  [
+   "s3",
+   18.05,
+   20.6,
+   "ketika itu juga sebenarnya"
+  ],
+  [
+   "s4",
+   21.8,
+   25.4,
+   "Allah Ta'ala menanti dan menunggu"
+  ],
+  [
+   "s5",
+   26.35,
+   29.0,
+   "apakah doa dan hajat-hajat kita,"
+  ],
+  [
+   "s5",
+   29.0,
+   34.9,
+   "yang kita berharap untuk dibantu oleh Allah SWT."
+  ],
+  [
+   "s6",
+   35.4,
+   37.4,
+   "Tetapi malangnya,"
+  ],
+  [
+   "s6",
+   37.9,
+   41.6,
+   "ramai … kita beranggapan,"
+  ],
+  [
+   "s7",
+   42.1,
+   46.9,
+   "solusi kepada ujian dalam kehidupan kita ini"
+  ],
+  [
+   "s7",
+   46.9,
+   50.7,
+   "adalah dengan berharap dan meminta kepada manusia,"
+  ],
+  [
+   "s7",
+   50.7,
+   52.4,
+   "bukan Allah Ta'ala."
+  ],
+  [
+   "s7",
+   52.9,
+   57.0,
+   "Oleh kerana itu, kita akan mula rasa"
+  ],
+  [
+   "s7",
+   57.0,
+   60.2,
+   "saat diuji oleh Allah Ta'ala"
+  ],
+  [
+   "s7",
+   60.2,
+   64.0,
+   "adalah saat yang paling sakit dan paling pedih,"
+  ],
+  [
+   "s7",
+   64.4,
+   66.3,
+   "sehingga kita merasakan"
+  ],
+  [
+   "s7",
+   66.3,
+   69.3,
+   "kita tak mampu untuk bangkit semula."
+  ],
+  [
+   "s7",
+   70.4,
+   73.9,
+   "Akhirnya kita tersungkur jatuh"
+  ],
+  [
+   "s7",
+   73.9,
+   79.5,
+   "dalam sebuah penyesalan yang tidak bernilai apa-apa,"
+  ],
+  [
+   "s7",
+   79.5,
+   82.0,
+   "kerana kita memilih"
+  ],
+  [
+   "s7",
+   82.0,
+   84.0,
+   "jalan yang salah,"
+  ],
+  [
+   "s7",
+   84.0,
+   85.5,
+   "waktu yang salah,"
+  ],
+  [
+   "s7",
+   85.5,
+   86.95,
+   "dan tempat yang salah."
+  ],
+  [
+   "s7",
+   87.5,
+   88.85,
+   "Percayalah."
+  ]
+ ],
+ "unsure": [
+  [
+   38.5,
+   "[TIDAK PASTI ~38.2–40.2 s — “ramai jika dengan kita”: perkataan tengah tidak jelas (mungkin “di kalangan”); dipaparkan “ramai … kita” (audio dikekalkan)]"
+  ],
+  [
+   90.5,
+   "[DIBUANG — “Jangan lupa untuk berlangganan” daripada large-v3 ialah halusinasi (tiada dalam medium / audio senyap)]"
+  ],
+  [
+   7.0,
+   "[DIPENDEKKAN — jeda senyap panjang (>1 s) dipendekkan kepada ~0.6 s]"
+  ],
+  [
+   1.0,
+   "[NOTA — cap masa perkataan daripada model medium]"
+  ]
+ ]
+}

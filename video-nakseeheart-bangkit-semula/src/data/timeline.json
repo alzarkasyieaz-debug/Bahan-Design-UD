@@ -1,0 +1,160 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "IMG_4630.mov (96.37 s, 1920x1080 HEVC diputar -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    3.7
+   ],
+   "src": 80.3,
+   "srcEnd": 84.0
+  },
+  {
+   "id": "s1",
+   "out": [
+    3.7,
+    9.9
+   ],
+   "src": 1.9,
+   "srcEnd": 8.1
+  },
+  {
+   "id": "s2",
+   "out": [
+    9.9,
+    25.05
+   ],
+   "src": 8.55,
+   "srcEnd": 23.7
+  },
+  {
+   "id": "s3",
+   "out": [
+    25.05,
+    36.6
+   ],
+   "src": 24.3,
+   "srcEnd": 35.85
+  },
+  {
+   "id": "s4",
+   "out": [
+    36.6,
+    40.55
+   ],
+   "src": 36.6,
+   "srcEnd": 40.55
+  },
+  {
+   "id": "s5",
+   "out": [
+    40.55,
+    71.6
+   ],
+   "src": 41.25,
+   "srcEnd": 72.3
+  },
+  {
+   "id": "s6",
+   "out": [
+    71.6,
+    74.4
+   ],
+   "src": 72.9,
+   "srcEnd": 75.7
+  },
+  {
+   "id": "s7",
+   "out": [
+    74.4,
+    76.85
+   ],
+   "src": 77.15,
+   "srcEnd": 79.6
+  },
+  {
+   "id": "s8",
+   "out": [
+    76.85,
+    81.0
+   ],
+   "src": 80.1,
+   "srcEnd": 84.25
+  },
+  {
+   "id": "s9",
+   "out": [
+    81.0,
+    91.3
+   ],
+   "src": 85.0,
+   "srcEnd": 95.3
+  },
+  {
+   "id": "cta",
+   "out": [
+    91.3,
+    96.8
+   ],
+   "src": 95.0,
+   "srcEnd": 96.2,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 3.7,
+  "hilangArah": 8.56,
+  "kawan": 10.83,
+  "bangkit1": 14.55,
+  "jatuh": 18.77,
+  "tanpaSedar": 20.57,
+  "berjaya": 23.59,
+  "sabar": 27.33,
+  "tenang": 28.55,
+  "takMampu": 35.91,
+  "hakikat": 37.24,
+  "mampuBangkit": 39.58,
+  "tidakUji": 42.66,
+  "melainkan": 44.6,
+  "kunci": 47.26,
+  "bangkit2": 50.26,
+  "berubah": 52.58,
+  "solusi": 54.96,
+  "sayang": 60.62,
+  "uji": 62.78,
+  "iman": 65.82,
+  "amal": 67.32,
+  "dinilai": 69.64,
+  "istiqamah": 72.9,
+  "sebaliknya": 74.14,
+  "belajar": 75.41,
+  "sayang2": 78.17,
+  "uji2": 80.41,
+  "menilai": 85.08,
+  "keyakinan": 86.8,
+  "percayalah": 90.58,
+  "climax": [
+   74.4,
+   80.95
+  ],
+  "finale": [
+   81.3,
+   91.3
+  ],
+  "cta": 91.3,
+  "end": 96.8,
+  "followPulse": [
+   18.0,
+   45.0,
+   72.0
+  ],
+  "brollA": [
+   84.0,
+   90.2
+  ]
+ }
+}
