@@ -47,9 +47,9 @@ npm run render                 # render + mampat < 100 MB -> out/<output>.mp4
 Semak: tiada pertindihan, subtitle ≤2 baris, kenyaringan, saiz fail.
 
 ## 7. Cover (WAJIB — video belum dikira siap tanpa cover)
-Setiap video MESTI ada `out/<output>-poster.jpg`. Tambah `poster` (thumbnail berani, gaya standard) dan pilihan `cover` (klasik) dalam storyboard.json (lihat STYLE.md §10), kemudian `bash scripts/cover.sh` / `bash scripts/cover.sh poster`. Semak gambar; laras `faceY` jika tajuk bertindih wajah. `npm run render` menjana poster secara automatik selepas MP4 (dan gagal jika `poster` tiada), kemudian **memasukkan cover ke dalam video** (`scripts/add_cover.sh`: ~1 s cover di awal + thumbnail MP4). Jika cover ditukar kemudian: `bash scripts/cover.sh poster && bash scripts/add_cover.sh`. Hantar MP4 + poster JPG bersama.
+Setiap video MESTI ada `out/<output>-poster.jpg`. Tambah `poster` (thumbnail berani, gaya standard) dan pilihan `cover` (klasik) dalam storyboard.json (lihat STYLE.md §10), kemudian `bash scripts/cover.sh` / `bash scripts/cover.sh poster`. Semak gambar; laras `faceY` jika tajuk bertindih wajah. `npm run render` menjana poster secara automatik selepas MP4 (dan gagal jika `poster` tiada), kemudian **memasukkan cover ke dalam video** (`scripts/add_cover.sh`: ~1 s cover di awal + thumbnail MP4). Jika cover ditukar kemudian: `bash scripts/cover.sh poster && bash scripts/add_cover.sh`. Hantar **MP4 sahaja** kepada pengguna (cover sudah di dalam video, tidak dihantar berasingan).
 
 ## 8. Serahan
 - Commit projek (tanpa `public/media`, kerana proxy besar) + MP4 akhir ke branch kerja; push.
-- Hantar MP4 + cover JPG kepada pengguna (`SendUserFile`). Laporkan secara jujur: durasi, bahagian yang dibuang & sebabnya, perkara yang tidak dapat dibuat (cth. video rujukan), dan bahawa audio disemak melalui ukuran sahaja.
+- Hantar MP4 (cover sudah di dalam video; jangan hantar JPG cover berasingan melainkan diminta) kepada pengguna (`SendUserFile`). Laporkan secara jujur: durasi, bahagian yang dibuang & sebabnya, perkara yang tidak dapat dibuat (cth. video rujukan), dan bahawa audio disemak melalui ukuran sahaja.
 - Tulis `README.md` projek: analisis, EDL dengan timestamp asal, storyboard, keputusan komposit, audio, QC, kapsyen hantaran + hashtag.
