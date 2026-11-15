@@ -5,3 +5,4 @@ out/*.png
 public/audio/music.wav
 public/audio/sfx.wav
 __pycache__/
+out/_*.mp4

@@ -6,3 +6,4 @@ __pycache__/
 public/media/
 public/audio/
 .work/
+out/_*.mp4

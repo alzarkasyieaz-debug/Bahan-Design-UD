@@ -6,3 +6,4 @@ public/audio/music.wav
 public/audio/sfx.wav
 __pycache__/
 public/media/
+out/_*.mp4
