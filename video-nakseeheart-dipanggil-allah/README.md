@@ -56,7 +56,7 @@ Ejaan: "Babu Salam" (seperti diucapkan) ditulis **Babus Salam**; "Mekah" ditulis
 | 108.6–114.1 | CTA |
 
 ## Warna & audio
-Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB).
+Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB), -14.0 LUFS.
 
 ## Kapsyen hantaran (cadangan)
 > Kita ke Tanah Suci bukan sebab duit banyak atau pakej bagus — tapi sebab Allah yang panggil. Labbaik Allahumma labbaik. 🕋

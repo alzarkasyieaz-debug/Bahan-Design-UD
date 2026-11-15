@@ -492,6 +492,7 @@
   "frame": 64.3,
   "headTop": 330,
   "chinY": 1000,
-  "faceX": 560
+  "faceX": 560,
+  "maxScale": 0.92
  }
 }
