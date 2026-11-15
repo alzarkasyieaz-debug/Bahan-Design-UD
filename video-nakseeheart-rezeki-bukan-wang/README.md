@@ -1,7 +1,7 @@
 # NakSeeHeart — "Rezeki Bukan Semata-Mata Wang"
 *Style: [Qoute Interaktif](../styles/qoute-interaktif/STYLE.md)*
 
-**9:16 · 1080×1920 · 30 fps · H.264 + AAC · 106.1 s** — [`out/nakseeheart-rezeki-bukan-wang.mp4`](out/nakseeheart-rezeki-bukan-wang.mp4) · cover [`out/nakseeheart-rezeki-bukan-wang-poster.jpg`](out/nakseeheart-rezeki-bukan-wang-poster.jpg) · [`.srt`](out/nakseeheart-rezeki-bukan-wang.srt)
+**9:16 · 1080×1920 · 30 fps · H.264 + AAC · 107.1 s (termasuk cover 1 s di awal)** — [`out/nakseeheart-rezeki-bukan-wang.mp4`](out/nakseeheart-rezeki-bukan-wang.mp4) · cover [`out/nakseeheart-rezeki-bukan-wang-poster.jpg`](out/nakseeheart-rezeki-bukan-wang-poster.jpg) · [`.srt`](out/nakseeheart-rezeki-bukan-wang.srt)
 
 ## Analisis
 | Item | Butiran |
@@ -39,7 +39,7 @@
 | 100.6–106.1 | CTA |
 
 ## Warna & audio
-Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB).
+Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB), -14.7 LUFS.
 
 ## Kapsyen hantaran (cadangan)
 > Rezeki bukan semata-mata wang — sihat, pasangan yang baik dan anak soleh juga rezeki. Jangan bandingkan rezeki kita dengan orang lain. 🤍
