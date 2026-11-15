@@ -1,0 +1,155 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "v14044g50000d5rp9j7og65rh50g34sg.MP4 (155.97 s, 576x1280 H.264 TikTok -> delogo, crop 576x1024 -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    4.2
+   ],
+   "src": 59.1,
+   "srcEnd": 63.3
+  },
+  {
+   "id": "s1",
+   "out": [
+    4.2,
+    10.4
+   ],
+   "src": 0.0,
+   "srcEnd": 6.2
+  },
+  {
+   "id": "s2",
+   "out": [
+    10.4,
+    12.7
+   ],
+   "src": 9.3,
+   "srcEnd": 11.6
+  },
+  {
+   "id": "s3",
+   "out": [
+    12.7,
+    18.2
+   ],
+   "src": 19.0,
+   "srcEnd": 24.5
+  },
+  {
+   "id": "s4",
+   "out": [
+    18.2,
+    39.0
+   ],
+   "src": 45.2,
+   "srcEnd": 66.0
+  },
+  {
+   "id": "s5",
+   "out": [
+    39.0,
+    49.9
+   ],
+   "src": 68.9,
+   "srcEnd": 79.8
+  },
+  {
+   "id": "s6",
+   "out": [
+    49.9,
+    78.1
+   ],
+   "src": 81.2,
+   "srcEnd": 109.4
+  },
+  {
+   "id": "s7",
+   "out": [
+    78.1,
+    108.6
+   ],
+   "src": 117.1,
+   "srcEnd": 147.6
+  },
+  {
+   "id": "cta",
+   "out": [
+    108.6,
+    114.1
+   ],
+   "src": 147.3,
+   "srcEnd": 148.5,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 4.2,
+  "makam": 5.82,
+  "selfie": 9.4,
+  "kubur": 11.3,
+  "takSelfie": 13.36,
+  "gambar": 16.28,
+  "labbaik": 18.94,
+  "panggil": 21.36,
+  "allahumma": 23.34,
+  "dipanggil": 25.28,
+  "duit": 30.4,
+  "pakej": 32.9,
+  "allahPanggil": 34.24,
+  "lain": 36.14,
+  "jemaah": 39.66,
+  "shopping": 45.3,
+  "tiapHari": 47.03,
+  "menangis": 49.1,
+  "madinah": 51.36,
+  "mekah": 53.02,
+  "caraNabi": 54.54,
+  "birAli": 59.04,
+  "miqat": 61.7,
+  "menuju": 63.56,
+  "malikFahad": 66.16,
+  "belakang": 69.32,
+  "marah": 71.78,
+  "hotel": 73.24,
+  "babusSalam": 76.44,
+  "caraNabi2": 78.44,
+  "babusSalam2": 80.94,
+  "zamanNabi": 84.96,
+  "nawawi": 87.62,
+  "budak": 92.04,
+  "tuanNak": 93.18,
+  "kitab": 97.72,
+  "sunat": 99.84,
+  "malu": 103.6,
+  "tulis": 105.86,
+  "takKenal": 107.08,
+  "broll1": [
+   43.65,
+   47.53
+  ],
+  "broll2": [
+   102.7,
+   106.65
+  ],
+  "climax": [
+   28.8,
+   39.0
+  ],
+  "finale": [
+   99.8,
+   108.6
+  ],
+  "cta": 108.6,
+  "end": 114.1,
+  "followPulse": [
+   20.0,
+   50.0,
+   80.0
+  ]
+ }
+}

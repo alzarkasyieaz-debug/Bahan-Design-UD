@@ -1,0 +1,1871 @@
+[
+ {
+  "segment": "hook",
+  "start": 0.36,
+  "end": 2.02,
+  "words": [
+   {
+    "text": "Bukan",
+    "start": 0.48,
+    "end": 0.735,
+    "gold": false
+   },
+   {
+    "text": "sebab",
+    "start": 0.735,
+    "end": 0.991,
+    "gold": false
+   },
+   {
+    "text": "pakej",
+    "start": 0.991,
+    "end": 1.246,
+    "gold": true
+   },
+   {
+    "text": "kita",
+    "start": 1.246,
+    "end": 1.465,
+    "gold": false
+   },
+   {
+    "text": "bagus,",
+    "start": 1.465,
+    "end": 1.72,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "hook",
+  "start": 2.1,
+  "end": 3.94,
+  "words": [
+   {
+    "text": "sebab",
+    "start": 2.22,
+    "end": 2.84,
+    "gold": false
+   },
+   {
+    "text": "Allah",
+    "start": 2.84,
+    "end": 3.1,
+    "gold": true
+   },
+   {
+    "text": "yang",
+    "start": 3.1,
+    "end": 3.28,
+    "gold": false
+   },
+   {
+    "text": "panggil.",
+    "start": 3.28,
+    "end": 3.64,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 4.2,
+  "end": 6.62,
+  "words": [
+   {
+    "text": "Orang",
+    "start": 4.2,
+    "end": 4.7,
+    "gold": false
+   },
+   {
+    "text": "kan,",
+    "start": 4.7,
+    "end": 4.88,
+    "gold": false
+   },
+   {
+    "text": "kalau",
+    "start": 4.88,
+    "end": 5.12,
+    "gold": false
+   },
+   {
+    "text": "lalu",
+    "start": 5.12,
+    "end": 5.5,
+    "gold": false
+   },
+   {
+    "text": "dekat",
+    "start": 5.5,
+    "end": 5.82,
+    "gold": false
+   },
+   {
+    "text": "makam",
+    "start": 5.82,
+    "end": 6.2,
+    "gold": true
+   },
+   {
+    "text": "Rasulullah,",
+    "start": 6.2,
+    "end": 6.64,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 6.62,
+  "end": 8.24,
+  "words": [
+   {
+    "text": "orang",
+    "start": 6.74,
+    "end": 7.06,
+    "gold": false
+   },
+   {
+    "text": "selalu",
+    "start": 7.06,
+    "end": 7.38,
+    "gold": false
+   },
+   {
+    "text": "buat",
+    "start": 7.38,
+    "end": 7.48,
+    "gold": false
+   },
+   {
+    "text": "apa,",
+    "start": 7.48,
+    "end": 7.68,
+    "gold": false
+   },
+   {
+    "text": "tuan-tuan?",
+    "start": 7.68,
+    "end": 7.94,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s1",
+  "start": 9.26,
+  "end": 10.24,
+  "words": [
+   {
+    "text": "SELFIE?",
+    "start": 9.38,
+    "end": 9.94,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s2",
+  "start": 10.7,
+  "end": 12.7,
+  "words": [
+   {
+    "text": "Di",
+    "start": 10.82,
+    "end": 11.014,
+    "gold": false
+   },
+   {
+    "text": "depan",
+    "start": 11.014,
+    "end": 11.354,
+    "gold": false
+   },
+   {
+    "text": "kubur",
+    "start": 11.354,
+    "end": 11.694,
+    "gold": true
+   },
+   {
+    "text": "Rasulullah",
+    "start": 11.694,
+    "end": 12.277,
+    "gold": true
+   },
+   {
+    "text": "SAW.",
+    "start": 12.277,
+    "end": 12.52,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s3",
+  "start": 13.0,
+  "end": 15.02,
+  "words": [
+   {
+    "text": "Ada",
+    "start": 13.12,
+    "end": 13.374,
+    "gold": false
+   },
+   {
+    "text": "orang,",
+    "start": 13.374,
+    "end": 13.73,
+    "gold": false
+   },
+   {
+    "text": "dia",
+    "start": 13.73,
+    "end": 13.985,
+    "gold": false
+   },
+   {
+    "text": "tak",
+    "start": 13.985,
+    "end": 14.239,
+    "gold": false
+   },
+   {
+    "text": "ada",
+    "start": 14.239,
+    "end": 14.493,
+    "gold": false
+   },
+   {
+    "text": "SELFIE.",
+    "start": 14.493,
+    "end": 14.9,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s3",
+  "start": 15.02,
+  "end": 16.363,
+  "words": [
+   {
+    "text": "Dia",
+    "start": 15.14,
+    "end": 15.347,
+    "gold": false
+   },
+   {
+    "text": "pergi",
+    "start": 15.347,
+    "end": 15.636,
+    "gold": false
+   },
+   {
+    "text": "Makkah,",
+    "start": 15.636,
+    "end": 15.967,
+    "gold": true
+   },
+   {
+    "text": "balik,",
+    "start": 15.967,
+    "end": 16.256,
+    "gold": false
+   },
+   {
+    "text": "tak…",
+    "start": 16.256,
+    "end": 16.463,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s3",
+  "start": 16.363,
+  "end": 17.92,
+  "words": [
+   {
+    "text": "ada",
+    "start": 16.463,
+    "end": 16.669,
+    "gold": false
+   },
+   {
+    "text": "sekeping",
+    "start": 16.669,
+    "end": 17.083,
+    "gold": false
+   },
+   {
+    "text": "gambar",
+    "start": 17.083,
+    "end": 17.413,
+    "gold": true
+   },
+   {
+    "text": "pun.",
+    "start": 17.413,
+    "end": 17.62,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s4",
+  "start": 18.2,
+  "end": 20.34,
+  "words": [
+   {
+    "text": "Perkataan",
+    "start": 18.3,
+    "end": 18.94,
+    "gold": false
+   },
+   {
+    "text": "LABBAIK,",
+    "start": 18.94,
+    "end": 19.58,
+    "gold": true
+   },
+   {
+    "text": "LABBAIK…",
+    "start": 19.6,
+    "end": 20.44,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s4",
+  "start": 20.34,
+  "end": 21.82,
+  "words": [
+   {
+    "text": "Allah",
+    "start": 20.44,
+    "end": 20.68,
+    "gold": true
+   },
+   {
+    "text": "tu,",
+    "start": 20.68,
+    "end": 21.06,
+    "gold": false
+   },
+   {
+    "text": "Allah",
+    "start": 21.1,
+    "end": 21.36,
+    "gold": true
+   },
+   {
+    "text": "panggil.",
+    "start": 21.36,
+    "end": 21.88,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s4",
+  "start": 21.82,
+  "end": 22.8,
+  "words": [
+   {
+    "text": "Dia",
+    "start": 21.94,
+    "end": 22.04,
+    "gold": false
+   },
+   {
+    "text": "nak",
+    "start": 22.04,
+    "end": 22.2,
+    "gold": false
+   },
+   {
+    "text": "jawab",
+    "start": 22.2,
+    "end": 22.56,
+    "gold": false
+   },
+   {
+    "text": "panggil:",
+    "start": 22.56,
+    "end": 22.88,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s4",
+  "start": 22.8,
+  "end": 25.22,
+  "words": [
+   {
+    "text": "LABBAIK",
+    "start": 22.9,
+    "end": 23.34,
+    "gold": true
+   },
+   {
+    "text": "Allahumma",
+    "start": 23.34,
+    "end": 24.62,
+    "gold": false
+   },
+   {
+    "text": "LABBAIK.",
+    "start": 24.62,
+    "end": 25.12,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s4",
+  "start": 25.22,
+  "end": 27.08,
+  "words": [
+   {
+    "text": "Terasa",
+    "start": 25.34,
+    "end": 25.98,
+    "gold": false
+   },
+   {
+    "text": "dia",
+    "start": 25.98,
+    "end": 26.3,
+    "gold": false
+   },
+   {
+    "text": "dipanggil.",
+    "start": 26.3,
+    "end": 26.78,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s4",
+  "start": 28.78,
+  "end": 31.28,
+  "words": [
+   {
+    "text": "Sebab",
+    "start": 28.9,
+    "end": 29.52,
+    "gold": false
+   },
+   {
+    "text": "tu,",
+    "start": 29.52,
+    "end": 29.68,
+    "gold": false
+   },
+   {
+    "text": "bukan",
+    "start": 29.68,
+    "end": 29.84,
+    "gold": false
+   },
+   {
+    "text": "sebab",
+    "start": 29.84,
+    "end": 30.22,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 30.22,
+    "end": 30.4,
+    "gold": false
+   },
+   {
+    "text": "duit",
+    "start": 30.4,
+    "end": 30.74,
+    "gold": true
+   },
+   {
+    "text": "banyak,",
+    "start": 30.74,
+    "end": 30.98,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s4",
+  "start": 31.84,
+  "end": 34.12,
+  "words": [
+   {
+    "text": "bukan",
+    "start": 31.96,
+    "end": 32.58,
+    "gold": false
+   },
+   {
+    "text": "sebab",
+    "start": 32.58,
+    "end": 32.84,
+    "gold": false
+   },
+   {
+    "text": "pakej",
+    "start": 32.84,
+    "end": 33.28,
+    "gold": true
+   },
+   {
+    "text": "kita",
+    "start": 33.28,
+    "end": 33.44,
+    "gold": false
+   },
+   {
+    "text": "bagus,",
+    "start": 33.44,
+    "end": 33.82,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s4",
+  "start": 34.2,
+  "end": 36.04,
+  "words": [
+   {
+    "text": "sebab",
+    "start": 34.32,
+    "end": 34.94,
+    "gold": false
+   },
+   {
+    "text": "Allah",
+    "start": 34.94,
+    "end": 35.2,
+    "gold": true
+   },
+   {
+    "text": "yang",
+    "start": 35.2,
+    "end": 35.38,
+    "gold": false
+   },
+   {
+    "text": "panggil.",
+    "start": 35.38,
+    "end": 35.74,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s4",
+  "start": 36.41,
+  "end": 38.64,
+  "words": [
+   {
+    "text": "Bila",
+    "start": 36.53,
+    "end": 36.84,
+    "gold": false
+   },
+   {
+    "text": "terasa",
+    "start": 36.84,
+    "end": 37.32,
+    "gold": false
+   },
+   {
+    "text": "dipanggil,",
+    "start": 37.32,
+    "end": 37.86,
+    "gold": true
+   },
+   {
+    "text": "lain.",
+    "start": 37.96,
+    "end": 38.34,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s5",
+  "start": 39.4,
+  "end": 41.04,
+  "words": [
+   {
+    "text": "Pernah",
+    "start": 39.52,
+    "end": 39.784,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 39.784,
+    "end": 39.982,
+    "gold": false
+   },
+   {
+    "text": "bawa",
+    "start": 39.982,
+    "end": 40.179,
+    "gold": false
+   },
+   {
+    "text": "jemaah",
+    "start": 40.179,
+    "end": 40.443,
+    "gold": true
+   },
+   {
+    "text": "seorang.",
+    "start": 40.443,
+    "end": 40.74,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s5",
+  "start": 42.68,
+  "end": 44.86,
+  "words": [
+   {
+    "text": "Sampai-sampai,",
+    "start": 42.8,
+    "end": 43.92,
+    "gold": false
+   },
+   {
+    "text": "sampai",
+    "start": 43.94,
+    "end": 44.48,
+    "gold": false
+   },
+   {
+    "text": "balik,",
+    "start": 44.48,
+    "end": 44.96,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s5",
+  "start": 44.86,
+  "end": 46.08,
+  "words": [
+   {
+    "text": "tak",
+    "start": 44.96,
+    "end": 45.16,
+    "gold": false
+   },
+   {
+    "text": "ada",
+    "start": 45.16,
+    "end": 45.3,
+    "gold": false
+   },
+   {
+    "text": "shopping",
+    "start": 45.3,
+    "end": 45.56,
+    "gold": true
+   },
+   {
+    "text": "pun.",
+    "start": 45.56,
+    "end": 45.78,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s5",
+  "start": 46.66,
+  "end": 48.28,
+  "words": [
+   {
+    "text": "Tiap-tiap",
+    "start": 46.78,
+    "end": 47.56,
+    "gold": false
+   },
+   {
+    "text": "hari",
+    "start": 47.56,
+    "end": 47.82,
+    "gold": false
+   },
+   {
+    "text": "saya",
+    "start": 47.88,
+    "end": 48.02,
+    "gold": false
+   },
+   {
+    "text": "tengok…",
+    "start": 48.02,
+    "end": 48.38,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s5",
+  "start": 48.28,
+  "end": 49.78,
+  "words": [
+   {
+    "text": "dia",
+    "start": 48.38,
+    "end": 48.5,
+    "gold": false
+   },
+   {
+    "text": "dekat",
+    "start": 48.5,
+    "end": 48.68,
+    "gold": false
+   },
+   {
+    "text": "masjid,",
+    "start": 48.68,
+    "end": 49.04,
+    "gold": true
+   },
+   {
+    "text": "menangis.",
+    "start": 49.06,
+    "end": 49.48,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 49.92,
+  "end": 52.5,
+  "words": [
+   {
+    "text": "Sebab",
+    "start": 50.04,
+    "end": 50.66,
+    "gold": false
+   },
+   {
+    "text": "saya",
+    "start": 50.66,
+    "end": 50.88,
+    "gold": false
+   },
+   {
+    "text": "akan",
+    "start": 50.88,
+    "end": 51.1,
+    "gold": false
+   },
+   {
+    "text": "bawa",
+    "start": 51.1,
+    "end": 51.36,
+    "gold": false
+   },
+   {
+    "text": "masuk",
+    "start": 51.36,
+    "end": 51.62,
+    "gold": false
+   },
+   {
+    "text": "ikut",
+    "start": 51.62,
+    "end": 52.02,
+    "gold": false
+   },
+   {
+    "text": "Madinah.",
+    "start": 52.02,
+    "end": 52.4,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 52.5,
+  "end": 53.72,
+  "words": [
+   {
+    "text": "Lepas",
+    "start": 52.62,
+    "end": 52.62,
+    "gold": false
+   },
+   {
+    "text": "tu",
+    "start": 52.62,
+    "end": 52.84,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 52.9,
+    "end": 53.04,
+    "gold": false
+   },
+   {
+    "text": "pergi",
+    "start": 53.04,
+    "end": 53.34,
+    "gold": false
+   },
+   {
+    "text": "ke",
+    "start": 53.34,
+    "end": 53.48,
+    "gold": false
+   },
+   {
+    "text": "Makkah,",
+    "start": 53.48,
+    "end": 53.8,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 53.72,
+  "end": 56.42,
+  "words": [
+   {
+    "text": "sebab",
+    "start": 53.84,
+    "end": 54.16,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 54.16,
+    "end": 54.36,
+    "gold": false
+   },
+   {
+    "text": "nak",
+    "start": 54.36,
+    "end": 54.54,
+    "gold": false
+   },
+   {
+    "text": "ikut",
+    "start": 54.54,
+    "end": 54.92,
+    "gold": false
+   },
+   {
+    "text": "cara",
+    "start": 54.92,
+    "end": 55.24,
+    "gold": false
+   },
+   {
+    "text": "Nabi",
+    "start": 55.24,
+    "end": 55.84,
+    "gold": true
+   },
+   {
+    "text": "pergi",
+    "start": 55.84,
+    "end": 56.16,
+    "gold": false
+   },
+   {
+    "text": "tu.",
+    "start": 56.16,
+    "end": 56.46,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 56.42,
+  "end": 58.26,
+  "words": [
+   {
+    "text": "Sebab",
+    "start": 56.54,
+    "end": 56.84,
+    "gold": false
+   },
+   {
+    "text": "Nabi",
+    "start": 56.84,
+    "end": 57.12,
+    "gold": true
+   },
+   {
+    "text": "bermula",
+    "start": 57.12,
+    "end": 57.6,
+    "gold": false
+   },
+   {
+    "text": "di",
+    "start": 57.6,
+    "end": 57.76,
+    "gold": false
+   },
+   {
+    "text": "Madinah.",
+    "start": 57.76,
+    "end": 58.24,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 58.26,
+  "end": 60.88,
+  "words": [
+   {
+    "text": "Nabi",
+    "start": 58.38,
+    "end": 58.86,
+    "gold": true
+   },
+   {
+    "text": "akan",
+    "start": 58.86,
+    "end": 59.06,
+    "gold": false
+   },
+   {
+    "text": "miqat",
+    "start": 59.06,
+    "end": 59.56,
+    "gold": true
+   },
+   {
+    "text": "di",
+    "start": 59.56,
+    "end": 59.74,
+    "gold": false
+   },
+   {
+    "text": "Bir",
+    "start": 59.74,
+    "end": 60.42,
+    "gold": true
+   },
+   {
+    "text": "Ali,",
+    "start": 60.42,
+    "end": 60.62,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 60.88,
+  "end": 62.74,
+  "words": [
+   {
+    "text": "kat",
+    "start": 61.0,
+    "end": 61.48,
+    "gold": false
+   },
+   {
+    "text": "situ",
+    "start": 61.48,
+    "end": 61.72,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 61.8,
+    "end": 62.02,
+    "gold": false
+   },
+   {
+    "text": "akan",
+    "start": 62.02,
+    "end": 62.24,
+    "gold": false
+   },
+   {
+    "text": "miqat.",
+    "start": 62.24,
+    "end": 62.66,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 62.74,
+  "end": 65.7,
+  "words": [
+   {
+    "text": "Nabi",
+    "start": 62.86,
+    "end": 63.34,
+    "gold": true
+   },
+   {
+    "text": "akan",
+    "start": 63.34,
+    "end": 63.56,
+    "gold": false
+   },
+   {
+    "text": "menuju",
+    "start": 63.56,
+    "end": 64.1,
+    "gold": false
+   },
+   {
+    "text": "ke",
+    "start": 64.1,
+    "end": 64.32,
+    "gold": false
+   },
+   {
+    "text": "Makkah,",
+    "start": 64.32,
+    "end": 64.66,
+    "gold": true
+   },
+   {
+    "text": "kita",
+    "start": 64.7,
+    "end": 65.16,
+    "gold": false
+   },
+   {
+    "text": "akan",
+    "start": 65.16,
+    "end": 65.42,
+    "gold": false
+   },
+   {
+    "text": "masuk.",
+    "start": 65.42,
+    "end": 65.76,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 65.7,
+  "end": 67.262,
+  "words": [
+   {
+    "text": "Saya",
+    "start": 65.82,
+    "end": 66.109,
+    "gold": false
+   },
+   {
+    "text": "tak",
+    "start": 66.109,
+    "end": 66.35,
+    "gold": false
+   },
+   {
+    "text": "ambil",
+    "start": 66.35,
+    "end": 66.687,
+    "gold": false
+   },
+   {
+    "text": "pintu",
+    "start": 66.687,
+    "end": 67.025,
+    "gold": false
+   },
+   {
+    "text": "Malik…",
+    "start": 67.025,
+    "end": 67.362,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 67.262,
+  "end": 68.94,
+  "words": [
+   {
+    "text": "Fahad,",
+    "start": 67.362,
+    "end": 67.699,
+    "gold": false
+   },
+   {
+    "text": "pintu",
+    "start": 67.699,
+    "end": 68.036,
+    "gold": false
+   },
+   {
+    "text": "Malik",
+    "start": 68.036,
+    "end": 68.374,
+    "gold": false
+   },
+   {
+    "text": "Abdul",
+    "start": 68.374,
+    "end": 68.711,
+    "gold": false
+   },
+   {
+    "text": "Aziz.",
+    "start": 68.711,
+    "end": 69.0,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 68.94,
+  "end": 71.32,
+  "words": [
+   {
+    "text": "Saya",
+    "start": 69.06,
+    "end": 69.18,
+    "gold": false
+   },
+   {
+    "text": "akan",
+    "start": 69.18,
+    "end": 69.32,
+    "gold": false
+   },
+   {
+    "text": "pergi",
+    "start": 69.32,
+    "end": 69.6,
+    "gold": false
+   },
+   {
+    "text": "pintu",
+    "start": 69.6,
+    "end": 70.48,
+    "gold": false
+   },
+   {
+    "text": "yang",
+    "start": 70.48,
+    "end": 70.56,
+    "gold": false
+   },
+   {
+    "text": "paling",
+    "start": 70.56,
+    "end": 70.72,
+    "gold": false
+   },
+   {
+    "text": "belakang",
+    "start": 70.72,
+    "end": 71.2,
+    "gold": false
+   },
+   {
+    "text": "tu.",
+    "start": 71.2,
+    "end": 71.34,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 71.32,
+  "end": 72.98,
+  "words": [
+   {
+    "text": "Itu",
+    "start": 71.44,
+    "end": 71.62,
+    "gold": false
+   },
+   {
+    "text": "yang",
+    "start": 71.62,
+    "end": 71.78,
+    "gold": false
+   },
+   {
+    "text": "jemaah",
+    "start": 71.78,
+    "end": 72.22,
+    "gold": true
+   },
+   {
+    "text": "marah",
+    "start": 72.22,
+    "end": 72.58,
+    "gold": false
+   },
+   {
+    "text": "tu.",
+    "start": 72.58,
+    "end": 72.68,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 73.16,
+  "end": 74.42,
+  "words": [
+   {
+    "text": "“Hotel",
+    "start": 73.28,
+    "end": 73.76,
+    "gold": false
+   },
+   {
+    "text": "kita",
+    "start": 73.76,
+    "end": 73.98,
+    "gold": false
+   },
+   {
+    "text": "kat",
+    "start": 73.98,
+    "end": 74.18,
+    "gold": false
+   },
+   {
+    "text": "sini",
+    "start": 74.18,
+    "end": 74.32,
+    "gold": false
+   },
+   {
+    "text": "lah,",
+    "start": 74.32,
+    "end": 74.48,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 74.42,
+  "end": 75.66,
+  "words": [
+   {
+    "text": "kenapa",
+    "start": 74.52,
+    "end": 74.74,
+    "gold": false
+   },
+   {
+    "text": "pergi",
+    "start": 74.74,
+    "end": 75.0,
+    "gold": false
+   },
+   {
+    "text": "belakang?”",
+    "start": 75.0,
+    "end": 75.36,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s6",
+  "start": 75.7,
+  "end": 77.94,
+  "words": [
+   {
+    "text": "Belakang",
+    "start": 75.82,
+    "end": 76.3,
+    "gold": false
+   },
+   {
+    "text": "tu",
+    "start": 76.3,
+    "end": 76.4,
+    "gold": false
+   },
+   {
+    "text": "pintu",
+    "start": 76.4,
+    "end": 76.88,
+    "gold": false
+   },
+   {
+    "text": "Babus",
+    "start": 76.88,
+    "end": 77.18,
+    "gold": true
+   },
+   {
+    "text": "Salam.",
+    "start": 77.18,
+    "end": 77.64,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 78.36,
+  "end": 80.237,
+  "words": [
+   {
+    "text": "Cara",
+    "start": 78.48,
+    "end": 78.79,
+    "gold": false
+   },
+   {
+    "text": "Nabi",
+    "start": 78.79,
+    "end": 79.099,
+    "gold": true
+   },
+   {
+    "text": "masuk",
+    "start": 79.099,
+    "end": 79.46,
+    "gold": false
+   },
+   {
+    "text": "Masjidil",
+    "start": 79.46,
+    "end": 79.976,
+    "gold": false
+   },
+   {
+    "text": "Haram,",
+    "start": 79.976,
+    "end": 80.337,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 80.237,
+  "end": 82.34,
+  "words": [
+   {
+    "text": "Nabi",
+    "start": 80.337,
+    "end": 80.647,
+    "gold": true
+   },
+   {
+    "text": "ikut",
+    "start": 80.647,
+    "end": 80.957,
+    "gold": false
+   },
+   {
+    "text": "pintu",
+    "start": 80.957,
+    "end": 81.318,
+    "gold": false
+   },
+   {
+    "text": "Babus",
+    "start": 81.318,
+    "end": 81.679,
+    "gold": true
+   },
+   {
+    "text": "Salam.",
+    "start": 81.679,
+    "end": 82.04,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 82.54,
+  "end": 84.26,
+  "words": [
+   {
+    "text": "Pintu",
+    "start": 82.66,
+    "end": 83.24,
+    "gold": false
+   },
+   {
+    "text": "Malik",
+    "start": 83.24,
+    "end": 83.5,
+    "gold": false
+   },
+   {
+    "text": "Fahad,",
+    "start": 83.5,
+    "end": 83.82,
+    "gold": false
+   },
+   {
+    "text": "pintu",
+    "start": 83.92,
+    "end": 84.14,
+    "gold": false
+   },
+   {
+    "text": "Malik…",
+    "start": 84.14,
+    "end": 84.36,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 84.26,
+  "end": 86.16,
+  "words": [
+   {
+    "text": "Abdul",
+    "start": 84.36,
+    "end": 84.58,
+    "gold": false
+   },
+   {
+    "text": "Aziz,",
+    "start": 84.58,
+    "end": 84.96,
+    "gold": false
+   },
+   {
+    "text": "zaman",
+    "start": 84.96,
+    "end": 85.14,
+    "gold": false
+   },
+   {
+    "text": "Nabi",
+    "start": 85.14,
+    "end": 85.5,
+    "gold": true
+   },
+   {
+    "text": "mana",
+    "start": 85.5,
+    "end": 85.62,
+    "gold": false
+   },
+   {
+    "text": "ada.",
+    "start": 85.62,
+    "end": 85.86,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 87.54,
+  "end": 91.78,
+  "words": [
+   {
+    "text": "Imam",
+    "start": 87.66,
+    "end": 88.24,
+    "gold": false
+   },
+   {
+    "text": "an-Nawawi,",
+    "start": 88.24,
+    "end": 88.84,
+    "gold": false
+   },
+   {
+    "text": "dia",
+    "start": 89.04,
+    "end": 90.38,
+    "gold": false
+   },
+   {
+    "text": "nak",
+    "start": 90.38,
+    "end": 90.58,
+    "gold": false
+   },
+   {
+    "text": "masuk",
+    "start": 90.58,
+    "end": 90.92,
+    "gold": false
+   },
+   {
+    "text": "ikut",
+    "start": 90.92,
+    "end": 91.14,
+    "gold": false
+   },
+   {
+    "text": "pintu",
+    "start": 91.14,
+    "end": 91.5,
+    "gold": false
+   },
+   {
+    "text": "lain.",
+    "start": 91.5,
+    "end": 91.7,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 91.78,
+  "end": 93.08,
+  "words": [
+   {
+    "text": "Dia",
+    "start": 91.9,
+    "end": 92.04,
+    "gold": false
+   },
+   {
+    "text": "tegur",
+    "start": 92.04,
+    "end": 92.36,
+    "gold": false
+   },
+   {
+    "text": "oleh",
+    "start": 92.36,
+    "end": 92.5,
+    "gold": false
+   },
+   {
+    "text": "seorang",
+    "start": 92.5,
+    "end": 92.74,
+    "gold": false
+   },
+   {
+    "text": "budak:",
+    "start": 92.74,
+    "end": 93.1,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 93.08,
+  "end": 95.027,
+  "words": [
+   {
+    "text": "“Tuan",
+    "start": 93.2,
+    "end": 93.53,
+    "gold": false
+   },
+   {
+    "text": "nak",
+    "start": 93.53,
+    "end": 93.806,
+    "gold": false
+   },
+   {
+    "text": "masuk",
+    "start": 93.806,
+    "end": 94.191,
+    "gold": false
+   },
+   {
+    "text": "Masjidil",
+    "start": 94.191,
+    "end": 94.742,
+    "gold": false
+   },
+   {
+    "text": "Haram,",
+    "start": 94.742,
+    "end": 95.127,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 95.027,
+  "end": 97.2,
+  "words": [
+   {
+    "text": "ikut",
+    "start": 95.127,
+    "end": 95.458,
+    "gold": false
+   },
+   {
+    "text": "pintu",
+    "start": 95.458,
+    "end": 95.843,
+    "gold": false
+   },
+   {
+    "text": "ni,",
+    "start": 95.843,
+    "end": 96.064,
+    "gold": false
+   },
+   {
+    "text": "pintu",
+    "start": 96.064,
+    "end": 96.449,
+    "gold": false
+   },
+   {
+    "text": "Babus",
+    "start": 96.449,
+    "end": 96.835,
+    "gold": true
+   },
+   {
+    "text": "Salam.",
+    "start": 96.835,
+    "end": 97.22,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 97.2,
+  "end": 99.72,
+  "words": [
+   {
+    "text": "Saya",
+    "start": 97.32,
+    "end": 97.74,
+    "gold": false
+   },
+   {
+    "text": "baca",
+    "start": 97.74,
+    "end": 98.1,
+    "gold": false
+   },
+   {
+    "text": "dalam",
+    "start": 98.1,
+    "end": 98.24,
+    "gold": false
+   },
+   {
+    "text": "kitab",
+    "start": 98.24,
+    "end": 98.58,
+    "gold": true
+   },
+   {
+    "text": "Imam",
+    "start": 98.58,
+    "end": 98.82,
+    "gold": false
+   },
+   {
+    "text": "an-Nawawi,",
+    "start": 98.82,
+    "end": 99.6,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 99.72,
+  "end": 101.88,
+  "words": [
+   {
+    "text": "sunat",
+    "start": 99.84,
+    "end": 100.78,
+    "gold": true
+   },
+   {
+    "text": "masuk",
+    "start": 100.78,
+    "end": 101.04,
+    "gold": false
+   },
+   {
+    "text": "Masjidil",
+    "start": 101.04,
+    "end": 101.6,
+    "gold": false
+   },
+   {
+    "text": "Haram…",
+    "start": 101.6,
+    "end": 101.98,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 101.88,
+  "end": 103.66,
+  "words": [
+   {
+    "text": "ikut",
+    "start": 101.98,
+    "end": 102.32,
+    "gold": false
+   },
+   {
+    "text": "pintu",
+    "start": 102.32,
+    "end": 102.62,
+    "gold": false
+   },
+   {
+    "text": "Babus",
+    "start": 102.62,
+    "end": 102.84,
+    "gold": true
+   },
+   {
+    "text": "Salam.”",
+    "start": 102.84,
+    "end": 103.36,
+    "gold": true
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 103.76,
+  "end": 105.58,
+  "words": [
+   {
+    "text": "Malu",
+    "start": 103.88,
+    "end": 104.36,
+    "gold": true
+   },
+   {
+    "text": "Imam",
+    "start": 104.36,
+    "end": 104.6,
+    "gold": false
+   },
+   {
+    "text": "an-Nawawi.",
+    "start": 104.6,
+    "end": 105.28,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 105.6,
+  "end": 106.98,
+  "words": [
+   {
+    "text": "Kitab",
+    "start": 105.72,
+    "end": 106.2,
+    "gold": true
+   },
+   {
+    "text": "tu",
+    "start": 106.2,
+    "end": 106.32,
+    "gold": false
+   },
+   {
+    "text": "dia",
+    "start": 106.32,
+    "end": 106.48,
+    "gold": false
+   },
+   {
+    "text": "yang",
+    "start": 106.48,
+    "end": 106.64,
+    "gold": false
+   },
+   {
+    "text": "tulis,",
+    "start": 106.64,
+    "end": 107.08,
+    "gold": false
+   }
+  ]
+ },
+ {
+  "segment": "s7",
+  "start": 106.98,
+  "end": 108.48,
+  "words": [
+   {
+    "text": "budak",
+    "start": 107.08,
+    "end": 107.54,
+    "gold": true
+   },
+   {
+    "text": "tu",
+    "start": 107.54,
+    "end": 107.66,
+    "gold": false
+   },
+   {
+    "text": "tak",
+    "start": 107.66,
+    "end": 107.78,
+    "gold": false
+   },
+   {
+    "text": "kenal",
+    "start": 107.78,
+    "end": 108.08,
+    "gold": false
+   },
+   {
+    "text": "dia.",
+    "start": 108.08,
+    "end": 108.18,
+    "gold": false
+   }
+  ]
+ }
+]

@@ -1,0 +1,497 @@
+{
+ "meta": {
+  "title": "Allah Yang Panggil",
+  "compositionId": "NakSeeHeartDipanggilAllah",
+  "output": "nakseeheart-dipanggil-allah",
+  "source": "v14044g50000d5rp9j7og65rh50g34sg.MP4"
+ },
+ "layout": {
+  "face": {
+   "x": 570,
+   "y": 780
+  },
+  "ceilingY": 270,
+  "ceilingTilt": -20,
+  "labelY": 160,
+  "cardY": 1230,
+  "recapY": 330,
+  "subtitleY": 1500,
+  "lowerThirdY": 1610,
+  "hookFocusY": 780,
+  "climaxFocusY": 820
+ },
+ "camera": {
+  "punch": [
+   "selfie",
+   "labbaik",
+   "allahPanggil",
+   "babusSalam",
+   "sunat"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.12,
+   1.2
+  ],
+  "hookZoom": [
+   1.22,
+   1.1,
+   1.16
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 1.8,
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "selfie"
+  },
+  {
+   "kind": "impact",
+   "at": "labbaik",
+   "dur": 1.4,
+   "f": 48,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "allahPanggil",
+   "dur": 2.2,
+   "gain": 0.26
+  },
+  {
+   "kind": "pop",
+   "at": "birAli"
+  },
+  {
+   "kind": "impact",
+   "at": "babusSalam",
+   "dur": 1.3,
+   "f": 50,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "sunat",
+   "dur": 2.0,
+   "gain": 0.22
+  },
+  {
+   "kind": "impact",
+   "at": "broll2.0+0.3",
+   "dur": 1.4,
+   "f": 46,
+   "gain": 0.2
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "PERGI UMRAH & HAJI",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 44,
+   "y": 170
+  },
+  {
+   "type": "text3d",
+   "text": "ALLAH YANG PANGGIL",
+   "at": 1.8,
+   "until": "flashToBody-0.2",
+   "y": 320,
+   "size": 118,
+   "reveal": "punch",
+   "depth": 20,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 2.0,
+   "seed": "hook",
+   "spread": 460,
+   "y": 320
+  },
+  {
+   "type": "ceiling3d",
+   "text": "MAKAM RASULULLAH",
+   "at": "makam-0.2",
+   "until": "selfie-0.15",
+   "size": 110,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SELFIE?",
+   "at": "selfie",
+   "until": "takSelfie-0.15",
+   "size": 190,
+   "fill": "red",
+   "reveal": "punch",
+   "depth": 22
+  },
+  {
+   "type": "chip",
+   "text": "DI DEPAN KUBUR RASULULLAH SAW",
+   "at": "kubur-0.2",
+   "until": "takSelfie-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "TAK ADA SELFIE",
+   "at": "takSelfie",
+   "until": "labbaik-0.15",
+   "size": 130,
+   "depth": 18
+  },
+  {
+   "type": "chip",
+   "text": "BALIK TANPA SEKEPING GAMBAR",
+   "at": "gambar",
+   "until": "labbaik-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "LABBAIK",
+   "at": "labbaik",
+   "until": "dipanggil-0.15",
+   "size": 200,
+   "reveal": "punch",
+   "depth": 24
+  },
+  {
+   "type": "label",
+   "text": "ALLAH PANGGIL, KITA JAWAB",
+   "at": "panggil",
+   "until": "dipanggil-0.15",
+   "y": 160,
+   "size": 40
+  },
+  {
+   "type": "ceiling3d",
+   "text": "TERASA DIPANGGIL",
+   "at": "dipanggil",
+   "until": "duit-0.15",
+   "size": 118,
+   "depth": 18
+  },
+  {
+   "type": "compare",
+   "at": "duit-0.2",
+   "until": "lain-0.1",
+   "arrow": true,
+   "left": {
+    "title": "BUKAN SEBAB",
+    "items": [
+     {
+      "text": "Duit banyak",
+      "at": "duit"
+     },
+     {
+      "text": "Pakej bagus",
+      "at": "pakej"
+     }
+    ]
+   },
+   "right": {
+    "title": "TETAPI",
+    "good": true,
+    "items": [
+     {
+      "text": "Allah yang panggil",
+      "at": "allahPanggil"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BUKAN SEBAB DUIT",
+   "at": "duit",
+   "until": "allahPanggil-0.15",
+   "size": 118,
+   "fill": "red",
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ALLAH YANG PANGGIL",
+   "at": "allahPanggil",
+   "until": "jemaah-0.15",
+   "size": 118,
+   "reveal": "punch",
+   "depth": 22
+  },
+  {
+   "type": "burst",
+   "at": "allahPanggil+0.3",
+   "seed": "panggil",
+   "spread": 480
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SEORANG JEMAAH",
+   "at": "jemaah-0.2",
+   "until": "broll1.0-0.1",
+   "size": 135,
+   "depth": 18
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "broll1.0",
+   "to": "broll1.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "SAMPAI BALIK",
+     "at": "broll1.0+0.2",
+     "until": "broll1.1-0.1",
+     "y": 260,
+     "size": 46
+    },
+    {
+     "type": "text3d",
+     "text": "TAK ADA SHOPPING",
+     "at": "broll1.0+0.3",
+     "until": "broll1.1-0.1",
+     "y": 420,
+     "size": 115,
+     "depth": 18,
+     "rotX": 8
+    },
+    {
+     "type": "label",
+     "text": "TIAP HARI DI MASJID…",
+     "at": "tiapHari-0.1",
+     "until": "broll1.1-0.1",
+     "y": 580,
+     "size": 46
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "MENANGIS",
+   "at": "broll1.1",
+   "until": "madinah-0.15",
+   "size": 180,
+   "depth": 22
+  },
+  {
+   "type": "heart",
+   "at": "menangis",
+   "until": "madinah-0.15",
+   "x": 900,
+   "y": 560,
+   "size": 80
+  },
+  {
+   "type": "ceiling3d",
+   "text": "IKUT CARA NABI",
+   "at": "caraNabi-0.1",
+   "until": "malikFahad-0.15",
+   "size": 130,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "MADINAH",
+   "at": "madinah",
+   "until": "caraNabi-0.15",
+   "size": 170,
+   "depth": 20
+  },
+  {
+   "type": "progress",
+   "at": "madinah-0.2",
+   "until": "malikFahad-0.15",
+   "items": [
+    {
+     "text": "MADINAH",
+     "at": "madinah"
+    },
+    {
+     "text": "MIQAT BIR ALI",
+     "at": "birAli"
+    },
+    {
+     "text": "MAKKAH",
+     "at": "menuju"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PINTU PALING BELAKANG",
+   "at": "malikFahad",
+   "until": "babusSalam-0.15",
+   "size": 96,
+   "depth": 16
+  },
+  {
+   "type": "chip",
+   "text": "JEMAAH MARAH: “KENAPA PERGI BELAKANG?”",
+   "at": "marah",
+   "until": "babusSalam-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BABUS SALAM",
+   "at": "babusSalam",
+   "until": "nawawi-0.15",
+   "size": 165,
+   "reveal": "punch",
+   "depth": 22
+  },
+  {
+   "type": "burst",
+   "at": "babusSalam+0.3",
+   "seed": "babus",
+   "spread": 480
+  },
+  {
+   "type": "compare",
+   "at": "caraNabi2-0.2",
+   "until": "nawawi-0.15",
+   "arrow": false,
+   "left": {
+    "title": "PINTU NABI",
+    "good": true,
+    "items": [
+     {
+      "text": "Babus Salam",
+      "at": "babusSalam2"
+     }
+    ]
+   },
+   "right": {
+    "title": "ZAMAN NABI TIADA",
+    "items": [
+     {
+      "text": "Pintu Malik Fahad",
+      "at": "zamanNabi-0.5"
+     },
+     {
+      "text": "Pintu Malik Abdul Aziz",
+      "at": "zamanNabi"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ceiling3d",
+   "text": "IMAM AN-NAWAWI",
+   "at": "nawawi",
+   "until": "sunat-0.15",
+   "size": 130,
+   "depth": 18
+  },
+  {
+   "type": "chip",
+   "text": "DITEGUR OLEH SEORANG BUDAK",
+   "at": "budak",
+   "until": "kitab-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "quote",
+   "text": "Sunat masuk Masjidil Haram ikut pintu Babus Salam.",
+   "at": "sunat",
+   "until": "broll2.0-0.1",
+   "y": 1240,
+   "size": 56
+  },
+  {
+   "type": "label",
+   "text": "— KITAB IMAM AN-NAWAWI",
+   "at": "kitab",
+   "until": "broll2.0-0.1",
+   "y": 160,
+   "size": 40
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SUNAT",
+   "at": "sunat",
+   "until": "broll2.0-0.1",
+   "size": 180,
+   "depth": 20
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "broll2.0",
+   "to": "broll2.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "IMAM AN-NAWAWI",
+     "at": "broll2.0+0.2",
+     "until": "broll2.1-0.1",
+     "y": 260,
+     "size": 46
+    },
+    {
+     "type": "text3d",
+     "text": "MALU",
+     "at": "broll2.0+0.3",
+     "until": "broll2.1-0.1",
+     "y": 420,
+     "size": 190,
+     "depth": 22,
+     "rotX": 8
+    },
+    {
+     "type": "label",
+     "text": "KITAB TU DIA YANG TULIS",
+     "at": "tulis-0.1",
+     "until": "broll2.1-0.1",
+     "y": 590,
+     "size": 48
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BUDAK TAK KENAL DIA",
+   "at": "broll2.1",
+   "until": "cta-0.05",
+   "size": 110,
+   "depth": 18
+  }
+ ],
+ "cover": {
+  "frame": 64.3,
+  "kicker": "UMRAH & HAJI",
+  "big": "DIPANGGIL",
+  "line2": "BUKAN SEBAB DUIT ATAU PAKEJ",
+  "tag": "Allah yang panggil",
+  "bigSize": 220,
+  "line2Size": 78
+ },
+ "poster": {
+  "icon": "star",
+  "top": "PERGI UMRAH",
+  "mid": "SEBAB DUIT?",
+  "last": "ALLAH YANG PANGGIL",
+  "banner": "Ikut cara Nabi masuk Masjidil Haram!",
+  "num": "3",
+  "numLabel": "Langkah Ikut Nabi",
+  "frame": 64.3,
+  "headTop": 330,
+  "chinY": 1000,
+  "faceX": 560
+ }
+}
