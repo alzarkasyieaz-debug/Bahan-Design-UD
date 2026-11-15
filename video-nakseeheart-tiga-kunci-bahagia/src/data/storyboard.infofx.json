@@ -1,0 +1,308 @@
+{
+ "meta": {
+  "title": "3 Kunci Rasa Bahagia",
+  "compositionId": "NakSeeHeartTigaKunciBahagia",
+  "output": "nakseeheart-tiga-kunci-bahagia-infofx",
+  "source": "IMG_0797.MOV"
+ },
+ "layout": {
+  "face": {
+   "x": 675,
+   "y": 860
+  },
+  "ceilingY": 330,
+  "ceilingTilt": -20,
+  "labelY": 150,
+  "cardY": 540,
+  "recapY": 360,
+  "subtitleY": 1500,
+  "lowerThirdY": 1600,
+  "hookFocusY": 860,
+  "climaxFocusY": 900
+ },
+ "camera": {
+  "punch": [
+   "pertama",
+   "kedua",
+   "ketiga",
+   "hargailah"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.14,
+   1.22
+  ],
+  "hookZoom": [
+   1.24,
+   1.12,
+   1.18
+  ]
+ },
+ "subtitleCalm": [
+  [
+   "tigaPerkara",
+   "hargailah"
+  ]
+ ],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 0.3,
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "tiga"
+  },
+  {
+   "kind": "pop",
+   "at": "pertama"
+  },
+  {
+   "kind": "pop",
+   "at": "kedua"
+  },
+  {
+   "kind": "pop",
+   "at": "ketiga"
+  },
+  {
+   "kind": "shimmer",
+   "at": "hargailah",
+   "dur": 2.0,
+   "gain": 0.24
+  },
+  {
+   "kind": "impact",
+   "at": "kunci",
+   "dur": 1.4,
+   "f": 46,
+   "gain": 0.22
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "KELUARGA • SAHABAT • JIRAN",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 40,
+   "y": 160
+  },
+  {
+   "type": "text3d",
+   "text": "HARGAILAH MEREKA",
+   "at": 0.3,
+   "until": "flashToBody-0.2",
+   "y": 320,
+   "size": 120,
+   "reveal": "punch",
+   "depth": 18,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 2.6,
+   "seed": "hook",
+   "spread": 460,
+   "y": 320
+  },
+  {
+   "type": "badge",
+   "n": "01",
+   "caption": "KELUARGA YANG BAIK",
+   "at": "pertama",
+   "until": "kedua-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KELUARGA",
+   "at": "keluarga-0.1",
+   "until": "kedua-0.15",
+   "size": 170,
+   "depth": 20
+  },
+  {
+   "type": "badge",
+   "n": "02",
+   "caption": "SAHABAT YANG BAIK",
+   "at": "kedua",
+   "until": "ketiga-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SAHABAT",
+   "at": "sahabat-0.1",
+   "until": "susah-0.7",
+   "size": 180,
+   "depth": 20
+  },
+  {
+   "type": "badge",
+   "n": "03",
+   "caption": "JIRAN YANG BAIK",
+   "at": "ketiga",
+   "until": "tigaPerkara-0.1"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "JIRAN & KOMUNITI",
+   "at": "jiran-0.1",
+   "until": "tigaPerkara-0.15",
+   "size": 118,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "HARGAILAH MEREKA",
+   "at": "hargailah",
+   "until": "golongan-0.15",
+   "size": 120,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "heart",
+   "at": "kunci",
+   "until": "seketika",
+   "x": 900,
+   "y": 540,
+   "size": 84
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KUNCI NIKMAT BAHAGIA",
+   "at": "golongan-0.1",
+   "until": "cta-0.05",
+   "size": 110,
+   "depth": 18
+  },
+  {
+   "type": "burst",
+   "at": "kunci",
+   "seed": "kunci",
+   "spread": 480
+  },
+  {
+   "type": "iconcards",
+   "at": "tigaPerkara",
+   "until": "hargailah-0.15",
+   "title": "3 KUNCI BAHAGIA",
+   "items": [
+    {
+     "icon": "family",
+     "text": "Keluarga yang baik",
+     "tag": "KUNCI 1",
+     "at": "tigaPerkara+0.2"
+    },
+    {
+     "icon": "users",
+     "text": "Sahabat yang baik",
+     "tag": "KUNCI 2",
+     "at": "tigaPerkara+0.7"
+    },
+    {
+     "icon": "home",
+     "text": "Jiran yang baik",
+     "tag": "KUNCI 3",
+     "at": "tigaPerkara+1.2"
+    }
+   ],
+   "y": 560
+  },
+  {
+   "type": "notify",
+   "at": "susah-0.6",
+   "until": "ketiga-0.15",
+   "badge": "+1",
+   "items": [
+    {
+     "app": "SAHABAT",
+     "icon": "chat",
+     "title": "Ali:",
+     "text": "Kau okay? Aku datang sekarang.",
+     "time": "kini",
+     "at": "susah",
+     "tone": "teal"
+    },
+    {
+     "app": "SAHABAT",
+     "icon": "heart",
+     "title": "Ali:",
+     "text": "Tahniah! Aku tumpang gembira",
+     "time": "2m",
+     "at": "senang",
+     "tone": "gold"
+    },
+    {
+     "app": "PANGGILAN",
+     "icon": "phone",
+     "title": "Ali",
+     "text": "menelefon…",
+     "time": "",
+     "at": "tetapAda",
+     "tone": "charcoal"
+    }
+   ],
+   "y": 470
+  },
+  {
+   "type": "pills",
+   "at": "melengkapi-0.4",
+   "until": "kedua-0.15",
+   "step": "KUNCI 1",
+   "lines": [
+    {
+     "text": "Saling *melengkapi*",
+     "at": "melengkapi"
+    },
+    {
+     "text": "Beri *kerjasama*",
+     "at": "kerjasama"
+    }
+   ]
+  },
+  {
+   "type": "neontag",
+   "text": "HARGAILAH MEREKA",
+   "at": "golongan",
+   "until": "cta-0.1"
+  },
+  {
+   "type": "bigword",
+   "text": "bahagia",
+   "at": "bahagia-0.6",
+   "until": "pertama-0.15",
+   "y": 300,
+   "color": "#D8B46A"
+  }
+ ],
+ "cover": {
+  "frame": 40.0,
+  "kicker": "RAHSIA BAHAGIA",
+  "big": "3 KUNCI",
+  "line2": "KELUARGA • SAHABAT • JIRAN",
+  "tag": "Hargailah mereka",
+  "bigSize": 240,
+  "line2Size": 80
+ },
+ "poster": {
+  "icon": "heart",
+  "top": "NAK HIDUP",
+  "mid": "BAHAGIA?",
+  "last": "HARGAI 3 INI",
+  "banner": "Keluarga, sahabat & jiran!",
+  "num": "3",
+  "numLabel": "Kunci Rasa Bahagia",
+  "frame": 40.0,
+  "headTop": 615,
+  "chinY": 1230,
+  "faceX": 675
+ },
+ "subtitleStyle": "box"
+}

@@ -41,3 +41,6 @@ Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -1
 > Tiga perkara yang buat kita rasa bahagia: keluarga yang baik, sahabat yang baik dan jiran yang baik. Kalau ada, hargailah mereka. 🤍
 > Follow @NakSeeHeart untuk nasihat ringkas, makna mendalam.
 > #bahagia #keluarga #sahabat #jiran #nasihat #nakseeheart #fyp
+
+## Versi Info FX (v2)
+[`out/nakseeheart-tiga-kunci-bahagia-infofx.mp4`](out/nakseeheart-tiga-kunci-bahagia-infofx.mp4) (86.3 s, termasuk cover 1 s): demo Info FX dengan kad ikon 3D (3 kunci), notifikasi sahabat, pil KUNCI 1, tag neon ✓ HARGAILAH MEREKA, perkataan gergasi "bahagia" dan subtitle karaoke berkotak. Storyboard: `src/data/storyboard.infofx.json`. Mesej dalam kad notifikasi hanyalah ilustrasi, bukan ucapan penceramah.
