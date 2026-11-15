@@ -1,0 +1,29 @@
+{
+  "name": "nakseeheart-style-qoute-interaktif",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NakSeeHeart — templat style \"Qoute Interaktif\" (video nasihat sinematik 9:16)",
+  "scripts": {
+    "prep": "bash scripts/prepare_media.sh",
+    "subs": "python3 scripts/build_subtitles.py",
+    "audio": "python3 scripts/generate_audio.py",
+    "studio": "remotion studio",
+    "still": "bash scripts/render.sh still",
+    "render": "bash scripts/render.sh",
+    "cover": "bash scripts/cover.sh",
+    "color": "bash scripts/normalize_color.sh"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.542",
+    "@remotion/fonts": "4.0.542",
+    "remotion": "4.0.542",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@fontsource/cinzel": "^5.2.5",
+    "@fontsource/montserrat": "^5.2.5",
+    "@types/react": "19.1.0",
+    "typescript": "^5.6.0"
+  }
+}

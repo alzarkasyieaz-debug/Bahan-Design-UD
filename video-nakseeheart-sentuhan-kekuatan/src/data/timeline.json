@@ -1,0 +1,108 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "IMG_6052.MOV (73.27 s, 3840x2160 H.264 diputar -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    3.45
+   ],
+   "src": 61.5,
+   "srcEnd": 64.95
+  },
+  {
+   "id": "s1",
+   "out": [
+    3.45,
+    8.1
+   ],
+   "src": 3.0,
+   "srcEnd": 7.65
+  },
+  {
+   "id": "s2",
+   "out": [
+    8.1,
+    39.05
+   ],
+   "src": 8.25,
+   "srcEnd": 39.2
+  },
+  {
+   "id": "s3",
+   "out": [
+    39.05,
+    46.1
+   ],
+   "src": 40.1,
+   "srcEnd": 47.15
+  },
+  {
+   "id": "s4",
+   "out": [
+    46.1,
+    58.8
+   ],
+   "src": 47.95,
+   "srcEnd": 60.65
+  },
+  {
+   "id": "s5",
+   "out": [
+    58.8,
+    69.0
+   ],
+   "src": 61.2,
+   "srcEnd": 71.4
+  },
+  {
+   "id": "cta",
+   "out": [
+    69.0,
+    74.5
+   ],
+   "src": 71.2,
+   "srcEnd": 72.4,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "down": 8.1,
+  "lemah": 10.19,
+  "sentuhan": 13.45,
+  "ibuAyah": 19.45,
+  "pelukan": 22.19,
+  "tenang": 25.37,
+  "selamat": 28.09,
+  "indah": 32.33,
+  "perlunya": 35.47,
+  "luarBiasa": 41.21,
+  "suamiIsteri": 44.87,
+  "sentuhan2": 46.21,
+  "saatDown": 50.57,
+  "takKuat": 54.19,
+  "cari": 59.34,
+  "bina": 61.16,
+  "kekuatan": 65.78,
+  "percayalah": 68.18,
+  "climax": [
+   50.45,
+   69.0
+  ],
+  "finale": [
+   62.6,
+   69.0
+  ],
+  "followPulse": [
+   14.0,
+   35.0,
+   55.0
+  ],
+  "flashToBody": 3.45,
+  "cta": 69.0,
+  "end": 74.5
+ }
+}

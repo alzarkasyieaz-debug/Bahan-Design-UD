@@ -1,0 +1,191 @@
+{
+ "source": "IMG_6055.MOV",
+ "maxChars": 46,
+ "gold": [
+  "kekuatan",
+  "fizikal",
+  "keyakinan",
+  "teruji",
+  "diuji",
+  "tersasar",
+  "berpaut",
+  "meluahkan",
+  "doa",
+  "menanti-nanti",
+  "merayu",
+  "bercerita",
+  "mengadu",
+  "hikmah",
+  "tergambar"
+ ],
+ "upper": [
+  "kekuatan",
+  "percayalah"
+ ],
+ "unsure": [
+  [
+   58.2,
+   "[NOTA — “mengadu”: large-v3 “mengandu”, medium “mengandung”; ditulis “mengadu” mengikut maksud]"
+  ],
+  [
+   70.5,
+   "[NOTA — “datangkan” (large-v3); medium “hantarkan”]"
+  ],
+  [
+   1.0,
+   "[DIPENDEKKAN — jeda senyap >1 s; cap masa perkataan daripada model medium]"
+  ]
+ ],
+ "chunks": [
+  [
+   "hook",
+   1.8,
+   4.6,
+   "Kekuatan seorang hamba"
+  ],
+  [
+   "hook",
+   4.6,
+   6.85,
+   "bukan hanya pada fizikal semata-mata,"
+  ],
+  [
+   "s1",
+   1.8,
+   4.6,
+   "Kekuatan seorang hamba"
+  ],
+  [
+   "s1",
+   4.6,
+   7.15,
+   "bukan hanya pada fizikal semata-mata,"
+  ],
+  [
+   "s2",
+   7.7,
+   10.6,
+   "tetapi kekuatan seorang hamba"
+  ],
+  [
+   "s2",
+   10.6,
+   16.7,
+   "adalah sejauh mana kita meletakkan keyakinan kepada Allah Ta'ala"
+  ],
+  [
+   "s2",
+   16.7,
+   20.1,
+   "saat kita teruji dalam kehidupan kita."
+  ],
+  [
+   "s3",
+   20.85,
+   24.2,
+   "Bila mana kita diuji dalam kehidupan,"
+  ],
+  [
+   "s3",
+   24.2,
+   29.4,
+   "ketika itu ramai manusia tersasar untuk mencari tempat berpaut,"
+  ],
+  [
+   "s3",
+   29.4,
+   33.35,
+   "tersasar untuk mencari tempat untuk meluahkan rasa."
+  ],
+  [
+   "s4",
+   33.85,
+   36.2,
+   "Dan ketika itu sebenarnya"
+  ],
+  [
+   "s4",
+   36.2,
+   40.0,
+   "Allah SWT menunggu-nunggu doa daripada kita."
+  ],
+  [
+   "s5",
+   40.4,
+   44.6,
+   "Allah Ta'ala menanti-nanti siapakah hamba-Nya,"
+  ],
+  [
+   "s5",
+   44.6,
+   50.2,
+   "siapakah makhluk-Nya yang merayu dan meminta kepada-Nya."
+  ],
+  [
+   "s6",
+   50.6,
+   54.2,
+   "Maka ketika itulah sebenarnya peluang"
+  ],
+  [
+   "s6",
+   54.2,
+   57.3,
+   "untuk kita bercerita dengan Allah Ta'ala,"
+  ],
+  [
+   "s6",
+   57.3,
+   59.8,
+   "untuk kita mengadu dengan Allah Ta'ala"
+  ],
+  [
+   "s6",
+   59.8,
+   63.35,
+   "setiap satu ujian yang datang tanpa henti dalam kehidupan kita."
+  ],
+  [
+   "s7",
+   64.25,
+   68.9,
+   "Dan hakikatnya, selepas kita melalui fasa-fasa ujian,"
+  ],
+  [
+   "s7",
+   68.9,
+   71.5,
+   "Allah Ta'ala akan datangkan hikmah"
+  ],
+  [
+   "s7",
+   71.5,
+   72.9,
+   "yang tidak tergambar"
+  ],
+  [
+   "s8",
+   73.95,
+   75.5,
+   "oleh kita,"
+  ],
+  [
+   "s8",
+   75.5,
+   78.6,
+   "hikmahnya yang akan datang kemudian,"
+  ],
+  [
+   "s8",
+   78.6,
+   81.65,
+   "selepas mana kita melalui fasa-fasa ujian dalam kehidupan."
+  ],
+  [
+   "s9",
+   82.3,
+   83.5,
+   "Percayalah."
+  ]
+ ]
+}

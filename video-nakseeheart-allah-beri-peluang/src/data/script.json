@@ -1,0 +1,258 @@
+{
+ "source": "IMG_2191.MOV",
+ "maxChars": 46,
+ "gold": [
+  "peluang",
+  "membetulkan",
+  "kesilapan",
+  "menyayangi",
+  "kekhilafan",
+  "ruang",
+  "putus",
+  "asa",
+  "gagal",
+  "menunggu",
+  "doa-doa",
+  "bercerita",
+  "berkongsi",
+  "mengadu",
+  "keyakinan",
+  "ketaatan",
+  "mensia-siakan",
+  "mampu"
+ ],
+ "upper": [
+  "jangan",
+  "percayalah"
+ ],
+ "chunks": [
+  [
+   "hook",
+   74.6,
+   78.25,
+   "Kerana Allah SWT sahaja tempat yang paling terbaik"
+  ],
+  [
+   "s1",
+   5.5,
+   9.7,
+   "Allah SWT sentiasa memberikan hamba-Nya peluang,"
+  ],
+  [
+   "s1",
+   9.7,
+   14.6,
+   "dan peluang untuk terus membetulkan kesilapan yang kita pernah lakukan,"
+  ],
+  [
+   "s2",
+   15.25,
+   18.75,
+   "tidak kira sama ada perkara tersebut disengajakan"
+  ],
+  [
+   "s2",
+   18.75,
+   20.4,
+   "ataupun sebaliknya."
+  ],
+  [
+   "s3",
+   20.9,
+   26.1,
+   "Dan perkara ini adalah sangat memberikan satu ingatan kepada kita"
+  ],
+  [
+   "s3",
+   26.1,
+   26.6,
+   "bahawa"
+  ],
+  [
+   "s4",
+   27.0,
+   30.1,
+   "Allah SWT Maha Menyayangi kita,"
+  ],
+  [
+   "s5",
+   30.95,
+   32.55,
+   "dan sayang kepada hamba-hamba Dia."
+  ],
+  [
+   "s6",
+   33.35,
+   36.3,
+   "Walau sebanyak mana pun kekhilafan kita,"
+  ],
+  [
+   "s6",
+   36.3,
+   38.1,
+   "Allah masih beri ruang untuk"
+  ],
+  [
+   "s7",
+   38.6,
+   39.75,
+   "kita perbaiki kekhilafan tersebut,"
+  ],
+  [
+   "s8",
+   40.8,
+   42.4,
+   "sebagai seorang hamba,"
+  ],
+  [
+   "s9",
+   42.85,
+   45.0,
+   "sebagai seorang manusia."
+  ],
+  [
+   "s9",
+   45.0,
+   48.5,
+   "Jangan pernah sesekali kita berputus asa dalam hidup,"
+  ],
+  [
+   "s10",
+   49.1,
+   51.2,
+   "walaupun kerap kali kita gagal dalam hidup,"
+  ],
+  [
+   "s11",
+   52.0,
+   56.7,
+   "walaupun kerap kali kita berhadapan dengan pelbagai… masalah dalam kehidupan,"
+  ],
+  [
+   "s12",
+   57.45,
+   61.6,
+   "kerana setiap perkara yang Allah SWT aturkan kepada kita,"
+  ],
+  [
+   "s12",
+   61.6,
+   64.3,
+   "Allah SWT nak kita tahu"
+  ],
+  [
+   "s12",
+   64.3,
+   66.6,
+   "yang Allah SWT sentiasa menunggu kita,"
+  ],
+  [
+   "s12",
+   66.6,
+   68.6,
+   "menunggu doa-doa kita,"
+  ],
+  [
+   "s12",
+   68.6,
+   70.95,
+   "untuk kita bercerita dengan Allah SWT,"
+  ],
+  [
+   "s13",
+   71.6,
+   73.45,
+   "untuk kita berkongsi dengan Allah SWT,"
+  ],
+  [
+   "s14",
+   74.4,
+   78.4,
+   "kerana Allah SWT sahaja tempat yang paling terbaik"
+  ],
+  [
+   "s15",
+   78.9,
+   84.4,
+   "untuk kita mengadu, bercerita segala perkara yang berlaku dalam kehidupan kita."
+  ],
+  [
+   "s15",
+   84.4,
+   87.4,
+   "Dan insyaAllah, dengan keyakinan tersebut,"
+  ],
+  [
+   "s15",
+   87.4,
+   89.4,
+   "Allah SWT akan bantu kita,"
+  ],
+  [
+   "s15",
+   89.4,
+   93.7,
+   "Allah SWT akan berikan kita … dalam setiap permasalahan kehidupan kita."
+  ],
+  [
+   "s16",
+   94.75,
+   96.0,
+   "Yang penting,"
+  ],
+  [
+   "s16",
+   96.0,
+   98.3,
+   "jaga ketaatan kita kepada Allah SWT,"
+  ],
+  [
+   "s16",
+   98.3,
+   100.8,
+   "jaga keyakinan kita kepada Allah SWT,"
+  ],
+  [
+   "s16",
+   100.8,
+   103.95,
+   "kerana Allah SWT tidak pernah mensia-siakan hamba Dia."
+  ],
+  [
+   "s17",
+   104.75,
+   107.6,
+   "Bahkan setiap ujian Allah SWT bagi,"
+  ],
+  [
+   "s17",
+   107.6,
+   111.6,
+   "Allah SWT tahu kita mampu untuk lalui ke ujian tersebut."
+  ],
+  [
+   "s17",
+   111.6,
+   113.0,
+   "Percayalah."
+  ]
+ ],
+ "unsure": [
+  [
+   92.3,
+   "[TIDAK PASTI ~91.8–92.6 s — “dalam koralah/kuralah”: tidak dapat disahkan; dipaparkan “…”]"
+  ],
+  [
+   54.5,
+   "[NOTA ~53–56 s — large-v3 “pelbagai manusia, masalah”, medium “masalah”; dipaparkan “pelbagai… masalah”]"
+  ],
+  [
+   96.4,
+   "[NOTA — “ketaatan” (large-v3); medium “ketakutan”]"
+  ],
+  [
+   1.0,
+   "[DIPENDEKKAN — jeda senyap >1 s; cap masa perkataan daripada model medium (medium tertinggal ~74–79 s, subtitle di situ diagih mengikut masa klip)]"
+  ]
+ ]
+}

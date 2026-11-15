@@ -1,0 +1,126 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "IMG_6655.mov (81.01 s, 1920x1080 HEVC diputar -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    5.0
+   ],
+   "src": 36.0,
+   "srcEnd": 41.0
+  },
+  {
+   "id": "s1",
+   "out": [
+    5.0,
+    14.5
+   ],
+   "src": 3.8,
+   "srcEnd": 13.3
+  },
+  {
+   "id": "s2",
+   "out": [
+    14.5,
+    16.8
+   ],
+   "src": 14.25,
+   "srcEnd": 16.55
+  },
+  {
+   "id": "s3",
+   "out": [
+    16.8,
+    22.75
+   ],
+   "src": 17.05,
+   "srcEnd": 23.0
+  },
+  {
+   "id": "s4",
+   "out": [
+    22.75,
+    28.25
+   ],
+   "src": 23.45,
+   "srcEnd": 28.95
+  },
+  {
+   "id": "s5",
+   "out": [
+    28.25,
+    45.35
+   ],
+   "src": 29.35,
+   "srcEnd": 46.45
+  },
+  {
+   "id": "s6",
+   "out": [
+    45.35,
+    70.2
+   ],
+   "src": 47.0,
+   "srcEnd": 71.85
+  },
+  {
+   "id": "s7",
+   "out": [
+    70.2,
+    77.5
+   ],
+   "src": 72.3,
+   "srcEnd": 79.6
+  },
+  {
+   "id": "cta",
+   "out": [
+    77.5,
+    83.0
+   ],
+   "src": 79.5,
+   "srcEnd": 80.7,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 5.0,
+  "pilihan": 13.48,
+  "memilih": 21.59,
+  "pilihlah": 22.63,
+  "bahagiakan": 26.92,
+  "kebaikan": 33.1,
+  "syurga": 39.2,
+  "bimbingan": 42.5,
+  "agama": 44.02,
+  "sederhana": 46.43,
+  "paksi": 48.97,
+  "tercipta": 51.49,
+  "kemewahan": 55.99,
+  "kesenangan": 58.57,
+  "ditinggalkan": 60.73,
+  "sunnah": 62.39,
+  "sementara": 67.67,
+  "kehendak": 72.4,
+  "percayalah": 76.74,
+  "climax": [
+   45.35,
+   53.35
+  ],
+  "finale": [
+   62.35,
+   77.5
+  ],
+  "cta": 77.5,
+  "end": 83.0,
+  "followPulse": [
+   15.0,
+   40.0,
+   62.0
+  ]
+ }
+}

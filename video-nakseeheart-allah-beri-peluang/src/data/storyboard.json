@@ -1,0 +1,307 @@
+{
+ "meta": {
+  "title": "Allah Sentiasa Beri Peluang",
+  "compositionId": "NakSeeHeartAllahBeriPeluang",
+  "output": "nakseeheart-allah-beri-peluang",
+  "source": "IMG_2191.MOV"
+ },
+ "layout": {
+  "face": {
+   "x": 540,
+   "y": 1050
+  },
+  "ceilingY": 280,
+  "ceilingTilt": -20,
+  "labelY": 150,
+  "cardY": 480,
+  "recapY": 340,
+  "subtitleY": 1500,
+  "lowerThirdY": 1600,
+  "hookFocusY": 1050,
+  "climaxFocusY": 1090
+ },
+ "camera": {
+  "punch": [
+   "peluang",
+   "jangan",
+   "menunggu",
+   "bantu",
+   "mampu"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.12,
+   1.2
+  ],
+  "hookZoom": [
+   1.22,
+   1.1,
+   1.16
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 0.3,
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "peluang"
+  },
+  {
+   "kind": "impact",
+   "at": "jangan",
+   "dur": 1.3,
+   "f": 46,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "doa"
+  },
+  {
+   "kind": "shimmer",
+   "at": "tempat",
+   "dur": 2.4,
+   "gain": 0.28
+  },
+  {
+   "kind": "pop",
+   "at": "taat"
+  },
+  {
+   "kind": "pop",
+   "at": "yakin"
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "BILA HATI TERASA BERAT…",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 42,
+   "y": 150
+  },
+  {
+   "type": "text3d",
+   "text": "TEMPAT TERBAIK",
+   "at": 0.3,
+   "until": "flashToBody-0.2",
+   "y": 310,
+   "size": 130,
+   "reveal": "punch",
+   "depth": 18,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 0.5,
+   "seed": "hook",
+   "spread": 460,
+   "y": 310
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PELUANG",
+   "at": "peluang-0.2",
+   "until": "menyayangi-0.6",
+   "size": 180,
+   "depth": 22
+  },
+  {
+   "type": "chip",
+   "text": "UNTUK MEMBETULKAN KESILAPAN",
+   "at": "membetulkan",
+   "until": "menyayangi-0.6",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "MAHA MENYAYANGI",
+   "at": "menyayangi-0.3",
+   "until": "kekhilafan-0.15",
+   "size": 115,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "MASIH ADA RUANG",
+   "at": "ruang-0.3",
+   "until": "jangan-0.15",
+   "size": 120,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "JANGAN PUTUS ASA",
+   "at": "jangan",
+   "until": "aturkan-0.15",
+   "size": 118,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "checklist",
+   "title": "WALAUPUN",
+   "at": "gagal-0.3",
+   "until": "aturkan-0.15",
+   "items": [
+    {
+     "text": "KERAP GAGAL",
+     "at": "gagal"
+    },
+    {
+     "text": "BANYAK MASALAH",
+     "at": "masalah"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ALLAH MENUNGGU",
+   "at": "menunggu-0.3",
+   "until": "brollA.0-0.1",
+   "size": 125,
+   "depth": 18
+  },
+  {
+   "type": "pills",
+   "at": "doa-0.3",
+   "until": "brollA.0-0.1",
+   "y": 500,
+   "lines": [
+    {
+     "text": "Menunggu *doa* kita",
+     "at": "doa"
+    },
+    {
+     "text": "Untuk kita *bercerita*",
+     "at": "bercerita"
+    },
+    {
+     "text": "Untuk kita *berkongsi*",
+     "at": "berkongsi"
+    }
+   ],
+   "size": 46
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "brollA.0",
+   "to": "brollA.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "ALLAH SAHAJA",
+     "at": "brollA.0+0.2",
+     "until": "brollA.1-0.1",
+     "y": 260,
+     "size": 46
+    },
+    {
+     "type": "text3d",
+     "text": "TEMPAT TERBAIK",
+     "at": "tempat",
+     "until": "brollA.1-0.1",
+     "y": 420,
+     "size": 130,
+     "depth": 18,
+     "rotX": 8
+    },
+    {
+     "type": "label",
+     "text": "UNTUK KITA MENGADU",
+     "at": "mengadu-0.2",
+     "until": "brollA.1-0.1",
+     "y": 580,
+     "size": 48
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ALLAH BANTU",
+   "at": "bantu-0.2",
+   "until": "penting-0.15",
+   "size": 150,
+   "depth": 18
+  },
+  {
+   "type": "iconcards",
+   "at": "penting-0.2",
+   "until": "siasia-0.2",
+   "y": 330,
+   "title": "YANG PENTING, JAGA",
+   "items": [
+    {
+     "icon": "shield",
+     "text": "Ketaatan kepada Allah",
+     "tag": "JAGA 1",
+     "at": "taat"
+    },
+    {
+     "icon": "heart",
+     "text": "Keyakinan kepada Allah",
+     "tag": "JAGA 2",
+     "at": "yakin"
+    }
+   ]
+  },
+  {
+   "type": "neontag",
+   "text": "ALLAH TAK SIA-SIAKAN KITA",
+   "at": "siasia",
+   "until": "mampu-0.2",
+   "y": 560
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KITA MAMPU",
+   "at": "mampu-0.3",
+   "until": "percayalah-0.15",
+   "size": 150,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERCAYALAH",
+   "at": "percayalah-0.1",
+   "until": "cta-0.05",
+   "size": 150,
+   "depth": 18
+  }
+ ],
+ "cover": {
+  "frame": 30.0,
+  "kicker": "JANGAN PUTUS ASA",
+  "big": "PELUANG",
+  "line2": "ALLAH SENTIASA MENUNGGU",
+  "tag": "Tempat terbaik mengadu",
+  "bigSize": 220,
+  "line2Size": 82
+ },
+ "poster": {
+  "icon": "heart",
+  "top": "PERNAH BUAT SILAP?",
+  "mid": "ALLAH BERI PELUANG",
+  "last": "JANGAN PUTUS ASA",
+  "banner": "Allah tempat terbaik mengadu!",
+  "num": "2",
+  "numLabel": "Perkara Perlu Dijaga",
+  "frame": 30.0,
+  "headTop": 600,
+  "chinY": 1420,
+  "faceX": 540
+ }
+}

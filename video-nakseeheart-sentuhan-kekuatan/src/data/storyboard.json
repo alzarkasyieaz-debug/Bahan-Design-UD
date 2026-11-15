@@ -1,0 +1,262 @@
+{
+ "meta": {
+  "title": "Sentuhan Yang Menguatkan",
+  "compositionId": "NakSeeHeartSentuhanKekuatan",
+  "output": "nakseeheart-sentuhan-kekuatan",
+  "source": "IMG_6052.MOV"
+ },
+ "layout": {
+  "face": {
+   "x": 560,
+   "y": 1050
+  },
+  "ceilingY": 280,
+  "ceilingTilt": -20,
+  "labelY": 150,
+  "cardY": 490,
+  "recapY": 340,
+  "subtitleY": 1500,
+  "lowerThirdY": 1600,
+  "hookFocusY": 1050,
+  "climaxFocusY": 1090
+ },
+ "camera": {
+  "punch": [
+   "sentuhan",
+   "pelukan",
+   "perlunya",
+   "cari"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.12,
+   1.2
+  ],
+  "hookZoom": [
+   1.22,
+   1.1,
+   1.16
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 0.3,
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "down"
+  },
+  {
+   "kind": "shimmer",
+   "at": "pelukan",
+   "dur": 2.0,
+   "gain": 0.24
+  },
+  {
+   "kind": "pop",
+   "at": "perlunya"
+  },
+  {
+   "kind": "pop",
+   "at": "suamiIsteri"
+  },
+  {
+   "kind": "shimmer",
+   "at": "bina",
+   "dur": 2.0,
+   "gain": 0.24
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "BILA RASA DOWN & LEMAH",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 42,
+   "y": 150
+  },
+  {
+   "type": "text3d",
+   "text": "CARI MEREKA",
+   "at": 0.3,
+   "until": "flashToBody-0.2",
+   "y": 310,
+   "size": 150,
+   "reveal": "punch",
+   "depth": 20,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 0.5,
+   "seed": "hook",
+   "spread": 460,
+   "y": 310
+  },
+  {
+   "type": "bigword",
+   "text": "down",
+   "at": "down-0.1",
+   "until": "sentuhan-0.4",
+   "y": 300,
+   "color": "#D8B46A",
+   "size": 240
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERLUKAN SENTUHAN",
+   "at": "sentuhan-0.2",
+   "until": "pelukan-0.15",
+   "size": 105,
+   "depth": 18
+  },
+  {
+   "type": "chip",
+   "text": "DARIPADA IBU & AYAH KITA",
+   "at": "ibuAyah-0.2",
+   "until": "pelukan-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PELUKAN IBU AYAH",
+   "at": "pelukan-0.2",
+   "until": "perlunya-0.15",
+   "size": 110,
+   "depth": 18
+  },
+  {
+   "type": "pills",
+   "at": "tenang-0.3",
+   "until": "perlunya-0.15",
+   "y": 500,
+   "lines": [
+    {
+     "text": "Rasa *tenang*",
+     "at": "tenang"
+    },
+    {
+     "text": "Rasa *selamat*",
+     "at": "selamat"
+    },
+    {
+     "text": "Momen paling *indah*",
+     "at": "indah"
+    }
+   ],
+   "size": 48
+  },
+  {
+   "type": "ceiling3d",
+   "text": "RASA LUAR BIASA",
+   "at": "luarBiasa-0.3",
+   "until": "saatDown-0.15",
+   "size": 118,
+   "depth": 18
+  },
+  {
+   "type": "iconcards",
+   "at": "perlunya-0.2",
+   "until": "saatDown-0.15",
+   "y": 320,
+   "title": "SENTUHAN YANG MENGUATKAN",
+   "items": [
+    {
+     "icon": "family",
+     "text": "Ibu & ayah",
+     "tag": "ANAK",
+     "at": "perlunya"
+    },
+    {
+     "icon": "heart",
+     "text": "Suami & isteri",
+     "tag": "PASANGAN",
+     "at": "suamiIsteri"
+    }
+   ]
+  },
+  {
+   "type": "checklist",
+   "title": "SAAT KITA",
+   "at": "saatDown-0.2",
+   "until": "cari-0.15",
+   "items": [
+    {
+     "text": "DOWN",
+     "at": "saatDown"
+    },
+    {
+     "text": "LEMAH",
+     "at": "saatDown+1.0"
+    },
+    {
+     "text": "TAK KUAT",
+     "at": "takKuat"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "CARI MEREKA",
+   "at": "cari-0.1",
+   "until": "kekuatan-0.6",
+   "size": 150,
+   "reveal": "punch",
+   "depth": 20
+  },
+  {
+   "type": "neontag",
+   "text": "BINA KEKUATAN BERSAMA",
+   "at": "bina",
+   "until": "percayalah-0.15",
+   "y": 560
+  },
+  {
+   "type": "heart",
+   "at": "kekuatan-0.3",
+   "until": "percayalah-0.15",
+   "x": 900,
+   "y": 300,
+   "size": 84
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERCAYALAH",
+   "at": "percayalah-0.1",
+   "until": "cta-0.05",
+   "size": 150,
+   "depth": 18
+  }
+ ],
+ "cover": {
+  "frame": 25.0,
+  "kicker": "BILA RASA LEMAH",
+  "big": "SENTUHAN",
+  "line2": "IBU AYAH & PASANGAN",
+  "tag": "Bina kekuatan bersama",
+  "bigSize": 200,
+  "line2Size": 82
+ },
+ "poster": {
+  "icon": "heart",
+  "top": "RASA DOWN?",
+  "mid": "CARI MEREKA",
+  "last": "PELUKAN YANG MENGUATKAN",
+  "banner": "Ibu ayah & pasangan!",
+  "num": "2",
+  "numLabel": "Sumber Kekuatan",
+  "frame": 25.0,
+  "headTop": 600,
+  "chinY": 1500,
+  "faceX": 560
+ }
+}

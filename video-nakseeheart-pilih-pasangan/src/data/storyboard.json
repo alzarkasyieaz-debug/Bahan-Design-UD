@@ -1,0 +1,284 @@
+{
+ "meta": {
+  "title": "Pilih Pasangan Yang Menarik ke Syurga",
+  "compositionId": "NakSeeHeartPilihPasangan",
+  "output": "nakseeheart-pilih-pasangan",
+  "source": "IMG_6655.mov"
+ },
+ "layout": {
+  "face": {
+   "x": 330,
+   "y": 990
+  },
+  "ceilingY": 270,
+  "ceilingTilt": -20,
+  "labelY": 150,
+  "cardY": 470,
+  "recapY": 340,
+  "subtitleY": 1500,
+  "lowerThirdY": 1600,
+  "hookFocusY": 990,
+  "climaxFocusY": 1030
+ },
+ "camera": {
+  "punch": [
+   "pilihlah",
+   "syurga",
+   "paksi",
+   "sementara"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.12,
+   1.2
+  ],
+  "hookZoom": [
+   1.22,
+   1.1,
+   1.16
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 2.4,
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "pilihlah"
+  },
+  {
+   "kind": "shimmer",
+   "at": "syurga",
+   "dur": 2.0,
+   "gain": 0.24
+  },
+  {
+   "kind": "pop",
+   "at": "paksi"
+  },
+  {
+   "kind": "impact",
+   "at": "sementara",
+   "dur": 1.4,
+   "f": 44,
+   "gain": 0.22
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "MEMILIH PASANGAN?",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 44,
+   "y": 150
+  },
+  {
+   "type": "text3d",
+   "text": "MENARIK KE SYURGA",
+   "at": 2.4,
+   "until": "flashToBody-0.2",
+   "y": 310,
+   "size": 118,
+   "reveal": "punch",
+   "depth": 18,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 2.6,
+   "seed": "hook",
+   "spread": 460,
+   "y": 310
+  },
+  {
+   "type": "ceiling3d",
+   "text": "SEBUAH PILIHAN",
+   "at": "pilihan-0.3",
+   "until": "memilih-0.6",
+   "size": 125,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "MEMILIH PASANGAN",
+   "at": "memilih-0.4",
+   "until": "pilihlah-0.1",
+   "size": 110,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PILIHLAH PASANGAN",
+   "at": "pilihlah",
+   "until": "syurga-1.2",
+   "size": 110,
+   "depth": 18
+  },
+  {
+   "type": "compare",
+   "at": "bahagiakan-0.3",
+   "until": "syurga-1.2",
+   "arrow": true,
+   "left": {
+    "title": "BUKAN SAHAJA",
+    "items": [
+     {
+      "text": "Membahagiakan",
+      "at": "bahagiakan"
+     }
+    ]
+   },
+   "right": {
+    "title": "TETAPI",
+    "good": true,
+    "items": [
+     {
+      "text": "Membawa ke kebaikan",
+      "at": "kebaikan"
+     }
+    ]
+   }
+  },
+  {
+   "type": "iconcards",
+   "at": "syurga-0.9",
+   "until": "sederhana-0.2",
+   "y": 330,
+   "items": [
+    {
+     "icon": "shield",
+     "text": "Bawa ke kebaikan",
+     "tag": "01",
+     "at": "syurga-0.8"
+    },
+    {
+     "icon": "mosque",
+     "text": "Tarik ke syurga",
+     "tag": "02",
+     "at": "syurga"
+    },
+    {
+     "icon": "book",
+     "text": "Bimbing agama",
+     "tag": "03",
+     "at": "bimbingan"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "HIDUP SEDERHANA",
+   "at": "sederhana-0.1",
+   "until": "paksi-0.1",
+   "size": 120,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "neontag",
+   "text": "AGAMA JADI PAKSI",
+   "at": "paksi",
+   "until": "kemewahan-0.2",
+   "y": 560
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BAHAGIA TERCIPTA",
+   "at": "tercipta-0.2",
+   "until": "kemewahan-0.2",
+   "size": 118,
+   "depth": 18
+  },
+  {
+   "type": "compare",
+   "at": "kemewahan-0.3",
+   "until": "sementara-0.2",
+   "arrow": false,
+   "left": {
+    "title": "MEMILIH",
+    "items": [
+     {
+      "text": "Kemewahan",
+      "at": "kemewahan"
+     },
+     {
+      "text": "Kesenangan",
+      "at": "kesenangan"
+     }
+    ]
+   },
+   "right": {
+    "title": "TETAPI",
+    "items": [
+     {
+      "text": "Agama ditinggalkan",
+      "at": "ditinggalkan"
+     },
+     {
+      "text": "Sunnah diabaikan",
+      "at": "sunnah"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KEMEWAHAN?",
+   "at": "kemewahan",
+   "until": "sementara-0.2",
+   "size": 140,
+   "fill": "red",
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BAHAGIA SEMENTARA",
+   "at": "sementara",
+   "until": "percayalah-0.15",
+   "size": 105,
+   "fill": "red",
+   "reveal": "punch",
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERCAYALAH",
+   "at": "percayalah-0.1",
+   "until": "cta-0.05",
+   "size": 150,
+   "depth": 18
+  }
+ ],
+ "cover": {
+  "frame": 25.0,
+  "kicker": "MEMILIH PASANGAN",
+  "big": "PASANGAN",
+  "line2": "YANG MENARIK KE SYURGA",
+  "tag": "Agama jadi paksi",
+  "bigSize": 200,
+  "line2Size": 80
+ },
+ "poster": {
+  "icon": "heart",
+  "top": "PILIH PASANGAN",
+  "mid": "MACAM MANA?",
+  "last": "YANG BAWA KE SYURGA",
+  "banner": "Agama jadi paksi!",
+  "num": "3",
+  "numLabel": "Ciri Pasangan Terbaik",
+  "frame": 25.0,
+  "headTop": 560,
+  "chinY": 1310,
+  "faceX": 330
+ }
+}

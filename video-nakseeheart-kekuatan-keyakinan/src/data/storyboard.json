@@ -1,0 +1,296 @@
+{
+ "meta": {
+  "title": "Kekuatan Hamba Ialah Keyakinan",
+  "compositionId": "NakSeeHeartKekuatanKeyakinan",
+  "output": "nakseeheart-kekuatan-keyakinan",
+  "source": "IMG_6055.MOV"
+ },
+ "layout": {
+  "face": {
+   "x": 550,
+   "y": 1050
+  },
+  "ceilingY": 280,
+  "ceilingTilt": -20,
+  "labelY": 150,
+  "cardY": 490,
+  "recapY": 340,
+  "subtitleY": 1500,
+  "lowerThirdY": 1600,
+  "hookFocusY": 1050,
+  "climaxFocusY": 1090
+ },
+ "camera": {
+  "punch": [
+   "keyakinan",
+   "tersasar",
+   "menunggu",
+   "peluang"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.12,
+   1.2
+  ],
+  "hookZoom": [
+   1.22,
+   1.1,
+   1.16
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 2.4,
+   "dur": 1.2,
+   "f": 50,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "keyakinan"
+  },
+  {
+   "kind": "pop",
+   "at": "berpaut"
+  },
+  {
+   "kind": "pop",
+   "at": "meluahkan"
+  },
+  {
+   "kind": "shimmer",
+   "at": "menunggu",
+   "dur": 1.8,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "hikmah",
+   "dur": 2.4,
+   "gain": 0.28
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "KEKUATAN SEORANG HAMBA",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 42,
+   "y": 150
+  },
+  {
+   "type": "text3d",
+   "text": "BUKAN FIZIKAL",
+   "at": 2.4,
+   "until": "flashToBody-0.2",
+   "y": 310,
+   "size": 135,
+   "fill": "red",
+   "reveal": "punch",
+   "depth": 18,
+   "float": false
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KEKUATAN HAMBA",
+   "at": 5.2,
+   "until": "tetapi-0.15",
+   "size": 120,
+   "depth": 18
+  },
+  {
+   "type": "compare",
+   "at": "fizikal-0.3",
+   "until": "teruji",
+   "arrow": true,
+   "left": {
+    "title": "BUKAN SAHAJA",
+    "items": [
+     {
+      "text": "Fizikal",
+      "at": "fizikal"
+     }
+    ]
+   },
+   "right": {
+    "title": "TETAPI",
+    "good": true,
+    "items": [
+     {
+      "text": "Keyakinan kepada Allah",
+      "at": "keyakinan"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KEYAKINAN",
+   "at": "keyakinan-0.1",
+   "until": "diuji-0.15",
+   "size": 170,
+   "reveal": "punch",
+   "depth": 22
+  },
+  {
+   "type": "ceiling3d",
+   "text": "RAMAI TERSASAR",
+   "at": "tersasar-0.2",
+   "until": "menunggu-0.6",
+   "size": 120,
+   "fill": "red",
+   "depth": 18
+  },
+  {
+   "type": "notify",
+   "at": "tersasar",
+   "until": "menunggu-0.6",
+   "y": 520,
+   "items": [
+    {
+     "app": "MESEJ",
+     "icon": "chat",
+     "title": "Luah perasaan…",
+     "text": "pada manusia",
+     "time": "kini",
+     "at": "berpaut",
+     "tone": "charcoal"
+    },
+    {
+     "app": "MEDIA SOSIAL",
+     "icon": "phone",
+     "title": "Cari tempat",
+     "text": "untuk berpaut",
+     "time": "1m",
+     "at": "meluahkan",
+     "tone": "red"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "ALLAH MENUNGGU",
+   "at": "menunggu-0.3",
+   "until": "peluang-0.15",
+   "size": 125,
+   "depth": 18
+  },
+  {
+   "type": "pills",
+   "at": "doa-0.2",
+   "until": "peluang-0.15",
+   "y": 500,
+   "lines": [
+    {
+     "text": "Menunggu *doa* kita",
+     "at": "doa"
+    },
+    {
+     "text": "Menanti hamba yang *merayu*",
+     "at": "merayu"
+    }
+   ],
+   "size": 46
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PELUANG KITA",
+   "at": "peluang-0.1",
+   "until": "hakikat-0.15",
+   "size": 135,
+   "depth": 18
+  },
+  {
+   "type": "neontag",
+   "text": "BERCERITALAH DENGAN ALLAH",
+   "at": "bercerita",
+   "until": "hakikat-0.15",
+   "y": 560
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "brollA.0",
+   "to": "brollA.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "SELEPAS FASA UJIAN",
+     "at": "brollA.0+0.2",
+     "until": "brollA.1-0.1",
+     "y": 260,
+     "size": 44
+    },
+    {
+     "type": "text3d",
+     "text": "HIKMAH",
+     "at": "hikmah-0.1",
+     "until": "brollA.1-0.1",
+     "y": 420,
+     "size": 190,
+     "depth": 22,
+     "rotX": 8
+    },
+    {
+     "type": "label",
+     "text": "YANG TIDAK TERGAMBAR",
+     "at": "tergambar-0.2",
+     "until": "brollA.1-0.1",
+     "y": 590,
+     "size": 46
+    },
+    {
+     "type": "burst",
+     "at": "hikmah+0.2",
+     "y": 420,
+     "seed": "hikmah",
+     "spread": 480
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "HIKMAH DATANG",
+   "at": "brollA.1",
+   "until": "percayalah-0.15",
+   "size": 140,
+   "depth": 18
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERCAYALAH",
+   "at": "percayalah-0.1",
+   "until": "cta-0.05",
+   "size": 150,
+   "depth": 18
+  }
+ ],
+ "cover": {
+  "frame": 20.0,
+  "kicker": "KEKUATAN HAMBA",
+  "big": "KEYAKINAN",
+  "line2": "BUKAN FIZIKAL SEMATA-MATA",
+  "tag": "Allah menunggu doa kita",
+  "bigSize": 200,
+  "line2Size": 78
+ },
+ "poster": {
+  "icon": "star",
+  "top": "KEKUATAN SEBENAR",
+  "mid": "BUKAN FIZIKAL",
+  "last": "TAPI KEYAKINAN",
+  "banner": "Allah menunggu doa kita!",
+  "num": "2",
+  "numLabel": "Rahsia Kuat Hadapi Ujian",
+  "frame": 20.0,
+  "headTop": 600,
+  "chinY": 1500,
+  "faceX": 550
+ }
+}

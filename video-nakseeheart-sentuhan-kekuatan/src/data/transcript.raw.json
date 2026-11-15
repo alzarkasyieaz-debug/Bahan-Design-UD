@@ -1,0 +1,755 @@
+[
+ {
+  "start": 3.1799999999999935,
+  "end": 21.0,
+  "text": " dalam kehidupan kita, kadangkala kita rasa down ataupun kita rasa lemah dan keteki itu kita perlukan sentuhan seseorang dan sentuhan tersebut tidak lain tidak bukan adalah daripada ibu dan ayah kita.",
+  "words": [
+   {
+    "w": " dalam",
+    "s": 3.1799999999999935,
+    "e": 4.019999999999997
+   },
+   {
+    "w": " kehidupan",
+    "s": 4.019999999999997,
+    "e": 4.86
+   },
+   {
+    "w": " kita,",
+    "s": 4.86,
+    "e": 5.44
+   },
+   {
+    "w": " kadangkala",
+    "s": 5.72,
+    "e": 6.18
+   },
+   {
+    "w": " kita",
+    "s": 6.18,
+    "e": 6.58
+   },
+   {
+    "w": " rasa",
+    "s": 6.58,
+    "e": 7.72
+   },
+   {
+    "w": " down",
+    "s": 7.72,
+    "e": 9.08
+   },
+   {
+    "w": " ataupun",
+    "s": 9.08,
+    "e": 9.68
+   },
+   {
+    "w": " kita",
+    "s": 9.68,
+    "e": 10.08
+   },
+   {
+    "w": " rasa",
+    "s": 10.08,
+    "e": 10.34
+   },
+   {
+    "w": " lemah",
+    "s": 10.34,
+    "e": 11.24
+   },
+   {
+    "w": " dan",
+    "s": 11.24,
+    "e": 11.66
+   },
+   {
+    "w": " keteki",
+    "s": 11.66,
+    "e": 12.1
+   },
+   {
+    "w": " itu",
+    "s": 12.1,
+    "e": 12.44
+   },
+   {
+    "w": " kita",
+    "s": 12.44,
+    "e": 12.92
+   },
+   {
+    "w": " perlukan",
+    "s": 12.92,
+    "e": 13.6
+   },
+   {
+    "w": " sentuhan",
+    "s": 13.6,
+    "e": 14.32
+   },
+   {
+    "w": " seseorang",
+    "s": 14.32,
+    "e": 15.5
+   },
+   {
+    "w": " dan",
+    "s": 15.5,
+    "e": 15.94
+   },
+   {
+    "w": " sentuhan",
+    "s": 15.94,
+    "e": 16.36
+   },
+   {
+    "w": " tersebut",
+    "s": 16.36,
+    "e": 17.12
+   },
+   {
+    "w": " tidak",
+    "s": 17.12,
+    "e": 17.36
+   },
+   {
+    "w": " lain",
+    "s": 17.36,
+    "e": 17.58
+   },
+   {
+    "w": " tidak",
+    "s": 17.58,
+    "e": 17.78
+   },
+   {
+    "w": " bukan",
+    "s": 17.78,
+    "e": 18.56
+   },
+   {
+    "w": " adalah",
+    "s": 18.56,
+    "e": 19.04
+   },
+   {
+    "w": " daripada",
+    "s": 19.04,
+    "e": 19.6
+   },
+   {
+    "w": " ibu",
+    "s": 19.6,
+    "e": 19.92
+   },
+   {
+    "w": " dan",
+    "s": 19.92,
+    "e": 20.12
+   },
+   {
+    "w": " ayah",
+    "s": 20.12,
+    "e": 20.36
+   },
+   {
+    "w": " kita.",
+    "s": 20.36,
+    "e": 21.0
+   }
+  ]
+ },
+ {
+  "start": 21.0,
+  "end": 27.0,
+  "text": " Apabila kita berada dalam perlukan ibu dan ayah kita, kita akan rasa tenang setenang-tenangannya.",
+  "words": [
+   {
+    "w": " Apabila",
+    "s": 21.0,
+    "e": 21.5
+   },
+   {
+    "w": " kita",
+    "s": 21.5,
+    "e": 21.86
+   },
+   {
+    "w": " berada",
+    "s": 21.86,
+    "e": 22.14
+   },
+   {
+    "w": " dalam",
+    "s": 22.14,
+    "e": 22.34
+   },
+   {
+    "w": " perlukan",
+    "s": 22.34,
+    "e": 22.78
+   },
+   {
+    "w": " ibu",
+    "s": 22.78,
+    "e": 23.18
+   },
+   {
+    "w": " dan",
+    "s": 23.18,
+    "e": 23.4
+   },
+   {
+    "w": " ayah",
+    "s": 23.4,
+    "e": 23.64
+   },
+   {
+    "w": " kita,",
+    "s": 23.64,
+    "e": 24.06
+   },
+   {
+    "w": " kita",
+    "s": 24.86,
+    "e": 24.9
+   },
+   {
+    "w": " akan",
+    "s": 24.9,
+    "e": 25.2
+   },
+   {
+    "w": " rasa",
+    "s": 25.2,
+    "e": 25.52
+   },
+   {
+    "w": " tenang",
+    "s": 25.52,
+    "e": 25.94
+   },
+   {
+    "w": " setenang",
+    "s": 25.94,
+    "e": 26.4
+   },
+   {
+    "w": "-tenangannya.",
+    "s": 26.4,
+    "e": 27.0
+   }
+  ]
+ },
+ {
+  "start": 27.0,
+  "end": 34.24,
+  "text": " Dan kita rasa selamat dan kita rasa momen tersebut adalah momen yang paling indah dalam kehidupan kita.",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 27.0,
+    "e": 27.56
+   },
+   {
+    "w": " kita",
+    "s": 27.56,
+    "e": 27.86
+   },
+   {
+    "w": " rasa",
+    "s": 27.86,
+    "e": 28.24
+   },
+   {
+    "w": " selamat",
+    "s": 28.24,
+    "e": 29.28
+   },
+   {
+    "w": " dan",
+    "s": 29.28,
+    "e": 29.68
+   },
+   {
+    "w": " kita",
+    "s": 29.68,
+    "e": 29.86
+   },
+   {
+    "w": " rasa",
+    "s": 29.86,
+    "e": 30.46
+   },
+   {
+    "w": " momen",
+    "s": 30.46,
+    "e": 31.02
+   },
+   {
+    "w": " tersebut",
+    "s": 31.02,
+    "e": 31.46
+   },
+   {
+    "w": " adalah",
+    "s": 31.46,
+    "e": 31.64
+   },
+   {
+    "w": " momen",
+    "s": 31.64,
+    "e": 32.0
+   },
+   {
+    "w": " yang",
+    "s": 32.0,
+    "e": 32.24
+   },
+   {
+    "w": " paling",
+    "s": 32.24,
+    "e": 32.48
+   },
+   {
+    "w": " indah",
+    "s": 32.48,
+    "e": 32.8
+   },
+   {
+    "w": " dalam",
+    "s": 32.8,
+    "e": 32.98
+   },
+   {
+    "w": " kehidupan",
+    "s": 32.98,
+    "e": 33.4
+   },
+   {
+    "w": " kita.",
+    "s": 33.4,
+    "e": 34.24
+   }
+  ]
+ },
+ {
+  "start": 34.34,
+  "end": 44.2,
+  "text": " Kerana itu perlunya sentuhan seorang ibu seorang ayah yang mana dia akan memberikan rasa luar biasa bagi seorang anak.",
+  "words": [
+   {
+    "w": " Kerana",
+    "s": 34.34,
+    "e": 34.68
+   },
+   {
+    "w": " itu",
+    "s": 34.68,
+    "e": 35.62
+   },
+   {
+    "w": " perlunya",
+    "s": 35.62,
+    "e": 36.54
+   },
+   {
+    "w": " sentuhan",
+    "s": 36.54,
+    "e": 37.42
+   },
+   {
+    "w": " seorang",
+    "s": 37.42,
+    "e": 37.8
+   },
+   {
+    "w": " ibu",
+    "s": 37.8,
+    "e": 38.26
+   },
+   {
+    "w": " seorang",
+    "s": 38.26,
+    "e": 38.62
+   },
+   {
+    "w": " ayah",
+    "s": 38.62,
+    "e": 40.28
+   },
+   {
+    "w": " yang",
+    "s": 40.28,
+    "e": 40.62
+   },
+   {
+    "w": " mana",
+    "s": 40.62,
+    "e": 40.86
+   },
+   {
+    "w": " dia",
+    "s": 40.86,
+    "e": 41.08
+   },
+   {
+    "w": " akan",
+    "s": 41.08,
+    "e": 41.26
+   },
+   {
+    "w": " memberikan",
+    "s": 41.26,
+    "e": 41.82
+   },
+   {
+    "w": " rasa",
+    "s": 41.82,
+    "e": 42.26
+   },
+   {
+    "w": " luar",
+    "s": 42.26,
+    "e": 42.66
+   },
+   {
+    "w": " biasa",
+    "s": 42.66,
+    "e": 43.02
+   },
+   {
+    "w": " bagi",
+    "s": 43.02,
+    "e": 43.38
+   },
+   {
+    "w": " seorang",
+    "s": 43.38,
+    "e": 43.62
+   },
+   {
+    "w": " anak.",
+    "s": 43.62,
+    "e": 44.2
+   }
+  ]
+ },
+ {
+  "start": 44.6,
+  "end": 47.0,
+  "text": " Begitu juga bagi seorang suami dan isteri.",
+  "words": [
+   {
+    "w": " Begitu",
+    "s": 44.6,
+    "e": 44.86
+   },
+   {
+    "w": " juga",
+    "s": 44.86,
+    "e": 45.16
+   },
+   {
+    "w": " bagi",
+    "s": 45.16,
+    "e": 45.56
+   },
+   {
+    "w": " seorang",
+    "s": 45.56,
+    "e": 45.92
+   },
+   {
+    "w": " suami",
+    "s": 45.92,
+    "e": 46.38
+   },
+   {
+    "w": " dan",
+    "s": 46.38,
+    "e": 46.56
+   },
+   {
+    "w": " isteri.",
+    "s": 46.56,
+    "e": 47.0
+   }
+  ]
+ },
+ {
+  "start": 48.06,
+  "end": 52.08,
+  "text": " Sentuhan antara suami dan isteri ini memberikan rasa luar biasa.",
+  "words": [
+   {
+    "w": " Sentuhan",
+    "s": 48.06,
+    "e": 48.82
+   },
+   {
+    "w": " antara",
+    "s": 48.82,
+    "e": 49.24
+   },
+   {
+    "w": " suami",
+    "s": 49.24,
+    "e": 49.56
+   },
+   {
+    "w": " dan",
+    "s": 49.56,
+    "e": 49.94
+   },
+   {
+    "w": " isteri",
+    "s": 49.94,
+    "e": 49.94
+   },
+   {
+    "w": " ini",
+    "s": 49.94,
+    "e": 50.2
+   },
+   {
+    "w": " memberikan",
+    "s": 50.2,
+    "e": 50.64
+   },
+   {
+    "w": " rasa",
+    "s": 50.64,
+    "e": 50.98
+   },
+   {
+    "w": " luar",
+    "s": 50.98,
+    "e": 51.32
+   },
+   {
+    "w": " biasa.",
+    "s": 51.32,
+    "e": 52.08
+   }
+  ]
+ },
+ {
+  "start": 52.42,
+  "end": 61.18,
+  "text": " Saat kita down, saat kita rasa lemah, saat kita rasa tidak kuat untuk meneruskan kehidupan dengan berbagai ujian dan cabaran.",
+  "words": [
+   {
+    "w": " Saat",
+    "s": 52.42,
+    "e": 52.52
+   },
+   {
+    "w": " kita",
+    "s": 52.52,
+    "e": 52.82
+   },
+   {
+    "w": " down,",
+    "s": 52.82,
+    "e": 53.22
+   },
+   {
+    "w": " saat",
+    "s": 53.38,
+    "e": 53.58
+   },
+   {
+    "w": " kita",
+    "s": 53.58,
+    "e": 54.12
+   },
+   {
+    "w": " rasa",
+    "s": 54.12,
+    "e": 54.42
+   },
+   {
+    "w": " lemah,",
+    "s": 54.42,
+    "e": 55.08
+   },
+   {
+    "w": " saat",
+    "s": 55.38,
+    "e": 55.56
+   },
+   {
+    "w": " kita",
+    "s": 55.56,
+    "e": 55.8
+   },
+   {
+    "w": " rasa",
+    "s": 55.8,
+    "e": 56.04
+   },
+   {
+    "w": " tidak",
+    "s": 56.04,
+    "e": 56.44
+   },
+   {
+    "w": " kuat",
+    "s": 56.44,
+    "e": 56.94
+   },
+   {
+    "w": " untuk",
+    "s": 56.94,
+    "e": 57.24
+   },
+   {
+    "w": " meneruskan",
+    "s": 57.24,
+    "e": 58.16
+   },
+   {
+    "w": " kehidupan",
+    "s": 58.16,
+    "e": 58.8
+   },
+   {
+    "w": " dengan",
+    "s": 58.8,
+    "e": 59.06
+   },
+   {
+    "w": " berbagai",
+    "s": 59.06,
+    "e": 59.52
+   },
+   {
+    "w": " ujian",
+    "s": 59.52,
+    "e": 59.9
+   },
+   {
+    "w": " dan",
+    "s": 59.9,
+    "e": 60.06
+   },
+   {
+    "w": " cabaran.",
+    "s": 60.06,
+    "e": 61.18
+   }
+  ]
+ },
+ {
+  "start": 61.74,
+  "end": 70.18,
+  "text": " Cari mereka, bina kekuatan bersama mereka dan insyaAllah kita akan dapat rasa satu kekuatan yang sangat luar biasa.",
+  "words": [
+   {
+    "w": " Cari",
+    "s": 61.74,
+    "e": 61.88
+   },
+   {
+    "w": " mereka,",
+    "s": 61.88,
+    "e": 62.7
+   },
+   {
+    "w": " bina",
+    "s": 63.56,
+    "e": 63.84
+   },
+   {
+    "w": " kekuatan",
+    "s": 63.84,
+    "e": 64.34
+   },
+   {
+    "w": " bersama",
+    "s": 64.34,
+    "e": 64.76
+   },
+   {
+    "w": " mereka",
+    "s": 64.76,
+    "e": 65.12
+   },
+   {
+    "w": " dan",
+    "s": 65.12,
+    "e": 65.32
+   },
+   {
+    "w": " insyaAllah",
+    "s": 65.32,
+    "e": 66.14
+   },
+   {
+    "w": " kita",
+    "s": 66.14,
+    "e": 66.88
+   },
+   {
+    "w": " akan",
+    "s": 66.88,
+    "e": 67.14
+   },
+   {
+    "w": " dapat",
+    "s": 67.14,
+    "e": 67.42
+   },
+   {
+    "w": " rasa",
+    "s": 67.42,
+    "e": 67.74
+   },
+   {
+    "w": " satu",
+    "s": 67.74,
+    "e": 68.18
+   },
+   {
+    "w": " kekuatan",
+    "s": 68.18,
+    "e": 68.76
+   },
+   {
+    "w": " yang",
+    "s": 68.76,
+    "e": 69.04
+   },
+   {
+    "w": " sangat",
+    "s": 69.04,
+    "e": 69.32
+   },
+   {
+    "w": " luar",
+    "s": 69.32,
+    "e": 69.56
+   },
+   {
+    "w": " biasa.",
+    "s": 69.56,
+    "e": 70.18
+   }
+  ]
+ },
+ {
+  "start": 70.58,
+  "end": 71.16,
+  "text": " Percayalah.",
+  "words": [
+   {
+    "w": " Percayalah.",
+    "s": 70.58,
+    "e": 71.16
+   }
+  ]
+ }
+]
