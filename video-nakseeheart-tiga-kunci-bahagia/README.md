@@ -34,6 +34,9 @@
 | 67–80 | **HARGAILAH MEREKA** → **KUNCI NIKMAT BAHAGIA** ♥ |
 | 79.8–85.3 | CTA |
 
+## Warna & audio
+Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB), -15.2 LUFS (peak -1.4 dBFS).
+
 ## Kapsyen hantaran (cadangan)
 > Tiga perkara yang buat kita rasa bahagia: keluarga yang baik, sahabat yang baik dan jiran yang baik. Kalau ada, hargailah mereka. 🤍
 > Follow @NakSeeHeart untuk nasihat ringkas, makna mendalam.
