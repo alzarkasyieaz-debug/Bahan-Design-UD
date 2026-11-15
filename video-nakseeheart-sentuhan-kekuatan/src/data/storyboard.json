@@ -130,7 +130,7 @@
    "type": "ceiling3d",
    "text": "PELUKAN IBU AYAH",
    "at": "pelukan-0.2",
-   "until": "perlunya-0.15",
+   "until": "perlunya-2.6",
    "size": 110,
    "depth": 18
   },
@@ -158,8 +158,8 @@
   {
    "type": "ceiling3d",
    "text": "RASA LUAR BIASA",
-   "at": "luarBiasa-0.3",
-   "until": "saatDown-0.15",
+   "at": "perlunya-2.5",
+   "until": "perlunya-0.3",
    "size": 118,
    "depth": 18
   },
