@@ -32,7 +32,7 @@ Jika `node_modules` tiada: `npm install` dalam projek (atau symlink daripada pro
 
 ## 5. Storyboard (`src/data/storyboard.json`)
 - `layout`: ukur wajah pada satu bingkai bergrid (`ffmpeg ... drawgrid`), laraskan `face`, `ceilingY`, `cardY`, `subtitleY` supaya tiada grafik menutup wajah.
-- `elements`: ikut jadual dalam STYLE.md §4. Setiap point = `badge` + `ceiling3d` + satu kad MG. Masa guna rujukan beat (`"p1+0.5"`, `"brollX.1-0.1"`).
+- `elements`: ikut jadual dalam STYLE.md §4. **Info FX v2** (STYLE.md §4b: `iconcards`, `notify`, `pills`, `neontag`, `bigword`, `subtitleStyle: "box"`) — pilih 1–2 yang sesuai dengan isi video (cth. senarai point → `iconcards`; contoh situasi harian → `notify`; langkah → `pills` + `step`; punchline → `neontag`). Setiap point = `badge` + `ceiling3d` + satu kad MG. Masa guna rujukan beat (`"p1+0.5"`, `"brollX.1-0.1"`).
 - `camera.punch`, `subtitleCalm`, `music.buildUp`, `sfx[]` khusus.
 - Cut-out tidak wajib (lalai tiada). Lihat STYLE.md §5.
 

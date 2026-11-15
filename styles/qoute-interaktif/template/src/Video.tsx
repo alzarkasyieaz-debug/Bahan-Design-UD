@@ -10,6 +10,7 @@ import { Burst, Dust, Flash, Grade, Grain, LightLeak, Vignette } from './compone
 import {
   Chip, Counter, Meter, Compare, Checklist, ChatBubble, Crowd, RecapList, ProgressChips, HeartPulse, SocialBroll,
 } from './components/MotionGraphics';
+import { IconCards, Notify, PillLines, NeonTag, BigWord } from './components/InfoFX';
 
 /* =====================================================================
  * STYLE: QOUTE INTERAKTIF — komposisi generik.
@@ -60,6 +61,16 @@ const Front: React.FC<{ e: El }> = ({ e }) => {
       return <FloatQuote text={e.text} at={tv(e.at)} until={tv(e.until)} y={e.y} size={e.size} />;
     case 'burst':
       return <Burst at={tv(e.at)} x={e.x ?? 540} y={e.y ?? L.ceilingY} seed={e.seed} spread={e.spread} count={e.count} />;
+    case 'iconcards':
+      return <IconCards at={tv(e.at)} until={tv(e.until)} y={e.y} title={e.title} items={e.items.map((i) => ({ ...i, at: tv(i.at) }))} />;
+    case 'notify':
+      return <Notify at={tv(e.at)} until={tv(e.until)} y={e.y} badge={e.badge} items={e.items.map((i) => ({ ...i, at: tv(i.at) }))} />;
+    case 'pills':
+      return <PillLines at={tv(e.at)} until={tv(e.until)} y={e.y} step={e.step} size={e.size} lines={e.lines.map((l) => ({ text: l.text, at: tv(l.at) }))} />;
+    case 'neontag':
+      return <NeonTag text={e.text} at={tv(e.at)} until={tv(e.until)} y={e.y} />;
+    case 'bigword':
+      return <BigWord text={e.text} at={tv(e.at)} until={tv(e.until)} y={e.y} color={e.color} size={e.size} />;
     default:
       return null;
   }

@@ -55,6 +55,8 @@ export type Storyboard = {
   layout: Layout;
   camera: { punch: TimeRef[]; jumpCutZoom: number; climaxZoom: [number, number]; hookZoom: [number, number, number] };
   subtitleCalm: [TimeRef, TimeRef][];
+  /** 'classic' (lalai): kata kunci emas bercahaya; 'box': karaoke — perkataan semasa dalam kotak emas (gaya UGC) */
+  subtitleStyle?: 'classic' | 'box';
   elements: El[];
 };
 export type Item = { text: string; at: TimeRef };
@@ -75,7 +77,16 @@ export type El =
   | { type: 'heart'; at: TimeRef; until: TimeRef; x?: number; y?: number; size?: number }
   | { type: 'quote'; text: string; at: TimeRef; until: TimeRef; y: number; size?: number }
   | { type: 'burst'; at: TimeRef; x?: number; y?: number; seed: string; spread?: number; count?: number }
-  | { type: 'broll'; kind: 'social' | 'friends' | 'spiritual'; from: TimeRef; to: TimeRef; children: El[] };
+  | { type: 'broll'; kind: 'social' | 'friends' | 'spiritual'; from: TimeRef; to: TimeRef; children: El[] }
+  /* ---- Info FX (v2): guna mengikut kesesuaian, lihat STYLE.md §4b ---- */
+  | { type: 'iconcards'; at: TimeRef; until: TimeRef; items: { icon: IconName; text: string; tag?: string; at: TimeRef }[]; y?: number; title?: string }
+  | { type: 'notify'; at: TimeRef; until: TimeRef; items: { app: string; icon: IconName; title: string; text: string; time?: string; at: TimeRef; tone?: 'gold' | 'teal' | 'charcoal' | 'red' }[]; y?: number; badge?: string }
+  | { type: 'pills'; at: TimeRef; until: TimeRef; lines: { text: string; at: TimeRef }[]; step?: string; y?: number; size?: number }
+  | { type: 'neontag'; text: string; at: TimeRef; until: TimeRef; y?: number }
+  | { type: 'bigword'; text: string; at: TimeRef; until: TimeRef; y?: number; color?: string; size?: number };
+export type IconName =
+  | 'heart' | 'book' | 'chat' | 'check' | 'star' | 'play' | 'home' | 'users' | 'phone' | 'coin'
+  | 'leaf' | 'moon' | 'mosque' | 'hand' | 'calendar' | 'clock' | 'shield' | 'smile' | 'bulb' | 'target' | 'family';
 export type Col = { title: string; good?: boolean; items: Item[] };
 export type Fill = 'gold' | 'cream' | 'white' | 'red';
 export type Reveal = 'letters' | 'punch' | 'rise';

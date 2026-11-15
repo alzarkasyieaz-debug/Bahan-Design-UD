@@ -77,6 +77,26 @@ Laraskan `layout` dalam `storyboard.json` mengikut kedudukan wajah (ukur dengan 
 - Tiada grafik menutup wajah. Klimaks = MG minimum.
 - Ketika kad utama aktif, letak julat dalam `subtitleCalm` supaya animasi subtitle diredam.
 
+## 4b. Info FX (v2) — kesan maklumat/point, guna MENGIKUT KESESUAIAN
+Diilhamkan daripada rujukan pengguna (kad bonus 3D kaca, notifikasi gaya UGC, baris pil + STEP, tag neon ✓, perkataan gergasi, subtitle karaoke berkotak), dalam palet jenama. Komponen: `src/components/InfoFX.tsx`.
+
+| `type` | Rupa | Bila sesuai | Medan utama |
+|---|---|---|---|
+| `iconcards` | 2–4 kad kaca krim 3D berbucu emas, ikon garis + label, pil emas bernombor di bawah; muncul satu demi satu & condong ke tengah | Senarai point bernombor (3 kunci, 3 ciri, rekap) — pengganti `recap` yang lebih visual | `items[{icon,text,tag?,at}]`, `title?`, `y?` |
+| `notify` | Notifikasi gaya iOS bertindan (kaca gelap, ikon aplikasi berwarna, masa di kanan), meluncur masuk | Contoh situasi harian: mesej sahabat, tugasan, peringatan, panggilan | `items[{app,icon,title,text,time?,at,tone?}]`, `badge?` |
+| `pills` | Pil gelap bertingkat, kata dalam `*bintang*` diserlah emas; pil `STEP`/`KUNCI` emas di atas | Langkah / rumusan pendek, satu idea per baris | `lines[{text,at}]`, `step?`, `size?` |
+| `neontag` | Pil gelap bersinar neon emas dengan ✓ beranimasi | Punchline / kesimpulan pendek (≤ 22 aksara) | `text` |
+| `bigword` | Satu perkataan gergasi rata (bukan 3D) berwarna, di ruang atas | Satu kata kunci yang kuat; jangan serentak dengan `ceiling3d` | `text`, `color?`, `size?`, `y?` |
+| `subtitleStyle: "box"` | Subtitle karaoke: perkataan semasa dalam kotak emas | Video santai / UGC / tips; kekal `classic` untuk nasihat yang tenang | (medan storyboard, bukan elemen) |
+
+Ikon (`IconName`): heart, book, chat, check, star, play, home, users, phone, coin, leaf, moon, mosque, hand, calendar, clock, shield, smile, bulb, target, family.
+
+Panduan kesesuaian:
+- Jangan paksa — pilih **1–2 Info FX** per video yang benar-benar sepadan dengan isi; selebihnya kekal perpustakaan §4.
+- `notify`: teks mesej mestilah **contoh ilustrasi** yang selari dengan maksud penceramah, bukan petikan ucapan baharu; jangan letak nama sebenar orang.
+- `iconcards` sesuai untuk rekap di hujung; `pills` sesuai untuk STEP/KUNCI semasa penerangan.
+- Semua tetap mematuhi zon §2 (tidak menutup wajah); laras `y` jika perlu.
+
 ## 5. Komposit: cut-out **tidak wajib**
 - **Lalai: TANPA cut-out.** Teks 3D berada pada satah latar (siling/dinding) dengan `ceilingTilt` (perspektif), parallax 2.5D (lapisan bergerak 75% daripada kamera) dan gradien gelap untuk kontras.
 - Gunakan cut-out (`rembg u2net_human_seg`, lihat projek `video-nakseeheart-bahagia`) **hanya** jika latar kontras dengan penceramah, tepi kemas dan gerak tangan tidak kompleks.
