@@ -1,7 +1,7 @@
 # NakSeeHeart — "Bila Ujian Terasa Berat"
 *Style: [Qoute Interaktif](../styles/qoute-interaktif/STYLE.md)*
 
-**9:16 · 1080×1920 · 30 fps · H.264 + AAC · 87.7 s** — [`out/nakseeheart-ujian-salah-jalan.mp4`](out/nakseeheart-ujian-salah-jalan.mp4) · cover [`out/nakseeheart-ujian-salah-jalan-poster.jpg`](out/nakseeheart-ujian-salah-jalan-poster.jpg) · [`.srt`](out/nakseeheart-ujian-salah-jalan.srt)
+**9:16 · 1080×1920 · 30 fps · H.264 + AAC · 88.7 s (termasuk cover 1 s di awal)** — [`out/nakseeheart-ujian-salah-jalan.mp4`](out/nakseeheart-ujian-salah-jalan.mp4) · cover [`out/nakseeheart-ujian-salah-jalan-poster.jpg`](out/nakseeheart-ujian-salah-jalan-poster.jpg) · [`.srt`](out/nakseeheart-ujian-salah-jalan.srt)
 
 ## Analisis
 | Item | Butiran |
@@ -35,7 +35,7 @@
 | 81–87.7 | **PERCAYALAH**, CTA |
 
 ## Warna & audio
-Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB).
+Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB), -15.6 LUFS.
 
 ## Kapsyen hantaran (cadangan)
 > Bila ujian terasa berat, Allah sedang menanti doa kita. Jangan pilih jalan yang salah dengan berharap kepada manusia. 🤲
