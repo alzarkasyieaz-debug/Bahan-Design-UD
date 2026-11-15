@@ -26,4 +26,6 @@ if [ "$HAS_POSTER" != "true" ]; then
   exit 2
 fi
 bash "$(dirname "$0")/cover.sh" poster
+# cover dimasukkan ke dalam video (bingkai pertama ~1 s + thumbnail MP4)
+bash "$(dirname "$0")/add_cover.sh" fresh
 echo "✔ Video + cover siap: out/$OUT.mp4 , out/$OUT-poster.jpg"
