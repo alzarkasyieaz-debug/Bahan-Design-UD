@@ -239,7 +239,7 @@
   }
  ],
  "cover": {
-  "frame": 20.0,
+  "frame": 18.2,
   "kicker": "PERKARA TERMAHAL",
   "big": "KETENANGAN",
   "line2": "TAK MAMPU DIBELI",
@@ -255,10 +255,10 @@
   "banner": "Tak mampu dibeli dengan wang!",
   "num": "2",
   "numLabel": "Rahsia Hidup Tenang",
-  "frame": 20.0,
-  "headTop": 240,
-  "chinY": 720,
-  "faceX": 570,
+  "frame": 18.2,
+  "headTop": 285,
+  "chinY": 790,
+  "faceX": 555,
   "maxScale": 1.4
  }
 }

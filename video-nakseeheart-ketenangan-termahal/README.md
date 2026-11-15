@@ -32,6 +32,9 @@ Nota transkripsi: "**dibeli**" (medium) dipilih berbanding "dibuat" (large-v3). 
 | 40–42 | **PERCAYALAH** |
 | 42–47.4 | CTA |
 
+## Warna & audio
+Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB), -15.4 LUFS (video pendek, peak -1.4 dBFS).
+
 ## Kapsyen hantaran (cadangan)
 > Ketenangan ialah perkara termahal dalam hidup, tak mampu dibeli dengan wang ringgit. Rahsianya: jaga hubungan dengan Allah. 🤍
 > Follow @NakSeeHeart untuk nasihat ringkas, makna mendalam.
