@@ -32,6 +32,9 @@ Nota: "radha" (large-v3) / "reza" (medium) ditulis mengikut ejaan baku **reda**.
 | 66–79 | **GANJARAN LUAR BIASA** + rekap ✓ *Sentiasa syukur · Sentiasa reda*, **PERCAYALAH** |
 | 79.3–84.8 | CTA |
 
+## Warna & audio
+Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB), -15.2 LUFS (peak -1.4 dBFS).
+
 ## Kapsyen hantaran (cadangan)
 > Kita tak dapat lari daripada aturan Allah. Bila kita akur, syukur dan reda, Allah beri hikmah yang tak disangka-sangka. 🤲
 > Follow @NakSeeHeart untuk nasihat ringkas, makna mendalam.
