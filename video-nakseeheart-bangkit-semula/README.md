@@ -1,7 +1,7 @@
 # NakSeeHeart — "Allah Sayang, Maka Allah Uji"
 *Style: [Qoute Interaktif](../styles/qoute-interaktif/STYLE.md)*
 
-**9:16 · 1080×1920 · 30 fps · H.264 + AAC · 96.8 s** — [`out/nakseeheart-bangkit-semula.mp4`](out/nakseeheart-bangkit-semula.mp4) · cover [`out/nakseeheart-bangkit-semula-poster.jpg`](out/nakseeheart-bangkit-semula-poster.jpg) · [`.srt`](out/nakseeheart-bangkit-semula.srt)
+**9:16 · 1080×1920 · 30 fps · H.264 + AAC · 97.8 s (termasuk cover 1 s di awal)** — [`out/nakseeheart-bangkit-semula.mp4`](out/nakseeheart-bangkit-semula.mp4) · cover [`out/nakseeheart-bangkit-semula-poster.jpg`](out/nakseeheart-bangkit-semula-poster.jpg) · [`.srt`](out/nakseeheart-bangkit-semula.srt)
 
 ## Analisis
 | Item | Butiran |
@@ -33,7 +33,7 @@
 | 90–96.8 | **PERCAYALAH**, CTA |
 
 ## Warna & audio
-Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB).
+Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -16 dB), -14.8 LUFS.
 
 ## Kapsyen hantaran (cadangan)
 > Allah sayang, maka Allah uji. Allah tak uji melainkan Dia tahu kita mampu — kuncinya bangkit, berubah dan terus istiqamah. 💪
