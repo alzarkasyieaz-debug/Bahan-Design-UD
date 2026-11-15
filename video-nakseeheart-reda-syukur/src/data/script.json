@@ -1,0 +1,192 @@
+{
+ "source": "IMG_6429.mov",
+ "maxChars": 46,
+ "gold": [
+  "aspek",
+  "pekerjaan",
+  "perkahwinan",
+  "komunikasi",
+  "aturan",
+  "reda",
+  "syukur",
+  "hamba",
+  "ketentuan",
+  "akur",
+  "hikmah",
+  "hikmahnya",
+  "ganjaran",
+  "luar",
+  "biasa"
+ ],
+ "upper": [
+  "reda",
+  "syukur",
+  "percayalah"
+ ],
+ "chunks": [
+  [
+   "hook",
+   44.95,
+   47.1,
+   "Bila mana kita akur,"
+  ],
+  [
+   "hook",
+   47.1,
+   48.6,
+   "bila mana kita syukur,"
+  ],
+  [
+   "hook",
+   48.6,
+   50.0,
+   "bila mana kita reda,"
+  ],
+  [
+   "s1",
+   1.9,
+   4.5,
+   "Dalam kehidupan kita ini,"
+  ],
+  [
+   "s1",
+   4.5,
+   8.5,
+   "dalam setiap aspek kehidupan kita, baik dalam alam pekerjaan,"
+  ],
+  [
+   "s1",
+   8.5,
+   12.2,
+   "dalam kehidupan, dalam perkahwinan,"
+  ],
+  [
+   "s1",
+   12.2,
+   15.9,
+   "dalam komunikasi, dalam apa sahaja perkara yang kita buat,"
+  ],
+  [
+   "s1",
+   15.9,
+   21.4,
+   "kita tidak dapat lari daripada menerima setiap satu aturan Allah SWT."
+  ],
+  [
+   "s1",
+   21.4,
+   26.4,
+   "Dan keadaan ini mengajar kita untuk kita mengenal maksud"
+  ],
+  [
+   "s1",
+   26.4,
+   29.9,
+   "reda dan syukur atas setiap aturan Allah SWT."
+  ],
+  [
+   "s1",
+   29.9,
+   34.4,
+   "Kerana asbab reda dan syukur inilah, Allah SWT"
+  ],
+  [
+   "s1",
+   34.4,
+   40.3,
+   "akan mengajar kita bahawa sebenarnya kita adalah hamba Allah SWT."
+  ],
+  [
+   "s1",
+   40.3,
+   43.8,
+   "Kita tidak dapat lari daripada ketentuan Allah SWT."
+  ],
+  [
+   "s1",
+   43.8,
+   45.2,
+   "Yang paling penting,"
+  ],
+  [
+   "s1",
+   45.2,
+   47.1,
+   "bila mana kita akur,"
+  ],
+  [
+   "s1",
+   47.1,
+   48.6,
+   "bila mana kita syukur,"
+  ],
+  [
+   "s1",
+   48.6,
+   50.1,
+   "bila mana kita reda,"
+  ],
+  [
+   "s1",
+   50.1,
+   53.5,
+   "di situ Allah SWT akan berikan kita hikmah"
+  ],
+  [
+   "s1",
+   53.5,
+   56.3,
+   "yang kita tak sangka-sangka apa hikmahnya,"
+  ],
+  [
+   "s1",
+   56.3,
+   58.8,
+   "tetapi Allah SWT ajar kita"
+  ],
+  [
+   "s1",
+   58.8,
+   63.35,
+   "supaya menerima setiap satu aturan itu dengan reda dan syukur."
+  ],
+  [
+   "s1",
+   63.35,
+   66.6,
+   "Dan pastinya ganjaran luar biasa"
+  ],
+  [
+   "s1",
+   66.6,
+   70.7,
+   "bagi mereka yang sentiasa syukur dan reda"
+  ],
+  [
+   "s1",
+   70.7,
+   75.2,
+   "atas setiap satu ketentuan Allah subhanahu wa ta'ala."
+  ],
+  [
+   "s1",
+   75.2,
+   76.1,
+   "Percayalah."
+  ]
+ ],
+ "unsure": [
+  [
+   26.5,
+   "[NOTA — “reda”: large-v3 “radha”, medium “reza”; ditulis mengikut ejaan baku “reda”]"
+  ],
+  [
+   36.5,
+   "[NOTA — “bahawa sebenarnya” mengikut medium (large-v3: “bahawasanya”)]"
+  ],
+  [
+   1.0,
+   "[NOTA — cap masa perkataan daripada model medium]"
+  ]
+ ]
+}

@@ -1,0 +1,923 @@
+[
+ {
+  "start": 3.9199999999999946,
+  "end": 8.46,
+  "text": " Ada 3 perkara dalam hidup ini yang boleh membuatkan kita rasa bahagia.",
+  "words": [
+   {
+    "w": " Ada",
+    "s": 3.9199999999999946,
+    "e": 4.68
+   },
+   {
+    "w": " 3",
+    "s": 4.68,
+    "e": 4.96
+   },
+   {
+    "w": " perkara",
+    "s": 4.96,
+    "e": 5.36
+   },
+   {
+    "w": " dalam",
+    "s": 5.36,
+    "e": 5.64
+   },
+   {
+    "w": " hidup",
+    "s": 5.64,
+    "e": 5.94
+   },
+   {
+    "w": " ini",
+    "s": 5.94,
+    "e": 6.22
+   },
+   {
+    "w": " yang",
+    "s": 6.22,
+    "e": 6.4
+   },
+   {
+    "w": " boleh",
+    "s": 6.4,
+    "e": 6.66
+   },
+   {
+    "w": " membuatkan",
+    "s": 6.66,
+    "e": 7.22
+   },
+   {
+    "w": " kita",
+    "s": 7.22,
+    "e": 7.44
+   },
+   {
+    "w": " rasa",
+    "s": 7.44,
+    "e": 7.7
+   },
+   {
+    "w": " bahagia.",
+    "s": 7.7,
+    "e": 8.46
+   }
+  ]
+ },
+ {
+  "start": 8.64,
+  "end": 19.14,
+  "text": " Yang pertama, apabila kita memiliki keluarga yang baik, yang mampu saling melengkapi antara satu sama lain,",
+  "words": [
+   {
+    "w": " Yang",
+    "s": 8.64,
+    "e": 8.68
+   },
+   {
+    "w": " pertama,",
+    "s": 8.68,
+    "e": 9.94
+   },
+   {
+    "w": " apabila",
+    "s": 10.34,
+    "e": 10.86
+   },
+   {
+    "w": " kita",
+    "s": 10.86,
+    "e": 11.28
+   },
+   {
+    "w": " memiliki",
+    "s": 11.28,
+    "e": 12.12
+   },
+   {
+    "w": " keluarga",
+    "s": 12.12,
+    "e": 12.78
+   },
+   {
+    "w": " yang",
+    "s": 12.78,
+    "e": 13.04
+   },
+   {
+    "w": " baik,",
+    "s": 13.04,
+    "e": 13.56
+   },
+   {
+    "w": " yang",
+    "s": 14.9,
+    "e": 15.04
+   },
+   {
+    "w": " mampu",
+    "s": 15.04,
+    "e": 16.8
+   },
+   {
+    "w": " saling",
+    "s": 16.8,
+    "e": 17.3
+   },
+   {
+    "w": " melengkapi",
+    "s": 17.3,
+    "e": 18.0
+   },
+   {
+    "w": " antara",
+    "s": 18.0,
+    "e": 18.38
+   },
+   {
+    "w": " satu",
+    "s": 18.38,
+    "e": 18.5
+   },
+   {
+    "w": " sama",
+    "s": 18.5,
+    "e": 18.66
+   },
+   {
+    "w": " lain,",
+    "s": 18.66,
+    "e": 19.14
+   }
+  ]
+ },
+ {
+  "start": 20.14,
+  "end": 25.0,
+  "text": " yang mampu memberikan kerja sama tidak kira dalam apa-apa situasi sekalipun.",
+  "words": [
+   {
+    "w": " yang",
+    "s": 20.14,
+    "e": 20.28
+   },
+   {
+    "w": " mampu",
+    "s": 20.28,
+    "e": 20.7
+   },
+   {
+    "w": " memberikan",
+    "s": 20.7,
+    "e": 21.98
+   },
+   {
+    "w": " kerja",
+    "s": 21.98,
+    "e": 22.52
+   },
+   {
+    "w": " sama",
+    "s": 22.52,
+    "e": 23.14
+   },
+   {
+    "w": " tidak",
+    "s": 23.14,
+    "e": 23.54
+   },
+   {
+    "w": " kira",
+    "s": 23.54,
+    "e": 23.74
+   },
+   {
+    "w": " dalam",
+    "s": 23.74,
+    "e": 24.04
+   },
+   {
+    "w": " apa",
+    "s": 24.04,
+    "e": 24.4
+   },
+   {
+    "w": "-apa",
+    "s": 24.4,
+    "e": 24.56
+   },
+   {
+    "w": " situasi",
+    "s": 24.56,
+    "e": 24.94
+   },
+   {
+    "w": " sekalipun.",
+    "s": 24.94,
+    "e": 25.320000000000004
+   }
+  ]
+ },
+ {
+  "start": 26.32,
+  "end": 28.86,
+  "text": " Yang kedua, apabila kita memiliki sahabat yang baik,",
+  "words": [
+   {
+    "w": " Yang",
+    "s": 26.32,
+    "e": 26.48
+   },
+   {
+    "w": " kedua,",
+    "s": 26.48,
+    "e": 26.68
+   },
+   {
+    "w": " apabila",
+    "s": 26.76,
+    "e": 26.92
+   },
+   {
+    "w": " kita",
+    "s": 26.92,
+    "e": 27.22
+   },
+   {
+    "w": " memiliki",
+    "s": 27.22,
+    "e": 27.74
+   },
+   {
+    "w": " sahabat",
+    "s": 27.74,
+    "e": 28.3
+   },
+   {
+    "w": " yang",
+    "s": 28.3,
+    "e": 28.5
+   },
+   {
+    "w": " baik,",
+    "s": 28.5,
+    "e": 28.86
+   }
+  ]
+ },
+ {
+  "start": 28.86,
+  "end": 35.24,
+  "text": " kawan yang mampu bersama dengan kita dalam keadaan susah ataupun senang,",
+  "words": [
+   {
+    "w": " kawan",
+    "s": 28.86,
+    "e": 30.28
+   },
+   {
+    "w": " yang",
+    "s": 30.28,
+    "e": 30.52
+   },
+   {
+    "w": " mampu",
+    "s": 30.52,
+    "e": 31.6
+   },
+   {
+    "w": " bersama",
+    "s": 31.6,
+    "e": 32.38
+   },
+   {
+    "w": " dengan",
+    "s": 32.38,
+    "e": 32.62
+   },
+   {
+    "w": " kita",
+    "s": 32.62,
+    "e": 32.88
+   },
+   {
+    "w": " dalam",
+    "s": 32.88,
+    "e": 33.2
+   },
+   {
+    "w": " keadaan",
+    "s": 33.2,
+    "e": 33.62
+   },
+   {
+    "w": " susah",
+    "s": 33.62,
+    "e": 34.1
+   },
+   {
+    "w": " ataupun",
+    "s": 34.1,
+    "e": 34.44
+   },
+   {
+    "w": " senang,",
+    "s": 34.44,
+    "e": 35.24
+   }
+  ]
+ },
+ {
+  "start": 35.54,
+  "end": 41.28,
+  "text": " dalam keadaan kita berada dalam kesusahan ataupun dalam kegembiraan,",
+  "words": [
+   {
+    "w": " dalam",
+    "s": 35.54,
+    "e": 35.6
+   },
+   {
+    "w": " keadaan",
+    "s": 35.6,
+    "e": 36.08
+   },
+   {
+    "w": " kita",
+    "s": 36.08,
+    "e": 37.66
+   },
+   {
+    "w": " berada",
+    "s": 37.66,
+    "e": 38.18
+   },
+   {
+    "w": " dalam",
+    "s": 38.18,
+    "e": 38.56
+   },
+   {
+    "w": " kesusahan",
+    "s": 38.56,
+    "e": 39.34
+   },
+   {
+    "w": " ataupun",
+    "s": 39.34,
+    "e": 39.84
+   },
+   {
+    "w": " dalam",
+    "s": 39.84,
+    "e": 40.22
+   },
+   {
+    "w": " kegembiraan,",
+    "s": 40.22,
+    "e": 41.28
+   }
+  ]
+ },
+ {
+  "start": 41.46,
+  "end": 45.14,
+  "text": " dia tetap ada dengan kita tanpa kita pinta dia berada dengan kita.",
+  "words": [
+   {
+    "w": " dia",
+    "s": 41.46,
+    "e": 41.6
+   },
+   {
+    "w": " tetap",
+    "s": 41.6,
+    "e": 41.92
+   },
+   {
+    "w": " ada",
+    "s": 41.92,
+    "e": 42.34
+   },
+   {
+    "w": " dengan",
+    "s": 42.34,
+    "e": 42.54
+   },
+   {
+    "w": " kita",
+    "s": 42.54,
+    "e": 42.82
+   },
+   {
+    "w": " tanpa",
+    "s": 42.82,
+    "e": 43.28
+   },
+   {
+    "w": " kita",
+    "s": 43.28,
+    "e": 43.6
+   },
+   {
+    "w": " pinta",
+    "s": 43.6,
+    "e": 43.92
+   },
+   {
+    "w": " dia",
+    "s": 43.92,
+    "e": 44.1
+   },
+   {
+    "w": " berada",
+    "s": 44.1,
+    "e": 44.36
+   },
+   {
+    "w": " dengan",
+    "s": 44.36,
+    "e": 44.56
+   },
+   {
+    "w": " kita.",
+    "s": 44.56,
+    "e": 45.14
+   }
+  ]
+ },
+ {
+  "start": 45.76,
+  "end": 52.24,
+  "text": " Yang ketiga adalah apabila kita dapat jiran yang baik, ataupun kita dapat kawasan komuniti yang baik,",
+  "words": [
+   {
+    "w": " Yang",
+    "s": 45.76,
+    "e": 45.9
+   },
+   {
+    "w": " ketiga",
+    "s": 45.9,
+    "e": 46.38
+   },
+   {
+    "w": " adalah",
+    "s": 46.38,
+    "e": 46.82
+   },
+   {
+    "w": " apabila",
+    "s": 46.82,
+    "e": 47.28
+   },
+   {
+    "w": " kita",
+    "s": 47.28,
+    "e": 47.56
+   },
+   {
+    "w": " dapat",
+    "s": 47.56,
+    "e": 48.24
+   },
+   {
+    "w": " jiran",
+    "s": 48.24,
+    "e": 48.8
+   },
+   {
+    "w": " yang",
+    "s": 48.8,
+    "e": 49.1
+   },
+   {
+    "w": " baik,",
+    "s": 49.1,
+    "e": 49.5
+   },
+   {
+    "w": " ataupun",
+    "s": 49.72,
+    "e": 50.0
+   },
+   {
+    "w": " kita",
+    "s": 50.0,
+    "e": 50.3
+   },
+   {
+    "w": " dapat",
+    "s": 50.3,
+    "e": 50.7
+   },
+   {
+    "w": " kawasan",
+    "s": 50.7,
+    "e": 51.26
+   },
+   {
+    "w": " komuniti",
+    "s": 51.26,
+    "e": 51.76
+   },
+   {
+    "w": " yang",
+    "s": 51.76,
+    "e": 51.98
+   },
+   {
+    "w": " baik,",
+    "s": 51.98,
+    "e": 52.24
+   }
+  ]
+ },
+ {
+  "start": 53.019999999999996,
+  "end": 58.24,
+  "text": " yang memberikan satu impak dalam kehidupan kita. Itu juga adalah kebahagiaan.",
+  "words": [
+   {
+    "w": " yang",
+    "s": 53.019999999999996,
+    "e": 53.58
+   },
+   {
+    "w": " memberikan",
+    "s": 53.58,
+    "e": 54.14
+   },
+   {
+    "w": " satu",
+    "s": 54.14,
+    "e": 55.02
+   },
+   {
+    "w": " impak",
+    "s": 55.02,
+    "e": 55.42
+   },
+   {
+    "w": " dalam",
+    "s": 55.42,
+    "e": 55.7
+   },
+   {
+    "w": " kehidupan",
+    "s": 55.7,
+    "e": 56.12
+   },
+   {
+    "w": " kita.",
+    "s": 56.12,
+    "e": 56.74
+   },
+   {
+    "w": " Itu",
+    "s": 57.26,
+    "e": 57.42
+   },
+   {
+    "w": " juga",
+    "s": 57.42,
+    "e": 57.66
+   },
+   {
+    "w": " adalah",
+    "s": 57.66,
+    "e": 57.9
+   },
+   {
+    "w": " kebahagiaan.",
+    "s": 57.9,
+    "e": 58.24
+   }
+  ]
+ },
+ {
+  "start": 59.06,
+  "end": 62.06,
+  "text": " Tiga perkara ini yang boleh membuatkan kita rasa bahagia dalam hidup kita.",
+  "words": [
+   {
+    "w": " Tiga",
+    "s": 59.06,
+    "e": 59.28
+   },
+   {
+    "w": " perkara",
+    "s": 59.28,
+    "e": 59.66
+   },
+   {
+    "w": " ini",
+    "s": 59.66,
+    "e": 59.9
+   },
+   {
+    "w": " yang",
+    "s": 59.9,
+    "e": 60.1
+   },
+   {
+    "w": " boleh",
+    "s": 60.1,
+    "e": 60.32
+   },
+   {
+    "w": " membuatkan",
+    "s": 60.32,
+    "e": 60.6
+   },
+   {
+    "w": " kita",
+    "s": 60.6,
+    "e": 60.8
+   },
+   {
+    "w": " rasa",
+    "s": 60.8,
+    "e": 61.02
+   },
+   {
+    "w": " bahagia",
+    "s": 61.02,
+    "e": 61.32
+   },
+   {
+    "w": " dalam",
+    "s": 61.32,
+    "e": 61.44
+   },
+   {
+    "w": " hidup",
+    "s": 61.44,
+    "e": 61.62
+   },
+   {
+    "w": " kita.",
+    "s": 61.62,
+    "e": 62.06
+   }
+  ]
+ },
+ {
+  "start": 62.48,
+  "end": 67.88,
+  "text": " Jadi kalau sekarang kita dapat keluarga yang baik, kita dapat sahabat yang baik dan kita memiliki jiran yang baik,",
+  "words": [
+   {
+    "w": " Jadi",
+    "s": 62.48,
+    "e": 62.6
+   },
+   {
+    "w": " kalau",
+    "s": 62.6,
+    "e": 62.78
+   },
+   {
+    "w": " sekarang",
+    "s": 62.78,
+    "e": 62.96
+   },
+   {
+    "w": " kita",
+    "s": 62.96,
+    "e": 63.18
+   },
+   {
+    "w": " dapat",
+    "s": 63.18,
+    "e": 63.48
+   },
+   {
+    "w": " keluarga",
+    "s": 63.48,
+    "e": 63.9
+   },
+   {
+    "w": " yang",
+    "s": 63.9,
+    "e": 64.14
+   },
+   {
+    "w": " baik,",
+    "s": 64.14,
+    "e": 64.4
+   },
+   {
+    "w": " kita",
+    "s": 64.88,
+    "e": 64.94
+   },
+   {
+    "w": " dapat",
+    "s": 64.94,
+    "e": 65.22
+   },
+   {
+    "w": " sahabat",
+    "s": 65.22,
+    "e": 65.74
+   },
+   {
+    "w": " yang",
+    "s": 65.74,
+    "e": 66.0
+   },
+   {
+    "w": " baik",
+    "s": 66.0,
+    "e": 66.18
+   },
+   {
+    "w": " dan",
+    "s": 66.18,
+    "e": 66.38
+   },
+   {
+    "w": " kita",
+    "s": 66.38,
+    "e": 66.62
+   },
+   {
+    "w": " memiliki",
+    "s": 66.62,
+    "e": 66.9
+   },
+   {
+    "w": " jiran",
+    "s": 66.9,
+    "e": 67.2
+   },
+   {
+    "w": " yang",
+    "s": 67.2,
+    "e": 67.44
+   },
+   {
+    "w": " baik,",
+    "s": 67.44,
+    "e": 67.88
+   }
+  ]
+ },
+ {
+  "start": 68.66,
+  "end": 73.32,
+  "text": " hargailah mereka ini kerana mereka kunci untuk kita rasa nikmat bahagia.",
+  "words": [
+   {
+    "w": " hargailah",
+    "s": 68.66,
+    "e": 69.22
+   },
+   {
+    "w": " mereka",
+    "s": 69.22,
+    "e": 69.72
+   },
+   {
+    "w": " ini",
+    "s": 69.72,
+    "e": 70.12
+   },
+   {
+    "w": " kerana",
+    "s": 70.12,
+    "e": 70.42
+   },
+   {
+    "w": " mereka",
+    "s": 70.42,
+    "e": 70.98
+   },
+   {
+    "w": " kunci",
+    "s": 70.98,
+    "e": 71.48
+   },
+   {
+    "w": " untuk",
+    "s": 71.48,
+    "e": 71.72
+   },
+   {
+    "w": " kita",
+    "s": 71.72,
+    "e": 71.96
+   },
+   {
+    "w": " rasa",
+    "s": 71.96,
+    "e": 72.2
+   },
+   {
+    "w": " nikmat",
+    "s": 72.2,
+    "e": 72.66
+   },
+   {
+    "w": " bahagia.",
+    "s": 72.66,
+    "e": 73.32
+   }
+  ]
+ },
+ {
+  "start": 73.56,
+  "end": 81.02,
+  "text": " Mereka adalah golongan-golongan ataupun orang-orang yang membuatkan kita akan rasa bahagia dalam hidup walaupun seketika.",
+  "words": [
+   {
+    "w": " Mereka",
+    "s": 73.56,
+    "e": 74.08
+   },
+   {
+    "w": " adalah",
+    "s": 74.08,
+    "e": 75.18
+   },
+   {
+    "w": " golongan",
+    "s": 75.18,
+    "e": 75.66
+   },
+   {
+    "w": "-golongan",
+    "s": 75.66,
+    "e": 76.12
+   },
+   {
+    "w": " ataupun",
+    "s": 76.12,
+    "e": 76.48
+   },
+   {
+    "w": " orang",
+    "s": 76.48,
+    "e": 76.84
+   },
+   {
+    "w": "-orang",
+    "s": 76.84,
+    "e": 76.98
+   },
+   {
+    "w": " yang",
+    "s": 76.98,
+    "e": 77.24
+   },
+   {
+    "w": " membuatkan",
+    "s": 77.24,
+    "e": 77.68
+   },
+   {
+    "w": " kita",
+    "s": 77.68,
+    "e": 77.94
+   },
+   {
+    "w": " akan",
+    "s": 77.94,
+    "e": 78.1
+   },
+   {
+    "w": " rasa",
+    "s": 78.1,
+    "e": 78.36
+   },
+   {
+    "w": " bahagia",
+    "s": 78.36,
+    "e": 78.76
+   },
+   {
+    "w": " dalam",
+    "s": 78.76,
+    "e": 78.86
+   },
+   {
+    "w": " hidup",
+    "s": 78.86,
+    "e": 79.32
+   },
+   {
+    "w": " walaupun",
+    "s": 79.32,
+    "e": 80.36
+   },
+   {
+    "w": " seketika.",
+    "s": 80.36,
+    "e": 81.02
+   }
+  ]
+ }
+]

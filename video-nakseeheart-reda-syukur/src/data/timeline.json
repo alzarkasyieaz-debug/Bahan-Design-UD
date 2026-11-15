@@ -1,0 +1,84 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "IMG_6429.mov (77.74 s, 1920x1080 HEVC diputar -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    5.05
+   ],
+   "src": 44.95,
+   "srcEnd": 50.0
+  },
+  {
+   "id": "s1",
+   "out": [
+    5.05,
+    79.25
+   ],
+   "src": 1.9,
+   "srcEnd": 76.1
+  },
+  {
+   "id": "cta",
+   "out": [
+    79.25,
+    84.75
+   ],
+   "src": 76.0,
+   "srcEnd": 77.2,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 5.05,
+  "aspek": 8.61,
+  "pekerjaan": 10.35,
+  "kehidupan": 11.93,
+  "perkahwinan": 13.75,
+  "komunikasi": 15.71,
+  "apaSahaja": 17.21,
+  "takLari": 19.79,
+  "aturan": 22.67,
+  "mengajar": 26.51,
+  "reda": 29.67,
+  "syukur": 30.45,
+  "asbab": 34.11,
+  "hamba": 41.75,
+  "ketentuan": 45.15,
+  "penting": 47.43,
+  "akur": 49.37,
+  "syukur2": 50.97,
+  "reda2": 52.59,
+  "hikmah": 56.09,
+  "takSangka": 57.65,
+  "ajar": 61.07,
+  "menerima": 62.75,
+  "ganjaran": 67.89,
+  "luarBiasa": 68.77,
+  "mereka": 70.47,
+  "percayalah": 78.65,
+  "brollA": [
+   53.4,
+   59.25
+  ],
+  "climax": [
+   66.7,
+   76.3
+  ],
+  "finale": [
+   76.3,
+   79.25
+  ],
+  "cta": 79.25,
+  "end": 84.75,
+  "followPulse": [
+   16.0,
+   40.0,
+   66.0
+  ]
+ }
+}

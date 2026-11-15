@@ -1,0 +1,119 @@
+{
+ "source": "IMG_6575.mov",
+ "maxChars": 46,
+ "gold": [
+  "ketenangan",
+  "termahal",
+  "kemewahan",
+  "ringgit",
+  "tenang",
+  "mahalnya",
+  "rahsia",
+  "hubungan",
+  "allah",
+  "tanggungjawab",
+  "hamba"
+ ],
+ "upper": [
+  "ketenangan",
+  "percayalah"
+ ],
+ "chunks": [
+  [
+   "hook",
+   22.65,
+   25.6,
+   "Oleh kerana itu, rahsia untuk tenang,"
+  ],
+  [
+   "hook",
+   25.6,
+   28.15,
+   "sentiasa jaga hubungan Allah SWT."
+  ],
+  [
+   "s1",
+   1.4,
+   5.15,
+   "Ketenangan adalah perkara termahal dalam kehidupan."
+  ],
+  [
+   "s1",
+   5.15,
+   8.6,
+   "Bahkan ketenangan tak mampu dibeli dengan kemewahan,"
+  ],
+  [
+   "s1",
+   8.6,
+   10.9,
+   "dengan wang ringgit dan seumpama dengannya."
+  ],
+  [
+   "s1",
+   10.9,
+   16.4,
+   "Kerana itu, bila mana kita mampu hidup tenang dalam setiap kehidupan kita,"
+  ],
+  [
+   "s1",
+   16.4,
+   19.05,
+   "di setiap pengurusan kita,"
+  ],
+  [
+   "s1",
+   19.05,
+   22.4,
+   "kita akan jumpa betapa mahalnya sebuah ketenangan."
+  ],
+  [
+   "s1",
+   22.4,
+   25.6,
+   "Oleh kerana itu, rahsia untuk tenang,"
+  ],
+  [
+   "s1",
+   25.6,
+   28.3,
+   "sentiasa jaga hubungan Allah SWT,"
+  ],
+  [
+   "s1",
+   28.3,
+   32.05,
+   "sentiasa melaksanakan tanggungjawab kita sebagai hamba Allah SWT."
+  ],
+  [
+   "s1",
+   32.05,
+   36.4,
+   "Pasti ketenangan itu akan datang dalam kehidupan kita."
+  ],
+  [
+   "s1",
+   36.4,
+   37.75,
+   "Percayalah."
+  ]
+ ],
+ "unsure": [
+  [
+   7.4,
+   "[NOTA — “dibeli” (medium) dipilih berbanding “dibuat” (large-v3) kerana sesuai dengan audio & maksud]"
+  ],
+  [
+   9.0,
+   "[NOTA — “wang ringgit dan seumpama dengannya”: large-v3 “waringit dan seumpama dengannya”, medium “waringgit dan sumpah mendengarnya”]"
+  ],
+  [
+   30.8,
+   "[NOTA — “sebagai hamba Allah” mengikut large-v3 (medium tertinggal “hamba”)]"
+  ],
+  [
+   1.0,
+   "[NOTA — cap masa perkataan daripada model medium]"
+  ]
+ ]
+}

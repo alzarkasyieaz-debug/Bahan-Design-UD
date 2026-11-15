@@ -1,0 +1,109 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "IMG_0797.MOV (82.20 s, 1920x1080 HEVC diputar -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    5.5
+   ],
+   "src": 67.8,
+   "srcEnd": 73.3
+  },
+  {
+   "id": "s1",
+   "out": [
+    5.5,
+    15.05
+   ],
+   "src": 3.9,
+   "srcEnd": 13.45
+  },
+  {
+   "id": "s2",
+   "out": [
+    15.05,
+    16.35
+   ],
+   "src": 14.65,
+   "srcEnd": 15.95
+  },
+  {
+   "id": "s3",
+   "out": [
+    16.35,
+    28.4
+   ],
+   "src": 16.75,
+   "srcEnd": 28.8
+  },
+  {
+   "id": "s4",
+   "out": [
+    28.4,
+    79.75
+   ],
+   "src": 29.75,
+   "srcEnd": 81.1
+  },
+  {
+   "id": "cta",
+   "out": [
+    79.75,
+    85.25
+   ],
+   "src": 80.9,
+   "srcEnd": 82.1,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 5.5,
+  "tiga": 6.28,
+  "bahagia": 9.3,
+  "pertama": 10.28,
+  "keluarga": 13.72,
+  "melengkapi": 16.9,
+  "kerjasama": 21.58,
+  "situasi": 24.16,
+  "kedua": 26.08,
+  "sahabat": 27.34,
+  "kawan": 28.93,
+  "susah": 32.27,
+  "senang": 33.09,
+  "kesusahan": 37.21,
+  "kegembiraan": 38.87,
+  "tetapAda": 40.25,
+  "pinta": 42.25,
+  "ketiga": 44.55,
+  "jiran": 46.89,
+  "komuniti": 49.91,
+  "impak": 53.67,
+  "kebahagiaan": 56.55,
+  "tigaPerkara": 57.71,
+  "jadi": 61.13,
+  "hargailah": 66.65,
+  "kunci": 69.63,
+  "nikmat": 70.85,
+  "golongan": 73.83,
+  "seketika": 79.01,
+  "climax": [
+   61.1,
+   71.95
+  ],
+  "finale": [
+   71.95,
+   79.75
+  ],
+  "cta": 79.75,
+  "end": 85.25,
+  "followPulse": [
+   16.0,
+   40.0,
+   64.0
+  ]
+ }
+}

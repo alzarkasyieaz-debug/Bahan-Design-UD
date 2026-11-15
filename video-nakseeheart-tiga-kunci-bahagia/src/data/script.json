@@ -1,0 +1,184 @@
+{
+ "source": "IMG_0797.MOV",
+ "maxChars": 46,
+ "gold": [
+  "tiga",
+  "bahagia",
+  "keluarga",
+  "melengkapi",
+  "kerjasama",
+  "sahabat",
+  "kawan",
+  "susah",
+  "senang",
+  "jiran",
+  "komuniti",
+  "impak",
+  "kebahagiaan",
+  "hargailah",
+  "kunci",
+  "nikmat"
+ ],
+ "upper": [
+  "pertama",
+  "kedua",
+  "ketiga",
+  "hargailah"
+ ],
+ "chunks": [
+  [
+   "hook",
+   67.8,
+   70.4,
+   "Hargailah mereka ini,"
+  ],
+  [
+   "hook",
+   70.4,
+   73.3,
+   "kerana mereka kunci untuk kita rasa nikmat bahagia."
+  ],
+  [
+   "s1",
+   3.9,
+   8.4,
+   "Ada tiga perkara dalam hidup ini yang boleh membuatkan kita rasa bahagia."
+  ],
+  [
+   "s1",
+   8.4,
+   13.45,
+   "Yang pertama, apabila kita memiliki keluarga yang baik,"
+  ],
+  [
+   "s2",
+   14.65,
+   15.95,
+   "yang mampu"
+  ],
+  [
+   "s3",
+   16.75,
+   19.6,
+   "saling melengkapi antara satu sama lain,"
+  ],
+  [
+   "s3",
+   19.6,
+   25.7,
+   "yang mampu memberikan kerjasama tidak kira dalam apa-apa situasi sekalipun."
+  ],
+  [
+   "s3",
+   25.7,
+   28.8,
+   "Yang kedua, apabila kita memiliki sahabat yang baik,"
+  ],
+  [
+   "s4",
+   29.75,
+   35.1,
+   "kawan yang mampu bersama dengan kita dalam keadaan susah ataupun senang,"
+  ],
+  [
+   "s4",
+   35.1,
+   41.1,
+   "dalam keadaan kita berada dalam kesusahan ataupun dalam kegembiraan,"
+  ],
+  [
+   "s4",
+   41.1,
+   45.2,
+   "dia tetap ada dengan kita tanpa kita pinta dia berada dengan kita."
+  ],
+  [
+   "s4",
+   45.2,
+   49.4,
+   "Yang ketiga adalah apabila kita dapat jiran yang baik,"
+  ],
+  [
+   "s4",
+   49.4,
+   52.7,
+   "ataupun kita dapat kawasan komuniti yang baik,"
+  ],
+  [
+   "s4",
+   52.7,
+   56.8,
+   "yang memberikan satu impak dalam kehidupan kita."
+  ],
+  [
+   "s4",
+   56.8,
+   58.8,
+   "Itu juga adalah kebahagiaan."
+  ],
+  [
+   "s4",
+   58.8,
+   62.2,
+   "Tiga perkara ini yang boleh membuatkan kita rasa bahagia dalam hidup kita."
+  ],
+  [
+   "s4",
+   62.2,
+   64.5,
+   "Jadi kalau sekarang kita dapat keluarga yang baik,"
+  ],
+  [
+   "s4",
+   64.5,
+   67.8,
+   "kita dapat sahabat yang baik, dan kita memiliki jiran yang baik,"
+  ],
+  [
+   "s4",
+   67.8,
+   70.4,
+   "hargailah mereka ini,"
+  ],
+  [
+   "s4",
+   70.4,
+   73.3,
+   "kerana mereka kunci untuk kita rasa nikmat bahagia."
+  ],
+  [
+   "s4",
+   73.3,
+   77.0,
+   "Mereka adalah golongan-golongan ataupun orang-orang"
+  ],
+  [
+   "s4",
+   77.0,
+   81.1,
+   "yang membuatkan kita rasa bahagia dalam hidup, walaupun seketika."
+  ]
+ ],
+ "unsure": [
+  [
+   13.5,
+   "[DIPOTONG jeda senyap ~13.45–14.65, ~15.95–16.75, ~28.8–29.75 s]"
+  ],
+  [
+   18.2,
+   "[NOTA — “antara satu sama lain” (medium); large-v3 “antara seseorang lain”]"
+  ],
+  [
+   43.4,
+   "[NOTA — “tanpa kita pinta” (medium); large-v3 “pinter”]"
+  ],
+  [
+   77.9,
+   "[NOTA — medium mendengar “kita akan rasa”; large-v3 “kita rasa” dipilih]"
+  ],
+  [
+   1.0,
+   "[NOTA — cap masa perkataan daripada model medium]"
+  ]
+ ]
+}

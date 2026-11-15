@@ -1,0 +1,264 @@
+{
+ "meta": {
+  "title": "Ketenangan, Perkara Termahal",
+  "compositionId": "NakSeeHeartKetenangan",
+  "output": "nakseeheart-ketenangan-termahal",
+  "source": "IMG_6575.mov"
+ },
+ "layout": {
+  "face": {
+   "x": 570,
+   "y": 480
+  },
+  "ceilingY": 125,
+  "ceilingTilt": -18,
+  "labelY": 1180,
+  "cardY": 1180,
+  "recapY": 1100,
+  "subtitleY": 1500,
+  "lowerThirdY": 1600,
+  "hookFocusY": 480,
+  "climaxFocusY": 520
+ },
+ "camera": {
+  "punch": [
+   "ketenangan",
+   "bahkan",
+   "mahalnya",
+   "rahsia"
+  ],
+  "jumpCutZoom": 1.05,
+  "climaxZoom": [
+   1.1,
+   1.16
+  ],
+  "hookZoom": [
+   1.18,
+   1.08,
+   1.12
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 2.9,
+   "dur": 1.2,
+   "f": 52,
+   "gain": 0.2
+  },
+  {
+   "kind": "pop",
+   "at": "ketenangan"
+  },
+  {
+   "kind": "impact",
+   "at": "bahkan",
+   "dur": 1.2,
+   "f": 48,
+   "gain": 0.2
+  },
+  {
+   "kind": "shimmer",
+   "at": "jaga",
+   "dur": 1.8,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "brollA.0+0.3",
+   "dur": 2.4,
+   "gain": 0.26
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "RAHSIA UNTUK TENANG",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 40,
+   "y": 1180
+  },
+  {
+   "type": "text3d",
+   "text": "JAGA HUBUNGAN DENGAN ALLAH",
+   "at": 2.9,
+   "until": "flashToBody-0.2",
+   "y": 1290,
+   "size": 82,
+   "reveal": "punch",
+   "depth": 14,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 3.1,
+   "seed": "hook",
+   "spread": 460,
+   "y": 1290
+  },
+  {
+   "type": "ceiling3d",
+   "text": "KETENANGAN",
+   "at": "ketenangan-0.1",
+   "until": "bahkan-0.15",
+   "size": 110,
+   "depth": 16
+  },
+  {
+   "type": "chip",
+   "text": "PERKARA TERMAHAL DALAM HIDUP",
+   "at": "termahal",
+   "until": "bahkan-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "TAK MAMPU DIBELI",
+   "at": "bahkan",
+   "until": "hidupTenang-0.15",
+   "size": 96,
+   "fill": "red",
+   "depth": 14
+  },
+  {
+   "type": "compare",
+   "at": "dibeli-0.2",
+   "until": "hidupTenang-0.15",
+   "arrow": false,
+   "left": {
+    "title": "TIDAK DIBELI DENGAN",
+    "items": [
+     {
+      "text": "Kemewahan",
+      "at": "kemewahan"
+     },
+     {
+      "text": "Wang ringgit",
+      "at": "ringgit"
+     }
+    ]
+   },
+   "right": {
+    "title": "KETENANGAN",
+    "good": true,
+    "items": [
+     {
+      "text": "Lebih mahal",
+      "at": "ringgit+0.6"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ceiling3d",
+   "text": "HIDUP TENANG",
+   "at": "hidupTenang-0.1",
+   "until": "mahalnya-0.15",
+   "size": 110,
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BETAPA MAHALNYA",
+   "at": "mahalnya-0.1",
+   "until": "rahsia-0.15",
+   "size": 96,
+   "reveal": "punch",
+   "depth": 16
+  },
+  {
+   "type": "ceiling3d",
+   "text": "RAHSIA TENANG",
+   "at": "rahsia-0.1",
+   "until": "brollA.0-0.1",
+   "size": 105,
+   "depth": 16
+  },
+  {
+   "type": "checklist",
+   "title": "RAHSIA TENANG",
+   "at": "jaga-0.3",
+   "until": "brollA.0-0.1",
+   "items": [
+    {
+     "text": "JAGA HUBUNGAN ALLAH",
+     "at": "jaga"
+    },
+    {
+     "text": "TUNAI TANGGUNGJAWAB",
+     "at": "tanggungjawab"
+    }
+   ]
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "brollA.0",
+   "to": "brollA.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "PASTI",
+     "at": "brollA.0+0.2",
+     "until": "brollA.1-0.1",
+     "y": 260,
+     "size": 46
+    },
+    {
+     "type": "text3d",
+     "text": "KETENANGAN",
+     "at": "brollA.0+0.3",
+     "until": "brollA.1-0.1",
+     "y": 420,
+     "size": 150,
+     "depth": 20,
+     "rotX": 8
+    },
+    {
+     "type": "label",
+     "text": "AKAN DATANG DALAM HIDUP KITA",
+     "at": "datang",
+     "until": "brollA.1-0.1",
+     "y": 580,
+     "size": 44
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERCAYALAH",
+   "at": "percayalah-0.2",
+   "until": "cta-0.05",
+   "size": 115,
+   "depth": 16
+  }
+ ],
+ "cover": {
+  "frame": 20.0,
+  "kicker": "PERKARA TERMAHAL",
+  "big": "KETENANGAN",
+  "line2": "TAK MAMPU DIBELI",
+  "tag": "Jaga hubungan dengan Allah",
+  "bigSize": 180,
+  "line2Size": 96
+ },
+ "poster": {
+  "icon": "heart",
+  "top": "PERKARA",
+  "mid": "TERMAHAL",
+  "last": "ADALAH KETENANGAN",
+  "banner": "Tak mampu dibeli dengan wang!",
+  "num": "2",
+  "numLabel": "Rahsia Hidup Tenang",
+  "frame": 20.0,
+  "headTop": 240,
+  "chinY": 720,
+  "faceX": 570,
+  "maxScale": 1.4
+ }
+}
