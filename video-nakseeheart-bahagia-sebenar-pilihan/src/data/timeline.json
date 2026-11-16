@@ -1,0 +1,99 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "sourceVideo": "IMG_8629.mov (90.77 s, 1920x1080 HEVC diputar -> 1080x1920)",
+ "segments": [
+  {
+   "id": "hook",
+   "out": [
+    0.0,
+    3.35
+   ],
+   "src": 58.1,
+   "srcEnd": 61.45
+  },
+  {
+   "id": "s1",
+   "out": [
+    3.35,
+    54.15
+   ],
+   "src": 1.7,
+   "srcEnd": 52.5
+  },
+  {
+   "id": "s2",
+   "out": [
+    54.15,
+    90.4
+   ],
+   "src": 52.9,
+   "srcEnd": 89.15
+  },
+  {
+   "id": "s3",
+   "out": [
+    90.4,
+    91.4
+   ],
+   "src": 89.6,
+   "srcEnd": 90.6
+  },
+  {
+   "id": "cta",
+   "out": [
+    91.4,
+    96.9
+   ],
+   "src": 89.5,
+   "srcEnd": 90.7,
+   "rate": 0.15
+  }
+ ],
+ "beats": {
+  "flashToBody": 3.35,
+  "bahagia": 5.81,
+  "impikan": 9.97,
+  "ukuran": 13.09,
+  "berbeza": 15.23,
+  "keluarga": 19.91,
+  "citaCita": 24.87,
+  "kehendak": 32.13,
+  "pelbagai": 34.85,
+  "sebenar": 38.35,
+  "allahSuka": 44.37,
+  "cinta": 49.65,
+  "nabi": 50.73,
+  "luarBiasa": 53.57,
+  "tersilap": 57.35,
+  "derita": 62.31,
+  "kecewa": 66.45,
+  "hatiHati": 67.51,
+  "mencipta": 70.57,
+  "bukanDunia": 74.49,
+  "pencipta": 79.69,
+  "cari": 80.63,
+  "mendekatkan": 86.73,
+  "percayalah": 90.4,
+  "climax": [
+   80.55,
+   90.15
+  ],
+  "finale": [
+   90.15,
+   91.4
+  ],
+  "cta": 91.4,
+  "end": 96.9,
+  "followPulse": [
+   16.0,
+   40.0,
+   66.0
+  ],
+  "brollA": [
+   36.25,
+   45.85
+  ]
+ }
+}

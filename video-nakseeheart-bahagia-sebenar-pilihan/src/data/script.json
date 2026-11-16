@@ -1,0 +1,202 @@
+{
+ "source": "IMG_8629.mov",
+ "maxChars": 46,
+ "gold": [
+  "bahagia",
+  "kebahagiaan",
+  "ukuran",
+  "berbeza-beza",
+  "keluarga",
+  "cita-cita",
+  "kehendak",
+  "sebenar",
+  "allah",
+  "cinta",
+  "nabi",
+  "tersilap",
+  "derita",
+  "kecewa",
+  "hati-hati",
+  "memilih",
+  "mencipta",
+  "dunia",
+  "pencipta",
+  "mendekatkan"
+ ],
+ "upper": [
+  "percayalah",
+  "derita"
+ ],
+ "chunks": [
+  [
+   "hook",
+   58.1,
+   61.45,
+   "Kita sangkakan itu bahagia, tetapi akhirnya derita."
+  ],
+  [
+   "s1",
+   1.7,
+   4.9,
+   "Siapa dalam dunia ni tak nak bahagia?"
+  ],
+  [
+   "s1",
+   4.9,
+   7.6,
+   "Semua orang inginkan kebahagiaan,"
+  ],
+  [
+   "s1",
+   7.6,
+   10.3,
+   "semua orang impikan bahagia."
+  ],
+  [
+   "s1",
+   10.3,
+   14.6,
+   "Tetapi ukuran bahagia bagi setiap orang ni berbeza-beza."
+  ],
+  [
+   "s1",
+   14.6,
+   19.1,
+   "Ada orang bahagia bila bersama dengan keluarga."
+  ],
+  [
+   "s1",
+   19.1,
+   24.0,
+   "Ada orang bahagia bila dapat mencapai segala cita-cita dia."
+  ],
+  [
+   "s1",
+   24.0,
+   27.9,
+   "Ada orang pula bahagia apabila dia rasa"
+  ],
+  [
+   "s1",
+   27.9,
+   31.4,
+   "orang … dia mengikut apa sahaja kehendak dia."
+  ],
+  [
+   "s1",
+   31.4,
+   34.6,
+   "Jadi bahagia ni pelbagai keadaan."
+  ],
+  [
+   "s1",
+   34.6,
+   38.4,
+   "Tetapi bahagia yang sebenar,"
+  ],
+  [
+   "s1",
+   38.4,
+   44.2,
+   "apabila kita dapat buat satu perkara itu untuk Allah suka pada kita."
+  ],
+  [
+   "s1",
+   44.2,
+   47.4,
+   "Kita buat satu perkara itu"
+  ],
+  [
+   "s1",
+   47.4,
+   50.4,
+   "sehingga mendatangkan rasa cinta kita kepada Nabi Muhammad SAW."
+  ],
+  [
+   "s1",
+   50.4,
+   52.5,
+   "Itu bahagia yang sangat luar biasa."
+  ],
+  [
+   "s2",
+   52.9,
+   57.6,
+   "Tetapi hari ini ada kalanya kita tersilap memilih bahagia."
+  ],
+  [
+   "s2",
+   57.6,
+   61.6,
+   "Kita sangkakan itu bahagia, tetapi akhirnya derita."
+  ],
+  [
+   "s2",
+   61.6,
+   65.8,
+   "Kita sangka itu bahagia, tetapi akhirnya kita kecewa."
+  ],
+  [
+   "s2",
+   65.8,
+   68.3,
+   "Jadi hati-hati dalam memilih bahagia,"
+  ],
+  [
+   "s2",
+   68.3,
+   70.5,
+   "hati-hati dalam mencipta bahagia."
+  ],
+  [
+   "s2",
+   70.5,
+   74.7,
+   "Pastikan bahagia kita tersebut bukan sekadar di dunia,"
+  ],
+  [
+   "s2",
+   74.7,
+   79.3,
+   "bahkan bahagia kita tersebut … kita berjumpa dengan Maha Pencipta."
+  ],
+  [
+   "s2",
+   79.3,
+   82.1,
+   "Cari bahagia kita, dan insyaAllah"
+  ],
+  [
+   "s2",
+   82.1,
+   85.3,
+   "pastikan bahagia kita itu bahagia"
+  ],
+  [
+   "s2",
+   85.3,
+   89.0,
+   "yang boleh mendekatkan diri kita kepada Maha Pencipta kita."
+  ],
+  [
+   "s3",
+   89.6,
+   90.6,
+   "Percayalah."
+  ]
+ ],
+ "unsure": [
+  [
+   28.4,
+   "[TIDAK PASTI ~28.0–28.9 s — “orang sekalian dia” (kedua-dua model); maksud mungkin “sekeliling” tetapi tidak dapat disahkan → dipaparkan “orang … dia”]"
+  ],
+  [
+   76.8,
+   "[TIDAK PASTI ~76.5–77.1 s — “setakat” (large-v3) / “setak kala” (medium) → dipaparkan “…”]"
+  ],
+  [
+   1.0,
+   "[NOTA — cap masa perkataan daripada model medium]"
+  ]
+ ]
+}

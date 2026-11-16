@@ -1,0 +1,934 @@
+[
+ {
+  "start": 2.080000000000001,
+  "end": 9.98,
+  "text": " Siapa dalam dunia ni tak nak bahagia? Semua orang inginkan kebahagiaan. Semua orang impikan bahagia.",
+  "words": [
+   {
+    "w": " Siapa",
+    "s": 2.080000000000001,
+    "e": 2.8
+   },
+   {
+    "w": " dalam",
+    "s": 2.8,
+    "e": 3.1
+   },
+   {
+    "w": " dunia",
+    "s": 3.1,
+    "e": 3.62
+   },
+   {
+    "w": " ni",
+    "s": 3.62,
+    "e": 3.84
+   },
+   {
+    "w": " tak",
+    "s": 3.84,
+    "e": 4.0
+   },
+   {
+    "w": " nak",
+    "s": 4.0,
+    "e": 4.16
+   },
+   {
+    "w": " bahagia?",
+    "s": 4.16,
+    "e": 5.0
+   },
+   {
+    "w": " Semua",
+    "s": 5.5,
+    "e": 5.74
+   },
+   {
+    "w": " orang",
+    "s": 5.74,
+    "e": 5.9
+   },
+   {
+    "w": " inginkan",
+    "s": 5.9,
+    "e": 6.48
+   },
+   {
+    "w": " kebahagiaan.",
+    "s": 6.48,
+    "e": 7.6
+   },
+   {
+    "w": " Semua",
+    "s": 7.86,
+    "e": 8.12
+   },
+   {
+    "w": " orang",
+    "s": 8.12,
+    "e": 8.32
+   },
+   {
+    "w": " impikan",
+    "s": 8.32,
+    "e": 9.02
+   },
+   {
+    "w": " bahagia.",
+    "s": 9.02,
+    "e": 9.98
+   }
+  ]
+ },
+ {
+  "start": 10.72,
+  "end": 19.04,
+  "text": " Tetapi ukuran bahagia bagi setiap orang ni berbeza-beza. Ada orang bahagia bila bersama dengan keluarga.",
+  "words": [
+   {
+    "w": " Tetapi",
+    "s": 10.72,
+    "e": 11.44
+   },
+   {
+    "w": " ukuran",
+    "s": 11.44,
+    "e": 12.04
+   },
+   {
+    "w": " bahagia",
+    "s": 12.04,
+    "e": 12.66
+   },
+   {
+    "w": " bagi",
+    "s": 12.66,
+    "e": 13.02
+   },
+   {
+    "w": " setiap",
+    "s": 13.02,
+    "e": 13.18
+   },
+   {
+    "w": " orang",
+    "s": 13.18,
+    "e": 13.36
+   },
+   {
+    "w": " ni",
+    "s": 13.36,
+    "e": 13.58
+   },
+   {
+    "w": " berbeza",
+    "s": 13.58,
+    "e": 14.02
+   },
+   {
+    "w": "-beza.",
+    "s": 14.02,
+    "e": 14.78
+   },
+   {
+    "w": " Ada",
+    "s": 15.12,
+    "e": 15.3
+   },
+   {
+    "w": " orang",
+    "s": 15.3,
+    "e": 16.04
+   },
+   {
+    "w": " bahagia",
+    "s": 16.04,
+    "e": 17.24
+   },
+   {
+    "w": " bila",
+    "s": 17.24,
+    "e": 17.46
+   },
+   {
+    "w": " bersama",
+    "s": 17.46,
+    "e": 17.98
+   },
+   {
+    "w": " dengan",
+    "s": 17.98,
+    "e": 18.26
+   },
+   {
+    "w": " keluarga.",
+    "s": 18.26,
+    "e": 19.04
+   }
+  ]
+ },
+ {
+  "start": 19.42,
+  "end": 24.02,
+  "text": " Ada orang bahagia bila dapat mencapai segala cita-cita dia.",
+  "words": [
+   {
+    "w": " Ada",
+    "s": 19.42,
+    "e": 19.66
+   },
+   {
+    "w": " orang",
+    "s": 19.66,
+    "e": 20.38
+   },
+   {
+    "w": " bahagia",
+    "s": 20.38,
+    "e": 21.54
+   },
+   {
+    "w": " bila",
+    "s": 21.54,
+    "e": 21.84
+   },
+   {
+    "w": " dapat",
+    "s": 21.84,
+    "e": 22.18
+   },
+   {
+    "w": " mencapai",
+    "s": 22.18,
+    "e": 22.8
+   },
+   {
+    "w": " segala",
+    "s": 22.8,
+    "e": 23.22
+   },
+   {
+    "w": " cita",
+    "s": 23.22,
+    "e": 23.5
+   },
+   {
+    "w": "-cita",
+    "s": 23.5,
+    "e": 23.82
+   },
+   {
+    "w": " dia.",
+    "s": 23.82,
+    "e": 24.02
+   }
+  ]
+ },
+ {
+  "start": 24.02,
+  "end": 31.3,
+  "text": " Ada orang pula bahagia apabila dia rasa orang sekalian dia mengikut apa sahaja kehendak dia.",
+  "words": [
+   {
+    "w": " Ada",
+    "s": 24.02,
+    "e": 24.7
+   },
+   {
+    "w": " orang",
+    "s": 24.7,
+    "e": 25.02
+   },
+   {
+    "w": " pula",
+    "s": 25.02,
+    "e": 25.76
+   },
+   {
+    "w": " bahagia",
+    "s": 25.76,
+    "e": 26.78
+   },
+   {
+    "w": " apabila",
+    "s": 26.78,
+    "e": 27.36
+   },
+   {
+    "w": " dia",
+    "s": 27.36,
+    "e": 27.62
+   },
+   {
+    "w": " rasa",
+    "s": 27.62,
+    "e": 28.02
+   },
+   {
+    "w": " orang",
+    "s": 28.02,
+    "e": 28.46
+   },
+   {
+    "w": " sekalian",
+    "s": 28.46,
+    "e": 28.86
+   },
+   {
+    "w": " dia",
+    "s": 28.86,
+    "e": 29.14
+   },
+   {
+    "w": " mengikut",
+    "s": 29.14,
+    "e": 29.64
+   },
+   {
+    "w": " apa",
+    "s": 29.64,
+    "e": 30.1
+   },
+   {
+    "w": " sahaja",
+    "s": 30.1,
+    "e": 30.48
+   },
+   {
+    "w": " kehendak",
+    "s": 30.48,
+    "e": 30.9
+   },
+   {
+    "w": " dia.",
+    "s": 30.9,
+    "e": 31.3
+   }
+  ]
+ },
+ {
+  "start": 31.62,
+  "end": 44.14,
+  "text": " Jadi bahagia ni pelbagai keadaan. Tetapi bahagia yang sebenar apabila kita dapat buat satu perkara itu untuk Allah suka kepada kita.",
+  "words": [
+   {
+    "w": " Jadi",
+    "s": 31.62,
+    "e": 31.62
+   },
+   {
+    "w": " bahagia",
+    "s": 31.62,
+    "e": 32.24
+   },
+   {
+    "w": " ni",
+    "s": 32.24,
+    "e": 33.2
+   },
+   {
+    "w": " pelbagai",
+    "s": 33.2,
+    "e": 33.78
+   },
+   {
+    "w": " keadaan.",
+    "s": 33.78,
+    "e": 34.68
+   },
+   {
+    "w": " Tetapi",
+    "s": 34.9,
+    "e": 35.78
+   },
+   {
+    "w": " bahagia",
+    "s": 35.78,
+    "e": 36.42
+   },
+   {
+    "w": " yang",
+    "s": 36.42,
+    "e": 36.7
+   },
+   {
+    "w": " sebenar",
+    "s": 36.7,
+    "e": 37.48
+   },
+   {
+    "w": " apabila",
+    "s": 37.48,
+    "e": 38.66
+   },
+   {
+    "w": " kita",
+    "s": 38.66,
+    "e": 39.4
+   },
+   {
+    "w": " dapat",
+    "s": 39.4,
+    "e": 40.2
+   },
+   {
+    "w": " buat",
+    "s": 40.2,
+    "e": 40.54
+   },
+   {
+    "w": " satu",
+    "s": 40.54,
+    "e": 40.86
+   },
+   {
+    "w": " perkara",
+    "s": 40.86,
+    "e": 41.32
+   },
+   {
+    "w": " itu",
+    "s": 41.32,
+    "e": 41.68
+   },
+   {
+    "w": " untuk",
+    "s": 41.68,
+    "e": 42.72
+   },
+   {
+    "w": " Allah",
+    "s": 42.72,
+    "e": 43.06
+   },
+   {
+    "w": " suka",
+    "s": 43.06,
+    "e": 43.44
+   },
+   {
+    "w": " kepada",
+    "s": 43.44,
+    "e": 43.68
+   },
+   {
+    "w": " kita.",
+    "s": 43.68,
+    "e": 44.14
+   }
+  ]
+ },
+ {
+  "start": 44.5,
+  "end": 52.88,
+  "text": " Kita buat satu perkara itu sehingga mendatangkan rasa cinta kita kepada Nabi Muhammad SAW. Itu bahagia yang sangat luar biasa.",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 44.5,
+    "e": 44.66
+   },
+   {
+    "w": " buat",
+    "s": 44.66,
+    "e": 44.82
+   },
+   {
+    "w": " satu",
+    "s": 44.82,
+    "e": 45.1
+   },
+   {
+    "w": " perkara",
+    "s": 45.1,
+    "e": 45.6
+   },
+   {
+    "w": " itu",
+    "s": 45.6,
+    "e": 46.3
+   },
+   {
+    "w": " sehingga",
+    "s": 46.3,
+    "e": 47.1
+   },
+   {
+    "w": " mendatangkan",
+    "s": 47.1,
+    "e": 47.76
+   },
+   {
+    "w": " rasa",
+    "s": 47.76,
+    "e": 48.0
+   },
+   {
+    "w": " cinta",
+    "s": 48.0,
+    "e": 48.52
+   },
+   {
+    "w": " kita",
+    "s": 48.52,
+    "e": 48.88
+   },
+   {
+    "w": " kepada",
+    "s": 48.88,
+    "e": 49.08
+   },
+   {
+    "w": " Nabi",
+    "s": 49.08,
+    "e": 49.34
+   },
+   {
+    "w": " Muhammad",
+    "s": 49.34,
+    "e": 49.78
+   },
+   {
+    "w": " SAW.",
+    "s": 49.78,
+    "e": 50.38
+   },
+   {
+    "w": " Itu",
+    "s": 50.82,
+    "e": 50.96
+   },
+   {
+    "w": " bahagia",
+    "s": 50.96,
+    "e": 51.42
+   },
+   {
+    "w": " yang",
+    "s": 51.42,
+    "e": 51.58
+   },
+   {
+    "w": " sangat",
+    "s": 51.58,
+    "e": 51.92
+   },
+   {
+    "w": " luar",
+    "s": 51.92,
+    "e": 52.14
+   },
+   {
+    "w": " biasa.",
+    "s": 52.14,
+    "e": 52.88
+   }
+  ]
+ },
+ {
+  "start": 52.88,
+  "end": 61.76,
+  "text": " Tetapi hari ini ada kalanya kita tersilap memilih bahagia. Kita sangkakan itu bahagia tetapi akhirnya derita.",
+  "words": [
+   {
+    "w": " Tetapi",
+    "s": 52.88,
+    "e": 53.46
+   },
+   {
+    "w": " hari",
+    "s": 53.46,
+    "e": 53.72
+   },
+   {
+    "w": " ini",
+    "s": 53.72,
+    "e": 54.54
+   },
+   {
+    "w": " ada",
+    "s": 54.54,
+    "e": 54.94
+   },
+   {
+    "w": " kalanya",
+    "s": 54.94,
+    "e": 55.68
+   },
+   {
+    "w": " kita",
+    "s": 55.68,
+    "e": 56.1
+   },
+   {
+    "w": " tersilap",
+    "s": 56.1,
+    "e": 56.68
+   },
+   {
+    "w": " memilih",
+    "s": 56.68,
+    "e": 57.12
+   },
+   {
+    "w": " bahagia.",
+    "s": 57.12,
+    "e": 58.02
+   },
+   {
+    "w": " Kita",
+    "s": 58.24,
+    "e": 58.42
+   },
+   {
+    "w": " sangkakan",
+    "s": 58.42,
+    "e": 58.92
+   },
+   {
+    "w": " itu",
+    "s": 58.92,
+    "e": 59.2
+   },
+   {
+    "w": " bahagia",
+    "s": 59.2,
+    "e": 60.02
+   },
+   {
+    "w": " tetapi",
+    "s": 60.02,
+    "e": 60.54
+   },
+   {
+    "w": " akhirnya",
+    "s": 60.54,
+    "e": 61.06
+   },
+   {
+    "w": " derita.",
+    "s": 61.06,
+    "e": 61.76
+   }
+  ]
+ },
+ {
+  "start": 62.2,
+  "end": 69.88,
+  "text": " Kita sangka itu bahagia tetapi akhirnya kita kecewa. Jadi hati-hati dalam memilih bahagia, hati-hati dalam mencipta bahagia.",
+  "words": [
+   {
+    "w": " Kita",
+    "s": 62.2,
+    "e": 62.32
+   },
+   {
+    "w": " sangka",
+    "s": 62.32,
+    "e": 62.72
+   },
+   {
+    "w": " itu",
+    "s": 62.72,
+    "e": 63.02
+   },
+   {
+    "w": " bahagia",
+    "s": 63.02,
+    "e": 63.92
+   },
+   {
+    "w": " tetapi",
+    "s": 63.92,
+    "e": 64.3
+   },
+   {
+    "w": " akhirnya",
+    "s": 64.3,
+    "e": 64.84
+   },
+   {
+    "w": " kita",
+    "s": 64.84,
+    "e": 65.2
+   },
+   {
+    "w": " kecewa.",
+    "s": 65.2,
+    "e": 65.84
+   },
+   {
+    "w": " Jadi",
+    "s": 66.26,
+    "e": 66.26
+   },
+   {
+    "w": " hati",
+    "s": 66.26,
+    "e": 66.64
+   },
+   {
+    "w": "-hati",
+    "s": 66.64,
+    "e": 66.9
+   },
+   {
+    "w": " dalam",
+    "s": 66.9,
+    "e": 67.18
+   },
+   {
+    "w": " memilih",
+    "s": 67.18,
+    "e": 67.58
+   },
+   {
+    "w": " bahagia,",
+    "s": 67.58,
+    "e": 68.32
+   },
+   {
+    "w": " hati",
+    "s": 68.62,
+    "e": 68.88
+   },
+   {
+    "w": "-hati",
+    "s": 68.88,
+    "e": 69.04
+   },
+   {
+    "w": " dalam",
+    "s": 69.04,
+    "e": 69.32
+   },
+   {
+    "w": " mencipta",
+    "s": 69.32,
+    "e": 69.82
+   },
+   {
+    "w": " bahagia.",
+    "s": 69.82,
+    "e": 70.22
+   }
+  ]
+ },
+ {
+  "start": 70.88,
+  "end": 79.38,
+  "text": " Pastikan bahagia kita tersebut bukan sekadar di dunia. Bahkan bahagia kita tersebut setak kala kita berjumpa dengan Maha Pencipta.",
+  "words": [
+   {
+    "w": " Pastikan",
+    "s": 70.88,
+    "e": 71.64
+   },
+   {
+    "w": " bahagia",
+    "s": 71.64,
+    "e": 72.2
+   },
+   {
+    "w": " kita",
+    "s": 72.2,
+    "e": 72.46
+   },
+   {
+    "w": " tersebut",
+    "s": 72.46,
+    "e": 73.24
+   },
+   {
+    "w": " bukan",
+    "s": 73.24,
+    "e": 73.64
+   },
+   {
+    "w": " sekadar",
+    "s": 73.64,
+    "e": 74.02
+   },
+   {
+    "w": " di",
+    "s": 74.02,
+    "e": 74.22
+   },
+   {
+    "w": " dunia.",
+    "s": 74.22,
+    "e": 74.88
+   },
+   {
+    "w": " Bahkan",
+    "s": 75.16,
+    "e": 75.46
+   },
+   {
+    "w": " bahagia",
+    "s": 75.46,
+    "e": 75.92
+   },
+   {
+    "w": " kita",
+    "s": 75.92,
+    "e": 76.08
+   },
+   {
+    "w": " tersebut",
+    "s": 76.08,
+    "e": 76.7
+   },
+   {
+    "w": " setak",
+    "s": 76.7,
+    "e": 77.0
+   },
+   {
+    "w": " kala",
+    "s": 77.0,
+    "e": 77.2
+   },
+   {
+    "w": " kita",
+    "s": 77.2,
+    "e": 77.48
+   },
+   {
+    "w": " berjumpa",
+    "s": 77.48,
+    "e": 78.06
+   },
+   {
+    "w": " dengan",
+    "s": 78.06,
+    "e": 78.44
+   },
+   {
+    "w": " Maha",
+    "s": 78.44,
+    "e": 78.68
+   },
+   {
+    "w": " Pencipta.",
+    "s": 78.68,
+    "e": 79.38
+   }
+  ]
+ },
+ {
+  "start": 79.38,
+  "end": 89.6,
+  "text": " Cari bahagia kita dan InsyaAllah pastikan bahagia kita itu bahagia yang boleh mendekatkan diri kita kepada Maha Pencipta kita.",
+  "words": [
+   {
+    "w": " Cari",
+    "s": 79.38,
+    "e": 79.98
+   },
+   {
+    "w": " bahagia",
+    "s": 79.98,
+    "e": 80.44
+   },
+   {
+    "w": " kita",
+    "s": 80.44,
+    "e": 80.88
+   },
+   {
+    "w": " dan",
+    "s": 80.88,
+    "e": 81.42
+   },
+   {
+    "w": " InsyaAllah",
+    "s": 81.42,
+    "e": 82.22
+   },
+   {
+    "w": " pastikan",
+    "s": 82.22,
+    "e": 82.78
+   },
+   {
+    "w": " bahagia",
+    "s": 82.78,
+    "e": 83.28
+   },
+   {
+    "w": " kita",
+    "s": 83.28,
+    "e": 83.5
+   },
+   {
+    "w": " itu",
+    "s": 83.5,
+    "e": 84.12
+   },
+   {
+    "w": " bahagia",
+    "s": 84.12,
+    "e": 85.12
+   },
+   {
+    "w": " yang",
+    "s": 85.12,
+    "e": 85.24
+   },
+   {
+    "w": " boleh",
+    "s": 85.24,
+    "e": 85.48
+   },
+   {
+    "w": " mendekatkan",
+    "s": 85.48,
+    "e": 86.14
+   },
+   {
+    "w": " diri",
+    "s": 86.14,
+    "e": 86.48
+   },
+   {
+    "w": " kita",
+    "s": 86.48,
+    "e": 86.92
+   },
+   {
+    "w": " kepada",
+    "s": 86.92,
+    "e": 87.62
+   },
+   {
+    "w": " Maha",
+    "s": 87.62,
+    "e": 88.22
+   },
+   {
+    "w": " Pencipta",
+    "s": 88.22,
+    "e": 88.9
+   },
+   {
+    "w": " kita.",
+    "s": 88.9,
+    "e": 89.6
+   }
+  ]
+ },
+ {
+  "start": 89.6,
+  "end": 90.4,
+  "text": " Percayalah.",
+  "words": [
+   {
+    "w": " Percayalah.",
+    "s": 89.6,
+    "e": 90.4
+   }
+  ]
+ }
+]

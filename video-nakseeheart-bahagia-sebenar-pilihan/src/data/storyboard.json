@@ -1,0 +1,338 @@
+{
+ "meta": {
+  "title": "Hati-Hati Memilih Bahagia",
+  "compositionId": "NakSeeHeartBahagiaPilihan",
+  "output": "nakseeheart-bahagia-sebenar-pilihan",
+  "source": "IMG_8629.mov"
+ },
+ "layout": {
+  "face": {
+   "x": 560,
+   "y": 1020
+  },
+  "ceilingY": 280,
+  "ceilingTilt": -20,
+  "labelY": 150,
+  "cardY": 480,
+  "recapY": 340,
+  "subtitleY": 1510,
+  "lowerThirdY": 1610,
+  "hookFocusY": 1020,
+  "climaxFocusY": 1060
+ },
+ "camera": {
+  "punch": [
+   "ukuran",
+   "tersilap",
+   "hatiHati",
+   "cari"
+  ],
+  "jumpCutZoom": 1.06,
+  "climaxZoom": [
+   1.12,
+   1.2
+  ],
+  "hookZoom": [
+   1.22,
+   1.1,
+   1.16
+  ]
+ },
+ "subtitleCalm": [],
+ "music": {
+  "buildUp": "climax.0-6"
+ },
+ "sfx": [
+  {
+   "kind": "impact",
+   "at": 1.9,
+   "dur": 1.2,
+   "f": 48,
+   "gain": 0.22
+  },
+  {
+   "kind": "pop",
+   "at": "keluarga-1.2"
+  },
+  {
+   "kind": "pop",
+   "at": "citaCita-0.4"
+  },
+  {
+   "kind": "pop",
+   "at": "kehendak-1.2"
+  },
+  {
+   "kind": "shimmer",
+   "at": "allahSuka",
+   "dur": 2.4,
+   "gain": 0.28
+  },
+  {
+   "kind": "impact",
+   "at": "derita",
+   "dur": 1.3,
+   "f": 44,
+   "gain": 0.22
+  },
+  {
+   "kind": "shimmer",
+   "at": "mendekatkan",
+   "dur": 2.0,
+   "gain": 0.24
+  }
+ ],
+ "elements": [
+  {
+   "type": "label",
+   "text": "SANGKA BAHAGIA…",
+   "at": 0.12,
+   "until": "flashToBody-0.2",
+   "size": 44,
+   "y": 150
+  },
+  {
+   "type": "text3d",
+   "text": "AKHIRNYA DERITA",
+   "at": 1.9,
+   "until": "flashToBody-0.2",
+   "y": 310,
+   "size": 130,
+   "fill": "red",
+   "reveal": "punch",
+   "depth": 18,
+   "float": false
+  },
+  {
+   "type": "burst",
+   "at": 2.1,
+   "seed": "hook",
+   "spread": 460,
+   "y": 310
+  },
+  {
+   "type": "bigword",
+   "text": "bahagia",
+   "at": "bahagia-0.2",
+   "until": "ukuran-0.3",
+   "y": 300,
+   "color": "#D8B46A",
+   "size": 230
+  },
+  {
+   "type": "ceiling3d",
+   "text": "UKURAN BERBEZA",
+   "at": "ukuran-0.1",
+   "until": "keluarga-1.6",
+   "size": 120,
+   "depth": 18
+  },
+  {
+   "type": "iconcards",
+   "at": "keluarga-1.4",
+   "until": "pelbagai-0.2",
+   "y": 330,
+   "title": "ADA ORANG BAHAGIA BILA…",
+   "items": [
+    {
+     "icon": "family",
+     "text": "Bersama keluarga",
+     "tag": "01",
+     "at": "keluarga-1.2"
+    },
+    {
+     "icon": "target",
+     "text": "Capai cita-cita",
+     "tag": "02",
+     "at": "citaCita-0.4"
+    },
+    {
+     "icon": "users",
+     "text": "Orang ikut kehendaknya",
+     "tag": "03",
+     "at": "kehendak-1.2"
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PELBAGAI KEADAAN",
+   "at": "pelbagai-0.1",
+   "until": "brollA.0-0.1",
+   "size": 110,
+   "fill": "cream",
+   "depth": 16
+  },
+  {
+   "type": "broll",
+   "kind": "spiritual",
+   "from": "brollA.0",
+   "to": "brollA.1",
+   "children": [
+    {
+     "type": "label",
+     "text": "BAHAGIA YANG SEBENAR",
+     "at": "brollA.0+0.2",
+     "until": "brollA.1-0.1",
+     "y": 260,
+     "size": 46
+    },
+    {
+     "type": "text3d",
+     "text": "ALLAH SUKA",
+     "at": "brollA.0+1.0",
+     "until": "brollA.1-0.1",
+     "y": 430,
+     "size": 165,
+     "depth": 20,
+     "rotX": 8
+    },
+    {
+     "type": "burst",
+     "at": "allahSuka",
+     "y": 430,
+     "seed": "allah",
+     "spread": 480
+    }
+   ]
+  },
+  {
+   "type": "ceiling3d",
+   "text": "CINTA KEPADA NABI",
+   "at": "cinta-0.4",
+   "until": "tersilap-0.6",
+   "size": 110,
+   "depth": 18
+  },
+  {
+   "type": "neontag",
+   "text": "BAHAGIA LUAR BIASA",
+   "at": "luarBiasa-0.4",
+   "until": "tersilap-0.6",
+   "y": 560
+  },
+  {
+   "type": "ceiling3d",
+   "text": "TERSILAP MEMILIH",
+   "at": "tersilap-0.3",
+   "until": "hatiHati-0.15",
+   "size": 112,
+   "fill": "red",
+   "depth": 18
+  },
+  {
+   "type": "compare",
+   "at": "derita-1.4",
+   "until": "hatiHati-0.15",
+   "arrow": true,
+   "left": {
+    "title": "SANGKA",
+    "items": [
+     {
+      "text": "Itu bahagia",
+      "at": "derita-1.2"
+     }
+    ]
+   },
+   "right": {
+    "title": "AKHIRNYA",
+    "items": [
+     {
+      "text": "Derita",
+      "at": "derita"
+     },
+     {
+      "text": "Kecewa",
+      "at": "kecewa"
+     }
+    ]
+   }
+  },
+  {
+   "type": "ceiling3d",
+   "text": "HATI-HATI",
+   "at": "hatiHati-0.1",
+   "until": "bukanDunia-0.3",
+   "size": 170,
+   "reveal": "punch",
+   "depth": 22
+  },
+  {
+   "type": "pills",
+   "at": "hatiHati",
+   "until": "bukanDunia-0.3",
+   "y": 500,
+   "lines": [
+    {
+     "text": "Hati-hati *memilih* bahagia",
+     "at": "hatiHati"
+    },
+    {
+     "text": "Hati-hati *mencipta* bahagia",
+     "at": "mencipta"
+    }
+   ],
+   "size": 48
+  },
+  {
+   "type": "ceiling3d",
+   "text": "BUKAN SEKADAR DUNIA",
+   "at": "bukanDunia-0.4",
+   "until": "cari-0.15",
+   "size": 100,
+   "depth": 18
+  },
+  {
+   "type": "chip",
+   "text": "HINGGA BERTEMU MAHA PENCIPTA",
+   "at": "pencipta-0.4",
+   "until": "cari-0.15",
+   "icon": "none"
+  },
+  {
+   "type": "ceiling3d",
+   "text": "CARI BAHAGIA",
+   "at": "cari-0.1",
+   "until": "mendekatkan-0.6",
+   "size": 140,
+   "depth": 18
+  },
+  {
+   "type": "neontag",
+   "text": "DEKAT KEPADA ALLAH",
+   "at": "mendekatkan-0.4",
+   "until": "cta-0.1",
+   "y": 560
+  },
+  {
+   "type": "ceiling3d",
+   "text": "PERCAYALAH",
+   "at": "percayalah-0.5",
+   "until": "cta-0.05",
+   "size": 150,
+   "depth": 18
+  }
+ ],
+ "cover": {
+  "frame": 40.0,
+  "kicker": "BAHAGIA SEBENAR",
+  "big": "BAHAGIA",
+  "line2": "JANGAN TERSILAP MEMILIH",
+  "tag": "Yang mendekatkan kepada Allah",
+  "bigSize": 220,
+  "line2Size": 82
+ },
+ "poster": {
+  "icon": "heart",
+  "top": "SANGKA BAHAGIA",
+  "mid": "RUPANYA DERITA?",
+  "last": "HATI-HATI MEMILIH",
+  "banner": "Bahagia yang dekatkan kepada Allah!",
+  "num": "3",
+  "numLabel": "Ukuran Bahagia Manusia",
+  "frame": 40.0,
+  "headTop": 660,
+  "chinY": 1480,
+  "faceX": 560
+ }
+}
