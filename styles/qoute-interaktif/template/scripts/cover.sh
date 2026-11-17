@@ -21,7 +21,7 @@ FACE=$(node -p "const s=require('./src/data/storyboard.json'); const p=s.poster|
 GRADE="$(dirname "$0")/grade_frame.py"
 [ -f "$GRADE" ] || GRADE="$(dirname "$0")/../../styles/qoute-interaktif/tools/grade_frame.py"
 python3 -I "$GRADE" public/media/cover-frame-raw.jpg public/media/cover-frame.jpg $FACE
-if [ "$COMP" = CoverImpak ] || [ "$COMP" = CoverInfo ]; then
+if [ "$COMP" = CoverImpak ] || [ "$COMP" = CoverInfo ] || [ "$COMP" = CoverPanel ]; then
   # figura cut-out (rembg u2net_human_seg) untuk gaya Impak / Info
   python3 -I -c "from rembg import remove,new_session;from PIL import Image;remove(Image.open('public/media/cover-frame.jpg').convert('RGB'),session=new_session('u2net_human_seg'),post_process_mask=True).save('public/media/cover-cutout.png')"
 fi
