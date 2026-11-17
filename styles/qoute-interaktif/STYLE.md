@@ -157,6 +157,8 @@ Komponen cover tidak lagi menggunakan penapis CSS sendiri, jadi semua cover mend
 - Wajah terang; logo ▶ NakSeeHeart + lengkung emas di bawah.
 
 ### Cover v3 — 3 gaya alternatif (sampel: `examples/cover-v3/`)
+
+> **LALAI (pilihan pengguna): Gaya B "Panel v2".** `npm run render` menjana cover Panel secara automatik dan memasukkannya ke dalam video. Gaya lain hanya jika diminta: `COVER_STYLE=impak|info|poster npm run render` atau `bash scripts/cover.sh <gaya> && bash scripts/add_cover.sh`.
 | Gaya | Arahan | Rupa |
 |---|---|---|
 | **Impak** | `bash scripts/cover.sh impak` | Sinar emas, figura cut-out bergaris putih, kicker merah, tajuk gergasi + bar emas, nombor besar |

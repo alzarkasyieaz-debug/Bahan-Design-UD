@@ -47,6 +47,7 @@ npm run render                 # render + mampat < 100 MB -> out/<output>.mp4
 Semak: tiada pertindihan, subtitle ≤2 baris, kenyaringan, saiz fail.
 
 ## 7. Cover (WAJIB — video belum dikira siap tanpa cover)
+**Gaya lalai: B "Panel v2"** (pilihan pengguna) — isi `poster` (top, mid, last, num, numLabel, headTop, chinY, faceX, frame) dan `coverFx` (`hl` = kata kunci diserlah, `items` = 3 point berikon, `sticker` = "SHARING\nMOMENT"). Petikan diambil automatik daripada klip hook (ucapan sebenar). Semak: wajah tidak ditindih, kepala pop-out keluar bingkai, kad foto penuh.
 Setiap video MESTI ada `out/<output>-poster.jpg`. Tambah `poster` (thumbnail berani, gaya standard) dan pilihan `cover` (klasik) dalam storyboard.json (lihat STYLE.md §10), kemudian `bash scripts/cover.sh` / `bash scripts/cover.sh poster`. Semak gambar; laras `faceY` jika tajuk bertindih wajah. `npm run render` menjana poster secara automatik selepas MP4 (dan gagal jika `poster` tiada), kemudian **memasukkan cover ke dalam video** (`scripts/add_cover.sh`: ~1 s cover di awal + thumbnail MP4). Jika cover ditukar kemudian: `bash scripts/cover.sh poster && bash scripts/add_cover.sh`. Hantar **MP4 sahaja** kepada pengguna (cover sudah di dalam video, tidak dihantar berasingan).
 
 ## 8. Serahan

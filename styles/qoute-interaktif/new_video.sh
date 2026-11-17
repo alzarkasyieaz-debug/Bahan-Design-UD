@@ -47,7 +47,9 @@ sb = {"meta": {"title": title, "compositionId": cid, "output": f"nakseeheart-{sl
       "subtitleCalm": [], "music": {"buildUp": "climax.0-12"}, "sfx": [], "elements": [],
       # COVER WAJIB (Qoute Interaktif): isi teks & kedudukan kepala, render automatik selepas video
       "poster": {"icon": "heart", "top": "SOALAN", "mid": "KATA KUNCI", "last": "PENUTUP?", "banner": "Ayat ringkas!",
-                 "num": "3", "numLabel": "Perkara", "frame": 10.0, "headTop": 520, "chinY": 1220, "faceX": 540}}
+                 "num": "3", "numLabel": "Perkara", "frame": 10.0, "headTop": 520, "chinY": 1220, "faceX": 540},
+      # Cover lalai: Gaya B "Panel v2" (pop-out, petikan hook sebenar, pelekat SHARING MOMENT)
+      "coverFx": {"hl": "KATA KUNCI", "sticker": "SHARING\nMOMENT", "items": [{"icon": "heart", "text": "Point 1"}, {"icon": "star", "text": "Point 2"}, {"icon": "check", "text": "Point 3"}]}}
 sc = {"source": src, "maxChars": 48, "gold": [], "upper": [], "chunks": [], "unsure": []}
 for name, d in (("timeline", tl), ("storyboard", sb), ("script", sc)):
     json.dump(d, open(f"{dest}/src/data/{name}.json", "w"), indent=1, ensure_ascii=False)

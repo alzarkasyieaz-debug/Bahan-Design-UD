@@ -25,7 +25,7 @@ if [ "$HAS_POSTER" != "true" ]; then
   echo "✗ storyboard.json tiada 'poster' — cover wajib. Tambah 'poster' (STYLE.md §10) dan jalankan: bash scripts/cover.sh poster" >&2
   exit 2
 fi
-bash "$(dirname "$0")/cover.sh" poster
+bash "$(dirname "$0")/cover.sh" "${COVER_STYLE:-panel}"
 # cover dimasukkan ke dalam video (bingkai pertama ~1 s + thumbnail MP4)
 bash "$(dirname "$0")/add_cover.sh" fresh
 echo "✔ Video + cover siap: out/$OUT.mp4 , out/$OUT-poster.jpg"
