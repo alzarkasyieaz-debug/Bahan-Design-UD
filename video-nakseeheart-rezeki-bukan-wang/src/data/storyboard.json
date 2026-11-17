@@ -330,7 +330,7 @@
  },
  "poster": {
   "icon": "star",
-  "top": "REZEKI",
+  "top": "SOAL REZEKI",
   "mid": "BUKAN WANG SAJA",
   "last": "JANGAN BANDINGKAN",
   "banner": "Sihat, pasangan & anak soleh!",
@@ -340,5 +340,23 @@
   "headTop": 645,
   "chinY": 1420,
   "faceX": 480
+ },
+ "coverFx": {
+  "hl": "WANG",
+  "sticker": "SHARING\nMOMENT",
+  "items": [
+   {
+    "icon": "heart",
+    "text": "Kesihatan"
+   },
+   {
+    "icon": "users",
+    "text": "Pasangan yang baik"
+   },
+   {
+    "icon": "family",
+    "text": "Anak soleh"
+   }
+  ]
  }
 }
