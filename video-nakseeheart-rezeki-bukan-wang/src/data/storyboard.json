@@ -320,7 +320,7 @@
   }
  ],
  "cover": {
-  "frame": 20.0,
+  "frame": 66.0,
   "kicker": "SOAL REZEKI",
   "big": "REZEKI",
   "line2": "BUKAN SEMATA-MATA WANG",
@@ -336,10 +336,10 @@
   "banner": "Sihat, pasangan & anak soleh!",
   "num": "3",
   "numLabel": "Rezeki Tak Ternilai",
-  "frame": 20.0,
-  "headTop": 645,
-  "chinY": 1420,
-  "faceX": 480
+  "frame": 66.0,
+  "headTop": 630,
+  "chinY": 1440,
+  "faceX": 525
  },
  "coverFx": {
   "hl": "WANG",
