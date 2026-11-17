@@ -91,13 +91,6 @@ const STAR_TILE = `url("data:image/svg+xml;utf8,${encodeURIComponent(
   '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120"><g fill="none" stroke="#D8B46A" stroke-width="2" opacity="0.55">' +
   '<rect x="35" y="35" width="50" height="50"/><rect x="35" y="35" width="50" height="50" transform="rotate(45 60 60)"/>' +
   '<circle cx="60" cy="60" r="9"/><path d="M0 0 L20 20 M120 0 L100 20 M0 120 L20 100 M120 120 L100 100"/></g></svg>')}")`;
-const Corner: React.FC<{ style: React.CSSProperties }> = ({ style }) => (
-  <svg width="120" height="120" viewBox="0 0 120 120" style={{ position: 'absolute', ...style }}>
-    <path d="M8 112 V30 Q8 8 30 8 H112" fill="none" stroke="#FFE2A3" strokeWidth="7" strokeLinecap="round" />
-    <path d="M24 112 V40 Q24 24 40 24 H112" fill="none" stroke="#C98A1E" strokeWidth="3" strokeLinecap="round" />
-    <circle cx="30" cy="30" r="7" fill="#FFE2A3" />
-  </svg>
-);
 type ScriptChunk = [string, number, number, string];
 export const CoverPanel: React.FC = () => {
   const card = { left: 90, top: 230, w: 900, h: 960, rot: -3 };
@@ -135,7 +128,7 @@ export const CoverPanel: React.FC = () => {
           return <div key={i} style={{ position: 'absolute', left: x, top: y, width: r * 2, height: r * 2, borderRadius: '50%', background: 'rgba(255,214,140,0.55)', filter: `blur(${r / 2.5}px)`, opacity: 0.25 + ((i * 13) % 50) / 100 }} />;
         })}
       </div>
-      {/* kad foto + bucu hiasan + pop-out kepala */}
+      {/* kad foto + pop-out kepala */}
       <div style={{ position: 'absolute', left: card.left, top: card.top, width: card.w, height: card.h, transform: `rotate(${card.rot}deg)` }}>
         {/* halo emas di belakang kepala */}
         <div style={{ position: 'absolute', left: 450 - 380, top: -300, width: 760, height: 760, borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,214,140,0.75) 0%, rgba(216,180,106,0.18) 45%, rgba(0,0,0,0) 70%)' }} />
@@ -151,19 +144,15 @@ export const CoverPanel: React.FC = () => {
           <Img src={staticFile('media/cover-cutout.png')} style={{ ...imgStyle, left: px + 60, top: py + 400,
             filter: 'drop-shadow(0 0 4px #FFE2A3) drop-shadow(0 0 34px rgba(255,214,140,0.95)) drop-shadow(0 18px 24px rgba(0,0,0,0.5))' }} />
         </div>
-        <Corner style={{ left: -26, top: -26 }} />
-        <Corner style={{ right: -26, top: -26, transform: 'scaleX(-1)' }} />
-        <Corner style={{ left: -26, bottom: -26, transform: 'scaleY(-1)' }} />
-        <Corner style={{ right: -26, bottom: -26, transform: 'scale(-1,-1)' }} />
         {speaker && (
           <div style={{ position: 'absolute', left: 40, bottom: 40, padding: '10px 26px', borderRadius: 14, background: 'rgba(15,16,19,0.85)', border: `2px solid ${C.gold}`,
             fontFamily: FONT.serif, fontWeight: 800, fontSize: 34, letterSpacing: '0.08em', color: C.goldLight }}>{speaker}</div>
         )}
       </div>
-      {/* pelekat bulat */}
-      <div style={{ position: 'absolute', right: 30, top: 260, width: 190, height: 190, borderRadius: '50%', background: 'radial-gradient(circle at 35% 30%, #FF6B57, #C42A1B 70%)', transform: 'rotate(12deg)', display: 'flex',
+      {/* pelekat bulat — tulisan gaya Trajan (Cinzel) */}
+      <div style={{ position: 'absolute', right: 30, top: 260, width: 200, height: 200, borderRadius: '50%', background: 'radial-gradient(circle at 35% 30%, #FF6B57, #C42A1B 70%)', transform: 'rotate(12deg)', display: 'flex',
         alignItems: 'center', justifyContent: 'center', border: '5px dashed rgba(255,226,163,0.9)', boxShadow: '0 0 0 6px #C42A1B, 0 14px 30px rgba(0,0,0,0.45)', textAlign: 'center', whiteSpace: 'pre-line' }}>
-        <div style={{ fontFamily: FONT.sans, fontWeight: 900, fontSize: 32, color: '#fff', lineHeight: 1.05 }}>{FX.sticker ?? 'WAJIB\nTONTON'}</div>
+        <div style={{ fontFamily: FONT.serif, fontWeight: 800, fontSize: 30, letterSpacing: '0.06em', color: '#fff', lineHeight: 1.15 }}>{FX.sticker ?? 'SHARING\nMOMENT'}</div>
       </div>
       {/* panel teks krim */}
       <div style={{ position: 'absolute', left: 70, right: 70, top: 1240 }}>

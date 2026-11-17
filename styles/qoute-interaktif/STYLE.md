@@ -160,7 +160,7 @@ Komponen cover tidak lagi menggunakan penapis CSS sendiri, jadi semua cover mend
 | Gaya | Arahan | Rupa |
 |---|---|---|
 | **Impak** | `bash scripts/cover.sh impak` | Sinar emas, figura cut-out bergaris putih, kicker merah, tajuk gergasi + bar emas, nombor besar |
-| **Panel** ⭐ (pilihan pengguna) | `bash scripts/cover.sh panel` | Gaya majalah terang v2 "karisma": kepala ustaz **pop-out** keluar dari bingkai foto bertepi emas dengan cahaya emas, bucu hiasan, sinar cahaya pentas + bokeh, corak bintang lapan bucu (geometri Islam), pelekat bulat, tajuk Bebas Neue dengan penanda emas, **kad petikan sebenar penceramah** (klip hook), 3 point. Pilihan: `coverFx.speaker` (nama/gelaran pada plat emas), `coverFx.quote` |
+| **Panel** ⭐ (pilihan pengguna) | `bash scripts/cover.sh panel` | Gaya majalah terang v2 "karisma": kepala ustaz **pop-out** keluar dari bingkai foto bertepi emas dengan cahaya emas, sinar cahaya pentas + bokeh, corak bintang lapan bucu (geometri Islam), pelekat bulat **SHARING MOMENT** (Cinzel, gaya Trajan), tajuk Bebas Neue dengan penanda emas, **kad petikan sebenar penceramah** (klip hook), 3 point. Pilihan: `coverFx.speaker` (nama/gelaran pada plat emas), `coverFx.quote` |
 | **Info** | `bash scripts/cover.sh info` | Gaya Info FX: latar kabur + grid, figura cut-out bercahaya dalam cincin, tag neon ✓, kata kunci dalam kotak emas, 3 kad kaca 3D |
 
 Data tambahan dalam `storyboard.json → coverFx`: `{ kicker?, hl? (kata kunci diserlah), sticker?, items?: [{icon, text}] }`. Gaya Impak, Panel & Info menjana `cover-cutout.png` secara automatik (rembg). Selepas tukar gaya: `bash scripts/add_cover.sh` untuk masukkan ke dalam video.
