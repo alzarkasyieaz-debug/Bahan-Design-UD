@@ -156,6 +156,15 @@ Komponen cover tidak lagi menggunakan penapis CSS sendiri, jadi semua cover mend
 - **Wajah tidak ditindih:** ukur `headTop` (atas kepala), `chinY` (bawah janggut) & `faceX` pada bingkai cover. Gambar diskala automatik supaya kepala→janggut muat di antara banner (y≈655) dan pil (y≈1468); tepi diisi versi kabur gambar yang sama. `maxScale` (lalai 1.1) boleh dinaikkan untuk rakaman jarak jauh.
 - Wajah terang; logo ▶ NakSeeHeart + lengkung emas di bawah.
 
+### Cover v3 — 3 gaya alternatif (sampel: `examples/cover-v3/`)
+| Gaya | Arahan | Rupa |
+|---|---|---|
+| **Impak** | `bash scripts/cover.sh impak` | Sinar emas, figura cut-out bergaris putih, kicker merah, tajuk gergasi + bar emas, nombor besar |
+| **Panel** | `bash scripts/cover.sh panel` | Gaya majalah terang: foto dalam kad bertepi emas + pelekat bulat, tajuk Bebas Neue dengan penanda emas, 3 point |
+| **Info** | `bash scripts/cover.sh info` | Gaya Info FX: latar kabur + grid, figura cut-out bercahaya dalam cincin, tag neon ✓, kata kunci dalam kotak emas, 3 kad kaca 3D |
+
+Data tambahan dalam `storyboard.json → coverFx`: `{ kicker?, hl? (kata kunci diserlah), sticker?, items?: [{icon, text}] }`. Gaya Impak & Info menjana `cover-cutout.png` secara automatik (rembg). Selepas tukar gaya: `bash scripts/add_cover.sh` untuk masukkan ke dalam video.
+
 ## 11. Kawalan kualiti (wajib sebelum render penuh)
 1. `npm run still -- <bingkai>` di setiap babak; semak tiada pertindihan teks/wajah.
 2. Subtitle ≤ 2 baris; tiada chunk < 1 s yang tidak perlu.

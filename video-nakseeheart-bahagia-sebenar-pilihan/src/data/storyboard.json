@@ -334,5 +334,24 @@
   "headTop": 660,
   "chinY": 1480,
   "faceX": 560
+ },
+ "coverFx": {
+  "kicker": "JANGAN TERSILAP!",
+  "hl": "DERITA",
+  "sticker": "WAJIB\nTONTON",
+  "items": [
+   {
+    "icon": "family",
+    "text": "Bersama keluarga"
+   },
+   {
+    "icon": "target",
+    "text": "Capai cita-cita"
+   },
+   {
+    "icon": "users",
+    "text": "Orang ikut kehendak"
+   }
+  ]
  }
 }
