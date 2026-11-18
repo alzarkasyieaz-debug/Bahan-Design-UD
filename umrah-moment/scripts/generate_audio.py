@@ -7,7 +7,7 @@ Kerana lagu mempunyai vokal, hanya suara latar babak 1 (dalam intro instrumental
 
 MOD SINTESIS (sandaran): jika fail lagu tiada, muzik asli disintesis seperti di bawah.
 
-Muzik latar asli + mixing akhir untuk "Sebuah Rindu… Kenangan Indah di Tanah Suci".
+Muzik latar asli + mixing akhir untuk gaya "Umrah Moment".
 100% disintesis secara prosedur (bebas royalti, tiada sampel luar).
 
   public/audio/muzik.wav  – piano emosi + orchestral strings + pad + seruling (ney) + perkusi lembut
@@ -336,9 +336,11 @@ def mix(music, vo):
     return out / peak * 0.93
 
 
-SONG = os.path.join(OUT, "kita-pernah-bersama.mp3")
-SONG_START = 5.5          # saat dalam lagu yang menjadi 00:00 video
-SONG_VO = {1: 3.0}        # suara latar yang dikekalkan (babak: saat mula) — intro lagu tanpa vokal
+# Tetapan per-projek: project.config.json  (song, songStart, voScenes)
+_CFG = json.load(open(os.path.join(ROOT, "project.config.json")))
+SONG = os.path.join(ROOT, _CFG["song"]) if _CFG.get("song") else ""
+SONG_START = float(_CFG.get("songStart", 0))           # saat dalam lagu yang menjadi 00:00 video
+SONG_VO = {int(k): float(v) for k, v in _CFG.get("voScenes", {"1": 3.0}).items()}  # suara latar dikekalkan
 
 
 def load_song():
@@ -370,7 +372,7 @@ def write(name, buf):
 
 
 if __name__ == "__main__":
-    if os.path.exists(SONG):
+    if SONG and os.path.exists(SONG):
         write("mix.wav", mix_song())
         raise SystemExit
     m = build_music()

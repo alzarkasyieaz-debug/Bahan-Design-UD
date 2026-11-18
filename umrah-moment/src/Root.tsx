@@ -1,7 +1,7 @@
 import React from 'react';
 import { Composition, continueRender, delayRender, staticFile } from 'remotion';
 import { loadFont } from '@remotion/fonts';
-import { SebuahRindu, TOTAL_FRAMES } from './Video';
+import { TOTAL_FRAMES, UmrahMoment } from './Video';
 import { FPS, H, W } from './components/core';
 
 // Fon tempatan (SIL Open Font License): Cinzel (tajuk) & Poppins (subtajuk)
@@ -17,5 +17,5 @@ Promise.all([
 ]).then(() => continueRender(handle));
 
 export const RemotionRoot: React.FC = () => (
-  <Composition id="SebuahRindu" component={SebuahRindu} durationInFrames={TOTAL_FRAMES} fps={FPS} width={W} height={H} />
+  <Composition id="UmrahMoment" component={UmrahMoment} durationInFrames={TOTAL_FRAMES} fps={FPS} width={W} height={H} />
 );

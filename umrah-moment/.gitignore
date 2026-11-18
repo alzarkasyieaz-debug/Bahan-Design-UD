@@ -6,3 +6,5 @@ out/stills/
 out/*.jpg
 out/render.log
 !out/cover.jpg
+album/
+out/render-raw.mp4

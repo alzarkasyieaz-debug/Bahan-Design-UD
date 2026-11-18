@@ -1,15 +1,18 @@
 {
-  "name": "video-kenangan-umrah",
+  "name": "umrah-moment",
   "version": "1.0.0",
   "private": true,
-  "description": "Cinematic memory film 120s: Sebuah Rindu… Kenangan Indah di Tanah Suci",
+  "description": "UMRAH MOMENT — gaya filem kenangan umrah sinematik 120 s (template boleh guna semula)",
   "scripts": {
     "photos": "python3 scripts/prepare_photos.py",
     "vo": "python3 scripts/generate_vo.py",
     "audio": "python3 scripts/generate_audio.py",
     "studio": "remotion studio",
-    "render": "remotion render SebuahRindu out/sebuah-rindu-kenangan-umrah.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac --audio-bitrate=320k",
-    "still": "remotion still SebuahRindu out/preview.png --frame=90"
+    "render": "remotion render UmrahMoment out/render-raw.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac --audio-bitrate=320k",
+    "cover": "remotion still UmrahMoment out/cover.jpg --frame=215 --image-format=jpeg --jpeg-quality=92",
+    "export": "bash scripts/export.sh",
+    "album": "python3 scripts/fetch_album.py",
+    "still": "remotion still UmrahMoment out/preview.png --frame=215"
   },
   "dependencies": {
     "@remotion/cli": "4.0.542",

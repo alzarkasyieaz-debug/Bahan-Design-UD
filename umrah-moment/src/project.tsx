@@ -1,24 +1,52 @@
 import React from 'react';
-import { AbsoluteFill, Audio, interpolate, staticFile, useCurrentFrame } from 'remotion';
 import {
-  Black, CardWall, FramedShot, FullShot, GoldDust, GoldenFrame, Grade, LightLeak, LightRays, LightSweep, TiltShot, Tiles, sec,
+  CardWall, FramedShot, FullShot, GoldenFrame, TiltShot, Tiles, sec,
 } from './components/core';
-import { Caption, SubTitle, Title3D } from './components/Typography';
-
-export const TOTAL_FRAMES = sec(120);
 
 /*
- * SEBUAH RINDU… KENANGAN INDAH DI TANAH SUCI — 12 babak × 10 s
- * Semua gambar ialah foto asal jemaah (album "USJ 30 Sept-9 Okt"). Tiada wajah/kandungan diubah:
- * gambar potret dipaparkan dalam bingkai penuh (tidak dipotong), gambar landskap dipotong mengikut titik fokus.
- * Audio: lagu "Kita Pernah Bersama" (segmen 5.5–125.5 s) + suara latar pembukaan, dimix ke public/audio/mix.wav
- * oleh scripts/generate_audio.py. Chorus lagu bermula ~01:16 (babak 8) dan memuncak hingga babak 12.
+ * ============================================================================
+ *  KANDUNGAN PROJEK (satu-satunya fail yang perlu diubah untuk group baharu)
+ *  Style: UMRAH MOMENT — lihat STYLE.md
+ * ============================================================================
+ *  Group   : USJ 30 Sept – 9 Okt 2026 (Darul Mubarak Travel & Tours)
+ *  Album   : Google Photos "USJ 30 Sept-9 Okt"
+ *  Lagu    : "Kita Pernah Bersama" (udcreative) — tetapan audio dalam project.config.json
+ *
+ *  Peraturan gaya:
+ *   - 12 babak × 10 s. Shot bertindih ~0.6 s (dissolve). Babak bermula pada (k-1)*10 - 0.6 s.
+ *   - Landskap → FullShot (Ken Burns, `focal` = titik wajah [x,y] 0..1).
+ *   - Potret   → FramedShot / CardWall / Tiles (tiada wajah dipotong).
+ *   - Seni bina potret → TiltShot (panorama menegak).
+ *   - Babak 1 (cover) = foto kumpulan PALING RAMAI, ruang kosong di atas untuk tajuk.
+ *   - Babak 12 = montaj 4 gambar → foto kumpulan penutup.
  */
+
+export const PROJECT = {
+  /** Tajuk utama pembukaan (cover) — nama style */
+  title: 'UMRAH MOMENT',
+  subtitle: 'Kenangan Indah Bersama di Tanah Suci',
+  /** Kapsyen babak 2–11 (10 baris) */
+  captions: [
+    'Kita datang dengan kisah berbeza…',
+    'Menjadi tetamu Allah… satu anugerah.',
+    'Setiap doa… membawa seribu harapan.',
+    'Senyuman ini… akan terus dirindui.',
+    'Dari tidak mengenali… menjadi satu keluarga.',
+    'Gelak tawa, cerita dan kenangan…',
+    'Makkah… kota yang sentiasa dirindui.',
+    'Setiap gambar menyimpan sebuah cerita.',
+    'Berat untuk berpisah…',
+    'Semoga Allah menerima segala amalan kita.',
+  ],
+  finaleTitle: 'KENANGAN INDAH BERSAMA',
+  finaleSubtitle: 'Berpisah di dunia… semoga bertemu lagi di Tanah Suci.',
+  finaleDoa: 'Semoga Allah mempertemukan kita kembali. Aamiin.',
+};
 
 const S = (s: number) => sec(s);
 const X = 14; // tempoh dissolve antara shot (frame)
 
-const Scenes: React.FC = () => (
+export const Scenes: React.FC = () => (
   <>
     {/* 1 | 00:00–00:10  THE OPENING (cover) — foto kumpulan seluruh jemaah di KLIA */}
     <FullShot id="p080" from={S(0)} dur={S(10.6)} fadeIn={0} zoom={[1.0, 1.14]} focal={[0.5, 0.54]} />
@@ -94,7 +122,7 @@ const Scenes: React.FC = () => (
     {/* 11 | 01:40–01:50  Doa dan harapan — Kaabah, zoom-out perlahan */}
     <FramedShot id="p269" from={S(99.4)} dur={S(11.0)} fadeIn={24} height={940} gold rot={[-3, 3]} zoom={[1.14, 1.0]} focal={[0.5, 0.35]} />
 
-    {/* 12 | 01:50–02:00  Grand finale — montaj ringkas → foto kumpulan */}
+    {/* 12 | 01:50–02:00  Grand finale — montaj ringkas → foto kumpulan berbendera di Makkah */}
     <FullShot id="p258" from={S(109.4)} dur={S(1.8)} fadeIn={20} zoom={[1.0, 1.06]} focal={[0.5, 0.45]} />
     <FullShot id="p255" from={S(110.6)} dur={S(1.6)} fadeIn={10} zoom={[1.0, 1.06]} focal={[0.5, 0.5]} />
     <FramedShot id="p275" from={S(111.6)} dur={S(1.6)} fadeIn={10} height={900} rot={[2, 0]} focal={[0.5, 0.35]} />
@@ -102,60 +130,5 @@ const Scenes: React.FC = () => (
     <FullShot id="p231" from={S(113.4)} dur={S(6.6)} fadeIn={18} zoom={[1.12, 1.0]} focal={[0.5, 0.5]} />
     <GoldenFrame from={S(113.8)} dur={S(6.2)} inset={30} />
   </>
-);
-
-const Effects: React.FC = () => {
-  const f = useCurrentFrame();
-  // Sinaran cahaya hanya pada babak pembukaan, Tanah Haram, doa dan penutup
-  const rays = interpolate(f, [0, S(9), S(10.5), S(69.5), S(71), S(79), S(80.5), S(99.5), S(101), S(109), S(110), S(113.5), S(115), S(120)],
-    [0.5, 0.5, 0, 0, 0.3, 0.3, 0, 0, 0.45, 0.45, 0, 0, 0.3, 0.3], { extrapolateRight: 'clamp' });
-  const dust = interpolate(f, [0, S(10), S(12), S(78), S(80), S(110), S(120)], [1, 1, 0.55, 0.55, 0.9, 0.9, 1], { extrapolateRight: 'clamp' });
-  return (
-  <>
-    {rays > 0.01 && <LightRays opacity={rays} />}
-    <GoldDust count={60} intensity={dust} />
-    {/* light leak & sapuan cahaya di setiap peralihan babak */}
-    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((k) => (
-      <LightLeak key={k} center={S(k * 10 - 0.3)} len={44} strength={0.42} dir={k % 2 ? 1 : -1} />
-    ))}
-    <LightSweep at={S(4.2)} len={50} strength={0.3} />
-    <LightSweep at={S(115.2)} len={50} strength={0.3} />
-  </>
-  );
-};
-
-const Texts: React.FC = () => (
-  <>
-    {/* Babak 1 */}
-    <Title3D text="SEBUAH RINDU…" at={S(2.0)} until={S(9.6)} size={124} y={215} />
-    <SubTitle text="Kenangan Indah Bersama di Tanah Suci" at={S(3.8)} until={S(9.6)} y={345} size={42} />
-
-    <Caption text="Kita datang dengan kisah berbeza…" at={S(11.0)} until={S(19.3)} />
-    <Caption text="Menjadi tetamu Allah… satu anugerah." at={S(21.0)} until={S(29.3)} />
-    <Caption text="Setiap doa… membawa seribu harapan." at={S(31.0)} until={S(39.3)} />
-    <Caption text="Senyuman ini… akan terus dirindui." at={S(41.0)} until={S(49.3)} />
-    <Caption text="Dari tidak mengenali… menjadi satu keluarga." at={S(51.0)} until={S(59.3)} />
-    <Caption text="Gelak tawa, cerita dan kenangan…" at={S(61.0)} until={S(69.3)} />
-    <Caption text="Makkah… kota yang sentiasa dirindui." at={S(71.0)} until={S(79.3)} />
-    <Caption text="Setiap gambar menyimpan sebuah cerita." at={S(81.0)} until={S(89.3)} />
-    <Caption text="Berat untuk berpisah…" at={S(91.0)} until={S(99.3)} />
-    <Caption text="Semoga Allah menerima segala amalan kita." at={S(101.0)} until={S(109.2)} />
-
-    {/* Babak 12 */}
-    <Title3D text="KENANGAN INDAH BERSAMA" at={S(114.0)} until={S(119.7)} size={92} y={165} />
-    <SubTitle text="Berpisah di dunia… semoga bertemu lagi di Tanah Suci." at={S(115.4)} until={S(119.7)} y={282} size={38} />
-    <SubTitle text="Semoga Allah mempertemukan kita kembali. Aamiin." at={S(116.7)} until={S(119.7)} y={988} size={36} italic color="#F3D58F" />
-  </>
-);
-
-export const SebuahRindu: React.FC = () => (
-  <AbsoluteFill style={{ background: '#000' }}>
-    <Scenes />
-    <Grade warmth={0.3} />
-    <Effects />
-    <Texts />
-    <Black points={[[0, 1], [S(1.6), 0], [S(118.6), 0], [S(119.9), 1]]} />
-    <Audio src={staticFile('audio/mix.wav')} />
-  </AbsoluteFill>
 );
 

@@ -1,17 +1,37 @@
-# Sebuah Rindu… Kenangan Indah di Tanah Suci
+# UMRAH MOMENT
 
-Filem kenangan umrah sinematik: **120 s, 1920×1080 (16:9), 30 fps, H.264 + AAC**, dibina dengan [Remotion](https://www.remotion.dev/) (React).
-Fail akhir: `out/sebuah-rindu-kenangan-umrah.mp4` (≈97 MB, cover/thumbnail **terbenam** dalam fail MP4). Salinan cover: `out/cover.jpg`
+**Gaya & template filem kenangan umrah sinematik**: 120 s, 1920×1080 (16:9), 30 fps, H.264 + AAC, dibina dengan
+[Remotion](https://www.remotion.dev/). Panduan gaya: [`STYLE.md`](STYLE.md). Aliran kerja untuk Claude:
+[`.claude/skills/umrah-moment/SKILL.md`](../.claude/skills/umrah-moment/SKILL.md).
 
-Semua visual ialah **foto asal jemaah** daripada album Google Photos *"USJ 30 Sept-9 Okt"*. 44 gambar dipilih (lihat jadual).
-Tiada wajah, individu, pakaian atau peristiwa diubah. Gambar potret dipaparkan penuh dalam bingkai terapung di atas versi kabur
-gambar yang sama, jadi tiada kepala atau wajah dipotong. Gambar landskap dipotong mengikut titik fokus wajah (`focal`).
+**Projek semasa:** group USJ 30 Sept – 9 Okt 2026 · fail akhir `out/umrah-moment.mp4` (≈97 MB, cover terbenam) · cover `out/cover.jpg`
+
+## Guna semula untuk group baharu
+
+| Fail | Apa diubah |
+|---|---|
+| `project.config.json` | Nama group, pautan album, fail lagu, `songStart`, suara latar, nama fail output |
+| `src/project.tsx` | Tajuk/kapsyen (`PROJECT`) dan ID gambar + titik fokus wajah bagi setiap babak |
+| `public/audio/<lagu>.mp3` | Lagu latar |
+
+```bash
+npm install && pip install numpy scipy pillow edge-tts
+npm run album          # muat turun album -> album/NNN.jpg + lembaran pilihan album/sheets/
+# … pilih gambar & isi src/project.tsx …
+npm run photos         # sediakan gambar yang dirujuk dalam project.tsx
+npm run vo             # (pilihan) suara latar daripada scripts/vo_script.json
+npm run audio          # mix lagu + suara -> public/audio/mix.wav
+npm run studio         # pratonton
+REMOTION_BROWSER=/path/ke/chrome-headless-shell npm run export   # render + cover + mampat + cover terbenam
+```
+
+Enjin gaya (tidak perlu diubah): `src/Video.tsx`, `src/components/core.tsx`, `src/components/Typography.tsx`.
 
 ## Storyboard (12 babak × 10 s)
 
 | Babak | Masa | Teks pada skrin | Gambar (no. dalam album) | Gerakan / kesan |
 |---|---|---|---|---|
-| 1 | 00:00–00:10 | **SEBUAH RINDU…** / Kenangan Indah Bersama di Tanah Suci | 080 (cover: foto kumpulan seluruh jemaah di KLIA) | Dari skrin hitam, slow zoom-in, sinaran cahaya emas, debu emas, tajuk 3D huruf demi huruf + light sweep |
+| 1 | 00:00–00:10 | **UMRAH MOMENT** / Kenangan Indah Bersama di Tanah Suci | 080 (cover: foto kumpulan seluruh jemaah di KLIA) | Dari skrin hitam, slow zoom-in, sinaran cahaya emas, debu emas, tajuk 3D huruf demi huruf + light sweep |
 | 2 | 00:10–00:20 | Kita datang dengan kisah berbeza… | 022, 052 (KLIA), 092 (pesawat) | Pan sisi sinematik, dissolve |
 | 3 | 00:20–00:30 | Menjadi tetamu Allah… satu anugerah. | 113 (suami isteri di bawah langit senja), 252 & 247 (miqat, ihram, matahari terbenam) | Push-in, bingkai terapung 2.5D |
 | 4 | 00:30–00:40 | Setiap doa… membawa seribu harapan. | 280 (keluarga di hadapan Kaabah), 270 (ayah mendukung anak), 274 (anak minum zamzam), 290 (menolak kerusi roda) | Bingkai emas skrin, dolly in/out, bingkai foto emas |
@@ -48,7 +68,7 @@ gambar yang sama, jadi tiada kepala atau wajah dipotong. Gambar landskap dipoton
   | 01:16–01:57 | Chorus: *"Andai rindu ini mampu berbicara… Satukan kami di syurga-Mu"* (babak 8–12, kemuncak emosi) |
   | 01:57–02:00 | Fade-out lembut |
 
-  Sempadan bahagian lagu dianggar melalui analisis tenaga audio. Laraskan `SONG_START` dalam `scripts/generate_audio.py` jika perlu.
+  Sempadan bahagian lagu dianggar melalui analisis tenaga audio. Laraskan `songStart` dalam `project.config.json` jika perlu.
 - **Suara latar:** kerana lagu mempunyai vokal, hanya ayat pembukaan *"Ada perjalanan yang berakhir… namun kenangannya
   tidak pernah pergi."* dikekalkan (00:03–00:07.5, dalam intro instrumental). Lagu di-*duck* ~5 dB semasa suara itu.
   Suara lelaki neural Bahasa Malaysia `ms-MY-OsmanNeural`. Skrip penuh 11 babak masih ada dalam `scripts/vo_script.json`
@@ -57,32 +77,15 @@ gambar yang sama, jadi tiada kepala atau wajah dipotong. Gambar landskap dipoton
   dan menggunakan kesemua 11 klip suara latar dengan ducking automatik.
 - Loudness akhir ≈ −14.4 LUFS.
 
-## Langkah render
-
-```bash
-cd video-kenangan-umrah
-npm install
-pip install numpy scipy pillow edge-tts          # sekali sahaja
-python3 scripts/prepare_photos.py <folder-foto>  # pilihan: jana semula public/img daripada foto asal (000.jpg … 299.jpg)
-npm run vo                                       # pilihan: jana semula suara latar
-npm run audio                                    # jana muzik + mix.wav
-npm run studio                                   # pratonton
-REMOTION_BROWSER=/path/ke/chrome-headless-shell npm run render   # -> out/sebuah-rindu-kenangan-umrah.mp4
-npx remotion still SebuahRindu out/cover.jpg --frame=215 --image-format=jpeg   # cover
-# Mampatkan (<100 MB) dan benamkan cover sebagai thumbnail:
-ffmpeg -i out/sebuah-rindu-kenangan-umrah.mp4 -i out/cover.jpg -map 0:v:0 -map 0:a:0 -map 1 \
-  -c:v:0 libx264 -preset slow -crf 20 -maxrate 9M -bufsize 18M -pix_fmt yuv420p -c:a copy \
-  -c:v:1 copy -disposition:v:1 attached_pic -movflags +faststart out/final.mp4
-```
-
 ## Struktur
 
 ```
-src/Video.tsx              Susunan 12 babak, teks, kesan, audio
+src/project.tsx            KANDUNGAN group: tajuk, kapsyen, gambar setiap babak
+src/Video.tsx              Enjin: lapisan kesan, teks, gred, audio
 src/components/core.tsx    Ken Burns berfokus wajah, bingkai terapung 2.5D, kolaj, split/mozek, tilt panorama,
                            debu emas, sinaran cahaya, light leak, light sweep, gred warna emas/ungu, grain filem, bingkai emas
 src/components/Typography  Tajuk emas 3D (extrusion + sapuan cahaya), subtajuk Poppins, kapsyen Cinzel
-scripts/                   prepare_photos.py, generate_vo.py, generate_audio.py, stills.mjs (pratonton bingkai)
+scripts/                   fetch_album.py, prepare_photos.py, generate_vo.py, generate_audio.py, stills.mjs, export.sh
 ```
 
 Fon: Cinzel (tajuk, pengganti percuma Trajan Pro) & Poppins (subtajuk), SIL Open Font License.
