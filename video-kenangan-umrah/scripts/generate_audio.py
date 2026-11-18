@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 """
+MOD LAGU (lalai): jika public/audio/kita-pernah-bersama.mp3 wujud, lagu "Kita Pernah Bersama" (udcreative)
+digunakan sebagai muzik latar: segmen SONG_START → SONG_START+120 s (intro piano → verse 1 → pre-chorus →
+chorus "Andai rindu ini mampu berbicara…" yang bermula ~01:16 dan tamat sebelum fade-out penutup).
+Kerana lagu mempunyai vokal, hanya suara latar babak 1 (dalam intro instrumental) dikekalkan.
+
+MOD SINTESIS (sandaran): jika fail lagu tiada, muzik asli disintesis seperti di bawah.
+
 Muzik latar asli + mixing akhir untuk "Sebuah Rindu… Kenangan Indah di Tanah Suci".
 100% disintesis secara prosedur (bebas royalti, tiada sampel luar).
 
@@ -329,6 +336,33 @@ def mix(music, vo):
     return out / peak * 0.93
 
 
+SONG = os.path.join(OUT, "kita-pernah-bersama.mp3")
+SONG_START = 5.5          # saat dalam lagu yang menjadi 00:00 video
+SONG_VO = {1: 3.0}        # suara latar yang dikekalkan (babak: saat mula) — intro lagu tanpa vokal
+
+
+def load_song():
+    import subprocess
+    raw = subprocess.check_output(["ffmpeg", "-loglevel", "error", "-ss", str(SONG_START), "-t", str(DUR), "-i", SONG,
+                                   "-ac", "2", "-ar", str(SR), "-f", "s16le", "-"])
+    x = np.frombuffer(raw, dtype=np.int16).reshape(-1, 2).T.astype(np.float64) / 32768.0
+    out = np.zeros((2, N))
+    out[:, : min(N, x.shape[1])] = x[:, :N]
+    return out * env_curve([(0, 0), (0.8, 1), (117.0, 1), (119.8, 0), (120, 0)])
+
+
+def mix_song():
+    global VO_OFFSET
+    VO_OFFSET = SONG_VO
+    song = load_song()
+    vo = load_vo()
+    env = smooth_env(vo, 0.08, 0.7)
+    env = np.clip(env / (np.percentile(env[env > 1e-4], 90) + 1e-9), 0, 1) if np.any(env > 1e-4) else env
+    out = song * (1 - 0.45 * env)  # lagu turun ~5 dB semasa suara pembukaan
+    out += reverb(np.vstack([vo, vo]), 1.2, 0.12, seed=11) * 0.9
+    return out / np.max(np.abs(out)) * 0.95
+
+
 def write(name, buf):
     path = os.path.join(OUT, name)
     wavfile.write(path, SR, (np.clip(buf.T, -1, 1) * 32767).astype(np.int16))
@@ -336,6 +370,9 @@ def write(name, buf):
 
 
 if __name__ == "__main__":
+    if os.path.exists(SONG):
+        write("mix.wav", mix_song())
+        raise SystemExit
     m = build_music()
     write("muzik.wav", m)
     write("mix.wav", mix(m, load_vo()))

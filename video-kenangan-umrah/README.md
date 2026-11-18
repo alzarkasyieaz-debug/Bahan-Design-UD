@@ -13,39 +13,49 @@ gambar yang sama, jadi tiada kepala atau wajah dipotong. Gambar landskap dipoton
 |---|---|---|---|---|
 | 1 | 00:00–00:10 | **SEBUAH RINDU…** / Kenangan Indah Bersama di Tanah Suci | 280 (Kaabah) | Dari skrin hitam, slow zoom-in, sinaran cahaya emas, debu emas, tajuk 3D huruf demi huruf + light sweep |
 | 2 | 00:10–00:20 | Kita datang dengan kisah berbeza… | 022, 052 (KLIA), 092 (pesawat) | Pan sisi sinematik, dissolve |
-| 3 | 00:20–00:30 | Menjadi tetamu Allah… satu anugerah. | 094 (Masjid Ar-Rahmah, Jeddah), 252 & 247 (miqat, ihram, matahari terbenam) | Push-in, bingkai terapung 2.5D |
-| 4 | 00:30–00:40 | Setiap doa… membawa seribu harapan. | 259, 261, 270, 290 (Masjidil Haram) | Bingkai emas skrin, dolly in/out, bingkai foto emas |
-| 5 | 00:40–00:50 | Senyuman ini… akan terus dirindui. | 218, 172, 130 → 189, 176, 279 | Kolaj bingkai terapung, kedalaman parallax |
+| 3 | 00:20–00:30 | Menjadi tetamu Allah… satu anugerah. | 113 (suami isteri di bawah langit senja), 252 & 247 (miqat, ihram, matahari terbenam) | Push-in, bingkai terapung 2.5D |
+| 4 | 00:30–00:40 | Setiap doa… membawa seribu harapan. | 259, 270 (ayah mendukung anak), 274 (anak minum zamzam), 290 (menolak kerusi roda) | Bingkai emas skrin, dolly in/out, bingkai foto emas |
+| 5 | 00:40–00:50 | Senyuman ini… akan terus dirindui. | 250, 088, 130 → 189, 019, 279 | Kolaj bingkai terapung, kedalaman parallax |
 | 6 | 00:50–01:00 | Dari tidak mengenali… menjadi satu keluarga. | 231 (foto kumpulan berbendera), 211, 185, 132 | Zoom-out kumpulan, split-screen 3 panel |
 | 7 | 01:00–01:10 | Gelak tawa, cerita dan kenangan… | 223, 149, 155 → 226, 227, 147 | Mozek: makan bersama, unta, pasar buah, kereta kabel |
 | 8 | 01:10–01:20 | Makkah… kota yang sentiasa dirindui. | 294, 296 (menara Masjidil Haram) | Panorama tilt-up perlahan, cahaya senja |
-| 9 | 01:20–01:30 | Setiap gambar menyimpan sebuah cerita. | 285, 277, 263, 265, 241, 282 | Dinding kenangan 6 bingkai, depth parallax, partikel emas |
+| 9 | 01:20–01:30 | Setiap gambar menyimpan sebuah cerita. | 285, 299, 263, 265, 244, 282 | Dinding kenangan 6 bingkai, depth parallax, partikel emas |
 | 10 | 01:30–01:40 | Berat untuk berpisah… | 286, 276, 254 (matahari terbenam) | Kamera diperlahankan, muzik lebih sentimental |
 | 11 | 01:40–01:50 | Semoga Allah menerima segala amalan kita. | 269 (jemaah di hadapan Kaabah) | Slow zoom-out, bingkai emas, sinaran cahaya, grain filem |
-| 12 | 01:50–02:00 | **KENANGAN INDAH BERSAMA** / Berpisah di dunia… semoga bertemu lagi di Tanah Suci. / *Semoga Allah mempertemukan kita kembali. Aamiin.* | Montaj 258, 091, 173, 262 → 080 (foto kumpulan penuh di KLIA) | Bingkai emas, tajuk 3D, fade-out ke hitam |
+| 12 | 01:50–02:00 | **KENANGAN INDAH BERSAMA** / Berpisah di dunia… semoga bertemu lagi di Tanah Suci. / *Semoga Allah mempertemukan kita kembali. Aamiin.* | Montaj 258, 255, 275, 261 → 080 (foto kumpulan penuh di KLIA) | Bingkai emas, tajuk 3D, fade-out ke hitam |
 
 ### Perbezaan daripada brief (sebab: hanya menggunakan apa yang ada dalam gambar)
 - **Babak 8 (Madinah):** 300 item album yang dapat dimuat turun (30 Sept–2 Okt) tidak mengandungi gambar Madinah/Masjid Nabawi.
   Babak ini diganti dengan **menara Masjidil Haram ketika senja**, dan teks/VO ditukar kepada *"Makkah… kota yang sentiasa dirindui"* /
   *"Dan di Tanah Haram, hati seakan menemukan ketenangan…"*. Jika gambar Madinah ditambah, tukar `p294`/`p296` dalam `src/Video.tsx`
   dan pulihkan teks asal.
+- **Pemilihan gambar:** diutamakan detik yang mempunyai nilai sentimental: ayah mendukung anak di hadapan Kaabah,
+  anak kecil minum zamzam, jemaah menolak kerusi roda, pasangan warga emas, kanak-kanak bertelekung tersenyum, foto kumpulan.
 - **Babak 10 (perpisahan):** tiada gambar hari terakhir/lapangan terbang pulang dalam item yang dimuat turun. Digunakan gambar jemaah
   berjalan di koridor Masjidil Haram, ayah mendukung anak tidur, dan matahari terbenam.
 - **Logo Darul Mubarak:** tidak dibekalkan sebagai fail, jadi tidak diletakkan (logo hanya kelihatan secara semula jadi pada beg jemaah).
 
 ## Audio
 
-- **Suara latar:** Bahasa Malaysia, suara lelaki neural `ms-MY-OsmanNeural` (edge-tts), tempo diperlahankan dan nada direndahkan,
-  EQ hangat + kompresor. Skrip: `scripts/vo_script.json`. Klip: `public/audio/vo/babak-01.wav` … `babak-11.wav`.
-  Babak 12 sengaja tanpa suara supaya muzik mencapai kemuncak.
-- **Muzik:** disintesis 100% secara prosedur oleh `scripts/generate_audio.py` (bebas royalti): piano emosi, orchestral strings,
-  pad atmosfera, dron + seruling ney (suasana Timur Tengah halus), perkusi frame drum lembut di 01:20–01:54, chime pada tajuk,
-  penutup piano fade-out. Struktur dinamik mengikut brief (lembut → hangat → ceria → emosional → kemuncak).
-- **Mixing:** muzik di-*duck* automatik (~6 dB) semasa suara; suara 13–18 dB di atas muzik. Loudness akhir ≈ −15 LUFS.
+- **Lagu latar:** *Kita Pernah Bersama* (udcreative), fail `public/audio/kita-pernah-bersama.mp3`.
+  Segmen **5.5 s → 125.5 s** daripada lagu (7:31) digunakan:
 
-### Menggantikan suara AI dengan rakaman sebenar
-Rakam 11 klip mengikut `scripts/vo_script.json` (setiap klip ≤ 8 s), simpan sebagai `public/audio/vo/babak-NN.wav`
-(44.1 kHz), kemudian `npm run audio && npm run render`. Masa mula setiap klip: `VO_OFFSET` dalam `scripts/generate_audio.py`.
+  | Video | Lagu |
+  |---|---|
+  | 00:00–00:08 | Intro piano (tajuk pembukaan + suara latar) |
+  | 00:08–00:50 | Verse 1: *"Hari ini tiba-tiba ku terkenang… Menuju Kaabah penuh air mata…"* |
+  | 00:50–01:15 | Pre-chorus: *"…Bukan sekadar jemaah dan mutawif, kalian saudara yang amat ku kasih"* (babak ukhuwah) |
+  | 01:16–01:57 | Chorus: *"Andai rindu ini mampu berbicara… Satukan kami di syurga-Mu"* (babak 8–12, kemuncak emosi) |
+  | 01:57–02:00 | Fade-out lembut |
+
+  Sempadan bahagian lagu dianggar melalui analisis tenaga audio. Laraskan `SONG_START` dalam `scripts/generate_audio.py` jika perlu.
+- **Suara latar:** kerana lagu mempunyai vokal, hanya ayat pembukaan *"Ada perjalanan yang berakhir… namun kenangannya
+  tidak pernah pergi."* dikekalkan (00:03–00:07.5, dalam intro instrumental). Lagu di-*duck* ~5 dB semasa suara itu.
+  Suara lelaki neural Bahasa Malaysia `ms-MY-OsmanNeural`. Skrip penuh 11 babak masih ada dalam `scripts/vo_script.json`
+  dan klip `public/audio/vo/` jika mahu digunakan dengan muzik instrumental.
+- **Sandaran:** jika fail lagu dibuang, `npm run audio` menjana muzik asli secara sintesis (piano, strings, ney, frame drum)
+  dan menggunakan kesemua 11 klip suara latar dengan ducking automatik.
+- Loudness akhir ≈ −14.4 LUFS.
 
 ## Langkah render
 

@@ -11,7 +11,8 @@ export const TOTAL_FRAMES = sec(120);
  * SEBUAH RINDU… KENANGAN INDAH DI TANAH SUCI — 12 babak × 10 s
  * Semua gambar ialah foto asal jemaah (album "USJ 30 Sept-9 Okt"). Tiada wajah/kandungan diubah:
  * gambar potret dipaparkan dalam bingkai penuh (tidak dipotong), gambar landskap dipotong mengikut titik fokus.
- * Masa suara latar (VO_OFFSET) ditetapkan dalam scripts/generate_audio.py dan dimix ke public/audio/mix.wav.
+ * Audio: lagu "Kita Pernah Bersama" (segmen 5.5–125.5 s) + suara latar pembukaan, dimix ke public/audio/mix.wav
+ * oleh scripts/generate_audio.py. Chorus lagu bermula ~01:16 (babak 8) dan memuncak hingga babak 12.
  */
 
 const S = (s: number) => sec(s);
@@ -28,26 +29,26 @@ const Scenes: React.FC = () => (
     <FullShot id="p092" from={S(16.4)} dur={S(4.2)} fadeIn={X + 4} zoom={[1.06, 1.12]} pan={[60, 0, -40, 0]} focal={[0.62, 0.45]} />
 
     {/* 3 | 00:20–00:30  Saat pertama di Tanah Suci */}
-    <FullShot id="p094" from={S(19.4)} dur={S(4.4)} fadeIn={24} zoom={[1.0, 1.1]} focal={[0.5, 0.55]} />
+    <FramedShot id="p113" from={S(19.4)} dur={S(4.4)} fadeIn={24} height={880} rot={[5, -3]} focal={[0.5, 0.3]} />
     <FullShot id="p252" from={S(23.2)} dur={S(3.8)} fadeIn={X + 4} zoom={[1.02, 1.1]} focal={[0.5, 0.5]} />
     <FramedShot id="p247" from={S(26.4)} dur={S(4.2)} fadeIn={X + 4} height={880} rot={[-7, 3]} focal={[0.5, 0.35]} />
 
     {/* 4 | 00:30–00:40  Detik ibadah yang bermakna — Masjidil Haram */}
     <FullShot id="p259" from={S(29.4)} dur={S(3.0)} fadeIn={24} zoom={[1.0, 1.06]} focal={[0.5, 0.42]} />
-    <FullShot id="p261" from={S(31.8)} dur={S(3.0)} fadeIn={X + 4} zoom={[1.06, 1.0]} focal={[0.5, 0.42]} />
-    <FullShot id="p270" from={S(34.2)} dur={S(3.0)} fadeIn={X + 4} zoom={[1.0, 1.07]} focal={[0.5, 0.45]} />
+    <FullShot id="p270" from={S(31.8)} dur={S(3.0)} fadeIn={X + 4} zoom={[1.07, 1.0]} focal={[0.5, 0.45]} />
+    <FramedShot id="p274" from={S(34.2)} dur={S(3.0)} fadeIn={X + 4} height={860} rot={[-5, 2]} focal={[0.5, 0.3]} />
     <FramedShot id="p290" from={S(36.6)} dur={S(4.0)} fadeIn={X + 4} gold height={860} rot={[6, -3]} focal={[0.4, 0.5]} />
     <GoldenFrame from={S(30.0)} dur={S(10.0)} />
 
     {/* 5 | 00:40–00:50  Senyuman yang takkan dilupakan — kolaj terapung */}
-    <CardWall from={S(39.4)} dur={S(5.8)} fadeIn={24} bg="p218" cards={[
-      { id: 'p218', x: 470, y: 420, h: 470, rot: -5, depth: 0.8 },
-      { id: 'p172', x: 1450, y: 470, h: 460, rot: 5, depth: 0.9, delay: 10 },
+    <CardWall from={S(39.4)} dur={S(5.8)} fadeIn={24} bg="p250" cards={[
+      { id: 'p250', x: 480, y: 440, h: 640, rot: -5, depth: 0.8, focal: [0.5, 0.3] },
+      { id: 'p088', x: 1450, y: 470, h: 470, rot: 5, depth: 0.9, delay: 10, focal: [0.5, 0.4] },
       { id: 'p130', x: 960, y: 450, h: 700, rot: 1.5, depth: 1.4, delay: 22, focal: [0.5, 0.3] },
     ]} />
     <CardWall from={S(44.6)} dur={S(6.0)} fadeIn={X + 6} bg="p279" cards={[
       { id: 'p189', x: 520, y: 440, h: 640, rot: -4, depth: 0.8, focal: [0.5, 0.3] },
-      { id: 'p176', x: 1420, y: 450, h: 620, rot: 4, depth: 0.9, delay: 10, focal: [0.5, 0.35] },
+      { id: 'p019', x: 1420, y: 450, h: 620, rot: 4, depth: 0.9, delay: 10, focal: [0.5, 0.35] },
       { id: 'p279', x: 960, y: 450, h: 720, rot: -1, depth: 1.4, delay: 22, focal: [0.5, 0.3] },
     ]} />
 
@@ -78,10 +79,10 @@ const Scenes: React.FC = () => (
     {/* 9 | 01:20–01:30  Kenangan yang tersimpan — dinding kenangan */}
     <CardWall from={S(79.4)} dur={S(11.2)} fadeIn={24} bg="p282" camera={90} cards={[
       { id: 'p285', x: 230, y: 560, h: 400, rot: -4, depth: 0.6, delay: 0, focal: [0.5, 0.3] },
-      { id: 'p277', x: 520, y: 330, h: 430, rot: -6, depth: 0.85, delay: 8, focal: [0.5, 0.3] },
+      { id: 'p299', x: 520, y: 330, h: 430, rot: -6, depth: 0.85, delay: 8, focal: [0.5, 0.3] },
       { id: 'p263', x: 560, y: 760, h: 390, rot: 4, depth: 0.9, delay: 16, focal: [0.5, 0.4] },
       { id: 'p265', x: 1400, y: 330, h: 430, rot: 5, depth: 0.85, delay: 24, focal: [0.5, 0.3] },
-      { id: 'p241', x: 1380, y: 770, h: 390, rot: -4, depth: 0.9, delay: 32, focal: [0.5, 0.3] },
+      { id: 'p244', x: 1380, y: 770, h: 390, rot: -4, depth: 0.9, delay: 32, focal: [0.5, 0.3] },
       { id: 'p282', x: 960, y: 520, h: 640, rot: 0.5, depth: 1.4, delay: 44, gold: true, focal: [0.5, 0.3] },
     ]} />
 
@@ -95,9 +96,9 @@ const Scenes: React.FC = () => (
 
     {/* 12 | 01:50–02:00  Grand finale — montaj ringkas → foto kumpulan */}
     <FullShot id="p258" from={S(109.4)} dur={S(1.8)} fadeIn={20} zoom={[1.0, 1.06]} focal={[0.5, 0.45]} />
-    <FullShot id="p091" from={S(110.6)} dur={S(1.6)} fadeIn={10} zoom={[1.0, 1.06]} focal={[0.6, 0.5]} />
-    <FullShot id="p173" from={S(111.6)} dur={S(1.6)} fadeIn={10} zoom={[1.0, 1.06]} focal={[0.5, 0.4]} />
-    <FullShot id="p262" from={S(112.6)} dur={S(1.6)} fadeIn={10} zoom={[1.0, 1.06]} focal={[0.5, 0.45]} />
+    <FullShot id="p255" from={S(110.6)} dur={S(1.6)} fadeIn={10} zoom={[1.0, 1.06]} focal={[0.5, 0.5]} />
+    <FramedShot id="p275" from={S(111.6)} dur={S(1.6)} fadeIn={10} height={900} rot={[2, 0]} focal={[0.5, 0.35]} />
+    <FullShot id="p261" from={S(112.6)} dur={S(1.6)} fadeIn={10} zoom={[1.0, 1.06]} focal={[0.5, 0.42]} />
     <FullShot id="p080" from={S(113.4)} dur={S(6.6)} fadeIn={18} zoom={[1.12, 1.0]} focal={[0.5, 0.52]} />
     <GoldenFrame from={S(113.8)} dur={S(6.2)} inset={30} />
   </>
