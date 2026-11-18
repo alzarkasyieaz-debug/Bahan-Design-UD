@@ -1,7 +1,7 @@
 # Sebuah Rindu… Kenangan Indah di Tanah Suci
 
 Filem kenangan umrah sinematik: **120 s, 1920×1080 (16:9), 30 fps, H.264 + AAC**, dibina dengan [Remotion](https://www.remotion.dev/) (React).
-Fail akhir: `out/sebuah-rindu-kenangan-umrah.mp4` · Cover/thumbnail: `out/cover.jpg`
+Fail akhir: `out/sebuah-rindu-kenangan-umrah.mp4` (≈97 MB, cover/thumbnail **terbenam** dalam fail MP4). Salinan cover: `out/cover.jpg`
 
 Semua visual ialah **foto asal jemaah** daripada album Google Photos *"USJ 30 Sept-9 Okt"*. 44 gambar dipilih (lihat jadual).
 Tiada wajah, individu, pakaian atau peristiwa diubah. Gambar potret dipaparkan penuh dalam bingkai terapung di atas versi kabur
@@ -68,6 +68,11 @@ npm run vo                                       # pilihan: jana semula suara la
 npm run audio                                    # jana muzik + mix.wav
 npm run studio                                   # pratonton
 REMOTION_BROWSER=/path/ke/chrome-headless-shell npm run render   # -> out/sebuah-rindu-kenangan-umrah.mp4
+npx remotion still SebuahRindu out/cover.jpg --frame=215 --image-format=jpeg   # cover
+# Mampatkan (<100 MB) dan benamkan cover sebagai thumbnail:
+ffmpeg -i out/sebuah-rindu-kenangan-umrah.mp4 -i out/cover.jpg -map 0:v:0 -map 0:a:0 -map 1 \
+  -c:v:0 libx264 -preset slow -crf 20 -maxrate 9M -bufsize 18M -pix_fmt yuv420p -c:a copy \
+  -c:v:1 copy -disposition:v:1 attached_pic -movflags +faststart out/final.mp4
 ```
 
 ## Struktur
