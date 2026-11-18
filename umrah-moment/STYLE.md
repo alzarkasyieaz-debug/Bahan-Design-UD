@@ -1,23 +1,33 @@
 # UMRAH MOMENT — Panduan Gaya
 
-Gaya filem kenangan umrah sinematik, 120 saat, untuk dikongsi kepada jemaah selepas pulang.
+Gaya filem kenangan umrah sinematik, **2–4 minit** (`duration` 120–240 s dalam `project.config.json`), untuk dikongsi kepada jemaah selepas pulang.
 Matlamat emosi: *"Ya Allah… rindunya saat-saat kita bersama di Tanah Suci."*
 
 ## Identiti visual
 
 | Elemen | Spesifikasi |
 |---|---|
-| Format | 1920×1080 (16:9), 30 fps, tepat 120 s, H.264 + AAC, ≤ 100 MB, cover terbenam |
+| Format | 1920×1080 (16:9), 30 fps, 120–240 s, H.264 + AAC, cover terbenam |
 | Warna | Emas hangat `#E8C27A` / `#B8862F`, ungu tua `#2A1240`, gading `#FFF8E8` |
 | Gred warna | Sepia 10%, soft-light emas→ungu (30%), vignette ungu tua, film grain 7% |
 | Tajuk | **Cinzel 700**, isian kecerunan emas, extrusion 3D 8 lapis, bayang, sapuan cahaya, masuk huruf demi huruf (kabur→tajam, condong 28°→rata) |
 | Subtajuk | **Poppins 300**, gading, jarak huruf 0.10–0.16em |
+| Tandatangan | **Great Vibes**, isian emas, ditulis kiri→kanan dengan titik cahaya, garis flourish dilukis, peranan (cth. MUTAWWIF) dalam Cinzel jarak lebar |
 | Kapsyen babak | Cinzel 600 emas 3D halus + ornamen garis/berlian, jalur gelap lembut di bawah |
 | Kesan | Debu emas terapung, sinaran cahaya (babak 1, 8, 11, 12), light leak di setiap peralihan, light sweep pada tajuk, bingkai emas skrin (babak 4 & 12) |
 | Pergerakan | Ken Burns berfokus wajah, dolly in/out perlahan, bingkai foto terapung 2.5D (rotateY), dinding kenangan dengan kedalaman parallax, split-screen, mozek, panorama tilt menegak |
 | Peralihan | Dissolve lembut 0.5–0.8 s, tiada glitch/shake/zoom laju |
 
-## Struktur cerita (12 babak × 10 s)
+## Kad penutup (wajib)
+Babak terakhir (10 s): latar kabur foto kumpulan + bingkai emas →
+**"INGATAN IKHLAS DARIPADA"** (Cinzel emas 3D) → **tandatangan nama** (Great Vibes emas, animasi menulis) →
+garis flourish → **peranan** (cth. "MUTAWWIF") → fade ke hitam. Tetapan: `PROJECT.endCard`.
+
+## Struktur cerita — versi 2 minit (12 babak × 10 s)
+Versi 4 minit (24 babak) mengikut struktur lagu: verse 1 → perjalanan; pre-chorus → ukhuwah; chorus 1 → Kaabah & ibadah;
+verse 2 → bimbingan mutawwif & ziarah; pre-chorus 2 → doa; chorus 2 → dinding kenangan, perpisahan, doa, finale, kad
+tandatangan. Contoh lengkap: `src/project.tsx` (group USJ, 240 s).
+
 
 | # | Masa | Tema | Jenis gambar | Layout |
 |---|---|---|---|---|
@@ -43,8 +53,8 @@ atau tanpa manusia (kecuali babak 8).
 (guna bingkai). Teks tidak menutup wajah: tajuk di ruang siling/langit, kapsyen di bawah.
 
 ## Audio
-- Lagu nasyid/balada umrah (pilihan pelanggan) sebagai latar. Pilih segmen 120 s supaya **chorus jatuh pada babak 8–12**
-  dan berakhir sebelum fade-out (`songStart` dalam `project.config.json`).
+- Lagu nasyid/balada umrah (pilihan pelanggan) sebagai latar. Pilih `songStart` + `duration` supaya video berakhir pada
+  **penghujung chorus** (sebelum bahagian lagu seterusnya), dengan fade-out 3.5 s.
 - Jika lagu bervokal: suara latar hanya pada intro instrumental (babak 1). Jika instrumental: guna kesemua 11 ayat VO.
 - Suara latar: lelaki matang Bahasa Malaysia (`ms-MY-OsmanNeural`, rate −14%, pitch −7Hz) atau rakaman sebenar.
 - Loudness akhir ≈ −14 LUFS; muzik di-duck ~5–6 dB di bawah suara.

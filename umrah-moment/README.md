@@ -1,17 +1,21 @@
 # UMRAH MOMENT
 
-**Gaya & template filem kenangan umrah sinematik**: 120 s, 1920×1080 (16:9), 30 fps, H.264 + AAC, dibina dengan
+**Gaya & template filem kenangan umrah sinematik**: 2–4 minit, 1920×1080 (16:9), 30 fps, H.264 + AAC, dibina dengan
 [Remotion](https://www.remotion.dev/). Panduan gaya: [`STYLE.md`](STYLE.md). Aliran kerja untuk Claude:
 [`.claude/skills/umrah-moment/SKILL.md`](../.claude/skills/umrah-moment/SKILL.md).
 
-**Projek semasa:** group USJ 30 Sept – 9 Okt 2026 · fail akhir `out/umrah-moment.mp4` (≈97 MB, cover terbenam) · cover `out/cover.jpg`
+**Projek semasa:** group USJ 30 Sept – 9 Okt 2026 · **4:00** (24 babak, 73 gambar) · lagu 0:02–4:02 (dua chorus penuh) ·
+penutup: *Ingatan Ikhlas Daripada* + tandatangan **Ustaz Zulhafeez — Mutawwif** · fail akhir `out/umrah-moment.mp4`
+(tidak di-commit kerana melebihi 100 MB; jana dengan `npm run export`) · cover `out/cover.jpg`
+
+> Jadual storyboard di bawah ialah versi asal 2 minit. Susunan 4 minit terkini ada dalam `src/project.tsx` (komen setiap babak).
 
 ## Guna semula untuk group baharu
 
 | Fail | Apa diubah |
 |---|---|
-| `project.config.json` | Nama group, pautan album, fail lagu, `songStart`, suara latar, nama fail output |
-| `src/project.tsx` | Tajuk/kapsyen (`PROJECT`) dan ID gambar + titik fokus wajah bagi setiap babak |
+| `project.config.json` | Nama group, pautan album, `duration` (120–240 s), fail lagu, `songStart`, suara latar, nama fail output |
+| `src/project.tsx` | Tajuk/kapsyen, kad tandatangan (`PROJECT.endCard`) dan ID gambar + titik fokus wajah bagi setiap babak |
 | `public/audio/<lagu>.mp3` | Lagu latar |
 
 ```bash
@@ -88,4 +92,4 @@ src/components/Typography  Tajuk emas 3D (extrusion + sapuan cahaya), subtajuk P
 scripts/                   fetch_album.py, prepare_photos.py, generate_vo.py, generate_audio.py, stills.mjs, export.sh
 ```
 
-Fon: Cinzel (tajuk, pengganti percuma Trajan Pro) & Poppins (subtajuk), SIL Open Font License.
+Fon: Cinzel (tajuk, pengganti percuma Trajan Pro), Poppins (subtajuk), Great Vibes (tandatangan), SIL Open Font License.

@@ -24,7 +24,9 @@ from scipy.signal import butter, sosfilt, fftconvolve
 from scipy.io import wavfile
 
 SR = 44100
-DUR = 120.0
+_ROOT0 = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+# Durasi video (s) daripada project.config.json — mod sintesis direka untuk 120 s
+DUR = float(json.load(open(os.path.join(_ROOT0, "project.config.json"))).get("duration", 120))
 N = int(SR * DUR)
 rng = np.random.default_rng(1447)
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
@@ -350,7 +352,7 @@ def load_song():
     x = np.frombuffer(raw, dtype=np.int16).reshape(-1, 2).T.astype(np.float64) / 32768.0
     out = np.zeros((2, N))
     out[:, : min(N, x.shape[1])] = x[:, :N]
-    return out * env_curve([(0, 0), (0.8, 1), (117.0, 1), (119.8, 0), (120, 0)])
+    return out * env_curve([(0, 0), (0.8, 1), (DUR - 3.5, 1), (DUR - 0.2, 0), (DUR, 0)])
 
 
 def mix_song():

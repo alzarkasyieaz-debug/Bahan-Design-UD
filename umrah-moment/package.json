@@ -17,12 +17,13 @@
   "dependencies": {
     "@remotion/cli": "4.0.542",
     "@remotion/fonts": "4.0.542",
-    "remotion": "4.0.542",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "remotion": "4.0.542"
   },
   "devDependencies": {
     "@fontsource/cinzel": "^5.2.5",
+    "@fontsource/great-vibes": "^5.3.0",
     "@fontsource/poppins": "^5.2.5",
     "@types/react": "19.1.0",
     "typescript": "^5.6.0"

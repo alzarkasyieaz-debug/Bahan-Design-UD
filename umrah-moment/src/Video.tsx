@@ -1,56 +1,99 @@
 import React from 'react';
 import { AbsoluteFill, Audio, interpolate, staticFile, useCurrentFrame } from 'remotion';
-import { Black, GoldDust, Grade, LightLeak, LightRays, LightSweep, sec } from './components/core';
-import { Caption, SubTitle, Title3D } from './components/Typography';
+import { Black, BlurBg, GoldDust, GoldenFrame, Grade, LightLeak, LightRays, LightSweep, sec } from './components/core';
+import { Caption, SignatureCard, SubTitle, Title3D } from './components/Typography';
 import { PROJECT, Scenes } from './project';
+import config from '../project.config.json';
 
 /*
- * UMRAH MOMENT — enjin gaya (jangan ubah untuk setiap group; ubah src/project.tsx).
- * 12 babak × 10 s · 1920×1080 · 30 fps · gred emas/ungu · tajuk emas 3D · debu emas · light leak.
+ * UMRAH MOMENT — enjin gaya (jangan ubah untuk setiap group; ubah src/project.tsx + project.config.json).
+ * Babak 10 s · 1920×1080 · 30 fps · durasi 120–240 s · gred emas/ungu · tajuk emas 3D · debu emas · light leak.
  */
 
-export const TOTAL_FRAMES = sec(120);
+export const DURATION = Math.min(240, Math.max(120, Number(config.duration) || 120));
+export const TOTAL_FRAMES = sec(DURATION);
 const S = (s: number) => sec(s);
+
+/** Lengkung bertangga daripada senarai tetingkap [mula, tamat, nilai] (dengan fade 1.5 s). */
+const windows = (f: number, wins: [number, number, number][], base: number) => {
+  let v = base;
+  for (const [a, b, val] of wins) {
+    const w = interpolate(f, [S(a - 1.5), S(a), S(b), S(b + 1.5)], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+    v = Math.max(v, base + (val - base) * w);
+  }
+  return v;
+};
 
 const Effects: React.FC = () => {
   const f = useCurrentFrame();
-  // Sinaran cahaya hanya pada babak pembukaan, Tanah Haram (8), doa (11) dan penutup
-  const rays = interpolate(f, [0, S(9), S(10.5), S(69.5), S(71), S(79), S(80.5), S(99.5), S(101), S(109), S(110), S(113.5), S(115), S(120)],
-    [0.5, 0.5, 0, 0, 0.3, 0.3, 0, 0, 0.45, 0.45, 0, 0, 0.3, 0.3], { extrapolateRight: 'clamp' });
-  const dust = interpolate(f, [0, S(10), S(12), S(78), S(80), S(110), S(120)], [1, 1, 0.55, 0.55, 0.9, 0.9, 1], { extrapolateRight: 'clamp' });
+  const rays = windows(f, PROJECT.rays, 0);
+  const dust = windows(f, PROJECT.dustHigh.map(([a, b]) => [a, b, 1] as [number, number, number]), 0.55);
+  const scenes = Math.floor(DURATION / 10);
   return (
     <>
       {rays > 0.01 && <LightRays opacity={rays} />}
       <GoldDust count={60} intensity={dust} />
-      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((k) => (
-        <LightLeak key={k} center={S(k * 10 - 0.3)} len={44} strength={0.42} dir={k % 2 ? 1 : -1} />
+      {new Array(scenes - 1).fill(0).map((_, i) => (
+        <LightLeak key={i} center={S((i + 1) * 10 - 0.3)} len={44} strength={0.42} dir={i % 2 ? -1 : 1} />
       ))}
       <LightSweep at={S(4.2)} len={50} strength={0.3} />
-      <LightSweep at={S(115.2)} len={50} strength={0.3} />
+      <LightSweep at={S(PROJECT.finale.at + 1.2)} len={50} strength={0.3} />
     </>
   );
 };
 
-const Texts: React.FC = () => (
-  <>
-    <Title3D text={PROJECT.title} at={S(2.0)} until={S(9.6)} size={124} y={215} />
-    <SubTitle text={PROJECT.subtitle} at={S(3.8)} until={S(9.6)} y={345} size={42} />
-    {PROJECT.captions.map((c, i) => (
-      <Caption key={i} text={c} at={S((i + 1) * 10 + 1.0)} until={S((i + 1) * 10 + (i === 9 ? 9.2 : 9.3))} />
-    ))}
-    <Title3D text={PROJECT.finaleTitle} at={S(114.0)} until={S(119.7)} size={92} y={165} />
-    <SubTitle text={PROJECT.finaleSubtitle} at={S(115.4)} until={S(119.7)} y={282} size={38} />
-    <SubTitle text={PROJECT.finaleDoa} at={S(116.7)} until={S(119.7)} y={988} size={36} italic color="#F3D58F" />
-  </>
-);
+/** Jalur gelap lembut di bahagian bawah supaya teks doa penutup jelas dibaca. */
+const FinaleBand: React.FC<{ from: number; until: number }> = ({ from, until }) => {
+  const f = useCurrentFrame();
+  const op = interpolate(f, [from, from + 20, until - 20, until], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  if (op <= 0) return null;
+  return <AbsoluteFill style={{ opacity: op, background: 'linear-gradient(0deg, rgba(14,5,22,0.85) 0%, rgba(14,5,22,0.45) 16%, rgba(14,5,22,0) 30%)' }} />;
+};
+
+const Texts: React.FC = () => {
+  const fin = PROJECT.finale;
+  const end = PROJECT.endCard;
+  return (
+    <>
+      <Title3D text={PROJECT.title} at={S(2.0)} until={S(9.6)} size={124} y={215} />
+      <SubTitle text={PROJECT.subtitle} at={S(3.8)} until={S(9.6)} y={345} size={42} />
+      {Object.entries(PROJECT.captions).map(([scene, text]) => {
+        const t0 = (Number(scene) - 1) * 10;
+        return <Caption key={scene} text={text} at={S(t0 + 1.0)} until={S(t0 + 9.3)} />;
+      })}
+      <Title3D text={fin.title} at={S(fin.at)} until={S(fin.until)} size={92} y={165} />
+      <SubTitle text={fin.subtitle} at={S(fin.at + 1.4)} until={S(fin.until)} y={282} size={38} />
+      <FinaleBand from={S(fin.at + 2.4)} until={S(fin.until)} />
+      <SubTitle text={fin.doa} at={S(fin.at + 2.7)} until={S(fin.until)} y={988} size={36} italic color="#F3D58F" />
+      {end && <SignatureCard at={S(end.at)} until={S(DURATION)} intro={end.intro} name={end.name} role={end.role} />}
+    </>
+  );
+};
+
+/** Latar kad tandatangan: foto kabur + bingkai emas. */
+const EndCardBg: React.FC = () => {
+  const f = useCurrentFrame();
+  const end = PROJECT.endCard;
+  if (!end || f < S(end.at)) return null;
+  const op = interpolate(f, [S(end.at), S(end.at + 1)], [0, 1], { extrapolateRight: 'clamp' });
+  const p = interpolate(f, [S(end.at), S(DURATION)], [0, 1]);
+  return (
+    <AbsoluteFill style={{ opacity: op }}>
+      <BlurBg id={end.bg} p={p} dim={0.62} />
+      <AbsoluteFill style={{ background: 'radial-gradient(ellipse 60% 55% at 50% 50%, rgba(60,25,80,0.25) 0%, rgba(10,4,16,0.75) 100%)' }} />
+    </AbsoluteFill>
+  );
+};
 
 export const UmrahMoment: React.FC = () => (
   <AbsoluteFill style={{ background: '#000' }}>
     <Scenes />
+    <EndCardBg />
     <Grade warmth={0.3} />
     <Effects />
+    {PROJECT.endCard && <GoldenFrame from={S(PROJECT.endCard.at + 0.5)} dur={S(DURATION - PROJECT.endCard.at - 0.5)} inset={40} />}
     <Texts />
-    <Black points={[[0, 1], [S(1.6), 0], [S(118.6), 0], [S(119.9), 1]]} />
+    <Black points={[[0, 1], [S(1.6), 0], [S(DURATION - 1.4), 0], [S(DURATION - 0.1), 1]]} />
     <Audio src={staticFile('audio/mix.wav')} />
   </AbsoluteFill>
 );

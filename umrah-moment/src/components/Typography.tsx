@@ -111,3 +111,67 @@ export const Caption: React.FC<{ text: string; at: number; until: number; pos?: 
     </AbsoluteFill>
   );
 };
+
+/**
+ * Kad penutup "Ingatan Ikhlas Daripada" + tandatangan emas (tulisan skrip yang "ditulis" kiri→kanan)
+ * + garis flourish dilukis + peranan (cth. MUTAWWIF).
+ */
+export const SignatureCard: React.FC<{ at: number; until: number; intro: string; name: string; role?: string }> = ({
+  at, until, intro, name, role,
+}) => {
+  const f = useCurrentFrame();
+  const op = useFade(at, until - at, 30, 1);
+  if (f < at || f > until) return null;
+  const t = (a: number, b: number) => interpolate(f, [at + a, at + b], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic) });
+  const eIntro = t(10, 45);
+  const sweep = t(40, 90);
+  const write = t(40, 120);   // tandatangan ditulis
+  const flourish = t(105, 150);
+  const eRole = t(130, 165);
+  const glowX = 22 + write * 56;
+  return (
+    <AbsoluteFill style={{ opacity: op, pointerEvents: 'none' }}>
+      {/* intro */}
+      <div style={{ position: 'absolute', top: 300, left: 0, right: 0, textAlign: 'center', opacity: eIntro, transform: `translateY(${(1 - eIntro) * 20}px)`, filter: `blur(${(1 - eIntro) * 6}px)` }}>
+        <GoldText text={intro} size={58} depth={4} sweep={sweep} weight={700} spacing="0.14em" />
+        <div style={{ height: 16 }} />
+        <Ornament width={360} p={eIntro} />
+      </div>
+      {/* tandatangan */}
+      <div style={{ position: 'absolute', top: 545, left: 0, right: 0, textAlign: 'center', transform: 'translateY(-50%)' }}>
+        <div style={{ display: 'inline-block', position: 'relative', clipPath: `inset(-40% ${100 - write * 104}% -40% -6%)` }}>
+          <GoldText text={name} size={168} depth={3} sweep={-1} weight={400} spacing="0.01em" family="Great Vibes" />
+        </div>
+        {write > 0 && write < 1 && (
+          <div style={{
+            position: 'absolute', top: '50%', left: `${glowX}%`, width: 26, height: 26, borderRadius: '50%', transform: 'translate(-50%,-50%)',
+            background: 'radial-gradient(circle, #FFF7DD 0%, rgba(255,215,140,0.8) 40%, rgba(255,200,120,0) 75%)', mixBlendMode: 'screen',
+          }} />
+        )}
+      </div>
+      {/* flourish */}
+      <svg width={1920} height={1080} style={{ position: 'absolute', left: 0, top: 0 }}>
+        <defs>
+          <linearGradient id="sigGold" x1="0" x2="1">
+            <stop offset="0" stopColor="#B8862F" stopOpacity="0" />
+            <stop offset="0.2" stopColor="#F3D58F" />
+            <stop offset="0.8" stopColor="#E8C27A" />
+            <stop offset="1" stopColor="#B8862F" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+        <path d="M 640 668 C 820 640, 1020 700, 1160 662 S 1300 640, 1290 676" fill="none" stroke="url(#sigGold)" strokeWidth={3.2}
+          strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - flourish}
+          style={{ filter: 'drop-shadow(0 0 6px rgba(232,194,122,0.7))' }} />
+      </svg>
+      {role && (
+        <div style={{
+          position: 'absolute', top: 752, left: 0, right: 0, textAlign: 'center', opacity: eRole, transform: `translateY(${(1 - eRole) * 14}px)`,
+          fontFamily: 'Cinzel', fontWeight: 600, fontSize: 38, letterSpacing: `${0.3 + 0.12 * eRole}em`, color: GOLD,
+          textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 0 18px rgba(232,194,122,0.35)',
+        }}>
+          {role}
+        </div>
+      )}
+    </AbsoluteFill>
+  );
+};
