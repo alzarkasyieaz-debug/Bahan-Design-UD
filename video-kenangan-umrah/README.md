@@ -1,7 +1,7 @@
 # Sebuah Rindu… Kenangan Indah di Tanah Suci
 
 Filem kenangan umrah sinematik: **120 s, 1920×1080 (16:9), 30 fps, H.264 + AAC**, dibina dengan [Remotion](https://www.remotion.dev/) (React).
-Fail akhir: `out/sebuah-rindu-kenangan-umrah.mp4`
+Fail akhir: `out/sebuah-rindu-kenangan-umrah.mp4` · Cover/thumbnail: `out/cover.jpg`
 
 Semua visual ialah **foto asal jemaah** daripada album Google Photos *"USJ 30 Sept-9 Okt"*. 44 gambar dipilih (lihat jadual).
 Tiada wajah, individu, pakaian atau peristiwa diubah. Gambar potret dipaparkan penuh dalam bingkai terapung di atas versi kabur
@@ -11,18 +11,18 @@ gambar yang sama, jadi tiada kepala atau wajah dipotong. Gambar landskap dipoton
 
 | Babak | Masa | Teks pada skrin | Gambar (no. dalam album) | Gerakan / kesan |
 |---|---|---|---|---|
-| 1 | 00:00–00:10 | **SEBUAH RINDU…** / Kenangan Indah Bersama di Tanah Suci | 280 (Kaabah) | Dari skrin hitam, slow zoom-in, sinaran cahaya emas, debu emas, tajuk 3D huruf demi huruf + light sweep |
+| 1 | 00:00–00:10 | **SEBUAH RINDU…** / Kenangan Indah Bersama di Tanah Suci | 080 (cover: foto kumpulan seluruh jemaah di KLIA) | Dari skrin hitam, slow zoom-in, sinaran cahaya emas, debu emas, tajuk 3D huruf demi huruf + light sweep |
 | 2 | 00:10–00:20 | Kita datang dengan kisah berbeza… | 022, 052 (KLIA), 092 (pesawat) | Pan sisi sinematik, dissolve |
 | 3 | 00:20–00:30 | Menjadi tetamu Allah… satu anugerah. | 113 (suami isteri di bawah langit senja), 252 & 247 (miqat, ihram, matahari terbenam) | Push-in, bingkai terapung 2.5D |
-| 4 | 00:30–00:40 | Setiap doa… membawa seribu harapan. | 259, 270 (ayah mendukung anak), 274 (anak minum zamzam), 290 (menolak kerusi roda) | Bingkai emas skrin, dolly in/out, bingkai foto emas |
+| 4 | 00:30–00:40 | Setiap doa… membawa seribu harapan. | 280 (keluarga di hadapan Kaabah), 270 (ayah mendukung anak), 274 (anak minum zamzam), 290 (menolak kerusi roda) | Bingkai emas skrin, dolly in/out, bingkai foto emas |
 | 5 | 00:40–00:50 | Senyuman ini… akan terus dirindui. | 250, 088, 130 → 189, 019, 279 | Kolaj bingkai terapung, kedalaman parallax |
-| 6 | 00:50–01:00 | Dari tidak mengenali… menjadi satu keluarga. | 231 (foto kumpulan berbendera), 211, 185, 132 | Zoom-out kumpulan, split-screen 3 panel |
+| 6 | 00:50–01:00 | Dari tidak mengenali… menjadi satu keluarga. | 259 (jemaah lelaki berihram di hadapan Kaabah), 211, 185, 132 | Zoom-out kumpulan, split-screen 3 panel |
 | 7 | 01:00–01:10 | Gelak tawa, cerita dan kenangan… | 223, 149, 155 → 226, 227, 147 | Mozek: makan bersama, unta, pasar buah, kereta kabel |
 | 8 | 01:10–01:20 | Makkah… kota yang sentiasa dirindui. | 294, 296 (menara Masjidil Haram) | Panorama tilt-up perlahan, cahaya senja |
 | 9 | 01:20–01:30 | Setiap gambar menyimpan sebuah cerita. | 285, 299, 263, 265, 244, 282 | Dinding kenangan 6 bingkai, depth parallax, partikel emas |
 | 10 | 01:30–01:40 | Berat untuk berpisah… | 286, 276, 254 (matahari terbenam) | Kamera diperlahankan, muzik lebih sentimental |
 | 11 | 01:40–01:50 | Semoga Allah menerima segala amalan kita. | 269 (jemaah di hadapan Kaabah) | Slow zoom-out, bingkai emas, sinaran cahaya, grain filem |
-| 12 | 01:50–02:00 | **KENANGAN INDAH BERSAMA** / Berpisah di dunia… semoga bertemu lagi di Tanah Suci. / *Semoga Allah mempertemukan kita kembali. Aamiin.* | Montaj 258, 255, 275, 261 → 080 (foto kumpulan penuh di KLIA) | Bingkai emas, tajuk 3D, fade-out ke hitam |
+| 12 | 01:50–02:00 | **KENANGAN INDAH BERSAMA** / Berpisah di dunia… semoga bertemu lagi di Tanah Suci. / *Semoga Allah mempertemukan kita kembali. Aamiin.* | Montaj 258, 255, 275, 261 → 231 (foto kumpulan berbendera Darul Mubarak di Makkah) | Bingkai emas, tajuk 3D, fade-out ke hitam |
 
 ### Perbezaan daripada brief (sebab: hanya menggunakan apa yang ada dalam gambar)
 - **Babak 8 (Madinah):** 300 item album yang dapat dimuat turun (30 Sept–2 Okt) tidak mengandungi gambar Madinah/Masjid Nabawi.

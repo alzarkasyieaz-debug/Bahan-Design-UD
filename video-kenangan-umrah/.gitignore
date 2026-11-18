@@ -5,3 +5,4 @@ public/audio/vo/*.mp3
 out/stills/
 out/*.jpg
 out/render.log
+!out/cover.jpg

@@ -20,8 +20,8 @@ const X = 14; // tempoh dissolve antara shot (frame)
 
 const Scenes: React.FC = () => (
   <>
-    {/* 1 | 00:00–00:10  THE OPENING — Kaabah */}
-    <FullShot id="p280" from={S(0)} dur={S(10.6)} fadeIn={0} zoom={[1.0, 1.16]} focal={[0.5, 0.4]} />
+    {/* 1 | 00:00–00:10  THE OPENING (cover) — foto kumpulan seluruh jemaah di KLIA */}
+    <FullShot id="p080" from={S(0)} dur={S(10.6)} fadeIn={0} zoom={[1.0, 1.14]} focal={[0.5, 0.54]} />
 
     {/* 2 | 00:10–00:20  Perjalanan yang menyatukan hati — KLIA & pesawat */}
     <FullShot id="p022" from={S(9.4)} dur={S(4.4)} fadeIn={24} zoom={[1.08, 1.12]} pan={[70, 0, -70, 0]} focal={[0.5, 0.4]} />
@@ -34,7 +34,7 @@ const Scenes: React.FC = () => (
     <FramedShot id="p247" from={S(26.4)} dur={S(4.2)} fadeIn={X + 4} height={880} rot={[-7, 3]} focal={[0.5, 0.35]} />
 
     {/* 4 | 00:30–00:40  Detik ibadah yang bermakna — Masjidil Haram */}
-    <FullShot id="p259" from={S(29.4)} dur={S(3.0)} fadeIn={24} zoom={[1.0, 1.06]} focal={[0.5, 0.42]} />
+    <FullShot id="p280" from={S(29.4)} dur={S(3.0)} fadeIn={24} zoom={[1.0, 1.06]} focal={[0.5, 0.42]} />
     <FullShot id="p270" from={S(31.8)} dur={S(3.0)} fadeIn={X + 4} zoom={[1.07, 1.0]} focal={[0.5, 0.45]} />
     <FramedShot id="p274" from={S(34.2)} dur={S(3.0)} fadeIn={X + 4} height={860} rot={[-5, 2]} focal={[0.5, 0.3]} />
     <FramedShot id="p290" from={S(36.6)} dur={S(4.0)} fadeIn={X + 4} gold height={860} rot={[6, -3]} focal={[0.4, 0.5]} />
@@ -53,7 +53,7 @@ const Scenes: React.FC = () => (
     ]} />
 
     {/* 6 | 00:50–01:00  Ukhuwah yang terbina — foto kumpulan & split-screen */}
-    <FullShot id="p231" from={S(49.4)} dur={S(4.6)} fadeIn={24} zoom={[1.1, 1.0]} focal={[0.5, 0.55]} />
+    <FullShot id="p259" from={S(49.4)} dur={S(4.6)} fadeIn={24} zoom={[1.1, 1.0]} focal={[0.5, 0.45]} />
     <Tiles from={S(53.4)} dur={S(7.2)} fadeIn={X} tiles={[
       { id: 'p211', x: 24, y: 24, w: 616, h: 1032, focal: [0.5, 0.35], delay: 0 },
       { id: 'p185', x: 652, y: 24, w: 616, h: 1032, focal: [0.5, 0.35], delay: 8 },
@@ -99,7 +99,7 @@ const Scenes: React.FC = () => (
     <FullShot id="p255" from={S(110.6)} dur={S(1.6)} fadeIn={10} zoom={[1.0, 1.06]} focal={[0.5, 0.5]} />
     <FramedShot id="p275" from={S(111.6)} dur={S(1.6)} fadeIn={10} height={900} rot={[2, 0]} focal={[0.5, 0.35]} />
     <FullShot id="p261" from={S(112.6)} dur={S(1.6)} fadeIn={10} zoom={[1.0, 1.06]} focal={[0.5, 0.42]} />
-    <FullShot id="p080" from={S(113.4)} dur={S(6.6)} fadeIn={18} zoom={[1.12, 1.0]} focal={[0.5, 0.52]} />
+    <FullShot id="p231" from={S(113.4)} dur={S(6.6)} fadeIn={18} zoom={[1.12, 1.0]} focal={[0.5, 0.5]} />
     <GoldenFrame from={S(113.8)} dur={S(6.2)} inset={30} />
   </>
 );
