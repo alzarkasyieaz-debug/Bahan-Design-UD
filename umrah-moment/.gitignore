@@ -11,3 +11,4 @@ out/render-raw.mp4
 out/*.mp4
 !out/cover-*.jpg
 __pycache__/
+out/*.log
