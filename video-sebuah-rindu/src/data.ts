@@ -5,7 +5,8 @@
 
 export type Move = 'in' | 'out' | 'left' | 'right' | 'up';
 /** Satu "shot": 1 foto = skrin penuh; 2–3 foto = skrin pisah (split-screen) */
-export type Shot = { srcs: string[]; move?: Move; focusY?: number; weight?: number; forceCover?: boolean };
+export type Shot = { srcs: string[]; move?: Move; focusY?: number; weight?: number; forceCover?: boolean; pair?: boolean };
+// pair: srcs = [foto kumpulan, potret individu] dalam satu bingkai
 
 export type Scene = {
   title: string;
@@ -33,7 +34,7 @@ export const SCENES: Scene[] = [
     shots: [
       { srcs: ['p000'], move: 'right', focusY: 0.35 },
       { srcs: ['p004', 'p008', 'p012'] },
-      { srcs: ['p013'], move: 'left', focusY: 0.3 },
+      { srcs: ['p013', 'p025'], pair: true, weight: 1.2 },
       { srcs: ['p040', 'p042'] },
     ],
   },
@@ -43,7 +44,8 @@ export const SCENES: Scene[] = [
     layout: 'film',
     shots: [
       { srcs: ['p050'], move: 'in', focusY: 0.6 },
-      { srcs: ['p053'], move: 'left', focusY: 0.55 },
+      { srcs: ['p163'], move: 'in', weight: 1.1 },
+      { srcs: ['p053', 'p112'], pair: true, weight: 1.2 },
       { srcs: ['p120', 'p228'] },
     ],
   },
@@ -54,6 +56,7 @@ export const SCENES: Scene[] = [
     goldFrame: true,
     shots: [
       { srcs: ['p028'], move: 'in', focusY: 0.3 },
+      { srcs: ['p218'], move: 'in', weight: 1.1 },
       { srcs: ['p223'], move: 'up', focusY: 0.4 },
       { srcs: ['p232'], move: 'out', focusY: 0.45 },
     ],
@@ -62,7 +65,7 @@ export const SCENES: Scene[] = [
     title: 'Senyuman ini… akan terus dirindui.',
     vo: 'Di sebalik penat dan lelah, tersimpan senyuman yang akan sentiasa menghidupkan kenangan.',
     layout: 'collage',
-    shots: [{ srcs: ['p226', 'p064', 'p075', 'p077', 'p168', 'p178', 'p072'] }],
+    shots: [{ srcs: ['p226', 'p064', 'p075', 'p264', 'p168', 'p107', 'p266'] }],
   },
   {
     title: 'Dari tidak mengenali… menjadi satu keluarga.',
@@ -70,16 +73,16 @@ export const SCENES: Scene[] = [
     layout: 'film',
     shots: [
       { srcs: ['p051'], move: 'in', focusY: 0.45 },
+      { srcs: ['p196'], move: 'in', weight: 1.25 },
+      { srcs: ['p230', 'p069'], pair: true, weight: 1.15 },
       { srcs: ['p110', 'p093'] },
-      { srcs: ['p230'], move: 'right', focusY: 0.4 },
-      { srcs: ['p059'], move: 'out', focusY: 0.5 },
     ],
   },
   {
     title: 'Gelak tawa, cerita dan kenangan…',
     vo: 'Kita berkongsi cerita, gelak tawa, dan detik-detik kecil yang kini menjadi begitu berharga.',
     layout: 'mosaic',
-    shots: [{ srcs: ['p141', 'p262', 'p247', 'p267', 'p283', 'p144'] }],
+    shots: [{ srcs: ['p141', 'p262', 'p247', 'p267', 'p292', 'p144'] }],
   },
   {
     title: 'Ketenangan… di setiap langkah.',
@@ -87,16 +90,16 @@ export const SCENES: Scene[] = [
     layout: 'film',
     shots: [
       { srcs: ['p135'], move: 'right', focusY: 0.45 },
-      { srcs: ['p146', 'p153'] },
-      { srcs: ['p129'], move: 'in', focusY: 0.45 },
-      { srcs: ['p203'], move: 'left', focusY: 0.5 },
+      { srcs: ['p089'], move: 'in', weight: 1.1 },
+      { srcs: ['p201', 'p153'] },
+      { srcs: ['p279'], move: 'in', weight: 1.1 },
     ],
   },
   {
     title: 'Setiap gambar menyimpan sebuah cerita.',
     vo: 'Setiap wajah, setiap tempat dan setiap detik… kini menjadi sebahagian daripada kisah hidup kita.',
     layout: 'wall',
-    shots: [{ srcs: ['p077', 'p226', 'p053', 'p262', 'p139', 'p131'] }],
+    shots: [{ srcs: ['p077', 'p226', 'p053', 'p264', 'p139', 'p069'] }],
   },
   {
     title: 'Berat untuk berpisah…',
@@ -105,7 +108,7 @@ export const SCENES: Scene[] = [
     slow: true,
     shots: [
       { srcs: ['p236', 'p237'] },
-      { srcs: ['p113'], move: 'in', focusY: 0.35 },
+      { srcs: ['p046', 'p113'], pair: true, weight: 1.2 },
       { srcs: ['p300'], move: 'out', focusY: 0.45 },
     ],
   },
@@ -125,7 +128,7 @@ export const SCENES: Scene[] = [
     vo: 'Berpisah di dunia… semoga bertemu lagi di Tanah Suci.',
     layout: 'finale',
     shots: [
-      { srcs: ['p000', 'p051', 'p077', 'p226', 'p262', 'p141', 'p300', 'p120'] },
+      { srcs: ['p000', 'p196', 'p051', 'p163', 'p226', 'p089', 'p262', 'p218'] },
       { srcs: ['p046'] },
     ],
   },

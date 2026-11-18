@@ -2,7 +2,7 @@ import React from 'react';
 import { AbsoluteFill, Easing, Img, interpolate, Sequence, staticFile, useCurrentFrame } from 'remotion';
 import { Scene, Shot } from './data';
 import { GoldFrame, LightLeak, LightRays, Particles, PurpleBackdrop, Sweep } from './components/FX';
-import { Frame, FullPhoto, Split, aspect } from './components/Photo';
+import { Frame, FullPhoto, Pair, Split, aspect } from './components/Photo';
 import { Fade, LowerThird, Ornament, Title3D } from './components/Title';
 import { C, F, H, SCENE, W, XF } from './theme';
 
@@ -23,7 +23,9 @@ const shotTimes = (shots: Shot[], total: number) => {
 };
 
 const ShotView: React.FC<{ shot: Shot; dur: number; slow?: boolean }> = ({ shot, dur, slow }) =>
-  shot.srcs.length > 1 ? (
+  shot.pair ? (
+    <Pair group={shot.srcs[0]} solo={shot.srcs[1]} dur={dur} />
+  ) : shot.srcs.length > 1 ? (
     <Split srcs={shot.srcs} dur={dur} slow={slow} />
   ) : (
     <FullPhoto src={shot.srcs[0]} dur={dur} move={shot.move} focusY={shot.focusY} slow={slow} forceCover={shot.forceCover} />
