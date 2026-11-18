@@ -5,6 +5,11 @@ description: Hasilkan video kenangan umrah sinematik 2–4 minit gaya "Umrah Mom
 
 # Umrah Moment — aliran kerja
 
+**Cara guna (pengguna):** dalam sesi baharu repo ini, taip `/umrah-moment` atau minta
+*"Buat video Umrah Moment untuk album <pautan Google Photos>"*. Nyatakan jika lagu, durasi (2–4 minit) atau nama
+mutawwif berbeza; jika tidak, lalai = lagu "Kita Pernah Bersama", 4 minit, penutup "Ingatan Ikhlas Daripada —
+Ustaz Zulhafeez, Mutawwif".
+
 Enjin & template: `umrah-moment/` (Remotion). Panduan gaya: `umrah-moment/STYLE.md` — baca dahulu.
 Setiap group = satu folder **`projects/<slug>/`** (`project.tsx` + `project.config.json`). Pilih projek aktif dengan
 `npm run use -- <slug>`. Gambar → `public/img/<slug>/`, audio → `public/audio/<slug>/`, album asal → `album/<slug>/`.
