@@ -1,0 +1,23 @@
+{
+  "name": "video-umrah-moment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Video memori 'Umrah Moment' — Memori USJ 4–12 Julai 2026 (9:16)",
+  "scripts": {
+    "audio": "python3 scripts/generate_audio.py",
+    "studio": "remotion studio",
+    "render": "remotion render UmrahMoment out/umrah-moment-usj-2026.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac",
+    "still": "remotion still UmrahMoment out/preview.png --frame=90"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.542",
+    "@remotion/fonts": "4.0.542",
+    "remotion": "4.0.542",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.0",
+    "typescript": "^5.6.0"
+  }
+}
