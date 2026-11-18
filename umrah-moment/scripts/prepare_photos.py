@@ -3,22 +3,22 @@
 Sediakan gambar jemaah untuk video (tiada suntingan wajah/kandungan — hanya saiz semula,
 orientasi EXIF dan versi latar kabur untuk gambar potret).
 
-Guna:  python3 scripts/prepare_photos.py [folder-gambar-asal]   (lalai: album/ hasil fetch_album.py)
+Guna:  python3 scripts/prepare_photos.py [folder-gambar-asal]   (lalai: album/<slug>/ hasil fetch_album.py)
 Folder asal mengandungi fail bernombor 000.jpg … 299.jpg (susunan album Google Photos
-"USJ 30 Sept-9 Okt"). Output: public/img/pNNN.jpg, public/img/pNNN_bg.jpg, src/data/photos.json
+"USJ 30 Sept-9 Okt"). Output: public/img/<slug>/pNNN.jpg, pNNN_bg.jpg, projects/<slug>/photos.json
 """
 import json, os, re, sys
 from PIL import Image, ImageOps, ImageFilter, ImageEnhance
 import numpy as np
 
-ROOT0 = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-# Gambar dipilih secara automatik daripada src/project.tsx (semua rujukan pNNN)
-_src = open(os.path.join(ROOT0, "src", "project.tsx"), encoding="utf8").read()
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from project_paths import ROOT, PROJECT_DIR, IMG_DIR, ALBUM_DIR  # noqa: E402
+# Gambar dipilih secara automatik daripada projects/<slug>/project.tsx (semua rujukan pNNN)
+_src = open(os.path.join(PROJECT_DIR, "project.tsx"), encoding="utf8").read()
 SELECTED = sorted({int(n) for n in re.findall(r"['\"]p(\d{3})['\"]", _src)})
 
-ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "album")
-OUT = os.path.join(ROOT, "public", "img")
+SRC = sys.argv[1] if len(sys.argv) > 1 else ALBUM_DIR
+OUT = IMG_DIR
 FX = os.path.join(ROOT, "public", "fx")
 os.makedirs(OUT, exist_ok=True)
 os.makedirs(FX, exist_ok=True)
@@ -45,4 +45,4 @@ for k in range(4):
     n = rng.normal(128, 38, (512, 512)).clip(0, 255).astype(np.uint8)
     Image.fromarray(n, "L").save(os.path.join(FX, f"grain{k}.png"))
 
-json.dump(meta, open(os.path.join(ROOT, "src", "data", "photos.json"), "w"), indent=1)
+json.dump(meta, open(os.path.join(PROJECT_DIR, "photos.json"), "w"), indent=1)

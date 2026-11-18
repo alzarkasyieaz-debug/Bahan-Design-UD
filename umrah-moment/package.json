@@ -9,10 +9,11 @@
     "audio": "python3 scripts/generate_audio.py",
     "studio": "remotion studio",
     "render": "remotion render UmrahMoment out/render-raw.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac --audio-bitrate=320k",
-    "cover": "remotion still UmrahMoment out/cover.jpg --frame=215 --image-format=jpeg --jpeg-quality=92",
+    "cover": "remotion still UmrahMoment out/cover-$(cat ACTIVE).jpg --frame=215 --image-format=jpeg --jpeg-quality=92",
     "export": "bash scripts/export.sh",
     "album": "python3 scripts/fetch_album.py",
-    "still": "remotion still UmrahMoment out/preview.png --frame=215"
+    "still": "remotion still UmrahMoment out/preview.png --frame=215",
+    "use": "python3 scripts/use_project.py"
   },
   "dependencies": {
     "@remotion/cli": "4.0.542",

@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   CardWall, FramedShot, FullShot, GoldenFrame, TiltShot, Tiles, sec,
-} from './components/core';
+} from '../../src/components/core';
 
 /*
  * ============================================================================

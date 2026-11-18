@@ -2,11 +2,10 @@ import React from 'react';
 import { AbsoluteFill, Audio, interpolate, staticFile, useCurrentFrame } from 'remotion';
 import { Black, BlurBg, GoldDust, GoldenFrame, Grade, LightLeak, LightRays, LightSweep, sec } from './components/core';
 import { Caption, SignatureCard, SubTitle, Title3D } from './components/Typography';
-import { PROJECT, Scenes } from './project';
-import config from '../project.config.json';
+import { PROJECT, SLUG, Scenes, config } from './active';
 
 /*
- * UMRAH MOMENT — enjin gaya (jangan ubah untuk setiap group; ubah src/project.tsx + project.config.json).
+ * UMRAH MOMENT — enjin gaya (jangan ubah untuk setiap group). Kandungan: projects/<slug>/ (pilih dengan npm run use -- <slug>).
  * Babak 10 s · 1920×1080 · 30 fps · durasi 120–240 s · gred emas/ungu · tajuk emas 3D · debu emas · light leak.
  */
 
@@ -94,6 +93,6 @@ export const UmrahMoment: React.FC = () => (
     {PROJECT.endCard && <GoldenFrame from={S(PROJECT.endCard.at + 0.5)} dur={S(DURATION - PROJECT.endCard.at - 0.5)} inset={40} />}
     <Texts />
     <Black points={[[0, 1], [S(1.6), 0], [S(DURATION - 1.4), 0], [S(DURATION - 0.1), 1]]} />
-    <Audio src={staticFile('audio/mix.wav')} />
+    <Audio src={staticFile(`audio/${SLUG}/mix.wav`)} />
   </AbsoluteFill>
 );

@@ -4,32 +4,45 @@
 [Remotion](https://www.remotion.dev/). Panduan gaya: [`STYLE.md`](STYLE.md). Aliran kerja untuk Claude:
 [`.claude/skills/umrah-moment/SKILL.md`](../.claude/skills/umrah-moment/SKILL.md).
 
-**Projek semasa:** group USJ 30 Sept – 9 Okt 2026 · **4:00** (24 babak, 73 gambar) · lagu 0:02–4:02 (dua chorus penuh) ·
-penutup: *Ingatan Ikhlas Daripada* + tandatangan **Ustaz Zulhafeez — Mutawwif** · fail akhir `out/umrah-moment.mp4`
-(tidak di-commit kerana melebihi 100 MB; jana dengan `npm run export`) · cover `out/cover.jpg`
+## Projek
 
-> Jadual storyboard di bawah ialah versi asal 2 minit. Susunan 4 minit terkini ada dalam `src/project.tsx` (komen setiap babak).
+| Slug | Group | Durasi | Output |
+|---|---|---|---|
+| `usj-okt-2026` | USJ 30 Sept – 9 Okt 2026 | 4:00 (24 babak, 73 gambar) | `out/usj-okt-2026.mp4` |
+| `usj-jul-2026` | USJ 4 – 12 Julai 2026 | 4:00 (24 babak, 70 gambar) | `out/usj-jul-2026.mp4` |
 
-## Guna semula untuk group baharu
+Kedua-dua projek: lagu *Kita Pernah Bersama* (0:02–4:02, dua chorus), penutup *Ingatan Ikhlas Daripada* +
+tandatangan **Ustaz Zulhafeez — Mutawwif**. MP4 tidak di-commit (melebihi had 100 MB GitHub); cover ada di
+`out/cover-<slug>.jpg`.
 
-| Fail | Apa diubah |
-|---|---|
-| `project.config.json` | Nama group, pautan album, `duration` (120–240 s), fail lagu, `songStart`, suara latar, nama fail output |
-| `src/project.tsx` | Tajuk/kapsyen, kad tandatangan (`PROJECT.endCard`) dan ID gambar + titik fokus wajah bagi setiap babak |
-| `public/audio/<lagu>.mp3` | Lagu latar |
+## Struktur berbilang projek
+
+```
+projects/<slug>/project.tsx          kandungan: tajuk, kapsyen, kad tandatangan, gambar setiap babak
+projects/<slug>/project.config.json  group, album, duration (120–240 s), lagu, songStart, VO, output
+projects/<slug>/photos.json          dijana (dimensi gambar)
+public/img/<slug>/                    gambar disediakan (npm run photos)
+public/audio/<slug>/mix.wav           audio akhir (npm run audio)
+album/<slug>/                         gambar asal dimuat turun (tidak di-commit)
+ACTIVE, src/active.ts                 projek aktif (npm run use -- <slug>)
+```
+
+## Group baharu
 
 ```bash
 npm install && pip install numpy scipy pillow edge-tts
-npm run album          # muat turun album -> album/NNN.jpg + lembaran pilihan album/sheets/
-# … pilih gambar & isi src/project.tsx …
-npm run photos         # sediakan gambar yang dirujuk dalam project.tsx
-npm run vo             # (pilihan) suara latar daripada scripts/vo_script.json
-npm run audio          # mix lagu + suara -> public/audio/mix.wav
-npm run studio         # pratonton
-REMOTION_BROWSER=/path/ke/chrome-headless-shell npm run export   # render + cover + mampat + cover terbenam
+mkdir projects/<slug> && cp projects/usj-jul-2026/project.config.json projects/<slug>/   # ubah slug, group, album, output
+cp projects/usj-jul-2026/project.tsx projects/<slug>/
+npm run use -- <slug>
+npm run album          # muat turun album -> album/<slug>/NNN.jpg + lembaran pilihan album/<slug>/sheets/
+# … pilih gambar & isi projects/<slug>/project.tsx …
+npm run photos && npm run audio
+REMOTION_BROWSER=/path/ke/chrome-headless-shell npm run export   # -> out/<slug>.mp4 (cover terbenam)
 ```
 
-Enjin gaya (tidak perlu diubah): `src/Video.tsx`, `src/components/core.tsx`, `src/components/Typography.tsx`.
+Enjin gaya (sama untuk semua projek): `src/Video.tsx`, `src/components/core.tsx`, `src/components/Typography.tsx`.
+
+> Storyboard di bawah ialah versi asal 2 minit projek USJ Okt. Susunan 4 minit ada dalam `projects/<slug>/project.tsx`.
 
 ## Storyboard (12 babak × 10 s)
 
@@ -84,7 +97,6 @@ Enjin gaya (tidak perlu diubah): `src/Video.tsx`, `src/components/core.tsx`, `sr
 ## Struktur
 
 ```
-src/project.tsx            KANDUNGAN group: tajuk, kapsyen, gambar setiap babak
 src/Video.tsx              Enjin: lapisan kesan, teks, gred, audio
 src/components/core.tsx    Ken Burns berfokus wajah, bingkai terapung 2.5D, kolaj, split/mozek, tilt panorama,
                            debu emas, sinaran cahaya, light leak, light sweep, gred warna emas/ungu, grain filem, bingkai emas

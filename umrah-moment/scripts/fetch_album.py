@@ -3,7 +3,7 @@
 Muat turun gambar daripada pautan album kongsi Google Photos ke folder album/ (000.jpg, 001.jpg, …)
 dan jana lembaran kenalan (album/sheets/sNN.jpg) berlabel untuk memilih gambar.
 
-Guna:  python3 scripts/fetch_album.py [pautan-album]     (lalai: "album" dalam project.config.json)
+Guna:  python3 scripts/fetch_album.py [pautan-album] [folder-output]   (lalai: "album" dalam projects/<slug>/project.config.json, album/<slug>/)
 Nota:  halaman album kongsi hanya memuat ~300 item pertama. Untuk album lebih besar, muat turun
        dari Google Photos secara manual dan letak sebagai album/NNN.jpg mengikut susunan masa.
 Perlu: rangkaian ke photos.app.goo.gl, photos.google.com, lh3.googleusercontent.com ; Pillow
@@ -12,10 +12,10 @@ import json, os, re, sys, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
-ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-cfg = json.load(open(os.path.join(ROOT, "project.config.json")))
-url = sys.argv[1] if len(sys.argv) > 1 else cfg["album"]
-OUT = os.path.join(ROOT, "album")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from project_paths import CONFIG, ALBUM_DIR  # noqa: E402
+url = sys.argv[1] if len(sys.argv) > 1 else CONFIG["album"]
+OUT = sys.argv[2] if len(sys.argv) > 2 else ALBUM_DIR
 os.makedirs(os.path.join(OUT, "sheets"), exist_ok=True)
 
 req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})

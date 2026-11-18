@@ -24,9 +24,11 @@ from scipy.signal import butter, sosfilt, fftconvolve
 from scipy.io import wavfile
 
 SR = 44100
-_ROOT0 = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-# Durasi video (s) daripada project.config.json — mod sintesis direka untuk 120 s
-DUR = float(json.load(open(os.path.join(_ROOT0, "project.config.json"))).get("duration", 120))
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from project_paths import CONFIG as _CFG, AUDIO_DIR  # noqa: E402
+# Durasi video (s) daripada projects/<slug>/project.config.json — mod sintesis direka untuk 120 s
+DUR = float(_CFG.get("duration", 120))
 N = int(SR * DUR)
 rng = np.random.default_rng(1447)
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
@@ -338,8 +340,7 @@ def mix(music, vo):
     return out / peak * 0.93
 
 
-# Tetapan per-projek: project.config.json  (song, songStart, voScenes)
-_CFG = json.load(open(os.path.join(ROOT, "project.config.json")))
+# Tetapan per-projek: projects/<slug>/project.config.json  (song, songStart, voScenes)
 SONG = os.path.join(ROOT, _CFG["song"]) if _CFG.get("song") else ""
 SONG_START = float(_CFG.get("songStart", 0))           # saat dalam lagu yang menjadi 00:00 video
 SONG_VO = {int(k): float(v) for k, v in _CFG.get("voScenes", {"1": 3.0}).items()}  # suara latar dikekalkan
@@ -368,7 +369,8 @@ def mix_song():
 
 
 def write(name, buf):
-    path = os.path.join(OUT, name)
+    os.makedirs(AUDIO_DIR, exist_ok=True)
+    path = os.path.join(AUDIO_DIR if name == "mix.wav" else OUT, name)
     wavfile.write(path, SR, (np.clip(buf.T, -1, 1) * 32767).astype(np.int16))
     print("✓", os.path.normpath(path))
 

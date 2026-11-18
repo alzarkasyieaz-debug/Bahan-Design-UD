@@ -1,6 +1,6 @@
 import React from 'react';
 import { AbsoluteFill, Easing, Img, interpolate, random, staticFile, useCurrentFrame } from 'remotion';
-import photos from '../data/photos.json';
+import { photos, SLUG } from '../active';
 
 export const W = 1920;
 export const H = 1080;
@@ -42,7 +42,7 @@ export const CoverImg: React.FC<{
   const top = clamp(boxH / 2 - focal[1] * dh + py, boxH - dh, 0);
   return (
     <Img
-      src={staticFile(`img/${id}.jpg`)}
+      src={staticFile(`img/${SLUG}/${id}.jpg`)}
       style={{ position: 'absolute', left: 0, top: 0, width: dw, height: dh, transform: `translate3d(${left}px, ${top}px, 0)`, filter }}
     />
   );
@@ -74,7 +74,7 @@ export const BlurBg: React.FC<{ id: string; p: number; dim?: number }> = ({ id, 
   return (
     <AbsoluteFill style={{ overflow: 'hidden' }}>
       <Img
-        src={staticFile(`img/${id}_bg.jpg`)}
+        src={staticFile(`img/${SLUG}/${id}_bg.jpg`)}
         style={{
           position: 'absolute', left: '50%', top: '50%', width: w * s0, height: h * s0,
           transform: `translate(-50%, -50%) scale(${z}) translateX(${-30 * p}px)`,
