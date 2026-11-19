@@ -9,17 +9,18 @@ Dibina dengan [Remotion](https://www.remotion.dev/) daripada **footaj sebenar** 
 | `out/rayuan-banjir-parit-30s.mp4` | Versi iklan media sosial 30 s |
 | `out/cover-9x16.png` | Cover "BANJIR MELANDA, MEREKA PERLUKAN KITA!" |
 | `STORYBOARD-CAPCUT.md` | Storyboard bertimecode + pelan suntingan CapCut (setiap syot, teks, muzik, peralihan) |
-| `SKRIP-SUARA-LATAR.md` | Skrip & panduan rakaman suara latar (9 klip) |
+| `SKRIP-SUARA-LATAR.md` | Skrip suara latar (pilihan — versi semasa tanpa narasi) |
 
-## Status: BELUM UNTUK SIARAN
+## Status
 
-1. **Suara latar belum dirakam.** Video mengandungi muzik, bunyi ambien, audio asal footaj dan subtitle penuh,
-   tetapi tiada narasi. Rakam 9 klip mengikut `SKRIP-SUARA-LATAR.md`, simpan sebagai
-   `public/audio/vo/vo-01.m4a` … `vo-09.m4a` (juga .wav/.mp3), kemudian render semula — muzik akan diperlahankan secara automatik.
-   Pilihan: `public/audio/vo/timing.json` (`{"1": [[0.0, 1.4], [1.6, 3.9], [4.0, 6.8]], …}` — saat dari mula klip, satu pasangan
-   bagi setiap baris subtitle dalam `src/data/script.ts`) untuk subtitle yang tepat dengan rakaman.
-2. **Maklumat sumbangan ialah placeholder.** Isi `src/data/donation.ts` dengan maklumat **yang disahkan penganjur** dan letakkan
-   QR rasmi di `public/img/qr-sumbangan.png`. Cop merah "PLACEHOLDER" hilang secara automatik apabila semua medan diisi.
+- **Tanpa suara latar (keputusan penganjur).** Cerita disampaikan melalui muzik, audio asal footaj, teks kinetik dan
+  kapsyen naratif pada skrin — sesuai untuk tontonan tanpa bunyi di media sosial.
+  (Jika kelak mahu menambah narasi: simpan `public/audio/vo/vo-01` … `vo-09` mengikut `SKRIP-SUARA-LATAR.md` dan render semula —
+  muzik akan diperlahankan secara automatik.)
+- **BELUM UNTUK SIARAN — maklumat sumbangan masih placeholder.** Isi `src/data/donation.ts` dengan maklumat **yang disahkan penganjur**
+  dan letakkan QR rasmi di `public/img/qr-sumbangan.png`. Cop merah "PLACEHOLDER" hilang secara automatik apabila semua medan diisi.
+- **Tarikh footaj:** metadata klip menunjukkan rakaman pada 25 Oktober 2025. Sahkan sebelum siaran; tambah tarikh pada `SOURCE_TAG`
+  dalam `src/data/donation.ts` jika rayuan ini untuk banjir yang lebih baharu.
 
 ## Render semula
 

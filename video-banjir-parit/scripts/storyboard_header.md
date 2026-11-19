@@ -40,7 +40,7 @@ Gred warna hanya mengubah tona, bukan keadaan. Label "Rakaman sebenar · Parlime
 6. **Peralihan:** Cross-dissolve 0.4s antara semua syot (Transitions → Basic → Mix). Elakkan peralihan flashy.
 7. **Animasi teks:** In = "Blur in" / "Rise" 0.5s; Out = "Fade out + blur" 0.3s. Teks utama: tambah Shadow (jarak 8, kabur 20) + Stroke gelap nipis untuk kedalaman 3D.
 8. **Overlay:** Effects → "Rain" (opacity 30%) pada 00:00–00:25 & kemuncak 1; "Light Leak"/"Light Sweep" pada setiap tajuk besar; "Bokeh/Gold Particles" (Screen 50%) dari 00:51 hingga akhir; "Film Grain" 8% sepanjang video.
-9. **Audio:** Muzik −12 dB, auto-duck −8 dB semasa suara latar; audio asal footaj 20–35%; suara latar 0 dB (normalize −14 LUFS untuk TikTok/Reels).
-10. **Subtitle:** Poppins SemiBold 52, putih, bayang hitam lembut; kata kunci emas & 15% lebih besar:
+9. **Audio (tiada suara latar):** Muzik −10 dB sebagai pemacu emosi; audio asal footaj 20–35% (bunyi air, suasana PPS); SFX lembut pada teks. Normalize sekitar −14 LUFS untuk TikTok/Reels.
+10. **Kapsyen naratif:** Poppins SemiBold 52, putih, bayang hitam lembut; kata kunci emas & 15% lebih besar:
     *diuji, bantuan, keprihatinan, harapan, sumbangan, bersama, membantu, meringankan*. Maksimum 2 baris. Bahagian bawah teks di **y ≈ 1540 px** (380 px dari bawah) — di atas UI TikTok/Reels; jarak kanan 150 px.
 11. **Zon selamat:** atas 200 px, bawah 380 px, kanan 150 px kosong daripada teks penting.

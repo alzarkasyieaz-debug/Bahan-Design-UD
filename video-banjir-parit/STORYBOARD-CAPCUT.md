@@ -40,8 +40,8 @@ Gred warna hanya mengubah tona, bukan keadaan. Label "Rakaman sebenar · Parlime
 6. **Peralihan:** Cross-dissolve 0.4s antara semua syot (Transitions → Basic → Mix). Elakkan peralihan flashy.
 7. **Animasi teks:** In = "Blur in" / "Rise" 0.5s; Out = "Fade out + blur" 0.3s. Teks utama: tambah Shadow (jarak 8, kabur 20) + Stroke gelap nipis untuk kedalaman 3D.
 8. **Overlay:** Effects → "Rain" (opacity 30%) pada 00:00–00:25 & kemuncak 1; "Light Leak"/"Light Sweep" pada setiap tajuk besar; "Bokeh/Gold Particles" (Screen 50%) dari 00:51 hingga akhir; "Film Grain" 8% sepanjang video.
-9. **Audio:** Muzik −12 dB, auto-duck −8 dB semasa suara latar; audio asal footaj 20–35%; suara latar 0 dB (normalize −14 LUFS untuk TikTok/Reels).
-10. **Subtitle:** Poppins SemiBold 52, putih, bayang hitam lembut; kata kunci emas & 15% lebih besar:
+9. **Audio (tiada suara latar):** Muzik −10 dB sebagai pemacu emosi; audio asal footaj 20–35% (bunyi air, suasana PPS); SFX lembut pada teks. Normalize sekitar −14 LUFS untuk TikTok/Reels.
+10. **Kapsyen naratif:** Poppins SemiBold 52, putih, bayang hitam lembut; kata kunci emas & 15% lebih besar:
     *diuji, bantuan, keprihatinan, harapan, sumbangan, bersama, membantu, meringankan*. Maksimum 2 baris. Bahagian bawah teks di **y ≈ 1540 px** (380 px dari bawah) — di atas UI TikTok/Reels; jarak kanan 150 px.
 11. **Zon selamat:** atas 200 px, bawah 380 px, kanan 150 px kosong daripada teks penting.
 
@@ -96,19 +96,19 @@ Gred warna hanya mengubah tona, bukan keadaan. Label "Rakaman sebenar · Parlime
 | 01:17.40–01:27.00 | KAD CTA | BANTUAN BANJIR / PARLIMEN PARIT / AYUH KITA BANTU MEREKA! + QR + akaun + pautan + hubungan | Kad spring masuk, butiran berperingkat, QR pop + shimmer, butang berdenyut |
 | 01:27.00–01:30.00 | PENUTUP | BERSAMA MERINGANKAN BEBAN / PUSAT KHIDMAT MASYARAKAT AHLI PARLIMEN PARIT | Cinzel emas, jarak huruf merapat perlahan, pudar ke hitam |
 
-**Suara latar (klip rakaman)**
+**Kapsyen naratif** (video tanpa suara latar — teks ini dipaparkan pada skrin sebagai penceritaan)
 
-| Klip | Mula | Slot maks | Teks | Subtitle |
+| # | Mula | Tempoh | Teks | Paparan |
 |---|---|---|---|---|
-| VO-01 | 00:00.90 | 6.9s | Bayangkan… saat kita masih lena di rumah sendiri, ada saudara kita yang terpaksa meninggalkan kediaman demi keselamatan. | Ya |
-| VO-02 | 00:09.00 | 13.6s | Banjir bukan sekadar air yang melimpah. Di sebaliknya, ada keluarga yang diuji… ada rutin kehidupan yang terhenti… dan ada hati yang sedang mencari kekuatan untuk meneruskan hari. | Ya |
-| VO-03 | 00:25.60 | 10.6s | Di Parlimen Parit, YB Ustaz Muhammad Ismi Mat Taib turun meninjau Pusat Pemindahan Sementara, bertemu penduduk yang terjejas, dan mendengar sendiri keadaan yang sedang mereka hadapi. | Ya |
-| VO-04 | 00:36.80 | 6.4s | Di sebalik setiap pertemuan… ada kisah yang perlu didengari. Ada keperluan yang harus dibantu. | Ya |
-| VO-05 | 00:44.40 | 9.0s | Mungkin kita tidak mampu menghentikan hujan… [JEDA] Tetapi kita mampu meringankan beban mereka. | Tiada — diganti teks kinetik |
-| VO-06 | 00:58.40 | 9.2s | Hari ini, mereka tidak meminta kemewahan. Mereka memerlukan bantuan, keprihatinan… dan keyakinan bahawa mereka tidak bersendirian. | Ya |
-| VO-07 | 01:08.20 | 4.6s | Kecil pada nilai kita… mungkin besar maknanya buat mereka. | Ya |
-| VO-08 | 01:17.60 | 5.2s | Marilah kita bersama-sama membantu saudara kita yang sedang diuji. | Ya |
-| VO-09 | 01:23.20 | 5.4s | Kerana apabila kita berkongsi rezeki… kita turut berkongsi harapan. | Ya |
+| 01 | 00:00.90 | 6.9s | Bayangkan… saat kita masih lena di rumah sendiri, ada saudara kita yang terpaksa meninggalkan kediaman demi keselamatan. | Kapsyen bawah |
+| 02 | 00:09.00 | 13.6s | Banjir bukan sekadar air yang melimpah. Di sebaliknya, ada keluarga yang diuji… ada rutin kehidupan yang terhenti… dan ada hati yang sedang mencari kekuatan untuk meneruskan hari. | Kapsyen bawah |
+| 03 | 00:25.60 | 10.6s | Di Parlimen Parit, YB Ustaz Muhammad Ismi Mat Taib turun meninjau Pusat Pemindahan Sementara, bertemu penduduk yang terjejas, dan mendengar sendiri keadaan yang sedang mereka hadapi. | Kapsyen bawah |
+| 04 | 00:36.80 | 6.4s | Di sebalik setiap pertemuan… ada kisah yang perlu didengari. Ada keperluan yang harus dibantu. | Kapsyen bawah |
+| 05 | 00:44.40 | 9.0s | Mungkin kita tidak mampu menghentikan hujan… [JEDA] Tetapi kita mampu meringankan beban mereka. | Diganti teks kinetik besar |
+| 06 | 00:58.40 | 9.2s | Hari ini, mereka tidak meminta kemewahan. Mereka memerlukan bantuan, keprihatinan… dan keyakinan bahawa mereka tidak bersendirian. | Kapsyen bawah |
+| 07 | 01:08.20 | 4.6s | Kecil pada nilai kita… mungkin besar maknanya buat mereka. | Kapsyen bawah |
+| 08 | 01:17.60 | 5.2s | Marilah kita bersama-sama membantu saudara kita yang sedang diuji. | Kapsyen bawah |
+| 09 | 01:23.20 | 5.4s | Kerana apabila kita berkongsi rezeki… kita turut berkongsi harapan. | Kapsyen bawah |
 
 ## B. VERSI IKLAN — 30 SAAT
 
@@ -135,11 +135,11 @@ Gred warna hanya mengubah tona, bukan keadaan. Label "Rakaman sebenar · Parlime
 | 00:18.30–00:21.10 | KAUNTER | RM10 · RM20 · RM50 | Pop spring + angka berdetik naik, 3D emas, ding setiap 0.7s |
 | 00:21.20–00:30.00 | KAD CTA | BANTUAN BANJIR / PARLIMEN PARIT / AYUH KITA BANTU MEREKA! + QR + akaun + pautan + hubungan | Kad spring masuk, butiran berperingkat, QR pop + shimmer, butang berdenyut |
 
-**Suara latar (klip rakaman)**
+**Kapsyen naratif** (video tanpa suara latar — teks ini dipaparkan pada skrin sebagai penceritaan)
 
-| Klip | Mula | Slot maks | Teks | Subtitle |
+| # | Mula | Tempoh | Teks | Paparan |
 |---|---|---|---|---|
-| VO-01 | 00:00.50 | 7.0s | Bayangkan… saat kita masih lena di rumah sendiri, ada saudara kita yang terpaksa meninggalkan kediaman demi keselamatan. | Ya |
-| VO-05 | 00:11.10 | 7.0s | Mungkin kita tidak mampu menghentikan hujan… [JEDA] Tetapi kita mampu meringankan beban mereka. | Tiada — diganti teks kinetik |
-| VO-08 | 00:18.30 | 5.0s | Marilah kita bersama-sama membantu saudara kita yang sedang diuji. | Ya |
-| VO-09 | 00:23.80 | 5.6s | Kerana apabila kita berkongsi rezeki… kita turut berkongsi harapan. | Ya |
+| 01 | 00:00.50 | 7.0s | Bayangkan… saat kita masih lena di rumah sendiri, ada saudara kita yang terpaksa meninggalkan kediaman demi keselamatan. | Kapsyen bawah |
+| 05 | 00:11.10 | 7.0s | Mungkin kita tidak mampu menghentikan hujan… [JEDA] Tetapi kita mampu meringankan beban mereka. | Diganti teks kinetik besar |
+| 08 | 00:18.30 | 5.0s | Marilah kita bersama-sama membantu saudara kita yang sedang diuji. | Kapsyen bawah |
+| 09 | 00:23.80 | 5.6s | Kerana apabila kita berkongsi rezeki… kita turut berkongsi harapan. | Kapsyen bawah |

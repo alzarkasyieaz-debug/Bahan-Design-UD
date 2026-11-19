@@ -158,7 +158,7 @@ export const SourceTag: React.FC<{ s: Span; label: string }> = ({ s, label }) =>
   );
 };
 
-/** Subtitle 2 baris, Poppins SemiBold, kata kunci emas dengan pop. Dalam zon selamat TikTok/Reels. */
+/** Kapsyen naratif 2 baris (video tanpa suara latar), Poppins SemiBold, kata kunci emas dengan pop. Dalam zon selamat TikTok/Reels. */
 export const Subtitles: React.FC<{ slots: VoSlot[]; timing: Record<string, number[][]> }> = ({ slots, timing }) => {
   const frame = useCurrentFrame();
   const t = frame / FPS;
@@ -170,7 +170,7 @@ export const Subtitles: React.FC<{ slots: VoSlot[]; timing: Record<string, numbe
       const e = c.end * FPS;
       const o = interpolate(frame, [a, a + 5, e - 4, e], [0, 1, 1, 0], clamp);
       const words = c.text.split(' ');
-      const span = Math.max(1, (e - a) * 0.45);
+      const span = Math.min(12, (e - a) * 0.2); // kapsyen naratif: perkataan muncul pantas, bukan karaoke
       return (
         <div style={{ position: 'absolute', left: 90, right: 150, bottom: 380, display: 'flex', justifyContent: 'center', opacity: o, transform: `translateY(${(1 - o) * 10}px)` }}>
           <div style={{ textAlign: 'center', maxWidth: 840, lineHeight: 1.28, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0 14px' }}>
@@ -182,7 +182,7 @@ export const Subtitles: React.FC<{ slots: VoSlot[]; timing: Record<string, numbe
               const pop = key ? spring({ frame: frame - ws, fps: FPS, config: { damping: 9, stiffness: 180 } }) : 1;
               return (
                 <span key={i} style={{
-                  fontFamily: POPPINS, fontWeight: key ? 800 : 600, fontSize: key ? 60 : 52, color: key ? GOLD : '#fff', opacity: 0.25 + 0.75 * wp,
+                  fontFamily: POPPINS, fontWeight: key ? 800 : 600, fontSize: key ? 60 : 52, color: key ? GOLD : '#fff', opacity: wp,
                   display: 'inline-block', transform: `scale(${key ? 0.85 + 0.15 * pop : 1})`,
                   textShadow: '0 2px 2px rgba(0,0,0,0.9), 0 4px 18px rgba(0,0,0,0.75)',
                 }}>{w}</span>

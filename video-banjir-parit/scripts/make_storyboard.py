@@ -88,11 +88,11 @@ def version_tables(v, scenes=None):
     for a, b, k, t, an in sorted(rows):
         L.append(f"| {tc(a)}–{tc(b)} | {k} | {t} | {an} |")
     L.append("")
-    L.append("**Suara latar (klip rakaman)**\n")
-    L.append("| Klip | Mula | Slot maks | Teks | Subtitle |")
+    L.append("**Kapsyen naratif** (video tanpa suara latar — teks ini dipaparkan pada skrin sebagai penceritaan)\n")
+    L.append("| # | Mula | Tempoh | Teks | Paparan |")
     L.append("|---|---|---|---|---|")
     for s in v["vo"]:
-        L.append(f"| VO-{s['id']:02d} | {tc(s['at'])} | {s['max']:.1f}s | {VO[s['id']]} | {'Tiada — diganti teks kinetik' if s.get('noSubs') else 'Ya'} |")
+        L.append(f"| {s['id']:02d} | {tc(s['at'])} | {s['max']:.1f}s | {VO[s['id']]} | {'Diganti teks kinetik besar' if s.get('noSubs') else 'Kapsyen bawah'} |")
     return "\n".join(L)
 
 
