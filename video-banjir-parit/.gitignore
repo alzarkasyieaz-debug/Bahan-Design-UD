@@ -1,0 +1,5 @@
+node_modules/
+public/footage/
+out/*.png
+!out/cover-9x16.png
+.DS_Store

@@ -1,0 +1,85 @@
+{
+  "fps": 30,
+  "v90": {
+    "duration": 90,
+    "shots": [
+      { "src": "8273", "from": 1.0, "at": 0.0, "dur": 3.8, "zoom": [1.04, 1.13], "warm": 0.0, "nat": 0.35, "note": "Rumah kayu bertiang ditenggelami air" },
+      { "src": "8275", "from": 0.0, "at": 3.8, "dur": 4.4, "rate": 0.75, "zoom": [1.0, 1.08], "warm": 0.0, "nat": 0.3, "note": "Wanita meredah banjir pulang ke rumah (slow motion)" },
+      { "src": "8250", "from": 1.5, "at": 8.2, "dur": 3.4, "zoom": [1.02, 1.1], "warm": 0.05, "nat": 0.25, "note": "Rumah-rumah kampung dinaiki air, bendera Malaysia" },
+      { "src": "8275", "from": 12.6, "at": 11.6, "dur": 3.4, "zoom": [1.06, 1.0], "warm": 0.05, "nat": 0.25, "note": "Rumah beratap merah, barang terapung" },
+      { "src": "8343", "from": 5.2, "at": 15.0, "dur": 3.4, "zoom": [1.0, 1.06], "warm": 0.12, "nat": 0.2, "note": "Mangsa di khemah NADMA, PPS" },
+      { "src": "8249", "from": 12.0, "at": 18.4, "dur": 3.2, "zoom": [1.0, 1.07], "warm": 0.12, "nat": 0.2, "note": "Kebun pisang tenggelam (dari kenderaan)" },
+      { "src": "8273", "from": 12.0, "at": 21.6, "dur": 3.4, "zoom": [1.0, 1.1], "warm": 0.15, "nat": 0.25, "note": "Halaman rumah dinaiki air" },
+      { "src": "8249", "from": 2.5, "at": 25.0, "dur": 4.0, "zoom": [1.0, 1.06], "warm": 0.25, "nat": 0.15, "note": "YB memandu masuk ke kawasan banjir" },
+      { "src": "8251", "from": 3.0, "at": 29.0, "dur": 4.0, "zoom": [1.0, 1.05], "warm": 0.28, "nat": 0.3, "note": "YB berjalan ke arah penduduk" },
+      { "src": "8251", "from": 12.5, "at": 33.0, "dur": 4.2, "zoom": [1.04, 1.1], "warm": 0.3, "nat": 0.35, "note": "YB bersalaman & mendengar penduduk" },
+      { "src": "8340", "from": 0.0, "at": 37.2, "dur": 3.0, "zoom": [1.0, 1.06], "warm": 0.32, "nat": 0.2, "note": "YB meneliti papan INFO BENCANA JKM di PPS" },
+      { "src": "8343", "from": 0.3, "at": 40.2, "dur": 3.4, "zoom": [1.0, 1.08], "warm": 0.35, "nat": 0.3, "note": "YB duduk mendengar mangsa di PPS" },
+      { "src": "8273", "from": 4.0, "at": 43.6, "dur": 6.8, "rate": 0.7, "zoom": [1.0, 1.16], "warm": 0.2, "nat": 0.25, "dim": 0.35, "note": "Rumah tenggelam — latar teks kemuncak 1" },
+      { "src": "1760", "from": 9.6, "at": 50.4, "dur": 7.6, "rate": 0.6, "zoom": [1.0, 1.1], "warm": 0.55, "nat": 0, "dim": 0.3, "note": "YB menghulurkan bantuan kepada mangsa di khemah — latar teks kemuncak 2" },
+      { "src": "8231", "from": 0.3, "at": 58.0, "dur": 3.8, "zoom": [1.0, 1.06], "warm": 0.6, "nat": 0.2, "note": "Petugas menyusun beg bantuan di atas pikap" },
+      { "src": "8230", "from": 1.6, "at": 61.8, "dur": 3.2, "zoom": [1.08, 1.0], "warm": 0.65, "nat": 0.2, "dim": 0.15, "note": "Beg BANTUAN RAKYAT Parlimen Parit" },
+      { "src": "8231", "from": 8.4, "at": 65.0, "dur": 3.8, "zoom": [1.0, 1.06], "warm": 0.7, "nat": 0.2, "dim": 0.15, "note": "Sukarelawan menghulur beg bantuan" },
+      { "src": "1760", "from": 14.2, "at": 68.8, "dur": 4.2, "rate": 0.55, "zoom": [1.0, 1.06], "warm": 0.75, "nat": 0, "note": "Mangsa di khemah PPS" },
+      { "src": "8251", "from": 30.8, "at": 73.0, "dur": 2.8, "zoom": [1.0, 1.05], "warm": 0.85, "nat": 0.2, "note": "YB tersenyum bersama penduduk" },
+      { "src": "1760", "from": 17.1, "at": 75.8, "dur": 1.6, "zoom": [1.0, 1.04], "warm": 0.9, "nat": 0, "note": "Petugas PPS JKM tersenyum" },
+      { "src": "1760", "from": 8.0, "at": 77.4, "dur": 12.6, "rate": 0.5, "zoom": [1.1, 1.18], "warm": 1.0, "nat": 0, "blur": 22, "dim": 0.55, "note": "Latar kabur — kad sumbangan" }
+    ],
+    "texts": [
+      { "kind": "hero", "lines": ["SEKELIP MATA…"], "at": 0.6, "end": 3.6 },
+      { "kind": "hero", "lines": ["KEHIDUPAN", "MEREKA BERUBAH."], "at": 3.9, "end": 7.9 },
+      { "kind": "keyword", "lines": ["RUMAH TERJEJAS"], "at": 8.6, "end": 11.4 },
+      { "kind": "keyword", "lines": ["KELUARGA DIUJI"], "at": 15.3, "end": 18.2 },
+      { "kind": "keyword", "lines": ["KEHIDUPAN TERGANGGU"], "at": 18.8, "end": 21.4 },
+      { "kind": "climax", "lines": ["KITA MUNGKIN", "TIDAK MAMPU", "MENGHENTIKAN", "HUJAN…"], "at": 44.2, "end": 50.2 },
+      { "kind": "climax", "lines": ["TAPI KITA", "MAMPU", "MERINGANKAN", "BEBAN."], "gold": [2, 3], "at": 51.0, "end": 57.6 },
+      { "kind": "support", "lines": ["ATAU BERAPA SAHAJA", "YANG TERMAMPU…"], "at": 66.6, "end": 70.4 },
+      { "kind": "support", "lines": ["SETIAP SUMBANGAN", "AMAT BERMAKNA."], "gold": [0], "at": 70.6, "end": 73.0 }
+    ],
+    "money": { "at": 61.9, "end": 70.4, "amounts": [10, 20, 50], "gap": 1.5 },
+    "lowerThird": { "at": 25.8, "end": 31.6 },
+    "sourceTag": { "at": 0.4, "end": 7.8 },
+    "cta": { "at": 77.4, "end": 87.0 },
+    "endCard": { "at": 87.0, "end": 90.0 },
+    "vo": [
+      { "id": 1, "at": 0.9, "max": 6.9 },
+      { "id": 2, "at": 9.0, "max": 13.6 },
+      { "id": 3, "at": 25.6, "max": 10.6 },
+      { "id": 4, "at": 36.8, "max": 6.4 },
+      { "id": 5, "at": 44.4, "max": 9.0, "noSubs": true },
+      { "id": 6, "at": 58.4, "max": 9.2 },
+      { "id": 7, "at": 68.2, "max": 4.6 },
+      { "id": 8, "at": 77.6, "max": 5.2 },
+      { "id": 9, "at": 83.2, "max": 5.4 }
+    ]
+  },
+  "v30": {
+    "duration": 30,
+    "shots": [
+      { "src": "8273", "from": 1.0, "at": 0.0, "dur": 3.2, "zoom": [1.04, 1.12], "warm": 0.0, "nat": 0.35 },
+      { "src": "8275", "from": 0.0, "at": 3.2, "dur": 4.4, "rate": 0.75, "zoom": [1.0, 1.08], "warm": 0.05, "nat": 0.3 },
+      { "src": "8251", "from": 12.5, "at": 7.6, "dur": 3.2, "zoom": [1.04, 1.1], "warm": 0.25, "nat": 0.3 },
+      { "src": "8343", "from": 0.3, "at": 10.8, "dur": 4.2, "rate": 0.8, "zoom": [1.0, 1.1], "warm": 0.3, "nat": 0.2, "dim": 0.35 },
+      { "src": "1760", "from": 9.6, "at": 15.0, "dur": 3.2, "rate": 0.7, "zoom": [1.0, 1.08], "warm": 0.6, "nat": 0, "dim": 0.3 },
+      { "src": "8231", "from": 8.4, "at": 18.2, "dur": 3.0, "zoom": [1.0, 1.06], "warm": 0.75, "nat": 0.2, "dim": 0.15 },
+      { "src": "1760", "from": 8.0, "at": 21.2, "dur": 8.8, "rate": 0.5, "zoom": [1.1, 1.18], "warm": 1.0, "nat": 0, "blur": 22, "dim": 0.55 }
+    ],
+    "texts": [
+      { "kind": "hero", "lines": ["SEKELIP MATA…"], "at": 0.4, "end": 3.1 },
+      { "kind": "hero", "lines": ["KEHIDUPAN", "MEREKA BERUBAH."], "at": 3.4, "end": 7.4 },
+      { "kind": "climax", "lines": ["KITA MUNGKIN", "TIDAK MAMPU", "MENGHENTIKAN", "HUJAN…"], "at": 11.0, "end": 14.6 },
+      { "kind": "climax", "lines": ["TAPI KITA", "MAMPU", "MERINGANKAN", "BEBAN."], "gold": [2, 3], "at": 14.9, "end": 18.0 }
+    ],
+    "money": { "at": 18.3, "end": 21.1, "amounts": [10, 20, 50], "gap": 0.7 },
+    "lowerThird": { "at": 7.9, "end": 10.7 },
+    "sourceTag": { "at": 0.3, "end": 7.4 },
+    "cta": { "at": 21.2, "end": 30.0 },
+    "endCard": null,
+    "vo": [
+      { "id": 1, "at": 0.5, "max": 7.0 },
+      { "id": 5, "at": 11.1, "max": 7.0, "noSubs": true },
+      { "id": 8, "at": 18.3, "max": 5.0 },
+      { "id": 9, "at": 23.8, "max": 5.6 }
+    ]
+  }
+}
