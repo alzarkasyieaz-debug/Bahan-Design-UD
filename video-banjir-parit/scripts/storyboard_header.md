@@ -25,7 +25,7 @@ Rayuan Sumbangan Mangsa Banjir Parlimen Parit · Pusat Khidmat Masyarakat Ahli P
 | copy_3598760F | 20.7s | Sama seperti 1760 tetapi dengan kapsyen tertanam | ⏭ Tidak digunakan |
 
 **Etika:** semua syot ialah rakaman sebenar; tiada adegan dijana AI, tiada dialog direka, tiada syot dekat mangsa yang dalam kesusahan.
-Gred warna hanya mengubah tona, bukan keadaan. Label "Rakaman sebenar · Parlimen Parit" dipaparkan pada pembukaan.
+Gred warna hanya mengubah tona, bukan keadaan.
 
 ## Tetapan projek CapCut
 

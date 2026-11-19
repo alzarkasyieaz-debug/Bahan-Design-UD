@@ -1,22 +1,20 @@
 /**
- * MAKLUMAT SUMBANGAN RASMI — ISI HANYA DENGAN MAKLUMAT YANG DISAHKAN OLEH PENGANJUR.
+ * MAKLUMAT SUMBANGAN RASMI — seperti yang dibekalkan oleh penganjur.
  *
- * Selagi mana-mana medan bernilai null, kad CTA akan memaparkan kotak placeholder
- * berlabel dan cop "PLACEHOLDER — BELUM UNTUK SIARAN". Jangan siarkan video dalam keadaan itu.
- *
- * Kod QR: letakkan imej rasmi di public/img/qr-sumbangan.png dan tetapkan qr: 'img/qr-sumbangan.png'.
+ * Medan wajib: fundName, accountHolder, bank, accountNo, contact. Jika mana-mana kosong (null),
+ * kad CTA memaparkan kotak placeholder & cop "PLACEHOLDER — BELUM UNTUK SIARAN".
+ * Medan pilihan: qr (imej dalam public/, cth. 'img/qr-sumbangan.png') dan link — disembunyikan jika null.
  */
 export const DONATION = {
-  fundName: null as string | null,      // [NAMA TABUNG SUMBANGAN RASMI]
-  accountHolder: null as string | null, // [NAMA PEMEGANG AKAUN]
-  bank: null as string | null,          // cth. 'Bank Islam'
-  accountNo: null as string | null,     // [NOMBOR AKAUN BANK RASMI]
-  qr: null as string | null,            // [KOD QR SUMBANGAN] — laluan dalam public/
-  link: null as string | null,          // [PAUTAN SUMBANGAN RASMI]
-  contact: null as string | null,       // [MAKLUMAT HUBUNGAN]
+  fundName: 'Bantuan Banjir Parit' as string | null,
+  accountHolder: 'Pusat Khidmat Masyarakat Ahli Parlimen Parit' as string | null,
+  bank: 'Bank Islam' as string | null,
+  accountNo: '08086010044018' as string | null,
+  contact: 'Haji Zawawi Ghazali' as string | null,
+  contactPhone: '017-542 9662' as string | null, // 0175429662
+  qr: null as string | null,   // pilihan — tiada QR dibekalkan
+  link: null as string | null, // pilihan — tiada pautan dibekalkan
 };
 
-export const isPlaceholder = Object.values(DONATION).some((v) => v === null);
-
-/** Label kecil di babak pembukaan — menyatakan footaj adalah rakaman sebenar. Tambah tarikh jika disahkan. */
-export const SOURCE_TAG = 'Rakaman sebenar · Parlimen Parit';
+const REQUIRED = ['fundName', 'accountHolder', 'bank', 'accountNo', 'contact'] as const;
+export const isPlaceholder = REQUIRED.some((k) => DONATION[k] === null);

@@ -25,7 +25,7 @@ Rayuan Sumbangan Mangsa Banjir Parlimen Parit · Pusat Khidmat Masyarakat Ahli P
 | copy_3598760F | 20.7s | Sama seperti 1760 tetapi dengan kapsyen tertanam | ⏭ Tidak digunakan |
 
 **Etika:** semua syot ialah rakaman sebenar; tiada adegan dijana AI, tiada dialog direka, tiada syot dekat mangsa yang dalam kesusahan.
-Gred warna hanya mengubah tona, bukan keadaan. Label "Rakaman sebenar · Parlimen Parit" dipaparkan pada pembukaan.
+Gred warna hanya mengubah tona, bukan keadaan.
 
 ## Tetapan projek CapCut
 
@@ -81,7 +81,6 @@ Gred warna hanya mengubah tona, bukan keadaan. Label "Rakaman sebenar · Parlime
 
 | Masa | Jenis | Teks | Animasi |
 |---|---|---|---|
-| 00:00.40–00:07.80 | LABEL | ● Rakaman sebenar · Parlimen Parit | Pudar masuk/keluar, titik merah berdenyut |
 | 00:00.60–00:03.60 | HERO | SEKELIP MATA… | Perkataan demi perkataan: blur→tajam, naik dari bawah, kedalaman 3D, sapuan cahaya + impak |
 | 00:03.90–00:07.90 | HERO | KEHIDUPAN / MEREKA BERUBAH. | Perkataan demi perkataan: blur→tajam, naik dari bawah, kedalaman 3D, sapuan cahaya + impak |
 | 00:08.60–00:11.40 | KEYWORD | RUMAH TERJEJAS | Garis emas mengembang atas & bawah, huruf jarak lebar, whoosh lembut |
@@ -126,7 +125,6 @@ Gred warna hanya mengubah tona, bukan keadaan. Label "Rakaman sebenar · Parlime
 
 | Masa | Jenis | Teks | Animasi |
 |---|---|---|---|
-| 00:00.30–00:07.40 | LABEL | ● Rakaman sebenar · Parlimen Parit | Pudar masuk/keluar, titik merah berdenyut |
 | 00:00.40–00:03.10 | HERO | SEKELIP MATA… | Perkataan demi perkataan: blur→tajam, naik dari bawah, kedalaman 3D, sapuan cahaya + impak |
 | 00:03.40–00:07.40 | HERO | KEHIDUPAN / MEREKA BERUBAH. | Perkataan demi perkataan: blur→tajam, naik dari bawah, kedalaman 3D, sapuan cahaya + impak |
 | 00:07.90–00:10.70 | LOWER-THIRD | YB USTAZ MUHAMMAD ISMI MAT TAIB / Ahli Parlimen Parit | Bar emas tumbuh, panel kaca sapu dari kiri |

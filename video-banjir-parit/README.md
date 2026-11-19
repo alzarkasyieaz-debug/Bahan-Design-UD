@@ -17,10 +17,10 @@ Dibina dengan [Remotion](https://www.remotion.dev/) daripada **footaj sebenar** 
   kapsyen naratif pada skrin — sesuai untuk tontonan tanpa bunyi di media sosial.
   (Jika kelak mahu menambah narasi: simpan `public/audio/vo/vo-01` … `vo-09` mengikut `SKRIP-SUARA-LATAR.md` dan render semula —
   muzik akan diperlahankan secara automatik.)
-- **BELUM UNTUK SIARAN — maklumat sumbangan masih placeholder.** Isi `src/data/donation.ts` dengan maklumat **yang disahkan penganjur**
-  dan letakkan QR rasmi di `public/img/qr-sumbangan.png`. Cop merah "PLACEHOLDER" hilang secara automatik apabila semua medan diisi.
-- **Tarikh footaj:** metadata klip menunjukkan rakaman pada 25 Oktober 2025. Sahkan sebelum siaran; tambah tarikh pada `SOURCE_TAG`
-  dalam `src/data/donation.ts` jika rayuan ini untuk banjir yang lebih baharu.
+- **Maklumat sumbangan (dibekalkan penganjur):** Bantuan Banjir Parit · Pusat Khidmat Masyarakat Ahli Parlimen Parit ·
+  Bank Islam 08086010044018 · Hubungi Haji Zawawi Ghazali 017-542 9662. Tiada QR atau pautan (tidak diperlukan).
+  Untuk mengubahnya, sunting `src/data/donation.ts` dan render semula.
+- **Tarikh footaj:** metadata klip menunjukkan rakaman pada 25 Oktober 2025. Sahkan sebelum siaran jika rayuan ini untuk banjir yang lebih baharu.
 
 ## Render semula
 
@@ -53,7 +53,7 @@ scripts/generate_audio.py  Muzik piano + strings + perkusi & SFX — 100% disint
 ## Etika & ketelusan
 
 - Semua visual ialah rakaman sebenar; tiada adegan AI, tiada dialog atau testimoni direka.
-- Gred warna hanya mengubah tona; tiada manipulasi keadaan. Label "Rakaman sebenar" pada pembukaan.
+- Gred warna hanya mengubah tona; tiada manipulasi keadaan.
 - Tiada slogan parti atau rayuan pilihan raya. Fokus pada mangsa dan keperluan bantuan.
 - Klip `copy_3598760F` (berkapsyen tertanam) dan bahagian berteks/berlogo lain tidak digunakan.
 - **Fon:** Poppins & Cinzel (SIL OFL). Cinzel ialah pengganti Trajan Pro yang berlesen komersial.

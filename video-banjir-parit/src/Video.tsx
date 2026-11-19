@@ -1,11 +1,10 @@
 import React from 'react';
 import { AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame } from 'remotion';
 import { FPS, Version } from './data/script';
-import { SOURCE_TAG } from './data/donation';
 import voManifest from './data/vo-manifest.json';
 import { FootageTrack } from './components/Footage';
 import { FilmGrain, GoldParticles, LightStreak, RainTexture, ReadabilityScrims, Vignette } from './components/FX';
-import { KineticText, LowerThird, MoneyCounters, SourceTag, Subtitles } from './components/Typography';
+import { KineticText, LowerThird, MoneyCounters, Subtitles } from './components/Typography';
 import { CtaCard, EndCard } from './components/Cta';
 
 type Manifest = { files: Record<string, string>; timing: Record<string, number[][]> };
@@ -59,7 +58,6 @@ export const Appeal: React.FC<{ v: Version; music: string; ambience: string }> =
         {textStreaks.map((f, i) => <LightStreak key={i} at={f + 4} />)}
         <LightStreak at={Math.round(ctaStart * FPS) + 40} strength={0.4} />
 
-        <SourceTag s={v.sourceTag} label={SOURCE_TAG} />
         {v.texts.map((t, i) => {
           const overlapsMoney = t.kind === 'support' && t.at < v.money.end && t.end > v.money.at;
           return <KineticText key={i} t={t} top={overlapsMoney ? 1000 : undefined} />;

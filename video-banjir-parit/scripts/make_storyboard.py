@@ -78,8 +78,6 @@ def version_tables(v, scenes=None):
     rows.append((m["at"], m["end"], "KAUNTER", " · ".join(f"RM{a}" for a in m["amounts"]), f"Pop spring + angka berdetik naik, 3D emas, ding setiap {m['gap']}s"))
     lt = v["lowerThird"]
     rows.append((lt["at"], lt["end"], "LOWER-THIRD", "YB USTAZ MUHAMMAD ISMI MAT TAIB / Ahli Parlimen Parit", "Bar emas tumbuh, panel kaca sapu dari kiri"))
-    st = v["sourceTag"]
-    rows.append((st["at"], st["end"], "LABEL", "● Rakaman sebenar · Parlimen Parit", "Pudar masuk/keluar, titik merah berdenyut"))
     c = v["cta"]
     rows.append((c["at"], c["end"], "KAD CTA", "BANTUAN BANJIR / PARLIMEN PARIT / AYUH KITA BANTU MEREKA! + QR + akaun + pautan + hubungan", "Kad spring masuk, butiran berperingkat, QR pop + shimmer, butang berdenyut"))
     if v.get("endCard"):
