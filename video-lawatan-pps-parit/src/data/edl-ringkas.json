@@ -5,40 +5,288 @@
  "speechIn": 0.9,
  "speechOut": 101.95,
  "speechOffset": 0,
- "_nota": "Versi ringkas: hook 'Sabar ya' + 4 petikan ucapan sebenar YB sebagai suara latar (in/out = masa dalam Video Master, at = kedudukan dalam video akhir). Susunan asal dikekalkan, tiada perkataan diubah. Klip master guna srcIn = masa dalam Video Master.",
+ "_nota": "Versi ringkas (suara latar): hook 'Sabar ya' + 4 petikan ucapan sebenar YB sebagai SUARA LATAR sahaja - tiada syot YB bercakap ke kamera. Visual sepenuhnya momen sebenar bersama mangsa. in/out = masa dalam Video Master, at = kedudukan dalam video akhir.",
  "segments": [
-  { "in": 2.88,  "out": 16.30,  "at": 8.33, "note": "Saya berada di PPS SK Tanjung Belanja, Parit, bersama-sama dengan mangsa banjir. Ada 35 keluarga, lebih kurang 68 orang di sini." },
-  { "in": 28.05, "out": 30.85,  "at": 27.0, "note": "Jaga kesihatan dan keselamatan masing-masing" },
-  { "in": 71.30, "out": 79.50,  "at": 30.6, "note": "Supaya kita sentiasa berada dalam keadaan selamat, sama ada sebelum ataupun selepas banjir" },
-  { "in": 91.95, "out": 101.40, "at": 46.8, "note": "Sama-samalah kita berdoa kepada Allah Ta'ala, mudah-mudahan kita diselamatkan dan dielakkan daripada berlakunya banjir pada masa-masa yang akan datang" }
+  {
+   "in": 2.88,
+   "out": 16.3,
+   "at": 8.33,
+   "note": "Saya berada di PPS SK Tanjung Belanja, Parit, bersama-sama dengan mangsa banjir. Ada 35 keluarga, lebih kurang 68 orang di sini."
+  },
+  {
+   "in": 28.05,
+   "out": 30.85,
+   "at": 27.0,
+   "note": "Jaga kesihatan dan keselamatan masing-masing"
+  },
+  {
+   "in": 71.3,
+   "out": 79.5,
+   "at": 30.6,
+   "note": "Supaya kita sentiasa berada dalam keadaan selamat, sama ada sebelum ataupun selepas banjir"
+  },
+  {
+   "in": 91.95,
+   "out": 101.4,
+   "at": 46.8,
+   "note": "Sama-samalah kita berdoa kepada Allah Ta'ala, mudah-mudahan kita diselamatkan dan dielakkan daripada berlakunya banjir pada masa-masa yang akan datang"
+  }
  ],
- "hookAudio": { "src": "IMG_3293.MOV", "in": 5.6, "out": 9.75 },
- "hookWords": [[5.96, 7.28, "Baik-baik,"], [8.12, 8.38, "jumpa"], [8.38, 8.5, "lagi."], [8.5, 9.04, "Sabar"], [9.04, 9.18, "ya."]],
+ "hookAudio": {
+  "src": "IMG_3293.MOV",
+  "in": 5.6,
+  "out": 9.75
+ },
+ "hookWords": [
+  [
+   5.96,
+   7.28,
+   "Baik-baik,"
+  ],
+  [
+   8.12,
+   8.38,
+   "jumpa"
+  ],
+  [
+   8.38,
+   8.5,
+   "lagi."
+  ],
+  [
+   8.5,
+   9.04,
+   "Sabar"
+  ],
+  [
+   9.04,
+   9.18,
+   "ya."
+  ]
+ ],
  "clips": [
-  { "id": "S0", "src": "IMG_3293.MOV", "srcIn": 5.6,  "speed": 1.0,  "start": 0.0,  "end": 3.8,  "fx": "hook", "note": "YB bersama seorang ibu di khemah: 'Baik-baik, jumpa lagi. Sabar ya.' (audio asal)" },
-  { "id": "S1", "src": "IMG_3293.MOV", "srcIn": 9.4,  "speed": 0.6,  "start": 3.8,  "end": 5.8,  "fx": "hook", "note": "YB beredar di celah khemah (slow-mo)" },
-  { "id": "A1", "src": "IMG_3358.MOV", "srcIn": 9.0,  "speed": 0.75, "start": 5.8,  "end": 8.0,  "fx": "hook", "note": "Suasana PPS: keluarga & kanak-kanak" },
-  { "id": "M1", "src": "master", "srcIn": 2.55,  "start": 8.0,  "end": 12.0, "zoom": [1.0, 1.06], "note": "YB: 'Saya berada di PPS SK Tanjung Belanja, Parit' + lower third" },
-  { "id": "B2", "src": "IMG_3392.MOV", "srcIn": 0.0,  "speed": 1.0,  "start": 12.0, "end": 14.0, "stab": true, "note": "YB bersalaman (teks lokasi)" },
-  { "id": "C1", "src": "IMG_3293.MOV", "srcIn": 3.0,  "speed": 1.0,  "start": 14.0, "end": 19.8, "note": "YB berbual dengan keluarga di khemah PPS" },
-  { "id": "C2", "src": "IMG_3369.MOV", "srcIn": 9.0,  "speed": 1.0,  "start": 19.8, "end": 22.3, "note": "YB bersama petugas & kanak-kanak" },
-  { "id": "R1", "src": "IMG_3356.MOV", "srcIn": 0.0,  "speed": 0.75, "start": 22.3, "end": 26.8, "fx": "soft", "note": "Ruang emosi (muzik): YB duduk semeja dengan mangsa, slow-mo" },
-  { "id": "M2", "src": "master", "srcIn": 27.85, "start": 26.8, "end": 30.0, "zoom": [1.15, 1.24], "note": "YB close-up: 'jaga kesihatan dan keselamatan masing-masing'" },
-  { "id": "G1", "src": "IMG_3311.MOV", "srcIn": 0.0,  "speed": 1.0,  "start": 30.0, "end": 35.0, "note": "Penyerahan beg bantuan" },
-  { "id": "G2", "src": "IMG_3347.MOV", "srcIn": 10.7, "speed": 1.0,  "start": 35.0, "end": 40.5, "note": "YB melayan warga emas, mesra" },
-  { "id": "J1", "src": "IMG_3293.MOV", "srcIn": 9.0,  "speed": 0.8,  "start": 40.5, "end": 43.5, "fx": "soft", "note": "Ruang emosi: keluarga di khemah (slow-mo)" },
-  { "id": "J3", "src": "IMG_3369.MOV", "srcIn": 14.0, "speed": 0.8,  "start": 43.5, "end": 46.6, "fx": "soft", "note": "Ruang emosi: YB, petugas & kanak-kanak (slow-mo)" },
-  { "id": "M3", "src": "master", "srcIn": 91.75, "start": 46.6, "end": 49.6, "zoom": [1.2, 1.3], "note": "YB close-up: 'Sama-samalah kita berdoa kepada Allah Ta'ala'" },
-  { "id": "J2", "src": "IMG_3392.MOV", "srcIn": 0.0,  "speed": 0.8,  "start": 49.6, "end": 52.6, "fx": "soft", "stab": true, "note": "Salam mesra (slow-mo)" },
-  { "id": "R2", "src": "IMG_3392.MOV", "srcIn": 3.0,  "speed": 0.6,  "start": 52.6, "end": 56.8, "fx": "soft", "stab": true, "note": "YB melangkah di laluan berbendera (slow-mo)" },
-  { "id": "R3", "src": "IMG_3369.MOV", "srcIn": 29.0, "speed": 0.75, "start": 56.8, "end": 61.6, "fx": "soft", "note": "Ruang emosi: YB mendengar luahan penduduk (slow-mo)" },
-  { "id": "R4", "src": "IMG_3294.MOV", "srcIn": 6.6,  "speed": 0.45, "start": 61.6, "end": 75.0, "fx": "soft", "stab": true, "last": true, "note": "Penutup: YB terus melangkah di koridor sekolah (slow-mo)" }
+  {
+   "id": "S0",
+   "src": "IMG_3293.MOV",
+   "srcIn": 5.6,
+   "speed": 1.0,
+   "start": 0.0,
+   "end": 3.8,
+   "fx": "hook",
+   "note": "YB bersama seorang ibu di khemah: 'Baik-baik, jumpa lagi. Sabar ya.' (audio asal)"
+  },
+  {
+   "id": "S1",
+   "src": "IMG_3293.MOV",
+   "srcIn": 9.4,
+   "speed": 0.6,
+   "start": 3.8,
+   "end": 5.8,
+   "fx": "hook",
+   "note": "YB beredar di celah khemah (slow-mo)"
+  },
+  {
+   "id": "A1",
+   "src": "IMG_3358.MOV",
+   "srcIn": 9.0,
+   "speed": 0.75,
+   "start": 5.8,
+   "end": 8.0,
+   "fx": "hook",
+   "note": "Suasana PPS: keluarga & kanak-kanak"
+  },
+  {
+   "id": "T1",
+   "src": "IMG_3347.MOV",
+   "srcIn": 11.0,
+   "speed": 0.8,
+   "start": 8.0,
+   "end": 12.0,
+   "fx": "soft",
+   "note": "YB memaut bahu warga emas sambil tersenyum (slow-mo) + lower third"
+  },
+  {
+   "id": "D2",
+   "src": "IMG_3388.MOV",
+   "srcIn": 2.0,
+   "speed": 1.0,
+   "start": 12.0,
+   "end": 14.0,
+   "note": "YB berbincang dengan petugas di laluan berbendera (teks lokasi)"
+  },
+  {
+   "id": "C3",
+   "src": "IMG_3356.MOV",
+   "srcIn": 5.0,
+   "speed": 1.0,
+   "start": 14.0,
+   "end": 19.8,
+   "note": "YB duduk bersama mangsa di ruang makan PPS yang penuh (35 keluarga, 68 orang)"
+  },
+  {
+   "id": "C2",
+   "src": "IMG_3369.MOV",
+   "srcIn": 9.0,
+   "speed": 1.0,
+   "start": 19.8,
+   "end": 22.3,
+   "note": "YB bersama petugas & kanak-kanak"
+  },
+  {
+   "id": "R1",
+   "src": "IMG_3356.MOV",
+   "srcIn": 0.0,
+   "speed": 0.75,
+   "start": 22.3,
+   "end": 26.8,
+   "fx": "soft",
+   "note": "Ruang emosi (muzik): YB duduk semeja dengan mangsa, slow-mo"
+  },
+  {
+   "id": "T2",
+   "src": "IMG_3350.MOV",
+   "srcIn": 12.0,
+   "speed": 0.8,
+   "start": 26.8,
+   "end": 30.6,
+   "note": "YB melalui poster 'BANJIR - Elakkan Penyakit' (suara: jaga kesihatan & keselamatan)"
+  },
+  {
+   "id": "G1",
+   "src": "IMG_3311.MOV",
+   "srcIn": 0.0,
+   "speed": 1.0,
+   "start": 30.6,
+   "end": 35.0,
+   "note": "Penyerahan beg bantuan"
+  },
+  {
+   "id": "H3",
+   "src": "IMG_3369.MOV",
+   "srcIn": 19.8,
+   "speed": 0.85,
+   "start": 35.0,
+   "end": 40.5,
+   "note": "YB bersalaman dengan penduduk di meja bantuan"
+  },
+  {
+   "id": "T4",
+   "src": "IMG_3357.MOV",
+   "srcIn": 8.0,
+   "speed": 0.8,
+   "start": 40.5,
+   "end": 43.5,
+   "fx": "soft",
+   "note": "Ruang emosi: kanak-kanak & keluarga di meja PPS (slow-mo)"
+  },
+  {
+   "id": "J3",
+   "src": "IMG_3369.MOV",
+   "srcIn": 14.0,
+   "speed": 0.8,
+   "start": 43.5,
+   "end": 46.6,
+   "fx": "soft",
+   "note": "Ruang emosi: YB, petugas & kanak-kanak (slow-mo)"
+  },
+  {
+   "id": "T3",
+   "src": "IMG_3293.MOV",
+   "srcIn": 0.0,
+   "speed": 0.75,
+   "start": 46.6,
+   "end": 49.6,
+   "fx": "soft",
+   "note": "YB di sisi keluarga di khemah (slow-mo) - suara: sama-samalah kita berdoa"
+  },
+  {
+   "id": "J2",
+   "src": "IMG_3392.MOV",
+   "srcIn": 0.0,
+   "speed": 0.8,
+   "start": 49.6,
+   "end": 52.6,
+   "fx": "soft",
+   "stab": true,
+   "note": "Salam mesra (slow-mo)"
+  },
+  {
+   "id": "R2",
+   "src": "IMG_3392.MOV",
+   "srcIn": 3.0,
+   "speed": 0.6,
+   "start": 52.6,
+   "end": 56.8,
+   "fx": "soft",
+   "stab": true,
+   "note": "YB melangkah di laluan berbendera (slow-mo)"
+  },
+  {
+   "id": "R3",
+   "src": "IMG_3369.MOV",
+   "srcIn": 29.0,
+   "speed": 0.75,
+   "start": 56.8,
+   "end": 61.6,
+   "fx": "soft",
+   "note": "Ruang emosi: YB mendengar luahan penduduk (slow-mo)"
+  },
+  {
+   "id": "R4",
+   "src": "IMG_3294.MOV",
+   "srcIn": 6.6,
+   "speed": 0.45,
+   "start": 61.6,
+   "end": 75.0,
+   "fx": "soft",
+   "stab": true,
+   "last": true,
+   "note": "Penutup: YB terus melangkah di koridor sekolah (slow-mo)"
+  }
  ],
  "graphics": {
-  "hook": "sabar", "sabar": [2.88, 5.3], "title": [5.35, 8.0], "hookEnd": 8.0,
-  "lowerThird": [8.4, 12.0], "location": [12.1, 16.3],
-  "doa": [49.7, 56.4], "montage": [49.6, 61.6], "closing": 61.6,
-  "tagline": { "a": 64.4, "b": 66.8, "full": 69.2, "fadeOut": 73.6 },
-  "chimes": [2.9, 5.4, 64.6, 66.9], "swells": [1.0, 63.0]
+  "hook": "sabar",
+  "sabar": [
+   2.88,
+   5.3
+  ],
+  "title": [
+   5.35,
+   8.0
+  ],
+  "hookEnd": 8.0,
+  "lowerThird": [
+   8.4,
+   12.0
+  ],
+  "location": [
+   12.1,
+   16.3
+  ],
+  "doa": [
+   49.7,
+   56.4
+  ],
+  "montage": [
+   49.6,
+   61.6
+  ],
+  "closing": 61.6,
+  "tagline": {
+   "a": 64.4,
+   "b": 66.8,
+   "full": 69.2,
+   "fadeOut": 73.6
+  },
+  "chimes": [
+   2.9,
+   5.4,
+   64.6,
+   66.9
+  ],
+  "swells": [
+   1.0,
+   63.0
+  ]
  }
 }
