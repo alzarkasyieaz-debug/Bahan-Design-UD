@@ -20,14 +20,17 @@ from scipy.signal import butter, sosfilt, fftconvolve
 from scipy.io import wavfile
 
 SR = 48000
-DUR = 120.0
-N = int(SR * DUR)
 rng = np.random.default_rng(2026)
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 AUD = os.path.join(ROOT, "public", "audio")
 EDL = json.load(open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "src", "data", "edl.json")))
 G = EDL["graphics"]
 HOOK = EDL.get("hookAudio")
+DUR = float(EDL.get("duration", 120))
+N = int(SR * DUR)
+SH = DUR - 120.0  # anjakan bagi bahagian penutup (diikat pada hujung video)
+# Segmen ucapan: (masa dalam Video Master in/out, kedudukan output 'at')
+SEGS = EDL.get("segments") or [{"in": EDL["speechIn"], "out": EDL["speechOut"], "at": EDL["speechIn"] + EDL["speechOffset"]}]
 
 
 def midi(n):
@@ -112,9 +115,10 @@ CH = {  # nota kord (bass, kemudian nada kord)
     "Csus": [48, 55, 60, 65, 67],
 }
 # satu kord setiap 4 s -> 30 kord
-PROG = ["Am", "F"] + ["Am", "F", "C", "G"] * 5 + ["Am", "Fmaj7", "F", "G", "C", "F", "G", "Csus"]
-assert len(PROG) == 30, len(PROG)
 SEG = 4.0
+_TAIL = ["Am", "Fmaj7", "F", "G", "C", "F", "G", "Csus"]  # progresi harapan -> penutup
+_N = int(np.ceil(DUR / SEG))
+PROG = ["Am", "F"] + (["Am", "F", "C", "G"] * 20)[: _N - 2 - len(_TAIL)] + _TAIL
 
 
 def build_music():
@@ -129,32 +133,32 @@ def build_music():
             continue
         add(buf, piano(nt[0] - 12 if nt[0] > 42 else nt[0], 3.9, 0.30), t0, 0.9, -0.2)
         # arpeggio not ke-8 (66 bpm) - lembut, tidak bersaing dengan ucapan
-        n_steps = 8 if t0 < 96 else 10
+        n_steps = 8 if t0 < 96 + SH else 10
         pat = [1, 2, 3, 4, 3, 2, 3, 4, 2, 3]
         for j in range(n_steps):
             n = nt[pat[j % len(pat)]]
-            vel = 0.19 + (0.06 if j == 0 else 0) + (0.05 if t0 >= 96 else 0)
+            vel = 0.19 + (0.06 if j == 0 else 0) + (0.05 if t0 >= 96 + SH else 0)
             add(buf, piano(n + 12, 0.8, vel), t0 + j * SEG / n_steps, 0.7, 0.35 * np.sin(j * 1.3))
     # melodi pembuka (sayu) dan penutup (harapan)
     for (t, n, d) in [(0.6, 76, 1.4), (2.2, 74, 0.7), (3.0, 72, 2.2), (4.6, 71, 0.8), (5.4, 69, 2.6)]:
         add(buf, piano(n, d, 0.30), t, 0.65, 0.15)
     for (t, n, d) in [(104.2, 76, 1.2), (105.5, 79, 0.6), (106.2, 81, 1.6), (108.0, 79, 1.4), (109.6, 76, 0.6),
                       (110.3, 77, 1.6), (112.0, 79, 1.2), (113.4, 81, 0.6), (114.1, 83, 1.4), (116.0, 84, 4.0)]:
-        add(buf, piano(n, d, 0.32), t, 0.65, 0.12)
+        add(buf, piano(n, d, 0.32), t + SH, 0.65, 0.12)
     # nada penutup piano
     for j, n in enumerate([48, 60, 64, 67, 72, 76]):
-        add(buf, piano(n, 4.5, 0.30 - j * 0.02), 116.0 + j * 0.16, 0.75, -0.3 + j * 0.12)
+        add(buf, piano(n, 4.5, 0.30 - j * 0.02), 116.0 + SH + j * 0.16, 0.75, -0.3 + j * 0.12)
 
     st = np.zeros((2, N))
     for ci, name in enumerate(PROG):
         t0 = ci * SEG
         for j, n in enumerate(CH[name][1:]):
-            add(st, strings_note(n + (12 if j >= 2 else 0), SEG + 0.2, 2000 if t0 < 96 else 2800), t0 - 0.1, 1.0, -0.6 + j * 0.4)
+            add(st, strings_note(n + (12 if j >= 2 else 0), SEG + 0.2, 2000 if t0 < 96 + SH else 2800), t0 - 0.1, 1.0, -0.6 + j * 0.4)
         add(st, strings_note(CH[name][0], SEG + 0.2, 900), t0 - 0.1, 0.8, 0.0)  # cello
-    st *= env_curve([(0, 0.25), (6, 0.45), (10, 0.55), (90, 0.7), (97, 0.9), (104, 1.25), (110, 1.4),
-                     (116, 1.2), (119.8, 0.0), (120, 0)])
+    st *= env_curve([(0, 0.25), (6, 0.45), (10, 0.55)] + [(x + SH, y) for x, y in
+                     [(90, 0.7), (97, 0.9), (104, 1.25), (110, 1.4), (116, 1.2), (119.8, 0.0), (120, 0)]])
     buf += st
-    buf *= env_curve([(0, 0), (1.0, 1), (117, 1), (119.9, 0), (120, 0)])
+    buf *= env_curve([(0, 0), (1.0, 1), (DUR - 3, 1), (DUR - 0.1, 0), (DUR, 0)])
     buf = hp(reverb(buf, 3.8, 0.42, seed=7), 35)
     return buf / (np.max(np.abs(buf)) + 1e-9) * 0.9
 
@@ -183,21 +187,43 @@ def load(p):
 
 def mix():
     music = build_music()
-    wavfile.write(os.path.join(AUD, "muzik.wav"), SR, (music.T * 32767).astype(np.int16))
-    sp_start = EDL["speechIn"] + EDL["speechOffset"]          # 6.5 s
-    sp_end = EDL["speechOut"] + EDL["speechOffset"]           # 107.55 s
-    # Auto-ducking: muzik direndahkan sepanjang ucapan, naik semula di hook & penutup
+    mname = "muzik.wav" if DUR == 120 else f"muzik-{EDL['output']}.wav"
+    wavfile.write(os.path.join(AUD, mname), SR, (music.T * 32767).astype(np.int16))
+    sp_start = SEGS[0]["at"]
+    sp_end = SEGS[-1]["at"] + SEGS[-1]["out"] - SEGS[-1]["in"]
+    # Auto-ducking: muzik direndahkan ketika YB bercakap, naik semula di hook, ruang emosi B-roll & penutup
     pre = [(0, 0.30), (3.4, 0.30), (4.6, 0.62)] if HOOK else [(0, 0.62)]
-    duck = env_curve(pre + [(sp_start - 0.6, 0.62), (sp_start + 0.2, 0.14), (97.0, 0.14),
-                      (98.5, 0.19), (sp_end - 0.4, 0.2), (sp_end + 0.8, 0.70), (120, 0.70)])
+    if len(SEGS) == 1:
+        pts = pre + [(sp_start - 0.6, 0.62), (sp_start + 0.2, 0.14), (97.0, 0.14),
+                     (98.5, 0.19), (sp_end - 0.4, 0.2), (sp_end + 0.8, 0.70), (DUR, 0.70)]
+    else:
+        pts = list(pre)
+        for k, sg in enumerate(SEGS):
+            a, b = sg["at"], sg["at"] + sg["out"] - sg["in"]
+            nxt = SEGS[k + 1]["at"] if k + 1 < len(SEGS) else None
+            pts += [(a - 0.6, pts[-1][1]), (a + 0.2, 0.15), (b - 0.2, 0.15)]
+            if nxt is not None and nxt - b < 2.5:
+                continue  # jeda pendek: kekal rendah
+            lvl = 0.70 if nxt is None else 0.55  # ruang emosi B-roll
+            pts += [(b + 0.9, lvl)]
+        pts += [(DUR, 0.70)]
+        pts = sorted(pts)
+    duck = env_curve(pts)
     out = music * duck
-    speech = load(os.path.join(AUD, "ucapan.wav"))
+    speech = load(os.path.join(AUD, "ucapan.wav"))  # bermula pada EDL speechIn dalam Video Master
     def add_st(sig, t, g):
         i = int(t * SR)
         s = sig[:, : N - i]
         out[:, i:i + s.shape[1]] += s * g
 
-    add_st(speech, sp_start, 1.0)
+    for sg in SEGS:
+        a = int((sg["in"] - EDL["speechIn"]) * SR)
+        b = int((sg["out"] - EDL["speechIn"]) * SR)
+        piece = speech[:, a:b].copy()
+        f = int(0.04 * SR)
+        piece[:, :f] *= np.linspace(0, 1, f)
+        piece[:, -f:] *= np.linspace(1, 0, f)
+        add_st(piece, sg["at"], 1.0)
     amb = load(os.path.join(AUD, "ambien.wav"))
     amb_at = 4.6 if HOOK else 0.0
     amb_len = sp_start - amb_at + 2.0

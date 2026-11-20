@@ -37,7 +37,8 @@ const ClipLayer: React.FC<{ c: Clip; index: number }> = ({ c, index }) => {
   }
   // Motion-blur lembut semasa klip masuk
   const mb = index === 0 ? 0 : interpolate(f, [0, Math.max(d, 8)], [5, 0], { extrapolateRight: 'clamp' });
-  const startFrom = isMaster ? Math.round((c.start - speechOffset) * FPS) : 0;
+  // Klip master: srcIn (jika ada) = masa dalam Video Master; jika tiada, selari dengan ucapan penuh
+  const startFrom = isMaster ? Math.round((c.srcIn ?? c.start - speechOffset) * FPS) : 0;
   return (
     <AbsoluteFill style={{ opacity }}>
       <AbsoluteFill style={{ transform: `scale(${scale + mb * 0.006})`, transformOrigin: origin, filter: mb > 0.05 ? `blur(${mb}px)` : undefined }}>
@@ -57,19 +58,20 @@ const Body: React.FC = () => {
   const { g, clips } = tl;
   const f = useCurrentFrame();
   const t = f / FPS;
-  const byId = (id: string) => clips.find((c) => c.id === id)!;
-  const mont0 = byId('J1').start;
-  const mont1 = byId('J3').end;
-  const close0 = byId('L').start;
-  const hookEnd = byId('B1').start;
+  const D = tl.duration;
+  const [mont0, mont1] = g.montage;
+  const close0 = g.closing;
+  const hookEnd = g.hookEnd;
   const fadeIn = interpolate(t, [0, 0.9], [1, 0], { extrapolateRight: 'clamp' });
-  const fadeOut = interpolate(t, [118.4, 119.9], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const fadeOut = interpolate(t, [D - 1.6, D - 0.1], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   const closingDark = interpolate(t, [g.tagline.a - 0.8, g.tagline.a + 1.0], [0, 0.58], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   const hookDark = interpolate(t, [0, hookEnd - 0.3, hookEnd + 0.3], [0.28, 0.28, 0], { extrapolateRight: 'clamp' });
+  // Soft glow: montaj kemanusiaan & penutup (bersambung jika penutup terus selepas montaj)
+  const joined = close0 <= mont1 + 0.2;
   const montageGlow = interpolate(
     t,
-    [mont0 - 0.5, mont0 + 1, mont1 - 0.5, mont1 + 0.2, close0, close0 + 1.6, 120],
-    [0, 0.55, 0.55, 0, 0, 0.6, 0.6],
+    joined ? [mont0 - 0.5, mont0 + 1, close0, close0 + 1.6, D] : [mont0 - 0.5, mont0 + 1, mont1 - 0.5, mont1 + 0.2, close0, close0 + 1.6, D],
+    joined ? [0, 0.55, 0.55, 0.6, 0.6] : [0, 0.55, 0.55, 0, 0, 0.6, 0.6],
     { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' },
   );
 
@@ -89,7 +91,7 @@ const Body: React.FC = () => {
       <SoftGlow opacity={montageGlow} />
       <LightLeak from={0} to={(hookEnd + 0.1) * FPS} peak={0.28} seed="hook" />
       <LightLeak from={mont0 * FPS} to={(mont1 + 0.2) * FPS} peak={0.3} seed="montaj" />
-      <LightLeak from={(close0 + 0.2) * FPS} to={120 * FPS} peak={0.32} seed="tutup" />
+      <LightLeak from={(close0 + 0.2) * FPS} to={D * FPS} peak={0.32} seed="tutup" />
       <AbsoluteFill style={{ backgroundColor: `rgba(0,0,0,${hookDark + closingDark})` }} />
       <TextScrim top={0.32} bottom={0.5} />
       <Vignette strength={0.5} />

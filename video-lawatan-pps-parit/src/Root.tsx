@@ -2,7 +2,7 @@ import React from 'react';
 import { Composition, continueRender, delayRender, staticFile } from 'remotion';
 import { loadFont } from '@remotion/fonts';
 import { LawatanPPS } from './Video';
-import { FPS, TOTAL_FRAMES } from './data/timeline';
+import { FPS, TOTAL_FRAMES, VARIANTS } from './data/timeline';
 
 // Fon tempatan (SIL Open Font License) — tiada muat turun semasa render
 const handle = delayRender('Memuatkan fon');
@@ -26,5 +26,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="LawatanPPS" component={LawatanPPS} defaultProps={{ variant: 'asal' }} durationInFrames={TOTAL_FRAMES} fps={FPS} width={1080} height={1920} />
     {/* Video 2: hook suara asal YB "Sabar ya" kepada mangsa di khemah PPS */}
     <Composition id="LawatanPPS-Sabar" component={LawatanPPS} defaultProps={{ variant: 'sabar' }} durationInFrames={TOTAL_FRAMES} fps={FPS} width={1080} height={1920} />
+    {/* Video 3: versi ringkas - hook "Sabar ya" + petikan ucapan sebagai suara latar, lebih banyak B-roll */}
+    <Composition id="LawatanPPS-Ringkas" component={LawatanPPS} defaultProps={{ variant: 'ringkas' }} durationInFrames={VARIANTS.ringkas.duration * FPS} fps={FPS} width={1080} height={1920} />
   </>
 );

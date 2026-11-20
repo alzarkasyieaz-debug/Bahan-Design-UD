@@ -274,7 +274,13 @@
   "swells": [
    1.0,
    109.4
-  ]
+  ],
+  "hookEnd": 8.0,
+  "montage": [
+   99.0,
+   108.5
+  ],
+  "closing": 109.9
  },
  "output": "lawatan-pps-sabar-ya",
  "_nota_hook": "Hook: momen sebenar YB berkata 'Baik-baik, jumpa lagi. Sabar ya.' kepada seorang ibu di khemah PPS (IMG_3293 @ 5.9-9.2 s, audio asal kamera).",

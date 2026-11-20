@@ -33,16 +33,17 @@ export const Tagline: React.FC = () => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = f / fps;
-  const TAGLINE = useTimeline().g.tagline;
+  const { g, duration } = useTimeline();
+  const TAGLINE = g.tagline;
   if (t < TAGLINE.a - 0.2) return null;
   const pa = interpolate(t, [TAGLINE.a, TAGLINE.a + 1.1], [0, 1], { extrapolateRight: 'clamp', easing: ease });
   const pb = interpolate(t, [TAGLINE.b, TAGLINE.b + 1.1], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease });
   const pf = interpolate(t, [TAGLINE.full, TAGLINE.full + 1.2], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease });
-  const out = interpolate(t, [TAGLINE.fadeOut, 119.85], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const out = interpolate(t, [TAGLINE.fadeOut, duration - 0.15], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   const rotA = (1 - pa) * 38;
   const rotB = (1 - pb) * 38;
   const lift = pf * -70;
-  const drift = interpolate(t, [TAGLINE.a, 120], [1, 1.04]);
+  const drift = interpolate(t, [TAGLINE.a, duration], [1, 1.04]);
   return (
     <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: out, perspective: 1200 }}>
       <div style={{ textAlign: 'center', transform: `translateY(${lift - 60}px) scale(${drift})` }}>

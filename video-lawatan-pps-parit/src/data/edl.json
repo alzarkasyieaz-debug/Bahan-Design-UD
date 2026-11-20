@@ -263,7 +263,13 @@
   "swells": [
    1.4,
    108.0
-  ]
+  ],
+  "hookEnd": 6.5,
+  "montage": [
+   97.5,
+   107.0
+  ],
+  "closing": 108.4
  },
  "output": "lawatan-pps-sk-tanjung-belanja"
 }

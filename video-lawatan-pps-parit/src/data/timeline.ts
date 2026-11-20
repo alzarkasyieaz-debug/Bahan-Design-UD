@@ -1,6 +1,7 @@
 import React from 'react';
 import edlAsal from './edl.json';
 import edlSabar from './edl-sabar.json';
+import edlRingkas from './edl-ringkas.json';
 import transcript from './transcript.json';
 
 export const FPS = 30;
@@ -29,11 +30,19 @@ type Graphics = {
   hookB?: number[];
   sabar?: number[];
   title?: number[];
+  hookEnd: number;
+  doa?: number[];
+  montage: number[];
+  closing: number;
   lowerThird: number[];
   location: number[];
   tagline: { a: number; b: number; full: number; fadeOut: number };
 };
+export type Segment = { in: number; out: number; at: number };
 export type Edl = {
+  duration: number;
+  speechIn: number;
+  segments?: Segment[];
   speechOffset: number;
   speechOut: number;
   output: string;
@@ -45,6 +54,7 @@ export type Edl = {
 export const VARIANTS: Record<string, Edl> = {
   asal: edlAsal as unknown as Edl,
   sabar: edlSabar as unknown as Edl,
+  ringkas: edlRingkas as unknown as Edl,
 };
 
 /* ------------------------------------------------------------------ Sari kata
@@ -107,9 +117,14 @@ function buildLines(words: RawWord[], offset: number): Line[] {
 }
 
 export function makeTimeline(edl: Edl) {
-  const OFF = edl.speechOffset; // masa output = masa ucapan + offset
-  const words = rawWords.filter((w) => w.t < edl.speechOut - 0.05); // satu "terima kasih" sahaja
-  let subLines = buildLines(words, OFF);
+  const OFF = edl.speechOffset; // masa output = masa ucapan + offset (versi ucapan penuh)
+  const segs: Segment[] = edl.segments ?? [{ in: edl.speechIn, out: edl.speechOut, at: edl.speechIn + OFF }];
+  // Perkataan bagi setiap segmen, dengan masa output sebenar (o)
+  const segWords = segs.map((sg) =>
+    rawWords.filter((w) => w.t >= sg.in - 0.05 && w.t < sg.out - 0.05).map((w) => ({ ...w, o: sg.at - sg.in })),
+  );
+  const words = segWords.flat().map((w) => ({ ...w, t: w.t + w.o, e: w.e + w.o })); // masa output
+  let subLines = segWords.flatMap((ws, k) => buildLines(ws, segs[k].at - segs[k].in));
   if (edl.hookWords) {
     // Sari kata suara asal YB dalam hook (B-roll IMG_3293), masa relatif kepada klip S0
     const s0 = edl.clips[0];
@@ -119,31 +134,32 @@ export function makeTimeline(edl: Edl) {
     // "Sabar ya" dipaparkan sebagai tipografi besar, jadi sari kata hanya untuk ayat sebelumnya
     subLines = [...buildLines(hw.slice(0, 3), 0), ...subLines];
   }
-  const firstOf = (w: string, after = 0) => {
-    const x = words.find((y) => y.w.replace(/[.,]/g, '') === w && y.t >= after);
-    return (x ? x.t : after) + OFF;
-  };
+  const find = (w: string, after = 0) => words.find((y) => y.w.replace(/[.,]/g, '') === w && y.t >= after);
+  const firstOf = (w: string, after = 0) => find(w, after)?.t ?? NaN;
+  const endOf = (w: string, after = 0) => find(w, after)?.e ?? NaN;
   /* Tipografi kata kunci: setiap teks ialah ungkapan yang BENAR-BENAR disebut oleh YB,
    * masa diikat pada cap masa perkataan sebenar. */
   const keyPhrases = [
     { from: firstOf('35'), to: firstOf('lebih') - 0.05, big: '35', small: 'KELUARGA', count: true },
     { from: firstOf('68') - 0.2, to: firstOf('68') + 2.3, big: '68', small: 'ORANG · LEBIH KURANG', count: true },
     { from: firstOf('ikut') - 0.1, to: firstOf('berkuasa') + 0.9, lines: ['IKUT ARAHAN', 'PIHAK BERKUASA'] },
-    { from: firstOf('jaga') - 0.1, to: firstOf('pastikan') - 0.1, lines: ['JAGA KESIHATAN', '& KESELAMATAN'] },
+    { from: firstOf('jaga') - 0.1, to: endOf('masing-masing', firstOf('jaga')) + 0.6, lines: ['JAGA KESIHATAN', '& KESELAMATAN'] },
     { from: firstOf('elakkan') - 0.05, to: firstOf('kerana') + 1.6, lines: ['ELAKKAN', 'MERANDUK AIR'] },
     { from: firstOf('berjaga-jagalah') - 1.2, to: firstOf('kalau-kalau') + 1.5, lines: ['SENTIASA', 'BERJAGA-JAGALAH'] },
-  ];
-  const lastSpeech = edl.speechOut + OFF;
+  ].filter((k) => !Number.isNaN(k.from) && !Number.isNaN(k.to));
+  const lastSeg = segs[segs.length - 1];
+  const lastSpeech = lastSeg.at + lastSeg.out - lastSeg.in;
+  const g = edl.graphics;
   return {
     edl,
     clips: edl.clips,
     speechOffset: OFF,
+    duration: edl.duration ?? 120,
     subLines,
     subsUntil: lastSpeech,
     keyPhrases,
-    doa: { from: firstOf('sama-samalah'), to: firstOf('dielakkan') + 0.3 },
-    g: edl.graphics,
-    montage: [firstOf('sama-samalah') - 0.5, lastSpeech - 0.5] as [number, number],
+    doa: g.doa ? { from: g.doa[0], to: g.doa[1] } : { from: firstOf('sama-samalah'), to: firstOf('dielakkan') + 0.3 },
+    g,
   };
 }
 export type Timeline = ReturnType<typeof makeTimeline>;
