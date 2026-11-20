@@ -2,7 +2,7 @@ import React from 'react';
 import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
 import { ease } from './Looks';
 import { GOLD, GOLD_SOFT } from './Typography';
-import { TAGLINE } from '../data/timeline';
+import { useTimeline } from '../data/timeline';
 
 /** Teks "3D" sinematik: lapisan ekstrusi + permukaan emas-putih + sapuan cahaya */
 const Text3D: React.FC<{ text: string; size: number; t: number; sweepAt: number }> = ({ text, size, t, sweepAt }) => {
@@ -33,6 +33,7 @@ export const Tagline: React.FC = () => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = f / fps;
+  const TAGLINE = useTimeline().g.tagline;
   if (t < TAGLINE.a - 0.2) return null;
   const pa = interpolate(t, [TAGLINE.a, TAGLINE.a + 1.1], [0, 1], { extrapolateRight: 'clamp', easing: ease });
   const pb = interpolate(t, [TAGLINE.b, TAGLINE.b + 1.1], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease });

@@ -8,6 +8,7 @@
     "audio": "python3 scripts/generate_audio.py",
     "studio": "remotion studio",
     "render": "remotion render LawatanPPS out/lawatan-pps-sk-tanjung-belanja.mp4 --codec=h264 --crf=19 --pixel-format=yuv420p --audio-codec=aac --audio-bitrate=256k",
+    "render:sabar": "remotion render LawatanPPS-Sabar out/lawatan-pps-sabar-ya.mp4 --codec=h264 --crf=19 --pixel-format=yuv420p --audio-codec=aac --audio-bitrate=256k",
     "still": "remotion still LawatanPPS out/preview.png --frame=60"
   },
   "dependencies": {

@@ -1,0 +1,313 @@
+{
+ "fps": 30,
+ "duration": 120,
+ "speechOffset": 7.1,
+ "speechIn": 0.9,
+ "speechOut": 101.95,
+ "_nota": "Masa dalam saat. start/end = kedudukan dalam video akhir. srcIn = titik mula dalam fail asal. speed < 1 = slow motion. handle = ekor tambahan (saat output) untuk cross-dissolve. Klip 'master' sentiasa selari dengan audio ucapan (src = masa output - speechOffset).",
+ "clips": [
+  {
+   "id": "S0",
+   "src": "IMG_3293.MOV",
+   "srcIn": 5.6,
+   "speed": 1.0,
+   "start": 0.0,
+   "end": 3.8,
+   "fx": "hook",
+   "note": "YB bersama seorang ibu di khemah: 'Baik-baik, jumpa lagi. Sabar ya.' (audio asal)"
+  },
+  {
+   "id": "S1",
+   "src": "IMG_3293.MOV",
+   "srcIn": 9.4,
+   "speed": 0.6,
+   "start": 3.8,
+   "end": 5.8,
+   "fx": "hook",
+   "note": "YB beredar di celah khemah (slow-mo)"
+  },
+  {
+   "id": "A1",
+   "src": "IMG_3358.MOV",
+   "srcIn": 9.0,
+   "speed": 0.75,
+   "start": 5.8,
+   "end": 8.0,
+   "fx": "hook",
+   "note": "Suasana PPS: keluarga & kanak-kanak (guna semula klip A1)"
+  },
+  {
+   "id": "B1",
+   "src": "master",
+   "start": 8.0,
+   "end": 12.5,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "note": "Salam pembuka YB + lower third"
+  },
+  {
+   "id": "B2",
+   "src": "IMG_3392.MOV",
+   "srcIn": 0.0,
+   "speed": 1.0,
+   "start": 12.5,
+   "end": 14.5,
+   "stab": true,
+   "note": "YB bersalaman, berjalan di laluan berbendera (teks lokasi)"
+  },
+  {
+   "id": "C1",
+   "src": "IMG_3293.MOV",
+   "srcIn": 3.0,
+   "speed": 1.0,
+   "start": 14.5,
+   "end": 21.0,
+   "note": "YB berbual dengan keluarga di khemah PPS"
+  },
+  {
+   "id": "C2",
+   "src": "IMG_3369.MOV",
+   "srcIn": 9.0,
+   "speed": 1.0,
+   "start": 21.0,
+   "end": 23.5,
+   "note": "YB bersama petugas & kanak-kanak di meja"
+  },
+  {
+   "id": "D1",
+   "src": "master",
+   "start": 23.5,
+   "end": 26.9,
+   "zoom": [
+    1.02,
+    1.08
+   ]
+  },
+  {
+   "id": "D2",
+   "src": "IMG_3388.MOV",
+   "srcIn": 2.0,
+   "speed": 1.0,
+   "start": 26.9,
+   "end": 31.1,
+   "note": "YB berbincang dengan petugas/AJK PPS (ikut arahan pihak berkuasa)"
+  },
+  {
+   "id": "D3",
+   "src": "master",
+   "start": 31.1,
+   "end": 38.0,
+   "zoom": [
+    1.12,
+    1.22
+   ],
+   "note": "Close-up: jaga kesihatan dan keselamatan"
+  },
+  {
+   "id": "E1",
+   "src": "IMG_3356.MOV",
+   "srcIn": 0.0,
+   "speed": 1.0,
+   "start": 38.0,
+   "end": 43.5,
+   "note": "YB duduk semeja dengan mangsa, makanan & minuman di meja"
+  },
+  {
+   "id": "E2",
+   "src": "IMG_3357.MOV",
+   "srcIn": 0.0,
+   "speed": 1.0,
+   "start": 43.5,
+   "end": 47.0,
+   "note": "YB duduk mendengar di ruang makan PPS"
+  },
+  {
+   "id": "F",
+   "src": "master",
+   "start": 47.0,
+   "end": 60.0,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "punch": [
+    53.5,
+    1.28
+   ],
+   "note": "Elakkan meranduk air (punch-in pada 'lubang')"
+  },
+  {
+   "id": "G1",
+   "src": "IMG_3311.MOV",
+   "srcIn": 0.0,
+   "speed": 1.0,
+   "start": 60.0,
+   "end": 65.2,
+   "note": "YB menyampaikan beg bantuan"
+  },
+  {
+   "id": "G2",
+   "src": "IMG_3347.MOV",
+   "srcIn": 10.7,
+   "speed": 1.0,
+   "start": 65.2,
+   "end": 73.5,
+   "note": "YB melayan warga emas, mesra & tersenyum"
+  },
+  {
+   "id": "H1",
+   "src": "master",
+   "start": 73.5,
+   "end": 80.5,
+   "zoom": [
+    1.05,
+    1.14
+   ]
+  },
+  {
+   "id": "H2",
+   "src": "IMG_3369.MOV",
+   "srcIn": 29.0,
+   "speed": 1.0,
+   "start": 80.5,
+   "end": 87.0,
+   "note": "YB mendengar masalah penduduk"
+  },
+  {
+   "id": "I",
+   "src": "master",
+   "start": 87.0,
+   "end": 99.0,
+   "zoom": [
+    1.1,
+    1.3
+   ],
+   "note": "Berjaga-jagalah - zoom perlahan ke wajah"
+  },
+  {
+   "id": "J1",
+   "src": "IMG_3293.MOV",
+   "srcIn": 9.0,
+   "speed": 0.8,
+   "start": 99.0,
+   "end": 102.0,
+   "fx": "soft",
+   "note": "Montaj: keluarga di khemah (slow-mo)"
+  },
+  {
+   "id": "J2",
+   "src": "IMG_3392.MOV",
+   "srcIn": 0.0,
+   "speed": 0.8,
+   "start": 102.0,
+   "end": 105.0,
+   "fx": "soft",
+   "stab": true,
+   "note": "Montaj: salam mesra (slow-mo)"
+  },
+  {
+   "id": "J3",
+   "src": "IMG_3369.MOV",
+   "srcIn": 14.0,
+   "speed": 0.8,
+   "start": 105.0,
+   "end": 108.5,
+   "fx": "soft",
+   "note": "Montaj: YB, petugas & kanak-kanak (slow-mo)"
+  },
+  {
+   "id": "K",
+   "src": "master",
+   "start": 108.5,
+   "end": 109.9,
+   "zoom": [
+    1.0,
+    1.0
+   ],
+   "note": "Terima kasih"
+  },
+  {
+   "id": "L",
+   "src": "IMG_3294.MOV",
+   "srcIn": 6.6,
+   "speed": 0.5,
+   "start": 109.9,
+   "end": 120.0,
+   "fx": "soft",
+   "stab": true,
+   "last": true,
+   "note": "Penutup: YB terus melangkah di koridor sekolah (slow-mo)"
+  }
+ ],
+ "graphics": {
+  "hook": "sabar",
+  "sabar": [
+   2.88,
+   5.3
+  ],
+  "title": [
+   5.35,
+   8.0
+  ],
+  "lowerThird": [
+   8.5,
+   12.5
+  ],
+  "location": [
+   12.6,
+   17.1
+  ],
+  "tagline": {
+   "a": 110.8,
+   "b": 113.2,
+   "full": 115.6,
+   "fadeOut": 118.6
+  },
+  "chimes": [
+   2.9,
+   5.4,
+   111.0,
+   113.3
+  ],
+  "swells": [
+   1.0,
+   109.4
+  ]
+ },
+ "output": "lawatan-pps-sabar-ya",
+ "_nota_hook": "Hook: momen sebenar YB berkata 'Baik-baik, jumpa lagi. Sabar ya.' kepada seorang ibu di khemah PPS (IMG_3293 @ 5.9-9.2 s, audio asal kamera).",
+ "hookAudio": {
+  "src": "IMG_3293.MOV",
+  "in": 5.6,
+  "out": 9.75
+ },
+ "hookWords": [
+  [
+   5.96,
+   7.28,
+   "Baik-baik,"
+  ],
+  [
+   8.12,
+   8.38,
+   "jumpa"
+  ],
+  [
+   8.38,
+   8.5,
+   "lagi."
+  ],
+  [
+   8.5,
+   9.04,
+   "Sabar"
+  ],
+  [
+   9.04,
+   9.18,
+   "ya."
+  ]
+ ]
+}

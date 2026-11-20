@@ -21,5 +21,10 @@ Promise.all([
 ]).then(() => continueRender(handle));
 
 export const RemotionRoot: React.FC = () => (
-  <Composition id="LawatanPPS" component={LawatanPPS} durationInFrames={TOTAL_FRAMES} fps={FPS} width={1080} height={1920} />
+  <>
+    {/* Video 1: hook teks "Di saat rakyat diuji, keprihatinan terus diberi" */}
+    <Composition id="LawatanPPS" component={LawatanPPS} defaultProps={{ variant: 'asal' }} durationInFrames={TOTAL_FRAMES} fps={FPS} width={1080} height={1920} />
+    {/* Video 2: hook suara asal YB "Sabar ya" kepada mangsa di khemah PPS */}
+    <Composition id="LawatanPPS-Sabar" component={LawatanPPS} defaultProps={{ variant: 'sabar' }} durationInFrames={TOTAL_FRAMES} fps={FPS} width={1080} height={1920} />
+  </>
 );

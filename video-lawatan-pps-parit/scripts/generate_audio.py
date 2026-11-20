@@ -14,7 +14,7 @@ Struktur emosi:
 
 Keperluan: numpy scipy ; jalankan selepas scripts/prep_clips.py
 """
-import json, os, subprocess
+import json, os, subprocess, sys
 import numpy as np
 from scipy.signal import butter, sosfilt, fftconvolve
 from scipy.io import wavfile
@@ -25,7 +25,9 @@ N = int(SR * DUR)
 rng = np.random.default_rng(2026)
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 AUD = os.path.join(ROOT, "public", "audio")
-EDL = json.load(open(os.path.join(ROOT, "src", "data", "edl.json")))
+EDL = json.load(open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "src", "data", "edl.json")))
+G = EDL["graphics"]
+HOOK = EDL.get("hookAudio")
 
 
 def midi(n):
@@ -185,7 +187,8 @@ def mix():
     sp_start = EDL["speechIn"] + EDL["speechOffset"]          # 6.5 s
     sp_end = EDL["speechOut"] + EDL["speechOffset"]           # 107.55 s
     # Auto-ducking: muzik direndahkan sepanjang ucapan, naik semula di hook & penutup
-    duck = env_curve([(0, 0.62), (sp_start - 0.6, 0.62), (sp_start + 0.2, 0.14), (97.0, 0.14),
+    pre = [(0, 0.30), (3.4, 0.30), (4.6, 0.62)] if HOOK else [(0, 0.62)]
+    duck = env_curve(pre + [(sp_start - 0.6, 0.62), (sp_start + 0.2, 0.14), (97.0, 0.14),
                       (98.5, 0.19), (sp_end - 0.4, 0.2), (sp_end + 0.8, 0.70), (120, 0.70)])
     out = music * duck
     speech = load(os.path.join(AUD, "ucapan.wav"))
@@ -196,23 +199,36 @@ def mix():
 
     add_st(speech, sp_start, 1.0)
     amb = load(os.path.join(AUD, "ambien.wav"))
-    amb = amb * np.interp(np.arange(amb.shape[1]) / SR, [0, 1.2, 6.0, 8.5, 9], [0, 1, 1, 0, 0])
-    add_st(amb, 0.0, 0.22)
+    amb_at = 4.6 if HOOK else 0.0
+    amb_len = sp_start - amb_at + 2.0
+    amb = amb[:, : int(min(amb.shape[1] / SR, amb_len) * SR)]
+    tl = amb.shape[1] / SR
+    amb = amb * np.interp(np.arange(amb.shape[1]) / SR, [0, 1.2, tl - 2.5, tl], [0, 1, 1, 0])
+    add_st(amb, amb_at, 0.22)
+    if HOOK:
+        # Suara asal YB: "Baik-baik, jumpa lagi. Sabar ya." + gema lembut pada "Sabar ya"
+        hk = load(os.path.join(AUD, f"hook-{EDL['output']}.wav"))
+        tail = np.zeros((2, hk.shape[1] + int(3.5 * SR)))
+        tail[:, : hk.shape[1]] = hk
+        cut = int(2.8 * SR)
+        wet = np.zeros_like(tail)
+        wet[:, cut:] = tail[:, cut:]
+        tail = tail + (reverb(wet, 3.0, 1.0, seed=11) - wet) * 0.35
+        add_st(tail, 0.0, 1.0)
     sfx = np.zeros((2, N))
-    add(sfx, swell(2.0), 1.4, 0.5)            # sebelum teks hook kedua
-    add(sfx, chime(), 3.5, 0.35, 0.2)         # "KEPRIHATINAN TERUS DIBERI."
-    add(sfx, swell(2.2), 108.0, 0.6)
-    add(sfx, chime(), 110.2, 0.45, -0.2)      # "PARIT SEJAHTERA"
-    add(sfx, chime() * 0.8, 112.7, 0.45, 0.2) # "MAKMUR BERSAMA"
+    for i, t in enumerate(G["swells"]):
+        add(sfx, swell(2.0 + 0.2 * i), t, 0.5 + 0.1 * i)
+    for i, t in enumerate(G["chimes"]):          # teks hook & tagline
+        add(sfx, chime() * (0.8 if i % 2 else 1.0), t, 0.35 if t < 20 else 0.45, 0.2 if i % 2 else -0.2)
     out += reverb(sfx, 2.5, 0.5, seed=9)
     out /= max(1.0, np.max(np.abs(out)) / 0.97)
     tmp = os.path.join(AUD, "mix_pre.wav")
     wavfile.write(tmp, SR, (out.T * 32767).astype(np.int16))
     # Loudness media sosial: -14 LUFS, true peak -1.5 dB
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", tmp, "-af",
-                    "loudnorm=I=-14:TP=-1.5:LRA=11", "-ar", "48000", os.path.join(AUD, "mix.wav")], check=True)
+                    "loudnorm=I=-14:TP=-1.5:LRA=11", "-ar", "48000", os.path.join(AUD, f"mix-{EDL['output']}.wav")], check=True)
     os.remove(tmp)
-    print("siap: public/audio/muzik.wav, public/audio/mix.wav")
+    print(f"siap: public/audio/muzik.wav, public/audio/mix-{EDL['output']}.wav")
 
 
 if __name__ == "__main__":

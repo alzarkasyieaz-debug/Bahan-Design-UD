@@ -9,7 +9,7 @@ Video Master: skala 720p -> 1080x1920 (lanczos + sharpen), gred warna -> public/
 Audio ucapan: dibersihkan (high-pass, denoise, EQ, compressor) -> public/audio/ucapan.wav
 Ambien PPS (bunyi sebenar dari B-roll) -> public/audio/ambien.wav
 
-Jalankan:  python3 scripts/prep_clips.py   (perlu ffmpeg dengan libvidstab)
+Jalankan:  python3 scripts/prep_clips.py [src/data/edl-sabar.json]   (perlu ffmpeg dengan libvidstab)
 """
 import json, os, subprocess, sys
 from concurrent.futures import ThreadPoolExecutor
@@ -22,7 +22,8 @@ TMP = os.path.join(ROOT, "out", "tmp")
 for d in (CLIPS, AUD, TMP):
     os.makedirs(d, exist_ok=True)
 
-EDL = json.load(open(os.path.join(ROOT, "src", "data", "edl.json")))
+EDL_PATH = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "src", "data", "edl.json")
+EDL = json.load(open(EDL_PATH))
 HANDLE = 0.5
 
 # Gred warna: sedikit muted, kontras lembut, tona kulit hangat, hitam sedikit diangkat (filmic)
@@ -93,6 +94,12 @@ def prep_audio():
     run(["ffmpeg", "-v", "error", "-y", "-ss", "8", "-t", "9", "-i", os.path.join(RAW, "IMG_3358.MOV"),
          "-af", "highpass=f=120,lowpass=f=6000,afftdn=nf=-30,volume=0.9", "-ar", "48000", "-ac", "2",
          os.path.join(AUD, "ambien.wav")])
+    h = EDL.get("hookAudio")
+    if h:  # suara asal YB dari B-roll (hook) - dibersihkan
+        run(["ffmpeg", "-v", "error", "-y", "-ss", str(h["in"]), "-to", str(h["out"]), "-i", os.path.join(RAW, h["src"]),
+             "-af", "highpass=f=110,lowpass=f=11000,afftdn=nf=-30:tn=1,equalizer=f=3000:t=q:w=1.5:g=3,"
+                    "acompressor=threshold=-24dB:ratio=3:attack=6:release=100:makeup=4,alimiter=limit=0.89:level=false,afade=t=out:st=%.2f:d=0.4" % (h["out"] - h["in"] - 0.4),
+             "-ar", "48000", "-ac", "2", os.path.join(AUD, f"hook-{EDL['output']}.wav")])
     return "audio"
 
 

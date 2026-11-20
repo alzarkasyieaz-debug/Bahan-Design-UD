@@ -1,16 +1,17 @@
 import React from 'react';
 import { AbsoluteFill, Audio, interpolate, OffthreadVideo, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
-import { CLIPS, Clip, FPS, HANDLE, HOOK, LOCATION, LOWER_THIRD, SPEECH_OFFSET } from './data/timeline';
+import { Clip, FPS, HANDLE, makeTimeline, TimelineContext, useTimeline, VARIANTS } from './data/timeline';
 import { ease, Grain, LightLeak, SoftGlow, TextScrim, Vignette } from './components/Looks';
-import { DoaQuote, HookTitle, KeyPhrases, LocationTag, LowerThird, Subtitles } from './components/Typography';
+import { DoaQuote, HookTitle, KeyPhrases, LocationTag, LowerThird, SabarHook, Subtitles } from './components/Typography';
 import { Tagline } from './components/Tagline';
 
 // Tempoh cross-dissolve (frame) bagi klip yang masuk
-const DISSOLVE: Record<string, number> = { A2: 16, J1: 18, J2: 18, J3: 18, K: 14, L: 22 };
+const DISSOLVE: Record<string, number> = { A2: 16, S1: 12, J1: 18, J2: 18, J3: 18, K: 14, L: 22 };
 
 const ClipLayer: React.FC<{ c: Clip; index: number }> = ({ c, index }) => {
   const f = useCurrentFrame(); // relatif kepada Sequence
   const { fps } = useVideoConfig();
+  const { speechOffset } = useTimeline();
   const len = (c.end - c.start) * fps;
   const d = index === 0 ? 1 : DISSOLVE[c.id] ?? 9;
   const opacity = interpolate(f, [0, d], [0, 1], { extrapolateRight: 'clamp' });
@@ -35,8 +36,8 @@ const ClipLayer: React.FC<{ c: Clip; index: number }> = ({ c, index }) => {
     origin = index % 2 ? '45% 45%' : '55% 50%';
   }
   // Motion-blur lembut semasa klip masuk
-  const mb = interpolate(f, [0, Math.max(d, 8)], [5, 0], { extrapolateRight: 'clamp' });
-  const startFrom = isMaster ? Math.round((c.start - SPEECH_OFFSET) * FPS) : 0;
+  const mb = index === 0 ? 0 : interpolate(f, [0, Math.max(d, 8)], [5, 0], { extrapolateRight: 'clamp' });
+  const startFrom = isMaster ? Math.round((c.start - speechOffset) * FPS) : 0;
   return (
     <AbsoluteFill style={{ opacity }}>
       <AbsoluteFill style={{ transform: `scale(${scale + mb * 0.006})`, transformOrigin: origin, filter: mb > 0.05 ? `blur(${mb}px)` : undefined }}>
@@ -51,19 +52,30 @@ const ClipLayer: React.FC<{ c: Clip; index: number }> = ({ c, index }) => {
   );
 };
 
-export const LawatanPPS: React.FC = () => {
+const Body: React.FC = () => {
+  const tl = useTimeline();
+  const { g, clips } = tl;
   const f = useCurrentFrame();
   const t = f / FPS;
+  const byId = (id: string) => clips.find((c) => c.id === id)!;
+  const mont0 = byId('J1').start;
+  const mont1 = byId('J3').end;
+  const close0 = byId('L').start;
+  const hookEnd = byId('B1').start;
   const fadeIn = interpolate(t, [0, 0.9], [1, 0], { extrapolateRight: 'clamp' });
   const fadeOut = interpolate(t, [118.4, 119.9], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const closingDark = interpolate(t, [109.2, 111.0], [0, 0.58], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const hookDark = interpolate(t, [0, 6.2, 6.8], [0.28, 0.28, 0], { extrapolateRight: 'clamp' });
-  const montageGlow = interpolate(t, [97, 98.5, 106.5, 107.2, 108.4, 110, 120], [0, 0.55, 0.55, 0, 0, 0.6, 0.6], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const showSubs = t < 107.6;
+  const closingDark = interpolate(t, [g.tagline.a - 0.8, g.tagline.a + 1.0], [0, 0.58], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const hookDark = interpolate(t, [0, hookEnd - 0.3, hookEnd + 0.3], [0.28, 0.28, 0], { extrapolateRight: 'clamp' });
+  const montageGlow = interpolate(
+    t,
+    [mont0 - 0.5, mont0 + 1, mont1 - 0.5, mont1 + 0.2, close0, close0 + 1.6, 120],
+    [0, 0.55, 0.55, 0, 0, 0.6, 0.6],
+    { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' },
+  );
 
   return (
     <AbsoluteFill style={{ backgroundColor: '#000' }}>
-      {CLIPS.map((c, i) => {
+      {clips.map((c, i) => {
         const from = Math.round(c.start * FPS);
         const dur = Math.round((c.end - c.start + (c.last ? 0 : HANDLE)) * FPS);
         return (
@@ -75,26 +87,44 @@ export const LawatanPPS: React.FC = () => {
 
       {/* Rupa sinematik */}
       <SoftGlow opacity={montageGlow} />
-      <LightLeak from={0} to={6.6 * FPS} peak={0.28} seed="hook" />
-      <LightLeak from={97.5 * FPS} to={107.2 * FPS} peak={0.3} seed="montaj" />
-      <LightLeak from={108.6 * FPS} to={120 * FPS} peak={0.32} seed="tutup" />
+      <LightLeak from={0} to={(hookEnd + 0.1) * FPS} peak={0.28} seed="hook" />
+      <LightLeak from={mont0 * FPS} to={(mont1 + 0.2) * FPS} peak={0.3} seed="montaj" />
+      <LightLeak from={(close0 + 0.2) * FPS} to={120 * FPS} peak={0.32} seed="tutup" />
       <AbsoluteFill style={{ backgroundColor: `rgba(0,0,0,${hookDark + closingDark})` }} />
       <TextScrim top={0.32} bottom={0.5} />
       <Vignette strength={0.5} />
       <Grain opacity={0.06} />
 
       {/* Grafik */}
-      <HookTitle from={HOOK.a[0]} to={HOOK.a[1]} lines={['DI SAAT', 'RAKYAT DIUJI...']} />
-      <HookTitle from={HOOK.b[0]} to={HOOK.b[1]} lines={['KEPRIHATINAN', 'TERUS DIBERI.']} gold />
-      <LowerThird from={LOWER_THIRD[0]} to={LOWER_THIRD[1]} />
-      <LocationTag from={LOCATION[0]} to={LOCATION[1]} />
+      {g.hook === 'sabar' ? (
+        <>
+          <SabarHook from={g.sabar![0]} to={g.sabar![1]} />
+          <HookTitle from={g.title![0]} to={g.title![1]} size={74} goldLines={[2, 3]} lines={['DI SAAT', 'RAKYAT DIUJI,', 'KEPRIHATINAN', 'TERUS DIBERI.']} />
+        </>
+      ) : (
+        <>
+          <HookTitle from={g.hookA![0]} to={g.hookA![1]} lines={['DI SAAT', 'RAKYAT DIUJI...']} />
+          <HookTitle from={g.hookB![0]} to={g.hookB![1]} lines={['KEPRIHATINAN', 'TERUS DIBERI.']} gold />
+        </>
+      )}
+      <LowerThird from={g.lowerThird[0]} to={g.lowerThird[1]} />
+      <LocationTag from={g.location[0]} to={g.location[1]} />
       <KeyPhrases />
       <DoaQuote />
-      <Subtitles hide={!showSubs} />
+      <Subtitles hide={t > tl.subsUntil + 0.4} />
       <Tagline />
 
       <AbsoluteFill style={{ backgroundColor: '#000', opacity: Math.max(fadeIn, fadeOut) }} />
-      <Audio src={staticFile('audio/mix.wav')} />
+      <Audio src={staticFile(`audio/mix-${tl.edl.output}.wav`)} />
     </AbsoluteFill>
+  );
+};
+
+export const LawatanPPS: React.FC<{ variant: string }> = ({ variant }) => {
+  const tl = React.useMemo(() => makeTimeline(VARIANTS[variant] ?? VARIANTS.asal), [variant]);
+  return (
+    <TimelineContext.Provider value={tl}>
+      <Body />
+    </TimelineContext.Provider>
   );
 };

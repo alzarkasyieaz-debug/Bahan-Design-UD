@@ -7,6 +7,21 @@ Video siap: `out/lawatan-pps-sk-tanjung-belanja.mp4` · Sari kata SRT: `out/sari
 Durasi dipanjangkan dari 60 s kepada **2 minit** atas permintaan, supaya **ucapan penuh YB (≈101 s)** boleh dimuatkan tanpa dipotong
 atau diambil di luar konteks. Hanya satu daripada dua ucapan "terima kasih" di hujung rakaman digunakan.
 
+## Video 2 — Hook "Sabar ya" (`out/lawatan-pps-sabar-ya.mp4`)
+Versi ini dibuka dengan **momen sebenar** YB bersama seorang ibu di khemah PPS. Dalam rakaman itu (B-roll IMG_3293, 00:05.9–00:09.2,
+audio asal kamera), YB berkata *"Baik-baik, jumpa lagi. **Sabar ya.**"* sebelum beredar.
+Perkataan sebenar ialah **"Sabar ya"**, bukan "Sabarlah", jadi teks hook memaparkan ayat itu tepat seperti disebut.
+Sebutan "sabar, sabar" dalam IMG_3350 tidak digunakan kerana ia gurauan di koridor dan tiada kaitan dengan mangsa.
+
+| Masa | Visual | Teks / audio |
+|---|---|---|
+| 00:00–00:03.8 | IMG_3293 @05.6 s, kelajuan asal: YB di sisi ibu di khemah | Suara asal: "Baik-baik, jumpa lagi." (sari kata) |
+| 00:02.9–00:05.3 | (sambungan) → IMG_3293 @09.4 s slow-mo 60%: YB beredar di celah khemah | ***Sabar ya...*** (tipografi besar emas) + gema lembut pada suara asal, chime |
+| 00:05.3–00:08 | IMG_3358 @09.0 s slow-mo 75%: keluarga & kanak-kanak di PPS | **DI SAAT RAKYAT DIUJI, KEPRIHATINAN TERUS DIBERI.** |
+| 00:08–02:00 | Sama seperti Video 1, dianjak +1.5 s (ucapan penuh YB → montaj doa → tagline) | Tagline pada 01:50.8 / 01:53.2 / 01:55.6 |
+
+EDL: `src/data/edl-sabar.json` · Komposisi Remotion: `LawatanPPS-Sabar` · Render: `npm run prep -- src/data/edl-sabar.json && python3 scripts/generate_audio.py src/data/edl-sabar.json && npm run render:sabar`
+
 ## Prinsip suntingan
 - **Audio utama ialah suara asal YB**, berterusan dan tidak disusun semula. B-roll diselitkan secara J-cut/L-cut di atas ucapan yang sama.
 - **Tiada kata-kata direka.** Sari kata dijana daripada transkripsi Whisper large-v3 dan masa setiap perkataan digunakan.
@@ -75,7 +90,7 @@ cd video-lawatan-pps-parit
 npm install && pip install numpy scipy
 # letak fail asal dalam raw/ : master.mp4 (Video Master) dan IMG_*.MOV (B-roll)
 npm run prep      # klip + audio ucapan
-npm run audio     # muzik + mix
+npm run audio     # muzik + mix (public/audio/mix-<output>.wav)
 npm run render    # -> out/lawatan-pps-sk-tanjung-belanja.mp4
 ```
 Jika Chrome tidak dapat dimuat turun, tetapkan `REMOTION_BROWSER=/path/ke/chrome-headless-shell`.

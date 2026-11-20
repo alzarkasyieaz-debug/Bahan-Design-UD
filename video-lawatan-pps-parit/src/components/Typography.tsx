@@ -1,7 +1,7 @@
 import React from 'react';
 import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
 import { ease } from './Looks';
-import { DOA, KEY_PHRASES, SUB_LINES } from '../data/timeline';
+import { useTimeline } from '../data/timeline';
 
 export const GOLD = '#F2C56B';
 export const GOLD_SOFT = '#FFE3A6';
@@ -21,27 +21,36 @@ const Letters: React.FC<{ text: string; t0: number; t: number; stagger?: number;
   text, t0, t, stagger = 0.035, style,
 }) => (
   <span style={style}>
-    {text.split('').map((ch, i) => {
-      const p = interpolate(t - t0 - i * stagger, [0, 0.55], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease });
-      return (
-        <span
-          key={i}
-          style={{
-            display: 'inline-block',
-            whiteSpace: 'pre',
-            opacity: p,
-            transform: `translateY(${(1 - p) * 26}px)`,
-            filter: `blur(${(1 - p) * 10}px)`,
-          }}
-        >
-          {ch}
+    {(() => {
+      // Kumpulkan huruf mengikut perkataan supaya baris hanya pecah di antara perkataan
+      let idx = 0;
+      return text.split(' ').map((word, wi, arr) => (
+        <span key={wi} style={{ display: 'inline-block', whiteSpace: 'nowrap' }}>
+          {(word + (wi < arr.length - 1 ? ' ' : '')).split('').map((ch) => {
+            const i = idx++;
+            const p = interpolate(t - t0 - i * stagger, [0, 0.55], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease });
+            return (
+              <span
+                key={i}
+                style={{
+                  display: 'inline-block',
+                  whiteSpace: 'pre',
+                  opacity: p,
+                  transform: `translateY(${(1 - p) * 26}px)`,
+                  filter: `blur(${(1 - p) * 10}px)`,
+                }}
+              >
+                {ch}
+              </span>
+            );
+          })}
         </span>
-      );
-    })}
+      ));
+    })()}
   </span>
 );
 
-export const HookTitle: React.FC<{ from: number; to: number; lines: string[]; gold?: boolean }> = ({ from, to, lines, gold }) => {
+export const HookTitle: React.FC<{ from: number; to: number; lines: string[]; gold?: boolean; size?: number; goldLines?: number[] }> = ({ from, to, lines, gold, size = 92, goldLines = [] }) => {
   const t = useT();
   if (t < from - 0.05 || t > to + 0.05) return null;
   const out = interpolate(t, [to - 0.45, to], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
@@ -55,7 +64,7 @@ export const HookTitle: React.FC<{ from: number; to: number; lines: string[]; go
           transform: `scale(${drift})`,
           fontFamily: SERIF,
           fontWeight: 700,
-          fontSize: 92,
+          fontSize: size,
           lineHeight: 1.12,
           letterSpacing: '0.035em',
           color: gold ? GOLD_SOFT : '#fff',
@@ -66,7 +75,7 @@ export const HookTitle: React.FC<{ from: number; to: number; lines: string[]; go
         }}
       >
         {lines.map((l, i) => (
-          <div key={i}>
+          <div key={i} style={goldLines.includes(i) ? { color: GOLD_SOFT, textShadow: '0 0 30px rgba(242,197,107,0.45), 0 3px 10px rgba(0,0,0,0.7)' } : undefined}>
             <Letters text={l} t0={from + i * 0.45} t={t} />
           </div>
         ))}
@@ -146,7 +155,7 @@ export const LocationTag: React.FC<{ from: number; to: number }> = ({ from, to }
 /* ------------------------------------------------------------ Tipografi kata kunci (ucapan sebenar) */
 export const KeyPhrases: React.FC = () => {
   const t = useT();
-  const k = KEY_PHRASES.find((p) => t >= p.from && t <= p.to);
+  const k = useTimeline().keyPhrases.find((p) => t >= p.from && t <= p.to);
   if (!k) return null;
   const a = interpolate(t, [k.from, k.from + 0.6], [0, 1], { extrapolateRight: 'clamp', easing: ease });
   const out = interpolate(t, [k.to - 0.4, k.to], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
@@ -197,6 +206,7 @@ export const KeyPhrases: React.FC = () => {
 /* ------------------------------------------------------------ Petikan doa (montaj) */
 export const DoaQuote: React.FC = () => {
   const t = useT();
+  const DOA = useTimeline().doa;
   if (t < DOA.from || t > DOA.to) return null;
   const a = interpolate(t, [DOA.from, DOA.from + 1.0], [0, 1], { extrapolateRight: 'clamp', easing: ease });
   const b = interpolate(t, [DOA.from + 1.6, DOA.from + 2.6], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease });
@@ -227,8 +237,9 @@ export const DoaQuote: React.FC = () => {
 /* ------------------------------------------------------------ Sari kata animasi */
 export const Subtitles: React.FC<{ hide?: boolean }> = ({ hide }) => {
   const t = useT();
+  const { subLines } = useTimeline();
   if (hide) return null;
-  const line = SUB_LINES.find((l) => t >= l.start - 0.08 && t < l.end);
+  const line = subLines.find((l) => t >= l.start - 0.08 && t < l.end);
   if (!line) return null;
   const a = interpolate(t, [line.start - 0.08, line.start + 0.12], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   const out = interpolate(t, [line.end - 0.12, line.end], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
@@ -263,6 +274,38 @@ export const Subtitles: React.FC<{ hide?: boolean }> = ({ hide }) => {
               </span>
             );
           })}
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/* ------------------------------------------------------------ Hook "Sabar ya" (suara asal YB) */
+export const SabarHook: React.FC<{ from: number; to: number }> = ({ from, to }) => {
+  const t = useT();
+  if (t < from - 0.05 || t > to + 0.05) return null;
+  const a = interpolate(t, [from, from + 0.7], [0, 1], { extrapolateRight: 'clamp', easing: ease });
+  const b = interpolate(t, [from + 0.35, from + 1.05], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease });
+  const out = interpolate(t, [to - 0.5, to], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const push = interpolate(t, [from, to], [1, 1.07]);
+  const glow = 0.35 + 0.15 * Math.sin((t - from) * 2.2);
+  const big: React.CSSProperties = {
+    fontFamily: SERIF, fontStyle: 'italic', fontWeight: 500, fontSize: 210, lineHeight: 0.95, color: GOLD_SOFT,
+    textShadow: `0 0 50px rgba(242,197,107,${glow}), 0 6px 18px rgba(0,0,0,0.75)`,
+  };
+  return (
+    <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', opacity: out }}>
+      <AbsoluteFill style={{ background: 'radial-gradient(ellipse 80% 30% at 50% 44%, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 100%)', opacity: a }} />
+      <div style={{ textAlign: 'center', transform: `scale(${push})`, marginTop: -120 }}>
+        <div style={{ ...big, opacity: a, transform: `translateY(${(1 - a) * 40}px)`, filter: `blur(${(1 - a) * 14}px)`, letterSpacing: `${0.06 - 0.06 * a}em` }}>
+          Sabar
+        </div>
+        <div style={{ ...big, fontSize: 170, opacity: b, transform: `translateY(${(1 - b) * 40}px)`, filter: `blur(${(1 - b) * 14}px)` }}>
+          ya...
+        </div>
+        <div style={{ margin: '38px auto 0', height: 3, width: 300 * b, background: `linear-gradient(90deg, transparent, ${GOLD}, transparent)` }} />
+        <div style={{ marginTop: 22, fontFamily: SANS, fontWeight: 600, fontSize: 28, letterSpacing: '0.3em', color: '#fff', opacity: b * 0.85, textShadow: SHADOW }}>
+          — YB USTAZ MUHAMMAD ISMI —
         </div>
       </div>
     </AbsoluteFill>
