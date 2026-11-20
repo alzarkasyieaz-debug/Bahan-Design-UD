@@ -1,0 +1,32 @@
+{
+  "fps": 30,
+  "duration": 120,
+  "speechOffset": 5.6,
+  "speechIn": 0.9,
+  "speechOut": 101.95,
+  "_nota": "Masa dalam saat. start/end = kedudukan dalam video akhir. srcIn = titik mula dalam fail asal. speed < 1 = slow motion. handle = ekor tambahan (saat output) untuk cross-dissolve. Klip 'master' sentiasa selari dengan audio ucapan (src = masa output - speechOffset).",
+  "clips": [
+    { "id": "A1", "src": "IMG_3358.MOV", "srcIn": 9.0,  "speed": 0.75, "start": 0.0,   "end": 3.5,   "fx": "hook",   "note": "Suasana PPS: keluarga & kanak-kanak di kantin, petugas berjaket oren" },
+    { "id": "A2", "src": "IMG_3293.MOV", "srcIn": 0.3,  "speed": 0.75, "start": 3.5,   "end": 6.5,   "fx": "hook",   "note": "Khemah mangsa banjir di dewan, ibu duduk di tepi barang" },
+    { "id": "B1", "src": "master",       "start": 6.5,   "end": 11.0,  "zoom": [1.0, 1.06], "note": "Salam pembuka YB + lower third" },
+    { "id": "B2", "src": "IMG_3392.MOV", "srcIn": 0.0,  "speed": 1.0,  "start": 11.0,  "end": 13.0,  "stab": true, "note": "YB bersalaman, berjalan di laluan berbendera (teks lokasi)" },
+    { "id": "C1", "src": "IMG_3293.MOV", "srcIn": 3.0,  "speed": 1.0,  "start": 13.0,  "end": 19.5,  "note": "YB berbual dengan keluarga di khemah PPS" },
+    { "id": "C2", "src": "IMG_3369.MOV", "srcIn": 9.0,  "speed": 1.0,  "start": 19.5,  "end": 22.0,  "note": "YB bersama petugas & kanak-kanak di meja" },
+    { "id": "D1", "src": "master",       "start": 22.0,  "end": 25.4,  "zoom": [1.02, 1.08] },
+    { "id": "D2", "src": "IMG_3388.MOV", "srcIn": 2.0,  "speed": 1.0,  "start": 25.4,  "end": 29.6,  "note": "YB berbincang dengan petugas/AJK PPS (ikut arahan pihak berkuasa)" },
+    { "id": "D3", "src": "master",       "start": 29.6,  "end": 36.5,  "zoom": [1.12, 1.22], "note": "Close-up: jaga kesihatan dan keselamatan" },
+    { "id": "E1", "src": "IMG_3356.MOV", "srcIn": 0.0,  "speed": 1.0,  "start": 36.5,  "end": 42.0,  "note": "YB duduk semeja dengan mangsa, makanan & minuman di meja" },
+    { "id": "E2", "src": "IMG_3357.MOV", "srcIn": 0.0,  "speed": 1.0,  "start": 42.0,  "end": 45.5,  "note": "YB duduk mendengar di ruang makan PPS" },
+    { "id": "F",  "src": "master",       "start": 45.5,  "end": 58.5,  "zoom": [1.0, 1.1], "punch": [52.0, 1.28], "note": "Elakkan meranduk air (punch-in pada 'lubang')" },
+    { "id": "G1", "src": "IMG_3311.MOV", "srcIn": 0.0,  "speed": 1.0,  "start": 58.5,  "end": 63.7,  "note": "YB menyampaikan beg bantuan" },
+    { "id": "G2", "src": "IMG_3347.MOV", "srcIn": 10.7, "speed": 1.0,  "start": 63.7,  "end": 72.0,  "note": "YB melayan warga emas, mesra & tersenyum" },
+    { "id": "H1", "src": "master",       "start": 72.0,  "end": 79.0,  "zoom": [1.05, 1.14] },
+    { "id": "H2", "src": "IMG_3369.MOV", "srcIn": 29.0, "speed": 1.0,  "start": 79.0,  "end": 85.5,  "note": "YB mendengar masalah penduduk" },
+    { "id": "I",  "src": "master",       "start": 85.5,  "end": 97.5,  "zoom": [1.1, 1.3], "note": "Berjaga-jagalah - zoom perlahan ke wajah" },
+    { "id": "J1", "src": "IMG_3293.MOV", "srcIn": 9.0,  "speed": 0.8,  "start": 97.5,  "end": 100.5, "fx": "soft", "note": "Montaj: keluarga di khemah (slow-mo)" },
+    { "id": "J2", "src": "IMG_3392.MOV", "srcIn": 0.0,  "speed": 0.8,  "start": 100.5, "end": 103.5, "fx": "soft", "stab": true, "note": "Montaj: salam mesra (slow-mo)" },
+    { "id": "J3", "src": "IMG_3369.MOV", "srcIn": 14.0, "speed": 0.8,  "start": 103.5, "end": 107.0, "fx": "soft", "note": "Montaj: YB, petugas & kanak-kanak (slow-mo)" },
+    { "id": "K",  "src": "master",       "start": 107.0, "end": 108.4, "zoom": [1.0, 1.0], "note": "Terima kasih" },
+    { "id": "L",  "src": "IMG_3294.MOV", "srcIn": 6.6,  "speed": 0.5,  "start": 108.4, "end": 120.0, "fx": "soft", "stab": true, "last": true, "note": "Penutup: YB terus melangkah di koridor sekolah (slow-mo)" }
+  ]
+}

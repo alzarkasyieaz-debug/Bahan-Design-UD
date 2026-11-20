@@ -1,0 +1,11 @@
+node_modules/
+out/*.png
+.DS_Store
+raw/
+out/tmp/
+out/*.log
+public/clips/
+out/*.jpg
+public/audio/ucapan.wav
+public/audio/mix.wav
+public/audio/ambien.wav
