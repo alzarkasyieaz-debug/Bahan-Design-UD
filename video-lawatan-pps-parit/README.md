@@ -22,6 +22,26 @@ Sebutan "sabar, sabar" dalam IMG_3350 tidak digunakan kerana ia gurauan di korid
 
 EDL: `src/data/edl-sabar.json` · Komposisi Remotion: `LawatanPPS-Sabar` · Render: `npm run prep -- src/data/edl-sabar.json && python3 scripts/generate_audio.py src/data/edl-sabar.json && npm run render:sabar`
 
+## Video 3 — Versi ringkas, suara latar + B-roll (`out/lawatan-pps-ringkas.mp4`, 75 s)
+Hook "Sabar ya" dikekalkan. Ucapan YB dipendekkan kepada **4 petikan paling penting dan menyentuh** (~34 s), digunakan sebagai
+**suara latar** di atas B-roll. Wajah YB hanya muncul seketika (pengenalan, "jaga kesihatan", lafaz doa).
+Selebihnya ialah B-roll slow-mo dengan muzik yang dinaikkan sebagai ruang emosi.
+Petikan diambil tepat seperti disebut, ikut susunan asal, tanpa sebarang perkataan diubah.
+
+| Masa | Suara (Video Master in–out) | Visual |
+|---|---|---|
+| 00:00–00:08 | Hook: "Baik-baik, jumpa lagi. Sabar ya." (audio asal B-roll) | IMG_3293 khemah → slow-mo → IMG_3358 |
+| 00:08.3–00:21.8 | 00:02.9–00:16.3 "Saya berada di PPS SK Tanjung Belanja, Parit, bersama-sama dengan mangsa banjir. Ada 35 keluarga, lebih kurang 68 orang di sini." | YB (lower third) → salam → YB bersama keluarga di khemah → petugas & kanak-kanak |
+| 00:22.3–00:26.8 | *(muzik)* | IMG_3356 slow-mo: YB duduk semeja dengan mangsa |
+| 00:27.0–00:29.8 | 00:28.1–00:30.9 "Jaga kesihatan dan keselamatan masing-masing" | YB close-up |
+| 00:30.6–00:38.8 | 01:11.3–01:19.5 "Supaya kita sentiasa berada dalam keadaan selamat, sama ada sebelum ataupun selepas banjir" | Penyerahan beg bantuan → YB melayan warga emas |
+| 00:40.5–00:46.6 | *(muzik)* | Montaj slow-mo: keluarga di khemah, kanak-kanak |
+| 00:46.8–00:56.3 | 01:32.0–01:41.4 "Sama-samalah kita berdoa kepada Allah Ta'ala, mudah-mudahan kita diselamatkan dan dielakkan daripada berlakunya banjir pada masa-masa yang akan datang" | YB close-up → salam (slow-mo) → laluan berbendera (slow-mo) + petikan doa |
+| 00:56.8–01:15 | *(muzik naik, uplifting)* | YB mendengar penduduk (slow-mo) → YB melangkah di koridor → tagline 3D *Parit Sejahtera Makmur Bersama* |
+
+EDL: `src/data/edl-ringkas.json` · Komposisi: `LawatanPPS-Ringkas` ·
+Render: `python3 scripts/prep_clips.py src/data/edl-ringkas.json && python3 scripts/generate_audio.py src/data/edl-ringkas.json && npm run render:ringkas`
+
 ## Prinsip suntingan
 - **Audio utama ialah suara asal YB**, berterusan dan tidak disusun semula. B-roll diselitkan secara J-cut/L-cut di atas ucapan yang sama.
 - **Tiada kata-kata direka.** Sari kata dijana daripada transkripsi Whisper large-v3 dan masa setiap perkataan digunakan.
