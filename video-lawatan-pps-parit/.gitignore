@@ -11,3 +11,4 @@ public/audio/mix.wav
 public/audio/ambien.wav
 public/audio/mix-*.wav
 public/audio/hook-*.wav
+__pycache__/
