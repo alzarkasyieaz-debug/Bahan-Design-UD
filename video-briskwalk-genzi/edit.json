@@ -1,0 +1,244 @@
+{
+  "duration": 60.0,
+  "fps": 30,
+  "_nota": "Semua 'src' merujuk fail dalam folder bahan Google Drive (nama fail = ID Drive). in/out = saat dalam klip sumber. speed < 1 = slow motion. xfade = tempoh peralihan ke syot seterusnya (0 = potongan terus). amb = paras bunyi suasana asal (0..1).",
+  "shots": [
+    {
+      "id": "S01",
+      "src": "1vRLqqYHfFewFnDByVzNh3tH51Za5nah-.mp4",
+      "in": 21.8,
+      "dur": 2.6,
+      "speed": 0.85,
+      "amb": 0.55,
+      "push": 1.08,
+      "note": "HOOK: peserta meluru melepasi garisan mula sejurus flag off"
+    },
+    {
+      "id": "S02",
+      "src": "1GxQPun7hkjGjvfWKE0QsRVByhpShby2g.mp4",
+      "in": 0.0,
+      "dur": 2.6,
+      "speed": 1.0,
+      "amb": 0.5,
+      "note": "Close: barisan hadapan berjalan di bawah gerbang START"
+    },
+    {
+      "id": "S03",
+      "src": "1CFFO05xDPyQrd10i4MsEdpei5TxNCv6I.mp4",
+      "in": 0.5,
+      "dur": 4.0,
+      "speed": 1.0,
+      "amb": 0.35,
+      "xfade_in": 0.4,
+      "note": "Wide: ratusan peserta di garisan mula (tajuk program)"
+    },
+    {
+      "id": "S04",
+      "src": "1vRLqqYHfFewFnDByVzNh3tH51Za5nah-.mp4",
+      "in": 3.0,
+      "dur": 3.6,
+      "speed": 1.0,
+      "amb": 0.4,
+      "note": "Pentas flag off, bendera dikibar (lower third YB)"
+    },
+    {
+      "id": "S05",
+      "src": "13YdcTrbmKBVD4LBAwt9ZqRkmU7Caus05.mp4",
+      "in": 1.0,
+      "dur": 3.0,
+      "speed": 1.0,
+      "amb": 0.4,
+      "note": "Kenamaan beramah mesra bersama peserta sebelum acara"
+    },
+    {
+      "id": "S06",
+      "src": "1Rxg9wrbgrGACM6im8Z6kaoCMVPpnld0g.mp4",
+      "in": 0.3,
+      "dur": 6.2,
+      "speed": 1.0,
+      "amb": 1.0,
+      "note": "Senaman memanaskan badan — kiraan 1,2,3,4 (bunyi asal ditonjolkan)"
+    },
+    {
+      "id": "S07",
+      "src": "1ErVC0O07Ca3OplXcgckW1ue1Mb38MQv5.mp4",
+      "in": 0.5,
+      "dur": 3.2,
+      "speed": 1.0,
+      "amb": 0.4,
+      "note": "Barisan kenamaan di rostrum menghadap peserta (perasmian)"
+    },
+    {
+      "id": "S08",
+      "src": "1vRLqqYHfFewFnDByVzNh3tH51Za5nah-.mp4",
+      "in": 17.2,
+      "dur": 4.2,
+      "speed": 1.0,
+      "amb": 0.8,
+      "note": "FLAG OFF: bendera dikibar, sorakan"
+    },
+    {
+      "id": "S09",
+      "src": "1GxQPun7hkjGjvfWKE0QsRVByhpShby2g.mp4",
+      "in": 3.5,
+      "dur": 4.0,
+      "speed": 0.8,
+      "amb": 0.0,
+      "note": "Slow-mo: kenamaan berjalan seiring peserta"
+    },
+    {
+      "id": "S10",
+      "src": "1vRLqqYHfFewFnDByVzNh3tH51Za5nah-.mp4",
+      "in": 26.0,
+      "dur": 3.0,
+      "speed": 1.0,
+      "amb": 0.5,
+      "note": "Peserta melambai ke kamera, suasana meriah"
+    },
+    {
+      "id": "S11",
+      "src": "1vRLqqYHfFewFnDByVzNh3tH51Za5nah-.mp4",
+      "in": 40.0,
+      "dur": 3.6,
+      "speed": 1.0,
+      "amb": 0.4,
+      "note": "Lautan peserta menyusuri laluan"
+    },
+    {
+      "id": "S12",
+      "photo": "1Sq2fHefoTrA8b9m2gM0a7l1HhehFh4rT.jpg",
+      "dur": 4.8,
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "fx": [
+        0.5,
+        0.48
+      ],
+      "fy": [
+        0.45,
+        0.42
+      ],
+      "xfade_in": 0.5,
+      "note": "Penyampaian hadiah di pentas (cabutan bertuah)"
+    },
+    {
+      "id": "S13",
+      "src": "1vRLqqYHfFewFnDByVzNh3tH51Za5nah-.mp4",
+      "in": 56.0,
+      "dur": 3.8,
+      "speed": 0.8,
+      "amb": 0.0,
+      "xfade_in": 0.5,
+      "note": "Slow-mo: peserta kembali ke gerbang"
+    },
+    {
+      "id": "S14",
+      "photo": "1dhBI2MCmvnoVs0q--78CYHa6iFxlFaZL.jpg",
+      "dur": 4.8,
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "fx": [
+        0.5,
+        0.5
+      ],
+      "fy": [
+        0.5,
+        0.52
+      ],
+      "xfade_in": 0.5,
+      "note": "Gambar kumpulan di gerbang START/FINISH (mesej penutup)"
+    },
+    {
+      "id": "S15",
+      "photo": "1MRSmBjZBD8XlCaU9j_vySQ_8xWzUaYwI.jpg",
+      "dur": 6.6,
+      "zoom": [
+        1.04,
+        1.16
+      ],
+      "fx": [
+        0.5,
+        0.5
+      ],
+      "fy": [
+        0.5,
+        0.5
+      ],
+      "dim": 0.55,
+      "xfade_in": 0.6,
+      "note": "Kad penutup atas gambar kumpulan (digelapkan)"
+    }
+  ],
+  "text": {
+    "hook": [
+      "PAGI INI,",
+      "PARIT",
+      "MELANGKAH",
+      "BERSAMA!"
+    ],
+    "hook_t": [
+      0.25,
+      5.0
+    ],
+    "title_t": [
+      5.4,
+      9.15
+    ],
+    "date": "Sabtu, 21 November 2026",
+    "location": "Masjid As-Siddiq, Seri Iskandar",
+    "name": "YB Ustaz Muhammad Ismi Mat Taib",
+    "role": "Ahli Parlimen Parit",
+    "lt_t": [
+      9.4,
+      12.7
+    ],
+    "points": [
+      {
+        "a": "Merasmikan",
+        "b": "Briskwalk GenZI 2026",
+        "t0": 22.25,
+        "t1": 25.1
+      },
+      {
+        "a": "Flag Off",
+        "b": "Melepaskan ratusan peserta",
+        "t0": 25.6,
+        "t1": 29.3
+      },
+      {
+        "a": "Tajaan Hadiah",
+        "b": "Cabutan bertuah untuk peserta",
+        "t0": 40.3,
+        "t1": 44.7
+      }
+    ],
+    "subs": [],
+    "message": [
+      "Setiap langkah,",
+      "untuk komuniti",
+      "yang lebih sihat."
+    ],
+    "message_t": [
+      49.0,
+      53.3
+    ],
+    "end_t": 53.9
+  },
+  "duck": [
+    [
+      15.8,
+      22.0,
+      0.45
+    ],
+    [
+      25.2,
+      29.4,
+      0.6
+    ]
+  ],
+  "output": "briskwalk-genzi-yb-parit.mp4"
+}
