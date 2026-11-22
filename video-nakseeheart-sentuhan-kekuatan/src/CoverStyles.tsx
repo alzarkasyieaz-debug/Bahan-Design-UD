@@ -16,7 +16,7 @@ import { LineIcon, IconName } from './components/InfoFX';
  * Media: public/media/cover-frame.jpg (bergred) + cover-cutout.png (rembg u2net_human_seg)
  * ===================================================================== */
 type Poster = { top: string; mid: string; last: string; banner: string; num: string; numLabel: string; headTop?: number; chinY?: number; faceX?: number };
-type Fx = { kicker?: string; hl?: string; sticker?: string; quote?: string; speaker?: string; items?: { icon: IconName; text: string }[] };
+type Fx = { kicker?: string; hl?: string; sticker?: string; quote?: string; speaker?: string; popOut?: number; items?: { icon: IconName; text: string }[] };
 const P = (SB as unknown as { poster: Poster }).poster;
 const FX: Fx = (SB as unknown as { coverFx?: Fx }).coverFx ?? {};
 const HEAD = P.headTop ?? 600, CHIN = P.chinY ?? 1300, FACEX = P.faceX ?? 540;
@@ -97,7 +97,9 @@ export const CoverPanel: React.FC = () => {
   // skala supaya kepala KELUAR daripada bingkai (pop-out); hanya jalur ±270px di sekitar kepala (elak artifak kerusi/latar)
   const s = Math.min(1.3, 660 / (CHIN - HEAD));
   const px = 450 - FACEX * s;            // kedudukan imej dalam koordinat kad
-  const py = -175 - HEAD * s;
+  // popOut: berapa px atas kepala keluar dari tepi atas kad (lalai 85; laras melalui coverFx.popOut)
+  const pop = (FX as { popOut?: number }).popOut ?? 85;
+  const py = -pop - HEAD * s;
   const items = FX.items ?? [];
   const hl = FX.hl ?? P.mid.split(' ').slice(-1)[0].replace('?', '');
   const mid = P.mid.replace('?', '');
