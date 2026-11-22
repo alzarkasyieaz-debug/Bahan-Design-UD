@@ -238,7 +238,7 @@
   }
  ],
  "cover": {
-  "frame": 25.0,
+  "frame": 38.0,
   "kicker": "BILA RASA LEMAH",
   "big": "SENTUHAN",
   "line2": "IBU AYAH & PASANGAN",
@@ -248,15 +248,33 @@
  },
  "poster": {
   "icon": "heart",
-  "top": "RASA DOWN?",
-  "mid": "CARI MEREKA",
+  "top": "BILA RASA DOWN",
+  "mid": "SIAPA PENGUAT KITA",
   "last": "PELUKAN YANG MENGUATKAN",
   "banner": "Ibu ayah & pasangan!",
   "num": "2",
   "numLabel": "Sumber Kekuatan",
-  "frame": 25.0,
+  "frame": 38.0,
   "headTop": 600,
-  "chinY": 1500,
-  "faceX": 560
+  "chinY": 1560,
+  "faceX": 615
+ },
+ "coverFx": {
+  "hl": "PENGUAT",
+  "sticker": "SHARING\nMOMENT",
+  "items": [
+   {
+    "icon": "family",
+    "text": "Pelukan ibu & ayah"
+   },
+   {
+    "icon": "heart",
+    "text": "Sentuhan pasangan"
+   },
+   {
+    "icon": "smile",
+    "text": "Rasa tenang & selamat"
+   }
+  ]
  }
 }

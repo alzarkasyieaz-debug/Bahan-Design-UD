@@ -94,7 +94,7 @@ const STAR_TILE = `url("data:image/svg+xml;utf8,${encodeURIComponent(
 type ScriptChunk = [string, number, number, string];
 export const CoverPanel: React.FC = () => {
   const card = { left: 90, top: 230, w: 900, h: 960, rot: -3 };
-  // skala supaya kepala KELUAR daripada bingkai (pop-out): atas kepala ~90px di atas tepi kad
+  // skala supaya kepala KELUAR daripada bingkai (pop-out); hanya jalur ±270px di sekitar kepala (elak artifak kerusi/latar)
   const s = Math.min(1.3, 660 / (CHIN - HEAD));
   const px = 450 - FACEX * s;            // kedudukan imej dalam koordinat kad
   const py = -175 - HEAD * s;
@@ -140,8 +140,9 @@ export const CoverPanel: React.FC = () => {
           <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 260, background: 'linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.6))' }} />
         </div>
         {/* bahagian figura yang KELUAR dari bingkai (atas tepi kad) */}
-        <div style={{ position: 'absolute', left: -60, top: -400, width: card.w + 120, height: 400 + 70, overflow: 'hidden' }}>
-          <Img src={staticFile('media/cover-cutout.png')} style={{ ...imgStyle, left: px + 60, top: py + 400,
+        <div style={{ position: 'absolute', left: 450 - 270, top: -400, width: 540, height: 400 + 70, overflow: 'hidden',
+          maskImage: 'linear-gradient(90deg, transparent 0%, black 14%, black 86%, transparent 100%)', WebkitMaskImage: 'linear-gradient(90deg, transparent 0%, black 14%, black 86%, transparent 100%)' }}>
+          <Img src={staticFile('media/cover-cutout.png')} style={{ ...imgStyle, left: px - (450 - 270), top: py + 400,
             filter: 'drop-shadow(0 0 4px #FFE2A3) drop-shadow(0 0 34px rgba(255,214,140,0.95)) drop-shadow(0 18px 24px rgba(0,0,0,0.5))' }} />
         </div>
         {speaker && (
