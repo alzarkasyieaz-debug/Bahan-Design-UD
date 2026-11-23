@@ -5,6 +5,7 @@ import { NakSeeHeartVideo } from './Video';
 import { Cover } from './Cover';
 import { CoverPoster } from './CoverPoster';
 import { CoverImpak, CoverPanel, CoverInfo } from './CoverStyles';
+import { Showcase, KineticFinal } from './Showcase';
 import { FPS, TOTAL_FRAMES, W, H, SB } from './lib';
 
 // Fon tempatan (SIL Open Font License) — tiada muat turun semasa render
@@ -27,6 +28,9 @@ export const RemotionRoot: React.FC = () => (
     {/* Cover gaya poster: bash scripts/cover.sh poster */}
     <Composition id="CoverPoster" component={CoverPoster} durationInFrames={1} fps={FPS} width={W} height={H} />
     {/* Cover v3 (3 gaya alternatif): bash scripts/cover.sh impak|panel|info */}
+    {/* Showcase FINAL/RAW + suntingan kinetic typography */}
+    <Composition id="Showcase" component={Showcase} durationInFrames={TOTAL_FRAMES} fps={FPS} width={W} height={H} />
+    <Composition id="KineticFinal" component={KineticFinal} durationInFrames={TOTAL_FRAMES} fps={FPS} width={1080} height={1080} />
     <Composition id="CoverImpak" component={CoverImpak} durationInFrames={1} fps={FPS} width={W} height={H} />
     <Composition id="CoverPanel" component={CoverPanel} durationInFrames={1} fps={FPS} width={W} height={H} />
     <Composition id="CoverInfo" component={CoverInfo} durationInFrames={1} fps={FPS} width={W} height={H} />
