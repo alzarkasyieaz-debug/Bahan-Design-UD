@@ -17,7 +17,7 @@ import { LineIcon, IconName } from './components/InfoFX';
 const SQ = 1080;
 const FACE = { x: 540, y: 1050 };
 const GOLD = 'linear-gradient(180deg, #FFF6D8 0%, #FFE08A 35%, #F2B33D 70%, #C98A1E 100%)';
-const BG = 'radial-gradient(circle at 50% 42%, #1F4A3D 0%, #0F2A22 45%, #070D0B 100%)';
+const BG = 'radial-gradient(circle at 50% 42%, #1E6E72 0%, #0E3F45 45%, #061A1D 100%)';
 
 const win = (t: number, a: number, b: number, fi = 0.25, fo = 0.25) =>
   Math.min(tw(t, [a, a + fi], [0, 1], easeOut), tw(t, [b - fo, b], [1, 0], ease));
@@ -74,8 +74,8 @@ const S: Scene[] = [
 
 const Card: React.FC<{ o: number; children: React.ReactNode }> = ({ o, children }) => (
   <AbsoluteFill style={{ opacity: o, background: BG }}>
-    <AbsoluteFill style={{ backgroundImage: 'linear-gradient(rgba(216,180,106,0.07) 2px, transparent 2px), linear-gradient(90deg, rgba(216,180,106,0.07) 2px, transparent 2px)', backgroundSize: '90px 90px' }} />
-    <AbsoluteFill style={{ background: 'radial-gradient(circle at 50% 45%, rgba(216,180,106,0.28), rgba(0,0,0,0) 55%)' }} />
+    <AbsoluteFill style={{ backgroundImage: 'linear-gradient(rgba(120,255,235,0.07) 2px, transparent 2px), linear-gradient(90deg, rgba(120,255,235,0.07) 2px, transparent 2px)', backgroundSize: '90px 90px' }} />
+    <AbsoluteFill style={{ background: 'radial-gradient(circle at 50% 45%, rgba(64,224,208,0.30), rgba(0,0,0,0) 55%)' }} />
     {children}
   </AbsoluteFill>
 );
@@ -100,7 +100,7 @@ const SceneView: React.FC<{ s: Scene }> = ({ s }) => {
       const x = s.right ? 1000 : 80;
       return (
         <AbsoluteFill style={{ opacity: o }}>
-          <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(7,13,11,0.88) 0%, rgba(7,13,11,0.55) 22%, rgba(0,0,0,0) 40%)' }} />
+          <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(6,26,29,0.88) 0%, rgba(6,26,29,0.55) 22%, rgba(0,0,0,0) 40%)' }} />
           <div style={{ position: 'absolute', top: 40, ...(s.right ? { right: 1080 - x } : { left: x }), display: 'flex', flexDirection: 'column', alignItems: s.right ? 'flex-end' : 'flex-start', gap: 6 }}>
             {s.small && <Small text={s.small} t={t} a={s.a} size={34} />}
             <Big text={s.big} size={s.big.length > 11 ? 100 : 130} t={t} a={s.a + 0.1} style={{ transformOrigin: s.right ? 'right center' : 'left center' }} />
@@ -169,7 +169,7 @@ const SceneView: React.FC<{ s: Scene }> = ({ s }) => {
             <Img src={staticFile('media/silhouette.png')} style={{ position: 'absolute', left: 360, top: -200, width: 600, height: 1067 }} />
             <div style={{ position: 'absolute', left: 50, top: 120, display: 'flex', flexDirection: 'column', gap: 0 }}>
               {s.lines.map((l, i) => (
-                <div key={i} style={{ fontFamily: FONT.display, fontSize: i === 1 ? (l.length > 8 ? 104 : 140) : 96, lineHeight: 0.95, color: i === 1 ? '#14604E' : C.charcoal,
+                <div key={i} style={{ fontFamily: FONT.display, fontSize: i === 1 ? (l.length > 8 ? 104 : 140) : 96, lineHeight: 0.95, color: i === 1 ? '#0F8C86' : C.charcoal,
                   opacity: tw(t, [s.a + 0.2 + i * 0.18, s.a + 0.45 + i * 0.18], [0, 1]), transform: `translateX(${tw(t, [s.a + 0.2 + i * 0.18, s.a + 0.6 + i * 0.18], [-40, 0], easeOut)}px)` }}>{l}</div>
               ))}
             </div>
@@ -259,7 +259,7 @@ export const KineticFinal: React.FC = () => {
   const s = (idx % 2 === 0 ? 1.0 : 1.12) + tw(t, [0, 106], [0, 0.04]);
   const ty = SQ / 2 - FACE.y * s, tx = SQ / 2 - FACE.x * s;
   return (
-    <AbsoluteFill style={{ background: '#070D0B', overflow: 'hidden' }}>
+    <AbsoluteFill style={{ background: '#061A1D', overflow: 'hidden' }}>
       <div style={{ position: 'absolute', left: tx, top: ty, width: 1080 * s, height: 1920 * s }}>
         <Clips src="media/speaker.mp4" style={{ filter: 'contrast(1.06) saturate(1.02)' }} />
       </div>
@@ -278,15 +278,15 @@ export const Showcase: React.FC = () => {
   const FW = 960;
   const RW = 560;
   return (
-    <AbsoluteFill style={{ overflow: 'hidden', background: 'linear-gradient(180deg, #E2C46E 0%, #B89A45 22%, #6F6A33 48%, #263A2B 75%, #0E1A14 100%)' }}>
-      <AbsoluteFill style={{ background: 'radial-gradient(ellipse 80% 30% at 50% 0%, rgba(255,240,190,0.65), rgba(0,0,0,0) 70%)' }} />
+    <AbsoluteFill style={{ overflow: 'hidden', background: 'linear-gradient(180deg, #7FF0E2 0%, #33C9BD 22%, #14908C 48%, #0B5357 75%, #062A2E 100%)' }}>
+      <AbsoluteFill style={{ background: 'radial-gradient(ellipse 80% 30% at 50% 0%, rgba(230,255,250,0.7), rgba(0,0,0,0) 70%)' }} />
       {/* logo + nama */}
-      <div style={{ position: 'absolute', left: 540 - 68, top: 42, width: 136, height: 136, borderRadius: '50%', background: 'radial-gradient(circle at 40% 35%, #2F8A72, #0F3F34 75%)',
+      <div style={{ position: 'absolute', left: 540 - 68, top: 42, width: 136, height: 136, borderRadius: '50%', background: 'radial-gradient(circle at 40% 35%, #2FC4B8, #0B5357 75%)',
         border: `5px solid ${C.goldLight}`, boxShadow: '0 10px 30px rgba(0,0,0,0.45), 0 0 30px rgba(255,226,163,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <HeartMark size={86} t={t} />
       </div>
-      <div style={{ position: 'absolute', left: 0, right: 0, top: 190, textAlign: 'center', fontFamily: FONT.sans, fontWeight: 900, fontSize: 40, letterSpacing: '0.08em', color: '#FFF3C9', textShadow: '0 3px 12px rgba(0,0,0,0.45)' }}>
-        NAKSEE<span style={{ color: '#1C5C4C' }}>HEART</span>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 190, textAlign: 'center', fontFamily: FONT.sans, fontWeight: 900, fontSize: 40, letterSpacing: '0.08em', color: '#FFFFFF', textShadow: '0 3px 12px rgba(0,0,0,0.45)' }}>
+        NAKSEE<span style={{ color: '#FFE08A' }}>HEART</span>
       </div>
       {/* RAW (di bawah, bertindih sedikit) */}
       <div style={{ position: 'absolute', left: 540 - RW / 2, top: 1190, width: RW, height: RW, borderRadius: 22, overflow: 'hidden', border: '3px solid rgba(255,255,255,0.55)', boxShadow: '0 20px 40px rgba(0,0,0,0.5)' }}>
@@ -304,11 +304,11 @@ export const Showcase: React.FC = () => {
       <div style={{ position: 'absolute', left: 30, top: 222, padding: '6px 18px', borderRadius: 8, background: '#fff', fontFamily: FONT.sans, fontWeight: 900, fontSize: 30, color: C.charcoal, boxShadow: '0 6px 16px rgba(0,0,0,0.4)' }}>FINAL</div>
       {/* label neon */}
       <div style={{ position: 'absolute', left: 0, right: 0, top: 1820, display: 'flex', justifyContent: 'center' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 18, fontFamily: FONT.sans, fontWeight: 700, fontSize: 54, letterSpacing: '0.06em', color: '#FFF6D0',
-          textShadow: `0 0 ${12 + 6 * Math.sin(t * 3)}px rgba(255,226,163,0.95), 0 0 34px rgba(216,180,106,0.8)` }}>
-          <span style={{ width: 6, height: 70, background: '#FFE9A8', boxShadow: '0 0 16px rgba(255,226,163,1)' }} />
+        <div style={{ display: 'flex', alignItems: 'center', gap: 18, fontFamily: FONT.sans, fontWeight: 700, fontSize: 54, letterSpacing: '0.06em', color: '#E9FFFB',
+          textShadow: `0 0 ${12 + 6 * Math.sin(t * 3)}px rgba(120,255,235,0.95), 0 0 34px rgba(64,224,208,0.85)` }}>
+          <span style={{ width: 6, height: 70, background: '#BFFFF5', boxShadow: '0 0 16px rgba(120,255,235,1)' }} />
           SHARING MOMENT
-          <span style={{ width: 6, height: 70, background: '#FFE9A8', boxShadow: '0 0 16px rgba(255,226,163,1)' }} />
+          <span style={{ width: 6, height: 70, background: '#BFFFF5', boxShadow: '0 0 16px rgba(120,255,235,1)' }} />
         </div>
       </div>
       <Audio src={staticFile('audio/mix.wav')} />
