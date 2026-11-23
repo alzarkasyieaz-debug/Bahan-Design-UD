@@ -175,7 +175,7 @@ export const CoverPanel: React.FC = () => {
             <span style={{ position: 'absolute', left: -8, right: -8, bottom: 6, height: '42%', background: C.gold, borderRadius: 8, transform: 'skewX(-10deg)' }} />
             <span style={{ position: 'relative', color: '#8E1D13' }}>{hl}</span>
           </span>
-          {post}?
+          {post}{P.mid.trim().endsWith('!') ? '' : '?'}
         </div>
         {quote ? (
           <div style={{ marginTop: 18, position: 'relative', padding: '18px 26px 18px 86px', borderRadius: 20, background: '#fff', borderLeft: `8px solid ${C.gold}`, boxShadow: '0 8px 24px rgba(23,25,29,0.12)' }}>

@@ -4,6 +4,7 @@ import { loadFont } from '@remotion/fonts';
 import { NakSeeHeartVideo } from './Video';
 import { Cover } from './Cover';
 import { CoverPoster } from './CoverPoster';
+import { CoverImpak, CoverPanel, CoverInfo } from './CoverStyles';
 import { FPS, TOTAL_FRAMES, W, H, SB } from './lib';
 
 // Fon tempatan (SIL Open Font License) — tiada muat turun semasa render
@@ -25,5 +26,9 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Cover" component={Cover} durationInFrames={1} fps={FPS} width={W} height={H} />
     {/* Cover gaya poster: bash scripts/cover.sh poster */}
     <Composition id="CoverPoster" component={CoverPoster} durationInFrames={1} fps={FPS} width={W} height={H} />
+    {/* Cover v3 (3 gaya alternatif): bash scripts/cover.sh impak|panel|info */}
+    <Composition id="CoverImpak" component={CoverImpak} durationInFrames={1} fps={FPS} width={W} height={H} />
+    <Composition id="CoverPanel" component={CoverPanel} durationInFrames={1} fps={FPS} width={W} height={H} />
+    <Composition id="CoverInfo" component={CoverInfo} durationInFrames={1} fps={FPS} width={W} height={H} />
   </>
 );
