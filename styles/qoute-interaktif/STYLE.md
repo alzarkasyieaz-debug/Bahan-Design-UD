@@ -167,6 +167,14 @@ Komponen cover tidak lagi menggunakan penapis CSS sendiri, jadi semua cover mend
 
 Data tambahan dalam `storyboard.json → coverFx`: `{ kicker?, hl? (kata kunci diserlah), sticker?, items?: [{icon, text}] }`. Gaya Impak, Panel & Info menjana `cover-cutout.png` secara automatik (rembg). Selepas tukar gaya: `bash scripts/add_cover.sh` untuk masukkan ke dalam video.
 
+**Tona warna cover Panel (`coverFx.theme`)** — sampel: `examples/cover-tema/`
+| Tema | Rupa |
+|---|---|
+| `gelap` (asal) | Charcoal + sinar emas |
+| `emas` | Krim → emas lembut, sinar putih, foto dicerahkan |
+| `teal` | Putih → teal segar (warna jenama #406E73), aksen emas |
+| `senja` | Pic → salmon lembut, hangat & mesra |
+
 ## 11. Kawalan kualiti (wajib sebelum render penuh)
 1. `npm run still -- <bingkai>` di setiap babak; semak tiada pertindihan teks/wajah.
 2. Subtitle ≤ 2 baris; tiada chunk < 1 s yang tidak perlu.

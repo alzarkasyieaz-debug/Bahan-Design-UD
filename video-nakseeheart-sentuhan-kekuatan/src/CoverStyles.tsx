@@ -16,7 +16,7 @@ import { LineIcon, IconName } from './components/InfoFX';
  * Media: public/media/cover-frame.jpg (bergred) + cover-cutout.png (rembg u2net_human_seg)
  * ===================================================================== */
 type Poster = { top: string; mid: string; last: string; banner: string; num: string; numLabel: string; headTop?: number; chinY?: number; faceX?: number };
-type Fx = { kicker?: string; hl?: string; sticker?: string; quote?: string; speaker?: string; popOut?: number; items?: { icon: IconName; text: string }[] };
+type Fx = { kicker?: string; hl?: string; sticker?: string; quote?: string; speaker?: string; popOut?: number; theme?: string; items?: { icon: IconName; text: string }[] };
 const P = (SB as unknown as { poster: Poster }).poster;
 const FX: Fx = (SB as unknown as { coverFx?: Fx }).coverFx ?? {};
 const HEAD = P.headTop ?? 600, CHIN = P.chinY ?? 1300, FACEX = P.faceX ?? 540;
@@ -91,6 +91,14 @@ const STAR_TILE = `url("data:image/svg+xml;utf8,${encodeURIComponent(
   '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120"><g fill="none" stroke="#D8B46A" stroke-width="2" opacity="0.55">' +
   '<rect x="35" y="35" width="50" height="50"/><rect x="35" y="35" width="50" height="50" transform="rotate(45 60 60)"/>' +
   '<circle cx="60" cy="60" r="9"/><path d="M0 0 L20 20 M120 0 L100 20 M0 120 L20 100 M120 120 L100 100"/></g></svg>')}")`;
+/** Tona warna cover Panel — coverFx.theme: 'gelap' | 'emas' | 'teal' | 'senja' */
+type Theme = { panel: string; page: string; ray: string; glow: string; bokeh: string; star: number; vign: number; fade: number; blurB: number; photo?: string };
+const THEMES: Record<string, Theme> = {
+  gelap: { panel: `linear-gradient(160deg, #0F1013 0%, #17191D 45%, #2A2316 100%)`, page: '#F7F4ED', ray: 'rgba(255,214,140,0.16)', glow: 'rgba(255,214,140,0.45)', bokeh: 'rgba(255,214,140,0.55)', star: 0.35, vign: 0.45, fade: 0.6, blurB: 0.7 },
+  emas:  { panel: 'linear-gradient(165deg, #FFFDF6 0%, #FCEFD0 40%, #F3D594 75%, #E7B65A 100%)', page: '#FFFBF2', ray: 'rgba(255,255,255,0.55)', glow: 'rgba(255,255,255,0.85)', bokeh: 'rgba(255,255,255,0.9)', star: 0.55, vign: 0.18, fade: 0.28, blurB: 1.05, photo: 'brightness(1.12) contrast(1.04) saturate(1.06)' },
+  teal:  { panel: 'linear-gradient(165deg, #F4FBFA 0%, #D3EEEA 40%, #9ED6CF 75%, #5FAFA6 100%)', page: '#F8FCFB', ray: 'rgba(255,255,255,0.55)', glow: 'rgba(255,255,255,0.85)', bokeh: 'rgba(255,246,214,0.9)', star: 0.6, vign: 0.18, fade: 0.28, blurB: 1.05, photo: 'brightness(1.12) contrast(1.04) saturate(1.06)' },
+  senja: { panel: 'linear-gradient(165deg, #FFF7F1 0%, #FFE0CF 40%, #F9B9A0 75%, #EE8F78 100%)', page: '#FFF9F4', ray: 'rgba(255,255,255,0.55)', glow: 'rgba(255,255,255,0.85)', bokeh: 'rgba(255,240,200,0.9)', star: 0.5, vign: 0.18, fade: 0.28, blurB: 1.05, photo: 'brightness(1.12) contrast(1.04) saturate(1.06)' },
+};
 type ScriptChunk = [string, number, number, string];
 export const CoverPanel: React.FC = () => {
   const card = { left: 90, top: 230, w: 900, h: 960, rot: -3 };
@@ -99,6 +107,7 @@ export const CoverPanel: React.FC = () => {
   const px = 450 - FACEX * s;            // kedudukan imej dalam koordinat kad
   // popOut: berapa px atas kepala keluar dari tepi atas kad (lalai 85; laras melalui coverFx.popOut)
   const pop = (FX as { popOut?: number }).popOut ?? 85;
+  const TH = THEMES[FX.theme ?? 'gelap'] ?? THEMES.gelap;
   const py = -pop - HEAD * s;
   const items = FX.items ?? [];
   const hl = FX.hl ?? P.mid.split(' ').slice(-1)[0].replace('?', '');
@@ -116,18 +125,18 @@ export const CoverPanel: React.FC = () => {
   const speaker = (FX as { speaker?: string }).speaker;
   const imgStyle: React.CSSProperties = { position: 'absolute', left: px, top: py, width: 1080 * s, height: 1920 * s };
   return (
-    <AbsoluteFill style={{ background: C.cream, overflow: 'hidden' }}>
+    <AbsoluteFill style={{ background: TH.page, overflow: 'hidden' }}>
       <AbsoluteFill style={{ backgroundImage: 'linear-gradient(rgba(23,25,29,0.05) 2px, transparent 2px), linear-gradient(90deg, rgba(23,25,29,0.05) 2px, transparent 2px)', backgroundSize: '60px 60px' }} />
       {/* panel gelap condong + corak geometri + sinar cahaya */}
-      <div style={{ position: 'absolute', left: -140, top: -180, width: 1360, height: 1300, transform: 'rotate(-6deg)', overflow: 'hidden', background: `linear-gradient(160deg, #0F1013 0%, ${C.charcoal} 45%, #2A2316 100%)` }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: STAR_TILE, backgroundSize: '120px 120px', opacity: 0.35,
+      <div style={{ position: 'absolute', left: -140, top: -180, width: 1360, height: 1300, transform: 'rotate(-6deg)', overflow: 'hidden', background: TH.panel }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: STAR_TILE, backgroundSize: '120px 120px', opacity: TH.star,
           maskImage: 'radial-gradient(ellipse 70% 60% at 45% 40%, black 0%, transparent 80%)', WebkitMaskImage: 'radial-gradient(ellipse 70% 60% at 45% 40%, black 0%, transparent 80%)' }} />
-        <div style={{ position: 'absolute', inset: 0, background: 'repeating-conic-gradient(from 160deg at 50% -8%, rgba(255,214,140,0.16) 0deg 4deg, rgba(0,0,0,0) 4deg 11deg)',
+        <div style={{ position: 'absolute', inset: 0, background: `repeating-conic-gradient(from 160deg at 50% -8%, ${TH.ray} 0deg 4deg, rgba(0,0,0,0) 4deg 11deg)`,
           maskImage: 'linear-gradient(180deg, black 0%, transparent 85%)', WebkitMaskImage: 'linear-gradient(180deg, black 0%, transparent 85%)' }} />
-        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 45% 35% at 50% 0%, rgba(255,214,140,0.45), rgba(0,0,0,0) 70%)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(ellipse 45% 35% at 50% 0%, ${TH.glow}, rgba(0,0,0,0) 70%)` }} />
         {Array.from({ length: 26 }, (_, i) => {
           const x = (i * 397) % 1360, y = 60 + ((i * 263) % 900), r = 6 + ((i * 7) % 18);
-          return <div key={i} style={{ position: 'absolute', left: x, top: y, width: r * 2, height: r * 2, borderRadius: '50%', background: 'rgba(255,214,140,0.55)', filter: `blur(${r / 2.5}px)`, opacity: 0.25 + ((i * 13) % 50) / 100 }} />;
+          return <div key={i} style={{ position: 'absolute', left: x, top: y, width: r * 2, height: r * 2, borderRadius: '50%', background: TH.bokeh, filter: `blur(${r / 2.5}px)`, opacity: 0.25 + ((i * 13) % 50) / 100 }} />;
         })}
       </div>
       {/* kad foto + pop-out kepala */}
@@ -135,17 +144,17 @@ export const CoverPanel: React.FC = () => {
         {/* halo emas di belakang kepala */}
         <div style={{ position: 'absolute', left: 450 - 380, top: -300, width: 760, height: 760, borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,214,140,0.75) 0%, rgba(216,180,106,0.18) 45%, rgba(0,0,0,0) 70%)' }} />
         <div style={{ position: 'absolute', inset: 0, borderRadius: 40, overflow: 'hidden', border: `10px solid ${C.gold}`, boxShadow: '0 30px 60px rgba(0,0,0,0.55), 0 0 0 4px #7A4A0C, 0 0 60px rgba(216,180,106,0.35)' }}>
-          <Img src={staticFile('media/cover-frame.jpg')} style={{ position: 'absolute', inset: -40, width: card.w + 80, height: card.h + 80, objectFit: 'cover', filter: 'blur(26px) brightness(0.7)' }} />
-          <Img src={staticFile('media/cover-frame.jpg')} style={{ ...imgStyle, left: px - 10, top: py - 10,
+          <Img src={staticFile('media/cover-frame.jpg')} style={{ position: 'absolute', inset: -40, width: card.w + 80, height: card.h + 80, objectFit: 'cover', filter: `blur(26px) brightness(${TH.blurB})` }} />
+          <Img src={staticFile('media/cover-frame.jpg')} style={{ ...imgStyle, left: px - 10, top: py - 10, filter: TH.photo ?? 'none',
             maskImage: 'linear-gradient(180deg, black 85%, transparent 100%)', WebkitMaskImage: 'linear-gradient(180deg, black 85%, transparent 100%)' }} />
-          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 80% 60% at 50% 35%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.45) 100%)' }} />
-          <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 260, background: 'linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.6))' }} />
+          <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(ellipse 80% 60% at 50% 35%, rgba(0,0,0,0) 40%, rgba(0,0,0,${TH.vign}) 100%)` }} />
+          <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 260, background: `linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,${TH.fade}))` }} />
         </div>
         {/* bahagian figura yang KELUAR dari bingkai (atas tepi kad) */}
         <div style={{ position: 'absolute', left: 450 - 270, top: -400, width: 540, height: 400 + 70, overflow: 'hidden',
           maskImage: 'linear-gradient(90deg, transparent 0%, black 14%, black 86%, transparent 100%)', WebkitMaskImage: 'linear-gradient(90deg, transparent 0%, black 14%, black 86%, transparent 100%)' }}>
           <Img src={staticFile('media/cover-cutout.png')} style={{ ...imgStyle, left: px - (450 - 270), top: py + 400,
-            filter: 'drop-shadow(0 0 4px #FFE2A3) drop-shadow(0 0 34px rgba(255,214,140,0.95)) drop-shadow(0 18px 24px rgba(0,0,0,0.5))' }} />
+            filter: `${TH.photo ?? ''} drop-shadow(0 0 4px #FFE2A3) drop-shadow(0 0 34px rgba(255,214,140,0.95)) drop-shadow(0 18px 24px rgba(0,0,0,0.5))` }} />
         </div>
         {speaker && (
           <div style={{ position: 'absolute', left: 40, bottom: 40, padding: '10px 26px', borderRadius: 14, background: 'rgba(15,16,19,0.85)', border: `2px solid ${C.gold}`,
