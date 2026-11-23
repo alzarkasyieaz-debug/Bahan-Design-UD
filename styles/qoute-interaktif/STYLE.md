@@ -174,6 +174,9 @@ Data tambahan dalam `storyboard.json → coverFx`: `{ kicker?, hl? (kata kunci d
 | `emas` | Krim → emas lembut, sinar putih, foto dicerahkan |
 | `teal` | Putih → teal segar (warna jenama #406E73), aksen emas |
 | `senja` | Pic → salmon lembut, hangat & mesra |
+| `zamrud` ⭐ premium Islamik | Hijau zamrud + emas + gading, **gerbang mihrab emas** membingkai foto, pelekat zamrud |
+| `nila` ⭐ premium Islamik | Biru nila + emas + gading, gerbang mihrab, pelekat nila |
+| `zaitun` ⭐ premium Islamik | Sage lembut + emas + krim (paling cerah), gerbang mihrab, pelekat hijau zaitun |
 
 ## 11. Kawalan kualiti (wajib sebelum render penuh)
 1. `npm run still -- <bingkai>` di setiap babak; semak tiada pertindihan teks/wajah.

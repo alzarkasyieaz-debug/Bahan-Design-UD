@@ -92,12 +92,17 @@ const STAR_TILE = `url("data:image/svg+xml;utf8,${encodeURIComponent(
   '<rect x="35" y="35" width="50" height="50"/><rect x="35" y="35" width="50" height="50" transform="rotate(45 60 60)"/>' +
   '<circle cx="60" cy="60" r="9"/><path d="M0 0 L20 20 M120 0 L100 20 M0 120 L20 100 M120 120 L100 100"/></g></svg>')}")`;
 /** Tona warna cover Panel — coverFx.theme: 'gelap' | 'emas' | 'teal' | 'senja' */
-type Theme = { panel: string; page: string; ray: string; glow: string; bokeh: string; star: number; vign: number; fade: number; blurB: number; photo?: string };
+type Theme = { panel: string; page: string; ray: string; glow: string; bokeh: string; star: number; vign: number; fade: number; blurB: number; photo?: string;
+  arch?: boolean; accent?: string; tag?: string; stk?: [string, string] };
 const THEMES: Record<string, Theme> = {
   gelap: { panel: `linear-gradient(160deg, #0F1013 0%, #17191D 45%, #2A2316 100%)`, page: '#F7F4ED', ray: 'rgba(255,214,140,0.16)', glow: 'rgba(255,214,140,0.45)', bokeh: 'rgba(255,214,140,0.55)', star: 0.35, vign: 0.45, fade: 0.6, blurB: 0.7 },
   emas:  { panel: 'linear-gradient(165deg, #FFFDF6 0%, #FCEFD0 40%, #F3D594 75%, #E7B65A 100%)', page: '#FFFBF2', ray: 'rgba(255,255,255,0.55)', glow: 'rgba(255,255,255,0.85)', bokeh: 'rgba(255,255,255,0.9)', star: 0.55, vign: 0.18, fade: 0.28, blurB: 1.05, photo: 'brightness(1.12) contrast(1.04) saturate(1.06)' },
   teal:  { panel: 'linear-gradient(165deg, #F4FBFA 0%, #D3EEEA 40%, #9ED6CF 75%, #5FAFA6 100%)', page: '#F8FCFB', ray: 'rgba(255,255,255,0.55)', glow: 'rgba(255,255,255,0.85)', bokeh: 'rgba(255,246,214,0.9)', star: 0.6, vign: 0.18, fade: 0.28, blurB: 1.05, photo: 'brightness(1.12) contrast(1.04) saturate(1.06)' },
   senja: { panel: 'linear-gradient(165deg, #FFF7F1 0%, #FFE0CF 40%, #F9B9A0 75%, #EE8F78 100%)', page: '#FFF9F4', ray: 'rgba(255,255,255,0.55)', glow: 'rgba(255,255,255,0.85)', bokeh: 'rgba(255,240,200,0.9)', star: 0.5, vign: 0.18, fade: 0.28, blurB: 1.05, photo: 'brightness(1.12) contrast(1.04) saturate(1.06)' },
+  /* --- premium Islamik: gerbang mihrab emas + corak bintang --- */
+  zamrud: { panel: 'linear-gradient(170deg, #2F7A66 0%, #1C5C4C 45%, #0F3F34 100%)', page: '#FBF8EF', ray: 'rgba(255,226,163,0.20)', glow: 'rgba(255,226,163,0.55)', bokeh: 'rgba(255,226,163,0.7)', star: 0.55, vign: 0.22, fade: 0.35, blurB: 0.95, photo: 'brightness(1.12) contrast(1.04) saturate(1.06)', arch: true, accent: '#14604E', tag: '#14604E', stk: ['#2F8A72', '#0F4A3C'] },
+  nila:   { panel: 'linear-gradient(170deg, #3C5E8F 0%, #22406B 45%, #142948 100%)', page: '#FBF8F0', ray: 'rgba(255,226,163,0.20)', glow: 'rgba(255,226,163,0.55)', bokeh: 'rgba(255,226,163,0.7)', star: 0.55, vign: 0.22, fade: 0.35, blurB: 0.95, photo: 'brightness(1.12) contrast(1.04) saturate(1.06)', arch: true, accent: '#1E3A66', tag: '#1E3A66', stk: ['#3D6AA8', '#162F55'] },
+  zaitun: { panel: 'linear-gradient(170deg, #F3F1E4 0%, #D9DFC6 40%, #A9BC97 75%, #7F9A70 100%)', page: '#FBFAF3', ray: 'rgba(255,255,255,0.6)', glow: 'rgba(255,255,255,0.85)', bokeh: 'rgba(255,246,214,0.9)', star: 0.6, vign: 0.18, fade: 0.28, blurB: 1.05, photo: 'brightness(1.12) contrast(1.04) saturate(1.06)', arch: true, accent: '#4E6B3E', tag: '#3F5733', stk: ['#6E8C5C', '#3F5733'] },
 };
 type ScriptChunk = [string, number, number, string];
 export const CoverPanel: React.FC = () => {
@@ -139,6 +144,14 @@ export const CoverPanel: React.FC = () => {
           return <div key={i} style={{ position: 'absolute', left: x, top: y, width: r * 2, height: r * 2, borderRadius: '50%', background: TH.bokeh, filter: `blur(${r / 2.5}px)`, opacity: 0.25 + ((i * 13) % 50) / 100 }} />;
         })}
       </div>
+      {TH.arch && (
+        <svg width="1080" height="1180" viewBox="0 0 1080 1180" style={{ position: 'absolute', left: 0, top: 10, filter: 'drop-shadow(0 0 16px rgba(255,214,140,0.6))' }}>
+          <path d="M30 1170 V520 Q30 300 250 185 Q430 95 540 40 Q650 95 830 185 Q1050 300 1050 520 V1170" fill="none" stroke="#E7C67F" strokeWidth="9" />
+          <path d="M58 1170 V528 Q58 322 268 214 Q440 128 540 78 Q640 128 812 214 Q1022 322 1022 528 V1170" fill="none" stroke="#FFE2A3" strokeWidth="3" opacity="0.9" />
+          <circle cx="540" cy="40" r="13" fill="#FFE2A3" />
+          <path d="M540 -14 L551 16 L540 28 L529 16Z" fill="#FFE2A3" />
+        </svg>
+      )}
       {/* kad foto + pop-out kepala */}
       <div style={{ position: 'absolute', left: card.left, top: card.top, width: card.w, height: card.h, transform: `rotate(${card.rot}deg)` }}>
         {/* halo emas di belakang kepala */}
@@ -162,18 +175,18 @@ export const CoverPanel: React.FC = () => {
         )}
       </div>
       {/* pelekat bulat — tulisan gaya Trajan (Cinzel) */}
-      <div style={{ position: 'absolute', right: 30, top: 260, width: 200, height: 200, borderRadius: '50%', background: 'radial-gradient(circle at 35% 30%, #FF6B57, #C42A1B 70%)', transform: 'rotate(12deg)', display: 'flex',
-        alignItems: 'center', justifyContent: 'center', border: '5px dashed rgba(255,226,163,0.9)', boxShadow: '0 0 0 6px #C42A1B, 0 14px 30px rgba(0,0,0,0.45)', textAlign: 'center', whiteSpace: 'pre-line' }}>
+      <div style={{ position: 'absolute', right: 30, top: 260, width: 200, height: 200, borderRadius: '50%', background: `radial-gradient(circle at 35% 30%, ${(TH.stk ?? ['#FF6B57', '#C42A1B'])[0]}, ${(TH.stk ?? ['#FF6B57', '#C42A1B'])[1]} 70%)`, transform: 'rotate(12deg)', display: 'flex',
+        alignItems: 'center', justifyContent: 'center', border: '5px dashed rgba(255,226,163,0.9)', boxShadow: `0 0 0 6px ${(TH.stk ?? ['#FF6B57', '#C42A1B'])[1]}, 0 0 0 9px #E7C67F, 0 14px 30px rgba(0,0,0,0.45)`, textAlign: 'center', whiteSpace: 'pre-line' }}>
         <div style={{ fontFamily: FONT.serif, fontWeight: 800, fontSize: 30, letterSpacing: '0.06em', color: '#fff', lineHeight: 1.15 }}>{FX.sticker ?? 'SHARING\nMOMENT'}</div>
       </div>
       {/* panel teks krim */}
       <div style={{ position: 'absolute', left: 70, right: 70, top: 1240 }}>
-        <div style={{ display: 'inline-block', padding: '8px 22px', borderRadius: 10, background: C.charcoal, color: C.goldLight, fontFamily: FONT.sans, fontWeight: 800, fontSize: 34, letterSpacing: '0.12em' }}>{P.top}</div>
+        <div style={{ display: 'inline-block', padding: '8px 22px', borderRadius: 10, background: TH.tag ?? C.charcoal, color: C.goldLight, fontFamily: FONT.sans, fontWeight: 800, fontSize: 34, letterSpacing: '0.12em' }}>{P.top}</div>
         <div style={{ marginTop: 8, fontFamily: FONT.display, fontSize: fit(mid, 940, 210, 0.4), lineHeight: 0.92, color: C.charcoal }}>
           {pre}
           <span style={{ position: 'relative', whiteSpace: 'nowrap' }}>
             <span style={{ position: 'absolute', left: -8, right: -8, bottom: 6, height: '42%', background: C.gold, borderRadius: 8, transform: 'skewX(-10deg)' }} />
-            <span style={{ position: 'relative', color: '#8E1D13' }}>{hl}</span>
+            <span style={{ position: 'relative', color: TH.accent ?? '#8E1D13' }}>{hl}</span>
           </span>
           {post}{P.mid.trim().endsWith('!') ? '' : '?'}
         </div>
