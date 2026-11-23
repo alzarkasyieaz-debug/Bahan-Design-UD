@@ -30,3 +30,6 @@ Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -1
 ## Kapsyen hantaran (cadangan)
 > Pernah buat silap? Allah sentiasa beri peluang. Jangan putus asa — Allah tempat terbaik untuk kita bercerita dan mengadu. 🤲
 > #doa #taubat #jangan_putus_asa #nasihat #nakseeheart #fyp
+
+## Versi Showcase FINAL/RAW (kinetic typography)
+[`out/nakseeheart-allah-beri-peluang-showcase.mp4`](out/nakseeheart-allah-beri-peluang-showcase.mp4) (106.3 s, 9:16): format showcase mengikut video rujukan pengguna — logo & nama di atas, panel **FINAL** (suntingan semula segi empat: wajah penceramah diselang-seli 18 kad *kinetic typography* — perkataan besar, kad pilihan, cincin, siluet, jubin 1-2-3, sorotan) dan panel **RAW** (rakaman asal, serentak mengikut EDL yang sama), label neon *SHARING MOMENT*, tona turquoise + emas. Kod: `src/Showcase.tsx` (komposisi `Showcase`, `KineticFinal`). Ucapan & audio sama seperti versi asal.
