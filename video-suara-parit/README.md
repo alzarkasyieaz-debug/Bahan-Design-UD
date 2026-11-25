@@ -29,4 +29,4 @@ node engine/render.js mux       # video akhir -> out/video-suara-parit.mp4
 node engine/render.js verify    # semak bunyi dan gambar pada setiap penanda segerak
 ```
 
-Gambar dalam `assets/` disalin daripada folder "Gambar YB" (tanda air RTM dikekalkan).
+Video akhir: `suara-parit-di-dewan-rakyat.mp4` (26 MB). Gambar dalam `assets/` disalin daripada folder "Gambar YB" (tanda air RTM dikekalkan).
