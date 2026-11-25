@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Infografik Suara Parit</title>
+<meta name="description" content="Isu dibangkitkan, kepentingan rakyat diperjuangkan. Rekod ucapan YB Ustaz Ismi, Ahli Parlimen Parit, 2023 hingga 2026.">
+<meta property="og:title" content="Suara Parit di Dewan Rakyat">
+<meta property="og:description" content="33 rakaman ucapan, 9 tajuk Kamar Khas, 6 isu utama. Rekod YB Ustaz Ismi, Ahli Parlimen Parit.">
+<link rel="artifact-thumbnail" href="thumb.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -64,6 +68,9 @@ h1{margin:16px 0 0;font-size:clamp(44px,7.4vw,96px);line-height:.98;letter-spaci
 .scrollcue i{width:22px;height:34px;border:2px solid var(--mute);border-radius:12px;position:relative}
 .scrollcue i::after{content:"";position:absolute;left:50%;top:6px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:var(--cy);animation:cue 1.8s ease-in-out infinite}
 @keyframes cue{50%{transform:translateY(10px);opacity:.3}}
+.hacts{display:flex;flex-wrap:wrap;align-items:center;gap:18px 24px}
+.cta{display:inline-flex;align-items:center;min-height:44px;padding:10px 20px;border-radius:999px;background:var(--gold);color:#1a1405;font-weight:700;text-decoration:none;transition:filter .4s}
+.cta:hover{filter:brightness(1.1)}
 /* angka utama */
 .trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:36px}
 .big{padding:28px 26px}
@@ -285,7 +292,7 @@ const html=`
  <h1>Suara Parit di Dewan Rakyat</h1>
  <p class="hsub rv" ${d(.5)}>Isu dibangkitkan, <b>kepentingan rakyat diperjuangkan</b></p>
  <div class="namep panel rv l" ${d(.7)}><strong>YB Ustaz Ismi</strong><span>Tuan Haji Muhammad Ismi bin Mat Taib</span><em>Ahli Parlimen Parit</em></div>
- <div class="scrollcue rv" ${d(1)}><i></i>Tatal untuk melihat data</div></div>
+ <div class="hacts rv" ${d(.9)}><a class="cta" href="slaid.html">Buka versi slaid pembentangan →</a><div class="scrollcue"><i></i>Tatal untuk melihat data</div></div></div>
  <div class="port rv z" ${d(.2)}>${star}<div class="glow"></div><img id="pimg" src="ismi.webp" alt="Potret YB Ustaz Ismi, Ahli Parlimen Parit" width="723" height="1200"></div>
 </div></section>
 
