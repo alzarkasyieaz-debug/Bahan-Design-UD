@@ -114,13 +114,13 @@
   function dewan(ctx, t) {
     const two = t >= ev.dewan2;
     const fade = eo(t, ev.dewan2, 0.8);
-    photo(ctx, IMG.a, 0, 0, W, H, t, ev.dewan, S.S.dewan[1], { from: { zoom: 1.12, x: 0.55, y: 0.4 }, to: { zoom: 1.0, x: 0.5, y: 0.45 } });
-    if (two) { ctx.save(); ctx.globalAlpha = fade; photo(ctx, IMG.r3, 0, 0, W, H, t, ev.dewan2, S.S.dewan[1] + 1, { from: { zoom: 1.0, x: 0.5, y: 0.4 }, to: { zoom: 1.1, x: 0.5, y: 0.35 } }); ctx.restore(); }
+    photo(ctx, IMG.r3, 0, 0, W, H, t, ev.dewan, S.S.dewan[1], { from: { zoom: 1.12, x: 0.55, y: 0.4 }, to: { zoom: 1.0, x: 0.5, y: 0.45 } });
+    if (two) { ctx.save(); ctx.globalAlpha = fade; photo(ctx, IMG.dw, 0, 0, W, H, t, ev.dewan2, S.S.dewan[1] + 1, { from: { zoom: 1.0, x: 0.45, y: 0.45 }, to: { zoom: 1.1, x: 0.45, y: 0.4 } }); ctx.restore(); }
     const g = ctx.createLinearGradient(0, H * 0.45, 0, H); g.addColorStop(0, 'rgba(2,8,20,0)'); g.addColorStop(1, 'rgba(2,8,20,.92)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
     const gl = ctx.createLinearGradient(0, 0, W * 0.55, 0); gl.addColorStop(0, 'rgba(2,8,20,.55)'); gl.addColorStop(1, 'rgba(2,8,20,0)'); ctx.fillStyle = gl; ctx.fillRect(0, 0, W, H);
     kicker(ctx, 'Di Dewan Rakyat', 110, 800, t, ev.dewan + 0.3);
     rise(ctx, t, ev.dewan + 0.6, () => txt(ctx, 'Membawa suara Parit ke dewan', 110, 890, { size: 76, weight: 800 }));
-    const cap = two ? 'Berucap di Dewan Rakyat · rakaman RTMKlik (tarikh tidak dinyatakan)' : '27 Jan 2026 · Persidangan Dewan Rakyat, Mesyuarat Pertama Penggal Kelima';
+    const cap = two ? 'Di dalam Dewan Rakyat (tarikh tidak dinyatakan)' : 'Berucap di Dewan Rakyat · rakaman RTMKlik (tarikh tidak dinyatakan)';
     txt(ctx, cap, 110, 960, { size: 28, weight: 500, color: GOLD, alpha: two ? fade : eo(t, ev.dewan + 1, 0.6) });
   }
   // ---------- 4. angka ----------
@@ -215,7 +215,7 @@
   // ---------- 8. sorotan ----------
   function sorotan(ctx, t) {
     bgScene(ctx, t);
-    photo(ctx, IMG.r8, 1260, 120, 560, 330, t, ev.sorotan, S.S.sorotan[1], { radius: 18, from: { zoom: 1.12, x: 0.5, y: 0.35 }, to: { zoom: 1, x: 0.5, y: 0.35 } });
+    photo(ctx, IMG.r3, 1260, 120, 560, 330, t, ev.sorotan, S.S.sorotan[1], { radius: 18, from: { zoom: 1.12, x: 0.5, y: 0.35 }, to: { zoom: 1, x: 0.5, y: 0.35 } });
     ctx.save(); ctx.strokeStyle = 'rgba(217,180,90,.55)'; ctx.lineWidth = 2; rr(ctx, 1260, 120, 560, 330, 18); ctx.stroke(); ctx.restore();
     txt(ctx, 'Berucap di Dewan Rakyat (tarikh gambar tidak dinyatakan)', 1270, 480, { size: 20, weight: 500, color: MUTE });
     kicker(ctx, 'Sorotan utama', 110, 170, t, ev.sorotan);
@@ -241,7 +241,7 @@
   }
   // ---------- 9. penutup ----------
   function akhir(ctx, t) {
-    photo(ctx, IMG.b, 0, 0, W, H, t, ev.akhir, S.DURATION, { from: { zoom: 1.05, x: 0.5, y: 0.4 }, to: { zoom: 1.15, x: 0.55, y: 0.35 } });
+    photo(ctx, IMG.dw, 0, 0, W, H, t, ev.akhir, S.DURATION, { from: { zoom: 1.05, x: 0.5, y: 0.4 }, to: { zoom: 1.15, x: 0.55, y: 0.35 } });
     ctx.fillStyle = 'rgba(4,12,28,.82)'; ctx.fillRect(0, 0, W, H);
     const r = ctx.createRadialGradient(W * 0.8, H, 0, W * 0.8, H, W * 0.6); r.addColorStop(0, 'rgba(5,71,58,.7)'); r.addColorStop(1, 'rgba(5,71,58,0)'); ctx.fillStyle = r; ctx.fillRect(0, 0, W, H);
     star(ctx, 1450, 500, 300, { rot: t * 0.04, alpha: 0.32 });
@@ -267,7 +267,7 @@
     post: { paper: 0, vignette: 0.35, grain: 0.035 },
     async init() {
       const L = (n) => Studio.loadImage('assets/' + n);
-      [IMG.ismi, IMG.a, IMG.b, IMG.r3, IMG.r8] = await Promise.all(['ismi.webp', 'dr-27jan-a.webp', 'dr-27jan-b.webp', 'dr-rtm-3.webp', 'dr-rtm-8.webp'].map(L));
+      [IMG.ismi, IMG.r3, IMG.dw] = await Promise.all(['ismi.webp', 'dr-rtm-3.webp', 'dr-dewan.webp'].map(L));
     },
     draw(ctx, t) {
       const sec = sectionOf(t);

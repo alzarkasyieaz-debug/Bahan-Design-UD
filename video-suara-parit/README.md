@@ -7,7 +7,7 @@ Satu garis masa (`score.js`) memandu muzik dan gambar, jadi setiap angka, isu da
 |---|---|---|---|
 | 1 Pembukaan | 0:00–0:08 | Tajuk dan subtajuk | Motif bintang Islamik dilukis, tajuk muncul dengan timpani, cahaya menyapu tajuk |
 | 2 Potret | 0:08–0:14 | YB Ustaz Ismi, nama penuh, jawatan | Potret meluncur masuk, motif berputar, garis emas dilukis |
-| 3 Di Dewan Rakyat | 0:14–0:22 | Gambar 27 Jan 2026 dan RTMKlik | Zum perlahan (Ken Burns), peralihan silang, brass membawa melodi |
+| 3 Di Dewan Rakyat | 0:14–0:22 | Gambar berucap (RTMKlik) dan di dalam dewan | Zum perlahan (Ken Burns), peralihan silang, brass membawa melodi |
 | 4 Angka utama | 0:22–0:27 | 33 rakaman, 9 tajuk Kamar Khas, 4 tahun | Kiraan naik; marimba berbunyi ketika setiap angka mendarat |
 | 5 Ucapan mengikut tahun | 0:27–0:32 | Video lawan Kamar Khas, 2023–2026 | Lajur tumbuh; satu nada pizzicato menaik bagi setiap tahun |
 | 6 Kamar Khas | 0:32–0:38 | 9 tajuk mengikut tarikh | Garis masa dilukis; "pop" bagi setiap titik |
