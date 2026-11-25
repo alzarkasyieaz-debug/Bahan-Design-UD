@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suara Parit di Dewan Rakyat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* VOICE formal, berwibawa: slaid pembentangan Ahli Parlimen, banyak ruang kosong
+   IDEA papan taklimat dewan: rekod rasmi disusun seperti fail parlimen digital
+   PICTURE potret YB (latar telus) di kanan atas, berdiri di atas plat nama kaca
+   COLOUR navy #061226 ke zamrud #04392f, cyan #46d9e6 untuk data, emas #d9b45a untuk sorotan
+   TYPE Plus Jakarta Sans 800 untuk tajuk dan angka, 400-600 untuk teks
+   LAYOUT pentas 1600x900: kiri tajuk, angka, 6 kad; kanan potret dan sorotan; bawah sumber. Di bawah 900px semua bertindan */
+:root{color-scheme:dark;--navy:#061226;--navy2:#0a1d3a;--em:#04392f;--cy:#46d9e6;--gold:#d9b45a;--ink:#eef4f6;--mute:#a9bdc7;--line:rgba(70,217,230,.22);--glass:rgba(12,32,58,.55);--glass2:rgba(255,255,255,.04)}
+*{box-sizing:border-box;min-width:0}
+html,body{height:100%;margin:0}
+body{background:radial-gradient(120% 90% at 85% 100%,#05473a 0%,rgba(4,57,47,0) 55%),linear-gradient(150deg,#040c1c 0%,var(--navy) 45%,#062a2f 100%);color:var(--ink);font:16px/1.5 "Plus Jakarta Sans",system-ui,sans-serif;overflow:hidden}
+a{color:var(--cy)}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.stage{position:absolute;left:50%;top:50%;width:1600px;height:900px;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;display:grid;grid-template-columns:1040px 1fr;grid-template-rows:auto auto 1fr auto;column-gap:40px;padding:44px 56px 22px;overflow:hidden;border-radius:6px}
+.bg{position:absolute;inset:0;pointer-events:none;z-index:0}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(70,217,230,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(70,217,230,.05) 1px,transparent 1px);background-size:40px 40px;mask-image:radial-gradient(90% 80% at 40% 40%,#000 30%,transparent 85%)}
+.bg svg{position:absolute;inset:0;width:100%;height:100%}
+.ln{fill:none;stroke:var(--cy);stroke-width:1;opacity:.28;stroke-dasharray:6 18;animation:flow 26s linear infinite}
+.ln.g{stroke:var(--gold);opacity:.18;animation-duration:38s}
+@keyframes flow{to{stroke-dashoffset:-480}}
+.stage>*:not(.bg){position:relative;z-index:1}
+header{grid-column:1;grid-row:1}
+.kicker{display:flex;align-items:center;gap:10px;color:var(--gold);font-weight:600;font-size:17px;margin:0 0 10px}
+.kicker svg{width:22px;height:22px}
+h1{margin:0;font-size:68px;line-height:1.04;letter-spacing:-.025em;font-weight:800;background:linear-gradient(100deg,var(--ink) 0 42%,#ffffff 47%,#9ff3fa 50%,#ffffff 53%,var(--ink) 58% 100%);background-size:260% 100%;background-position:100% 0;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sweep .8s .25s ease-out both}
+@keyframes sweep{from{background-position:100% 0}to{background-position:0 0}}
+.sub{margin:10px 0 0;font-size:24px;color:var(--mute);font-weight:500}
+.sub b{color:var(--cy);font-weight:600}
+.stats{grid-column:1;grid-row:2;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:26px}
+.panel{background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.015)),var(--glass);border:1px solid var(--line);border-radius:16px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:inset 0 1px 0 rgba(255,255,255,.07)}
+.stat{padding:14px 20px 14px;display:grid;grid-template-columns:auto 1fr;column-gap:16px;align-items:center}
+.stat .n{font-size:54px;font-weight:800;line-height:1;color:var(--cy);font-variant-numeric:tabular-nums;grid-row:span 2}
+.stat .l{font-weight:700;font-size:17px;line-height:1.25}
+.stat .d{font-size:14px;color:var(--mute);line-height:1.3}
+.cards{grid-column:1;grid-row:3;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:18px;margin-top:20px;min-height:0}
+.card{padding:18px 20px 16px;display:flex;flex-direction:column;transition:border-color .4s,box-shadow .4s,transform .4s}
+.card:hover,.card:focus-within{border-color:rgba(70,217,230,.6);box-shadow:0 0 0 1px rgba(70,217,230,.25),0 0 28px rgba(70,217,230,.18),inset 0 1px 0 rgba(255,255,255,.08);transform:translateY(-2px)}
+.ch{display:flex;align-items:center;gap:12px}
+.ic{flex:none;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:rgba(70,217,230,.1);border:1px solid rgba(70,217,230,.3)}
+.ic svg{width:24px;height:24px;fill:none;stroke:var(--cy);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.card h3{margin:0;font-size:19px;line-height:1.2;font-weight:700}
+.card p{margin:10px 0 0;font-size:15px;line-height:1.42;color:#cfdde4}
+.cf{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:10px;padding-top:10px}
+.fig{display:flex;align-items:baseline;gap:8px}
+.fig b{font-size:30px;font-weight:800;color:var(--gold);line-height:1;white-space:nowrap}
+.fig span{font-size:13px;color:var(--mute);line-height:1.2;max-width:12em}
+.btn{min-height:40px;padding:8px 14px;border-radius:999px;border:1px solid rgba(70,217,230,.45);background:rgba(70,217,230,.08);font-size:14px;font-weight:600;white-space:nowrap;transition:background .4s,border-color .4s}
+.btn:hover{background:rgba(70,217,230,.2);border-color:var(--cy)}
+aside{grid-column:2;grid-row:1/4;display:flex;flex-direction:column;min-height:0}
+.port{position:relative;flex:1;min-height:0;display:flex;justify-content:center;align-items:flex-end}
+.port .star{position:absolute;left:50%;top:46%;width:360px;height:360px;transform:translate(-50%,-50%);opacity:.32}
+.star rect{fill:none;stroke:var(--gold);stroke-width:.6}
+.port .glow{position:absolute;left:50%;bottom:0;width:420px;height:420px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(70,217,230,.22),rgba(4,57,47,.15) 60%,transparent);border-radius:50%}
+.port img{position:relative;height:100%;max-height:470px;width:auto;display:block;filter:drop-shadow(0 18px 30px rgba(0,0,0,.45))}
+.name{margin-top:-6px;padding:14px 20px;border-top:2px solid var(--gold)}
+.name strong{display:block;font-size:26px;line-height:1.15;font-weight:800}
+.name span{display:block;font-size:15px;color:#d5e1e7}
+.name em{display:block;font-style:normal;color:var(--gold);font-weight:700;font-size:15px;margin-top:4px}
+.hl{margin-top:16px;padding:16px 18px;border-color:rgba(217,180,90,.45)}
+.hl h2{margin:0 0 4px;font-size:15px;color:var(--gold);font-weight:700}
+.hl p{margin:0 0 12px;font-size:16px;line-height:1.38;font-weight:600}
+.tri{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.tri div{padding:8px 9px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);font-size:13px;line-height:1.32;color:#d5e1e7}
+.tri b{display:block;font-size:13px;margin-bottom:3px}
+.tri .y b{color:var(--cy)}.tri .k b{color:#c9b7ff}.tri .t b{color:var(--gold)}
+.na{color:var(--mute);font-style:italic}
+footer{grid-column:1/3;grid-row:4;display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:13px;color:var(--mute)}
+footer p{margin:0;line-height:1.4}
+.ctl{display:flex;gap:8px;flex:none}
+.ctl .btn{min-height:36px;font-size:13px}
+.anim{opacity:0;animation:rise .6s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--d,0) * 1s)}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+html.still .anim{animation:none;opacity:1;transform:none}
+html.still h1{animation:none;background-position:0 0}
+html.still .ln{animation-play-state:paused}
+/* panel butiran */
+.scrim{position:fixed;inset:0;background:rgba(2,8,18,.6);opacity:0;pointer-events:none;transition:opacity .5s;z-index:20}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(680px,100%);z-index:21;background:linear-gradient(170deg,#0b2140,#06231f);border-left:1px solid rgba(70,217,230,.35);box-shadow:-20px 0 60px rgba(0,0,0,.45);transform:translateX(104%);transition:transform .6s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column}
+body.open .scrim{opacity:1;pointer-events:auto}
+body.open .drawer{transform:none}
+html.still .drawer,html.still .scrim{transition:none}
+.dh{display:flex;align-items:flex-start;gap:14px;padding:22px 24px 16px;border-bottom:1px solid var(--line)}
+.dh h2{margin:0;font-size:26px;line-height:1.15;flex:1}
+.dh .tag{display:block;font-size:14px;color:var(--gold);font-weight:600;margin-bottom:6px}
+.x{flex:none;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.05);font-size:22px;line-height:1}
+.db{overflow-y:auto;padding:6px 24px 30px;flex:1}
+.db h4{margin:20px 0 6px;font-size:14px;color:var(--cy);font-weight:700}
+.db p,.db li{font-size:16px;line-height:1.5;color:#dbe6eb}
+.db p{margin:0}
+.db ul{margin:0;padding-left:20px}
+.rec{margin:8px 0;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
+.rec b{color:var(--ink)}
+.rec .ty{display:inline-block;font-size:13px;padding:1px 8px;border-radius:999px;margin-left:6px;border:1px solid}
+.ty.dr{color:var(--cy);border-color:rgba(70,217,230,.5)}.ty.kk{color:var(--gold);border-color:rgba(217,180,90,.5)}.ty.tn{color:var(--mute);border-color:rgba(169,189,199,.4)}
+.flag{margin-top:14px;padding:10px 12px;border-radius:10px;border:1px dashed rgba(217,180,90,.6);background:rgba(217,180,90,.07);font-size:14px;color:#f1e3bd}
+.src a{word-break:break-word}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.08);vertical-align:top}
+th{color:var(--mute);font-weight:600}
+td.dt{white-space:nowrap}
+.bars{display:grid;gap:6px;margin:8px 0}
+.bar{display:grid;grid-template-columns:3.2em minmax(0,1fr) 2em;align-items:center;gap:10px;font-size:14px}
+.bar i{display:block;height:14px;border-radius:4px;background:linear-gradient(90deg,var(--em),var(--cy))}
+.bar span:last-child{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#0b2140;border:1px solid var(--line);padding:10px 16px;border-radius:10px;font-size:14px;opacity:0;transition:opacity .4s;z-index:30;pointer-events:none}
+.toast.on{opacity:1}
+#printx{display:none}
+/* susunan aliran untuk skrin sempit */
+html.flow,html.flow body{height:auto;min-height:100%}
+html.flow body{overflow:auto;background-attachment:fixed}
+html.flow .stage{position:relative;left:auto;top:auto;width:auto;height:auto;transform:none;display:flex;flex-direction:column;padding:24px 16px 20px}
+html.flow h1{font-size:clamp(34px,9vw,52px)}
+html.flow .sub{font-size:18px}
+html.flow aside{display:contents}
+html.flow .port{order:1;margin-top:18px}
+html.flow .name{order:2}
+html.flow .port{height:340px;flex:none}
+html.flow .port img{max-height:340px}
+html.flow .stats{order:3;grid-template-columns:minmax(0,1fr)}
+html.flow .cards{order:4;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));grid-template-rows:none}
+html.flow .card{min-height:230px}
+html.flow .hlwrap{order:5}
+html.flow footer{order:6;flex-direction:column;align-items:flex-start}
+html.flow .ctl{flex-wrap:wrap}
+html.flow .tri{grid-template-columns:minmax(0,1fr)}
+@media (prefers-reduced-motion:reduce){.anim{animation:none;opacity:1;transform:none}h1{animation:none;background-position:0 0}.ln{animation:none}.drawer,.scrim,.card{transition:none}}
+@media print{
+ @page{size:A4 landscape;margin:8mm}
+ html,body{height:auto;overflow:visible;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ html.flow .stage,.stage{position:relative;left:0;top:0;width:1600px;height:900px;display:grid;transform:scale(.66);transform-origin:top left;margin-bottom:-300px;background:linear-gradient(150deg,#040c1c,#061226 45%,#062a2f);break-after:page}
+ .anim{animation:none!important;opacity:1!important;transform:none!important}
+ h1{animation:none;background-position:0 0}
+ .ctl,.drawer,.scrim,.toast,.btn{display:none!important}
+ #printx{display:block;color:#111;font-size:12px}
+ #printx h2{font-size:18px;margin:0 0 6px}
+ #printx h3{font-size:14px;margin:14px 0 4px;color:#0b5d63}
+ #printx section{break-inside:avoid;border-top:1px solid #ccc;padding-top:6px}
+ #printx p,#printx li{margin:2px 0}
+}
+</style>
+</head>
+<body>
+<main class="stage" id="stage" aria-label="Slaid: Suara Parit di Dewan Rakyat">
+  <div class="bg" aria-hidden="true">
+    <div class="grid"></div>
+    <svg viewBox="0 0 1600 900" preserveAspectRatio="none">
+      <path class="ln" d="M-20 250 C 400 210, 700 300, 1620 230"/>
+      <path class="ln" d="M-20 610 C 500 560, 900 680, 1620 590"/>
+      <path class="ln g" d="M-20 820 C 600 760, 1000 860, 1620 790"/>
+      <path class="ln" d="M1180 -10 L 1180 120 L 1240 180 L 1620 180"/>
+      <path class="ln g" d="M-10 120 L 300 120 L 340 160 L 640 160"/>
+    </svg>
+  </div>
+
+  <header>
+    <p class="kicker anim" style="--d:.05"><svg viewBox="-12 -12 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><rect x="-7" y="-7" width="14" height="14"/><rect x="-7" y="-7" width="14" height="14" transform="rotate(45)"/></g></svg>Parlimen Malaysia · Parit, Perak</p>
+    <h1>Suara Parit di Dewan Rakyat</h1>
+    <p class="sub anim" style="--d:.35">Isu dibangkitkan, <b>kepentingan rakyat diperjuangkan</b></p>
+  </header>
+
+  <section class="stats" aria-label="Ringkasan data">
+    <div class="stat panel anim" style="--d:.45"><span class="n" data-to="33">0</span><span class="l">rakaman ucapan</span><span class="d">dalam Senarai Video Ucapan Parit</span></div>
+    <div class="stat panel anim" style="--d:.55"><span class="n" data-to="9">0</span><span class="l">tajuk ucapan Kamar Khas</span><span class="d">8 bertarikh, 1 tarikh belum dikenal pasti</span></div>
+    <div class="stat panel anim" style="--d:.65"><span class="n" data-to="4">0</span><span class="l">tahun liputan rekod</span><span class="d">20 Feb 2023 hingga 19 Nov 2026</span></div>
+  </section>
+
+  <section class="cards" id="cards" aria-label="Isu utama"></section>
+
+  <aside>
+    <div class="port anim" style="--d:.2">
+      <svg class="star" viewBox="-12 -12 24 24" aria-hidden="true"><rect x="-8" y="-8" width="16" height="16"/><rect x="-8" y="-8" width="16" height="16" transform="rotate(45)"/><rect x="-10.5" y="-10.5" width="21" height="21" transform="rotate(22.5)" opacity=".5"/></svg>
+      <div class="glow" aria-hidden="true"></div>
+      <img src="ismi.webp" alt="Potret YB Ustaz Ismi, Ahli Parlimen Parit" width="723" height="1200">
+    </div>
+    <div class="name panel anim" style="--d:.4">
+      <strong>YB Ustaz Ismi</strong>
+      <span>Tuan Haji Muhammad Ismi bin Mat Taib</span>
+      <em>Ahli Parlimen Parit</em>
+    </div>
+    <div class="hlwrap">
+      <div class="hl panel anim" style="--d:1.2">
+        <h2>Sorotan utama</h2>
+        <p>Kesesakan sekolah akibat pertambahan murid di Seri Iskandar dibangkitkan di Dewan Rakyat (28 Mac 2023) dan diulang di Kamar Khas (16 Okt 2024).</p>
+        <div class="tri">
+          <div class="y"><b>Cadangan YB</b>Bina sekolah baharu di Bandar Universiti dan bangunan tambahan.</div>
+          <div class="k"><b>Jawapan kementerian</b><span class="na">Tidak dinyatakan dalam bahan</span></div>
+          <div class="t"><b>Tindakan setakat ini</b>Tapak sudah diperuntukkan; sekolah belum dibina (Mac 2023).</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <footer>
+    <p>Sumber: Senarai Video Ucapan Parit; Hansard Kamar Khas 16 Okt 2024 dan 16 Okt 2025; Aturan Urusan Mesyuarat; CLJ Law. <a href="https://drive.google.com/drive/folders/1T78qjkdHUHRUHIh8kdTT2fwPPkb8ZOFM?usp=sharing" target="_blank" rel="noopener">Folder bahan rujukan</a>. Senarai video dan Kamar Khas ialah rekod berasingan dan tidak dijumlahkan.</p>
+    <div class="ctl">
+      <button class="btn" id="all" type="button">Semua rekod</button>
+      <button class="btn" id="pause" type="button" aria-pressed="false">Jeda animasi</button>
+      <button class="btn" id="fs" type="button">Skrin penuh</button>
+    </div>
+  </footer>
+</main>
+
+<div class="scrim" id="scrim"></div>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dtitle" aria-hidden="true">
+  <div class="dh"><div style="flex:1"><span class="tag" id="dtag"></span><h2 id="dtitle"></h2></div><button class="x" id="close" type="button" aria-label="Tutup panel">×</button></div>
+  <div class="db" id="dbody"></div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<div id="printx"></div>
+
+<script>
+{
+const F='https://drive.google.com/file/d/', V='/view';
+const S={
+ v1:['Senarai video, bil. 1–7',F+'1O6iILnHgQ6zfg4uKBZbsC_bkFTk8-Yph'+V],
+ v2:['Senarai video, bil. 8–11',F+'1Lz06eYbU5-xkF9ibv4DLs8bC1wQptdpZ'+V],
+ v3:['Senarai video, bil. 12–23',F+'12jAB0U3E6wCAaMC71nE5wy78A9J5TA_n'+V],
+ v4:['Senarai video, bil. 24–33',F+'1aRHf5PqfXsSKv4Rd8_tMcyw9x3Yut7FU'+V],
+ s1:['Nota: Pembinaan sekolah baharu di Bandar Universiti (28 Mac 2023)',F+'1AUBm3RIbUxq6UxVR0kqKulHz3EwJ4Ihe'+V],
+ s2:['Nota: Pelajar terpaksa bersekolah di daerah lain (16 Okt 2024)',F+'1IsgaDq-pI-fsmZqAoln3a2s2B4uP7okm'+V],
+ s3:['Nota: Seri Iskandar sebagai bandar ilmu (19 Nov 2026)',F+'1qztw9RVoUpw9CkHuj7wdCx0Jb-Z76jTQ'+V],
+ s4:['Ringkasan arkib video berkaitan sekolah',F+'1y1YUWI_zdJE68IOll6gQQ6v8YUHY1oYC'+V],
+ k0:['Senarai ucapan Kamar Khas',F+'1htftJw5RtSdLAAgip3-_luPQSNbXogJ2'+V],
+ k1:['Kamar Khas 16 Okt 2024 (KK-01, KK-02)',F+'1BL5-kmPcWQZh4K6FjoRYiU5Yt6QxK8Sm'+V],
+ k2:['Kamar Khas 4 Mac 2025 (KK-03, KK-04)',F+'1JPk5lexeoYlG30Y0tF0abfX-ITPsNxrY'+V],
+ k3:['Kamar Khas 5 Ogos 2025 (KK-05, KK-06)',F+'1TcpRqBqdaHpEb-oN4THC9zRdWnSh-oR6'+V],
+ k4:['Kamar Khas 16 Okt 2025 (KK-07, KK-08)',F+'1r7VYxyVyLcW2PoWNGZJvgxYZ_TLvGfh9'+V],
+ k5:['Ringkasan masa ucapan Kamar Khas',F+'1Io9A9b6OAMbtX2de4jd5HsKWkPXGg3e5'+V]
+};
+const NA='<span class="na">Tidak dinyatakan dalam bahan</span>';
+const IC={
+ school:'<path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-5h6v5M12 5V2l3 1-3 1"/>',
+ health:'<rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/>',
+ card:'<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6.5 16c.6-1.4 1.5-2 2.5-2s1.9.6 2.5 2M14 10h4M14 13h4"/>',
+ signal:'<path d="M12 21v-9M8.5 8.5a5 5 0 0 1 7 0M5.6 5.6a9 9 0 0 1 12.8 0"/><circle cx="12" cy="11" r="1.2"/>',
+ padi:'<path d="M12 17V8M12 8c-3 0-5-2-5-5 3 0 5 2 5 5zM12 12c3 0 5-2 5-5-3 0-5 2-5 5zM3 20c2 0 2-1.5 4.5-1.5S10 20 12 20s2-1.5 4.5-1.5S19 20 21 20"/>',
+ industry:'<path d="M3 21V11l5 3v-3l5 3V7h3l1 4h4v10zM3 21h18M7 18h2M12 18h2M17 18h2"/>'
+};
+const T={dr:['Dewan Rakyat','dr'],kk:['Kamar Khas','kk'],tn:['Jenis sesi tidak dinyatakan','tn']};
+const ISU=[
+{id:'sekolah',ic:'school',t:'Kesesakan sekolah di Seri Iskandar',p:'Pertambahan murid yang mendadak menyesakkan sekolah rendah sedia ada, sedangkan sekolah baharu di Bandar Universiti belum dibina.',n:'3',nl:'tarikh ucapan menyentuh isu sekolah',
+ lok:'Bandar Universiti, Seri Iskandar (Perak Tengah). Sekolah disebut: SK Seri Iskandar, SK Iskandar Perdana dan SK Seri Tronoh (Parlimen berhampiran).',
+ rec:[['28 Mac 2023','dr','Perbahasan Kementerian Pendidikan, Parlimen Ke-15'],['16 Okt 2024','kk','Disentuh dalam ucapan KK-02 (tenaga pakar Hospital Seri Iskandar)'],['19 Nov 2026','tn','Perbahasan Belanjawan 2027, KPKT']],
+ isu:['Peningkatan jumlah murid secara mendadak dan kesesakan sekolah rendah sedia ada (28 Mac 2023).','Tapak tanah sekolah telah diperuntukkan tetapi sekolah belum dibina ketika ucapan disampaikan (28 Mac 2023).','Sekolah terpaksa beroperasi dua sesi (jadual ringkasan arkib, 28 Mac 2023).','Pelajar terpaksa mendapatkan tempat di sekolah daerah lain akibat pertumbuhan penduduk pesat di Perak Tengah (16 Okt 2024).','Seri Iskandar sebagai bandar ilmu: UTP, UiTM, Kolej Profesional MARA, IKBN dan sekolah-sekolah (19 Nov 2026).'],
+ cad:['Pembinaan bangunan tambahan sekolah.','Pembinaan sekolah baharu di Bandar Universiti.','19 Nov 2026: fokus utama ialah pembinaan pasar awam, bukan sekolah baharu.'],
+ jaw:null,stat:'Tapak sudah diperuntukkan, sekolah belum dibina (setakat 28 Mac 2023). Status terkini tidak dinyatakan dalam bahan.',
+ ruj:'Hansard melalui CLJ Law (dirujuk dalam nota; nombor halaman tidak dinyatakan). Cap masa video tidak dinyatakan.',
+ src:['s1','s2','s3','s4'],flag:'"Sekolah beroperasi dua sesi" hanya muncul dalam jadual ringkasan arkib dan tidak dalam butiran ucapan 28 Mac 2023. Perlu disemak dengan Hansard.'},
+{id:'hospital',ic:'health',t:'Doktor pakar Hospital Seri Iskandar',p:'Pertambahan penduduk sekitar Seri Iskandar, Bota, Tronoh dan Parit memerlukan doktor pakar dan perkhidmatan kesihatan menyeluruh.',n:'4',nl:'kawasan penduduk disebut',
+ lok:'Hospital Seri Iskandar; penduduk sekitar Seri Iskandar, Bota, Tronoh dan Parit.',
+ rec:[['16 Okt 2024 (Rabu)','kk','KK-02, Parlimen Ke-15 Penggal Ketiga. Waktu ucapan 3.00 ptg. Kementerian: KKM'],['26 Nov 2024','tn','Video: Hospital dan Klinik Kesihatan Parit (butiran tidak dinyatakan)']],
+ isu:['Keperluan doktor pakar dan perkhidmatan kesihatan yang menyeluruh.','Pertambahan penduduk di sekitar Seri Iskandar, Bota, Tronoh dan Parit.'],
+ cad:['Menyediakan tenaga pakar bagi mengoptimumkan kemudahan hospital.'],
+ jaw:null,stat:null,ruj:'Hansard Kamar Khas 16 Okt 2024, halaman 9. Waktu ucapan 3.00 ptg.',src:['k1','k0','v3']},
+{id:'kaunter',ic:'card',t:'Kaunter Imigresen dan JPJ setempat',p:'Penduduk terpaksa ke Ipoh atau Lumut untuk urusan pasport; kaunter JPJ turut dipohon di Seri Iskandar.',n:'2',nl:'usul di Kamar Khas',
+ lok:'Parlimen Parit (kaunter imigresen); Seri Iskandar (kaunter JPJ). Ipoh dan Lumut disebut sebagai lokasi urusan pasport sedia ada.',
+ rec:[['16 Okt 2024 (Rabu)','kk','KK-01, Parlimen Ke-15 Penggal Ketiga. Waktu ucapan 2.51 ptg. Kementerian: KDN'],['5 Ogos 2025 (Selasa)','kk','KK-05, Parlimen Ke-15 Penggal Keempat. Waktu ucapan belum disahkan. Kementerian: MOT']],
+ isu:['Kesukaran penduduk yang perlu ke Ipoh atau Lumut untuk urusan pasport (KK-01).','Keperluan kaunter JPJ di Seri Iskandar (KK-05; butiran ucapan tidak dinyatakan, hanya tajuk dalam Aturan Urusan Mesyuarat).'],
+ cad:['Mewujudkan kaunter imigresen dalam Parlimen Parit.','Mewujudkan kaunter JPJ di Seri Iskandar.'],
+ jaw:null,stat:null,ruj:'KK-01: Hansard Kamar Khas 16 Okt 2024, halaman 6, 2.51 ptg. KK-05: Aturan Urusan Mesyuarat rasmi (halaman tidak dinyatakan).',src:['k1','k3','k5']},
+{id:'telko',ic:'signal',t:'Liputan telefon dan internet desa',p:'Liputan telefon bimbit dan internet yang lemah di kampung menjejaskan keselamatan, pendidikan dan ekonomi desa.',n:'11',nl:'kampung dinamakan',
+ lok:'Kampung Bidara, Selboh, Kota Pagar, Nyior, Belanja Kiri, Teluk Perang, Serapoh, Simpang Tiga, Buluh Akar, Chopin Kanan dan Chopin Kiri.',
+ rec:[['16 Okt 2025 (Khamis)','kk','KK-07, Parlimen Ke-15 Penggal Keempat. Waktu ucapan 2.33 ptg. Kementerian Komunikasi']],
+ isu:['Masalah liputan telefon bimbit dan internet di kawasan kampung.','Tajuk ucapan mengaitkannya dengan ancaman kepada keselamatan, pendidikan dan ekonomi desa.'],
+ cad:['Tajuk: "Permasalahan Kualiti Rangkaian Telekomunikasi dan Internet". Butiran cadangan khusus tidak dinyatakan dalam bahan.'],
+ jaw:null,stat:null,ruj:'Hansard Kamar Khas 16 Okt 2025, halaman 1. Waktu ucapan 2.33 ptg.',src:['k4','k5'],flag:'Kiraan 11 menganggap Chopin Kanan dan Chopin Kiri sebagai dua kampung.'},
+{id:'padi',ic:'padi',t:'Padi, sungai dan nelayan darat',p:'Pengezonan jelapang padi Perak Tengah, hakisan sungai dan komuniti nelayan darat dibawa ke Kamar Khas.',n:'3',nl:'usul di Kamar Khas',
+ lok:'Jelapang padi Perak Tengah; komuniti nelayan darat dalam Parlimen Parit. Lokasi hakisan sungai tidak dinyatakan dalam bahan.',
+ rec:[['4 Mac 2025 (Selasa)','kk','KK-03 Pengezonan Jelapang Padi di Perak Tengah: Cabaran dan Cadangan Penambahbaikan. Kementerian: KPKM'],['5 Ogos 2025 (Selasa)','kk','KK-06 Isu Hakisan Sungai. Kementerian: PETRA'],['16 Okt 2025 (Khamis)','kk','KK-08 Pembangunan Komuniti Nelayan Darat. Waktu ucapan 2.52 ptg. Kementerian: KPKM']],
+ isu:['Cabaran pengezonan jelapang padi di Perak Tengah.','Hakisan sungai.','Keperluan pembangunan komuniti nelayan darat.'],
+ cad:['Cadangan penambahbaikan pengezonan jelapang padi (butiran tidak dinyatakan dalam bahan).'],
+ jaw:null,stat:null,ruj:'KK-03: Aturan Urusan Mesyuarat, halaman 46. KK-06: Aturan Urusan Mesyuarat. KK-08: Hansard Kamar Khas 16 Okt 2025, halaman 6.',src:['k2','k3','k4','k5'],flag:'Waktu 2.52 ptg bagi KK-08 hanya terdapat dalam jadual ringkasan masa, bukan dalam butiran Hansard.'},
+{id:'pelaburan',ic:'industry',t:'Pelaburan dan industri Seri Iskandar',p:'Usaha menarik pelaburan dan membangunkan industri di Seri Iskandar dibangkitkan dalam tiga rekod berasingan.',n:'3',nl:'rekod, Nov 2024 hingga Mac 2025',
+ lok:'Seri Iskandar, Perak Tengah.',
+ rec:[['20 Nov 2024','tn','Video: Pelaburan Seri Iskandar dan pembangunan industri'],['5 Feb 2025','tn','Video: Peruntukan pembangunan dan kepercayaan pelabur'],['4 Mac 2025 (Selasa)','kk','KK-04 Menarik Pelaburan dan Meningkatkan Industri. Kementerian: MITI']],
+ isu:['Menarik pelaburan dan meningkatkan industri (KK-04).','Pelaburan di Seri Iskandar dan pembangunan industri (video 20 Nov 2024).','Peruntukan pembangunan dan kepercayaan pelabur (video 5 Feb 2025).'],
+ cad:[null],jaw:null,stat:null,ruj:'KK-04: Aturan Urusan Mesyuarat, halaman 46. Video: cap masa tidak dinyatakan.',src:['k2','v2','v3']}
+];
+const VID=[['19 Nov 2026','Perbahasan KPKT – Belanjawan 2027'],['5 Nov 2026','Perbahasan Belanjawan 2027'],['2 Nov 2026','JAKIM dan pendidikan Islam'],['13 Okt 2026','Belanjawan 2027'],['24 Feb 2026','Isu MyDigital ID'],['12 Feb 2026','Persidangan Dewan Rakyat'],['27 Jan 2026','Titah Diraja dan peruntukan Ahli Parlimen'],['18 Nov 2025','KPDN dan kos sara hidup'],['14 Okt 2025','Perbahasan Belanjawan 2026'],['18 Ogos 2025','Persidangan Dewan Rakyat'],['5 Feb 2025','Peruntukan pembangunan dan kepercayaan pelabur'],['2 Dis 2024','Isu alam sekitar'],['26 Nov 2024','Hospital dan Klinik Kesihatan Parit'],['20 Nov 2024','Pelaburan Seri Iskandar dan pembangunan industri'],['13 Nov 2024','JAKIM, NADMA dan Akademi Kenegaraan'],['29 Okt 2024','Subsidi dan jalan FELCRA Nasaruddin'],['17 Okt 2024','Kes kehilangan kanak-kanak'],['14 Okt 2024','Pemerkasaan institusi kehakiman syariah'],['18 Jul 2024','Tenaga hidroelektrik'],['16 Jul 2024','Akta Perlindungan Data Peribadi'],['11 Jul 2024','Pertumbuhan eksport Malaysia'],['27 Mac 2024','Percukaian dan keselamatan siber'],['12 Mac 2024','Isu pemerdagangan manusia'],['23 Nov 2023','Penipuan pakej umrah dan pelancongan'],['14 Nov 2023','Perdagangan antarabangsa dan industri halal'],['1 Nov 2023','Jenayah siber dan keupayaan PDRM'],['17 Okt 2023','Belanjawan 2024 dan isu Palestin'],['12 Okt 2023','Tadbir urus dan pemantauan kewangan suruhanjaya'],['23 Mei 2023','RUU Kesihatan Mental'],['4 Apr 2023','Insentif pengeluaran getah, kuarters guru dan kebajikan rakyat'],['6 Mac 2023','Perbahasan Belanjawan 2023'],['2 Mac 2023','Ekonomi belia dan industri halal'],['20 Feb 2023','Titah Diraja dan peruntukan Ahli Parlimen']];
+const KK=[['16 Okt 2024','Keperluan Kaunter Perkhidmatan Jabatan Imigresen','KDN','2.51 ptg'],['16 Okt 2024','Keperluan Tenaga Pakar di Hospital Seri Iskandar','KKM','3.00 ptg'],['4 Mac 2025','Pengezonan Jelapang Padi di Perak Tengah: Cabaran dan Cadangan Penambahbaikan','KPKM','Belum disahkan'],['4 Mac 2025','Menarik Pelaburan dan Meningkatkan Industri','MITI','Belum disahkan'],['5 Ogos 2025','Keperluan Kaunter JPJ di Seri Iskandar','MOT','Belum disahkan'],['5 Ogos 2025','Isu Hakisan Sungai','PETRA','Belum disahkan'],['16 Okt 2025','Permasalahan Kualiti Rangkaian Telekomunikasi dan Internet','Kementerian Komunikasi','2.33 ptg'],['16 Okt 2025','Keperluan bagi Pembangunan Komuniti Nelayan Darat dalam Parlimen Parit','KPKM','2.52 ptg'],['Tarikh belum dikenal pasti','Pembinaan Masjid Ghufraniah Titi Gantung','Hal Ehwal Agama','Belum dikenal pasti']];
+
+const $=id=>document.getElementById(id);
+const root=document.documentElement;
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(reduce) root.classList.add('still');
+
+$('cards').innerHTML=ISU.map((c,i)=>`<article class="card panel anim" style="--d:${(.75+i*.09).toFixed(2)}"><div class="ch"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true">${IC[c.ic]}</svg></span><h3>${c.t}</h3></div><p>${c.p}</p><div class="cf"><div class="fig"><b>${c.n}</b><span>${c.nl}</span></div><button class="btn" type="button" data-i="${i}" aria-haspopup="dialog">Lihat butiran</button></div></article>`).join('');
+
+const li=a=>'<ul>'+a.map(x=>`<li>${x==null?NA:x}</li>`).join('')+'</ul>';
+const recs=r=>r.map(([d,t,x])=>`<div class="rec"><b>${d}</b><span class="ty ${T[t][1]}">${T[t][0]}</span><br>${x}</div>`).join('');
+const srcs=k=>'<ul class="src">'+k.map(s=>`<li><a href="${S[s][1]}" target="_blank" rel="noopener">${S[s][0]}</a></li>`).join('')+'</ul>';
+function detail(c){return `<h4>Isu dan lokasi</h4><p>${c.lok}</p><h4>Tarikh dan jenis sesi</h4>${recs(c.rec)}<h4>Perkara yang dibangkitkan</h4>${li(c.isu)}<h4>Cadangan atau tuntutan YB</h4>${li(c.cad)}<h4>Jawapan kementerian</h4><p>${c.jaw||NA}</p><h4>Status tindakan</h4><p>${c.stat||NA}</p><h4>Rujukan halaman / cap masa</h4><p>${c.ruj}</p><h4>Sumber bahan</h4>${srcs(c.src)}${c.flag?`<div class="flag"><b>Untuk semakan:</b> ${c.flag}</div>`:''}`}
+
+function allRecords(){
+ const yrs={};VID.forEach(v=>{const y=v[0].slice(-4);yrs[y]=(yrs[y]||0)+1});
+ const ks=Object.keys(yrs).sort(),mx=Math.max(...Object.values(yrs));
+ return `<h4>Rakaman ucapan mengikut tahun (Senarai Video, ${VID.length} rekod)</h4><div class="bars">${ks.map(y=>`<div class="bar"><span>${y}</span><i style="width:${yrs[y]/mx*100}%"></i><span>${yrs[y]}</span></div>`).join('')}</div>
+ <p style="font-size:14px;color:var(--mute)">Jenis sesi tidak dinyatakan dalam senarai video, kecuali tajuk yang menyebut perbahasan atau persidangan.</p>
+ <h4>Senarai Video Ucapan Parit</h4><div class="scroll"><table><thead><tr><th>Bil.</th><th>Tarikh</th><th>Tajuk / isu ucapan</th></tr></thead><tbody>${VID.map((v,i)=>`<tr><td>${i+1}</td><td class="dt">${v[0]}</td><td>${v[1]}</td></tr>`).join('')}</tbody></table></div>
+ <h4>Ucapan Kamar Khas (${KK.length} tajuk)</h4><div class="scroll"><table><thead><tr><th>Bil.</th><th>Tarikh</th><th>Tajuk ucapan</th><th>Kementerian</th><th>Waktu</th></tr></thead><tbody>${KK.map((k,i)=>`<tr><td>${i+1}</td><td class="dt">${k[0]}</td><td>${k[1]}</td><td>${k[2]}</td><td class="dt">${k[3]}</td></tr>`).join('')}</tbody></table></div>
+ <h4>Rekod lain dalam bahan</h4><div class="rec"><b>28 Mac 2023</b><span class="ty dr">Dewan Rakyat</span><br>Perbahasan Kementerian Pendidikan: pembinaan sekolah baharu di Bandar Universiti. Tidak tersenarai dalam Senarai Video.</div>
+ <div class="flag"><b>Untuk semakan:</b> "Hal Ehwal Agama" disenaraikan di ruang kementerian bagi tajuk Masjid Ghufraniah Titi Gantung; tarikh dan waktu belum dikenal pasti.</div>
+ <h4>Sumber bahan</h4>${srcs(['v1','v2','v3','v4','k0','k5'])}<p><a href="https://drive.google.com/drive/folders/1T78qjkdHUHRUHIh8kdTT2fwPPkb8ZOFM?usp=sharing" target="_blank" rel="noopener">Folder bahan rujukan (Google Drive)</a></p>`;
+}
+
+let last=null;
+function open(tag,title,html){last=document.activeElement;$('dtag').textContent=tag;$('dtitle').textContent=title;$('dbody').innerHTML=html;$('dbody').scrollTop=0;document.body.classList.add('open');$('drawer').setAttribute('aria-hidden','false');$('stage').setAttribute('inert','');setTimeout(()=>$('close').focus(),50)}
+function close(){if(!document.body.classList.contains('open'))return;document.body.classList.remove('open');$('drawer').setAttribute('aria-hidden','true');$('stage').removeAttribute('inert');last&&last.focus()}
+$('cards').addEventListener('click',e=>{const b=e.target.closest('button[data-i]');if(!b)return;const c=ISU[+b.dataset.i];open('Butiran isu',c.t,detail(c))});
+$('all').addEventListener('click',()=>open('Panel data','Semua rekod dalam bahan',allRecords()));
+$('close').addEventListener('click',close);$('scrim').addEventListener('click',close);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')close();if(e.key==='Tab'&&document.body.classList.contains('open')){const f=[...$('drawer').querySelectorAll('button,a[href]')];if(!f.length)return;const a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}});
+
+function toast(m){const t=$('toast');t.textContent=m;t.classList.add('on');clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove('on'),2600)}
+const nums=[...document.querySelectorAll('.n[data-to]')];
+function finish(){nums.forEach(n=>n.textContent=n.dataset.to)}
+function count(){if(root.classList.contains('still'))return finish();const t0=performance.now()+450,D=800;const step=now=>{if(root.classList.contains('still'))return finish();const p=Math.min(1,Math.max(0,(now-t0)/D)),e=1-(1-p)**3;nums.forEach(n=>n.textContent=Math.round(+n.dataset.to*e));if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step)}
+function syncPause(){const s=root.classList.contains('still');$('pause').textContent=s?'Sambung animasi':'Jeda animasi';$('pause').setAttribute('aria-pressed',String(s))}
+$('pause').addEventListener('click',()=>{root.classList.toggle('still');if(root.classList.contains('still'))finish();syncPause()});
+syncPause();
+$('fs').addEventListener('click',async()=>{try{if(document.fullscreenElement){await document.exitFullscreen()}else{await document.documentElement.requestFullscreen()}}catch(err){toast('Skrin penuh disekat oleh paparan ini. Buka artifak dalam tab sendiri atau tekan F11.')}});
+document.addEventListener('fullscreenchange',()=>{$('fs').textContent=document.fullscreenElement?'Keluar skrin penuh':'Skrin penuh';fit()});
+
+function fit(){const w=innerWidth,h=innerHeight;const flow=w<900||w/h<1.05;root.classList.toggle('flow',flow);if(!flow)$('stage').style.setProperty('--s',Math.min(w/1600,h/900).toFixed(4))}
+const ro=new ResizeObserver(fit);ro.observe(document.documentElement);fit();
+count();
+
+$('printx').innerHTML='<h2>Lampiran: butiran isu</h2>'+ISU.map(c=>`<section><h3>${c.t}</h3>${detail(c).replace(/<h4>/g,'<p><b>').replace(/<\/h4>/g,'</b></p>')}</section>`).join('');
+}
+</script>
+</body>
+</html>
