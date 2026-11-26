@@ -1,0 +1,356 @@
+{
+ "_nota": "Style Nasihat V4. Masa = saat output atau nama beat timeline.json. Lihat styles/nasihat-v4/STYLE.md",
+ "face": {
+  "x": 540,
+  "y": 1050
+ },
+ "zoom": [
+  1.0,
+  1.12
+ ],
+ "logo": {
+  "name": "NAKSEEHEART",
+  "tagline": "NASIHAT · DARI · HATI"
+ },
+ "label": "SHARING MOMENT",
+ "cta": {
+  "caption": "Nasihat Dari *Hati* Untuk *Hati*",
+  "handle": "@nakseeheart",
+  "clickAfter": 2.0,
+  "cardTop": "SETIAP NASIHAT",
+  "cardBig": "ADA MAKNA."
+ },
+ "scenes": [
+  {
+   "k": "side",
+   "a": 0.15,
+   "b": 3.55,
+   "small": "ALLAH SAHAJA",
+   "big": "TEMPAT TERBAIK"
+  },
+  {
+   "k": "word",
+   "a": 6.9,
+   "b": 9.7,
+   "small": "ALLAH SENTIASA BERI",
+   "big": "PELUANG",
+   "box": true
+  },
+  {
+   "k": "side",
+   "a": 10.2,
+   "b": 12.9,
+   "small": "UNTUK",
+   "big": "MEMBETULKAN",
+   "right": true
+  },
+  {
+   "k": "versus",
+   "a": 15.2,
+   "b": 18.1,
+   "title": "TIDAK KIRA",
+   "left": "SENGAJA",
+   "right": "TIDAK SENGAJA",
+   "at2": 17.0
+  },
+  {
+   "k": "ring",
+   "a": 25.8,
+   "b": 28.6,
+   "small": "ALLAH",
+   "big": "MAHA MENYAYANGI",
+   "icon": "heart"
+  },
+  {
+   "k": "side",
+   "a": 30.1,
+   "b": 32.7,
+   "small": "WALAU SEBANYAK MANA",
+   "big": "KEKHILAFAN"
+  },
+  {
+   "k": "silhouette",
+   "a": 32.8,
+   "b": 35.0,
+   "lines": [
+    "MASIH",
+    "ADA",
+    "RUANG"
+   ]
+  },
+  {
+   "k": "word",
+   "a": 38.7,
+   "b": 41.8,
+   "big": "JANGAN",
+   "lines": [
+    "PUTUS ASA"
+   ],
+   "box": true
+  },
+  {
+   "k": "list",
+   "a": 43.2,
+   "b": 48.9,
+   "title": "WALAUPUN KERAP",
+   "items": [
+    {
+     "t": "GAGAL",
+     "at": 43.4
+    },
+    {
+     "t": "BERDEPAN MASALAH",
+     "at": 47.7
+    }
+   ]
+  },
+  {
+   "k": "side",
+   "a": 51.6,
+   "b": 56.9,
+   "small": "SETIAP PERKARA",
+   "big": "ALLAH ATURKAN",
+   "right": true
+  },
+  {
+   "k": "tiles",
+   "a": 57.1,
+   "b": 64.3,
+   "title": "ALLAH MENUNGGU",
+   "items": [
+    {
+     "n": "1",
+     "t": "DOA",
+     "at": 59.2
+    },
+    {
+     "n": "2",
+     "t": "CERITA",
+     "at": 61.3
+    },
+    {
+     "n": "3",
+     "t": "KONGSI",
+     "at": 62.7
+    }
+   ]
+  },
+  {
+   "k": "spot",
+   "a": 64.45,
+   "b": 74.05,
+   "small": "ALLAH SAHAJA",
+   "big": "TEMPAT TERBAIK",
+   "sub": "UNTUK KITA MENGADU",
+   "subAt": 69.93,
+   "icon": "mosque"
+  },
+  {
+   "k": "side",
+   "a": 75.7,
+   "b": 78.2,
+   "small": "DENGAN",
+   "big": "KEYAKINAN"
+  },
+  {
+   "k": "ring",
+   "a": 78.3,
+   "b": 82.8,
+   "small": "INSYAALLAH",
+   "big": "ALLAH BANTU",
+   "icon": "hand"
+  },
+  {
+   "k": "tiles",
+   "a": 83.6,
+   "b": 91.0,
+   "title": "YANG PENTING, JAGA",
+   "items": [
+    {
+     "n": "1",
+     "t": "KETAATAN",
+     "at": 84.9
+    },
+    {
+     "n": "2",
+     "t": "KEYAKINAN",
+     "at": 87.6
+    }
+   ]
+  },
+  {
+   "k": "silhouette",
+   "a": 91.2,
+   "b": 93.5,
+   "lines": [
+    "TIDAK",
+    "SIA-SIAKAN",
+    "HAMBA-NYA"
+   ]
+  },
+  {
+   "k": "side",
+   "a": 93.6,
+   "b": 96.6,
+   "small": "SETIAP",
+   "big": "UJIAN",
+   "right": true
+  },
+  {
+   "k": "word",
+   "a": 96.7,
+   "b": 100.0,
+   "small": "ALLAH TAHU",
+   "big": "KITA MAMPU",
+   "box": true
+  },
+  {
+   "k": "side",
+   "a": 100.05,
+   "b": 100.8,
+   "small": "",
+   "big": "PERCAYALAH"
+  },
+  {
+   "k": "cta",
+   "a": "cta",
+   "b": "end"
+  }
+ ],
+ "points": [
+  {
+   "a": 0,
+   "b": 6.9,
+   "small": "ALLAH SAHAJA",
+   "big": "TEMPAT TERBAIK",
+   "icon": "mosque"
+  },
+  {
+   "a": 6.9,
+   "b": 15.2,
+   "small": "ALLAH SENTIASA BERI",
+   "big": "PELUANG",
+   "icon": "star",
+   "chips": [
+    {
+     "t": "Membetulkan kesilapan",
+     "at": 10.3
+    }
+   ]
+  },
+  {
+   "a": 15.2,
+   "b": 25.8,
+   "small": "TIDAK KIRA",
+   "big": "SENGAJA ATAU TIDAK",
+   "icon": "check"
+  },
+  {
+   "a": 25.8,
+   "b": 30.1,
+   "small": "ALLAH",
+   "big": "MAHA MENYAYANGI",
+   "icon": "heart"
+  },
+  {
+   "a": 30.1,
+   "b": 38.7,
+   "small": "WALAU BANYAK KEKHILAFAN",
+   "big": "MASIH ADA RUANG",
+   "icon": "hand",
+   "chips": [
+    {
+     "t": "Sebagai hamba",
+     "at": 34.6
+    },
+    {
+     "t": "Sebagai manusia",
+     "at": 36.3
+    }
+   ]
+  },
+  {
+   "a": 38.7,
+   "b": 51.6,
+   "small": "JANGAN SESEKALI",
+   "big": "PUTUS ASA",
+   "icon": "shield",
+   "chips": [
+    {
+     "t": "Walau kerap gagal",
+     "at": 43.3
+    },
+    {
+     "t": "Walau banyak masalah",
+     "at": 47.7
+    }
+   ]
+  },
+  {
+   "a": 51.6,
+   "b": 64.45,
+   "small": "ALLAH SENTIASA",
+   "big": "MENUNGGU KITA",
+   "icon": "clock",
+   "chips": [
+    {
+     "t": "Doa",
+     "at": 59.3
+    },
+    {
+     "t": "Bercerita",
+     "at": 61.4
+    },
+    {
+     "t": "Berkongsi",
+     "at": 62.8
+    }
+   ]
+  },
+  {
+   "a": 64.45,
+   "b": 75.7,
+   "small": "TEMPAT TERBAIK",
+   "big": "UNTUK MENGADU",
+   "icon": "chat"
+  },
+  {
+   "a": 75.7,
+   "b": 83.6,
+   "small": "DENGAN KEYAKINAN",
+   "big": "ALLAH BANTU",
+   "icon": "hand"
+  },
+  {
+   "a": 83.6,
+   "b": 91.2,
+   "small": "YANG PENTING, JAGA",
+   "big": "KETAATAN & KEYAKINAN",
+   "icon": "shield",
+   "chips": [
+    {
+     "t": "Ketaatan",
+     "at": 85.0
+    },
+    {
+     "t": "Keyakinan",
+     "at": 87.7
+    }
+   ]
+  },
+  {
+   "a": 91.2,
+   "b": 93.6,
+   "small": "ALLAH TIDAK",
+   "big": "SIA-SIAKAN HAMBA-NYA",
+   "icon": "heart"
+  },
+  {
+   "a": 93.6,
+   "b": "cta",
+   "small": "SETIAP UJIAN",
+   "big": "KITA MAMPU",
+   "icon": "target"
+  }
+ ]
+}

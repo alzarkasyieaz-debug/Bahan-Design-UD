@@ -4,6 +4,7 @@ import { B, TL, C, FONT, f, tw, ease, easeOut, back, useTime } from './lib';
 import { Subtitles } from './components/Subtitles';
 import { HeartMark } from './components/LowerThird';
 import { LineIcon, IconName } from './components/InfoFX';
+import SC from './data/showcase.json';
 
 /* =====================================================================
  * SHOWCASE FINAL / RAW + suntingan KINETIC TYPOGRAPHY
@@ -15,7 +16,12 @@ import { LineIcon, IconName } from './components/InfoFX';
  * ===================================================================== */
 
 const SQ = 1080;
-const FACE = { x: 540, y: 1050 };
+/* Data style Nasihat V4: src/data/showcase.json (babak panel, point 3D, teks CTA).
+ * Masa boleh nombor (saat output) atau nama beat dalam timeline.json (cth "cta", "end"). */
+type T = number | string;
+const bt = (v: T | undefined, d = 0): number => (v === undefined ? d : typeof v === 'number' ? v : Number((B as Record<string, unknown>)[v] ?? d));
+const FACE = SC.face ?? { x: 540, y: 1050 };
+const ZOOMS: number[] = SC.zoom ?? [1.0, 1.12];
 const GOLD = 'linear-gradient(180deg, #FFF6D8 0%, #FFE08A 35%, #F2B33D 70%, #C98A1E 100%)';
 const BG = 'radial-gradient(circle at 50% 42%, #1E6E72 0%, #0E3F45 45%, #061A1D 100%)';
 
@@ -46,31 +52,13 @@ type Scene =
   | { k: 'silhouette'; a: number; b: number; lines: string[] }
   | { k: 'list'; a: number; b: number; title: string; items: { t: string; at: number }[] }
   | { k: 'tiles'; a: number; b: number; title: string; items: { n: string; t: string; at: number }[] }
-  | { k: 'spot'; a: number; b: number; big: string; small: string; sub: string; icon: IconName }
+  | { k: 'spot'; a: number; b: number; big: string; small: string; sub: string; subAt?: number; icon: IconName }
   | { k: 'cta'; a: number; b: number };
 
-const S: Scene[] = [
-  { k: 'side', a: 0.15, b: B.flashToBody - 0.1, small: 'ALLAH SAHAJA', big: 'TEMPAT TERBAIK' },
-  { k: 'word', a: 6.9, b: 9.7, small: 'ALLAH SENTIASA BERI', big: 'PELUANG', box: true },
-  { k: 'side', a: 10.2, b: 12.9, small: 'UNTUK', big: 'MEMBETULKAN', right: true },
-  { k: 'versus', a: 15.2, b: 18.1, title: 'TIDAK KIRA', left: 'SENGAJA', right: 'TIDAK SENGAJA', at2: 17.0 },
-  { k: 'ring', a: 25.8, b: 28.6, small: 'ALLAH', big: 'MAHA MENYAYANGI', icon: 'heart' },
-  { k: 'side', a: 30.1, b: 32.7, small: 'WALAU SEBANYAK MANA', big: 'KEKHILAFAN' },
-  { k: 'silhouette', a: 32.8, b: 35.0, lines: ['MASIH', 'ADA', 'RUANG'] },
-  { k: 'word', a: 38.7, b: 41.8, big: 'JANGAN', lines: ['PUTUS ASA'], box: true },
-  { k: 'list', a: 43.2, b: 48.9, title: 'WALAUPUN KERAP', items: [{ t: 'GAGAL', at: 43.4 }, { t: 'BERDEPAN MASALAH', at: 47.7 }] },
-  { k: 'side', a: 51.6, b: 56.9, small: 'SETIAP PERKARA', big: 'ALLAH ATURKAN', right: true },
-  { k: 'tiles', a: 57.1, b: 64.3, title: 'ALLAH MENUNGGU', items: [{ n: '1', t: 'DOA', at: 59.2 }, { n: '2', t: 'CERITA', at: 61.3 }, { n: '3', t: 'KONGSI', at: 62.7 }] },
-  { k: 'spot', a: 64.45, b: 74.05, small: 'ALLAH SAHAJA', big: 'TEMPAT TERBAIK', sub: 'UNTUK KITA MENGADU', icon: 'mosque' },
-  { k: 'side', a: 75.7, b: 78.2, small: 'DENGAN', big: 'KEYAKINAN' },
-  { k: 'ring', a: 78.3, b: 82.8, small: 'INSYAALLAH', big: 'ALLAH BANTU', icon: 'hand' },
-  { k: 'tiles', a: 83.6, b: 91.0, title: 'YANG PENTING, JAGA', items: [{ n: '1', t: 'KETAATAN', at: 84.9 }, { n: '2', t: 'KEYAKINAN', at: 87.6 }] },
-  { k: 'silhouette', a: 91.2, b: 93.5, lines: ['TIDAK', 'SIA-SIAKAN', 'HAMBA-NYA'] },
-  { k: 'side', a: 93.6, b: 96.6, small: 'SETIAP', big: 'UJIAN', right: true },
-  { k: 'word', a: 96.7, b: 100.0, small: 'ALLAH TAHU', big: 'KITA MAMPU', box: true },
-  { k: 'side', a: 100.05, b: 100.8, small: '', big: 'PERCAYALAH' },
-  { k: 'cta', a: 100.8, b: B.end },
-];
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const normScene = (x: any): Scene => ({ ...x, a: bt(x.a), b: bt(x.b), ...(x.at2 !== undefined ? { at2: bt(x.at2) } : {}), ...(x.subAt !== undefined ? { subAt: bt(x.subAt) } : {}),
+  ...(x.items ? { items: x.items.map((it: { at: T }) => ({ ...it, at: bt(it.at) })) } : {}) });
+const S: Scene[] = (SC.scenes as unknown as Scene[]).map(normScene);
 
 const Card: React.FC<{ o: number; children: React.ReactNode }> = ({ o, children }) => (
   <AbsoluteFill style={{ opacity: o, background: BG }}>
@@ -232,7 +220,7 @@ const SceneView: React.FC<{ s: Scene }> = ({ s }) => {
           <div style={{ position: 'absolute', left: 80, top: 600, display: 'flex', flexDirection: 'column', gap: 8 }}>
             <Small text={s.small} t={t} a={s.a + 0.5} size={38} />
             <Big text={s.big} size={130} t={t} a={s.a + 0.7} style={{ transformOrigin: 'left center' }} />
-            <Small text={s.sub} t={t} a={B.mengadu as number - 0.3} size={42} />
+            <Small text={s.sub} t={t} a={s.subAt ?? s.a + 1.0} size={42} />
           </div>
         </Card>
       );
@@ -242,9 +230,9 @@ const SceneView: React.FC<{ s: Scene }> = ({ s }) => {
         <Card o={o}>
           <div style={center}>
             <HeartMark size={120} t={t} />
-            <Big text="SETIAP NASIHAT" size={120} t={t} a={s.a + 0.3} />
-            <Big text="ADA MAKNA." size={170} t={t} a={s.a + 0.7} />
-            <Small text="FOLLOW @NAKSEEHEART" t={t} a={s.a + 1.2} size={44} />
+            <Big text={SC.cta.cardTop} size={120} t={t} a={s.a + 0.3} />
+            <Big text={SC.cta.cardBig} size={170} t={t} a={s.a + 0.7} />
+            <Small text={`FOLLOW ${SC.cta.handle.toUpperCase()}`} t={t} a={s.a + 1.2} size={44} />
           </div>
         </Card>
       );
@@ -256,7 +244,7 @@ export const KineticFinal: React.FC = () => {
   const t = useTime();
   const body = TL.segments.filter((s) => s.id !== 'hook' && s.id !== 'cta');
   const idx = body.findIndex((sg) => t >= sg.out[0] && t < sg.out[1]);
-  const s = (idx % 2 === 0 ? 1.0 : 1.12) + tw(t, [0, 106], [0, 0.04]);
+  const s = ZOOMS[Math.max(0, idx) % ZOOMS.length] + tw(t, [0, B.end], [0, 0.04]);
   const ty = SQ / 2 - FACE.y * s, tx = SQ / 2 - FACE.x * s;
   return (
     <AbsoluteFill style={{ background: '#061A1D', overflow: 'hidden' }}>
@@ -274,20 +262,9 @@ export const KineticFinal: React.FC = () => {
 
 /* ------------------------------------------------- point penting (bawah panel) */
 type Point = { a: number; b: number; small: string; big: string; chips?: { t: string; at: number }[]; icon: IconName };
-const PTS: Point[] = [
-  { a: 0, b: 6.9, small: 'ALLAH SAHAJA', big: 'TEMPAT TERBAIK', icon: 'mosque' },
-  { a: 6.9, b: 15.2, small: 'ALLAH SENTIASA BERI', big: 'PELUANG', chips: [{ t: 'Membetulkan kesilapan', at: 10.3 }], icon: 'star' },
-  { a: 15.2, b: 25.8, small: 'TIDAK KIRA', big: 'SENGAJA ATAU TIDAK', icon: 'check' },
-  { a: 25.8, b: 30.1, small: 'ALLAH', big: 'MAHA MENYAYANGI', icon: 'heart' },
-  { a: 30.1, b: 38.7, small: 'WALAU BANYAK KEKHILAFAN', big: 'MASIH ADA RUANG', chips: [{ t: 'Sebagai hamba', at: 34.6 }, { t: 'Sebagai manusia', at: 36.3 }], icon: 'hand' },
-  { a: 38.7, b: 51.6, small: 'JANGAN SESEKALI', big: 'PUTUS ASA', chips: [{ t: 'Walau kerap gagal', at: 43.3 }, { t: 'Walau banyak masalah', at: 47.7 }], icon: 'shield' },
-  { a: 51.6, b: 64.45, small: 'ALLAH SENTIASA', big: 'MENUNGGU KITA', chips: [{ t: 'Doa', at: 59.3 }, { t: 'Bercerita', at: 61.4 }, { t: 'Berkongsi', at: 62.8 }], icon: 'clock' },
-  { a: 64.45, b: 75.7, small: 'TEMPAT TERBAIK', big: 'UNTUK MENGADU', icon: 'chat' },
-  { a: 75.7, b: 83.6, small: 'DENGAN KEYAKINAN', big: 'ALLAH BANTU', icon: 'hand' },
-  { a: 83.6, b: 91.2, small: 'YANG PENTING, JAGA', big: 'KETAATAN & KEYAKINAN', chips: [{ t: 'Ketaatan', at: 85.0 }, { t: 'Keyakinan', at: 87.7 }], icon: 'shield' },
-  { a: 91.2, b: 93.6, small: 'ALLAH TIDAK', big: 'SIA-SIAKAN HAMBA-NYA', icon: 'heart' },
-  { a: 93.6, b: 100.8, small: 'SETIAP UJIAN', big: 'KITA MAMPU', icon: 'target' },
-];
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const normPoint = (x: any): Point => ({ ...x, a: bt(x.a), b: bt(x.b), chips: x.chips?.map((c: { t: string; at: T }) => ({ ...c, at: bt(c.at) })) });
+const PTS: Point[] = (SC.points as unknown as Point[]).map(normPoint);
 
 const Point3D: React.FC<{ p: Point; idx: number }> = ({ p, idx }) => {
   const t = useTime();
@@ -338,7 +315,7 @@ const Point3D: React.FC<{ p: Point; idx: number }> = ({ p, idx }) => {
 };
 
 /* ------------------------------------------------- CTA: butang Follow TikTok + klik */
-const CLICK = B.cta + 2.0;
+const CLICK = B.cta + (SC.cta.clickAfter ?? 2.0);
 const TikTokGlyph: React.FC<{ size: number }> = ({ size }) => {
   const d = 'M27 4h7c.6 4.6 3.6 7.6 8 8v7c-3.2 0-6-1-8-2.6V31a12 12 0 1 1-12-12c.7 0 1.3 0 2 .2v7.2a5 5 0 1 0 3 4.6V4z';
   return (
@@ -368,7 +345,7 @@ const FollowCTA: React.FC = () => {
       <div style={{ position: 'absolute', left: 0, right: 0, top: 1265, textAlign: 'center' }}>
         <div style={{ display: 'inline-block', fontFamily: "'Great Vibes', cursive", fontSize: 84, lineHeight: 1.2, color: '#FFFFFF', padding: '0 30px', whiteSpace: 'nowrap',
           textShadow: '0 0 20px rgba(120,255,235,0.6), 0 4px 12px rgba(0,0,0,0.4)', clipPath: `inset(-30% ${100 - capIn * 100}% -30% -5%)` }}>
-          Nasihat Dari <span style={{ color: '#FFE08A' }}>Hati</span> Untuk <span style={{ color: '#FFE08A' }}>Hati</span>
+          {SC.cta.caption.split(/(\*[^*]+\*)/).map((w, i) => w.startsWith('*') ? <span key={i} style={{ color: '#FFE08A' }}>{w.slice(1, -1)}</span> : <React.Fragment key={i}>{w}</React.Fragment>)}
         </div>
       </div>
       {/* butang Follow TikTok */}
@@ -383,7 +360,7 @@ const FollowCTA: React.FC = () => {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.05 }}>
             <span style={{ fontFamily: FONT.sans, fontWeight: 900, fontSize: 52, color: '#FFFFFF', letterSpacing: '0.02em' }}>{done ? 'Following' : 'Follow'}</span>
-            <span style={{ fontFamily: FONT.sans, fontWeight: 700, fontSize: 32, color: done ? '#E9FFFB' : '#25F4EE' }}>@nakseeheart</span>
+            <span style={{ fontFamily: FONT.sans, fontWeight: 700, fontSize: 32, color: done ? '#E9FFFB' : '#25F4EE' }}>{SC.cta.handle}</span>
           </div>
           <div style={{ width: 70, height: 70, borderRadius: '50%', marginLeft: 10, display: 'flex', alignItems: 'center', justifyContent: 'center',
             background: done ? '#FFFFFF' : '#FE2C55' }}>
@@ -458,17 +435,17 @@ const PremiumLogo: React.FC = () => {
       {/* tanda kata */}
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: wm, transform: `translateX(${(1 - wm) * 30}px)` }}>
         <div style={{ position: 'relative', fontFamily: FONT.serif, fontWeight: 800, fontSize: 78, letterSpacing: '0.1em', lineHeight: 1, whiteSpace: 'nowrap' }}>
-          <span style={{ position: 'absolute', inset: 0, color: '#0B3B3E', transform: 'translate(0, 4px)' }}>NAKSEEHEART</span>
-          <span style={{ position: 'relative', backgroundImage: GOLDTXT, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>NAKSEEHEART</span>
+          <span style={{ position: 'absolute', inset: 0, color: '#0B3B3E', transform: 'translate(0, 4px)' }}>{SC.logo.name}</span>
+          <span style={{ position: 'relative', backgroundImage: GOLDTXT, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>{SC.logo.name}</span>
           <span style={{ position: 'absolute', inset: 0, backgroundImage: `linear-gradient(105deg, rgba(255,255,255,0) ${sh}%, rgba(255,255,255,0.9) ${sh + 8}%, rgba(255,255,255,0) ${sh + 16}%)`,
-            WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>NAKSEEHEART</span>
+            WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>{SC.logo.name}</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginTop: 14 }}>
           <div style={{ width: 150 * line, height: 2, background: 'linear-gradient(90deg, rgba(246,216,138,0), #F6D88A)' }} />
           <div style={{ width: 12, height: 12, transform: `rotate(45deg) scale(${line})`, background: '#F6D88A', boxShadow: '0 0 10px rgba(255,224,138,0.9)' }} />
           <div style={{ width: 150 * line, height: 2, background: 'linear-gradient(90deg, #F6D88A, rgba(246,216,138,0))' }} />
         </div>
-        <div style={{ marginTop: 12, fontFamily: FONT.sans, fontWeight: 600, fontSize: 24, letterSpacing: '0.42em', color: '#062A2E', opacity: line, whiteSpace: 'nowrap' }}>NASIHAT · DARI · HATI</div>
+        <div style={{ marginTop: 12, fontFamily: FONT.sans, fontWeight: 600, fontSize: 24, letterSpacing: '0.42em', color: '#062A2E', opacity: line, whiteSpace: 'nowrap' }}>{SC.logo.tagline}</div>
       </div>
     </div>
   );
@@ -497,7 +474,7 @@ export const Showcase: React.FC = () => {
         <div style={{ display: 'flex', alignItems: 'center', gap: 18, fontFamily: FONT.sans, fontWeight: 700, fontSize: 52, letterSpacing: '0.06em', color: '#E9FFFB',
           textShadow: `0 0 ${12 + 6 * Math.sin(t * 3)}px rgba(120,255,235,0.95), 0 0 34px rgba(64,224,208,0.85)` }}>
           <span style={{ width: 6, height: 66, background: '#BFFFF5', boxShadow: '0 0 16px rgba(120,255,235,1)' }} />
-          SHARING MOMENT
+          {SC.label}
           <span style={{ width: 6, height: 66, background: '#BFFFF5', boxShadow: '0 0 16px rgba(120,255,235,1)' }} />
         </div>
       </div>
