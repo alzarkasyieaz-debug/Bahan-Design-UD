@@ -414,23 +414,75 @@ const FollowCTA: React.FC = () => {
   );
 };
 
+/* ------------------------------------------------- logo premium NakSeeHeart */
+const GOLDTXT = 'linear-gradient(180deg, #FFF3C4 0%, #F4D27A 38%, #C8922E 62%, #F2CF77 100%)';
+const PremiumLogo: React.FC = () => {
+  const t = useTime();
+  const em = tw(t, [0.05, 0.9], [0, 1], back);
+  const wm = tw(t, [0.4, 1.4], [0, 1], ease);
+  const line = tw(t, [0.9, 1.7], [0, 1], ease);
+  const sh = ((t * 0.35) % 1) * 260 - 80; // kilauan
+  const S0 = 176;
+  return (
+    <div style={{ position: 'absolute', left: 0, right: 0, top: 38, height: 196, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 30,
+      filter: 'drop-shadow(0 6px 10px rgba(4,40,44,0.45))' }}>
+      {/* medalion */}
+      <div style={{ width: S0, height: S0, position: 'relative', transform: `scale(${em}) rotate(${(1 - em) * -40}deg)` }}>
+        <svg width={S0} height={S0} viewBox="0 0 100 100" style={{ position: 'absolute', inset: 0 }}>
+          <defs>
+            <linearGradient id="lg-gold" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stopColor="#FFF3C4" /><stop offset="0.45" stopColor="#E9B95A" /><stop offset="0.7" stopColor="#B07A22" /><stop offset="1" stopColor="#F6D88A" />
+            </linearGradient>
+            <radialGradient id="lg-core" cx="0.45" cy="0.38" r="0.7">
+              <stop offset="0" stopColor="#1C7A7C" /><stop offset="0.6" stopColor="#0B4A4E" /><stop offset="1" stopColor="#062A2E" />
+            </radialGradient>
+          </defs>
+          <circle cx="50" cy="50" r="48" fill="url(#lg-gold)" />
+          <circle cx="50" cy="50" r="44.5" fill="url(#lg-core)" />
+          <circle cx="50" cy="50" r="41.5" fill="none" stroke="url(#lg-gold)" strokeWidth="0.8" strokeDasharray="1.2 2.2" />
+          <g transform={`rotate(${t * 6} 50 50)`} fill="none" stroke="url(#lg-gold)" strokeWidth="1.6" strokeLinejoin="round">
+            <rect x="24" y="24" width="52" height="52" />
+            <rect x="24" y="24" width="52" height="52" transform="rotate(45 50 50)" />
+          </g>
+          <circle cx="50" cy="50" r="27" fill="url(#lg-core)" stroke="url(#lg-gold)" strokeWidth="1" />
+          <g transform="translate(31 32) scale(0.79)">
+            <path d="M24 42 C10 32 4 25 4 16.5 4 10 9 5 15.2 5c3.8 0 6.9 2 8.8 5 1.9-3 5-5 8.8-5C39 5 44 10 44 16.5 44 25 38 32 24 42z" fill="url(#lg-gold)" />
+            <path d="M11 22h7l3-6 4 12 3-6h9" stroke="#0B3B3E" strokeWidth="2.6" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+          </g>
+        </svg>
+        <div style={{ position: 'absolute', inset: 0, borderRadius: '50%', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', top: -20, bottom: -20, left: `${sh}%`, width: '22%', transform: 'skewX(-20deg)',
+            background: 'linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.45), rgba(255,255,255,0))' }} />
+        </div>
+      </div>
+      {/* tanda kata */}
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: wm, transform: `translateX(${(1 - wm) * 30}px)` }}>
+        <div style={{ position: 'relative', fontFamily: FONT.serif, fontWeight: 800, fontSize: 78, letterSpacing: '0.1em', lineHeight: 1, whiteSpace: 'nowrap' }}>
+          <span style={{ position: 'absolute', inset: 0, color: '#0B3B3E', transform: 'translate(0, 4px)' }}>NAKSEEHEART</span>
+          <span style={{ position: 'relative', backgroundImage: GOLDTXT, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>NAKSEEHEART</span>
+          <span style={{ position: 'absolute', inset: 0, backgroundImage: `linear-gradient(105deg, rgba(255,255,255,0) ${sh}%, rgba(255,255,255,0.9) ${sh + 8}%, rgba(255,255,255,0) ${sh + 16}%)`,
+            WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>NAKSEEHEART</span>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginTop: 14 }}>
+          <div style={{ width: 150 * line, height: 2, background: 'linear-gradient(90deg, rgba(246,216,138,0), #F6D88A)' }} />
+          <div style={{ width: 12, height: 12, transform: `rotate(45deg) scale(${line})`, background: '#F6D88A', boxShadow: '0 0 10px rgba(255,224,138,0.9)' }} />
+          <div style={{ width: 150 * line, height: 2, background: 'linear-gradient(90deg, #F6D88A, rgba(246,216,138,0))' }} />
+        </div>
+        <div style={{ marginTop: 12, fontFamily: FONT.sans, fontWeight: 600, fontSize: 24, letterSpacing: '0.42em', color: '#062A2E', opacity: line, whiteSpace: 'nowrap' }}>NASIHAT · DARI · HATI</div>
+      </div>
+    </div>
+  );
+};
+
 /** Bingkai 9:16: tandatangan di atas, SATU panel suntingan, point penting 3D di bawah */
 export const Showcase: React.FC = () => {
   const t = useTime();
   const FW = 960;
-  const sig = tw(t, [0.1, 1.6], [0, 1], ease);
   return (
     <AbsoluteFill style={{ overflow: 'hidden', background: 'linear-gradient(180deg, #7FF0E2 0%, #33C9BD 20%, #14908C 45%, #0B5357 72%, #062A2E 100%)' }}>
       <AbsoluteFill style={{ background: 'radial-gradient(ellipse 80% 30% at 50% 0%, rgba(230,255,250,0.7), rgba(0,0,0,0) 70%)' }} />
       <AbsoluteFill style={{ background: 'radial-gradient(ellipse 70% 22% at 50% 78%, rgba(255,214,140,0.22), rgba(0,0,0,0) 70%)' }} />
-      {/* tandatangan */}
-      <div style={{ position: 'absolute', left: 0, right: 0, top: 40, textAlign: 'center' }}>
-        <div style={{ display: 'inline-block', fontFamily: "'Great Vibes', cursive", fontSize: 150, lineHeight: 1.1, color: '#FFFFFF', paddingRight: 30,
-          textShadow: '0 4px 14px rgba(0,0,0,0.25), 0 0 24px rgba(255,255,255,0.35)',
-          clipPath: `inset(-20% ${100 - sig * 100}% -20% -10%)` }}>
-          NakSee<span style={{ color: '#FFE08A', textShadow: '0 0 18px rgba(255,214,140,0.7), 0 4px 14px rgba(0,0,0,0.25)' }}>Heart</span>
-        </div>
-      </div>
+      <PremiumLogo />
       {/* SATU panel suntingan */}
       <div style={{ position: 'absolute', left: 60, top: 260, width: FW, height: FW, borderRadius: 30, overflow: 'hidden', border: '3px solid rgba(255,255,255,0.65)', boxShadow: '0 30px 60px rgba(0,0,0,0.45), 0 0 40px rgba(120,255,235,0.35)' }}>
         <div style={{ width: SQ, height: SQ, transform: `scale(${FW / SQ})`, transformOrigin: '0 0' }}>
