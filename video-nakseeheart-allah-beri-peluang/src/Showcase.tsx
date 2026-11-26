@@ -393,7 +393,7 @@ const FollowCTA: React.FC = () => {
 
 /* ------------------------------------------------- logo premium NakSeeHeart */
 const GOLDTXT = 'linear-gradient(180deg, #FFF3C4 0%, #F4D27A 38%, #C8922E 62%, #F2CF77 100%)';
-const PremiumLogo: React.FC = () => {
+const PremiumLogo: React.FC<{ scale?: number; top?: number }> = ({ scale = SC.logo.scale ?? 0.74, top = 30 }) => {
   const t = useTime();
   const em = tw(t, [0.05, 0.9], [0, 1], back);
   const wm = tw(t, [0.4, 1.4], [0, 1], ease);
@@ -401,7 +401,7 @@ const PremiumLogo: React.FC = () => {
   const sh = ((t * 0.35) % 1) * 260 - 80; // kilauan
   const S0 = 182;
   return (
-    <div style={{ position: 'absolute', left: 0, right: 0, top: 26, height: 218, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <div style={{ position: 'absolute', left: 0, right: 0, top, height: 218, display: 'flex', justifyContent: 'center', alignItems: 'center', transform: `scale(${scale})`, transformOrigin: '50% 0%' }}>
       {/* plak gelap berbingkai emas supaya logo menyerlah atas latar cerah */}
       <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 30, padding: '16px 52px 16px 22px', borderRadius: 120,
         background: 'linear-gradient(180deg, rgba(14,74,78,0.96) 0%, rgba(6,38,42,0.97) 100%)', opacity: Math.min(1, em * 1.4),
@@ -489,7 +489,7 @@ const Gold3D: React.FC<{ text: string; size: number }> = ({ text, size }) => (
 );
 export const CoverV4: React.FC = () => {
   const cv = SC.cover;
-  const AX = 150, AY = 300, AW = 780, AH = 900;
+  const AX = 150, AY = 280, AW = 780, AH = 900;
   return (
     <AbsoluteFill style={{ overflow: 'hidden', background: 'linear-gradient(180deg, #7FF0E2 0%, #33C9BD 20%, #14908C 45%, #0B5357 72%, #062A2E 100%)' }}>
       {/* sinar cahaya dari belakang gerbang */}
@@ -551,6 +551,135 @@ export const CoverV4: React.FC = () => {
   );
 };
 
+/* ------------------------------------------------- konsep cover alternatif (B, C, D) */
+const TURQ = 'linear-gradient(180deg, #7FF0E2 0%, #33C9BD 20%, #14908C 45%, #0B5357 72%, #062A2E 100%)';
+const Star8BG: React.FC<{ o?: number }> = ({ o = 0.1 }) => (
+  <svg width="1080" height="1920" style={{ position: 'absolute', inset: 0, opacity: o }}>
+    <defs><pattern id="st8b" width="120" height="120" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#FFFFFF" strokeWidth="1.5"><rect x="35" y="35" width="50" height="50" /><rect x="35" y="35" width="50" height="50" transform="rotate(45 60 60)" /></g>
+    </pattern></defs>
+    <rect width="1080" height="1920" fill="url(#st8b)" />
+  </svg>
+);
+const QPill: React.FC<{ text: string; rot?: number; size?: number }> = ({ text, rot = -2.5, size = 54 }) => (
+  <div style={{ padding: '14px 40px', borderRadius: 60, background: '#FE2C55', transform: `rotate(${rot}deg)`, boxShadow: '0 8px 0 #9E1430, 0 16px 30px rgba(0,0,0,0.45)',
+    fontFamily: FONT.sans, fontWeight: 900, fontSize: size, letterSpacing: '0.03em', color: '#FFFFFF', whiteSpace: 'nowrap' }}>{text}</div>
+);
+const Photo: React.FC<{ zoom: number; top: number; left?: number; w: number }> = ({ zoom, top, left, w }) => (
+  <Img src={staticFile(SC.cover.photo)} style={{ position: 'absolute', left: left ?? -(1080 * zoom - w) / 2, top, width: 1080 * zoom, height: 1920 * zoom, filter: 'brightness(1.06) contrast(1.05) saturate(1.05)' }} />
+);
+
+/** B — SINEMATIK: foto penuh, tajuk besar di bawah */
+export const CoverV4B: React.FC = () => {
+  const cv = SC.cover;
+  return (
+    <AbsoluteFill style={{ overflow: 'hidden', background: '#062A2E' }}>
+      <Photo zoom={1.12} top={-260} w={1080} />
+      <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(6,42,46,0.75) 0%, rgba(6,42,46,0) 18%, rgba(6,42,46,0) 46%, rgba(11,83,87,0.88) 64%, #062A2E 84%)' }} />
+      <AbsoluteFill style={{ background: 'radial-gradient(ellipse 60% 40% at 50% 34%, rgba(255,240,200,0.18), rgba(0,0,0,0) 70%)' }} />
+      {/* bingkai emas nipis */}
+      <div style={{ position: 'absolute', inset: 28, border: '2px solid rgba(233,196,106,0.75)', borderRadius: 26 }} />
+      <PremiumLogo />
+      <MomentBadge y={262} />
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 1150, display: 'flex', justifyContent: 'center' }}><QPill text={cv.question} /></div>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 1270, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
+        <div style={{ fontFamily: FONT.sans, fontWeight: 900, fontSize: 66, letterSpacing: '0.16em', color: '#FFFFFF', textShadow: '0 4px 16px rgba(0,0,0,0.6)' }}>{cv.small}</div>
+        <Gold3D text={cv.big} size={200} />
+      </div>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 1580, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 18 }}>
+        <div style={{ width: 120, height: 2, background: 'linear-gradient(90deg, rgba(246,216,138,0), #F6D88A)' }} />
+        <div style={{ fontFamily: "'Great Vibes', cursive", fontSize: 74, color: '#FFFFFF', textShadow: '0 0 20px rgba(120,255,235,0.55)' }}>“{cv.quote}”</div>
+        <div style={{ width: 120, height: 2, background: 'linear-gradient(90deg, #F6D88A, rgba(246,216,138,0))' }} />
+      </div>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 1740, display: 'flex', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '12px 34px 12px 14px', borderRadius: 60, background: GOLD, boxShadow: '0 6px 0 #8A5A12, 0 0 30px rgba(255,214,140,0.5)' }}>
+          <div style={{ width: 54, height: 54, borderRadius: '50%', background: '#062A2E', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <svg width="26" height="26" viewBox="0 0 24 24"><path d="M7 4 L20 12 L7 20 Z" fill="#FFE08A" /></svg>
+          </div>
+          <span style={{ fontFamily: FONT.sans, fontWeight: 900, fontSize: 32, letterSpacing: '0.12em', color: '#2A1C08' }}>{cv.watch}</span>
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** C — MEDALION PETIKAN: potret bulat berbingkai bintang + kad petikan besar */
+export const CoverV4C: React.FC = () => {
+  const cv = SC.cover;
+  const D = 600, CX = 540, CY = 640;
+  return (
+    <AbsoluteFill style={{ overflow: 'hidden', background: TURQ }}>
+      <Star8BG />
+      <AbsoluteFill style={{ background: `radial-gradient(circle at 50% ${CY / 19.2}%, rgba(255,240,200,0.55) 0%, rgba(0,0,0,0) 38%)` }} />
+      <PremiumLogo />
+      {/* bintang 8 bucu besar di belakang potret */}
+      <svg width="900" height="900" viewBox="0 0 100 100" style={{ position: 'absolute', left: CX - 450, top: CY - 450 }}>
+        <defs><linearGradient id="cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#FFF3C4" /><stop offset="0.5" stopColor="#E9B95A" /><stop offset="1" stopColor="#B07A22" /></linearGradient></defs>
+        <g fill="rgba(6,42,46,0.55)" stroke="url(#cg)" strokeWidth="0.8"><rect x="18" y="18" width="64" height="64" /><rect x="18" y="18" width="64" height="64" transform="rotate(45 50 50)" /></g>
+      </svg>
+      <div style={{ position: 'absolute', left: CX - D / 2 - 14, top: CY - D / 2 - 14, width: D + 28, height: D + 28, borderRadius: '50%', background: 'linear-gradient(160deg, #FFF3C4, #E9B95A 40%, #A8721E 65%, #F6D88A)',
+        boxShadow: '0 0 0 8px rgba(255,224,138,0.25), 0 26px 60px rgba(0,0,0,0.5), 0 0 60px rgba(255,214,140,0.5)' }} />
+      <div style={{ position: 'absolute', left: CX - D / 2, top: CY - D / 2, width: D, height: D, borderRadius: '50%', overflow: 'hidden', background: '#061A1D' }}>
+        <Photo zoom={0.7} top={-292} w={D} />
+      </div>
+      <MomentBadge y={CY + D / 2 + 14} />
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 1040, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
+        <div style={{ fontFamily: FONT.sans, fontWeight: 900, fontSize: 60, letterSpacing: '0.16em', color: '#FFFFFF', textShadow: '0 4px 14px rgba(0,0,0,0.55)' }}>{cv.small}</div>
+        <Gold3D text={cv.big} size={180} />
+      </div>
+      {/* kad petikan */}
+      <div style={{ position: 'absolute', left: 80, right: 80, top: 1330, padding: '34px 40px 30px', borderRadius: 34, background: 'rgba(6,26,29,0.78)', border: '3px solid #E9C46A',
+        boxShadow: '0 20px 40px rgba(0,0,0,0.45), inset 0 0 40px rgba(64,224,208,0.15)', textAlign: 'center' }}>
+        <div style={{ position: 'absolute', left: 30, top: -48, fontFamily: FONT.serif, fontSize: 150, lineHeight: 1, color: '#E9C46A' }}>“</div>
+        <div style={{ fontFamily: "'Great Vibes', cursive", fontSize: 84, lineHeight: 1.1, color: '#FFFFFF', textShadow: '0 0 18px rgba(120,255,235,0.5)' }}>{cv.quote}</div>
+        <div style={{ marginTop: 14, fontFamily: FONT.sans, fontWeight: 700, fontSize: 28, letterSpacing: '0.3em', color: '#E9C46A' }}>— {cv.question}</div>
+      </div>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 1660, display: 'flex', justifyContent: 'center', gap: 12 }}>
+        {cv.chips.map((c: { icon: string; t: string }, i: number) => (
+          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '10px 18px 10px 10px', borderRadius: 50, background: 'rgba(255,255,255,0.14)', border: '2px solid rgba(255,255,255,0.55)', whiteSpace: 'nowrap' }}>
+            <div style={{ width: 46, height: 46, borderRadius: '50%', background: GOLD, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><LineIcon name={c.icon as IconName} size={32} color={C.charcoal} stroke={8} /></div>
+            <span style={{ fontFamily: FONT.sans, fontWeight: 800, fontSize: 28, color: '#FFFFFF' }}>{c.t}</span>
+          </div>
+        ))}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** D — SENARAI PESANAN: foto atas bersudut condong + 3 pesanan bernombor */
+export const CoverV4D: React.FC = () => {
+  const cv = SC.cover;
+  const list: string[] = cv.list ?? cv.chips.map((c: { t: string }) => c.t);
+  return (
+    <AbsoluteFill style={{ overflow: 'hidden', background: TURQ }}>
+      <Star8BG o={0.08} />
+      <div style={{ position: 'absolute', left: 0, top: 0, width: 1080, height: 1060, overflow: 'hidden', clipPath: 'polygon(0 0, 100% 0, 100% 86%, 0 100%)' }}>
+        <Photo zoom={1.0} top={-230} w={1080} />
+        <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(6,42,46,0.7) 0%, rgba(6,42,46,0) 22%, rgba(6,42,46,0) 70%, rgba(6,42,46,0.55) 100%)' }} />
+      </div>
+      {/* jalur emas condong */}
+      <div style={{ position: 'absolute', left: 0, top: 1053, width: 1100, height: 14, background: GOLD, transform: 'rotate(-7.8deg)', transformOrigin: '0 50%', boxShadow: '0 0 24px rgba(255,214,140,0.7)' }} />
+      <PremiumLogo />
+      <MomentBadge y={262} />
+      <div style={{ position: 'absolute', right: 50, top: 860 }}><QPill text={cv.question} rot={-7.8} size={48} /></div>
+      <div style={{ position: 'absolute', left: 70, top: 1090, display: 'flex', flexDirection: 'column', gap: 2 }}>
+        <div style={{ fontFamily: FONT.sans, fontWeight: 900, fontSize: 54, letterSpacing: '0.14em', color: '#FFFFFF', textShadow: '0 4px 14px rgba(0,0,0,0.5)' }}>{cv.small}</div>
+        <Gold3D text={cv.big} size={170} />
+      </div>
+      <div style={{ position: 'absolute', left: 70, right: 70, top: 1400, display: 'flex', flexDirection: 'column', gap: 22 }}>
+        {list.slice(0, 3).map((t, i) => (
+          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
+            <div style={{ width: 92, height: 92, borderRadius: 20, background: GOLD, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 6px 0 #8A5A12',
+              fontFamily: FONT.display, fontSize: 80, color: '#2A1C08' }}>{i + 1}</div>
+            <div style={{ fontFamily: FONT.sans, fontWeight: 800, fontSize: 48, color: '#FFFFFF', textShadow: '0 3px 12px rgba(0,0,0,0.5)' }}>{t}</div>
+          </div>
+        ))}
+      </div>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 1800, textAlign: 'center', fontFamily: "'Great Vibes', cursive", fontSize: 60, color: '#E9FFFB', textShadow: '0 0 16px rgba(120,255,235,0.6)' }}>“{cv.quote}”</div>
+    </AbsoluteFill>
+  );
+};
+
 /** Bingkai 9:16: tandatangan di atas, SATU panel suntingan, point penting 3D di bawah */
 export const Showcase: React.FC = () => {
   const t = useTime();
@@ -561,7 +690,7 @@ export const Showcase: React.FC = () => {
       <AbsoluteFill style={{ background: 'radial-gradient(ellipse 70% 22% at 50% 78%, rgba(255,214,140,0.22), rgba(0,0,0,0) 70%)' }} />
       <PremiumLogo />
       {/* SATU panel suntingan */}
-      <div style={{ position: 'absolute', left: 60, top: 290, width: FW, height: FW, borderRadius: 30, overflow: 'hidden', border: '3px solid rgba(255,255,255,0.65)', boxShadow: '0 30px 60px rgba(0,0,0,0.45), 0 0 40px rgba(120,255,235,0.35)' }}>
+      <div style={{ position: 'absolute', left: 60, top: 262, width: FW, height: FW, borderRadius: 30, overflow: 'hidden', border: '3px solid rgba(255,255,255,0.65)', boxShadow: '0 30px 60px rgba(0,0,0,0.45), 0 0 40px rgba(120,255,235,0.35)' }}>
         <div style={{ width: SQ, height: SQ, transform: `scale(${FW / SQ})`, transformOrigin: '0 0' }}>
           <KineticFinal />
         </div>
@@ -569,7 +698,7 @@ export const Showcase: React.FC = () => {
       {/* point penting: tulisan 3D + motion graphics */}
       {PTS.map((p, i) => <Point3D key={i} p={p} idx={i} />)}
       <FollowCTA />
-      <MomentBadge y={290} />
+      <MomentBadge y={262} />
       <Audio src={staticFile('audio/mix.wav')} />
     </AbsoluteFill>
   );

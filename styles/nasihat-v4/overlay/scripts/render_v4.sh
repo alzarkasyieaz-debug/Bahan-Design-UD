@@ -13,10 +13,10 @@ fi
 if [ "${1:-}" = "still" ]; then
   npx remotion still Showcase "out/still-${2:-60}.png" --frame="${2:-60}" --scale=0.5 --log=error; exit 0
 fi
-# 1) COVER V4 (gerbang mihrab + tajuk 3D) -> out/<output>-poster.{png,jpg}
+# 1) COVER V4 — COVER_V4=CoverV4 (A gerbang) | CoverV4B (sinematik) | CoverV4C (medalion) | CoverV4D (senarai) -> out/<output>-poster.{png,jpg}
 FA=$(node -p "require('./src/data/showcase.json').cover.frameAt ?? 2")
 ffmpeg -v error -y -ss "$FA" -i public/media/speaker.mp4 -frames:v 1 -q:v 2 public/media/cover-v4-frame.jpg
-npx remotion still CoverV4 "out/$OUT-poster.png" --frame=100 --log=error
+npx remotion still "${COVER_V4:-CoverV4}" "out/$OUT-poster.png" --frame=100 --log=error
 ffmpeg -v error -y -i "out/$OUT-poster.png" -q:v 2 "out/$OUT-poster.jpg"
 # siluet untuk babak 'silhouette' (rembg u2net_human_seg -> komponen terbesar)
 if [ ! -f public/media/silhouette.png ]; then

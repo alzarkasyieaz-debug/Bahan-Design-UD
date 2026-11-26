@@ -5,7 +5,7 @@ import { NakSeeHeartVideo } from './Video';
 import { Cover } from './Cover';
 import { CoverPoster } from './CoverPoster';
 import { CoverImpak, CoverPanel, CoverInfo } from './CoverStyles';
-import { Showcase, KineticFinal, CoverV4 } from './Showcase';
+import { Showcase, KineticFinal, CoverV4, CoverV4B, CoverV4C, CoverV4D } from './Showcase';
 import { FPS, TOTAL_FRAMES, W, H, SB } from './lib';
 
 // Fon tempatan (SIL Open Font License) — tiada muat turun semasa render
@@ -32,6 +32,9 @@ export const RemotionRoot: React.FC = () => (
     {/* Showcase FINAL/RAW + suntingan kinetic typography */}
     <Composition id="Showcase" component={Showcase} durationInFrames={TOTAL_FRAMES} fps={FPS} width={W} height={H} />
     <Composition id="CoverV4" component={CoverV4} durationInFrames={150} fps={FPS} width={W} height={H} />
+    <Composition id="CoverV4B" component={CoverV4B} durationInFrames={150} fps={FPS} width={W} height={H} />
+    <Composition id="CoverV4C" component={CoverV4C} durationInFrames={150} fps={FPS} width={W} height={H} />
+    <Composition id="CoverV4D" component={CoverV4D} durationInFrames={150} fps={FPS} width={W} height={H} />
     <Composition id="KineticFinal" component={KineticFinal} durationInFrames={TOTAL_FRAMES} fps={FPS} width={1080} height={1080} />
     <Composition id="CoverImpak" component={CoverImpak} durationInFrames={1} fps={FPS} width={W} height={H} />
     <Composition id="CoverPanel" component={CoverPanel} durationInFrames={1} fps={FPS} width={W} height={H} />

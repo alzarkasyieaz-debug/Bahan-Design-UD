@@ -20,10 +20,10 @@ d = sys.argv[1]
 # Root.tsx: import, fon, komposisi
 p = f"{d}/src/Root.tsx"; s = open(p).read()
 if 'Showcase' not in s:
-    s = s.replace("import { loadFont } from '@remotion/fonts';", "import { loadFont } from '@remotion/fonts';\nimport { Showcase, KineticFinal, CoverV4 } from './Showcase';", 1)
+    s = s.replace("import { loadFont } from '@remotion/fonts';", "import { loadFont } from '@remotion/fonts';\nimport { Showcase, KineticFinal, CoverV4, CoverV4B, CoverV4C, CoverV4D } from './Showcase';", 1)
     s = s.replace("  loadFont({ family: 'Bebas Neue',", "  loadFont({ family: 'Great Vibes', url: staticFile('fonts/GreatVibes-Regular.ttf'), weight: '400' }),\n  loadFont({ family: 'Bebas Neue',", 1)
     i = s.rindex("  </>")
-    s = s[:i] + "    {/* Nasihat V4 */}\n    <Composition id=\"CoverV4\" component={CoverV4} durationInFrames={150} fps={FPS} width={W} height={H} />\n    <Composition id=\"Showcase\" component={Showcase} durationInFrames={TOTAL_FRAMES} fps={FPS} width={W} height={H} />\n    <Composition id=\"KineticFinal\" component={KineticFinal} durationInFrames={TOTAL_FRAMES} fps={FPS} width={1080} height={1080} />\n" + s[i:]
+    s = s[:i] + "    {/* Nasihat V4 */}\n    <Composition id=\"CoverV4\" component={CoverV4} durationInFrames={150} fps={FPS} width={W} height={H} />\n    <Composition id=\"CoverV4B\" component={CoverV4B} durationInFrames={150} fps={FPS} width={W} height={H} />\n    <Composition id=\"CoverV4C\" component={CoverV4C} durationInFrames={150} fps={FPS} width={W} height={H} />\n    <Composition id=\"CoverV4D\" component={CoverV4D} durationInFrames={150} fps={FPS} width={W} height={H} />\n    <Composition id=\"Showcase\" component={Showcase} durationInFrames={TOTAL_FRAMES} fps={FPS} width={W} height={H} />\n    <Composition id=\"KineticFinal\" component={KineticFinal} durationInFrames={TOTAL_FRAMES} fps={FPS} width={1080} height={1080} />\n" + s[i:]
     open(p, "w").write(s)
 # package.json: render -> V4
 p = f"{d}/package.json"; pk = json.load(open(p))

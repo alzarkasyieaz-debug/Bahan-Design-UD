@@ -10,7 +10,8 @@
  ],
  "logo": {
   "name": "NAKSEEHEART",
-  "tagline": "NASIHAT · DARI · HATI"
+  "tagline": "NASIHAT · DARI · HATI",
+  "scale": 0.74
  },
  "label": "SHARING MOMENT",
  "cta": {
@@ -376,6 +377,11 @@
     "t": "Kita mampu"
    }
   ],
-  "frameAt": 2.2
+  "frameAt": 2.2,
+  "list": [
+   "Jangan putus asa",
+   "Mengadu kepada Allah",
+   "Jaga ketaatan & keyakinan"
+  ]
  }
 }
