@@ -276,14 +276,14 @@ const Point3D: React.FC<{ p: Point; idx: number }> = ({ p, idx }) => {
   return (
     <AbsoluteFill style={{ opacity: o }}>
       {/* nombor point + ikon */}
-      <div style={{ position: 'absolute', left: 540, top: 1290, transform: `translate(-50%,-50%) scale(${0.6 + 0.4 * pin})`, display: 'flex', alignItems: 'center', gap: 16 }}>
+      <div style={{ position: 'absolute', left: 540, top: 1320, transform: `translate(-50%,-50%) scale(${0.6 + 0.4 * pin})`, display: 'flex', alignItems: 'center', gap: 16 }}>
         <div style={{ width: 74, height: 74, borderRadius: '50%', background: GOLD, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 5px 0 #7A4A0C, 0 0 24px rgba(255,214,140,0.7)' }}>
           <LineIcon name={p.icon} size={48} color={C.charcoal} stroke={8} />
         </div>
         <div style={{ fontFamily: FONT.sans, fontWeight: 800, fontSize: 36, letterSpacing: '0.18em', color: '#E9FFFB', textShadow: '0 3px 12px rgba(0,0,0,0.5)', whiteSpace: 'nowrap' }}>{p.small}</div>
       </div>
       {/* tulisan 3D emas */}
-      <div style={{ position: 'absolute', left: 540, top: 1440 + bob, transform: `translate(-50%,-50%) perspective(1200px) rotateX(${(1 - pin) * 60 + 12}deg) scale(${0.85 + 0.15 * pin})`, whiteSpace: 'nowrap' }}>
+      <div style={{ position: 'absolute', left: 540, top: 1470 + bob, transform: `translate(-50%,-50%) perspective(1200px) rotateX(${(1 - pin) * 60 + 12}deg) scale(${0.85 + 0.15 * pin})`, whiteSpace: 'nowrap' }}>
         <div style={{ position: 'relative', fontFamily: FONT.display, fontSize: size, lineHeight: 1, letterSpacing: '0.02em' }}>
           <div style={{ color: '#7A4A0C', textShadow: Array.from({ length: 12 }, (_, i) => `0 ${i * 1.3}px 0 #5A3406`).join(', ') + ', 0 24px 40px rgba(0,0,0,0.55)' }}>{p.big}</div>
           <div style={{ position: 'absolute', inset: 0, backgroundImage: GOLD, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>{p.big}</div>
@@ -293,7 +293,7 @@ const Point3D: React.FC<{ p: Point; idx: number }> = ({ p, idx }) => {
       </div>
       {/* cip point */}
       {p.chips && (
-        <div style={{ position: 'absolute', left: 540, top: 1590, transform: 'translate(-50%,-50%)', display: 'flex', gap: 16 }}>
+        <div style={{ position: 'absolute', left: 540, top: 1620, transform: 'translate(-50%,-50%)', display: 'flex', gap: 16 }}>
           {p.chips.map((c, i) => {
             const q = tw(t, [c.at - 0.1, c.at + 0.35], [0, 1], back);
             return (
@@ -307,7 +307,7 @@ const Point3D: React.FC<{ p: Point; idx: number }> = ({ p, idx }) => {
         </div>
       )}
       {/* penanda kemajuan */}
-      <div style={{ position: 'absolute', left: 540, top: 1690, transform: 'translate(-50%,-50%)', display: 'flex', gap: 10 }}>
+      <div style={{ position: 'absolute', left: 540, top: 1720, transform: 'translate(-50%,-50%)', display: 'flex', gap: 10 }}>
         {PTS.map((_, i) => <div key={i} style={{ width: i === idx ? 40 : 12, height: 12, borderRadius: 6, background: i <= idx ? C.goldLight : 'rgba(233,255,251,0.3)' }} />)}
       </div>
     </AbsoluteFill>
@@ -336,20 +336,20 @@ const FollowCTA: React.FC = () => {
   const pulse = done ? 1 : 1 + 0.03 * Math.sin((t - B.cta) * 7);
   // kursor tangan masuk dari kanan bawah ke butang
   const cur = tw(t, [B.cta + 1.0, CLICK - 0.1], [0, 1], easeOut);
-  const cx = 540 + 150 + (1 - cur) * 330, cy = 1525 + (1 - cur) * 330;
+  const cx = 540 + 150 + (1 - cur) * 330, cy = 1565 + (1 - cur) * 330;
   const curO = tw(t, [B.cta + 1.0, B.cta + 1.2], [0, 1]) * tw(t, [CLICK + 0.9, CLICK + 1.3], [1, 0]);
   const rip = tw(t, [CLICK, CLICK + 0.7], [0, 1], easeOut);
   return (
     <AbsoluteFill>
       {/* kapsyen tandatangan */}
-      <div style={{ position: 'absolute', left: 0, right: 0, top: 1265, textAlign: 'center' }}>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 1300, textAlign: 'center' }}>
         <div style={{ display: 'inline-block', fontFamily: "'Great Vibes', cursive", fontSize: 84, lineHeight: 1.2, color: '#FFFFFF', padding: '0 30px', whiteSpace: 'nowrap',
           textShadow: '0 0 20px rgba(120,255,235,0.6), 0 4px 12px rgba(0,0,0,0.4)', clipPath: `inset(-30% ${100 - capIn * 100}% -30% -5%)` }}>
           {SC.cta.caption.split(/(\*[^*]+\*)/).map((w, i) => w.startsWith('*') ? <span key={i} style={{ color: '#FFE08A' }}>{w.slice(1, -1)}</span> : <React.Fragment key={i}>{w}</React.Fragment>)}
         </div>
       </div>
       {/* butang Follow TikTok */}
-      <div style={{ position: 'absolute', left: 540, top: 1480, transform: `translate(-50%,-50%) scale(${btnIn * press * pulse})`, opacity: Math.min(1, btnIn * 1.5) }}>
+      <div style={{ position: 'absolute', left: 540, top: 1520, transform: `translate(-50%,-50%) scale(${btnIn * press * pulse})`, opacity: Math.min(1, btnIn * 1.5) }}>
         <div style={{ position: 'absolute', left: '50%', top: '50%', width: 760 * (0.6 + rip * 0.8), height: 150 * (0.6 + rip * 1.6), borderRadius: 120,
           transform: 'translate(-50%,-50%)', border: '4px solid rgba(191,255,245,0.9)', opacity: done ? 1 - rip : 0 }} />
         <div style={{ display: 'flex', alignItems: 'center', gap: 22, padding: '22px 46px 22px 26px', borderRadius: 80, whiteSpace: 'nowrap',
@@ -374,7 +374,7 @@ const FollowCTA: React.FC = () => {
       {done && Array.from({ length: 8 }, (_, i) => {
         const q = tw(t, [CLICK + i * 0.05, CLICK + 1.2 + i * 0.05], [0, 1], easeOut);
         const ang = -Math.PI / 2 + (i - 3.5) * 0.32;
-        return <div key={i} style={{ position: 'absolute', left: 540 + Math.cos(ang) * 320 * q, top: 1440 + Math.sin(ang) * 220 * q, opacity: (1 - q) * (q > 0 ? 1 : 0),
+        return <div key={i} style={{ position: 'absolute', left: 540 + Math.cos(ang) * 320 * q, top: 1480 + Math.sin(ang) * 220 * q, opacity: (1 - q) * (q > 0 ? 1 : 0),
           transform: `translate(-50%,-50%) scale(${0.6 + q})`, fontSize: 0 }}>
           <svg width="44" height="40" viewBox="0 0 24 22"><path d="M12 21s-9-5.6-9-12A5 5 0 0 1 12 6a5 5 0 0 1 9 3c0 6.4-9 12-9 12z" fill={i % 2 ? '#FE2C55' : '#FFE08A'} /></svg>
         </div>;
@@ -455,6 +455,30 @@ const PremiumLogo: React.FC = () => {
   );
 };
 
+/* ------------------------------------------------- label kecil SHARING MOMENT (atas panel) + cahaya bergerak */
+const MomentBadge: React.FC<{ y: number }> = ({ y }) => {
+  const t = useTime();
+  const pin = tw(t, [0.6, 1.2], [0, 1], back);
+  const ang = (t * 140) % 360; // cahaya berlari di sekeliling bingkai
+  const sw = ((t * 0.55) % 1) * 300 - 100; // sapuan cahaya pada teks
+  const glow = 0.55 + 0.45 * Math.sin(t * 3.2);
+  return (
+    <div style={{ position: 'absolute', left: 540, top: y, transform: `translate(-50%,-50%) scale(${pin})`, opacity: Math.min(1, pin * 1.5) }}>
+      <div style={{ padding: 3, borderRadius: 40, background: `conic-gradient(from ${ang}deg, rgba(120,255,235,0.15) 0deg, #BFFFF5 40deg, #FFE08A 70deg, rgba(120,255,235,0.15) 120deg, rgba(120,255,235,0.15) 360deg)`,
+        boxShadow: `0 0 ${14 + 14 * glow}px rgba(120,255,235,${0.45 + 0.35 * glow}), 0 8px 18px rgba(0,0,0,0.45)` }}>
+        <div style={{ position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', gap: 12, padding: '9px 26px', borderRadius: 37,
+          background: 'linear-gradient(180deg, #0E4A4E 0%, #062A2E 100%)' }}>
+          <div style={{ width: 12, height: 12, borderRadius: '50%', background: '#FE2C55', boxShadow: `0 0 ${6 + 8 * glow}px rgba(254,44,85,0.9)`, opacity: 0.6 + 0.4 * glow }} />
+          <span style={{ fontFamily: FONT.sans, fontWeight: 800, fontSize: 28, letterSpacing: '0.24em', color: '#E9FFFB', whiteSpace: 'nowrap',
+            textShadow: `0 0 ${8 + 8 * glow}px rgba(120,255,235,0.85)` }}>{SC.label}</span>
+          <div style={{ position: 'absolute', top: -10, bottom: -10, left: `${sw}%`, width: '28%', transform: 'skewX(-24deg)',
+            background: 'linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.38), rgba(255,255,255,0))' }} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
 /** Bingkai 9:16: tandatangan di atas, SATU panel suntingan, point penting 3D di bawah */
 export const Showcase: React.FC = () => {
   const t = useTime();
@@ -465,7 +489,7 @@ export const Showcase: React.FC = () => {
       <AbsoluteFill style={{ background: 'radial-gradient(ellipse 70% 22% at 50% 78%, rgba(255,214,140,0.22), rgba(0,0,0,0) 70%)' }} />
       <PremiumLogo />
       {/* SATU panel suntingan */}
-      <div style={{ position: 'absolute', left: 60, top: 260, width: FW, height: FW, borderRadius: 30, overflow: 'hidden', border: '3px solid rgba(255,255,255,0.65)', boxShadow: '0 30px 60px rgba(0,0,0,0.45), 0 0 40px rgba(120,255,235,0.35)' }}>
+      <div style={{ position: 'absolute', left: 60, top: 290, width: FW, height: FW, borderRadius: 30, overflow: 'hidden', border: '3px solid rgba(255,255,255,0.65)', boxShadow: '0 30px 60px rgba(0,0,0,0.45), 0 0 40px rgba(120,255,235,0.35)' }}>
         <div style={{ width: SQ, height: SQ, transform: `scale(${FW / SQ})`, transformOrigin: '0 0' }}>
           <KineticFinal />
         </div>
@@ -473,15 +497,7 @@ export const Showcase: React.FC = () => {
       {/* point penting: tulisan 3D + motion graphics */}
       {PTS.map((p, i) => <Point3D key={i} p={p} idx={i} />)}
       <FollowCTA />
-      {/* label neon */}
-      <div style={{ position: 'absolute', left: 0, right: 0, top: 1810, display: 'flex', justifyContent: 'center' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 18, fontFamily: FONT.sans, fontWeight: 700, fontSize: 52, letterSpacing: '0.06em', color: '#E9FFFB',
-          textShadow: `0 0 ${12 + 6 * Math.sin(t * 3)}px rgba(120,255,235,0.95), 0 0 34px rgba(64,224,208,0.85)` }}>
-          <span style={{ width: 6, height: 66, background: '#BFFFF5', boxShadow: '0 0 16px rgba(120,255,235,1)' }} />
-          {SC.label}
-          <span style={{ width: 6, height: 66, background: '#BFFFF5', boxShadow: '0 0 16px rgba(120,255,235,1)' }} />
-        </div>
-      </div>
+      <MomentBadge y={290} />
       <Audio src={staticFile('audio/mix.wav')} />
     </AbsoluteFill>
   );

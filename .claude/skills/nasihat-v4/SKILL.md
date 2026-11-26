@@ -1,6 +1,6 @@
 ---
 name: nasihat-v4
-description: Hasilkan video nasihat NakSeeHeart 9:16 dalam style "Nasihat V4" — logo premium NAKSEEHEART (medalion emas), SATU panel suntingan kinetic typography (wajah penceramah ⇄ kad grafik), point penting tulisan 3D emas di bawah panel, latar turquoise, label neon SHARING MOMENT, dan CTA butang Follow TikTok dengan kursor klik + bunyi klik + kapsyen "Nasihat Dari Hati Untuk Hati". Guna bila pengguna minta style Nasihat V4 / "V4" / "seperti video Allah Sentiasa Beri Peluang (showcase)".
+description: Hasilkan video nasihat NakSeeHeart 9:16 dalam style "Nasihat V4" — logo premium NAKSEEHEART (medalion emas), SATU panel suntingan kinetic typography (wajah penceramah ⇄ kad grafik), point penting tulisan 3D emas di bawah panel, latar turquoise, label kecil bercahaya SHARING MOMENT di atas panel, dan CTA butang Follow TikTok dengan kursor klik + bunyi klik + kapsyen "Nasihat Dari Hati Untuk Hati". Guna bila pengguna minta style Nasihat V4 / "V4" / "seperti video Allah Sentiasa Beri Peluang (showcase)".
 ---
 
 # Style Nasihat V4 — aliran kerja

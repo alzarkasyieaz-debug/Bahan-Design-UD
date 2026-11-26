@@ -6,15 +6,14 @@ Video nasihat NakSeeHeart 9:16 (1080×1920, 30 fps, 60–120 s) dalam bentuk **b
 ┌──────────────────────────────┐
 │ (◎) NAKSEEHEART              │  ← logo premium atas plak gelap berbingkai emas: medalion (bintang 8 bucu berputar + hati
 │     ──◆── NASIHAT·DARI·HATI   │    berdenyut) + tanda kata Cinzel emas berkilau + tagline
-│ ┌──────────────────────────┐ │
-│ │                          │ │  ← SATU panel 960×960: suntingan kinetic typography
+│ ┌──[● SHARING MOMENT]──────┐ │  ← label kecil di bucu atas panel: cahaya berlari di bingkai + sapuan cahaya
+│ │                          │ │  ← SATU panel 960×960 (top 290): suntingan kinetic typography
 │ │  wajah penceramah ⇄ kad  │ │    (wajah diselang-seli dengan kad grafik skrin penuh)
 │ │  grafik skrin penuh      │ │
 │ └──────────────────────────┘ │
 │ (ikon) KATA KECIL            │  ← point penting: tulisan 3D emas + cip ✓ ikut beat
 │   POINT UTAMA 3D             │    + penanda kemajuan (titik)
 │   [✓ cip] [✓ cip]            │
-│ |SHARING MOMENT|             │  ← label neon turquoise
 └──────────────────────────────┘
 ```
 
@@ -45,7 +44,7 @@ Masa = saat output **atau nama beat** dalam `timeline.json` (cth `"cta"`, `"end"
 | `face {x,y}` | titik tengah wajah dalam bingkai 1080×1920 (panel memotong segi empat di sekitarnya) |
 | `zoom [..]` | zum berselang-seli setiap segmen EDL (lalai `[1.0, 1.12]`) |
 | `logo {name, tagline}` | `NAKSEEHEART`, `NASIHAT · DARI · HATI` |
-| `label` | label neon bawah (`SHARING MOMENT`) |
+| `label` | label kecil bercahaya di atas panel (`SHARING MOMENT`) |
 | `cta {caption, handle, clickAfter, cardTop, cardBig}` | kapsyen tandatangan (`*kata*` = emas), handle TikTok, saat klik selepas beat `cta`, teks kad CTA dalam panel |
 | `scenes[]` | babak dalam panel (jadual bawah) |
 | `points[]` | point penting di bawah panel |
