@@ -399,10 +399,13 @@ const PremiumLogo: React.FC = () => {
   const wm = tw(t, [0.4, 1.4], [0, 1], ease);
   const line = tw(t, [0.9, 1.7], [0, 1], ease);
   const sh = ((t * 0.35) % 1) * 260 - 80; // kilauan
-  const S0 = 176;
+  const S0 = 182;
   return (
-    <div style={{ position: 'absolute', left: 0, right: 0, top: 38, height: 196, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 30,
-      filter: 'drop-shadow(0 6px 10px rgba(4,40,44,0.45))' }}>
+    <div style={{ position: 'absolute', left: 0, right: 0, top: 26, height: 218, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      {/* plak gelap berbingkai emas supaya logo menyerlah atas latar cerah */}
+      <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 30, padding: '16px 52px 16px 22px', borderRadius: 120,
+        background: 'linear-gradient(180deg, rgba(14,74,78,0.96) 0%, rgba(6,38,42,0.97) 100%)', opacity: Math.min(1, em * 1.4),
+        border: '3px solid #E9C46A', boxShadow: '0 0 0 6px rgba(233,196,106,0.18), 0 16px 34px rgba(3,30,33,0.55), 0 0 40px rgba(255,214,140,0.35), inset 0 2px 0 rgba(255,255,255,0.12)' }}>
       {/* medalion */}
       <div style={{ width: S0, height: S0, position: 'relative', transform: `scale(${em}) rotate(${(1 - em) * -40}deg)` }}>
         <svg width={S0} height={S0} viewBox="0 0 100 100" style={{ position: 'absolute', inset: 0 }}>
@@ -434,8 +437,8 @@ const PremiumLogo: React.FC = () => {
       </div>
       {/* tanda kata */}
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: wm, transform: `translateX(${(1 - wm) * 30}px)` }}>
-        <div style={{ position: 'relative', fontFamily: FONT.serif, fontWeight: 800, fontSize: 78, letterSpacing: '0.1em', lineHeight: 1, whiteSpace: 'nowrap' }}>
-          <span style={{ position: 'absolute', inset: 0, color: '#0B3B3E', transform: 'translate(0, 4px)' }}>{SC.logo.name}</span>
+        <div style={{ position: 'relative', fontFamily: FONT.serif, fontWeight: 800, fontSize: 84, letterSpacing: '0.09em', lineHeight: 1, whiteSpace: 'nowrap' }}>
+          <span style={{ position: 'absolute', inset: 0, color: '#3A2406', transform: 'translate(0, 4px)', textShadow: '0 0 22px rgba(255,214,140,0.55)' }}>{SC.logo.name}</span>
           <span style={{ position: 'relative', backgroundImage: GOLDTXT, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>{SC.logo.name}</span>
           <span style={{ position: 'absolute', inset: 0, backgroundImage: `linear-gradient(105deg, rgba(255,255,255,0) ${sh}%, rgba(255,255,255,0.9) ${sh + 8}%, rgba(255,255,255,0) ${sh + 16}%)`,
             WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>{SC.logo.name}</span>
@@ -445,7 +448,8 @@ const PremiumLogo: React.FC = () => {
           <div style={{ width: 12, height: 12, transform: `rotate(45deg) scale(${line})`, background: '#F6D88A', boxShadow: '0 0 10px rgba(255,224,138,0.9)' }} />
           <div style={{ width: 150 * line, height: 2, background: 'linear-gradient(90deg, #F6D88A, rgba(246,216,138,0))' }} />
         </div>
-        <div style={{ marginTop: 12, fontFamily: FONT.sans, fontWeight: 600, fontSize: 24, letterSpacing: '0.42em', color: '#062A2E', opacity: line, whiteSpace: 'nowrap' }}>{SC.logo.tagline}</div>
+        <div style={{ marginTop: 12, fontFamily: FONT.sans, fontWeight: 600, fontSize: 25, letterSpacing: '0.42em', color: '#E9FFFB', opacity: line, whiteSpace: 'nowrap' }}>{SC.logo.tagline}</div>
+      </div>
       </div>
     </div>
   );

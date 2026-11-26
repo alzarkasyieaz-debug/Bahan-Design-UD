@@ -4,7 +4,7 @@ Video nasihat NakSeeHeart 9:16 (1080×1920, 30 fps, 60–120 s) dalam bentuk **b
 
 ```
 ┌──────────────────────────────┐
-│ (◎) NAKSEEHEART              │  ← logo premium: medalion emas (bintang 8 bucu berputar + hati
+│ (◎) NAKSEEHEART              │  ← logo premium atas plak gelap berbingkai emas: medalion (bintang 8 bucu berputar + hati
 │     ──◆── NASIHAT·DARI·HATI   │    berdenyut) + tanda kata Cinzel emas berkilau + tagline
 │ ┌──────────────────────────┐ │
 │ │                          │ │  ← SATU panel 960×960: suntingan kinetic typography
