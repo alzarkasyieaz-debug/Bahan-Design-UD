@@ -337,6 +337,83 @@ const Point3D: React.FC<{ p: Point; idx: number }> = ({ p, idx }) => {
   );
 };
 
+/* ------------------------------------------------- CTA: butang Follow TikTok + klik */
+const CLICK = B.cta + 2.0;
+const TikTokGlyph: React.FC<{ size: number }> = ({ size }) => {
+  const d = 'M27 4h7c.6 4.6 3.6 7.6 8 8v7c-3.2 0-6-1-8-2.6V31a12 12 0 1 1-12-12c.7 0 1.3 0 2 .2v7.2a5 5 0 1 0 3 4.6V4z';
+  return (
+    <svg width={size} height={size} viewBox="0 0 48 48">
+      <path d={d} fill="#25F4EE" transform="translate(-1.6,-1.2)" />
+      <path d={d} fill="#FE2C55" transform="translate(1.6,1.2)" />
+      <path d={d} fill="#FFFFFF" />
+    </svg>
+  );
+};
+const FollowCTA: React.FC = () => {
+  const t = useTime();
+  if (t < B.cta - 0.05) return null;
+  const capIn = tw(t, [B.cta, B.cta + 1.4], [0, 1], ease);
+  const btnIn = tw(t, [B.cta + 0.4, B.cta + 0.95], [0, 1], back);
+  const done = t >= CLICK;
+  const press = t < CLICK - 0.08 ? 1 : t < CLICK + 0.12 ? 0.9 : tw(t, [CLICK + 0.12, CLICK + 0.45], [0.9, 1], back);
+  const pulse = done ? 1 : 1 + 0.03 * Math.sin((t - B.cta) * 7);
+  // kursor tangan masuk dari kanan bawah ke butang
+  const cur = tw(t, [B.cta + 1.0, CLICK - 0.1], [0, 1], easeOut);
+  const cx = 540 + 150 + (1 - cur) * 330, cy = 1525 + (1 - cur) * 330;
+  const curO = tw(t, [B.cta + 1.0, B.cta + 1.2], [0, 1]) * tw(t, [CLICK + 0.9, CLICK + 1.3], [1, 0]);
+  const rip = tw(t, [CLICK, CLICK + 0.7], [0, 1], easeOut);
+  return (
+    <AbsoluteFill>
+      {/* kapsyen tandatangan */}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 1265, textAlign: 'center' }}>
+        <div style={{ display: 'inline-block', fontFamily: "'Great Vibes', cursive", fontSize: 84, lineHeight: 1.2, color: '#FFFFFF', padding: '0 30px', whiteSpace: 'nowrap',
+          textShadow: '0 0 20px rgba(120,255,235,0.6), 0 4px 12px rgba(0,0,0,0.4)', clipPath: `inset(-30% ${100 - capIn * 100}% -30% -5%)` }}>
+          Nasihat Dari <span style={{ color: '#FFE08A' }}>Hati</span> Untuk <span style={{ color: '#FFE08A' }}>Hati</span>
+        </div>
+      </div>
+      {/* butang Follow TikTok */}
+      <div style={{ position: 'absolute', left: 540, top: 1480, transform: `translate(-50%,-50%) scale(${btnIn * press * pulse})`, opacity: Math.min(1, btnIn * 1.5) }}>
+        <div style={{ position: 'absolute', left: '50%', top: '50%', width: 760 * (0.6 + rip * 0.8), height: 150 * (0.6 + rip * 1.6), borderRadius: 120,
+          transform: 'translate(-50%,-50%)', border: '4px solid rgba(191,255,245,0.9)', opacity: done ? 1 - rip : 0 }} />
+        <div style={{ display: 'flex', alignItems: 'center', gap: 22, padding: '22px 46px 22px 26px', borderRadius: 80, whiteSpace: 'nowrap',
+          background: done ? 'linear-gradient(180deg,#2FD9C6,#14908C)' : '#0B0B0F', border: `3px solid ${done ? '#BFFFF5' : 'rgba(255,255,255,0.85)'}`,
+          boxShadow: `0 ${10 * press}px 0 ${done ? '#0B5357' : '#000'}, 0 18px 40px rgba(0,0,0,0.5), 0 0 30px rgba(37,244,238,0.45)` }}>
+          <div style={{ width: 92, height: 92, borderRadius: '50%', background: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid rgba(255,255,255,0.25)' }}>
+            <TikTokGlyph size={64} />
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.05 }}>
+            <span style={{ fontFamily: FONT.sans, fontWeight: 900, fontSize: 52, color: '#FFFFFF', letterSpacing: '0.02em' }}>{done ? 'Following' : 'Follow'}</span>
+            <span style={{ fontFamily: FONT.sans, fontWeight: 700, fontSize: 32, color: done ? '#E9FFFB' : '#25F4EE' }}>@nakseeheart</span>
+          </div>
+          <div style={{ width: 70, height: 70, borderRadius: '50%', marginLeft: 10, display: 'flex', alignItems: 'center', justifyContent: 'center',
+            background: done ? '#FFFFFF' : '#FE2C55' }}>
+            {done
+              ? <svg width="44" height="44" viewBox="0 0 44 44"><path d="M10 23 L19 32 L35 13" fill="none" stroke="#14908C" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              : <svg width="40" height="40" viewBox="0 0 40 40"><path d="M20 8v24M8 20h24" stroke="#FFFFFF" strokeWidth="6" strokeLinecap="round" /></svg>}
+          </div>
+        </div>
+      </div>
+      {/* hati terbang selepas klik */}
+      {done && Array.from({ length: 8 }, (_, i) => {
+        const q = tw(t, [CLICK + i * 0.05, CLICK + 1.2 + i * 0.05], [0, 1], easeOut);
+        const ang = -Math.PI / 2 + (i - 3.5) * 0.32;
+        return <div key={i} style={{ position: 'absolute', left: 540 + Math.cos(ang) * 320 * q, top: 1440 + Math.sin(ang) * 220 * q, opacity: (1 - q) * (q > 0 ? 1 : 0),
+          transform: `translate(-50%,-50%) scale(${0.6 + q})`, fontSize: 0 }}>
+          <svg width="44" height="40" viewBox="0 0 24 22"><path d="M12 21s-9-5.6-9-12A5 5 0 0 1 12 6a5 5 0 0 1 9 3c0 6.4-9 12-9 12z" fill={i % 2 ? '#FE2C55' : '#FFE08A'} /></svg>
+        </div>;
+      })}
+      {/* kursor tangan */}
+      <div style={{ position: 'absolute', left: cx, top: cy, opacity: curO, transform: `scale(${t >= CLICK - 0.08 && t < CLICK + 0.15 ? 0.85 : 1})`, transformOrigin: '14px 4px' }}>
+        <svg width="96" height="110" viewBox="0 0 48 55" style={{ filter: 'drop-shadow(0 6px 8px rgba(0,0,0,0.45))' }}>
+          <path d="M14 4a4 4 0 0 1 8 0v18h1V18a4 4 0 0 1 8 0v5h1v-2a4 4 0 0 1 8 0v4h.5a3.5 3.5 0 0 1 7 0V38c0 9-6 15-15 15h-5c-6 0-9-3-13-8L4 33a4 4 0 0 1 6-5l4 4V4z"
+            fill="#FFFFFF" stroke="#0B0B0F" strokeWidth="2.5" strokeLinejoin="round" />
+        </svg>
+      </div>
+      <Sequence from={f(CLICK) - 1} durationInFrames={20}><Audio src={staticFile('audio/click.wav')} volume={1} /></Sequence>
+    </AbsoluteFill>
+  );
+};
+
 /** Bingkai 9:16: tandatangan di atas, SATU panel suntingan, point penting 3D di bawah */
 export const Showcase: React.FC = () => {
   const t = useTime();
@@ -362,10 +439,7 @@ export const Showcase: React.FC = () => {
       </div>
       {/* point penting: tulisan 3D + motion graphics */}
       {PTS.map((p, i) => <Point3D key={i} p={p} idx={i} />)}
-      {t >= B.cta && (
-        <div style={{ position: 'absolute', left: 0, right: 0, top: 1380, textAlign: 'center', opacity: tw(t, [B.cta, B.cta + 0.5], [0, 1]),
-          fontFamily: FONT.sans, fontWeight: 900, fontSize: 52, letterSpacing: '0.1em', color: '#FFFFFF', textShadow: '0 0 20px rgba(120,255,235,0.8)' }}>FOLLOW @NAKSEEHEART</div>
-      )}
+      <FollowCTA />
       {/* label neon */}
       <div style={{ position: 'absolute', left: 0, right: 0, top: 1810, display: 'flex', justifyContent: 'center' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 18, fontFamily: FONT.sans, fontWeight: 700, fontSize: 52, letterSpacing: '0.06em', color: '#E9FFFB',
