@@ -13,9 +13,16 @@ fi
 if [ "${1:-}" = "still" ]; then
   npx remotion still Showcase "out/still-${2:-60}.png" --frame="${2:-60}" --scale=0.5 --log=error; exit 0
 fi
-# 1) cover dahulu (hasilkan juga cover-cutout.png -> siluet)
-bash scripts/cover.sh "${COVER_STYLE:-panel}"
-[ -f public/media/silhouette.png ] || python3 -I scripts/make_silhouette.py public/media/cover-cutout.png public/media/silhouette.png
+# 1) COVER V4 (gerbang mihrab + tajuk 3D) -> out/<output>-poster.{png,jpg}
+FA=$(node -p "require('./src/data/showcase.json').cover.frameAt ?? 2")
+ffmpeg -v error -y -ss "$FA" -i public/media/speaker.mp4 -frames:v 1 -q:v 2 public/media/cover-v4-frame.jpg
+npx remotion still CoverV4 "out/$OUT-poster.png" --frame=100 --log=error
+ffmpeg -v error -y -i "out/$OUT-poster.png" -q:v 2 "out/$OUT-poster.jpg"
+# siluet untuk babak 'silhouette' (rembg u2net_human_seg -> komponen terbesar)
+if [ ! -f public/media/silhouette.png ]; then
+  python3 -I -c "from rembg import remove,new_session;from PIL import Image;remove(Image.open('public/media/cover-v4-frame.jpg').convert('RGB'),session=new_session('u2net_human_seg'),post_process_mask=True).save('public/media/cover-cutout.png')"
+  python3 -I scripts/make_silhouette.py public/media/cover-cutout.png public/media/silhouette.png
+fi
 # 2) render Showcase
 REMOTION_CONCURRENCY="${REMOTION_CONCURRENCY:-4}" npx remotion render Showcase "out/$OUT.mp4" --codec=h264 --crf=18 --pixel-format=yuv420p --audio-codec=aac --audio-bitrate=192k
 ffmpeg -v error -y -i "out/$OUT.mp4" -c:v libx264 -crf 21 -preset slow -pix_fmt yuv420p -profile:v high -c:a copy -movflags +faststart out/_c.mp4

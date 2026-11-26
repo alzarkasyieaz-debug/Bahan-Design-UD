@@ -479,6 +479,78 @@ const MomentBadge: React.FC<{ y: number }> = ({ y }) => {
   );
 };
 
+/* ------------------------------------------------- COVER Nasihat V4 (still pada bingkai 100) */
+const Gold3D: React.FC<{ text: string; size: number }> = ({ text, size }) => (
+  <div style={{ position: 'relative', fontFamily: FONT.display, fontSize: size, lineHeight: 0.95, letterSpacing: '0.02em', whiteSpace: 'nowrap' }}>
+    <div style={{ color: '#7A4A0C', textShadow: Array.from({ length: 14 }, (_, i) => `0 ${i * 1.4}px 0 #5A3406`).join(', ') + ', 0 26px 44px rgba(0,0,0,0.6)' }}>{text}</div>
+    <div style={{ position: 'absolute', inset: 0, backgroundImage: GOLD, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>{text}</div>
+    <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(115deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.7) 40%, rgba(255,255,255,0) 50%)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>{text}</div>
+  </div>
+);
+export const CoverV4: React.FC = () => {
+  const cv = SC.cover;
+  const AX = 150, AY = 300, AW = 780, AH = 900;
+  return (
+    <AbsoluteFill style={{ overflow: 'hidden', background: 'linear-gradient(180deg, #7FF0E2 0%, #33C9BD 20%, #14908C 45%, #0B5357 72%, #062A2E 100%)' }}>
+      {/* sinar cahaya dari belakang gerbang */}
+      <AbsoluteFill style={{ background: 'repeating-conic-gradient(from 0deg at 50% 38%, rgba(255,255,255,0.10) 0deg 6deg, rgba(255,255,255,0) 6deg 18deg)', maskImage: 'radial-gradient(circle at 50% 38%, #000 0%, rgba(0,0,0,0) 62%)', WebkitMaskImage: 'radial-gradient(circle at 50% 38%, #000 0%, rgba(0,0,0,0) 62%)' }} />
+      <AbsoluteFill style={{ background: 'radial-gradient(circle at 50% 38%, rgba(255,240,200,0.45) 0%, rgba(0,0,0,0) 45%)' }} />
+      {/* corak bintang 8 bucu halus */}
+      <svg width="1080" height="1920" style={{ position: 'absolute', inset: 0, opacity: 0.10 }}>
+        <defs><pattern id="st8" width="120" height="120" patternUnits="userSpaceOnUse">
+          <g fill="none" stroke="#FFFFFF" strokeWidth="1.5"><rect x="35" y="35" width="50" height="50" /><rect x="35" y="35" width="50" height="50" transform="rotate(45 60 60)" /></g>
+        </pattern></defs>
+        <rect width="1080" height="1920" fill="url(#st8)" />
+      </svg>
+      <PremiumLogo />
+      {/* gerbang mihrab dengan foto */}
+      <div style={{ position: 'absolute', left: AX - 12, top: AY - 12, width: AW + 24, height: AH + 24, borderRadius: `${(AW + 24) / 2}px ${(AW + 24) / 2}px 40px 40px`,
+        background: 'linear-gradient(160deg, #FFF3C4 0%, #E9B95A 35%, #A8721E 60%, #F6D88A 100%)', boxShadow: '0 0 0 8px rgba(255,224,138,0.22), 0 30px 70px rgba(0,0,0,0.55), 0 0 60px rgba(255,214,140,0.45)' }} />
+      <div style={{ position: 'absolute', left: AX, top: AY, width: AW, height: AH, borderRadius: `${AW / 2}px ${AW / 2}px 30px 30px`, overflow: 'hidden', background: '#061A1D' }}>
+        <Img src={staticFile(cv.photo)} style={{ position: 'absolute', left: -(1080 * cv.zoom - AW) / 2, top: cv.photoTop, width: 1080 * cv.zoom, height: 1920 * cv.zoom, filter: 'brightness(1.06) contrast(1.05) saturate(1.05)' }} />
+        <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(6,42,46,0) 55%, rgba(6,42,46,0.85) 100%)' }} />
+        <AbsoluteFill style={{ background: 'radial-gradient(ellipse 70% 60% at 50% 40%, rgba(0,0,0,0) 60%, rgba(6,26,29,0.45) 100%)' }} />
+      </div>
+      <div style={{ position: 'absolute', left: AX + 10, top: AY + 10, width: AW - 20, height: AH - 20, borderRadius: `${(AW - 20) / 2}px ${(AW - 20) / 2}px 24px 24px`, border: '2px solid rgba(255,236,190,0.55)' }} />
+      <MomentBadge y={AY - 4} />
+      {/* soalan cangkuk */}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 1090, display: 'flex', justifyContent: 'center' }}>
+        <div style={{ padding: '14px 40px', borderRadius: 60, background: '#FE2C55', transform: 'rotate(-2.5deg)', boxShadow: '0 8px 0 #9E1430, 0 16px 30px rgba(0,0,0,0.45)',
+          fontFamily: FONT.sans, fontWeight: 900, fontSize: 54, letterSpacing: '0.03em', color: '#FFFFFF', whiteSpace: 'nowrap' }}>{cv.question}</div>
+      </div>
+      {/* tajuk 3D */}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 1215, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
+        <div style={{ fontFamily: FONT.sans, fontWeight: 900, fontSize: 62, letterSpacing: '0.16em', color: '#FFFFFF', textShadow: '0 4px 14px rgba(0,0,0,0.55), 0 0 24px rgba(120,255,235,0.6)' }}>{cv.small}</div>
+        <Gold3D text={cv.big} size={cv.big.length > 12 ? 150 : 180} />
+      </div>
+      {/* petikan sebenar */}
+      <div style={{ position: 'absolute', left: 60, right: 60, top: 1500, textAlign: 'center', fontFamily: "'Great Vibes', cursive", fontSize: 76, lineHeight: 1.15, color: '#FFFFFF',
+        textShadow: '0 0 20px rgba(120,255,235,0.55), 0 4px 12px rgba(0,0,0,0.5)' }}>“{cv.quote}”</div>
+      {/* cip point */}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 1660, display: 'flex', justifyContent: 'center', gap: 12 }}>
+        {cv.chips.map((c: { icon: string; t: string }, i: number) => (
+          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '10px 18px 10px 10px', borderRadius: 50, background: 'rgba(6,26,29,0.82)', border: '2px solid #E9C46A',
+            boxShadow: '0 0 18px rgba(255,214,140,0.3)', whiteSpace: 'nowrap' }}>
+            <div style={{ width: 46, height: 46, borderRadius: '50%', background: GOLD, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <LineIcon name={c.icon as IconName} size={32} color={C.charcoal} stroke={8} />
+            </div>
+            <span style={{ fontFamily: FONT.sans, fontWeight: 800, fontSize: 28, color: '#FFFFFF' }}>{c.t}</span>
+          </div>
+        ))}
+      </div>
+      {/* butang tonton */}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 1775, display: 'flex', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '12px 34px 12px 14px', borderRadius: 60, background: 'rgba(255,255,255,0.14)', border: '2px solid rgba(255,255,255,0.5)' }}>
+          <div style={{ width: 54, height: 54, borderRadius: '50%', background: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <svg width="26" height="26" viewBox="0 0 24 24"><path d="M7 4 L20 12 L7 20 Z" fill="#0B5357" /></svg>
+          </div>
+          <span style={{ fontFamily: FONT.sans, fontWeight: 800, fontSize: 32, letterSpacing: '0.12em', color: '#FFFFFF' }}>{cv.watch}</span>
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 /** Bingkai 9:16: tandatangan di atas, SATU panel suntingan, point penting 3D di bawah */
 export const Showcase: React.FC = () => {
   const t = useTime();

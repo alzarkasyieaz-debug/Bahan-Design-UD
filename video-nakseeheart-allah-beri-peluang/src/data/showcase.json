@@ -352,5 +352,30 @@
    "big": "KITA MAMPU",
    "icon": "target"
   }
- ]
+ ],
+ "cover": {
+  "photo": "media/cover-v4-frame.jpg",
+  "zoom": 0.78,
+  "photoTop": -330,
+  "question": "PERNAH BUAT SILAP?",
+  "small": "ALLAH SENTIASA",
+  "big": "BERI PELUANG",
+  "quote": "Allah sentiasa menunggu kita",
+  "watch": "TONTON SAMPAI HABIS",
+  "chips": [
+   {
+    "icon": "shield",
+    "t": "Jangan putus asa"
+   },
+   {
+    "icon": "hand",
+    "t": "Doa & mengadu"
+   },
+   {
+    "icon": "target",
+    "t": "Kita mampu"
+   }
+  ],
+  "frameAt": 2.2
+ }
 }
