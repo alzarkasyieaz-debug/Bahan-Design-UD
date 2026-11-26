@@ -272,43 +272,107 @@ export const KineticFinal: React.FC = () => {
   );
 };
 
-/** Bingkai showcase 9:16 */
+/* ------------------------------------------------- point penting (bawah panel) */
+type Point = { a: number; b: number; small: string; big: string; chips?: { t: string; at: number }[]; icon: IconName };
+const PTS: Point[] = [
+  { a: 0, b: 6.9, small: 'ALLAH SAHAJA', big: 'TEMPAT TERBAIK', icon: 'mosque' },
+  { a: 6.9, b: 15.2, small: 'ALLAH SENTIASA BERI', big: 'PELUANG', chips: [{ t: 'Membetulkan kesilapan', at: 10.3 }], icon: 'star' },
+  { a: 15.2, b: 25.8, small: 'TIDAK KIRA', big: 'SENGAJA ATAU TIDAK', icon: 'check' },
+  { a: 25.8, b: 30.1, small: 'ALLAH', big: 'MAHA MENYAYANGI', icon: 'heart' },
+  { a: 30.1, b: 38.7, small: 'WALAU BANYAK KEKHILAFAN', big: 'MASIH ADA RUANG', chips: [{ t: 'Sebagai hamba', at: 34.6 }, { t: 'Sebagai manusia', at: 36.3 }], icon: 'hand' },
+  { a: 38.7, b: 51.6, small: 'JANGAN SESEKALI', big: 'PUTUS ASA', chips: [{ t: 'Walau kerap gagal', at: 43.3 }, { t: 'Walau banyak masalah', at: 47.7 }], icon: 'shield' },
+  { a: 51.6, b: 64.45, small: 'ALLAH SENTIASA', big: 'MENUNGGU KITA', chips: [{ t: 'Doa', at: 59.3 }, { t: 'Bercerita', at: 61.4 }, { t: 'Berkongsi', at: 62.8 }], icon: 'clock' },
+  { a: 64.45, b: 75.7, small: 'TEMPAT TERBAIK', big: 'UNTUK MENGADU', icon: 'chat' },
+  { a: 75.7, b: 83.6, small: 'DENGAN KEYAKINAN', big: 'ALLAH BANTU', icon: 'hand' },
+  { a: 83.6, b: 91.2, small: 'YANG PENTING, JAGA', big: 'KETAATAN & KEYAKINAN', chips: [{ t: 'Ketaatan', at: 85.0 }, { t: 'Keyakinan', at: 87.7 }], icon: 'shield' },
+  { a: 91.2, b: 93.6, small: 'ALLAH TIDAK', big: 'SIA-SIAKAN HAMBA-NYA', icon: 'heart' },
+  { a: 93.6, b: 100.8, small: 'SETIAP UJIAN', big: 'KITA MAMPU', icon: 'target' },
+];
+
+const Point3D: React.FC<{ p: Point; idx: number }> = ({ p, idx }) => {
+  const t = useTime();
+  if (t < p.a - 0.05 || t > p.b + 0.05) return null;
+  const o = win(t, p.a, p.b, 0.35, 0.3);
+  const pin = tw(t, [p.a, p.a + 0.5], [0, 1], back);
+  const bob = Math.sin((t - p.a) * 1.6) * 6;
+  const size = p.big.length > 14 ? 96 : p.big.length > 10 ? 118 : 150;
+  return (
+    <AbsoluteFill style={{ opacity: o }}>
+      {/* nombor point + ikon */}
+      <div style={{ position: 'absolute', left: 540, top: 1290, transform: `translate(-50%,-50%) scale(${0.6 + 0.4 * pin})`, display: 'flex', alignItems: 'center', gap: 16 }}>
+        <div style={{ width: 74, height: 74, borderRadius: '50%', background: GOLD, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 5px 0 #7A4A0C, 0 0 24px rgba(255,214,140,0.7)' }}>
+          <LineIcon name={p.icon} size={48} color={C.charcoal} stroke={8} />
+        </div>
+        <div style={{ fontFamily: FONT.sans, fontWeight: 800, fontSize: 36, letterSpacing: '0.18em', color: '#E9FFFB', textShadow: '0 3px 12px rgba(0,0,0,0.5)', whiteSpace: 'nowrap' }}>{p.small}</div>
+      </div>
+      {/* tulisan 3D emas */}
+      <div style={{ position: 'absolute', left: 540, top: 1440 + bob, transform: `translate(-50%,-50%) perspective(1200px) rotateX(${(1 - pin) * 60 + 12}deg) scale(${0.85 + 0.15 * pin})`, whiteSpace: 'nowrap' }}>
+        <div style={{ position: 'relative', fontFamily: FONT.display, fontSize: size, lineHeight: 1, letterSpacing: '0.02em' }}>
+          <div style={{ color: '#7A4A0C', textShadow: Array.from({ length: 12 }, (_, i) => `0 ${i * 1.3}px 0 #5A3406`).join(', ') + ', 0 24px 40px rgba(0,0,0,0.55)' }}>{p.big}</div>
+          <div style={{ position: 'absolute', inset: 0, backgroundImage: GOLD, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>{p.big}</div>
+          <div style={{ position: 'absolute', inset: 0, backgroundImage: `linear-gradient(110deg, rgba(255,255,255,0) ${30 + ((t - p.a) * 40) % 140 - 40}%, rgba(255,255,255,0.75) ${38 + ((t - p.a) * 40) % 140 - 40}%, rgba(255,255,255,0) ${46 + ((t - p.a) * 40) % 140 - 40}%)`,
+            WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>{p.big}</div>
+        </div>
+      </div>
+      {/* cip point */}
+      {p.chips && (
+        <div style={{ position: 'absolute', left: 540, top: 1590, transform: 'translate(-50%,-50%)', display: 'flex', gap: 16 }}>
+          {p.chips.map((c, i) => {
+            const q = tw(t, [c.at - 0.1, c.at + 0.35], [0, 1], back);
+            return (
+              <div key={i} style={{ padding: '12px 26px', borderRadius: 40, background: 'rgba(6,26,29,0.75)', border: `2px solid ${C.goldLight}`, opacity: Math.min(1, q * 1.5),
+                transform: `translateY(${(1 - q) * 30}px) scale(${0.8 + 0.2 * q})`, boxShadow: '0 0 20px rgba(120,255,235,0.35)', display: 'flex', alignItems: 'center', gap: 10, whiteSpace: 'nowrap' }}>
+                <svg width="30" height="30" viewBox="0 0 44 44"><path d="M10 23 L19 32 L35 13" fill="none" stroke={C.goldLight} strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                <span style={{ fontFamily: FONT.sans, fontWeight: 800, fontSize: 34, color: '#FFFFFF' }}>{c.t}</span>
+              </div>
+            );
+          })}
+        </div>
+      )}
+      {/* penanda kemajuan */}
+      <div style={{ position: 'absolute', left: 540, top: 1690, transform: 'translate(-50%,-50%)', display: 'flex', gap: 10 }}>
+        {PTS.map((_, i) => <div key={i} style={{ width: i === idx ? 40 : 12, height: 12, borderRadius: 6, background: i <= idx ? C.goldLight : 'rgba(233,255,251,0.3)' }} />)}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** Bingkai 9:16: tandatangan di atas, SATU panel suntingan, point penting 3D di bawah */
 export const Showcase: React.FC = () => {
   const t = useTime();
   const FW = 960;
-  const RW = 560;
+  const sig = tw(t, [0.1, 1.6], [0, 1], ease);
   return (
-    <AbsoluteFill style={{ overflow: 'hidden', background: 'linear-gradient(180deg, #7FF0E2 0%, #33C9BD 22%, #14908C 48%, #0B5357 75%, #062A2E 100%)' }}>
+    <AbsoluteFill style={{ overflow: 'hidden', background: 'linear-gradient(180deg, #7FF0E2 0%, #33C9BD 20%, #14908C 45%, #0B5357 72%, #062A2E 100%)' }}>
       <AbsoluteFill style={{ background: 'radial-gradient(ellipse 80% 30% at 50% 0%, rgba(230,255,250,0.7), rgba(0,0,0,0) 70%)' }} />
-      {/* logo + nama */}
-      <div style={{ position: 'absolute', left: 540 - 68, top: 42, width: 136, height: 136, borderRadius: '50%', background: 'radial-gradient(circle at 40% 35%, #2FC4B8, #0B5357 75%)',
-        border: `5px solid ${C.goldLight}`, boxShadow: '0 10px 30px rgba(0,0,0,0.45), 0 0 30px rgba(255,226,163,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <HeartMark size={86} t={t} />
-      </div>
-      <div style={{ position: 'absolute', left: 0, right: 0, top: 190, textAlign: 'center', fontFamily: FONT.sans, fontWeight: 900, fontSize: 40, letterSpacing: '0.08em', color: '#FFFFFF', textShadow: '0 3px 12px rgba(0,0,0,0.45)' }}>
-        NAKSEE<span style={{ color: '#FFE08A' }}>HEART</span>
-      </div>
-      {/* RAW (di bawah, bertindih sedikit) */}
-      <div style={{ position: 'absolute', left: 540 - RW / 2, top: 1190, width: RW, height: RW, borderRadius: 22, overflow: 'hidden', border: '3px solid rgba(255,255,255,0.55)', boxShadow: '0 20px 40px rgba(0,0,0,0.5)' }}>
-        <div style={{ position: 'absolute', left: (RW - 1080 * (RW / 1080)) / 2, top: RW / 2 - FACE.y * (RW / 1080), width: RW, height: 1920 * (RW / 1080) }}>
-          <Clips src="media/raw.mp4" />
+      <AbsoluteFill style={{ background: 'radial-gradient(ellipse 70% 22% at 50% 78%, rgba(255,214,140,0.22), rgba(0,0,0,0) 70%)' }} />
+      {/* tandatangan */}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 40, textAlign: 'center' }}>
+        <div style={{ display: 'inline-block', fontFamily: "'Great Vibes', cursive", fontSize: 150, lineHeight: 1.1, color: '#FFFFFF', paddingRight: 30,
+          textShadow: '0 4px 14px rgba(0,0,0,0.25), 0 0 24px rgba(255,255,255,0.35)',
+          clipPath: `inset(-20% ${100 - sig * 100}% -20% -10%)` }}>
+          NakSee<span style={{ color: '#FFE08A', textShadow: '0 0 18px rgba(255,214,140,0.7), 0 4px 14px rgba(0,0,0,0.25)' }}>Heart</span>
         </div>
       </div>
-      <div style={{ position: 'absolute', left: 540 + RW / 2 - 110, top: 1190 + RW + 10, fontFamily: FONT.sans, fontWeight: 900, fontSize: 34, letterSpacing: '0.1em', color: '#fff', textShadow: '0 2px 8px rgba(0,0,0,0.6)' }}>RAW</div>
-      {/* FINAL */}
-      <div style={{ position: 'absolute', left: 60, top: 250, width: FW, height: FW, borderRadius: 30, overflow: 'hidden', border: '3px solid rgba(255,255,255,0.65)', boxShadow: '0 30px 60px rgba(0,0,0,0.55), 0 0 40px rgba(255,226,163,0.35)' }}>
+      {/* SATU panel suntingan */}
+      <div style={{ position: 'absolute', left: 60, top: 260, width: FW, height: FW, borderRadius: 30, overflow: 'hidden', border: '3px solid rgba(255,255,255,0.65)', boxShadow: '0 30px 60px rgba(0,0,0,0.45), 0 0 40px rgba(120,255,235,0.35)' }}>
         <div style={{ width: SQ, height: SQ, transform: `scale(${FW / SQ})`, transformOrigin: '0 0' }}>
           <KineticFinal />
         </div>
       </div>
-      <div style={{ position: 'absolute', left: 30, top: 222, padding: '6px 18px', borderRadius: 8, background: '#fff', fontFamily: FONT.sans, fontWeight: 900, fontSize: 30, color: C.charcoal, boxShadow: '0 6px 16px rgba(0,0,0,0.4)' }}>FINAL</div>
+      {/* point penting: tulisan 3D + motion graphics */}
+      {PTS.map((p, i) => <Point3D key={i} p={p} idx={i} />)}
+      {t >= B.cta && (
+        <div style={{ position: 'absolute', left: 0, right: 0, top: 1380, textAlign: 'center', opacity: tw(t, [B.cta, B.cta + 0.5], [0, 1]),
+          fontFamily: FONT.sans, fontWeight: 900, fontSize: 52, letterSpacing: '0.1em', color: '#FFFFFF', textShadow: '0 0 20px rgba(120,255,235,0.8)' }}>FOLLOW @NAKSEEHEART</div>
+      )}
       {/* label neon */}
-      <div style={{ position: 'absolute', left: 0, right: 0, top: 1820, display: 'flex', justifyContent: 'center' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 18, fontFamily: FONT.sans, fontWeight: 700, fontSize: 54, letterSpacing: '0.06em', color: '#E9FFFB',
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 1810, display: 'flex', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 18, fontFamily: FONT.sans, fontWeight: 700, fontSize: 52, letterSpacing: '0.06em', color: '#E9FFFB',
           textShadow: `0 0 ${12 + 6 * Math.sin(t * 3)}px rgba(120,255,235,0.95), 0 0 34px rgba(64,224,208,0.85)` }}>
-          <span style={{ width: 6, height: 70, background: '#BFFFF5', boxShadow: '0 0 16px rgba(120,255,235,1)' }} />
+          <span style={{ width: 6, height: 66, background: '#BFFFF5', boxShadow: '0 0 16px rgba(120,255,235,1)' }} />
           SHARING MOMENT
-          <span style={{ width: 6, height: 70, background: '#BFFFF5', boxShadow: '0 0 16px rgba(120,255,235,1)' }} />
+          <span style={{ width: 6, height: 66, background: '#BFFFF5', boxShadow: '0 0 16px rgba(120,255,235,1)' }} />
         </div>
       </div>
       <Audio src={staticFile('audio/mix.wav')} />
