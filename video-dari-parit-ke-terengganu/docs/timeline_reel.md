@@ -18,10 +18,9 @@ Kanvas 1080×1920, 24 fps, tempoh 60.0 s. Dijana automatik daripada `scripts/tim
 | 10 | 0:30.8 | 0:38.8 | Video | `VID_20261126_180420.mp4` | src 2.7s, masa nyata + audio ucapan, fill; masuk: dissolve 0.6s |
 | 11 | 0:38.8 | 0:41.8 | Foto | `IMG_20261126_182205.jpg` | frame, in; masuk: dissolve 0.6s |
 | 12 | 0:41.8 | 0:44.4 | Foto | `IMG_20261126_181034.jpg` | frame, in; masuk: burn 0.8s |
-| 13 | 0:44.4 | 0:47.0 | Foto | `IMG_20261126_130650.jpg` | frame, in; masuk: dissolve 0.6s |
-| 14 | 0:47.0 | 0:49.6 | Foto | `IMG_20261126_182217.jpg` | frame, in; masuk: dissolve 0.6s |
-| 15 | 0:49.6 | 0:53.2 | Video | `VID_20261126_181932.mp4` | src 2.0s, gerak perlahan 80%, fill; masuk: dissolve 0.6s |
-| 16 | 0:53.2 | 1:00.0 | Kad grafik | `latar teal` | ; masuk: dissolve 0.9s |
+| 13 | 0:44.4 | 0:49.6 | ? | `` | ; masuk: dissolve 0.6s |
+| 14 | 0:49.6 | 0:53.2 | Video | `VID_20261126_181932.mp4` | src 2.0s, gerak perlahan 80%, fill; masuk: dissolve 0.6s |
+| 15 | 0:53.2 | 1:00.0 | Kad grafik | `latar teal` | ; masuk: dissolve 0.9s |
 
 ## Grafik & teks
 

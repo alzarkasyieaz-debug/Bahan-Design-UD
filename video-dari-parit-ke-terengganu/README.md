@@ -14,6 +14,9 @@ Dokumentari travelog sinematik — Program Lawatan dan Pertemuan **Persatuan Hal
 | `dari-parit-ke-terengganu_highlight60s_9x16.mp4` | Highlight 60 s, 1080×1920 (TikTok / Reels / FB Reels) |
 | `*.srt` | Subtitle Bahasa Malaysia, diselaraskan dengan VO & petikan ucapan |
 
+Versi dalam repo dimampatkan (2-pass ±3 Mbps) supaya muat had GitHub 100 MB. Master kualiti tinggi
+(CRF 21, ±276 MB) boleh dijana semula dengan `python3 scripts/render.py main`.
+
 Subtitle juga sudah “dibakar” (burned-in) dalam video — fail SRT untuk dimuat naik sebagai kapsyen berasingan
 (YouTube/Facebook) atau untuk terjemahan.
 

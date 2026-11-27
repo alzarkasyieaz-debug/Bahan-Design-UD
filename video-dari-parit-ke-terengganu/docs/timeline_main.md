@@ -1,6 +1,6 @@
 # Timeline penyuntingan — Dokumentari penuh 16:9
 
-Kanvas 1920×1080, 24 fps, tempoh 220.5 s. Dijana automatik daripada `scripts/timelines.py`.
+Kanvas 1920×1080, 24 fps, tempoh 238.6 s. Dijana automatik daripada `scripts/timelines.py`.
 
 ## Shot (visual)
 
@@ -19,41 +19,42 @@ Kanvas 1920×1080, 24 fps, tempoh 220.5 s. Dijana automatik daripada `scripts/ti
 | 11 | 0:47.9 | 0:51.3 | Foto | `IMG_20260922_031526.jpg` | frame, in; masuk: zoom 0.6s |
 | 12 | 0:51.3 | 0:54.3 | Foto | `IMG_20260922_031522.jpg` | frame, in; masuk: wipe 0.6s |
 | 13 | 0:54.3 | 0:57.7 | Foto | `IMG_20260922_031543.jpg` | fill, in; masuk: dissolve 0.6s |
-| 14 | 0:57.7 | 1:00.7 | Foto | `IMG_20260922_031535.jpg` | frame, in; masuk: wipe 0.6s |
-| 15 | 1:00.7 | 1:03.5 | Foto | `IMG_20260922_031514.jpg` | frame, in; masuk: dissolve 0.6s |
-| 16 | 1:03.5 | 1:10.0 | Foto | `IMG_20260922_031540.jpg` | fill, left; masuk: burn 0.9s |
-| 17 | 1:10.0 | 1:14.5 | Foto | `IMG_20260922_031654.jpg` | fill, in; masuk: dissolve 0.6s |
-| 18 | 1:14.5 | 1:18.3 | Foto | `IMG_20260922_031452.jpg` | fill, in; masuk: dissolve 0.6s |
-| 19 | 1:18.3 | 1:21.7 | Foto | `IMG_20260922_031828.jpg` | fill, out; masuk: zoom 0.6s |
-| 20 | 1:21.7 | 1:26.3 | Video | `VID_20260922_032143.mp4` | src 1.0s, gerak perlahan 80%, fill; masuk: dissolve 0.6s |
-| 21 | 1:26.3 | 1:32.7 | Video | `VID_20260922_032159.mp4` | src 0.8s, masa nyata + audio ucapan, frame; masuk: dissolve 0.6s |
-| 22 | 1:32.7 | 1:35.9 | Foto | `IMG_20260922_032016.jpg` | fill, right; masuk: dissolve 0.6s |
-| 23 | 1:35.9 | 1:38.9 | Foto | `IMG_20260922_031946.jpg` | fill, in; masuk: dissolve 0.6s |
-| 24 | 1:38.9 | 1:43.1 | Foto | `IMG_20261126_130222.jpg` | fill, in; masuk: dissolve 0.6s |
-| 25 | 1:43.1 | 1:46.7 | Foto | `IMG_20261126_130243.jpg` | fill, out; masuk: dissolve 0.6s |
-| 26 | 1:46.7 | 1:51.9 | Foto | `IMG_20261126_130503.jpg` | fill, in; masuk: dissolve 0.6s |
-| 27 | 1:51.9 | 1:55.5 | Foto | `IMG_20261126_175725.jpg` | fill, right; masuk: wipe 0.7s |
-| 28 | 1:55.5 | 1:59.5 | Video | `VID_20261126_175757.mp4` | src 4.0s, gerak perlahan 80%, fill; masuk: dissolve 0.6s |
-| 29 | 1:59.5 | 2:02.5 | Foto | `MVIMG_20261126_180434.jpg` | frame, in; masuk: dissolve 0.6s |
-| 30 | 2:02.5 | 2:14.5 | Video | `VID_20261126_180420.mp4` | src 2.7s, masa nyata + audio ucapan, frame; masuk: dissolve 0.6s |
-| 31 | 2:14.5 | 2:17.9 | Foto | `IMG_20261126_180509.jpg` | fill, in; masuk: dissolve 0.6s |
-| 32 | 2:17.9 | 2:20.9 | Foto | `IMG_20261126_181708.jpg` | frame, in; masuk: dissolve 0.6s |
-| 33 | 2:20.9 | 2:23.9 | Foto | `IMG_20261126_181825.jpg` | fill, right; masuk: dissolve 0.6s |
-| 34 | 2:23.9 | 2:26.9 | Foto | `IMG_20261126_181254.jpg` | fill, in; masuk: dissolve 0.6s |
-| 35 | 2:26.9 | 2:31.5 | Foto | `IMG_20261126_182205.jpg` | fill, in; masuk: dissolve 0.6s |
-| 36 | 2:31.5 | 2:35.3 | Foto | `IMG_20261126_181034.jpg` | fill, in; masuk: burn 0.9s |
-| 37 | 2:35.3 | 2:39.7 | Foto | `IMG_20261126_130650.jpg` | frame, in; masuk: dissolve 0.6s |
-| 38 | 2:39.7 | 2:43.3 | Foto | `IMG_20260922_031523.jpg` | frame, in; masuk: dissolve 0.6s |
-| 39 | 2:43.3 | 2:47.1 | Foto | `IMG_20261126_182217.jpg` | fill, in; masuk: dissolve 0.6s |
-| 40 | 2:47.1 | 2:50.1 | Foto | `IMG_20261126_181036.jpg` | fill, left; masuk: dissolve 0.6s |
-| 41 | 2:50.1 | 2:53.1 | Foto | `IMG_20261126_180510.jpg` | fill, in; masuk: dissolve 0.6s |
-| 42 | 2:53.1 | 2:57.1 | Foto | `IMG_20261126_130632.jpg` | fill, out; masuk: dissolve 0.6s |
-| 43 | 2:57.1 | 3:00.5 | Foto | `IMG_20261126_182344.jpg` | fill, right; masuk: dissolve 0.6s |
-| 44 | 3:00.5 | 3:04.7 | Video | `VID_20261126_181932.mp4` | src 2.0s, gerak perlahan 80%, fill; masuk: dissolve 0.6s |
-| 45 | 3:04.7 | 3:09.5 | Video | `VID_20261126_180642.mp4` | src 0.0s, gerak perlahan 80%, fill; masuk: dissolve 0.6s |
-| 46 | 3:09.5 | 3:17.5 | Peta animasi | `Kuala Terengganu » Bota (pulang)` | ; masuk: dissolve 0.9s |
-| 47 | 3:17.5 | 3:28.0 | Foto | `IMG_20261126_130635.jpg` | fill, in; masuk: burn 0.9s |
-| 48 | 3:28.0 | 3:40.5 | Kad grafik | `latar teal` | ; masuk: dissolve 1.2s |
+| 14 | 0:57.7 | 1:03.5 | ? | `` | ; masuk: wipe 0.6s |
+| 15 | 1:03.5 | 1:10.0 | Foto | `IMG_20260922_031540.jpg` | fill, left; masuk: burn 0.9s |
+| 16 | 1:10.0 | 1:14.5 | Foto | `IMG_20260922_031654.jpg` | fill, in; masuk: dissolve 0.6s |
+| 17 | 1:14.5 | 1:18.3 | Foto | `IMG_20260922_031452.jpg` | fill, in; masuk: dissolve 0.6s |
+| 18 | 1:18.3 | 1:21.7 | Foto | `IMG_20260922_031828.jpg` | fill, out; masuk: zoom 0.6s |
+| 19 | 1:21.7 | 1:26.3 | Video | `VID_20260922_032143.mp4` | src 1.0s, gerak perlahan 80%, fill; masuk: dissolve 0.6s |
+| 20 | 1:26.3 | 1:32.7 | Video | `VID_20260922_032159.mp4` | src 0.8s, masa nyata + audio ucapan, frame; masuk: dissolve 0.6s |
+| 21 | 1:32.7 | 1:35.9 | Foto | `IMG_20260922_032016.jpg` | fill, right; masuk: dissolve 0.6s |
+| 22 | 1:35.9 | 1:38.9 | Foto | `IMG_20260922_031946.jpg` | fill, in; masuk: dissolve 0.6s |
+| 23 | 1:38.9 | 1:43.1 | Foto | `IMG_20261126_130222.jpg` | fill, in; masuk: dissolve 0.6s |
+| 24 | 1:43.1 | 1:46.7 | Foto | `IMG_20261126_130243.jpg` | fill, out; masuk: dissolve 0.6s |
+| 25 | 1:46.7 | 1:51.9 | Foto | `IMG_20261126_130503.jpg` | fill, in; masuk: dissolve 0.6s |
+| 26 | 1:51.9 | 1:55.5 | Foto | `IMG_20261126_175725.jpg` | fill, right; masuk: wipe 0.7s |
+| 27 | 1:55.5 | 1:59.5 | Video | `VID_20261126_175757.mp4` | src 4.0s, gerak perlahan 80%, fill; masuk: dissolve 0.6s |
+| 28 | 1:59.5 | 2:02.5 | Foto | `MVIMG_20261126_180434.jpg` | frame, in; masuk: dissolve 0.6s |
+| 29 | 2:02.5 | 2:14.5 | Video | `VID_20261126_180420.mp4` | src 2.7s, masa nyata + audio ucapan, frame; masuk: dissolve 0.6s |
+| 30 | 2:14.5 | 2:17.9 | Foto | `IMG_20261126_180509.jpg` | fill, in; masuk: dissolve 0.6s |
+| 31 | 2:17.9 | 2:20.9 | Foto | `IMG_20261126_181708.jpg` | frame, in; masuk: dissolve 0.6s |
+| 32 | 2:20.9 | 2:23.9 | Foto | `IMG_20261126_181825.jpg` | fill, right; masuk: dissolve 0.6s |
+| 33 | 2:23.9 | 2:26.9 | Foto | `IMG_20261126_181254.jpg` | fill, in; masuk: dissolve 0.6s |
+| 34 | 2:26.9 | 2:31.5 | Foto | `IMG_20261126_182205.jpg` | fill, in; masuk: dissolve 0.6s |
+| 35 | 2:31.5 | 2:35.3 | Foto | `IMG_20261126_181034.jpg` | fill, in; masuk: burn 0.9s |
+| 36 | 2:35.3 | 2:39.7 | Foto | `IMG_20261126_130650.jpg` | frame, in; masuk: dissolve 0.6s |
+| 37 | 2:39.7 | 2:43.3 | Foto | `IMG_20260922_031523.jpg` | frame, in; masuk: dissolve 0.6s |
+| 38 | 2:43.3 | 2:47.1 | Foto | `IMG_20261126_182217.jpg` | fill, in; masuk: dissolve 0.6s |
+| 39 | 2:47.1 | 2:53.1 | ? | `` | ; masuk: zoom 0.6s |
+| 40 | 2:53.1 | 2:58.1 | ? | `` | ; masuk: wipe 0.6s |
+| 41 | 2:58.1 | 3:04.1 | ? | `` | ; masuk: dissolve 0.6s |
+| 42 | 3:04.1 | 3:09.1 | ? | `` | ; masuk: wipe 0.6s |
+| 43 | 3:09.1 | 3:13.1 | Foto | `IMG_20261126_130632.jpg` | fill, out; masuk: zoom 0.6s |
+| 44 | 3:13.1 | 3:18.6 | ? | `` | ; masuk: dissolve 0.6s |
+| 45 | 3:18.6 | 3:22.8 | Video | `VID_20261126_181932.mp4` | src 2.0s, gerak perlahan 80%, fill; masuk: dissolve 0.6s |
+| 46 | 3:22.8 | 3:27.6 | Video | `VID_20261126_180642.mp4` | src 0.0s, gerak perlahan 80%, fill; masuk: dissolve 0.6s |
+| 47 | 3:27.6 | 3:35.6 | Peta animasi | `Kuala Terengganu » Bota (pulang)` | ; masuk: dissolve 0.9s |
+| 48 | 3:35.6 | 3:46.1 | Foto | `IMG_20261126_130635.jpg` | fill, in; masuk: burn 0.9s |
+| 49 | 3:46.1 | 3:58.6 | Kad grafik | `latar teal` | ; masuk: dissolve 1.2s |
 
 ## Grafik & teks
 
@@ -93,13 +94,14 @@ Kanvas 1920×1080, 24 fps, tempoh 220.5 s. Dijana automatik daripada `scripts/ti
 | 2:40.5 | 2:44.6 | Subtitle: Pertemuan, senyuman, dan masa yang dilalui bersama, |
 | 2:43.6 | 2:47.6 | Teks tema: UKHUWAH |
 | 2:44.7 | 2:48.6 | Subtitle: turut menjadi sebahagian daripada cerita perjalanan ini. |
-| 3:07.4 | 3:11.6 | Subtitle: Setiap perjalanan akhirnya sampai ke penghujungnya. |
-| 3:10.3 | 3:16.0 | Lower third: Perjalanan Pulang / Kuala Terengganu  »  Bota, Perak |
-| 3:11.7 | 3:16.8 | Subtitle: Namun, pengalaman dan kenangan yang tercipta, akan terus dibawa pulang. |
-| 3:16.9 | 3:19.2 | Subtitle: Dari Parit ke Terengganu, |
-| 3:19.3 | 3:22.6 | Subtitle: sebuah perjalanan yang meninggalkan cerita. |
-| 3:22.4 | 3:27.6 | Tajuk: MERENTAS JARAK / MENJALIN UKHUWAH / BERKONGSI PENGALAMAN |
-| 3:28.5 | 3:39.5 | Kredit penutup + logo |
+| 2:47.5 | 2:52.4 | Bab 05: DETIK-DETIK BERMAKNA |
+| 3:25.5 | 3:29.7 | Subtitle: Setiap perjalanan akhirnya sampai ke penghujungnya. |
+| 3:28.4 | 3:34.1 | Lower third: Perjalanan Pulang / Kuala Terengganu  »  Bota, Perak |
+| 3:29.8 | 3:34.9 | Subtitle: Namun, pengalaman dan kenangan yang tercipta, akan terus dibawa pulang. |
+| 3:35.0 | 3:37.3 | Subtitle: Dari Parit ke Terengganu, |
+| 3:37.4 | 3:40.7 | Subtitle: sebuah perjalanan yang meninggalkan cerita. |
+| 3:40.5 | 3:45.7 | Tajuk: MERENTAS JARAK / MENJALIN UKHUWAH / BERKONGSI PENGALAMAN |
+| 3:46.6 | 3:57.6 | Kredit penutup + logo |
 
 ## Audio
 
@@ -110,8 +112,8 @@ Kanvas 1920×1080, 24 fps, tempoh 220.5 s. Dijana automatik daripada `scripts/ti
 | 0:44.6 | Voice-over | `s3` (build/vo/s3.wav) |
 | 1:39.2 | Voice-over | `s5` (build/vo/s5.wav) |
 | 2:36.2 | Voice-over | `s6` (build/vo/s6.wav) |
-| 3:07.5 | Voice-over | `s7` (build/vo/s7.wav) |
+| 3:25.6 | Voice-over | `s7` (build/vo/s7.wav) |
 | 1:26.3 | Ucapan sebenar | `VID_20260922_032159.mp4` 0.8–7.2s |
 | 2:02.5 | Ucapan sebenar | `VID_20261126_180420.mp4` 2.7–14.7s |
-| 0:00 | Muzik | skor asli, cue intensiti: 0:00.0→0.25, 0:11.0→0.6, 0:17.0→0.5, 0:41.5→0.6, 1:03.5→0.7, 1:21.7→0.42, 2:31.5→0.85, 3:04.7→0.7, 3:17.5→1.0, 3:28.0→0.45, 3:39.5→0.0 |
-| — | Efek | film burn pada 0:11.0, 0:17.0, 1:03.5, 2:31.5, 3:17.5; light leak; grain; vignette |
+| 0:00 | Muzik | skor asli, cue intensiti: 0:00.0→0.25, 0:11.0→0.6, 0:17.0→0.5, 0:41.5→0.6, 1:03.5→0.7, 1:21.7→0.42, 2:31.5→0.85, 2:47.1→0.95, 3:18.6→0.8, 3:22.8→0.7, 3:35.6→1.0, 3:46.1→0.45, 3:57.6→0.0 |
+| — | Efek | film burn pada 0:11.0, 0:17.0, 1:03.5, 2:31.5, 3:35.6; light leak; grain; vignette |

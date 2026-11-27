@@ -12,7 +12,7 @@ Kanvas 1920×1080, 24 fps, tempoh 30.0 s. Dijana automatik daripada `scripts/tim
 | 4 | 0:05.1 | 0:10.1 | Peta animasi | `Bota, Perak » Kuala Terengganu` | ; masuk: burn 0.8s |
 | 5 | 0:10.1 | 0:12.5 | Video | `VID_20261126_180420.mp4` | src 3.0s, gerak perlahan 80%, fill; masuk: dissolve 0.6s |
 | 6 | 0:12.5 | 0:14.5 | Foto | `IMG_20261126_182205.jpg` | fill, in; masuk: dissolve 0.6s |
-| 7 | 0:14.5 | 0:16.7 | Foto | `IMG_20261126_130503.jpg` | fill, in; masuk: dissolve 0.6s |
+| 7 | 0:14.5 | 0:16.7 | ? | `` | ; masuk: dissolve 0.6s |
 | 8 | 0:16.7 | 0:18.7 | Foto | `IMG_20261126_181034.jpg` | fill, in; masuk: dissolve 0.6s |
 | 9 | 0:18.7 | 0:30.0 | Kad grafik | `IMG_20261126_130635.jpg` | latar kabur; masuk: burn 0.9s |
 
