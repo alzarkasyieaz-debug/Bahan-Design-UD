@@ -405,7 +405,7 @@ const FollowCTA: React.FC = () => {
 
 /* ------------------------------------------------- logo premium NakSeeHeart */
 const GOLDTXT = 'linear-gradient(180deg, #FFF3C4 0%, #F4D27A 38%, #C8922E 62%, #F2CF77 100%)';
-const PremiumLogo: React.FC<{ scale?: number; top?: number }> = ({ scale = SC.logo.scale ?? 0.74, top = 30 }) => {
+const PremiumLogo: React.FC<{ scale?: number; top?: number }> = ({ scale = SC.logo.scale ?? 0.62, top = 28 }) => {
   const t = useTime();
   const em = tw(t, [0.05, 0.9], [0, 1], back);
   const wm = tw(t, [0.4, 1.4], [0, 1], ease);
@@ -501,7 +501,7 @@ const Gold3D: React.FC<{ text: string; size: number }> = ({ text, size }) => (
 );
 export const CoverV4: React.FC = () => {
   const cv = SC.cover;
-  const AX = 150, AY = 280, AW = 780, AH = 900;
+  const AX = 150, AY = 256, AW = 780, AH = 900;
   return (
     <AbsoluteFill style={{ overflow: 'hidden', background: `linear-gradient(180deg, ${T.b1} 0%, ${T.b2} 20%, ${T.b3} 45%, ${T.b4} 72%, ${T.b5} 100%)` }}>
       {/* sinar cahaya dari belakang gerbang */}
@@ -592,7 +592,7 @@ export const CoverV4B: React.FC = () => {
       {/* bingkai emas nipis */}
       <div style={{ position: 'absolute', inset: 28, border: '2px solid rgba(233,196,106,0.75)', borderRadius: 26 }} />
       <PremiumLogo />
-      <MomentBadge y={262} />
+      <MomentBadge y={236} />
       <div style={{ position: 'absolute', left: 0, right: 0, top: 1150, display: 'flex', justifyContent: 'center' }}><QPill text={cv.question} /></div>
       <div style={{ position: 'absolute', left: 0, right: 0, top: 1270, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
         <div style={{ fontFamily: FONT.sans, fontWeight: 900, fontSize: 66, letterSpacing: '0.16em', color: '#FFFFFF', textShadow: '0 4px 16px rgba(0,0,0,0.6)' }}>{cv.small}</div>
@@ -672,7 +672,7 @@ export const CoverV4D: React.FC = () => {
       {/* jalur emas condong */}
       <div style={{ position: 'absolute', left: 0, top: 1053, width: 1100, height: 14, background: GOLD, transform: 'rotate(-7.8deg)', transformOrigin: '0 50%', boxShadow: '0 0 24px rgba(255,214,140,0.7)' }} />
       <PremiumLogo />
-      <MomentBadge y={262} />
+      <MomentBadge y={236} />
       <div style={{ position: 'absolute', right: 50, top: 860 }}><QPill text={cv.question} rot={-7.8} size={48} /></div>
       <div style={{ position: 'absolute', left: 70, top: 1090, display: 'flex', flexDirection: 'column', gap: 2 }}>
         <div style={{ fontFamily: FONT.sans, fontWeight: 900, fontSize: 54, letterSpacing: '0.14em', color: '#FFFFFF', textShadow: '0 4px 14px rgba(0,0,0,0.5)' }}>{cv.small}</div>
@@ -702,7 +702,7 @@ export const Showcase: React.FC = () => {
       <AbsoluteFill style={{ background: 'radial-gradient(ellipse 70% 22% at 50% 78%, rgba(255,214,140,0.22), rgba(0,0,0,0) 70%)' }} />
       <PremiumLogo />
       {/* SATU panel suntingan */}
-      <div style={{ position: 'absolute', left: 60, top: 262, width: FW, height: FW, borderRadius: 30, overflow: 'hidden', border: '3px solid rgba(255,255,255,0.65)', boxShadow: `0 30px 60px rgba(0,0,0,0.45), 0 0 40px rgba(${T.a},0.35)` }}>
+      <div style={{ position: 'absolute', left: 60, top: 236, width: FW, height: FW, borderRadius: 30, overflow: 'hidden', border: '3px solid rgba(255,255,255,0.65)', boxShadow: `0 30px 60px rgba(0,0,0,0.45), 0 0 40px rgba(${T.a},0.35)` }}>
         <div style={{ width: SQ, height: SQ, transform: `scale(${FW / SQ})`, transformOrigin: '0 0' }}>
           <KineticFinal />
         </div>
@@ -710,7 +710,7 @@ export const Showcase: React.FC = () => {
       {/* point penting: tulisan 3D + motion graphics */}
       {PTS.map((p, i) => <Point3D key={i} p={p} idx={i} />)}
       <FollowCTA />
-      <MomentBadge y={262} />
+      <MomentBadge y={236} />
       <Audio src={staticFile('audio/mix.wav')} />
     </AbsoluteFill>
   );

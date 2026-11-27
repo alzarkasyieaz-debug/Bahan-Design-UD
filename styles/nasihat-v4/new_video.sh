@@ -33,7 +33,7 @@ json.dump(pk, open(p, "w"), indent=2, ensure_ascii=False)
 # showcase.json rangka
 sc = {"theme": "merah", "_nota": "Style Nasihat V4 — lihat styles/nasihat-v4/STYLE.md. theme: merah | hijau. Masa = saat output atau nama beat timeline.json.",
       "face": {"x": 540, "y": 1050}, "zoom": [1.0, 1.12],
-      "logo": {"name": "NAKSEEHEART", "tagline": "NASIHAT · DARI · HATI"}, "label": "SHARING MOMENT",
+      "logo": {"name": "NAKSEEHEART", "tagline": "NASIHAT · DARI · HATI", "scale": 0.62}, "label": "SHARING MOMENT",
       "cta": {"caption": "Nasihat Dari *Hati* Untuk *Hati*", "handle": "@nakseeheart", "clickAfter": 2.0, "cardTop": "SETIAP NASIHAT", "cardBig": "ADA MAKNA."},
       "scenes": [{"k": "side", "a": 0.15, "b": "flashToBody", "small": "KATA KECIL", "big": "HOOK"}, {"k": "cta", "a": "cta", "b": "end"}],
       "points": [{"a": 0, "b": "cta", "small": "KATA KECIL", "big": "POINT UTAMA", "icon": "heart"}],
