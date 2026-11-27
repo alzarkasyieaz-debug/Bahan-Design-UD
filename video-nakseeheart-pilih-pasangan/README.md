@@ -30,3 +30,9 @@ Warna dinormalkan (kulit wajah). Suara dibersihkan, muzik disintesis (ducking -1
 ## Kapsyen hantaran (cadangan)
 > Pilih pasangan yang bukan sahaja membahagiakan, tetapi menarik kita ke syurga. Biar hidup sederhana, asalkan agama jadi paksi. 🤍
 > #pasangan #jodoh #perkahwinan #nasihat #nakseeheart #fyp
+
+## Versi Nasihat V4 (tema hijau)
+[`out/nakseeheart-pilih-pasangan-v4.mp4`](out/nakseeheart-pilih-pasangan-v4.mp4) — 84.0 s (cover 1 s di awal + thumbnail), −15.2 LUFS.
+Style [Nasihat V4](../styles/nasihat-v4/STYLE.md), `theme: hijau`, cover Konsep A (`out/nakseeheart-pilih-pasangan-v4-cover.jpg`).
+EDL, subtitle dan audio sama dengan versi Qoute Interaktif (ucapan tidak diubah). Data: `src/data/showcase.json`.
+Render: `V4_OUT=nakseeheart-pilih-pasangan-v4 bash scripts/render_v4.sh`.
