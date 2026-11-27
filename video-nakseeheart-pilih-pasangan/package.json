@@ -8,10 +8,11 @@
     "subs": "python3 scripts/build_subtitles.py",
     "audio": "python3 scripts/generate_audio.py",
     "studio": "remotion studio",
-    "still": "bash scripts/render.sh still",
-    "render": "bash scripts/render.sh",
+    "still": "bash scripts/render_v4.sh still",
+    "render": "bash scripts/render_v4.sh",
     "cover": "bash scripts/cover.sh",
-    "color": "bash scripts/normalize_color.sh"
+    "color": "bash scripts/normalize_color.sh",
+    "render:qi": "bash scripts/render.sh"
   },
   "dependencies": {
     "@remotion/cli": "4.0.542",
