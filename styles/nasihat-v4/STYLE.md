@@ -73,7 +73,10 @@ supaya penceramah kerap kelihatan; jangan letak kad lebih 10 s.
 perkataan. Ikon: heart, book, chat, check, star, play, home, users, phone, coin, leaf, moon, mosque, hand,
 calendar, clock, shield, smile, bulb, target, family. 8–13 point untuk video ~100 s.
 
-## 3b. Cover V4 (`showcase.json → cover`, komposisi `CoverV4`)
+## 3b. Cover V4 (`showcase.json → cover`)
+
+**Cover lalai = Konsep A "Gerbang Mihrab" (`CoverV4`)** — pilihan pengguna. Alternatif: `COVER_V4=CoverV4B` (sinematik), `CoverV4C` (medalion petikan), `CoverV4D` (senarai pesanan); lihat `examples/konsep-cover-v4.jpg`.
+
 Contoh: `examples/cover-v4.jpg`. Latar turquoise + sinar cahaya + corak bintang 8 bucu, logo premium, label
 SHARING MOMENT, foto dalam **gerbang mihrab emas**, pil merah soalan cangkuk, tajuk 3D emas, petikan sebenar
 (Great Vibes), 3 cip point, butang "TONTON SAMPAI HABIS".
