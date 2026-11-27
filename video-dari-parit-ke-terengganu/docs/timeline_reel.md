@@ -37,7 +37,7 @@ Kanvas 1080×1920, 24 fps, tempoh 60.0 s. Dijana automatik daripada `scripts/tim
 | 0:31.1 | 0:33.2 | Subtitle: “Terima kasih kepada…” |
 | 0:31.2 | 0:37.5 | Lower third: YB Ustaz Ismi |
 | 0:37.3 | 0:38.8 | Subtitle: “…atas pembentangan yang, bagi saya…” |
-| 0:39.1 | 0:41.6 | Lower third: Penyerahan Cenderamata / YB Ustaz Ismi |
+| 0:39.1 | 0:41.6 | Lower third: Penyampaian Cenderahati / YB Ustaz Ismi |
 | 0:41.0 | 0:45.2 | Subtitle: Bukan hanya pengisian program yang menjadi kenangan. |
 | 0:42.0 | 0:44.2 | Teks tema: PERTEMUAN |
 | 0:44.6 | 0:46.8 | Teks tema: PERKONGSIAN |

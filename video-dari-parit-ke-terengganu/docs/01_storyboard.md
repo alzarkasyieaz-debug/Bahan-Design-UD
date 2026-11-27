@@ -15,8 +15,8 @@ Dokumentari travelog sinematik · 16:9 · 1920×1080 · 24 fps · 3:59 (238.6 s)
 |---|---|---|
 | ±11:14 | Ketibaan di bangunan pertemuan sesi pagi; bas delegasi di hadapan | IMG_20260922_031452–031654 * |
 | ±11:18–11:21 | Bilik mesyuarat (langsir ungu/teal) — sesi pertemuan & ucapan | IMG/VID_20260922_0318–0321 * |
-| 13:02–13:06 | Penyerahan cenderamata & gambar berkumpulan | IMG_20261126_1302–1306 |
-| 17:50–18:23 | Bilik mesyuarat kedua — sesi perkongsian pengalaman, soal jawab, YB Ustaz Ismi, penyerahan cenderamata | IMG/VID/MVIMG_20261126_1750–1823 |
+| 13:02–13:06 | Penyampaian cenderahati & gambar berkumpulan | IMG_20261126_1302–1306 |
+| 17:50–18:23 | Bilik mesyuarat kedua — sesi perkongsian pengalaman, soal jawab, YB Ustaz Ismi, penyampaian cenderahati | IMG/VID/MVIMG_20261126_1750–1823 |
 
 \* Fail bertarikh `20260922` datang daripada telefon kedua (Redmi Note 14 Pro 5G) yang jamnya tidak tepat.
 Bilik, langsir, kerusi dan orang yang sama dengan gambar 13:02 menunjukkan ia sesi pagi hari yang sama.
@@ -33,7 +33,7 @@ perjalanan pulang. Bahagian tersebut diceritakan melalui peta animasi, foto keti
 | 0:00–0:01 | Skrin hitam | fade-in | Bunyi pagi (burung, angin), piano jarang |
 | 0:01–0:04 | YB Ustaz Ismi berucap (VID_180420) | potongan rapat, gerak perlahan 80% | VO: “Setiap perjalanan mempunyai ceritanya.” |
 | 0:04–0:06 | Bas & delegasi tiba (031457) | Ken Burns ke arah bas | VO bersambung |
-| 0:06–0:09 | Jabat tangan cenderamata (182216) | zum perlahan | |
+| 0:06–0:09 | Jabat tangan cenderahati (182216) | zum perlahan | |
 | 0:09–0:11 | Gambar berkumpulan (130635) | zum keluar | VO: “…dibawa pulang.” |
 | 0:11–0:17 | Latar kabur gambar kumpulan | **film burn** + light leak + boom | **DARI PARIT / KE TERENGGANU** → *Sebuah Dokumentasi Perjalanan* → MERENTAS JARAK · MENJALIN UKHUWAH · BERKONGSI PENGALAMAN |
 
@@ -62,12 +62,12 @@ Bab **02 · BUKAN SEKADAR SEBUAH PERJALANAN**; VO Scene 3.
 | 1:22–1:26 | Video bilik mesyuarat (VID_032143) | gerak perlahan, establishing | Bab **03 · PERTEMUAN** |
 | 1:26–1:33 | Video ucapan sesi pagi (VID_032159) | kad video + latar kabur; **audio sebenar** (J-cut) | Petikan: *“Pada tengah hari ini, kita dapat berjumpa…”*; lower third *Sesi Pertemuan* |
 | 1:33–1:39 | Reaksi peserta (032016, 031946) | reaction shots | muzik naik semula (L-cut) |
-| 1:39–1:52 | Penyerahan cenderamata & gambar kumpulan sesi pagi (130222, 130243, 130503) | Ken Burns | VO Scene 5 |
+| 1:39–1:52 | Penyampaian cenderahati & gambar kumpulan sesi pagi (130222, 130243, 130503) | Ken Burns | VO Scene 5 |
 | 1:52–1:59 | Bilik kedua + skrin pembentangan (175725, VID_175757) | wipe | Bab **04 · SESI PERKONGSIAN PENGALAMAN** |
 | 1:59–2:02 | YB Ustaz Ismi mendengar (MVIMG_180434) | kad foto | |
 | 2:02–2:14 | **YB Ustaz Ismi berucap** (VID_180420) | kad video, audio sebenar penuh, muzik duck | Lower third **YB Ustaz Ismi**; petikan *“Terima kasih kepada…”*, *“…atas pembentangan yang, bagi saya, jelas…”* |
 | 2:14–2:26 | YB (180509), peserta wanita berkongsi (181708), catatan ditulis (181825), penceramah (181254) | close-up, B-roll catatan | |
-| 2:26–2:31 | YB Ustaz Ismi menerima cenderamata (182205) | Ken Burns | Lower third *Penyerahan Cenderamata / YB Ustaz Ismi* |
+| 2:26–2:31 | YB Ustaz Ismi menerima cenderahati (182205) | Ken Burns | Lower third *Penyampaian Cenderahati / YB Ustaz Ismi* |
 
 ## SCENE 6 — UKHUWAH, MEMORIES & SHOWCASE (2:31–3:23)
 | Masa | Visual | Teknik | Teks |
@@ -76,9 +76,9 @@ Bab **02 · BUKAN SEKADAR SEBUAH PERJALANAN**; VO Scene 3.
 | 2:47–2:53 | **Showcase polaroid**: YB Ustaz Ismi berbual (175331), bersama peserta (180350), ketawa (181036), peserta wanita berkongsi (181702) | polaroid jatuh berperingkat atas latar kabur | Bab **05 · DETIK-DETIK BERMAKNA** |
 | 2:53–2:58 | **Showcase triptych**: ibu jari (031526), pasangan delegasi tersenyum (031543), ketibaan (031512) | panel menyapu masuk berperingkat | |
 | 2:58–3:04 | **Mozek grid 3×2**: gambar kumpulan pagi (130502), perbincangan (175042), peserta mendengar (181002), soal jawab (181750), perbualan (182130), YB mendengar (180403) | jubin muncul berperingkat + zum perlahan | |
-| 3:04–3:09 | **Showcase triptych**: senyuman (181027), YB berucap (180510), jabat tangan cenderamata (182218) | | |
+| 3:04–3:09 | **Showcase triptych**: senyuman (181027), YB berucap (180510), jabat tangan cenderahati (182218) | | |
 | 3:09–3:13 | Gambar kumpulan penuh (130632) | zoom transition | |
-| 3:13–3:19 | **Mozek grid akhir**: catatan (181832), peserta (181004), YB (175058), delegasi (031535), dewan petang (182340), cenderamata pagi (130300) | | |
+| 3:13–3:19 | **Mozek grid akhir**: catatan (181832), peserta (181004), YB (175058), delegasi (031535), dewan petang (182340), cenderahati pagi (130300) | | |
 | 3:19–3:23 | Video suasana dewan (VID_181932) | gerak perlahan | muzik berkembang, perkusi lembut |
 
 ## SCENE 7 — CINEMATIC ENDING (3:23–3:59)

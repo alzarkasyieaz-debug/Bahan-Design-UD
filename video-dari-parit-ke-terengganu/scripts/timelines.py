@@ -7,7 +7,7 @@ Timeline penyuntingan (saat) untuk tiga versi:
 Semua bahan ialah rakaman/gambar sebenar daripada folder Drive program.
 Nota masa: fail IMG/VID_20260922_* datang daripada telefon kedua yang jamnya
 tidak tepat; kandungannya (bilik & orang yang sama) menunjukkan ia sesi
-pagi 26.11.2026 sebelum penyerahan cenderamata 13:02.
+pagi 26.11.2026 sebelum penyampaian cenderahati 13:02.
 """
 import os, json
 from shots import Still, Clip, Card, Black, Showcase
@@ -115,7 +115,7 @@ def main():
     O.append(Sub(122.8, 124.9, text="“Terima kasih kepada…”", quote=True, y=0.88))
     O.append(Sub(129.0, 134.1, text="“…atas pembentangan yang, bagi saya, jelas…”", quote=True, y=0.88))
     A["bites"].append((V("1126_180420"), 2.7, 12.0, 122.5, 1.0))
-    O.append(Lower(147.4, 151.0, l1="Penyerahan Cenderamata", l2="YB Ustaz Ismi"))
+    O.append(Lower(147.4, 151.0, l1="Penyampaian Cenderahati", l2="YB Ustaz Ismi"))
 
     # ===== SCENE 6 — UKHUWAH & MEMORIES + SHOWCASE (2:31–3:23)
     S += [Still(151.5, 3.8, tr=("burn", 0.9), src=I("1126_181034"), mode="fill", focus=(0.6, 0.45), move="in"),
@@ -214,7 +214,7 @@ def reel():
           Lower(31.2, 37.5, l1="YB Ustaz Ismi", s1=52),
           Sub(31.1, 33.2, text="“Terima kasih kepada…”", quote=True, y=y),
           Sub(37.3, 38.8, text="“…atas pembentangan yang, bagi saya…”", quote=True, y=y),
-          Lower(39.1, 41.6, l1="Penyerahan Cenderamata", l2="YB Ustaz Ismi"),
+          Lower(39.1, 41.6, l1="Penyampaian Cenderahati", l2="YB Ustaz Ismi"),
           Words(42.0, 44.2, word="PERTEMUAN", size=120, y=0.25), Words(44.6, 46.8, word="PERKONGSIAN", size=120, y=0.25),
           Words(47.2, 49.4, word="UKHUWAH", size=130, y=0.25)]
     O += vo_subs("s6", 41.0, y=y)
