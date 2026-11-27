@@ -41,6 +41,7 @@ Masa = saat output **atau nama beat** dalam `timeline.json` (cth `"cta"`, `"end"
 
 | Kunci | Fungsi |
 |---|---|
+| `theme` | tema warna (§3c) |
 | `face {x,y}` | titik tengah wajah dalam bingkai 1080×1920 (panel memotong segi empat di sekitarnya) |
 | `zoom [..]` | zum berselang-seli setiap segmen EDL (lalai `[1.0, 1.12]`) |
 | `logo {name, tagline}` | `NAKSEEHEART`, `NASIHAT · DARI · HATI` |
@@ -91,6 +92,10 @@ SHARING MOMENT, foto dalam **gerbang mihrab emas**, pil merah soalan cangkuk, ta
 | `chips[3]` | `{icon, t}` ≤ ~18 aksara setiap satu |
 
 `npm run render` menjana cover ini dahulu (`out/<output>-poster.jpg`), kemudian membenamkannya ~1 s di awal video + thumbnail.
+
+## 3c. Tema warna (`showcase.json → theme`)
+`turquoise` (lalai) · `merah` (maroon, pil soalan krim) · `hijau` (hijau gelap) · `ungu` (ungu gelap) — emas kekal.
+Contoh: `examples/sampel-tema-warna.jpg`. Uji tanpa ubah data: `npx remotion still CoverV4 out/x.png --frame=100 --props='{"theme":"ungu"}'`.
 
 ## 4. CTA penutup (automatik)
 Bermula pada beat `cta`: kapsyen tandatangan **"Nasihat Dari Hati Untuk Hati"** (Great Vibes, ditulis dari kiri) →
