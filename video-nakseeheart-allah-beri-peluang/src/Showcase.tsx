@@ -61,7 +61,7 @@ type Scene =
   | { k: 'word'; a: number; b: number; big: string; small?: string; box?: boolean; lines?: string[] }
   | { k: 'versus'; a: number; b: number; title: string; left: string; right: string; at2: number }
   | { k: 'ring'; a: number; b: number; big: string; small: string; icon: IconName }
-  | { k: 'silhouette'; a: number; b: number; lines: string[] }
+  | { k: 'silhouette'; a: number; b: number; lines: string[]; silX?: number; silY?: number; silFlip?: boolean }
   | { k: 'list'; a: number; b: number; title: string; items: { t: string; at: number }[] }
   | { k: 'tiles'; a: number; b: number; title: string; items: { n: string; t: string; at: number }[] }
   | { k: 'spot'; a: number; b: number; big: string; small: string; sub: string; subAt?: number; icon: IconName }
@@ -133,7 +133,7 @@ const SceneView: React.FC<{ s: Scene }> = ({ s }) => {
                 const p = tw(t, [at, at + 0.4], [0, 1], back);
                 return (
                   <div key={i} style={{ padding: '26px 36px', borderRadius: 24, border: `3px solid ${C.goldLight}`, background: 'rgba(216,180,106,0.12)', opacity: Math.min(1, p * 1.4),
-                    transform: `translateY(${(1 - p) * 60}px) rotate(${i ? 3 : -3}deg)`, boxShadow: '0 0 30px rgba(216,180,106,0.35)', fontFamily: FONT.display, fontSize: 96, color: C.goldLight, whiteSpace: 'nowrap' }}>{x}</div>
+                    transform: `translateY(${(1 - p) * 60}px) rotate(${i ? 3 : -3}deg)`, boxShadow: '0 0 30px rgba(216,180,106,0.35)', fontFamily: FONT.display, fontSize: Math.min(96, Math.floor(800 / ((s.left.length + s.right.length) * 0.42))), color: C.goldLight, whiteSpace: 'nowrap' }}>{x}</div>
                 );
               })}
             </div>
@@ -166,7 +166,7 @@ const SceneView: React.FC<{ s: Scene }> = ({ s }) => {
         <Card o={o}>
           <div style={{ position: 'absolute', left: 140, top: 190, width: 800, height: 700, background: '#F7F4ED', borderRadius: 6, transform: `scale(${0.85 + 0.15 * p})`, overflow: 'hidden',
             boxShadow: '0 0 0 10px rgba(255,226,163,0.25), 0 30px 60px rgba(0,0,0,0.6)' }}>
-            <Img src={staticFile('media/silhouette.png')} style={{ position: 'absolute', left: 360, top: -200, width: 600, height: 1067 }} />
+            <Img src={staticFile('media/silhouette.png')} style={{ position: 'absolute', left: s.silX ?? 360, top: s.silY ?? -200, width: 600, height: 1067, transform: s.silFlip ? 'scaleX(-1)' : undefined }} />
             <div style={{ position: 'absolute', left: 50, top: 120, display: 'flex', flexDirection: 'column', gap: 0 }}>
               {s.lines.map((l, i) => (
                 <div key={i} style={{ fontFamily: FONT.display, fontSize: i === 1 ? (l.length > 8 ? 104 : 140) : 96, lineHeight: 0.95, color: i === 1 ? `${T.b3}` : C.charcoal,
@@ -257,7 +257,8 @@ export const KineticFinal: React.FC = () => {
   const body = TL.segments.filter((s) => s.id !== 'hook' && s.id !== 'cta');
   const idx = body.findIndex((sg) => t >= sg.out[0] && t < sg.out[1]);
   const s = ZOOMS[Math.max(0, idx) % ZOOMS.length] + tw(t, [0, B.end], [0, 0.04]);
-  const ty = SQ / 2 - FACE.y * s, tx = SQ / 2 - FACE.x * s;
+  // klip pada tepi supaya tiada jalur kosong walaupun wajah di tepi bingkai
+  const ty = Math.min(0, Math.max(SQ - 1920 * s, SQ / 2 - FACE.y * s)), tx = Math.min(0, Math.max(SQ - 1080 * s, SQ / 2 - FACE.x * s));
   return (
     <AbsoluteFill style={{ background: `${T.b6}`, overflow: 'hidden' }}>
       <div style={{ position: 'absolute', left: tx, top: ty, width: 1080 * s, height: 1920 * s }}>
@@ -273,7 +274,7 @@ export const KineticFinal: React.FC = () => {
 };
 
 /* ------------------------------------------------- point penting (bawah panel) */
-type Point = { a: number; b: number; small: string; big: string; chips?: { t: string; at: number }[]; icon: IconName };
+type Point = { a: number; b: number; small: string; big: string; chips?: { t: string; at: number; x?: boolean }[]; icon: IconName };
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const normPoint = (x: any): Point => ({ ...x, a: bt(x.a), b: bt(x.b), chips: x.chips?.map((c: { t: string; at: T }) => ({ ...c, at: bt(c.at) })) });
 const PTS: Point[] = (SC.points as unknown as Point[]).map(normPoint);
@@ -311,7 +312,9 @@ const Point3D: React.FC<{ p: Point; idx: number }> = ({ p, idx }) => {
             return (
               <div key={i} style={{ padding: '12px 26px', borderRadius: 40, background: `rgba(${T.d},0.75)`, border: `2px solid ${C.goldLight}`, opacity: Math.min(1, q * 1.5),
                 transform: `translateY(${(1 - q) * 30}px) scale(${0.8 + 0.2 * q})`, boxShadow: `0 0 20px rgba(${T.a},0.35)`, display: 'flex', alignItems: 'center', gap: 10, whiteSpace: 'nowrap' }}>
-                <svg width="30" height="30" viewBox="0 0 44 44"><path d="M10 23 L19 32 L35 13" fill="none" stroke={C.goldLight} strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                {c.x
+                  ? <svg width="30" height="30" viewBox="0 0 44 44"><circle cx="22" cy="22" r="19" fill="#B3261E" /><path d="M15 15 L29 29 M29 15 L15 29" stroke="#fff" strokeWidth="5" strokeLinecap="round" /></svg>
+                  : <svg width="30" height="30" viewBox="0 0 44 44"><path d="M10 23 L19 32 L35 13" fill="none" stroke={C.goldLight} strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" /></svg>}
                 <span style={{ fontFamily: FONT.sans, fontWeight: 800, fontSize: 34, color: '#FFFFFF' }}>{c.t}</span>
               </div>
             );
@@ -519,7 +522,7 @@ export const CoverV4: React.FC = () => {
       <div style={{ position: 'absolute', left: AX - 12, top: AY - 12, width: AW + 24, height: AH + 24, borderRadius: `${(AW + 24) / 2}px ${(AW + 24) / 2}px 40px 40px`,
         background: 'linear-gradient(160deg, #FFF3C4 0%, #E9B95A 35%, #A8721E 60%, #F6D88A 100%)', boxShadow: '0 0 0 8px rgba(255,224,138,0.22), 0 30px 70px rgba(0,0,0,0.55), 0 0 60px rgba(255,214,140,0.45)' }} />
       <div style={{ position: 'absolute', left: AX, top: AY, width: AW, height: AH, borderRadius: `${AW / 2}px ${AW / 2}px 30px 30px`, overflow: 'hidden', background: `${T.b6}` }}>
-        <Img src={staticFile(cv.photo)} style={{ position: 'absolute', left: -(1080 * cv.zoom - AW) / 2, top: cv.photoTop, width: 1080 * cv.zoom, height: 1920 * cv.zoom, filter: 'brightness(1.06) contrast(1.05) saturate(1.05)' }} />
+        <Img src={staticFile(cv.photo)} style={{ position: 'absolute', left: (cv as { photoLeft?: number }).photoLeft ?? -(1080 * cv.zoom - AW) / 2, top: cv.photoTop, width: 1080 * cv.zoom, height: 1920 * cv.zoom, filter: 'brightness(1.06) contrast(1.05) saturate(1.05)' }} />
         <AbsoluteFill style={{ background: `linear-gradient(180deg, rgba(${T.d},0) 55%, rgba(${T.d},0.85) 100%)` }} />
         <AbsoluteFill style={{ background: `radial-gradient(ellipse 70% 60% at 50% 40%, rgba(0,0,0,0) 60%, rgba(${T.d},0.45) 100%)` }} />
       </div>

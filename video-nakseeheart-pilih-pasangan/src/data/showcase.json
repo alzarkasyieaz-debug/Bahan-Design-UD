@@ -1,0 +1,285 @@
+{
+ "theme": "hijau",
+ "_nota": "Style Nasihat V4 — lihat styles/nasihat-v4/STYLE.md.",
+ "face": {
+  "x": 450,
+  "y": 900
+ },
+ "zoom": [
+  1.0,
+  1.12
+ ],
+ "logo": {
+  "name": "NAKSEEHEART",
+  "tagline": "NASIHAT · DARI · HATI",
+  "scale": 0.62
+ },
+ "label": "SHARING MOMENT",
+ "cta": {
+  "caption": "Nasihat Dari *Hati* Untuk *Hati*",
+  "handle": "@nakseeheart",
+  "clickAfter": 2.0,
+  "cardTop": "SETIAP NASIHAT",
+  "cardBig": "ADA MAKNA."
+ },
+ "scenes": [
+  {
+   "k": "side",
+   "a": 0.15,
+   "b": 4.9,
+   "small": "PASANGAN YANG MENARIK KITA",
+   "big": "KE SYURGA"
+  },
+  {
+   "k": "word",
+   "a": 13.5,
+   "b": 16.7,
+   "small": "MEMBUAT SEBUAH",
+   "big": "PILIHAN",
+   "box": true
+  },
+  {
+   "k": "side",
+   "a": 20.6,
+   "b": 22.75,
+   "small": "FASA",
+   "big": "MEMILIH PASANGAN",
+   "right": true
+  },
+  {
+   "k": "versus",
+   "a": 24.8,
+   "b": 34.3,
+   "title": "PILIHLAH PASANGAN YANG",
+   "left": "MEMBAHAGIAKAN",
+   "right": "BAWA KE KEBAIKAN",
+   "at2": 33.2
+  },
+  {
+   "k": "ring",
+   "a": 37.6,
+   "b": 40.5,
+   "small": "MENARIK KITA",
+   "big": "KE SYURGA",
+   "icon": "mosque"
+  },
+  {
+   "k": "spot",
+   "a": 40.6,
+   "b": 45.3,
+   "small": "PASANGAN YANG MEMBERI",
+   "big": "BIMBINGAN",
+   "sub": "NILAI-NILAI AGAMA",
+   "subAt": 43.6,
+   "icon": "book"
+  },
+  {
+   "k": "side",
+   "a": 45.4,
+   "b": 47.6,
+   "small": "BIARPUN HIDUP",
+   "big": "SEDERHANA"
+  },
+  {
+   "k": "word",
+   "a": 48.3,
+   "b": 51.2,
+   "small": "TETAPI",
+   "big": "AGAMA",
+   "lines": [
+    "JADI PAKSINYA"
+   ],
+   "box": true
+  },
+  {
+   "k": "silhouette",
+   "a": 51.4,
+   "b": 53.8,
+   "lines": [
+    "INSYAALLAH",
+    "BAHAGIA",
+    "TERCIPTA"
+   ],
+   "silX": 230,
+   "silY": -150,
+   "silFlip": true
+  },
+  {
+   "k": "versus",
+   "a": 54.3,
+   "b": 59.8,
+   "title": "BERBANDING MEMILIH",
+   "left": "KEMEWAHAN",
+   "right": "KESENANGAN",
+   "at2": 58.5
+  },
+  {
+   "k": "list",
+   "a": 60.4,
+   "b": 65.9,
+   "title": "TETAPI",
+   "items": [
+    {
+     "t": "AGAMA DITINGGALKAN",
+     "at": 60.7
+    },
+    {
+     "t": "SUNNAH DIABAIKAN",
+     "at": 63.95
+    }
+   ]
+  },
+  {
+   "k": "word",
+   "a": 66.4,
+   "b": 70.2,
+   "small": "BAHAGIA ITU",
+   "big": "SEMENTARA",
+   "box": true
+  },
+  {
+   "k": "ring",
+   "a": 71.8,
+   "b": 76.0,
+   "small": "LARI DARIPADA",
+   "big": "KEHENDAK ALLAH",
+   "icon": "moon"
+  },
+  {
+   "k": "side",
+   "a": 76.6,
+   "b": 77.5,
+   "small": "",
+   "big": "PERCAYALAH"
+  },
+  {
+   "k": "cta",
+   "a": "cta",
+   "b": "end"
+  }
+ ],
+ "points": [
+  {
+   "a": 0,
+   "b": 13.3,
+   "small": "PASANGAN YANG MENARIK",
+   "big": "KE SYURGA",
+   "icon": "heart"
+  },
+  {
+   "a": 13.3,
+   "b": 23.4,
+   "small": "TIDAK DAPAT LARI DARIPADA",
+   "big": "MEMBUAT PILIHAN",
+   "icon": "target",
+   "chips": [
+    {
+     "t": "Fasa memilih pasangan",
+     "at": 20.8
+    }
+   ]
+  },
+  {
+   "a": 23.4,
+   "b": 34.4,
+   "small": "PILIHLAH PASANGAN YANG",
+   "big": "BAWA KE KEBAIKAN",
+   "icon": "family",
+   "chips": [
+    {
+     "t": "Membahagiakan",
+     "at": 26.9
+    },
+    {
+     "t": "Ke arah kebaikan",
+     "at": 33.4
+    }
+   ]
+  },
+  {
+   "a": 34.4,
+   "b": 45.3,
+   "small": "PASANGAN YANG",
+   "big": "MENARIK KE SYURGA",
+   "icon": "mosque",
+   "chips": [
+    {
+     "t": "Bimbingan nilai agama",
+     "at": 42.5
+    }
+   ]
+  },
+  {
+   "a": 45.3,
+   "b": 53.9,
+   "small": "BIARPUN HIDUP SEDERHANA",
+   "big": "AGAMA JADI PAKSI",
+   "icon": "book",
+   "chips": [
+    {
+     "t": "Bahagia tercipta",
+     "at": 52.1
+    }
+   ]
+  },
+  {
+   "a": 53.9,
+   "b": 66.3,
+   "small": "BERBANDING MEMILIH",
+   "big": "KEMEWAHAN",
+   "icon": "coin",
+   "chips": [
+    {
+     "t": "Agama ditinggalkan",
+     "at": 60.7,
+     "x": true
+    },
+    {
+     "t": "Sunnah diabaikan",
+     "at": 63.95,
+     "x": true
+    }
+   ]
+  },
+  {
+   "a": 66.3,
+   "b": "cta",
+   "small": "BAHAGIA ITU",
+   "big": "SEMENTARA",
+   "icon": "clock",
+   "chips": [
+    {
+     "t": "Lari dari kehendak Allah",
+     "at": 71.9,
+     "x": true
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "frameAt": 1.0,
+  "photo": "media/cover-v4-frame.jpg",
+  "zoom": 0.78,
+  "photoTop": -316,
+  "photoLeft": 0,
+  "question": "SEDANG MEMILIH PASANGAN?",
+  "small": "PILIH PASANGAN",
+  "big": "KE SYURGA",
+  "quote": "Agama menjadi paksinya",
+  "watch": "TONTON SAMPAI HABIS",
+  "chips": [
+   {
+    "icon": "book",
+    "t": "Agama jadi paksi"
+   },
+   {
+    "icon": "star",
+    "t": "Bawa ke kebaikan"
+   },
+   {
+    "icon": "mosque",
+    "t": "Tarik ke syurga"
+   }
+  ]
+ }
+}
