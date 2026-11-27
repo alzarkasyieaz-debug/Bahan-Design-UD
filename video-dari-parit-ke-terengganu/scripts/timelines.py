@@ -107,13 +107,13 @@ def main():
           Still(146.9, 4.6, src=I("1126_182205"), mode="fill", focus=(0.6, 0.45), move="in")]
     O.append(Chapter(82.1, 86.0, num="03", title="PERTEMUAN"))
     O.append(Lower(86.8, 91.6, l1="Sesi Pertemuan", l2=DATE))
-    O.append(Sub(86.8, 92.3, text="“Pada tengah hari ini, kita dapat berjumpa…”", quote=True, y=0.88))
+    O.append(Sub(86.8, 92.3, text="“Pada tengah hari ini, kita dapat berjumpa…”", quote=True))
     A["bites"].append((V("0922_032159"), 0.8, 6.4, 86.3, 1.0))
     A["vo"].append(("s5", 99.2)); O += vo_subs("s5", 99.2)
     O.append(Chapter(112.9, 116.8, num="04", title="SESI PERKONGSIAN PENGALAMAN"))
     O.append(Lower(123.0, 129.6, l1="YB Ustaz Ismi", s1=50))
-    O.append(Sub(122.8, 124.9, text="“Terima kasih kepada…”", quote=True, y=0.88))
-    O.append(Sub(129.0, 134.1, text="“…atas pembentangan yang, bagi saya, jelas…”", quote=True, y=0.88))
+    O.append(Sub(122.8, 124.9, text="“Terima kasih kepada…”", quote=True))
+    O.append(Sub(129.0, 134.1, text="“…atas pembentangan yang, bagi saya, jelas…”", quote=True))
     A["bites"].append((V("1126_180420"), 2.7, 12.0, 122.5, 1.0))
     O.append(Lower(147.4, 151.0, l1="Penyampaian Cenderahati", l2="YB Ustaz Ismi"))
 

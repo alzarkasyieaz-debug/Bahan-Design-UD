@@ -33,8 +33,8 @@ def _rings(geom):
 @functools.lru_cache(maxsize=1)
 def base_map():
     os.makedirs(CACHE, exist_ok=True)
-    cp = os.path.join(CACHE, "basemap_v2.png")
-    hp = os.path.join(CACHE, "basemap_hl_v2.png")
+    cp = os.path.join(CACHE, "basemap_v3.png")
+    hp = os.path.join(CACHE, "basemap_hl_v3.png")
     if os.path.exists(cp):
         return Image.open(cp).convert("RGB"), Image.open(hp).convert("L")
     geo = os.path.join(ROOT, "assets", "geo")
@@ -45,7 +45,7 @@ def base_map():
     xx = np.linspace(0, 1, BW, dtype=np.float32)[None, :]
     sea = np.zeros((BH, BW, 3), np.float32)
     g = np.exp(-(((xx - 0.45) ** 2) / 0.2 + ((yy - 0.45) ** 2) / 0.2))
-    for i, (a, b) in enumerate([(5, 14), (20, 40), (26, 44)]):
+    for i, (a, b) in enumerate([(8, 18), (34, 70), (44, 76)]):
         sea[..., i] = a + (b - a) * g
     # garis grid halus (latitud/longitud)
     for lon in range(98, 107):
@@ -64,7 +64,7 @@ def base_map():
     lm = np.asarray(land, np.float32)[..., None] / 255
     arr = np.asarray(im, np.float32)
     arr = arr + (gl - lm).clip(0, 1) * np.array([30, 90, 88], np.float32) * 0.8
-    other = np.array([24, 40, 42], np.float32)
+    other = np.array([30, 54, 56], np.float32)
     arr = arr * (1 - lm) + other * lm
     im = Image.fromarray(arr.clip(0, 255).astype(np.uint8))
     d = ImageDraw.Draw(im)
@@ -75,7 +75,7 @@ def base_map():
             continue
         for r in _rings(f["geometry"]):
             pts = [px(*c) for c in r]
-            d.polygon(pts, fill=(22, 70, 64))
+            d.polygon(pts, fill=(30, 104, 88))
             if f["properties"]["name"] in ("Perak", "Terengganu"):
                 dh.polygon(pts, fill=255)
     for f in st["features"]:
@@ -182,7 +182,7 @@ class MapShot(Shot):
         # sorotan negeri Perak & Terengganu (masuk perlahan)
         ha = clamp01((lt - 0.6) / 1.5) * 0.55
         h = np.asarray(hlf, np.float32)[..., None] / 255.0
-        f = f + h * ha * (np.array([0.16, 0.34, 0.24], np.float32))
+        f = f + h * ha * (np.array([0.30, 0.36, 0.14], np.float32))
         img = Image.fromarray((f.clip(0, 1) * 255).astype(np.uint8))
         lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         dr = ImageDraw.Draw(lay)

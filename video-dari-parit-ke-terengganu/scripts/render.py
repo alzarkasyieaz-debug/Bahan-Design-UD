@@ -15,7 +15,7 @@ import numpy as np
 from PIL import Image
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from engine import FX, FPS, ROOT, ease, clamp01, window, screen, alpha_over
+from engine import FX, FPS, ROOT, ease, eout, clamp01, window, screen, alpha_over
 import timelines
 
 BUILD = os.path.join(ROOT, "build")
@@ -88,7 +88,13 @@ class Renderer:
                 lk = self.fx.leak(t * 3, int(tb) % 4)
                 f = screen(f, np.clip(lk * 1.6 * c, 0, 1))
                 f = f + (1 - f) * (c ** 2) * 0.55
-        # grafik
+        f = self.fx.finish(f, t)
+        # letterbox sinematik 2.35:1 (16:9 sahaja)
+        if W > H:
+            bh = int(round((H - W / 2.35) / 2 * eout(clamp01((t - 0.3) / 1.2))))
+            if bh > 0:
+                f[:bh] = 0; f[H - bh:] = 0
+        # grafik (di atas letterbox supaya subtitle duduk dalam jalur bawah)
         ovs = [o for o in self.tl["ovs"] if o.active(t)]
         if ovs:
             L = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -98,7 +104,6 @@ class Renderer:
         fo = self.tl["fx"].get("fade_out")
         if fo and t > fo[0]:
             f = f * (1 - ease(clamp01((t - fo[0]) / (fo[1] - fo[0]))))
-        f = self.fx.finish(f, t)
         return (np.clip(f, 0, 1) * 255 + 0.5).astype(np.uint8)
 
 

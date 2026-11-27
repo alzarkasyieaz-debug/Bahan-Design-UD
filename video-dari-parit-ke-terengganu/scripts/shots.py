@@ -63,7 +63,7 @@ class Still(Shot):
             f = to_f(out)
         else:
             # Kad 'parallax': latar kabur bergerak bertentangan dengan foto
-            bg = blurred_bg(kw["src"], W, H, kw.get("dark", 0.5))
+            bg = blurred_bg(kw["src"], W, H, kw.get("dark", 0.72))
             bw_, bh_ = bg.size
             off = (bw_ - W) * (0.5 + 0.4 * (p - 0.5))
             bgc = bg.crop((int(off), (bh_ - H) // 2, int(off) + W, (bh_ - H) // 2 + H))
@@ -151,7 +151,7 @@ class Clip(Shot):
         bg = small.resize((int(small.width * sc) + 1, int(small.height * sc) + 1), Image.BILINEAR)
         bg = bg.crop(((bg.width - bgw) // 2, (bg.height - bgh) // 2, (bg.width - bgw) // 2 + bgw, (bg.height - bgh) // 2 + bgh))
         bg = bg.filter(ImageFilter.GaussianBlur(3)).resize((W, H), Image.BICUBIC)
-        f = to_f(bg) * 0.45
+        f = to_f(bg) * 0.68
         x0 = int(kw.get("pos", 0.5) * W - cw / 2)
         y0 = (H - ch) // 2
         shm = _card_shadow(W, H, (x0, y0, x0 + cw, y0 + ch))
@@ -182,8 +182,8 @@ class Card(Shot):
             return f
         yy = np.linspace(0, 1, H, dtype=np.float32)[:, None, None]
         xx = np.linspace(0, 1, W, dtype=np.float32)[None, :, None]
-        c0 = np.array([6, 22, 26], np.float32) / 255
-        c1 = np.array([10, 44, 46], np.float32) / 255
+        c0 = np.array([6, 34, 34], np.float32) / 255
+        c1 = np.array([18, 92, 78], np.float32) / 255
         g = np.exp(-(((xx - 0.5) ** 2) / 0.18 + ((yy - 0.45) ** 2) / 0.25))
         return c0 + (c1 - c0) * g + np.zeros((H, W, 3), np.float32)
 
@@ -217,9 +217,9 @@ class Showcase(Shot):
         lay = self.kw["layout"]
         srcs = self.kw["srcs"]
         p = lt / self.d
-        bgc = np.array([7, 22, 25], np.float32) / 255
+        bgc = np.array([226, 178, 92], np.float32) / 255  # garis emas antara jubin
         if lay == "polaroid":
-            bg = blurred_bg(srcs[0], W, H, 0.38)
+            bg = blurred_bg(srcs[0], W, H, 0.6)
             bw, bh = bg.size
             off = (bw - W) * (0.3 + 0.4 * p)
             img = bg.crop((int(off), (bh - H) // 2, int(off) + W, (bh - H) // 2 + H)).convert("RGBA")

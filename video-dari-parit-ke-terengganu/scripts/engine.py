@@ -54,24 +54,27 @@ def grade(arr):
     """Gred sinematik: teal pada bayang, emas hangat pada highlight,
     hijau ke arah emerald, kulit kekal semula jadi. arr uint8 HxWx3."""
     x = arr.astype(np.float32) / 255.0
+    # dedahan lebih terang (gaya "bright & bold")
+    x = np.clip(x * 1.07, 0, 1) ** 0.90
     lum = x[..., 0] * 0.2126 + x[..., 1] * 0.7152 + x[..., 2] * 0.0722
-    # kontras lembut (S-curve)
-    x = x + 0.22 * (x - 0.5) * (1 - np.abs(2 * x - 1)) * 0.9
+    # kontras lebih tegas (S-curve)
+    x = x + 0.34 * (x - 0.5) * (1 - np.abs(2 * x - 1))
     sh = ((1 - lum) ** 2.2)[..., None]
     hi = (lum ** 2.0)[..., None]
-    x = x + sh * np.array([-0.030, 0.012, 0.034], np.float32) + hi * np.array([0.040, 0.016, -0.030], np.float32)
+    x = x + sh * np.array([-0.030, 0.012, 0.034], np.float32) + hi * np.array([0.050, 0.022, -0.035], np.float32)
     # emerald: piksel kehijauan -> kurang merah, sedikit biru
     r, g, b = x[..., 0], x[..., 1], x[..., 2]
     gm = np.clip((g - np.maximum(r, b)) * 4, 0, 1)
-    x[..., 0] -= gm * 0.035
-    x[..., 2] += gm * 0.03
+    x[..., 0] -= gm * 0.045
+    x[..., 1] += gm * 0.02
+    x[..., 2] += gm * 0.035
     # ketepuan +6% (lindungi kulit: r>g>b)
     skin = np.clip((r - g) * 6, 0, 1) * np.clip((g - b) * 6, 0, 1)
     l2 = (x[..., 0] * 0.2126 + x[..., 1] * 0.7152 + x[..., 2] * 0.0722)[..., None]
-    sat = (1.07 - 0.05 * skin)[..., None]
+    sat = (1.20 - 0.10 * skin)[..., None]
     x = l2 + (x - l2) * sat
     # hitam filem (lift) & highlight lembut
-    x = 0.018 + x * 0.965
+    x = 0.010 + x * 0.985
     return (np.clip(x, 0, 1) * 255 + 0.5).astype(np.uint8)
 
 
@@ -118,7 +121,7 @@ def _orient_load(path, max_side):
 def still(name, max_side=2880):
     """Imej digred & dicache (sisi panjang max_side)."""
     os.makedirs(CACHE, exist_ok=True)
-    cp = os.path.join(CACHE, f"g{max_side}_{name}")
+    cp = os.path.join(CACHE, f"g2_{max_side}_{name}")
     if not os.path.exists(cp):
         im = _orient_load(os.path.join(RAW, name), max_side)
         Image.fromarray(grade(np.asarray(im))).save(cp, quality=95)
@@ -126,7 +129,7 @@ def still(name, max_side=2880):
 
 
 @functools.lru_cache(maxsize=48)
-def blurred_bg(name, W, H, dark=0.55):
+def blurred_bg(name, W, H, dark=0.72):
     im = still(name, 1200)
     im = ImageOps.fit(im, (W // 6, H // 6), Image.BILINEAR)
     im = im.filter(ImageFilter.GaussianBlur(radius=max(W, H) / 6 / 40))
@@ -189,7 +192,7 @@ class FX:
         yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
         nx, ny = (xx / W - 0.5) * 2, (yy / H - 0.5) * 2
         d = np.sqrt(nx ** 2 * 0.85 + ny ** 2 * 1.0)
-        self.vig = (1 - 0.38 * np.clip(d - 0.35, 0, 2) ** 1.6)[..., None].astype(np.float32)
+        self.vig = (1 - 0.22 * np.clip(d - 0.45, 0, 2) ** 1.6)[..., None].astype(np.float32)
         gh, gw = H // 2, W // 2
         self.grain = []
         for i in range(8):
@@ -218,7 +221,7 @@ class FX:
         im = Image.fromarray((a * 255).astype(np.uint8)).resize((self.W, self.H), Image.BILINEAR)
         return np.asarray(im).astype(np.float32) / 255.0
 
-    def finish(self, f, t, grain=0.022):
+    def finish(self, f, t, grain=0.014):
         """f float 0..1 -> vignette + grain."""
         f = f * self.vig
         g = self.grain[int(t * FPS) % 8]
