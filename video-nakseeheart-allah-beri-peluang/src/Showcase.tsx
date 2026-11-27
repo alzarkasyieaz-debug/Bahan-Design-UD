@@ -15,21 +15,17 @@ import SC from './data/showcase.json';
  * Masa daripada timeline.json (EDL sama dengan video asal); audio = public/audio/mix.wav.
  * ===================================================================== */
 
-/* ------------------------------------------------- TEMA WARNA (turquoise | merah | hijau | ungu) */
+/* ------------------------------------------------- TEMA WARNA Nasihat V4: merah (maroon, lalai) | hijau (hijau gelap) */
 type Theme = { b1: string; b2: string; b3: string; b4: string; b5: string; b6: string; m1: string; m2: string; m3: string; l1: string; l2: string;
   a: string; a2: string; l2rgb: string; d: string; d2: string; pill: string; pillSh: string; pillText: string };
 const THEMES: Record<string, Theme> = {
-  turquoise: { b1: '#7FF0E2', b2: '#33C9BD', b3: '#14908C', b4: '#0B5357', b5: '#062A2E', b6: '#061A1D', m1: '#1E6E72', m2: '#0E4A4E', m3: '#0B3B3E', l1: '#BFFFF5', l2: '#E9FFFB',
-    a: '120,255,235', a2: '64,224,208', l2rgb: '233,255,251', d: '6,42,46', d2: '14,74,78', pill: '#FE2C55', pillSh: '#9E1430', pillText: '#FFFFFF' },
   merah: { b1: '#F08A86', b2: '#C8333F', b3: '#931827', b4: '#600C18', b5: '#36060D', b6: '#200408', m1: '#86202C', m2: '#521019', m3: '#3E0A12', l1: '#FFD2CC', l2: '#FFF1EE',
     a: '255,150,140', a2: '235,90,95', l2rgb: '255,241,238', d: '42,6,12', d2: '96,14,26', pill: '#FFF3C4', pillSh: '#B07A22', pillText: '#7A0E1C' },
   hijau: { b1: '#93DDB0', b2: '#2E9E68', b3: '#15734A', b4: '#0B4A30', b5: '#06281A', b6: '#031910', m1: '#1D6845', m2: '#0E452D', m3: '#0A3624', l1: '#C6F7DA', l2: '#ECFFF3',
     a: '150,255,195', a2: '70,205,135', l2rgb: '236,255,243', d: '4,30,20', d2: '12,72,46', pill: '#FE2C55', pillSh: '#9E1430', pillText: '#FFFFFF' },
-  ungu: { b1: '#C4A6F0', b2: '#8656D2', b3: '#5A2FA3', b4: '#391A6E', b5: '#1E0D3E', b6: '#120826', m1: '#4D2C8A', m2: '#2F175F', m3: '#24114B', l1: '#E3D4FF', l2: '#F6F0FF',
-    a: '205,170,255', a2: '160,110,245', l2rgb: '246,240,255', d: '20,8,42', d2: '58,28,112', pill: '#FE2C55', pillSh: '#9E1430', pillText: '#FFFFFF' },
 };
-const THEME_ID = String((getInputProps() as { theme?: string }).theme ?? (SC as { theme?: string }).theme ?? 'turquoise');
-const T: Theme = THEMES[THEME_ID] ?? THEMES.turquoise;
+const THEME_ID = String((getInputProps() as { theme?: string }).theme ?? (SC as { theme?: string }).theme ?? 'merah');
+const T: Theme = THEMES[THEME_ID] ?? THEMES.merah;
 
 const SQ = 1080;
 /* Data style Nasihat V4: src/data/showcase.json (babak panel, point 3D, teks CTA).

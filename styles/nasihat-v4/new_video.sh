@@ -31,7 +31,7 @@ pk["scripts"]["render"] = "bash scripts/render_v4.sh"; pk["scripts"]["still"] = 
 pk["scripts"]["render:qi"] = "bash scripts/render.sh"
 json.dump(pk, open(p, "w"), indent=2, ensure_ascii=False)
 # showcase.json rangka
-sc = {"_nota": "Style Nasihat V4 — lihat styles/nasihat-v4/STYLE.md. Masa = saat output atau nama beat timeline.json.",
+sc = {"theme": "merah", "_nota": "Style Nasihat V4 — lihat styles/nasihat-v4/STYLE.md. theme: merah | hijau. Masa = saat output atau nama beat timeline.json.",
       "face": {"x": 540, "y": 1050}, "zoom": [1.0, 1.12],
       "logo": {"name": "NAKSEEHEART", "tagline": "NASIHAT · DARI · HATI"}, "label": "SHARING MOMENT",
       "cta": {"caption": "Nasihat Dari *Hati* Untuk *Hati*", "handle": "@nakseeheart", "clickAfter": 2.0, "cardTop": "SETIAP NASIHAT", "cardBig": "ADA MAKNA."},

@@ -1,4 +1,5 @@
 {
+ "theme": "merah",
  "_nota": "Style Nasihat V4. Masa = saat output atau nama beat timeline.json. Lihat styles/nasihat-v4/STYLE.md",
  "face": {
   "x": 540,
@@ -10,7 +11,8 @@
  ],
  "logo": {
   "name": "NAKSEEHEART",
-  "tagline": "NASIHAT · DARI · HATI"
+  "tagline": "NASIHAT · DARI · HATI",
+  "scale": 0.74
  },
  "label": "SHARING MOMENT",
  "cta": {
@@ -352,5 +354,35 @@
    "big": "KITA MAMPU",
    "icon": "target"
   }
- ]
+ ],
+ "cover": {
+  "photo": "media/cover-v4-frame.jpg",
+  "zoom": 0.78,
+  "photoTop": -330,
+  "question": "PERNAH BUAT SILAP?",
+  "small": "ALLAH SENTIASA",
+  "big": "BERI PELUANG",
+  "quote": "Allah sentiasa menunggu kita",
+  "watch": "TONTON SAMPAI HABIS",
+  "chips": [
+   {
+    "icon": "shield",
+    "t": "Jangan putus asa"
+   },
+   {
+    "icon": "hand",
+    "t": "Doa & mengadu"
+   },
+   {
+    "icon": "target",
+    "t": "Kita mampu"
+   }
+  ],
+  "frameAt": 2.2,
+  "list": [
+   "Jangan putus asa",
+   "Mengadu kepada Allah",
+   "Jaga ketaatan & keyakinan"
+  ]
+ }
 }

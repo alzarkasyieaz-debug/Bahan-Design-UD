@@ -17,7 +17,7 @@ Video nasihat NakSeeHeart 9:16 (1080×1920, 30 fps, 60–120 s) dalam bentuk **b
 └──────────────────────────────┘
 ```
 
-Latar: kecerunan **turquoise** `#7FF0E2 → #33C9BD → #14908C → #0B5357 → #062A2E`, emas untuk teks utama.
+Latar: kecerunan tema **merah maroon** (lalai) atau **hijau gelap** (§3c); emas untuk teks utama, logo dan bingkai.
 Asas aliran kerja (media, Whisper, EDL, subtitle, audio, cover) = **Qoute Interaktif** (`styles/qoute-interaktif/STYLE.md`);
 V4 hanya menambah lapisan persembahan. Peraturan sama: jangan reka/ubah kata-kata penceramah; perkataan tidak jelas = "…".
 
@@ -41,7 +41,7 @@ Masa = saat output **atau nama beat** dalam `timeline.json` (cth `"cta"`, `"end"
 
 | Kunci | Fungsi |
 |---|---|
-| `theme` | tema warna (§3c) |
+| `theme` | `merah` (lalai) atau `hijau` (§3c) |
 | `face {x,y}` | titik tengah wajah dalam bingkai 1080×1920 (panel memotong segi empat di sekitarnya) |
 | `zoom [..]` | zum berselang-seli setiap segmen EDL (lalai `[1.0, 1.12]`) |
 | `logo {name, tagline}` | `NAKSEEHEART`, `NASIHAT · DARI · HATI` |
@@ -78,7 +78,7 @@ calendar, clock, shield, smile, bulb, target, family. 8–13 point untuk video ~
 
 **Cover lalai = Konsep A "Gerbang Mihrab" (`CoverV4`)** — pilihan pengguna. Alternatif: `COVER_V4=CoverV4B` (sinematik), `CoverV4C` (medalion petikan), `CoverV4D` (senarai pesanan); lihat `examples/konsep-cover-v4.jpg`.
 
-Contoh: `examples/cover-v4.jpg`. Latar turquoise + sinar cahaya + corak bintang 8 bucu, logo premium, label
+Contoh: `examples/cover-v4.jpg`. Latar tema (merah/hijau) + sinar cahaya + corak bintang 8 bucu, logo premium, label
 SHARING MOMENT, foto dalam **gerbang mihrab emas**, pil merah soalan cangkuk, tajuk 3D emas, petikan sebenar
 (Great Vibes), 3 cip point, butang "TONTON SAMPAI HABIS".
 
@@ -94,13 +94,16 @@ SHARING MOMENT, foto dalam **gerbang mihrab emas**, pil merah soalan cangkuk, ta
 `npm run render` menjana cover ini dahulu (`out/<output>-poster.jpg`), kemudian membenamkannya ~1 s di awal video + thumbnail.
 
 ## 3c. Tema warna (`showcase.json → theme`)
-`turquoise` (lalai) · `merah` (maroon, pil soalan krim) · `hijau` (hijau gelap) · `ungu` (ungu gelap) — emas kekal.
-Contoh: `examples/sampel-tema-warna.jpg`. Uji tanpa ubah data: `npx remotion still CoverV4 out/x.png --frame=100 --props='{"theme":"ungu"}'`.
+Style ini hanya ada **dua** tema (emas kekal pada kedua-duanya):
+- `merah` — **maroon, lalai** (`#F08A86 → #C8333F → #931827 → #600C18 → #36060D`); pil soalan cangkuk krim + teks merah.
+- `hijau` — hijau gelap zamrud (`#93DDB0 → #2E9E68 → #15734A → #0B4A30 → #06281A`); pil soalan merah.
+
+Contoh: `examples/sampel-tema-warna.jpg`. Uji tanpa ubah data: `npx remotion still CoverV4 out/x.png --frame=100 --props='{"theme":"hijau"}'`.
 
 ## 4. CTA penutup (automatik)
 Bermula pada beat `cta`: kapsyen tandatangan **"Nasihat Dari Hati Untuk Hati"** (Great Vibes, ditulis dari kiri) →
 butang **Follow @nakseeheart** (ikon nota muzik gaya TikTok, berdenyut) → kursor tangan masuk dan **klik**
-(bunyi klik `click.wav`) pada `cta + clickAfter` → butang bertukar **Following ✓** turquoise + riak + hati terbang.
+(bunyi klik `click.wav`) pada `cta + clickAfter` → butang bertukar **Following ✓** warna tema + riak + hati terbang.
 Pastikan `end − cta ≥ 4.5 s`.
 
 ## 5. Render & semak

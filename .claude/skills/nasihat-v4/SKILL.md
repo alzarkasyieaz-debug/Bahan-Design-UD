@@ -1,6 +1,6 @@
 ---
 name: nasihat-v4
-description: Hasilkan video nasihat NakSeeHeart 9:16 dalam style "Nasihat V4" — logo premium NAKSEEHEART (medalion emas), SATU panel suntingan kinetic typography (wajah penceramah ⇄ kad grafik), point penting tulisan 3D emas di bawah panel, latar turquoise, label kecil bercahaya SHARING MOMENT di atas panel, dan CTA butang Follow TikTok dengan kursor klik + bunyi klik + kapsyen "Nasihat Dari Hati Untuk Hati". Guna bila pengguna minta style Nasihat V4 / "V4" / "seperti video Allah Sentiasa Beri Peluang (showcase)".
+description: Hasilkan video nasihat NakSeeHeart 9:16 dalam style "Nasihat V4" — logo premium NAKSEEHEART (medalion emas), SATU panel suntingan kinetic typography (wajah penceramah ⇄ kad grafik), point penting tulisan 3D emas di bawah panel, latar merah maroon (lalai) atau hijau gelap, label kecil bercahaya SHARING MOMENT di atas panel, dan CTA butang Follow TikTok dengan kursor klik + bunyi klik + kapsyen "Nasihat Dari Hati Untuk Hati". Guna bila pengguna minta style Nasihat V4 / "V4" / "seperti video Allah Sentiasa Beri Peluang (showcase)".
 ---
 
 # Style Nasihat V4 — aliran kerja
@@ -14,6 +14,7 @@ Contoh siap: `video-nakseeheart-allah-beri-peluang/` (data: `styles/nasihat-v4/e
    (jangan reka/ubah kata-kata; tidak jelas = "…"), `storyboard.json` (`poster` + `coverFx` — cover Panel v2 wajib).
    `npm run subs && npm run audio`.
 3. **`src/data/showcase.json`**:
+   - `theme` = `merah` (lalai) atau `hijau` — hanya dua tema ini untuk V4.
    - `face` = kedudukan wajah (semak bingkai), `scenes[]` babak panel (`side`, `word`, `versus`, `ring`,
      `silhouette`, `list`, `tiles`, `spot`, `cta`), `points[]` point 3D bersambung 0 → `cta` dengan `chips` pada beat.
    - Masa boleh nama beat (`"cta"`, `"end"`).
