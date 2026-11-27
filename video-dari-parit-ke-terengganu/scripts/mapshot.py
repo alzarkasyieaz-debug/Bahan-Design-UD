@@ -108,6 +108,45 @@ def _lerp(a, b, t):
     return a + (b - a) * t
 
 
+def bus_sprite(u, t):
+    """Ikon bas (pandangan sisi) dengan roda berputar & lampu."""
+    W_, H_ = int(130 * u), int(64 * u)
+    im = Image.new("RGBA", (W_, H_), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    k = u
+    body = [4 * k, 6 * k, 124 * k, 48 * k]
+    d.rounded_rectangle([body[0] + 3 * k, body[1] + 4 * k, body[2] + 3 * k, body[3] + 4 * k], radius=10 * k, fill=(0, 0, 0, 90))
+    d.rounded_rectangle(body, radius=10 * k, fill=(246, 238, 222, 255), outline=(30, 60, 58, 255), width=max(1, int(2 * k)))
+    d.rectangle([6 * k, 34 * k, 122 * k, 40 * k], fill=(32, 150, 118, 255))       # jalur emerald
+    d.rectangle([6 * k, 40 * k, 122 * k, 43 * k], fill=(232, 182, 92, 255))       # jalur emas
+    for i in range(5):                                                         # tingkap
+        x0 = 12 * k + i * 19 * k
+        d.rounded_rectangle([x0, 12 * k, x0 + 15 * k, 27 * k], radius=3 * k, fill=(16, 48, 54, 255))
+    d.rounded_rectangle([108 * k, 12 * k, 121 * k, 30 * k], radius=4 * k, fill=(16, 48, 54, 255))  # cermin depan
+    d.ellipse([117 * k, 36 * k, 123 * k, 42 * k], fill=(255, 236, 170, 255))  # lampu depan
+    for cx in (30 * k, 100 * k):                                               # roda
+        r = 9 * k
+        d.ellipse([cx - r, 48 * k - r, cx + r, 48 * k + r], fill=(14, 20, 22, 255))
+        d.ellipse([cx - r * 0.45, 48 * k - r * 0.45, cx + r * 0.45, 48 * k + r * 0.45], fill=(180, 186, 180, 255))
+        a = t * 14
+        d.line([cx + math.cos(a) * r * 0.45, 48 * k + math.sin(a) * r * 0.45,
+                cx - math.cos(a) * r * 0.45, 48 * k - math.sin(a) * r * 0.45], fill=(40, 40, 40, 255), width=max(1, int(2 * k)))
+    return im
+
+
+def draw_bus(lay, x, y, ang_deg, facing_left, u, t, alpha=1.0):
+    sp = bus_sprite(u, t)
+    if facing_left:
+        sp = sp.transpose(Image.FLIP_LEFT_RIGHT)
+        ang_deg = ang_deg + 180
+    ang = max(-22, min(22, ((ang_deg + 180) % 360) - 180))
+    sp = sp.rotate(-ang, Image.BICUBIC, expand=True)
+    if alpha < 1:
+        sp.putalpha(sp.getchannel("A").point(lambda v: int(v * alpha)))
+    bob = math.sin(t * 9) * 1.2 * u
+    lay.alpha_composite(sp, (int(x - sp.width / 2), int(y - sp.height / 2 - 26 * u + bob)))
+
+
 class MapShot(Shot):
     """kw: reverse (bool) – untuk perjalanan pulang; title (teks bawah)."""
 
@@ -209,5 +248,16 @@ class MapShot(Shot):
             bx0 = lx - pad if right else lx - tw - pad
             dr.rectangle([bx0, yb - 52 * u, bx0 + tw + 2 * pad, yb - 6 * u], fill=(6, 20, 22, int(170 * a)))
             draw_text(dr, (lx, yb - 50 * u), name, fnt, (250, 240, 220, int(255 * a)), tracking=6 * u, anchor="l" if right else "r")
+        # bas bergerak di kepala laluan
+        arrive = (2.0 if not rev else 0.6) + d * (0.72 if not rev else 0.75)
+        ba = 1.0 - clamp01((lt - arrive - 0.4) / 0.8)
+        if ba > 0 and len(sp) >= 2:
+            j = max(1, len(sp) - 1)
+            x1_, y1_ = sp[j]; x0_, y0_ = sp[max(0, j - 6)]
+            ang = math.degrees(math.atan2(y1_ - y0_, x1_ - x0_)) if (x1_, y1_) != (x0_, y0_) else 0.0
+            draw_bus(lay, x1_, y1_, ang, x1_ < x0_, u * 1.2, lt if prog < 0.999 else 0.0, ba)
+        elif ba > 0:
+            x_, y_ = S(*pts[0])
+            draw_bus(lay, x_ + (70 if rev else -90) * u, y_ + 10 * u, 0.0, rev, u * 1.2, 0.0, ba * clamp01(lt / 0.5))
         img = Image.alpha_composite(img.convert("RGBA"), lay).convert("RGB")
         return to_f(img)
