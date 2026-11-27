@@ -661,7 +661,7 @@ export const CoverV4C: React.FC = () => {
 /** D — SENARAI PESANAN: foto atas bersudut condong + 3 pesanan bernombor */
 export const CoverV4D: React.FC = () => {
   const cv = SC.cover;
-  const list: string[] = cv.list ?? cv.chips.map((c: { t: string }) => c.t);
+  const list: string[] = (cv as { list?: string[] }).list ?? cv.chips.map((c: { t: string }) => c.t);
   return (
     <AbsoluteFill style={{ overflow: 'hidden', background: TURQ }}>
       <Star8BG o={0.08} />

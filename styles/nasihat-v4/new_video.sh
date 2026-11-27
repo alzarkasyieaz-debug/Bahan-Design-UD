@@ -39,7 +39,8 @@ sc = {"theme": "merah", "_nota": "Style Nasihat V4 — lihat styles/nasihat-v4/S
       "points": [{"a": 0, "b": "cta", "small": "KATA KECIL", "big": "POINT UTAMA", "icon": "heart"}],
       "cover": {"frameAt": 2.0, "photo": "media/cover-v4-frame.jpg", "zoom": 0.78, "photoTop": -330, "question": "SOALAN CANGKUK?",
                 "small": "KATA KECIL", "big": "TAJUK BESAR", "quote": "Petikan sebenar penceramah", "watch": "TONTON SAMPAI HABIS",
-                "chips": [{"icon": "shield", "t": "Point 1"}, {"icon": "hand", "t": "Point 2"}, {"icon": "target", "t": "Point 3"}]}}
+                "chips": [{"icon": "shield", "t": "Point 1"}, {"icon": "hand", "t": "Point 2"}, {"icon": "target", "t": "Point 3"}],
+                "list": ["Pesanan 1", "Pesanan 2", "Pesanan 3"]}}
 json.dump(sc, open(f"{d}/src/data/showcase.json", "w"), indent=1, ensure_ascii=False)
 PY
 grep -q "Showcase" "$DEST/src/Root.tsx" || { echo "✗ gagal menampal Root.tsx" >&2; exit 1; }
